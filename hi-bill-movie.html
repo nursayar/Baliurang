@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Hi Bill Movie - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Hi Bill Movie",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/c9/56/b4/c956b4da4ab879e663d7563f7394e22d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=hi+bill+movie",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Hi Bill Movie</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A down on his luck William Bill Shakespeare decides to pursue his latest dream. This video is unavailable. With Mickey Rooney Dennis Quaid Largo Woodruff Anna Maria Horsford. <br>				
+			</p>
+										<a class="badge badge-dark" href="/ch-1606-kicker.html">ch 1606 kicker</a>
+											<a class="badge badge-dark" href="/ch-1606-pay-rates.html">ch 1606 pay rates</a>
+											<a class="badge badge-secondary" href="/central-georgia-technical-college-womens-basketball.html">central georgia technical college womens basketball</a>
+											<a class="badge badge-primary" href="/ch-1606-benefits.html">ch 1606 benefits</a>
+											<a class="badge badge-light" href="/changes-to-gi-bill-2020.html">changes to gi bill 2020</a>
+											<a class="badge badge-warning" href="/chapter-1606-and-tuition-assistance.html">chapter 1606 and tuition assistance</a>
+											<a class="badge badge-primary" href="/chapter-30-va-education-benefits.html">chapter 30 va education benefits</a>
+											<a class="badge badge-primary" href="/cbre-gi-affordable-housing-fund.html">cbre gi affordable housing fund</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the right blog.  Our site provides you with suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this movie for you to see.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/e9/64/1fe964079491630008567aa9f35f0dcb.jpg" data-lightbox="roadtrip" data-title="Kill Bill Vol 1 Hi Res Movie Poster Film Kill Bill Film Afisleri">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/e9/64/1fe964079491630008567aa9f35f0dcb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aWbsE7WWM-akJXy-I7J2whneERqAZ7SJVg';" alt="Kill Bill Vol 1 Hi Res Movie Poster Film Kill Bill Film Afisleri">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Vol 1 Hi Res Movie Poster Film Kill Bill Film Afisleri</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/28/26/3b2826cf1654247050e5abf9f3ffff81.jpg" data-lightbox="roadtrip" data-title="Movie Posters Movie Posters Kill Bill Kill Bill Movie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/28/26/3b2826cf1654247050e5abf9f3ffff81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP5jBOfaQa6geVcVWyXv-9LzxTIWh5yXlNyQ';" alt="Movie Posters Movie Posters Kill Bill Kill Bill Movie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Movie Posters Movie Posters Kill Bill Kill Bill Movie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/7f/ae/107fae5eece9ac5718bf7b54ca3187f0.jpg" data-lightbox="roadtrip" data-title="Kill Bill Dvd Movie Poster Project Kill Bill Favorite Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/7f/ae/107fae5eece9ac5718bf7b54ca3187f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8-S8Eqd3i8eC0cJrZjUMfKTxKiv6Spx7_Jg';" alt="Kill Bill Dvd Movie Poster Project Kill Bill Favorite Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Dvd Movie Poster Project Kill Bill Favorite Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/92/ae/c992ae0f3a76f47d89e3cbb42638cf57.jpg" data-lightbox="roadtrip" data-title="Kill Bill Movie Poster Poster By Zjcustoms In 2021 Kill Bill Movie Kill Bill Movie Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/92/ae/c992ae0f3a76f47d89e3cbb42638cf57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbWk97nVqVw5c-F_t_AKlTphIBzvCw9ai5Wg';" alt="Kill Bill Movie Poster Poster By Zjcustoms In 2021 Kill Bill Movie Kill Bill Movie Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Movie Poster Poster By Zjcustoms In 2021 Kill Bill Movie Kill Bill Movie Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/49/d2/8e49d214b838cfaa35e4e5c52eca2854.gif" data-lightbox="roadtrip" data-title="Chiaki Kuriyama As Gogo Yubari In Kill Bill Vol 1 2003 Dir Quentin Tarantino Kill Bill Kill Bill Costume Yubari">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/49/d2/8e49d214b838cfaa35e4e5c52eca2854.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7WsKNyZvAXsmuI-FBYpUpCMSTMYFT4jlj3A';" alt="Chiaki Kuriyama As Gogo Yubari In Kill Bill Vol 1 2003 Dir Quentin Tarantino Kill Bill Kill Bill Costume Yubari">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chiaki Kuriyama As Gogo Yubari In Kill Bill Vol 1 2003 Dir Quentin Tarantino Kill Bill Kill Bill Costume Yubari</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/cf/30/e7/cf30e7619d723468e2f99207bb08b061.jpg" data-lightbox="roadtrip" data-title="Kill Bill Vol 1 Masterprint Allposters Com In 2020 Kill Bill Movie Kill Bill Film Kill Bill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/cf/30/e7/cf30e7619d723468e2f99207bb08b061.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHL7M2Iv_e4RSQkx6pm3SXJq_4fJLPteWpHQ';" alt="Kill Bill Vol 1 Masterprint Allposters Com In 2020 Kill Bill Movie Kill Bill Film Kill Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Vol 1 Masterprint Allposters Com In 2020 Kill Bill Movie Kill Bill Film Kill Bill</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/66/e0/4e/66e04e6dacc49913144f36729f9fd323.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHL7M2Iv_e4RSQkx6pm3SXJq_4fJLPteWpHQ';" alt="Kill Bill Vol 1 Masterprint Allposters Com In 2020 Kill Bill Movie Kill Bill Film Kill Bill">
+										<div class="card-body">
+						<h3 class="h5"><b>Section 230 is a legal shield that protects internet companies.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Hi bill movie</strong>. 
+								
+																	In the movie Little Big Man 1970 Wild Bill Hickok was played by Jeff Corey. 
+																	Movie Info This film reconstructs the true story of stockbroker William Griffith Wilson James Woods a World War I veteran whose small drinking problem becomes a serious addiction after he loses. 
+																	The first major Section 230 reform proposal of the Biden era is out. 
+																	He is taken in by a kind family and learns for the first time in his life what it means to love. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Complete with Wyld Stallyns branding the Torsion Artillery Hi launches next week. 
+																	Bill is a 2015 British family adventure comedy film from the principal performers behind childrens TV series Horrible Histories and Yonderland. 
+																	Plot Summary Add Synopsis. 
+																	Is a 1989 CBS Hallmark Hall of Fame made-for-television drama film directed by Daniel Petrie starring James Woods JoBeth Williams and James Garner. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wild Bill is a 1995 Western film about the last days of legendary lawman Wild Bill HickokIt stars Jeff Bridges Ellen Barkin John Hurt and Diane LaneThe film was distributed by United ArtistsIt was written and directed by Walter Hill with writing credits also going to Pete Dexter author of the book Deadwood and Thomas Babe author of the play Fathers and Sons. 
+																	But a thinly veiled portrait of the worlds richest man Microsoft boss Bill Gates is believed to be on its way to a cinema screen near you. 
+																	Uniform officers and detectives from an inner London police station enforce law and order on a day to day basis. 
+																	Created by Geoff McQueen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mentally impaired Bill Sackters Mickey Rooney friend and guardian filmmaker Barry Morrow Dennis Quaid moves to California. 
+																	Fast forward nearly 30 years and the iconic franchise has returned with a new. 
+																	Directed by Anthony Page. 
+																	This film reconstructs the true story of stockbroker William Griffith Wilson a World War I veteran whose small drinking problem becomes a serious addiction after he loses his fortune in the stock market collapse of 1929. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hello its Bill Gates Chairman of Microsoft in a 60 second introduction to a cheesy 3-hour video tutorial VHS tape on Windows 31. 
+																	In a new bill Senate Democrats Mark Warner D-VA Mazie Hirono D-HI and Amy Klobuchar D-MN propose changes to Section 230 of the Communications Decency Act that would fundamentally change the 1996 law widely credited with cultivating the modern internet. 
+																	Adidas Originals Revives Bill Teds KC Torsion Artillery High Complete With Wyld Stallyns Logos The Bill and Ted movie series is continuing in 2020 and to celebrate adidas Originals is reviving the kicks worn by the dynamic duo in the original films. 
+																	Find ratings and reviews for the newest movie and TV shows. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill Sackter a intellectually disabled man ventures out into the world for the first time having spent most of his life in a dreary inner city institution. 
+																	To be an aspiring writer. 
+																	IMDb is the worlds most popular and authoritative source for movie TV and celebrity content. 
+																	The White Buffalo 1977 starring Charles Bronson as Hickok tells a tale of Hickoks hunt for a murderous white buffalo that follows him in his nightmares. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The model was laced up by Keanu Reeves character Bill in the second instalment from 1991 and this pair retains the bold on-cou. 
+																	Get personalized recommendations and learn where to watch across hundreds of streaming providers. 
+																	My Name Is Bill W. 
+																	In 1991 Bill and Ted graced the big screen for the second time in the smash hit comedy Bill and Teds Bogus Journey. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A highly fictional film account of Hickoks later years and death titled Wild Bill 1995 stars Jeff Bridges as Hickok and David Arquette as Jack McCall and. 
+																	Adidas and Kid Cudi take it all the way back to the early-90s this season creating a version of the Torsion Artillery Hi to commemorate the latest movie from the Bill Ted franchise. 
+																	It was produced by Punk Cinema Cowboy Films and BBC Films and was released in the UK on 18 September 2015 by Vertigo Films. 
+																	His adventure soon becomes dangerous when he is caught between a act of murder. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With Graham Cole Jeff Stewart Trudie Goodwin Simon Rouse. 
+																	Whether Microsofts current legal scuffles will lead to. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/d7/55/55d7557f818e2aac3b6595a9d503926d.jpg" data-lightbox="roadtrip" data-title="News Entertainment Music Movies Celebrity Kill Bill Film Posters Vintage Quentin Tarantino Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/d7/55/55d7557f818e2aac3b6595a9d503926d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQvA3BG74ruh9ddM6zikDjOkd0KmeM225Wg';" alt="News Entertainment Music Movies Celebrity Kill Bill Film Posters Vintage Quentin Tarantino Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News Entertainment Music Movies Celebrity Kill Bill Film Posters Vintage Quentin Tarantino Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/56/b4/c956b4da4ab879e663d7563f7394e22d.jpg" data-lightbox="roadtrip" data-title="Kill Bill Movie Poster Harijs Grundmanis Movie Artwork Kill Bill Movie Movie Poster Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/56/b4/c956b4da4ab879e663d7563f7394e22d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLDNddtUhNvjFdYJxY0u_uQ2y2aGRumOofOw';" alt="Kill Bill Movie Poster Harijs Grundmanis Movie Artwork Kill Bill Movie Movie Poster Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Movie Poster Harijs Grundmanis Movie Artwork Kill Bill Movie Movie Poster Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/db/94/cddb94fa75bfddd8e30094c69154c785.png" data-lightbox="roadtrip" data-title="Pin On Horror Is Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/db/94/cddb94fa75bfddd8e30094c69154c785.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyfrSezrPtOHB6RWKrKxskGCWQnJIXFmsUw';" alt="Pin On Horror Is Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Horror Is Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/12/f2/ea12f2e2978c49b5ed473c894019f44d.png" data-lightbox="roadtrip" data-title="Kill Bill Vol1 Famous Movie Posters Film Posters Vintage Movie Posters Vintage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/12/f2/ea12f2e2978c49b5ed473c894019f44d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTxCyhGWCTUmvog2ettZWjYkrM-DdKpYgPIQ';" alt="Kill Bill Vol1 Famous Movie Posters Film Posters Vintage Movie Posters Vintage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Vol1 Famous Movie Posters Film Posters Vintage Movie Posters Vintage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/13/d7/0413d79611f04d32acc0badb0a7a10e1.jpg" data-lightbox="roadtrip" data-title="10 Incredible High Res Behind The Scenes Photos From Kill Bill 1 Kill Bill Quentin Tarantino Kill Bill Vol 1">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/13/d7/0413d79611f04d32acc0badb0a7a10e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVgqQu-20u4JRWA5cBudfa6K3ZO126LJhU8w';" alt="10 Incredible High Res Behind The Scenes Photos From Kill Bill 1 Kill Bill Quentin Tarantino Kill Bill Vol 1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Incredible High Res Behind The Scenes Photos From Kill Bill 1 Kill Bill Quentin Tarantino Kill Bill Vol 1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/33/ff/b333ff05d8d2324a29f9e1149c6d75ab.jpg" data-lightbox="roadtrip" data-title="Pin On Fun With Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/33/ff/b333ff05d8d2324a29f9e1149c6d75ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQJw2Ss8BfOTIFquNyVrnP1HBGxZiNrdsGg';" alt="Pin On Fun With Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fun With Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/d1/59/d0d159420a27af0e7880fcc8cdbc0a77.jpg" data-lightbox="roadtrip" data-title="Silly Caucasian Girl Wants To Play With Samurai Swords Kill Bill Movie Posters Film Movie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/d1/59/d0d159420a27af0e7880fcc8cdbc0a77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdobepvJ-XLJI-ns7_VQVMpIdDWOGnK1Cxxw';" alt="Silly Caucasian Girl Wants To Play With Samurai Swords Kill Bill Movie Posters Film Movie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Silly Caucasian Girl Wants To Play With Samurai Swords Kill Bill Movie Posters Film Movie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/21/53/25/215325f91deb1f0367ee7cff2d74fd2e.jpg" data-lightbox="roadtrip" data-title="Pin By Blaster 321 On Keanu Reeves Keanu Reeves Face The Music Ted Movie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/21/53/25/215325f91deb1f0367ee7cff2d74fd2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2GlBzODODxuLuPUI3I68MIExjNN2d3SmgRg';" alt="Pin By Blaster 321 On Keanu Reeves Keanu Reeves Face The Music Ted Movie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Blaster 321 On Keanu Reeves Keanu Reeves Face The Music Ted Movie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/72/52/59725282d41e7cccee793e418d43dd71.jpg" data-lightbox="roadtrip" data-title="Pin On Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/72/52/59725282d41e7cccee793e418d43dd71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_laPnSqy6s_Lb6lTBrcix9odTnOquEK52iA';" alt="Pin On Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/cf/a6/e4cfa6736f879b29a7b8c6d87fb8ccb9.jpg" data-lightbox="roadtrip" data-title="Pin On Party">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/cf/a6/e4cfa6736f879b29a7b8c6d87fb8ccb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW7FLZ-vjYwZr5f4vQk6mD33Me5uqOOqgo1A';" alt="Pin On Party">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Party</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/e0/4e/66e04e6dacc49913144f36729f9fd323.jpg" data-lightbox="roadtrip" data-title="Kill Bill Typography Poster Poster Movie Restyle Tarantino Film Typography Kill Cartel Design Graphic Freela Typography Poster Kill Bill Typography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/e0/4e/66e04e6dacc49913144f36729f9fd323.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs9Cv2FNh8WGFYc8jIaInpSwaxEj9kiYvRBg';" alt="Kill Bill Typography Poster Poster Movie Restyle Tarantino Film Typography Kill Cartel Design Graphic Freela Typography Poster Kill Bill Typography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Typography Poster Poster Movie Restyle Tarantino Film Typography Kill Cartel Design Graphic Freela Typography Poster Kill Bill Typography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/bd/8e/09bd8e425ea60c815904f11a392d211b.jpg" data-lightbox="roadtrip" data-title="Chiaki Kuriyama Kill Bill Kill Bill Movie Kill Bill Yubari">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/bd/8e/09bd8e425ea60c815904f11a392d211b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShI7XGP-MAL3h5yX7FWWvRR7jo983toUAR2w';" alt="Chiaki Kuriyama Kill Bill Kill Bill Movie Kill Bill Yubari">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chiaki Kuriyama Kill Bill Kill Bill Movie Kill Bill Yubari</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/17/1f/6c171f4b62eb8ba9fb6f449014b09283.jpg" data-lightbox="roadtrip" data-title="Kill Bill Movie Canvas Wall Art Framed Print Various Sizes Etsy In 2020 Canvas Wall Art Kill Bill Movie Wall Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/17/1f/6c171f4b62eb8ba9fb6f449014b09283.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj1r2pjF3P8JHugdkgrx37XJsrr9fURSlrPQ';" alt="Kill Bill Movie Canvas Wall Art Framed Print Various Sizes Etsy In 2020 Canvas Wall Art Kill Bill Movie Wall Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kill Bill Movie Canvas Wall Art Framed Print Various Sizes Etsy In 2020 Canvas Wall Art Kill Bill Movie Wall Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-gi-bill-contact-number.html">Veterans Gi Bill Contact Number</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-logo.html">Virginia Department Of Education Logo</a></li>
+													<li class="list-group-item"><a href="/veterans-gi-bill-website.html">Veterans Gi Bill Website</a></li>
+													<li class="list-group-item"><a href="/veterans-educational-benefits-programs.html">Veterans Educational Benefits Programs</a></li>
+													<li class="list-group-item"><a href="/veterans-education-benefits-gi-bill.html">Veterans Education Benefits Gi Bill</a></li>
+													<li class="list-group-item"><a href="/veterans-education-benefits-for-spouse.html">Veterans Education Benefits For Spouse</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-wiki.html">Virginia Department Of Education Wiki</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-organizational-chart.html">Virginia Department Of Education Organizational Chart</a></li>
+													<li class="list-group-item"><a href="/veterans-gi-bill-calculator.html">Veterans Gi Bill Calculator</a></li>
+													<li class="list-group-item"><a href="/veterans-gi-bill-status.html">Veterans Gi Bill Status</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-english-standards.html">Virginia Department Of Education English Standards</a></li>
+													<li class="list-group-item"><a href="/virginia-education-job-bank.html">Virginia Education Job Bank</a></li>
+													<li class="list-group-item"><a href="/veterans-education-benefits-office-csu.html">Veterans Education Benefits Office Csu</a></li>
+													<li class="list-group-item"><a href="/veterans-education-benefits-for-spouses.html">Veterans Education Benefits For Spouses</a></li>
+													<li class="list-group-item"><a href="/view-my-gi-bill-benefits.html">View My Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/victoria-college-womens-basketball-roster.html">Victoria College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/veterans-gi-bill-eligibility.html">Veterans Gi Bill Eligibility</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-writing-prompts.html">Virginia Department Of Education Writing Prompts</a></li>
+													<li class="list-group-item"><a href="/vietnam-era-gi-bill-chapter-34.html">Vietnam Era Gi Bill Chapter 34</a></li>
+													<li class="list-group-item"><a href="/veterans-chapter-33-benefits.html">Veterans Chapter 33 Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

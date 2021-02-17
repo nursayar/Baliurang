@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Coach With Alzheimers - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Coach With Alzheimers",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/4f/fc/b8/4ffcb8686ee2678bbaf10f6bc19683b1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+coach+with+alzheimers",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Coach With Alzheimers</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This is a list of college womens basketball coaches by number of career wins. Past few days difficult for former Tennessee coach Pat Summitt KNOXVILLE Tenn. 31 against Ole Miss due to COVID-19 protocols the university announced late Sunday morning. <br>				
+			</p>
+										<a class="badge badge-info" href="/go-build-clean.html">go build clean</a>
+											<a class="badge badge-danger" href="/go-to-college-in-america.html">go to college in america</a>
+											<a class="badge badge-success" href="/go-college-11-lyrics.html">go college 11 lyrics</a>
+											<a class="badge badge-info" href="/go-back-to-college-online.html">go back to college online</a>
+											<a class="badge badge-success" href="/go-to-college-mod.html">go to college mod</a>
+											<a class="badge badge-info" href="/go-soccer-college-usa.html">go soccer college usa</a>
+											<a class="badge badge-warning" href="/go-build-installsuffix.html">go build installsuffix</a>
+											<a class="badge badge-primary" href="/go-to-a-good-college-in-spanish.html">go to a good college in spanish</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the right site.  Our site provides you with hints for seeing the highest quality video and image content, search and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to see.  You can also bring about supporting this site by sharing videos and images that you enjoy on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/50/84/b75084f008ab555c9552b0c5b5ab982d.jpg" data-lightbox="roadtrip" data-title="We Back Pat Women S Basketball Fighting Alzheimer S Disease Womens Basketball Sports Women Lady Vols Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/50/84/b75084f008ab555c9552b0c5b5ab982d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzKJ8PjYj99cTI81bbmMEPdOGh9cJxgDhNIQ';" alt="We Back Pat Women S Basketball Fighting Alzheimer S Disease Womens Basketball Sports Women Lady Vols Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Back Pat Women S Basketball Fighting Alzheimer S Disease Womens Basketball Sports Women Lady Vols Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/18/bb/c7/18bbc7d1b13a320d1552ec70f1dc7f30.jpg" data-lightbox="roadtrip" data-title="Pat Summitt The Best Women S College Basketball Coach Ever Alzheimer S Disease Pat Summitt Basketball History Tennessee Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/18/bb/c7/18bbc7d1b13a320d1552ec70f1dc7f30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR4c-hy3_J0pm1xOtty5b4axRqYdPCnRs5jA';" alt="Pat Summitt The Best Women S College Basketball Coach Ever Alzheimer S Disease Pat Summitt Basketball History Tennessee Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt The Best Women S College Basketball Coach Ever Alzheimer S Disease Pat Summitt Basketball History Tennessee Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/c4/ec/7fc4ec9e240703d55b5efc65714a2c1d.jpg" data-lightbox="roadtrip" data-title="Never Forget Pat Summitt A Coach To Remember Basketball Coach Pat Summitt Lady Vols Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/c4/ec/7fc4ec9e240703d55b5efc65714a2c1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_54mzT8oqqdqkyooT7GTr-G4C_raUvtZGfA';" alt="Never Forget Pat Summitt A Coach To Remember Basketball Coach Pat Summitt Lady Vols Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Never Forget Pat Summitt A Coach To Remember Basketball Coach Pat Summitt Lady Vols Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/ad/04/05ad04975c5674f067cca1dba0a516e4.jpg" data-lightbox="roadtrip" data-title="Alzheimer S Disease Difficult On Patients Family Pat Summitt Lady Vols Basketball Tennessee">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/ad/04/05ad04975c5674f067cca1dba0a516e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5hgWFCo3lLKSs2oG86md2zGzSCW9UCp7yA';" alt="Alzheimer S Disease Difficult On Patients Family Pat Summitt Lady Vols Basketball Tennessee">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alzheimer S Disease Difficult On Patients Family Pat Summitt Lady Vols Basketball Tennessee</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/5d/a3/215da3df3b0951d9aecab6024358328d.jpg" data-lightbox="roadtrip" data-title="Account Suspended Basketball History Pat Summitt College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/5d/a3/215da3df3b0951d9aecab6024358328d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTPF4dOhh1iU_vv2bAWYtTRG-0Nz6500Ytg';" alt="Account Suspended Basketball History Pat Summitt College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Account Suspended Basketball History Pat Summitt College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/be/6a/04be6acaa1ad3a27fbb7ff35271191fa.jpg" data-lightbox="roadtrip" data-title="Pat Summitt Legend Of Women S Basketball Dies At 64 Pat Summitt Lady Vols Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/be/6a/04be6acaa1ad3a27fbb7ff35271191fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUWJnixhvM9u6vor9Jj_n_fgeFEzS1gmyIPQ';" alt="Pat Summitt Legend Of Women S Basketball Dies At 64 Pat Summitt Lady Vols Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt Legend Of Women S Basketball Dies At 64 Pat Summitt Lady Vols Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f6/5e/3f/f65e3fe4431aa1a0ac46fe61a389ef3e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUWJnixhvM9u6vor9Jj_n_fgeFEzS1gmyIPQ';" alt="Pat Summitt Legend Of Women S Basketball Dies At 64 Pat Summitt Lady Vols Basketball Womens Basketball">
+										<div class="card-body">
+						<h3 class="h5"><b>Full results from the USA TODAY Sports NCAA Womens College Basketball coaches poll for January 5 2021.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball coach with alzheimers</strong>. 
+								
+																	Any one of womens basketball. 
+																	Womens College Basketball Coach on Dementia Robin Roberts talks with the legendary college basketball coach. 
+																	See how Division I coaches ranked the Top 25. 
+																	Pat Summitt winningest coach in college basketball history has been diagnosed with Alzheimers disease intends to coach this season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	June 14 1952 June 28 2016 was an American womens college basketball head coach who accrued 1098 career wins the third most in womens basketball history. 
+																	Pat Summitts family said Sunday that the last few days have been difficult for the former. 
+																	And board games at any coach in college sports fans or -- So when the 59 year old hall of fame coach of the Tennessee lady -- Was diagnosed with early onset dementia. 
+																	Her courageous battle on the court and with early onset Alzheimers will be remembered. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CNN Pat Summitt who built the University of Tennessees Lady Volunteers into a perennial power on the way to becoming the winningest coach in the history. 
+																	See how Division I coaches ranked the Top 25. 
+																	She served as the head coach of the University of Tennessee Lady Vols basketball team from 1974 to 2012. 
+																	59 said she would not let Alzheimers-type dementia force her into early retirement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to LSU Fargas will be absent because of COVID-19 contact tracing issues related to an external. 
+																	Pat Summitt legendary womens basketball coach dies at 64. 
+																	Summitt won a silver medal at the 1976 Summer Olympics in Montreal as a member of the. 
+																	Legendary University of Tennessee womens basketball coach Pat Summitt 64 died early Tuesday surrounded by her family and a handful of her former players who flew in from around the nation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In a statement to the University of Tennessee and her Lady Vol basketball team Summitt. 
+																	The list includes only games at the NCAA AIAW and NAIA levels. 
+																	Tara VanDerveer the head coach of Idaho from 1978-80 Ohio State from 1980-85 and Stanford from 198595 and from 1996-present tops the list with 1109 career wins. 
+																	Full results from the USA TODAY Sports NCAA Womens College Basketball coaches poll for January 26 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pat Summitt who built the University of Tennessees Lady Volunteers into a perennial power on the way to becoming the winningest coach in the history of major college basketball has died. 
+																	Pat Summitt most successful womens college basketball coach dies at 64 This article is more than 3 years old Lady Vols coach passes away after diagnosis of early onset dementia. 
+																	In 38 years as the head coach of the University of Tennessee Lady Vols basketball team Summitt shouted her team to more victories than any other coach in the history of college basketball mens. 
+																	Our sincerest condolences go out to the family friends and fans of Ms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ABC News November 4 2011 Pat Summitt Interview. 
+																	Patricia Susan Summitt nee Head. 
+																	Navy womens basketball will commemorate the life and legacy of legendary college basketball coach Pat Summitt on Wednesday by participating in its second annual We Back Pat game as the. 
+																	When the University of Kentucky womens basketball team faces Tennessee in Knoxville on Sunday it will mark the first time Kyra Elzy has returned to her alma mater as a college head coach. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	-- Pat Summitt plans to coach the Tennessee womens basketball team as long as the good Lord is willing despite recently being diagnosed with early-onset dementia. 
+																	The highest winning percentage in the group belongs to Geno Auriemma head coach of. 
+																	WAFB - LSU womens basketball head coach Nikki Fargas will miss the game on Sunday Jan. 
+																	HealthDay Reporter THURSDAY April 19 HealthDay News -- Less than one year after revealing that she had been diagnosed with early-onset Alzheimers disease celebrated womens basketball coach Pat Summitt is stepping aside as head coach of the University of Tennessee Lady Vols team. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pat Summitt who broke barriers as a female basketball coach leading the University of Tennessee Lady Vols to eight NCAA championships has died following a hard-fought battle against early onset. 
+																	24 2011 -- Pat Summitt plans to keep coaching womens college basketball despite her diagnoses of early-onset dementia she said. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/3a/48/473a48bc3563ae905e652689639e3a79.jpg" data-lightbox="roadtrip" data-title="Pin By Karen French On Women To Respect Admire Pat Summitt Lady Vols Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/3a/48/473a48bc3563ae905e652689639e3a79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5SA8Rl7gWadU-SxQncJCKkUxJlFE4B7Xmzw';" alt="Pin By Karen French On Women To Respect Admire Pat Summitt Lady Vols Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Karen French On Women To Respect Admire Pat Summitt Lady Vols Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/ee/bd/03eebdc2ae630cf9d78968c20c3a635d.jpg" data-lightbox="roadtrip" data-title="What Is Early Onset Alzheimer S Disease Pat Summitt Basketball History Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/ee/bd/03eebdc2ae630cf9d78968c20c3a635d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTycn3-uB7ZS6CuI9XdFvMdJAtkaIFdbG_fw';" alt="What Is Early Onset Alzheimer S Disease Pat Summitt Basketball History Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Early Onset Alzheimer S Disease Pat Summitt Basketball History Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/74/38/6d743847173893215c195e3314b82aeb.jpg" data-lightbox="roadtrip" data-title="Pat Summitt Milestone Pat Summitt Basketball History First Coach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/74/38/6d743847173893215c195e3314b82aeb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUvkkKv0aVAk78-D95AN27Qa_vmBbzUsPE8A';" alt="Pat Summitt Milestone Pat Summitt Basketball History First Coach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt Milestone Pat Summitt Basketball History First Coach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/ba/3b/acba3bfceb7d24f132d4ebadb4fc8872.jpg" data-lightbox="roadtrip" data-title="Pat Summitt Alzheimer S Clinic Planned At Ut Medical Center Pat Summitt Lady Vols Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/ba/3b/acba3bfceb7d24f132d4ebadb4fc8872.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAa4HvZI5SozLawLBurdBYzknICCSf2bIB3Q';" alt="Pat Summitt Alzheimer S Clinic Planned At Ut Medical Center Pat Summitt Lady Vols Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt Alzheimer S Clinic Planned At Ut Medical Center Pat Summitt Lady Vols Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/fc/b8/4ffcb8686ee2678bbaf10f6bc19683b1.jpg" data-lightbox="roadtrip" data-title="Pat Summitt Tennessee Women S Basketball Coach Diagnosed With Alzheimer S Disease Pat Summitt Basketball Coach Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/fc/b8/4ffcb8686ee2678bbaf10f6bc19683b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ELCySz9Zp5SqmIFyJy5L16LtOmKjHgQtiw';" alt="Pat Summitt Tennessee Women S Basketball Coach Diagnosed With Alzheimer S Disease Pat Summitt Basketball Coach Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt Tennessee Women S Basketball Coach Diagnosed With Alzheimer S Disease Pat Summitt Basketball Coach Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/fd/5b/cbfd5b1f55891321f2740bb073a0607c.jpg" data-lightbox="roadtrip" data-title="The Game Is Never Over A Letter From Pat Summitt To A Young Basketball Player Pat Summitt Basketball Coach Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/fd/5b/cbfd5b1f55891321f2740bb073a0607c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEST6xyI4_vvjU4VNb4xBqQ-s9rdd8nEZX9g';" alt="The Game Is Never Over A Letter From Pat Summitt To A Young Basketball Player Pat Summitt Basketball Coach Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Game Is Never Over A Letter From Pat Summitt To A Young Basketball Player Pat Summitt Basketball Coach Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/63/9a/f5639a7f1661f2db4b2ee9bfc829899d.jpg" data-lightbox="roadtrip" data-title="Pin On Pat Summitt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/63/9a/f5639a7f1661f2db4b2ee9bfc829899d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBNyjwtT9gcbeGG3oobXtBxLwdScKTCd80KQ';" alt="Pin On Pat Summitt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pat Summitt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/5e/f4/bf5ef4ef6d81e1f19d94527278258114.jpg" data-lightbox="roadtrip" data-title="A True Heroine Pat Summitt S Alzheimer S Legacy Pat Summitt College Basketball Teams Tennessee">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/5e/f4/bf5ef4ef6d81e1f19d94527278258114.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUIXejtucTXSHE56w_c9YfLg2g55aN8QwB5g';" alt="A True Heroine Pat Summitt S Alzheimer S Legacy Pat Summitt College Basketball Teams Tennessee">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A True Heroine Pat Summitt S Alzheimer S Legacy Pat Summitt College Basketball Teams Tennessee</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/66/8e/19668e8c015912978aa1b0f34929b5b4.jpg" data-lightbox="roadtrip" data-title="Protected Blog Log In Basketball Coach Basketball History Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/66/8e/19668e8c015912978aa1b0f34929b5b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTha8ioOy7wBvODjOx_195PeJfAPIvX-_6zXQ';" alt="Protected Blog Log In Basketball Coach Basketball History Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Protected Blog Log In Basketball Coach Basketball History Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/5e/3f/f65e3fe4431aa1a0ac46fe61a389ef3e.jpg" data-lightbox="roadtrip" data-title="2570 1711 Pat Summitt Social Cause Women In History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/5e/3f/f65e3fe4431aa1a0ac46fe61a389ef3e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLPAyfFL-Y4bTivszDkL5UKhKa8is1CAkjYA';" alt="2570 1711 Pat Summitt Social Cause Women In History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2570 1711 Pat Summitt Social Cause Women In History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/3e/dd/553edda861964c902178456b10b041c7.jpg" data-lightbox="roadtrip" data-title="Pat Summit Lady Vols Basketball Basketball Coach Pat Summitt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/3e/dd/553edda861964c902178456b10b041c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCHnGmZz9TmwuCfWmUvisvSBvL_enQuFzFmA';" alt="Pat Summit Lady Vols Basketball Basketball Coach Pat Summitt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summit Lady Vols Basketball Basketball Coach Pat Summitt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/19/e8/f8/19e8f8733ad4c28ff31def22cc124abe--vols-basketball-basketball-coach.jpg" data-lightbox="roadtrip" data-title="To Sum It Up A Legendary Basketball Coach Braves Alzheimer S Basketball Coach Pat Summitt Ncaa Champion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/19/e8/f8/19e8f8733ad4c28ff31def22cc124abe--vols-basketball-basketball-coach.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyuVuCkH_jB-vx2BgF0Axlcjas4R3dUNRmUQ';" alt="To Sum It Up A Legendary Basketball Coach Braves Alzheimer S Basketball Coach Pat Summitt Ncaa Champion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To Sum It Up A Legendary Basketball Coach Braves Alzheimer S Basketball Coach Pat Summitt Ncaa Champion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c9/58/5e/c9585ea8e2e30f671ec04fe4be79d2ec.jpg" data-lightbox="roadtrip" data-title="Remembering Ut Lady Vols Head Coach Pat Summitt Pat Summitt Lady Vols Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c9/58/5e/c9585ea8e2e30f671ec04fe4be79d2ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdktLb924bBX1oURUtDJ4g_G6WDhA9rqyM7A';" alt="Remembering Ut Lady Vols Head Coach Pat Summitt Pat Summitt Lady Vols Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Remembering Ut Lady Vols Head Coach Pat Summitt Pat Summitt Lady Vols Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/best-gi-bill-to-use.html">Best Gi Bill To Use</a></li>
+													<li class="list-group-item"><a href="/big-bill-f-is-for-family.html">Big Bill F Is For Family</a></li>
+													<li class="list-group-item"><a href="/bibille.html">Bibille</a></li>
+													<li class="list-group-item"><a href="/big-bill-flannel.html">Big Bill Flannel</a></li>
+													<li class="list-group-item"><a href="/best-college-team-gifts.html">Best College Team Gifts</a></li>
+													<li class="list-group-item"><a href="/best-womens-college-basketball-team-of-all-time.html">Best Womens College Basketball Team Of All Time</a></li>
+													<li class="list-group-item"><a href="/best-gift-cards-for-a-college-student.html">Best Gift Cards For A College Student</a></li>
+													<li class="list-group-item"><a href="/best-womens-college-gymnastics-team.html">Best Womens College Gymnastics Team</a></li>
+													<li class="list-group-item"><a href="/best-college-housewarming-gifts.html">Best College Housewarming Gifts</a></li>
+													<li class="list-group-item"><a href="/best-gifts-college-guys.html">Best Gifts College Guys</a></li>
+													<li class="list-group-item"><a href="/best-college-to-go-to-for-marine-biology.html">Best College To Go To For Marine Biology</a></li>
+													<li class="list-group-item"><a href="/best-college-graduation-gifts-for-guys.html">Best College Graduation Gifts For Guys</a></li>
+													<li class="list-group-item"><a href="/best-gift-cards-for-college-students-2019.html">Best Gift Cards For College Students 2019</a></li>
+													<li class="list-group-item"><a href="/best-looking-college-womens-basketball-player.html">Best Looking College Womens Basketball Player</a></li>
+													<li class="list-group-item"><a href="/best-college-graduation-gifts-2020.html">Best College Graduation Gifts 2020</a></li>
+													<li class="list-group-item"><a href="/best-womens-college-basketball-games.html">Best Womens College Basketball Games</a></li>
+													<li class="list-group-item"><a href="/best-college-to-go-to-for-nursing.html">Best College To Go To For Nursing</a></li>
+													<li class="list-group-item"><a href="/best-womens-college-basketball-teams-ever.html">Best Womens College Basketball Teams Ever</a></li>
+													<li class="list-group-item"><a href="/best-elementary-education-programs-in-va.html">Best Elementary Education Programs In Va</a></li>
+													<li class="list-group-item"><a href="/best-college-to-go-to-for-volleyball.html">Best College To Go To For Volleyball</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

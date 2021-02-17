@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Womens Basketball Blowout - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Womens Basketball Blowout",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/47/02/a4/4702a4321fc51d7f6870e29449d15d75.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+womens+basketball+blowout",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Womens Basketball Blowout</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The 81-point victory is tied for the. Sports Staff The Providence College Womens Basketball Team started its unique and challenging 2020-2021 season on the right foot. Baylor 99 Texas State 18 Jan. <br>				
+			</p>
+										<a class="badge badge-warning" href="/what-does-federal-benefit-credit-mean.html">what does federal benefit credit mean</a>
+											<a class="badge badge-dark" href="/what-is-the-gi-bill-bah-rate.html">what is the gi bill bah rate</a>
+											<a class="badge badge-danger" href="/what-is-911-gi-bill.html">what is 911 gi bill</a>
+											<a class="badge badge-info" href="/what-is-the-best-gift-for-graduation.html">what is the best gift for graduation</a>
+											<a class="badge badge-secondary" href="/what-is-a-gi-bill-kicker.html">what is a gi bill kicker</a>
+											<a class="badge badge-primary" href="/what-is-9gi-redken-shades.html">what is 9gi redken shades</a>
+											<a class="badge badge-warning" href="/what-is-college-application-week.html">what is college application week</a>
+											<a class="badge badge-danger" href="/what-happens-if-my-gi-bill-benefits-run-out-mid-semester.html">what happens if my gi bill benefits run out mid semester</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the ideal site.  Our website gives you hints for viewing the highest quality video and picture content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this video that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/02/a4/4702a4321fc51d7f6870e29449d15d75.jpg" data-lightbox="roadtrip" data-title="Huskies Stay Hot With Blowout Win Uconn Womens Basketball Womens Basketball I Love Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/02/a4/4702a4321fc51d7f6870e29449d15d75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuVu2FZNAGKesFRGLR3TzCt9EXmC2X_vw6eQ';" alt="Huskies Stay Hot With Blowout Win Uconn Womens Basketball Womens Basketball I Love Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Huskies Stay Hot With Blowout Win Uconn Womens Basketball Womens Basketball I Love Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/fe/ee/66feee7c5650f5a9a375173db3a208d3.jpg" data-lightbox="roadtrip" data-title="Balanced Blowout Stanford University Athletics Stanford Womens Basketball Womens Basketball Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/fe/ee/66feee7c5650f5a9a375173db3a208d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAp8IyWl5x9F9T3d0vuGHziOA0UnItsLNWWg';" alt="Balanced Blowout Stanford University Athletics Stanford Womens Basketball Womens Basketball Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Balanced Blowout Stanford University Athletics Stanford Womens Basketball Womens Basketball Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/a7/bd/67a7bd44c76054164af88202fa7f8a3a.jpg" data-lightbox="roadtrip" data-title="No 5 Louisville Women Blow Out Tennessee State 107 52 Basketball News Tennessee Louisville">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/a7/bd/67a7bd44c76054164af88202fa7f8a3a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi1VpIZ7gleWbr64g8-d2tDzOPwgpAXwITOQ';" alt="No 5 Louisville Women Blow Out Tennessee State 107 52 Basketball News Tennessee Louisville">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No 5 Louisville Women Blow Out Tennessee State 107 52 Basketball News Tennessee Louisville</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/88/db/6188db9178b70421b29a643d0ab1b193.jpg" data-lightbox="roadtrip" data-title="How The Connecticut Sun Can Even The Wnba Finals Wnba Basketball Girls Nba Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/88/db/6188db9178b70421b29a643d0ab1b193.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF88qSb60MAbVgyAtanHSoJ8uh9rAxRzjl9Q';" alt="How The Connecticut Sun Can Even The Wnba Finals Wnba Basketball Girls Nba Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How The Connecticut Sun Can Even The Wnba Finals Wnba Basketball Girls Nba Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/f7/ad/1cf7adffb395f789350ab7f0aa9bd98f.png" data-lightbox="roadtrip" data-title="Marvel At This Breanna Stewart Dunk In All Its Slow Motion Majesty Uconn Womens Basketball Womens Basketball Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/f7/ad/1cf7adffb395f789350ab7f0aa9bd98f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsaqci6s-qHKpUKPy4p77YDHmIgAEvlMoONw';" alt="Marvel At This Breanna Stewart Dunk In All Its Slow Motion Majesty Uconn Womens Basketball Womens Basketball Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marvel At This Breanna Stewart Dunk In All Its Slow Motion Majesty Uconn Womens Basketball Womens Basketball Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/65/aa/2865aaa61a01304a8e721df1a2744dbf.jpg" data-lightbox="roadtrip" data-title="Legendary Women S Basketball Player Sheryl Swoopes Who Is Regarded As One Of The Greatest Female Athletes Basketball Players Womens Basketball Female Athletes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/65/aa/2865aaa61a01304a8e721df1a2744dbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa_9d1mbZCNF_MPW6VbXPg7_kOqGy8j7o6Rg';" alt="Legendary Women S Basketball Player Sheryl Swoopes Who Is Regarded As One Of The Greatest Female Athletes Basketball Players Womens Basketball Female Athletes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Legendary Women S Basketball Player Sheryl Swoopes Who Is Regarded As One Of The Greatest Female Athletes Basketball Players Womens Basketball Female Athletes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ef/46/9f/ef469f247391b36dffe1dd0c00802c7b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa_9d1mbZCNF_MPW6VbXPg7_kOqGy8j7o6Rg';" alt="Legendary Women S Basketball Player Sheryl Swoopes Who Is Regarded As One Of The Greatest Female Athletes Basketball Players Womens Basketball Female Athletes">
+										<div class="card-body">
+						<h3 class="h5"><b>After both sides missed shots on their first offensive possessions Sharice Kawakami nailed a three from the left wing to put.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College womens basketball blowout</strong>. 
+								
+																	Louisville Womens Basketball Bounces Back With Blowout at Boston College - Sports Illustrated Louisville Cardinals News Analysis and More Louisville Bounces Back With Blowout at Boston College. 
+																	Dallinger from Sydney Australia hit 10 of 15 shots including five 3-pointers and finished with 29 points for MCC. 
+																	Obviously when we shoot the three we. 
+																	Britney Griner dunked twice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2021 NCAA womens basketball. 
+																	Florida State entered Sundays contest the winner of six of last eight meetings including in last year. 
+																	This wasnt the largest blowout in womens basketball history but its arguably the most dominating one. 
+																	An ugly brawl broke out following a womens college basketball game between Texas Southern and Alabama State in which several punches were. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Louisville leads UConn drops in 1st Power 10 of February. 
+																	Despite falling to a talented Quinnipiac University team on the road in their season opener by a score of 71-65 PC bounced back in the following contest against its in-state rival the University of Rhode Island. 
+																	Louisville womens basketball improved to 12-0 on the season Sunday in a revengeful way. 
+																	For the first time in program history Louisville womens basketball is the No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kennedy Todd-Williams dubbed the Scottie Pippen of college basketball by Banghart had 12 points along with nine rebounds four offensive and four assists as well as a block and a steal. 
+																	Sophomore Ziggy Reid led the charge scoring a game-high 16 points on a career-best four 3-point field goals in the. 
+																	The Tigers junior duo of Zanna Myers and Karina Smits was as unstoppable as ever Wednesday as the two torched Holy Cross for a combined 15 3-pointers and 47 points as the Tigers rolled to a. 
+																	The Gamecocks routed College of Charleston 119-38 Wednesday night to secure their second-largest win in program history according to The State. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to make womens college basketball even better in 2021 A competitive UConn-Tennessee game some competition for Baylor in the Big 12 and a race for player of the year would be good for the. 
+																	In sports a blowout is an easy or one-sided victory. 
+																	A win locked up a home playoff game for the Arizona Western College womens basketball team and the Lady Mats did it in style on Saturday night. 
+																	14 Bulldogs came out and set a school record for the least amount of points scored in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was a nightmare from start to finish for Mississippi State at Reed Arena in College Station Texas. 
+																	0 MILES CITY Newcomers Rebekah Dallinger and Jana Conejero led Miles Community College to an 81-60 road victory over Bismarck State in the Pioneers long-awaited season opener Monday night. 
+																	Team Frosties defeat Team Goose 9-1. 
+																	AWC hammered Chandler-Gilbert 100-25 in Yuma and led from the opening tip to the final buzzer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After Sundays blowout win over Florida State and previously unbeaten Stanford falling in. 
+																	It occurs when one athletic team or individual performer outscores another by a large margin or in such a fashion that allows the second team or individual little chance of a victory from a point early in a competition game contest or event eg. 
+																	Monday Night Raw found its way to the basketball court. 
+																	A new era for the University of Kentucky womens basketball program got off to a strange and successful start on Wednesday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia returns to the Top 25 And 1 after blowout win over Clemson The Cavaliers have found a groove after getting smoked by Gonzaga a few weeks ago. 
+																	1 team in the country. 
+																	The Merrimack College mens basketball team hit eight 3-pointers for its first eight made shots of Thursday afternoons game against Saint Francis University sinking a season-high 12 long balls overall in a 68-62 Northeast Conference victory for the Warriors at Hammel Court. 
+																	The hot shooting returned to the Iowa State lineup on Sunday afternoon despite the team having played just one game in the past 18 days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Iowa State went into Lubbock Texas to face the Red Raiders and hit a school record 19 3-pointers in the 99-72 win. 
+																	In their first game under interim head coach Kyra Elzy the 11th. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/d0/cd/dfd0cd41cf7f1ce76b099307442f5d5b.jpg" data-lightbox="roadtrip" data-title="Our View Huskies Reach The Summit Uconn Womens Basketball Ncaa Champion Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/d0/cd/dfd0cd41cf7f1ce76b099307442f5d5b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUOjSa8TQJGp0IAAYO3Jv9-CtpGZVlk7rA0Q';" alt="Our View Huskies Reach The Summit Uconn Womens Basketball Ncaa Champion Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our View Huskies Reach The Summit Uconn Womens Basketball Ncaa Champion Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/04/6b/f5/046bf52103516ad9141a9fcad9640daf.jpg" data-lightbox="roadtrip" data-title="Wordpress Com High School Coaching Regents Exam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/04/6b/f5/046bf52103516ad9141a9fcad9640daf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROVPdZ3jgm_K93oZ_m1ACWEMx2vRn1AROqDw';" alt="Wordpress Com High School Coaching Regents Exam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wordpress Com High School Coaching Regents Exam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/d7/59/d6d7596dbc2da54ddd3ce05042c183ad.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Falls At Southwest On Monday Womens Basketball College Athletics Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/d7/59/d6d7596dbc2da54ddd3ce05042c183ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo_2riWYJzWSKdiGk469ClBs4SqjuSaqr7qA';" alt="Women S Basketball Falls At Southwest On Monday Womens Basketball College Athletics Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Falls At Southwest On Monday Womens Basketball College Athletics Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/98/52/d49852cdeca791954ea5ac3fb1fac605.png" data-lightbox="roadtrip" data-title="Pin On News3">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/98/52/d49852cdeca791954ea5ac3fb1fac605.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUCvJpNxg2GyBWZTZFxfEKw5gxyBnNDThSaQ';" alt="Pin On News3">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On News3</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/36/a8/9d36a8b4a56f5919fc4d03b0533bfc16.jpg" data-lightbox="roadtrip" data-title="Pin By Keeley Schmitt On Uconn Basketball Mom Uconn Womens Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/36/a8/9d36a8b4a56f5919fc4d03b0533bfc16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr_AcF80PX7aLWq1fRIXP6Sp3PDHbJaaocQ';" alt="Pin By Keeley Schmitt On Uconn Basketball Mom Uconn Womens Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Keeley Schmitt On Uconn Basketball Mom Uconn Womens Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/93/dc/8a93dcd366323c13e363f200cf767ad9.jpg" data-lightbox="roadtrip" data-title="Greenfield Leads Stanford Women Past Northridge Northridge Stanford Cardinal Stanford">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/93/dc/8a93dcd366323c13e363f200cf767ad9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiMJhFaIvacQO0e9ThgVdbDuuwKdxvrSYZ3g';" alt="Greenfield Leads Stanford Women Past Northridge Northridge Stanford Cardinal Stanford">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Greenfield Leads Stanford Women Past Northridge Northridge Stanford Cardinal Stanford</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/f1/f6/88f1f603a435e0ab06521488c0996c2b.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Aggies Add Destiny Pitts Star Minnesota Transfer In 2020 Womens Basketball Minnesota Minnesota Gophers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/f1/f6/88f1f603a435e0ab06521488c0996c2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzso7L7N6KArivCWv-DFkICrdbjejIev3wsQ';" alt="Women S Basketball Aggies Add Destiny Pitts Star Minnesota Transfer In 2020 Womens Basketball Minnesota Minnesota Gophers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Aggies Add Destiny Pitts Star Minnesota Transfer In 2020 Womens Basketball Minnesota Minnesota Gophers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/dc/a5/6bdca56fa67ac8ef0ebaecef01c2e1b0.jpg" data-lightbox="roadtrip" data-title="Tennessee Women S Basketball Hits The Road To Take On Texas Sunday Clarksville Tn Online Womens Basketball Tennessee Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/dc/a5/6bdca56fa67ac8ef0ebaecef01c2e1b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzT4fgzaY5O3iUkwfxc8YtmFYsZtxoK7z-Ow';" alt="Tennessee Women S Basketball Hits The Road To Take On Texas Sunday Clarksville Tn Online Womens Basketball Tennessee Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tennessee Women S Basketball Hits The Road To Take On Texas Sunday Clarksville Tn Online Womens Basketball Tennessee Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/c9/8f/15c98fb16b499753200679a8d80ed753.jpg" data-lightbox="roadtrip" data-title="Jeff Jacobs Steady Napheesa Collier A Calming Force For Uconn Uconn Womens Lacrosse Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/c9/8f/15c98fb16b499753200679a8d80ed753.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr8Bl7_Q9PsRJp5gg-XFbbu5EVj_JXyvbZaA';" alt="Jeff Jacobs Steady Napheesa Collier A Calming Force For Uconn Uconn Womens Lacrosse Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jeff Jacobs Steady Napheesa Collier A Calming Force For Uconn Uconn Womens Lacrosse Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/1b/af/1b1baf24eb6bad09a4e63b148f9eecfd.gif" data-lightbox="roadtrip" data-title="Uconn S 100 Game Winning Streak One Blowout At A Time Uconn Uconn Basketball Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/1b/af/1b1baf24eb6bad09a4e63b148f9eecfd.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAfkduiY1ZbuxIzI1hvDcn4K_1AFQ9Gzy1_Q';" alt="Uconn S 100 Game Winning Streak One Blowout At A Time Uconn Uconn Basketball Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn S 100 Game Winning Streak One Blowout At A Time Uconn Uconn Basketball Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/e5/57/f0e55736a269fad32fc28c78e723af33.jpg" data-lightbox="roadtrip" data-title="No 1 Uconn Women Rout 10th Ranked Stanford 78 53 College Basketball Game College Basketball Stanford">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/e5/57/f0e55736a269fad32fc28c78e723af33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxn91m8M8xLuO6W4GIpCP0IfHlXXzF_-JGg';" alt="No 1 Uconn Women Rout 10th Ranked Stanford 78 53 College Basketball Game College Basketball Stanford">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No 1 Uconn Women Rout 10th Ranked Stanford 78 53 College Basketball Game College Basketball Stanford</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/68/01/5a6801c7a2efe3f6c0a0aee625c8c3df.jpg" data-lightbox="roadtrip" data-title="Pin By Keeley Schmitt On Uconn Uconn Womens Basketball Womens Basketball Uconn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/68/01/5a6801c7a2efe3f6c0a0aee625c8c3df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzB2EzNzwymH2-W17QbtrN00M4pO41d8xtOw';" alt="Pin By Keeley Schmitt On Uconn Uconn Womens Basketball Womens Basketball Uconn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Keeley Schmitt On Uconn Uconn Womens Basketball Womens Basketball Uconn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/46/9f/ef469f247391b36dffe1dd0c00802c7b.png" data-lightbox="roadtrip" data-title="Nurse Scores 20 As Uconn Routs East Carolina 92 46 Uconn Uconn Womens Basketball Basketball Knee">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/46/9f/ef469f247391b36dffe1dd0c00802c7b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4-wMfywZRgebGpQAaujckcBZCTODCHVvycQ';" alt="Nurse Scores 20 As Uconn Routs East Carolina 92 46 Uconn Uconn Womens Basketball Basketball Knee">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nurse Scores 20 As Uconn Routs East Carolina 92 46 Uconn Uconn Womens Basketball Basketball Knee</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-eligibility-phone-number.html">Gi Bill Eligibility Phone Number</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-military.html">Gi Bill For Military</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-for-officers.html">Gi Bill Eligibility For Officers</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-verification.html">Gi Bill Eligibility Verification</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-fire-academy.html">Gi Bill For Fire Academy</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-requirements-for-dependents.html">Gi Bill Eligibility Requirements For Dependents</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-executive-education.html">Gi Bill For Executive Education</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-private-pilot-license.html">Gi Bill For Private Pilot License</a></li>
+													<li class="list-group-item"><a href="/gi-bill-extension-chapter-33.html">Gi Bill Extension Chapter 33</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-status.html">Gi Bill Eligibility Status</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-marine-reserves.html">Gi Bill For Marine Reserves</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-marines.html">Gi Bill For Marines</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-dependents-how-does-it-work.html">Gi Bill For Dependents How Does It Work</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-dependents-of-disabled-veterans.html">Gi Bill For Dependents Of Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-percentage.html">Gi Bill Eligibility Percentage</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-online-degree.html">Gi Bill For Online Degree</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-a-house.html">Gi Bill For A House</a></li>
+													<li class="list-group-item"><a href="/gi-bill-extension.html">Gi Bill Extension</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-reserve-officers.html">Gi Bill For Reserve Officers</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-home-purchase.html">Gi Bill For Home Purchase</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

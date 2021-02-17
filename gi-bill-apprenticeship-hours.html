@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gi Bill Apprenticeship Hours - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gi Bill Apprenticeship Hours",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/68/0a/3f/680a3f61ea92d99a6bc759d0159eb753.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gi+bill+apprenticeship+hours",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gi Bill Apprenticeship Hours</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">2 Have a private pilots license. Depending on which GI Bill is used these training opportunities differ in the way they pay. Post 911 GI Bill flight benefits A program within the scope of the GI Bill that promotes flying education needed to become a professional pilot. <br>				
+			</p>
+										<a class="badge badge-primary" href="/college-gymnastics-america.html">college gymnastics america</a>
+											<a class="badge badge-dark" href="/college-gymnastics-gallery.html">college gymnastics gallery</a>
+											<a class="badge badge-dark" href="/college-gymnastics-judging.html">college gymnastics judging</a>
+											<a class="badge badge-primary" href="/college-gymnastics-fails.html">college gymnastics fails</a>
+											<a class="badge badge-secondary" href="/college-gymnastics-rankings-2020-individual.html">college gymnastics rankings 2020 individual</a>
+											<a class="badge badge-info" href="/college-gymnastics-news.html">college gymnastics news</a>
+											<a class="badge badge-warning" href="/college-gymnastics-all-around-rankings.html">college gymnastics all around rankings</a>
+											<a class="badge badge-success" href="/college-gymnastics-beam-routines.html">college gymnastics beam routines</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the right blog.  Our website gives you suggestions for seeing the highest quality video and image content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you view.  It is also possible to bring about supporting this site by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/79/96/b0799697b37d508691497b8d405b4415.jpg" data-lightbox="roadtrip" data-title="Dept Of Veterans Affairs Gi Bill Web Site Loads Of Info Gi Bill Education Job Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/79/96/b0799697b37d508691497b8d405b4415.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFZ-hhEE3cUl7R_2MfmBarTKASx6usIy_ibw';" alt="Dept Of Veterans Affairs Gi Bill Web Site Loads Of Info Gi Bill Education Job Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dept Of Veterans Affairs Gi Bill Web Site Loads Of Info Gi Bill Education Job Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/43/31/6d433104a57de384627e61d9dc553657.jpg" data-lightbox="roadtrip" data-title="Pin On Sora Ebook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/43/31/6d433104a57de384627e61d9dc553657.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHtV6YyFInPMmLyEZBIuca1LoLPDK67cSX7g';" alt="Pin On Sora Ebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sora Ebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/55/ff/f155ff910bfb90c3863b2a3ead0680eb.png" data-lightbox="roadtrip" data-title="Veap Reap Tuition Assistance And Other Financial Aid Tuition Assistance Tuition Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/55/ff/f155ff910bfb90c3863b2a3ead0680eb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF1nWU265caIDsLY8AnJOlrUBX4_dGSL5aBw';" alt="Veap Reap Tuition Assistance And Other Financial Aid Tuition Assistance Tuition Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veap Reap Tuition Assistance And Other Financial Aid Tuition Assistance Tuition Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/b2/05/1ab205bf3b4fe5b7e86e1ef5a8b9fcbc.png" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers 3 7 Upcoming Mc3 Medical Jobs Healthcare Jobs Job Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/b2/05/1ab205bf3b4fe5b7e86e1ef5a8b9fcbc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR992__nxx1ADaKmFj5Jtpmll8URQELaGFq-w';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers 3 7 Upcoming Mc3 Medical Jobs Healthcare Jobs Job Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers 3 7 Upcoming Mc3 Medical Jobs Healthcare Jobs Job Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/44/7c/ef447ca2d071fa6cc697604aeca9a6c5.png" data-lightbox="roadtrip" data-title="Education Training Benefits For Veterans The Department Of Veterans Affairs Provides Vari Veteran Jobs Education And Training Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/44/7c/ef447ca2d071fa6cc697604aeca9a6c5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTULdF6bGzoVas--9_ALkTKevQXGPesQo-8Tw';" alt="Education Training Benefits For Veterans The Department Of Veterans Affairs Provides Vari Veteran Jobs Education And Training Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Education Training Benefits For Veterans The Department Of Veterans Affairs Provides Vari Veteran Jobs Education And Training Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c3/09/54/c309541ba7b1ba9c2d1ea8617767f3b6.jpg" data-lightbox="roadtrip" data-title="Pin On Jobs For Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c3/09/54/c309541ba7b1ba9c2d1ea8617767f3b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvnxWZy75DU9uFSldPxWAUd_nqpC7BIJerQ';" alt="Pin On Jobs For Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Jobs For Veterans</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f1/55/ff/f155ff910bfb90c3863b2a3ead0680eb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvnxWZy75DU9uFSldPxWAUd_nqpC7BIJerQ';" alt="Pin On Jobs For Veterans">
+										<div class="card-body">
+						<h3 class="h5"><b>18 years of age High school graduate or GED equivalent Physically able to perform the work of the trade and work at high elevations Social Securtiy card or I-9 documentation and pass a drug test.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gi bill apprenticeship hours</strong>. 
+								
+																	VA will use this chart to help determine training time. 
+																	An apprenticeship or on-the-job OTJ training program is an effective way for veterans to use their Post-911 GI Bill benefit. 
+																	Quarter Hours Equivalency Chart Keywords. 
+																	VA Eligibility - Qualifying Veterans may use their GI Bill benefits in coordination with the Western Washington Masonry Trades Apprenticeship Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unemployed and separating service members now will be able to train to become Journeyman Carpenters and receive GI Bill benefits as the Post-911 GI Bill now covers apprenticeship training. 
+																	Apprentices will either attend a Basic academy optional if prerequisites met andor a Advanced academy mandatory. 
+																	With your GI Bill you receive one hundred percent of the monthly housing allowance for your first 6 months of training. 
+																	There are a wide variety of on-the-job and apprenticeship opportunities available. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The intent of the Program is to take career entry firefighters and provide a hybrid of education training and paid work experience of 3000 hours. 
+																	This training is not available to active duty Servicemembers or spouses. 
+																	In order to take the license exam to become a Journeyman electrician an individual must have a combination of 4 years of apprentice experience 8000 hours on-the-job training and at least 288 hours of classroom training. 
+																	Type of Assistance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Check Post-911 GI Bill rates Montgomery GI Bill rates and other benefit amounts. 
+																	So the total amount of pay remains approximately the same. 
+																	Lets learn a little bit about flight schools that accept the GI Bill flight training benefits FAA part 141 flight schools how they are related to each other and why you should care. 
+																	Now class is in session folks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Individuals over the age of 16 spending at least 50 of their working hours in England over the duration of their apprenticeship and not in full-time education can apply for an apprenticeship. 
+																	1 Qualify for the Post-911 GI Bill Montgomery GI Bill or Reserve Educational Assistance Program REAP. 
+																	The amount of money youll get for things like books tuition and housing depends on which program you choose. 
+																	VA educational assistance programs including the Post-911 GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Veteran generally enters into a training contract for a specific period with an employer and at the end of the training period the. 
+																	Quarter Hours Equivalency Chart Author. 
+																	RAPs enable and energize more employers to participate and provide them access to larger talent pools that have been trained for entry-level to management positions thereby meeting industry demands and reducing unemployment. 
+																	Learn how GI Bill training programs can help you work in an industry like plumbing firefighting or hotel management that requires on-the-job training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each program includes a minimum of 2000 hours of on-the-job training and 144 hours of classroom instruction each year. 
+																	Please see this link to Title 12 Article 23 of Colorados Revised Statutes for more detailed information. 
+																	Search for participating employers. 
+																	Find the most recent GI Bill BAH rates and compare benefits with the GI Bill comparison tool. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At the end of the training period the veteran is granted job. 
+																	These programs allow Veterans to learn a trade or skill through training on the job rather than by attending a formal program of classroom based instruction yielding a degree or certificate. 
+																	Employers can offer apprenticeships to new entrants or use them to grow talent among current employees. 
+																	And 3 Have a second-class medical certificate valid for second-class privilegesor a first-class medical certificate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	7112007 12104 PM. 
+																	Department of Veterans Affairs specifies that you must accomplish the following. 
+																	For example if using the MGIB the GI Bill amount progressively slides downward based on time in the program but the amount received from the employer slides upward at almost the same rate as the student learns more about the job. 
+																	If using the Post 911 GI Bill you would receive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To use a GI Bill for flight training the US. 
+																	We provide education benefits to qualifying Veterans and their family members. 
+																	These benefits are not available to active-duty service members or their spouses using transferred benefits. 
+																	To apprenticeships Who are they for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI Bill Quarter hours Equivalency Certifying Official Terms Created Date. 
+																	Post-911 GI Bill Apprenticeship On-the-Job Training Payments If you are using the Post-911 GI Bill you will get 100 of the monthly housing allowance for the first six months of training 80. 
+																	If your program is approved by VA and you qualify for Post-911 GI Bill benefits you could get money for books supplies and housing. 
+																	A Registered Apprenticeship Program RAP is a proven model of apprenticeship that has been validated by the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An apprentice is someone 16 or older who is learning a career from a skilled worker and earning while they learn all without student loan debt. 
+																	GI Bill payments are issued monthly after VA receives certification of hours worked from your employer or union. 
+																	Apprenticeships equip individuals with the necessary skills. 
+																	Payments from your GI Bill are sent out on a monthly basis after VA obtains confirmation of hours worked from your union or employer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A veteran will enter into a free paid apprenticeship training program for a stated period of time. 
+																	100 of the monthly housing stipend for the first six months of training. 
+																	On-the-JobApprenticeship Training Under the Post-911 GI Bill. 
+																	These programs allow veterans to learn a trade rather than going through a formal education system. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Labor or a State Apprenticeship Agency. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/32/1b/f0321b754e874c7e67a309c3f592fb7f.png" data-lightbox="roadtrip" data-title="Compliance Assistance Wages And The Fair Labor Standards Act Flsa Wage And Hour Division Whd U S Department Of Labor Wage Acting Compliance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/32/1b/f0321b754e874c7e67a309c3f592fb7f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRss2myTdhrBGeXvlaYQBk34Cqf2FzgtldPqQ';" alt="Compliance Assistance Wages And The Fair Labor Standards Act Flsa Wage And Hour Division Whd U S Department Of Labor Wage Acting Compliance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Compliance Assistance Wages And The Fair Labor Standards Act Flsa Wage And Hour Division Whd U S Department Of Labor Wage Acting Compliance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9c/05/a0/9c05a09fa49a19c6fc066d042988bf17.jpg" data-lightbox="roadtrip" data-title="Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9c/05/a0/9c05a09fa49a19c6fc066d042988bf17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEMd80dwZffSMTuAHcbvx44Lend5PPp7RVg';" alt="Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/8a/8b/d48a8b308c2c6c96374bca3e9552c3c8.jpg" data-lightbox="roadtrip" data-title="Heavy Equipment Operator Jobs Carpentry Apprenticeships Construction Management Careers Apprenticeship Wayne Brothers Carpentry Apprenticeship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/8a/8b/d48a8b308c2c6c96374bca3e9552c3c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxWYUSTbqbk2VxJjsmHhbnJZl2j2_FCgT-wA';" alt="Heavy Equipment Operator Jobs Carpentry Apprenticeships Construction Management Careers Apprenticeship Wayne Brothers Carpentry Apprenticeship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Heavy Equipment Operator Jobs Carpentry Apprenticeships Construction Management Careers Apprenticeship Wayne Brothers Carpentry Apprenticeship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/52/e0/1c52e053a19586decab8190b7c9c15a2.jpg" data-lightbox="roadtrip" data-title="Plictho 1548 Verfrecepten Uit Venetie Genua En Andere Italiaanse Steden Aanwezig In De Bibliotheek Van Het Textielmuseu Natural Dyes Medieval Shiny Objects">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/52/e0/1c52e053a19586decab8190b7c9c15a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPpVrkDuR4sof6C2U4D_cTw3_pKkzBu7WO7g';" alt="Plictho 1548 Verfrecepten Uit Venetie Genua En Andere Italiaanse Steden Aanwezig In De Bibliotheek Van Het Textielmuseu Natural Dyes Medieval Shiny Objects">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plictho 1548 Verfrecepten Uit Venetie Genua En Andere Italiaanse Steden Aanwezig In De Bibliotheek Van Het Textielmuseu Natural Dyes Medieval Shiny Objects</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/68/0a/3f/680a3f61ea92d99a6bc759d0159eb753.jpg" data-lightbox="roadtrip" data-title="Nigerian Army Engineers Corps Recruits Artisans Tradesmen Engineering Army Apprenticeship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/68/0a/3f/680a3f61ea92d99a6bc759d0159eb753.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8brqZB9ZAntbWSIyTrxrDTe7_xv5ccOtiw';" alt="Nigerian Army Engineers Corps Recruits Artisans Tradesmen Engineering Army Apprenticeship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nigerian Army Engineers Corps Recruits Artisans Tradesmen Engineering Army Apprenticeship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/97/22/57/9722575b8775e6e53a3c9f7a6fa0a549.jpg" data-lightbox="roadtrip" data-title="Disability Disability Inclusion Disability Gaming Logos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/97/22/57/9722575b8775e6e53a3c9f7a6fa0a549.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwzecq5WFD8p3exiaxxBnUH3QDDQxUMtxyw';" alt="Disability Disability Inclusion Disability Gaming Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disability Disability Inclusion Disability Gaming Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/42/13/b6/4213b63b8f3db5b1e2b8b5763f813fd3.jpg" data-lightbox="roadtrip" data-title="Pin On Job Career Fairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/42/13/b6/4213b63b8f3db5b1e2b8b5763f813fd3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZYQ37MLl2NlbQeymCmJrDgFzDfLJazKO8g';" alt="Pin On Job Career Fairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Job Career Fairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/db/a0/23dba0fe7aedd60e03bfcbafc9b7befe.jpg" data-lightbox="roadtrip" data-title="Life Covers 500 549 Life Magazine Covers Life Magazine Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/db/a0/23dba0fe7aedd60e03bfcbafc9b7befe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvF5nnLO8dhqA1b85pjlC0043qFMqVcFytow';" alt="Life Covers 500 549 Life Magazine Covers Life Magazine Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Life Covers 500 549 Life Magazine Covers Life Magazine Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/47/74/b6/4774b6adc501aa35ffa348ca90a396a3.jpg" data-lightbox="roadtrip" data-title="A L Brown High School Graduates Are Accepted Into The Premier Waynebrothers Apprenticeship Prog Wayne Brothers Construction Contractors Construction Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/47/74/b6/4774b6adc501aa35ffa348ca90a396a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWUGBx52d0X8ekQ-iLqceHKczeZG3_lSnJ8A';" alt="A L Brown High School Graduates Are Accepted Into The Premier Waynebrothers Apprenticeship Prog Wayne Brothers Construction Contractors Construction Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A L Brown High School Graduates Are Accepted Into The Premier Waynebrothers Apprenticeship Prog Wayne Brothers Construction Contractors Construction Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/30/1a/22301a45c20f03bad9f74c584bca8cc0.jpg" data-lightbox="roadtrip" data-title="Phlebotomy Career Phlebotomy Phlebotomist Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/30/1a/22301a45c20f03bad9f74c584bca8cc0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcPP3Xmdowpbh0ImMoUF66nScWdvbLSiu4Q';" alt="Phlebotomy Career Phlebotomy Phlebotomist Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phlebotomy Career Phlebotomy Phlebotomist Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/9a/a2/259aa2112da749792d20898527f8278a.jpg" data-lightbox="roadtrip" data-title="Devk1018 S Blog International Typographic Style Graphic Design Images Typography Poster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/9a/a2/259aa2112da749792d20898527f8278a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRho8y5mqEOqab8DoqbyR79NOzShXiLtP3NNA';" alt="Devk1018 S Blog International Typographic Style Graphic Design Images Typography Poster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Devk1018 S Blog International Typographic Style Graphic Design Images Typography Poster</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/72/88/cf72881bcbfabdbed0db196281bd464a.jpg" data-lightbox="roadtrip" data-title="Pin On Entertainment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/72/88/cf72881bcbfabdbed0db196281bd464a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDRf5iE2oNSBr3NgtZCAv32Zn6ubWyUF_Aw';" alt="Pin On Entertainment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Entertainment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/39/06/26/390626ebbdf9f23f9f4e5b284b41c04f.jpg" data-lightbox="roadtrip" data-title="When Square Founder Jim Mckelvey Couldn T Find Enough Qualified Workers In His Native St Louis And Had To Move His Schools In America Gate City Coding School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/39/06/26/390626ebbdf9f23f9f4e5b284b41c04f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH_8Id51-aZO8v2iz46zy9-GpyjJrhz7V2hg';" alt="When Square Founder Jim Mckelvey Couldn T Find Enough Qualified Workers In His Native St Louis And Had To Move His Schools In America Gate City Coding School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Square Founder Jim Mckelvey Couldn T Find Enough Qualified Workers In His Native St Louis And Had To Move His Schools In America Gate City Coding School</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/north-carolina-va-educational-benefits.html">North Carolina Va Educational Benefits</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-uniforms.html">Ncaa Womens Basketball Uniforms</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-timeouts.html">Ncaa Womens Basketball Timeouts</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-virginia-tech.html">Ncaa Womens Basketball Virginia Tech</a></li>
+													<li class="list-group-item"><a href="/occidental-college-womens-basketball-schedule.html">Occidental College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/newberry-college-womens-basketball-schedule.html">Newberry College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/northeast-community-college-womens-basketball-live-stream.html">Northeast Community College Womens Basketball Live Stream</a></li>
+													<li class="list-group-item"><a href="/new-gi-bill-bah-rates-2020.html">New Gi Bill Bah Rates 2020</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-college-basketball-conference-standings.html">Ncaa Womens College Basketball Conference Standings</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-texas-tech.html">Ncaa Womens Basketball Texas Tech</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-time.html">Ncaa Womens Basketball Time</a></li>
+													<li class="list-group-item"><a href="/north-idaho-college-womens-basketball-schedule.html">North Idaho College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-texas.html">Ncaa Womens Basketball Texas</a></li>
+													<li class="list-group-item"><a href="/new-york-film-academy-gi-bill.html">New York Film Academy Gi Bill</a></li>
+													<li class="list-group-item"><a href="/new-va-education-programs.html">New Va Education Programs</a></li>
+													<li class="list-group-item"><a href="/numero-9-yu-gi-oh-prezzo.html">Numero 9 Yu Gi Oh Prezzo</a></li>
+													<li class="list-group-item"><a href="/notre-dame-vs-boston-college-womens-basketball.html">Notre Dame Vs Boston College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/notre-dame-college-ohio-womens-basketball.html">Notre Dame College Ohio Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/oberlin-college-womens-basketball-schedule.html">Oberlin College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/new-gi-bill-eligibility.html">New Gi Bill Eligibility</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>University Of Mary Washington Gi Bill - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "University Of Mary Washington Gi Bill",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/88/51/a5/8851a5d4c72f3f48f65e5bb83c107299.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=university+of+mary+washington+gi+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>University Of Mary Washington Gi Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Bill students at UMW. The entire University of Washington community mourns the loss of one of the great public servants of our day. If you are a student on the Fredericksburg Campus please contact Patricia Sarkuti at psarkutiumwedu or at 540-654-2140. <br>				
+			</p>
+										<a class="badge badge-dark" href="/lane-college-womens-basketball-roster.html">lane college womens basketball roster</a>
+											<a class="badge badge-secondary" href="/livingstone-college-womens-basketball-coach.html">livingstone college womens basketball coach</a>
+											<a class="badge badge-danger" href="/lakeland-college-womens-basketball-schedule.html">lakeland college womens basketball schedule</a>
+											<a class="badge badge-warning" href="/latest-college-to-go-online.html">latest college to go online</a>
+											<a class="badge badge-success" href="/kings-college-wimbledon-gymnastics.html">kings college wimbledon gymnastics</a>
+											<a class="badge badge-success" href="/kings-college-womens-basketball.html">kings college womens basketball</a>
+											<a class="badge badge-warning" href="/lakeland-college-womens-basketball-team.html">lakeland college womens basketball team</a>
+											<a class="badge badge-secondary" href="/medical-college-of-wisconsin-gi-pathology-fellowship.html">medical college of wisconsin gi pathology fellowship</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the right site.  Our website gives you hints for seeing the maximum quality video and image content, hunt and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this video that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/e7/f1/76e7f121b33302fe2c70de53cc98a906.jpg" data-lightbox="roadtrip" data-title="New Gi Bill Doubles Education Dollars For Post 9 11 Veterans Gi Bill Education Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/e7/f1/76e7f121b33302fe2c70de53cc98a906.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2PIkESLlucoVqUX2VuAFqRsAKLKTcqgA3iA';" alt="New Gi Bill Doubles Education Dollars For Post 9 11 Veterans Gi Bill Education Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Gi Bill Doubles Education Dollars For Post 9 11 Veterans Gi Bill Education Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/1d/29/851d29d268f7be8126ad7e68a640db50.jpg" data-lightbox="roadtrip" data-title="Pin On I Love My Hbcu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/1d/29/851d29d268f7be8126ad7e68a640db50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcAsLP-Vmj1no-5ZYEzWgow3Yd419T3smwXw';" alt="Pin On I Love My Hbcu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On I Love My Hbcu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/a2/45/c6a245832db9ac8f33cc2a3ec46be001.png" data-lightbox="roadtrip" data-title="Pin On Redesign Skola">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/a2/45/c6a245832db9ac8f33cc2a3ec46be001.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ162DaYViTdwdZ2RH_AqyWjHBYwlBXuDOY-w';" alt="Pin On Redesign Skola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Redesign Skola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/a6/0e/cea60e41a8aa77249dce190fd758726f.jpg" data-lightbox="roadtrip" data-title="Christopher Newport University Virginia Colony Newport University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/a6/0e/cea60e41a8aa77249dce190fd758726f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxt1OYDoLfeUM7RtXT4hMT1riVYo_wC-JCbQ';" alt="Christopher Newport University Virginia Colony Newport University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christopher Newport University Virginia Colony Newport University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/51/a5/8851a5d4c72f3f48f65e5bb83c107299.jpg" data-lightbox="roadtrip" data-title="Jaihind Comprehensive Educational Institute Was Established In 1996 Jaihind Engineering College Which Top Engineering Colleges Engineering Colleges Engineering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/51/a5/8851a5d4c72f3f48f65e5bb83c107299.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj2PpRqYWsi4cMZIrWTfjuy_Qnt9Wm2qz3IQ';" alt="Jaihind Comprehensive Educational Institute Was Established In 1996 Jaihind Engineering College Which Top Engineering Colleges Engineering Colleges Engineering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jaihind Comprehensive Educational Institute Was Established In 1996 Jaihind Engineering College Which Top Engineering Colleges Engineering Colleges Engineering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/39/72/713972bff65a1bececb136d78e833b25.jpg" data-lightbox="roadtrip" data-title="Montgomery Council Votes Not To Sign Wvu Tech Move Agreement West Virginia Virginia Hill Montgomery City">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/39/72/713972bff65a1bececb136d78e833b25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGW0sbbPl10ejxpcvOEMqDzq9iNjXOvmVhg';" alt="Montgomery Council Votes Not To Sign Wvu Tech Move Agreement West Virginia Virginia Hill Montgomery City">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Montgomery Council Votes Not To Sign Wvu Tech Move Agreement West Virginia Virginia Hill Montgomery City</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/71/39/72/713972bff65a1bececb136d78e833b25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGW0sbbPl10ejxpcvOEMqDzq9iNjXOvmVhg';" alt="Montgomery Council Votes Not To Sign Wvu Tech Move Agreement West Virginia Virginia Hill Montgomery City">
+										<div class="card-body">
+						<h3 class="h5"><b>Last summer she presented at the American Library Association Annual Conference in Washington DC.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>University of mary washington gi bill</strong>. 
+								
+																	Access to expert gastroenterology services is now available in the Stafford region at the new Mary Washington Gastroenterology. 
+																	This institution is approved to offer GI Bill educational benefits by the Virginia State Approving Agency. 
+																	University of Mary Washington 1301 College Avenue Fredericksburg Virginia 22401 540-654-1000. 
+																	And the International Conference on Learning in Belfast. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Orientation Team Office of Student Involvement orientationumwedu 540-654-1061. 
+																	University of Virginia Courses General Chemistry Biochemistry Organic Chemistry Biochemistry Laboratory Seminar FSEM Research Interests DNA topology food chemistry chemical education Awards Outstanding Young Faculty Award 2000 and J. 
+																	University of Mary Washington 1301 College Avenue Fredericksburg Virginia 22401 540-654-1000. 
+																	The university located midway between Richmond Va and Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Follow UMWOrientation on Twitter My Tweets. 
+																	Veterans Typically Attend University of Mary Washington for no More Than 972 If you qualify for full benefits under the Post-911 GI Bill we estimate that your yearly out of pocket cost to attend University of Mary Washington should not be more than 972. 
+																	News. 
+																	His influence has been immeasurable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Christopher Bill Outstanding Faculty Service Award 2010. 
+																	The payment due dates will be listed on the eBill. 
+																	Social Media Directory myMaryWash. 
+																	The University of Mary Washington accepts several methods of payment for charges on a students account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SAT is an imperfect predictor of college readiness and success and it is only one of many factors in admissions. 
+																	Contacts Maps Directions UMWSocial. 
+																	You will receive this rate if you first used your Post-911 GI Bill benefits on or after January 1 2018. 
+																	25 Most Popular Degrees Awarded 2019-20 SCHEV Program Inventory. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use the links at left for detailed information about the following payment methods. 
+																	Billing Information UMW emails the initial semester eBill notifications during the month of July for the Fall semester and during the month of November for the Spring semester. 
+																	Provides a rich array of academic research internship leadership and recreational opportunities that. 
+																	Bill was a cornerstone of the University of Washington and our community said UW President Ana Mari Cauce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The online GI Bill BAH Rate calculation is determined by taking half of the national BAH Rate average. 
+																	Prior to pursuing a second career in academic librarianship she was a dance professor at Saint Leo University the University of South Florida and the University of Tampa. 
+																	All bills will be accessible through EaglePay. 
+																	UMW had 304 Post-911 GI Bill recipents enrolled in 2012 at all sites. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This applies when attending online courses exclusively. 
+																	BS Mary Washington College. 
+																	Welcome to the University of Mary Washington a public arts and sciences institution in Fredericksburg Va that attracts intellectually curious undergraduate and graduate students in search of rigorous academics. 
+																	University of Mary Washington is a Good Choice for Veterans Standing 213 overall on our ranking of the Best Colleges For Veterans University of Mary Washington is a good choice if you are interested in a quality education coupled with factors we think are important to veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans looking for financial assistance for their education can turn to the US Department of Veterans Affairs Post-911 GI Bill. 
+																	GI Bill and VA Forms and Information. 
+																	The Montgomery GI Bill Active Duty MGIB stated that active duty members had to forfeit 100 per month for 12 months. 
+																	If you are a student on the Stafford Campus please contact Ryan Hastings at rhastingumwedu or at 540-286-8075. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI Bill Comparison Tool. 
+																	Payments are accepted in the form of cash check money order or cashiers check. 
+																	This institution is approved to offer GI Bill educational benefits by the Virginia State Approving Agency. 
+																	Tuition and fees housing and books are among the provisions partially or fully covered for veterans who served at least 90 aggregate days of active duty following Sept. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Accepted at the Cashiers Office to pay incidental charges such as Parking fines. 
+																	This benefit could be used for both degree and certificate programs flight training. 
+																	Department of Veterans Affairs announced Monday that it would soon stop approving the enrollment of new students receiving GI Bill benefits at the University of Phoenix Temple University and three other institutions based on information from the Federal Trade Commission or state attorneys general that these institutions misled students about the value of getting a degree from these universities. 
+																	Facebook Twitter Instagram LinkedIn YouTube. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Effective January 1 2018 the Post-911 GI Bill monthly housing allowance MHA will be the same as the Department of Defenses E-5 with dependents basic allowance for housing BAH rate. 
+																	Jackies older son a graphic designer was married in April of. 
+																	As a new addition to Mary Washington Medical Group you can expect the same quality care from the providers you know and. 
+																	According to the VA there are 334 GI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This report does not assume any particular merit or value in the SAT it merely highlights institutional differences in distributions. 
+																	Our gastroenterology specialists use diagnostic testing and advanced technologies to treat a wide range of simple and complex digestive conditions. 
+																	The online GI Bill Monthly Housing Allowance is 91650 for the 2020-2021 academic year. 
+																	-The GI Bill and You-Getting Involved on Campus-Education Abroad-Out of State Student Panel-First in the Family-Center for Career Professional Development-Resources to Stay Well on Campus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If they used the benefits they received as of 2012 1564 monthly as a full-time student tiered at lower rates for less-than-full-time for a maximum of 36 months of education benefits. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e2/67/6a/e2676a824d0e98c7e0194cfdfc94fe85--liberal-arts-schools-abilene.jpg" data-lightbox="roadtrip" data-title="Mcmurry University Founded In 1923 Is A Private Co Educational University In Abilene Texas United States It Is A Liberal A University Liberal Arts Abilene">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e2/67/6a/e2676a824d0e98c7e0194cfdfc94fe85--liberal-arts-schools-abilene.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLGZNUeg2ZIwdNZUKK6ijVIwxFsCZDFciKNw';" alt="Mcmurry University Founded In 1923 Is A Private Co Educational University In Abilene Texas United States It Is A Liberal A University Liberal Arts Abilene">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mcmurry University Founded In 1923 Is A Private Co Educational University In Abilene Texas United States It Is A Liberal A University Liberal Arts Abilene</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/5f/b4/ba5fb4563a9a04417a291d1eec21cbf9.webp" data-lightbox="roadtrip" data-title="Sign In The University Of Iowa Gi Bill Iconic Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/5f/b4/ba5fb4563a9a04417a291d1eec21cbf9.webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ARy3fkGNEis95Uvaenx5g8gj-mGhJsshKQ';" alt="Sign In The University Of Iowa Gi Bill Iconic Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sign In The University Of Iowa Gi Bill Iconic Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/4a/66/8d4a663febc767cb933cc66bf4cd39f6.jpg" data-lightbox="roadtrip" data-title="142306 5 University Of North Dakota Law School Going To University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/4a/66/8d4a663febc767cb933cc66bf4cd39f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT45pdPt96kPChLD2kGKWbKtQWXo0WB9Pjjjg';" alt="142306 5 University Of North Dakota Law School Going To University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">142306 5 University Of North Dakota Law School Going To University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/43/5d/1d/435d1d8ae9691d7fc375467fab37ae5d.jpg" data-lightbox="roadtrip" data-title="Fr Conceicao Rodrigues College Of Engineering Crce Was Established In 1984 As Part Of Fr University Of Mumbai Top Engineering Colleges Engineering Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/43/5d/1d/435d1d8ae9691d7fc375467fab37ae5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp3RraFoVbC_jbomOOrpiBLlDAug7_GuxNOQ';" alt="Fr Conceicao Rodrigues College Of Engineering Crce Was Established In 1984 As Part Of Fr University Of Mumbai Top Engineering Colleges Engineering Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fr Conceicao Rodrigues College Of Engineering Crce Was Established In 1984 As Part Of Fr University Of Mumbai Top Engineering Colleges Engineering Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/e3/45/19e345af6ba70b683b428854027a53cf.jpg" data-lightbox="roadtrip" data-title="University Joins Raise Me The Source Washington University In St Louis Scholarships For College Scholarships High School Students">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/e3/45/19e345af6ba70b683b428854027a53cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT539FafTDVeggZRFREuepNo9jAFvbj3GcORg';" alt="University Joins Raise Me The Source Washington University In St Louis Scholarships For College Scholarships High School Students">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Joins Raise Me The Source Washington University In St Louis Scholarships For College Scholarships High School Students</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/e7/fc/aee7fc9d0db5f571f292b0f167aa6393.jpg" data-lightbox="roadtrip" data-title="6 Reasons Why Moms Cry When They Leave Their Kids At College University Of Washington Best University Washington University In St Louis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/e7/fc/aee7fc9d0db5f571f292b0f167aa6393.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv2NEqNiAeNyIinsvB4D4sD1ZX1MkUXh6ipA';" alt="6 Reasons Why Moms Cry When They Leave Their Kids At College University Of Washington Best University Washington University In St Louis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Reasons Why Moms Cry When They Leave Their Kids At College University Of Washington Best University Washington University In St Louis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/f3/aa/3df3aacbfe57009fd5d285cedba0cc83.jpg" data-lightbox="roadtrip" data-title="Why Women Veterans Are The Fastest Growing Group Of Entrepreneurs Veteran Entrepreneurial New Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/f3/aa/3df3aacbfe57009fd5d285cedba0cc83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAviiKxpxZkW7YNP4Wn5raM3Ca2-Pi3o3HOg';" alt="Why Women Veterans Are The Fastest Growing Group Of Entrepreneurs Veteran Entrepreneurial New Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Women Veterans Are The Fastest Growing Group Of Entrepreneurs Veteran Entrepreneurial New Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/dc/c4/d3dcc48bab519c3e4eb8fd7be9c5d493.png" data-lightbox="roadtrip" data-title="Infographic An Education In For Profit Education Campus Progress Educational Infographic Higher Education Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/dc/c4/d3dcc48bab519c3e4eb8fd7be9c5d493.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGjRB0GvyWk3CPuyF-qKcgEPIyDceHOJG_Tw';" alt="Infographic An Education In For Profit Education Campus Progress Educational Infographic Higher Education Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic An Education In For Profit Education Campus Progress Educational Infographic Higher Education Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/41/62/414162a964a7a17a805c8fe29e4c737a.jpg" data-lightbox="roadtrip" data-title="Aravali College Of Engineering Management Is The Best Engineering Colleges In Haryana H Top Engineering Colleges Engineering Colleges Engineering Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/41/62/414162a964a7a17a805c8fe29e4c737a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY_eEwYqVDY74tEkIxR55ff63E-MO1E5k1oQ';" alt="Aravali College Of Engineering Management Is The Best Engineering Colleges In Haryana H Top Engineering Colleges Engineering Colleges Engineering Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aravali College Of Engineering Management Is The Best Engineering Colleges In Haryana H Top Engineering Colleges Engineering Colleges Engineering Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ed/0c/2a/ed0c2a78eb63d594ec607a480a0c7e41.jpg" data-lightbox="roadtrip" data-title="Nsu Norfolk State University Spartans Rhinestone Heat Transfer Etsy Norfolk State State University University Tshirt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ed/0c/2a/ed0c2a78eb63d594ec607a480a0c7e41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVJdwRgvpvzsBT4vGKVw6H5MUJVXpMsvOwvg';" alt="Nsu Norfolk State University Spartans Rhinestone Heat Transfer Etsy Norfolk State State University University Tshirt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nsu Norfolk State University Spartans Rhinestone Heat Transfer Etsy Norfolk State State University University Tshirt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/92/cd/51/92cd517bfb03c9b4c3a27eb3e0912277.jpg" data-lightbox="roadtrip" data-title="Al Falah School Of Engineering Technology Afset Is A Muslim Minority Institution Under Top Engineering Colleges Engineering Technology Engineering Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/92/cd/51/92cd517bfb03c9b4c3a27eb3e0912277.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw8JW7Rs3PJUJ1eG9K-k0H7oYneH4omn_70Q';" alt="Al Falah School Of Engineering Technology Afset Is A Muslim Minority Institution Under Top Engineering Colleges Engineering Technology Engineering Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Al Falah School Of Engineering Technology Afset Is A Muslim Minority Institution Under Top Engineering Colleges Engineering Technology Engineering Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/fe/9f/e9fe9fb6630182eb63baae19c8eea33e.jpg" data-lightbox="roadtrip" data-title="Montana Colleges Could Be Forced To Change As Feds Demand Higher Graduation Rates Montana State University Montana State Bozeman Montana">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/fe/9f/e9fe9fb6630182eb63baae19c8eea33e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsS63cMTPCj6KsmXE8hiV0inhRUn9gQDufJg';" alt="Montana Colleges Could Be Forced To Change As Feds Demand Higher Graduation Rates Montana State University Montana State Bozeman Montana">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Montana Colleges Could Be Forced To Change As Feds Demand Higher Graduation Rates Montana State University Montana State Bozeman Montana</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://students.umw.edu/veterans/files/2019/05/umwvets.jpg" data-lightbox="roadtrip" data-title="Military Veteran And Prior Service Student Resources Where Great Minds Get To Work">
+											<img class="card-img v-image ads-img " src="http://students.umw.edu/veterans/files/2019/05/umwvets.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREZnIcJw_pl71RFRSX8hw-QKCrWdZ8T1bSfQ';" alt="Military Veteran And Prior Service Student Resources Where Great Minds Get To Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Veteran And Prior Service Student Resources Where Great Minds Get To Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-phone-number.html">Gi Bill Housing Allowance Phone Number</a></li>
+													<li class="list-group-item"><a href="/gi-bill-forever.html">Gi Bill Forever</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-not-received.html">Gi Bill Housing Allowance Not Received</a></li>
+													<li class="list-group-item"><a href="/gi-bill-home-buying.html">Gi Bill Home Buying</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-benefit-calculator.html">Gi Bill Housing Benefit Calculator</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-2020.html">Gi Bill Housing Allowance 2020</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-online-classes.html">Gi Bill Housing Online Classes</a></li>
+													<li class="list-group-item"><a href="/gi-bill-good-for-how-long.html">Gi Bill Good For How Long</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-stipend.html">Gi Bill Housing Stipend</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-rates-2019.html">Gi Bill Housing Rates 2019</a></li>
+													<li class="list-group-item"><a href="/gi-bill-in-the-reserves.html">Gi Bill In The Reserves</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-second-bachelors-degree.html">Gi Bill For Second Bachelors Degree</a></li>
+													<li class="list-group-item"><a href="/gi-bill-illinois-rates.html">Gi Bill Illinois Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-forever-stem.html">Gi Bill Forever Stem</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-payment-dates.html">Gi Bill Housing Payment Dates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-stipend-for-online-and-on-campus-students.html">Gi Bill Housing Stipend For Online And On Campus Students</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-benefits.html">Gi Bill Housing Benefits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-general-assembly.html">Gi Bill General Assembly</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-las-vegas.html">Gi Bill Housing Allowance Las Vegas</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-rates.html">Gi Bill Housing Rates</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

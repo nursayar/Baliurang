@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Did Lady Gaga Go To College - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Did Lady Gaga Go To College",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/f4/f4/f9/f4f4f98bcc1d3c841cd9f4021433d06e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=did+lady+gaga+go+to+college",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Did Lady Gaga Go To College</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A few years later Gaga was granted early admission to New York Universitys Tisch School of the Arts she was one of only 20 students in the world to receive the honor of early acceptance. Did lady gaga go to college - See if you can answer this Lady Gagas Fashion trivia question. By the time she was 20 she was. <br>				
+			</p>
+										<a class="badge badge-success" href="/va-post-911-gi-bill-bah-payment-schedule.html">va post 911 gi bill bah payment schedule</a>
+											<a class="badge badge-warning" href="/va-post-911-gi-bill-customer-service.html">va post 911 gi bill customer service</a>
+											<a class="badge badge-light" href="/va-online-gi-bill-bah.html">va online gi bill bah</a>
+											<a class="badge badge-danger" href="/va-handbook-chapter-6.html">va handbook chapter 6</a>
+											<a class="badge badge-info" href="/va-jiu-jitsu-gi.html">va jiu jitsu gi</a>
+											<a class="badge badge-primary" href="/va-governor-education.html">va governor education</a>
+											<a class="badge badge-dark" href="/va-pamphlet-chapter-10.html">va pamphlet chapter 10</a>
+											<a class="badge badge-warning" href="/va-post-911-gi-bill-questions.html">va post 911 gi bill questions</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to pay a visit to the right site.  Our site gives you suggestions for viewing the highest quality video and image content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/8a/04/428a04827746cedd20d07b8bdac352f6.jpg" data-lightbox="roadtrip" data-title="When She Was In High School Without Make Up Still Beauty Isn T It Lady Gaga Lady Gaga Before Celebrity Yearbook Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/8a/04/428a04827746cedd20d07b8bdac352f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUnL1lEcrI4Phm2vqSD3lC6vv5HJ-6GXTbnQ';" alt="When She Was In High School Without Make Up Still Beauty Isn T It Lady Gaga Lady Gaga Before Celebrity Yearbook Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When She Was In High School Without Make Up Still Beauty Isn T It Lady Gaga Lady Gaga Before Celebrity Yearbook Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/a3/21/d5a3218adadbf43793cad6d082840788.jpg" data-lightbox="roadtrip" data-title="Pin By Clearesta Hillenburg Vanheck On My Gaga 3 Lady Gaga Before Lady Gaga Pictures Lady Gaga Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/a3/21/d5a3218adadbf43793cad6d082840788.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvGUVMYh-Yz8qBySG7U9YGx5v8zpQO3xVAg';" alt="Pin By Clearesta Hillenburg Vanheck On My Gaga 3 Lady Gaga Before Lady Gaga Pictures Lady Gaga Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Clearesta Hillenburg Vanheck On My Gaga 3 Lady Gaga Before Lady Gaga Pictures Lady Gaga Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/41/e8/0e41e8ee772e7c8a2c9c08744ebfd1ef.jpg" data-lightbox="roadtrip" data-title="Lady Gaga In High School Lady Gaga Young Lady Gaga Gaga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/41/e8/0e41e8ee772e7c8a2c9c08744ebfd1ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMSfCRGAF-TU3iJkgkDwaM-AI6BNACX0W7hw';" alt="Lady Gaga In High School Lady Gaga Young Lady Gaga Gaga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lady Gaga In High School Lady Gaga Young Lady Gaga Gaga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/7f/54/4d7f54261d4e5046f1439faf09358873.png" data-lightbox="roadtrip" data-title="Gaga Before She Became Famous 3 Lady Gaga Young Lady Gaga Before Lady Gaga Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/7f/54/4d7f54261d4e5046f1439faf09358873.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTxIbITWKMGDK8_TRmZqbu1Qzg1cnEYkl_A';" alt="Gaga Before She Became Famous 3 Lady Gaga Young Lady Gaga Before Lady Gaga Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gaga Before She Became Famous 3 Lady Gaga Young Lady Gaga Before Lady Gaga Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/0f/66/600f66c4796c0976b2ce213d62e3b445.jpg" data-lightbox="roadtrip" data-title="2004 Stefani Germanotta Aka Lady Gaga Graduates From Convent Of The Sacred Heart An All Girls High Sch Celebrity Yearbook Photos Lady Gaga Before Lady Gaga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/0f/66/600f66c4796c0976b2ce213d62e3b445.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk0TnHqEiFqD6VwGBldbbfokoj90bTVN841w';" alt="2004 Stefani Germanotta Aka Lady Gaga Graduates From Convent Of The Sacred Heart An All Girls High Sch Celebrity Yearbook Photos Lady Gaga Before Lady Gaga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2004 Stefani Germanotta Aka Lady Gaga Graduates From Convent Of The Sacred Heart An All Girls High Sch Celebrity Yearbook Photos Lady Gaga Before Lady Gaga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/91/62/6f/91626ff081eb8a3df755cf8cb6ba19cf.jpg" data-lightbox="roadtrip" data-title="Meet Hilda The Forgotten Plus Size Pinup Girl From The 1950s 10 Pics Demilked Lady Gaga Young Lady Gaga Gaga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/91/62/6f/91626ff081eb8a3df755cf8cb6ba19cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrhVpkT3DiSI5fquJfPgYcIjJRLinJB4ACFw';" alt="Meet Hilda The Forgotten Plus Size Pinup Girl From The 1950s 10 Pics Demilked Lady Gaga Young Lady Gaga Gaga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Hilda The Forgotten Plus Size Pinup Girl From The 1950s 10 Pics Demilked Lady Gaga Young Lady Gaga Gaga</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b4/0b/39/b40b39e6ef66dc9af10f56b2da10f4b7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrhVpkT3DiSI5fquJfPgYcIjJRLinJB4ACFw';" alt="Meet Hilda The Forgotten Plus Size Pinup Girl From The 1950s 10 Pics Demilked Lady Gaga Young Lady Gaga Gaga">
+										<div class="card-body">
+						<h3 class="h5"><b>Born Stefani Joanne Angelina Germanotta the artist better known as Lady Gaga attended New York Universitys Tisch School of the Arts but dropped out after just a year to pursue her music career.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Did lady gaga go to college</strong>. 
+								
+																	Lady Gaga posted a video of herself encouraging people in swing states to vote. 
+																	Stefani Germanotta Lady Gagas real name attended New York University Tisch School of the Artson before dropping out to pursue her music career has gone on to become one of the most successful. 
+																	5 years ago Lady Gaga pictured studied Spencer Tunick in college. 
+																	News notes that Gaga went to Convent of the Sacred Heart with hotel heiress and socialite Nicky Hilton Rothschild. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Attended Catholic school She attended NYU Tisch after High School not Juilliard. 
+																	Around the age of 14 she was on track to go to Juliard but had decided to go into acting classes instead. 
+																	Apparently she was right. 
+																	According to IMDB New York Universitys Tisch School of the Arts admitted 17-year-old Lady Gaga. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When she was 17 she was one of just 20 people in the world to get early admission to Tisch School of the Arts there. 
+																	For High school Lady Gaga went to Sacred Heart an all- female Catholic school in NYC. 
+																	She attended NYUs Tisch School of the Arts but dropped out after only a year. 
+																	Did Lady Gaga Go To College the scarlet letter project reflective essay argumentive essay abortion thesis how to write memoir essays Unlimited revisions until you are satisfied. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Did lady gaga go to college - See if আপন can answer this Lady Gagas Fashion trivia question. 
+																	Nickys older sister Paris also reportedly attended the high school but did not. 
+																	At seventeen she was one of twenty people in the world to have gained early admission to the New York Universitys Tisch School of the Arts. 
+																	Gaga was dressed in camouflage gear posing in front of a pickup and drinking beer in an attempt to portray middle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In some opinions a better school than Juilliard because. 
+																	Lady Gaga Stephanie gew up on the uper east side of NYC. 
+																	Yes she went to NYU New York University. 
+																	She felt that she could learn more about the music industry by doing as opposed to just studying it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Now Tunick wants to study Lady Gaga. 
+																	Stefani Joanne Angelina Germanotta ˈ s t ɛ f ən i ˌ dʒ ɜːr m ə ˈ n ɒ t ə STEF-ən-ee JUR-mə-NOT-ə. 
+																	When Gaga was in college at New York University 12 of her haters came together to form a Facebook group called Stefani Germanotta you will never be famous Stefani Germanotta is Lady Gagas. 
+																	Gaga began performing as a teenager singing at open mic nights and acting in school plays. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a blonde dance-pop performer with a penchant for provocation Lady Gaga had often earned comparisons to the singer Madonna and on the albums first two singles the similarities were especially pronouncedThe title track was a self-empowerment anthem. 
+																	Money-back guarantee in case you do not like the content that we write for you. 
+																	No Lady Gaga did not attend Juilliard. 
+																	Born March 28 1986 known professionally as Lady Gaga is an American singer songwriter and actressShe is known for her image reinventions and musical versatility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lady Gagas third album Born This Way 2011 found the entertainer reaching back to earlier musical eras for inspiration. 
+																	Her stage name Lady Gaga is a reference to the song Radio Ga-Ga by Queen. 
+																	She attended the University for about a year before withdrawing to pursue music full time. 
+																	Interscope music executive Vincent Herbert hired her in January 2008 as a music writer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tunick is the photographer who specializes in gathering together hundreds of people and. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/39/fb/0239fba2bbe8d9674f425b6acff819e1.jpg" data-lightbox="roadtrip" data-title="Category Is Lady Gaga On Instagram Category Is Lady Gaga In Her Theatre School X Lady Gaga Winning An Oscar Lady Gaga Joanne Lady Gaga Pictures Lady Gaga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/39/fb/0239fba2bbe8d9674f425b6acff819e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvkXKOIJRmu2zuDWn_w2q_wVj9Jh9jBKbtHA';" alt="Category Is Lady Gaga On Instagram Category Is Lady Gaga In Her Theatre School X Lady Gaga Winning An Oscar Lady Gaga Joanne Lady Gaga Pictures Lady Gaga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Category Is Lady Gaga On Instagram Category Is Lady Gaga In Her Theatre School X Lady Gaga Winning An Oscar Lady Gaga Joanne Lady Gaga Pictures Lady Gaga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/26/84/9d26844d0d5f4a4fce9c802d5747a6ea.jpg" data-lightbox="roadtrip" data-title="Pin By Monique Zamora On Gaga Monster Lady Gaga Laugh At Yourself Gaga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/26/84/9d26844d0d5f4a4fce9c802d5747a6ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR36J_38pCjNKdXhXhxiyg_yzeAJa1KcUBh2w';" alt="Pin By Monique Zamora On Gaga Monster Lady Gaga Laugh At Yourself Gaga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Monique Zamora On Gaga Monster Lady Gaga Laugh At Yourself Gaga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/0e/41/e8/0e41e8ee772e7c8a2c9c08744ebfd1ef--lady-gaga-high-schools.jpg" data-lightbox="roadtrip" data-title="Lady Gaga In High School Lady Gaga Young Lady Gaga Gaga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/0e/41/e8/0e41e8ee772e7c8a2c9c08744ebfd1ef--lady-gaga-high-schools.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_7tpTtWQZyEel_TnjcJ9WGLRgJDMJYCk7bQ';" alt="Lady Gaga In High School Lady Gaga Young Lady Gaga Gaga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lady Gaga In High School Lady Gaga Young Lady Gaga Gaga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/91/62/6f/91626ff081eb8a3df755cf8cb6ba19cf.jpg" data-lightbox="roadtrip" data-title="Meet Hilda The Forgotten Plus Size Pinup Girl From The 1950s 10 Pics Demilked Lady Gaga Young Lady Gaga Gaga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/91/62/6f/91626ff081eb8a3df755cf8cb6ba19cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv_0do0comvY-p4RW97SHrjYTsSJG-oOW1nw';" alt="Meet Hilda The Forgotten Plus Size Pinup Girl From The 1950s 10 Pics Demilked Lady Gaga Young Lady Gaga Gaga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Hilda The Forgotten Plus Size Pinup Girl From The 1950s 10 Pics Demilked Lady Gaga Young Lady Gaga Gaga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/0b/39/b40b39e6ef66dc9af10f56b2da10f4b7.png" data-lightbox="roadtrip" data-title="Pin On Lady Gaga Childhood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/0b/39/b40b39e6ef66dc9af10f56b2da10f4b7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWmNv4qBwyyRJMjm_VA8KtRadotv4-vZyZug';" alt="Pin On Lady Gaga Childhood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lady Gaga Childhood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/c3/89/c0c389d2d59286e157a9caccf31653f0.jpg" data-lightbox="roadtrip" data-title="Dark Haired Stefani Germanotta Before She Was Gaga Lady Gaga Photos Lady Lady Gaga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/c3/89/c0c389d2d59286e157a9caccf31653f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNf_iu1UD2n0I_NPonEKrE2NPK9X8TeSg7mg';" alt="Dark Haired Stefani Germanotta Before She Was Gaga Lady Gaga Photos Lady Lady Gaga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dark Haired Stefani Germanotta Before She Was Gaga Lady Gaga Photos Lady Lady Gaga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/ba/a4/a2baa445a835e053ff9a9dcd8aca97c0.jpg" data-lightbox="roadtrip" data-title="17 Cute College Outfits For Short Height Girls To Look Tall Lady Gaga Outfits Lady Gaga Fashion Lady Gaga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/ba/a4/a2baa445a835e053ff9a9dcd8aca97c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAHj_PeoZSZ6T_ois9yqyEoAmX-pUZeK7haw';" alt="17 Cute College Outfits For Short Height Girls To Look Tall Lady Gaga Outfits Lady Gaga Fashion Lady Gaga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Cute College Outfits For Short Height Girls To Look Tall Lady Gaga Outfits Lady Gaga Fashion Lady Gaga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/f4/f9/f4f4f98bcc1d3c841cd9f4021433d06e.jpg" data-lightbox="roadtrip" data-title="Lady Gaga Shares Instagram Photo Of Her Mom As A Wvu Cheerleader Lady Gaga Cheerleading Lady">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/f4/f9/f4f4f98bcc1d3c841cd9f4021433d06e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTZLjaeWrj0JdzThXjZ0CKKC8wyzw2qsXzSg';" alt="Lady Gaga Shares Instagram Photo Of Her Mom As A Wvu Cheerleader Lady Gaga Cheerleading Lady">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lady Gaga Shares Instagram Photo Of Her Mom As A Wvu Cheerleader Lady Gaga Cheerleading Lady</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/83/52/4c8352afea3d1cdca75252e97055f1bc.jpg" data-lightbox="roadtrip" data-title="Stefani Germanotta A K A Lady Gaga Singer Songwriter Longwood Elementary School William Henry Shaw Hs T Fotos Lady Gaga Cabelo Longo Mulheres">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/83/52/4c8352afea3d1cdca75252e97055f1bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU7ZFCcrUcRUKy4eWnkIoD83anwWmy0zRRIQ';" alt="Stefani Germanotta A K A Lady Gaga Singer Songwriter Longwood Elementary School William Henry Shaw Hs T Fotos Lady Gaga Cabelo Longo Mulheres">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stefani Germanotta A K A Lady Gaga Singer Songwriter Longwood Elementary School William Henry Shaw Hs T Fotos Lady Gaga Cabelo Longo Mulheres</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/64/af/0c64af6db3a1c2d9129dd66853fe0595.jpg" data-lightbox="roadtrip" data-title="No One Should Have Been Surprised Lady Gaga Slayed At The Oscars Lady Gaga Photos Lady Gaga Lady Gaga Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/64/af/0c64af6db3a1c2d9129dd66853fe0595.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrwTCbUwC88iQ1FBbDCxHDfCbbrYJxNnOS7Q';" alt="No One Should Have Been Surprised Lady Gaga Slayed At The Oscars Lady Gaga Photos Lady Gaga Lady Gaga Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No One Should Have Been Surprised Lady Gaga Slayed At The Oscars Lady Gaga Photos Lady Gaga Lady Gaga Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/07/3c/2e073c16c6d8a2ff570996d7674a5eb8.jpg" data-lightbox="roadtrip" data-title="Queen Elizabeth Ii Photos Photos Lady Gaga Meets Queen Elizabeth Crazy Outfits Fashion Lady Gaga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/07/3c/2e073c16c6d8a2ff570996d7674a5eb8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijnqRFbW0zE4momOmYwJ2d7uWV2n2kdwaOg';" alt="Queen Elizabeth Ii Photos Photos Lady Gaga Meets Queen Elizabeth Crazy Outfits Fashion Lady Gaga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Queen Elizabeth Ii Photos Photos Lady Gaga Meets Queen Elizabeth Crazy Outfits Fashion Lady Gaga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/77/98/f577989132d4736934c3ce94b76d2846.jpg" data-lightbox="roadtrip" data-title="Gaga And Natali Lady Gaga Pictures Lady Gaga Young Lady Gaga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/77/98/f577989132d4736934c3ce94b76d2846.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsN7dbQW2jjk73WUcZmtSuw6dmz0-rhgDx_Q';" alt="Gaga And Natali Lady Gaga Pictures Lady Gaga Young Lady Gaga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gaga And Natali Lady Gaga Pictures Lady Gaga Young Lady Gaga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c6/0d/1e/c60d1e92fa534fd124d8035cd5eb9209.jpg" data-lightbox="roadtrip" data-title="How Breaking The Rules Put Christian Cowan In The Spotlight London College Of Fashion Fashion Lady">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c6/0d/1e/c60d1e92fa534fd124d8035cd5eb9209.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWqAER4yCEvjlvD1JvzzyIMtTQi9uWPbavqQ';" alt="How Breaking The Rules Put Christian Cowan In The Spotlight London College Of Fashion Fashion Lady">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Breaking The Rules Put Christian Cowan In The Spotlight London College Of Fashion Fashion Lady</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-calculator-bah-2019.html">Gi Bill Calculator Bah 2019</a></li>
+													<li class="list-group-item"><a href="/gi-bill-certification-reimbursement-form.html">Gi Bill Certification Reimbursement Form</a></li>
+													<li class="list-group-item"><a href="/gi-bill-comparison-tool-2020.html">Gi Bill Comparison Tool 2020</a></li>
+													<li class="list-group-item"><a href="/gi-bill-cost-of-living-calculator.html">Gi Bill Cost Of Living Calculator</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-with-general-discharge.html">Gi Bill Benefits With General Discharge</a></li>
+													<li class="list-group-item"><a href="/gi-bill-compensation-rates.html">Gi Bill Compensation Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-contact-us.html">Gi Bill Contact Us</a></li>
+													<li class="list-group-item"><a href="/gi-bill-definition-us-history.html">Gi Bill Definition Us History</a></li>
+													<li class="list-group-item"><a href="/gi-bill-customer-service.html">Gi Bill Customer Service</a></li>
+													<li class="list-group-item"><a href="/gi-bill-dependent-education-benefits.html">Gi Bill Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-current-rates.html">Gi Bill Current Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-education-and-training.html">Gi Bill Education And Training</a></li>
+													<li class="list-group-item"><a href="/gi-bill-dropping-a-class.html">Gi Bill Dropping A Class</a></li>
+													<li class="list-group-item"><a href="/gi-bill-cap-on-tuition.html">Gi Bill Cap On Tuition</a></li>
+													<li class="list-group-item"><a href="/gi-bill-cost-calculator.html">Gi Bill Cost Calculator</a></li>
+													<li class="list-group-item"><a href="/gi-bill-buying-a-house.html">Gi Bill Buying A House</a></li>
+													<li class="list-group-item"><a href="/gi-bill-dropping-out-of-college.html">Gi Bill Dropping Out Of College</a></li>
+													<li class="list-group-item"><a href="/gi-bill-credit-hour-requirements.html">Gi Bill Credit Hour Requirements</a></li>
+													<li class="list-group-item"><a href="/gi-bill-chapter-35-payment-rates.html">Gi Bill Chapter 35 Payment Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-costs.html">Gi Bill Costs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

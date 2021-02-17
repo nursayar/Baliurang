@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go To College London - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go To College London",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/3f/6e/12/3f6e12483073b5015c65c55eed377d51.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+to+college+london",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go To College London</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">As an Imperial alumnus you are a member of a lifelong community of over 190000 across the globe. Thursday 28 January 2021 1230 - 1330 Online - Zoom Our next professional development event UCL Connect. Our London campus is the right choice if you want to get creative in a fun and friendly place mixing with other like-minded people. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/unused-gi-bill-benefits.html">unused gi bill benefits</a>
+											<a class="badge badge-info" href="/us-students-going-to-college-in-europe.html">us students going to college in europe</a>
+											<a class="badge badge-warning" href="/university-of-texas-womens-basketball.html">university of texas womens basketball</a>
+											<a class="badge badge-warning" href="/usc-womens-basketball-ncaa-championships.html">usc womens basketball ncaa championships</a>
+											<a class="badge badge-dark" href="/trinity-college-womens-basketball-roster.html">trinity college womens basketball roster</a>
+											<a class="badge badge-warning" href="/university-go-for.html">university go for</a>
+											<a class="badge badge-secondary" href="/upper-gi-x-ray-post-op.html">upper gi x ray post op</a>
+											<a class="badge badge-secondary" href="/uconn-womens-college-basketball-tv-schedule.html">uconn womens college basketball tv schedule</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to visit the ideal blog.  Our website provides you with hints for viewing the maximum quality video and picture content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video for you to view.  You can also contribute to supporting this website by sharing videos and graphics that you like on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/8a/8c/7f8a8c44bbaacbe2351f4e6bed6390c1.jpg" data-lightbox="roadtrip" data-title="University College London Google Images University College London Colleges And Universities Best University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/8a/8c/7f8a8c44bbaacbe2351f4e6bed6390c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fjl5ri_rcmSW48Uz-ySLTeZOSTCvpu1pJw';" alt="University College London Google Images University College London Colleges And Universities Best University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University College London Google Images University College London Colleges And Universities Best University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/50/a9/0350a9e9510e3d0a23ad082e2d3e398a.jpg" data-lightbox="roadtrip" data-title="King S College London This Is Why I Study For Hours On End To Go Here King S College London Study Abroad London King S College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/50/a9/0350a9e9510e3d0a23ad082e2d3e398a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_7cGYHwNCmw8tZrWWuRAjOlgS7TyOvkT21w';" alt="King S College London This Is Why I Study For Hours On End To Go Here King S College London Study Abroad London King S College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">King S College London This Is Why I Study For Hours On End To Go Here King S College London Study Abroad London King S College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/68/67/3b6867dcbc269765dda70741905019f5.jpg" data-lightbox="roadtrip" data-title="King S College London Home King S College London Filming Locations King S College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/68/67/3b6867dcbc269765dda70741905019f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8Fvys6P8PDrP9HYeaYG7AENt4VuQFIQnIQ';" alt="King S College London Home King S College London Filming Locations King S College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">King S College London Home King S College London Filming Locations King S College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/01/8f/df018fce83136b84d13dc4a8c3b0d992.jpg" data-lightbox="roadtrip" data-title="King S College London Please Take Me Here Immediately London University King S College London King S College London">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/01/8f/df018fce83136b84d13dc4a8c3b0d992.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGaCSvl1mIx5CiIlFF1NM5tpb4nhu1U-v2Sg';" alt="King S College London Please Take Me Here Immediately London University King S College London King S College London">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">King S College London Please Take Me Here Immediately London University King S College London King S College London</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/dd/46/63dd4623c2639bca8b0f86ec9cd5da97.jpg" data-lightbox="roadtrip" data-title="Pin By Igor Mamantov On London King S College London London Places London">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/dd/46/63dd4623c2639bca8b0f86ec9cd5da97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUlUv4YQNcDxhatS79FI5YXXM21SFLNvYkgA';" alt="Pin By Igor Mamantov On London King S College London London Places London">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Igor Mamantov On London King S College London London Places London</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/30/93/ff309309e605fe74a36b5f99a20951d1.jpg" data-lightbox="roadtrip" data-title="University College London London University London England Farms In London">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/30/93/ff309309e605fe74a36b5f99a20951d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OAJWF07GDbyHR_RJBwcI7WyZ1olA4HoPWQ';" alt="University College London London University London England Farms In London">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University College London London University London England Farms In London</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/63/dd/46/63dd4623c2639bca8b0f86ec9cd5da97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OAJWF07GDbyHR_RJBwcI7WyZ1olA4HoPWQ';" alt="University College London London University London England Farms In London">
+										<div class="card-body">
+						<h3 class="h5"><b>Top for employability31st in the world and.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go to college london</strong>. 
+								
+																	Global linksFind out how students can engage with Kings cosmopolitan community. 
+																	At the heart of every community. 
+																	The College of Haringey Enfield North East London. 
+																	Over 2000 pupils per year visit Eton to benefit from our museums and collections and we co-sponsor the London Academy of Excellence an outstanding sixth form in Newham East London. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DLD College London is a 14-19 co-educational independent boarding and day school providing the highest levels of support for student wellbeing and the best on offer in urban boarding. 
+																	Dr Darrell DeSouza. 
+																	Imperial is the only university in the UK to focus exclusively on science medicine engineering and business. 
+																	UCL Connect is our event series dedicated to bringing professional development expertise directly to students and alumni around the globe. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	University College London Billing itself as Londons Global University University College London needs no introduction as an educational institution. 
+																	It was framed in 1907 from a merger of three universities in London and now has 15200 understudies and 8000 staff. 
+																	Many undergraduates in UK pay up to 9250 per annum year in tuition costs the cost of education is capped by the government. 
+																	Instead they use the term fees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College of North West London part of United College Group 1. 
+																	CCL-UK accredited by IAO International Accreditation Organization CCL-UK provide many of the excellent educational services to all parts of the world. 
+																	Duis sit amet tellus nec. 
+																	Uxbridge College HCUC Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Top 10 in the UKWe are ranked amongst some of the worlds most prestigious universities. 
+																	Winners of the Independent School of the Year Special Judges Award and Independent Boarding School of the Year. 
+																	We are open for Academic Year 2020. 
+																	Duis sit amet tellus nec orci vulputate iaculis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Imperial College London is the only university in the UK to focus exclusively on science engineering medicine and business. 
+																	I do hope you will join us to be a part of it. 
+																	Our partnership with Holyport College an Ofsted outstanding state-maintained boarding school is one of the strongest closest and most reciprocal partnership of any cross-sector relationship in the UK. 
+																	How toGo to Work will bring recent graduates and students together with a distinguished UCL graduate to gain an insight into his best-selling advice on starting your working life. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Kings College London Study Abroad programme allows students who are currently studying for their degree at an overseas institution to spend either a semester or a full year at Kings. 
+																	Is a thriving college. 
+																	Whether you are established in your career or are unsure what to do post-graduation our UCL Connect series has something for everyone. 
+																	At the heart of every community should be a thriving college supporting students delivering skills transforming communities promoting social justice working with employers and growing the economy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Has the experience of the past few months made you reflect on changing your career choices. 
+																	In 2015 there are 481 students from the US on the register. 
+																	I was thinking that since I live in the US right now and dont want too much of a culture shock and want to get used to living on my own so I could go to SCAD Savannah College of Art and Design for my undergraduate courses then transfer to an arts. 
+																	Im 17 and will be applying to colleges soon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I want to study art and design which makes going to college in London such a great opportunity. 
+																	Praesent ullamcorper sem id commodo ultricies ligula eros vestibulum diam vitae malesuada metus ipsum ac justo. 
+																	World-leading researchLearn about our cutting edge results for 21st century problems. 
+																	Imperial College London is reliably positioned as outstanding amongst other colleges on the planet for science innovation building pharmaceutical and business. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out more about the entry requirements and how to apply below. 
+																	More commonly referred to simply as UCL there is a long tradition of American students studying here. 
+																	A standard minimum English language level for college courses is Cambridge First Certificate Grade B TOEFL 550 points or IELTS 55. 
+																	Now be careful of the terminology the word tuition is not really used in British higher education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Association of Colleges is the national. 
+																	However if you do not meet these requirements many colleges offer English language courses specifically designed to prepare students for longer courses. 
+																	Also on site are a student cafe gym shop and resource centre giving you the best of being in a college but still with the creative vibe. 
+																	NCC runs colleges and sixth forms across east London with Havering College sites based in Hornchurch Rainham and Ardleigh Green as well as campuses in Poplar Chadwell Heath Stepney Green. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The understudy associate is to a great degree worldwide and is comprised of in excess of. 
+																	Access exclusive alumni benefits join a local group and keep in touch. 
+																	Welcome to Cambridge College London Cambridge College London CCL-UK- registered in Britain under number 8748857 and headquartered in London. 
+																	Kings at a glanceFast facts Kings College Londons rankings history campuses and alumni. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Where it all begins. 
+																	It is this dedication that makes us a successful college and the Number 1 college in London for 16-18 achievement. 
+																	Were ranked among the top ten best universities in the world making an Imperial degree highly valued by employers across the globe. 
+																	Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The average is approximately 6000 per annum. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/97/1d/ae971d6d0ae2a630d30c7105e4f4bbd4.jpg" data-lightbox="roadtrip" data-title="Maughan Library King S College London King S College Gothic Buildings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/97/1d/ae971d6d0ae2a630d30c7105e4f4bbd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdrQcJcD66bLo7SeXANowNUjU-_pvDvctWYQ';" alt="Maughan Library King S College London King S College Gothic Buildings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maughan Library King S College London King S College Gothic Buildings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/00/c8/5e00c8b369b4b56a8b471178c1332f2b.jpg" data-lightbox="roadtrip" data-title="This Public Research Institute Is Formally Known As The Imperial College Of London Is Also Known Imperial College London University In England Top Universities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/00/c8/5e00c8b369b4b56a8b471178c1332f2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1lwfLcV_ll49xaC0UpFS-sq3kDY6OnmQ4_g';" alt="This Public Research Institute Is Formally Known As The Imperial College Of London Is Also Known Imperial College London University In England Top Universities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Public Research Institute Is Formally Known As The Imperial College Of London Is Also Known Imperial College London University In England Top Universities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/9c/ac/829cacb58cac1f987ca6d79311f8f6c6.jpg" data-lightbox="roadtrip" data-title="King S College London England King S College London Study Abroad King S College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/9c/ac/829cacb58cac1f987ca6d79311f8f6c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiO2LfW3GjAYOPpuzcTBXj6Wts8jIu7prADA';" alt="King S College London England King S College London Study Abroad King S College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">King S College London England King S College London Study Abroad King S College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/fd/3c/a5fd3ca6e6fe737a7246ab60aab6d521.jpg" data-lightbox="roadtrip" data-title="Maughan Library Of King S College London King S College London London Places London">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/fd/3c/a5fd3ca6e6fe737a7246ab60aab6d521.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6s7rIPqn4CpNe3RSSMaRHDciSbH_gjA6L3A';" alt="Maughan Library Of King S College London King S College London London Places London">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maughan Library Of King S College London King S College London London Places London</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/35/c1/d435c1db0a8f6fc58b53d7ba1ebf05d2.jpg" data-lightbox="roadtrip" data-title="Study Abroad My Time At King S College Summer School Study Abroad King S College London King S College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/35/c1/d435c1db0a8f6fc58b53d7ba1ebf05d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPoIMR0BrGrseMp33YLUcxSv9kj0Bt9IUTrw';" alt="Study Abroad My Time At King S College Summer School Study Abroad King S College London King S College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Study Abroad My Time At King S College Summer School Study Abroad King S College London King S College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/51/2e/4a512e3bade600ba863619026a4383e5.jpg" data-lightbox="roadtrip" data-title="Royal Holloway College Egham Surrey Named As One Of The World S Most Beautiful Universities London University London Travel England Countryside">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/51/2e/4a512e3bade600ba863619026a4383e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4oW4AbX7awj37GZXHe2NBnexRtYWHRVIE2w';" alt="Royal Holloway College Egham Surrey Named As One Of The World S Most Beautiful Universities London University London Travel England Countryside">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Royal Holloway College Egham Surrey Named As One Of The World S Most Beautiful Universities London University London Travel England Countryside</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/69/7b/0f697b237db7fcd50b786901cd53d3bb.jpg" data-lightbox="roadtrip" data-title="Rabindranath Tagore A Beacon For Humanity London City Guide London Attractions University College London">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/69/7b/0f697b237db7fcd50b786901cd53d3bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvqNBzNRRQOy_HCVCK57RcY4TWoDzChFIfuw';" alt="Rabindranath Tagore A Beacon For Humanity London City Guide London Attractions University College London">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rabindranath Tagore A Beacon For Humanity London City Guide London Attractions University College London</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/99/12/e59912100b0de21d41be04eec6a4494f.jpg" data-lightbox="roadtrip" data-title="All Souls College University Of Oxford England Oxford England England Travel Oxford University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/99/12/e59912100b0de21d41be04eec6a4494f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyh1in6_Pcih5reTdFpZwLoetXQ0WRZoK_TA';" alt="All Souls College University Of Oxford England Oxford England England Travel Oxford University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Souls College University Of Oxford England Oxford England England Travel Oxford University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/36/16/e036166469b3a7aab0d487b65aa14faf.jpg" data-lightbox="roadtrip" data-title="Because We Have Universities That Look Like This City University London London University London">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/36/16/e036166469b3a7aab0d487b65aa14faf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxooZRzJ0nVyEO0c-JIay6eSXWAi1BlihSg';" alt="Because We Have Universities That Look Like This City University London London University London">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Because We Have Universities That Look Like This City University London London University London</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a5/ab/9d/a5ab9d2454c8af1d17de20a2df8328d3.jpg" data-lightbox="roadtrip" data-title="London Study Abroad England Travel Aesthetic Europe Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a5/ab/9d/a5ab9d2454c8af1d17de20a2df8328d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnMbS8FZO2FMozqRFjgGGmYHpSWCUuMSdJJA';" alt="London Study Abroad England Travel Aesthetic Europe Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">London Study Abroad England Travel Aesthetic Europe Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/f1/4d/5df14d7ff68073f641df93904c36ae48.jpg" data-lightbox="roadtrip" data-title="Amicom Summer School Best University Imperial College Imperial College London">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/f1/4d/5df14d7ff68073f641df93904c36ae48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw7EqEqMuOsqzf3ZI4OSf20pNF6keXdLl9-A';" alt="Amicom Summer School Best University Imperial College Imperial College London">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amicom Summer School Best University Imperial College Imperial College London</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/6e/12/3f6e12483073b5015c65c55eed377d51.jpg" data-lightbox="roadtrip" data-title="On Locatiion With Poirot The Underdog London Imperial College South Kensington">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/6e/12/3f6e12483073b5015c65c55eed377d51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQNOA7n7AvCxiZ4KzxAcWGrL4J5ea0rJgWQ';" alt="On Locatiion With Poirot The Underdog London Imperial College South Kensington">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">On Locatiion With Poirot The Underdog London Imperial College South Kensington</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/d5/ff/efd5ffff85b0b0c622bbf2f0e018276e.jpg" data-lightbox="roadtrip" data-title="University College London University College London University Places To Go">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/d5/ff/efd5ffff85b0b0c622bbf2f0e018276e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQFcv_DWgFAJst9fCwaGJw1fPwdtPUovt3nw';" alt="University College London University College London University Places To Go">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University College London University College London University Places To Go</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/navy-gi-bill-bah-calculator.html">Navy Gi Bill Bah Calculator</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-wave-verification.html">Montgomery Gi Bill Wave Verification</a></li>
+													<li class="list-group-item"><a href="/my-gi-bill-expired.html">My Gi Bill Expired</a></li>
+													<li class="list-group-item"><a href="/national-rankings-for-womens-college-basketball.html">National Rankings For Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/national-university-post-911-gi-bill.html">National University Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/nasm-certification-gi-bill.html">Nasm Certification Gi Bill</a></li>
+													<li class="list-group-item"><a href="/most-attractive-womens-college-basketball-players.html">Most Attractive Womens College Basketball Players</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-tuition-cap.html">Montgomery Gi Bill Tuition Cap</a></li>
+													<li class="list-group-item"><a href="/most-expensive-college-to-go-to.html">Most Expensive College To Go To</a></li>
+													<li class="list-group-item"><a href="/montgomerys-gifts-and-home-interiors.html">Montgomerys Gifts And Home Interiors</a></li>
+													<li class="list-group-item"><a href="/my-gi-bill-expired-what-can-i-do.html">My Gi Bill Expired What Can I Do</a></li>
+													<li class="list-group-item"><a href="/most-wins-in-womens-college-basketball-history.html">Most Wins In Womens College Basketball History</a></li>
+													<li class="list-group-item"><a href="/movie-tavern-collegeville-gift-card.html">Movie Tavern Collegeville Gift Card</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-to-post-9-11.html">Montgomery Gi To Post 9 11</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-wiki.html">Montgomery Gi Bill Wiki</a></li>
+													<li class="list-group-item"><a href="/my-gi-bill-is-about-to-run-out.html">My Gi Bill Is About To Run Out</a></li>
+													<li class="list-group-item"><a href="/national-guard-gi-bill-eligibility.html">National Guard Gi Bill Eligibility</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-verification.html">Montgomery Gi Bill Verification</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-while-on-active-duty.html">Montgomery Gi Bill While On Active Duty</a></li>
+													<li class="list-group-item"><a href="/morris-college-womens-basketball-stats.html">Morris College Womens Basketball Stats</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

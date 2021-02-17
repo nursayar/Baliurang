@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Coaches Poll - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Coaches Poll",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/11/6c/20/116c2064d494ebbb485d5d50f69fa6d3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+coaches+poll",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Coaches Poll</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">New rankings every week from the Associated Press. SC South Carolina 2014-1. It is the highest predicted finish for the Catamounts since being chosen to finish fourth in the 2018 preseason poll. <br>				
+			</p>
+										<a class="badge badge-dark" href="/college-womens-basketball-rpi.html">college womens basketball rpi</a>
+											<a class="badge badge-warning" href="/college-womens-basketball-tournament-2019.html">college womens basketball tournament 2019</a>
+											<a class="badge badge-secondary" href="/college-womens-basketball-oregon.html">college womens basketball oregon</a>
+											<a class="badge badge-light" href="/college-tech-gifts.html">college tech gifts</a>
+											<a class="badge badge-info" href="/college-womens-basketball-on-tv-today.html">college womens basketball on tv today</a>
+											<a class="badge badge-success" href="/college-womens-basketball-poll.html">college womens basketball poll</a>
+											<a class="badge badge-warning" href="/college-womens-basketball-bracketology.html">college womens basketball bracketology</a>
+											<a class="badge badge-info" href="/college-womens-basketball-attendance.html">college womens basketball attendance</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the ideal blog.  Our website gives you hints for viewing the maximum quality video and picture content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/a6/b3/6ba6b31bfe772b065d21525423e75e6a.jpg" data-lightbox="roadtrip" data-title="Ncaa Women S Basketball Coaches Poll Basketball Coach Womens Basketball Usa Today Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/a6/b3/6ba6b31bfe772b065d21525423e75e6a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdLki6g15scmlc0xty-K41IUeO9UhxMgrR3Q';" alt="Ncaa Women S Basketball Coaches Poll Basketball Coach Womens Basketball Usa Today Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Women S Basketball Coaches Poll Basketball Coach Womens Basketball Usa Today Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/b8/b5/6fb8b50c27b3c1c35fc3aa3d9a643962.jpg" data-lightbox="roadtrip" data-title="Baylor Remains In No 1 Spot In Usa Today Sports Women S Basketball Poll Basketball Coach Womens Basketball Usa Today Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/b8/b5/6fb8b50c27b3c1c35fc3aa3d9a643962.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZLqKjeuqiWR8ndEjEpAKm1EmItCRaiVG5qw';" alt="Baylor Remains In No 1 Spot In Usa Today Sports Women S Basketball Poll Basketball Coach Womens Basketball Usa Today Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Baylor Remains In No 1 Spot In Usa Today Sports Women S Basketball Poll Basketball Coach Womens Basketball Usa Today Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/9c/05/6b9c0586254c592a54a0d3b57ca68053.jpg" data-lightbox="roadtrip" data-title="The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads Way Basketball Workouts College Basketball Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/9c/05/6b9c0586254c592a54a0d3b57ca68053.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8W7ZnEy6HalCLh2l9HPT7UscTTlVfag2QOw';" alt="The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads Way Basketball Workouts College Basketball Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads Way Basketball Workouts College Basketball Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/86/f3/f386f3034a184349174b7a948921681b.png" data-lightbox="roadtrip" data-title="Union University Women S Basketball Opens Region Rankings At No 1 No 6 Nationally Union University Womens Basketball Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/86/f3/f386f3034a184349174b7a948921681b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHA4WzD0ATwfWg8jRiShmM9Q-95JVyUo27oQ';" alt="Union University Women S Basketball Opens Region Rankings At No 1 No 6 Nationally Union University Womens Basketball Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Union University Women S Basketball Opens Region Rankings At No 1 No 6 Nationally Union University Womens Basketball Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/6b/53/e86b535fc42a190a36c672fbb914a57e.jpg" data-lightbox="roadtrip" data-title="Connecticut Huskies On Top Of College Basketball Coaches Poll Http Athenasportsnet Com Connecticut Huskies On Top Uconn Connecticut Huskies Uconn Huskies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/6b/53/e86b535fc42a190a36c672fbb914a57e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFNqOCrRbUbeho90np0SDLwdWzjstybvrmA';" alt="Connecticut Huskies On Top Of College Basketball Coaches Poll Http Athenasportsnet Com Connecticut Huskies On Top Uconn Connecticut Huskies Uconn Huskies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Connecticut Huskies On Top Of College Basketball Coaches Poll Http Athenasportsnet Com Connecticut Huskies On Top Uconn Connecticut Huskies Uconn Huskies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5e/d3/4a/5ed34ac36497455c50cc1e258166a954.jpg" data-lightbox="roadtrip" data-title="Basketball Shot Selection Coach S Clipboard Basketball Coaching And Playbook Basketball Shooting Basketball Basketball Coach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5e/d3/4a/5ed34ac36497455c50cc1e258166a954.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRt8A7HZJYIYBThAv0ByRvhbE2V87nB8e2AQ';" alt="Basketball Shot Selection Coach S Clipboard Basketball Coaching And Playbook Basketball Shooting Basketball Basketball Coach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Shot Selection Coach S Clipboard Basketball Coaching And Playbook Basketball Shooting Basketball Basketball Coach</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/1c/f7/ad/1cf7adffb395f789350ab7f0aa9bd98f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRt8A7HZJYIYBThAv0ByRvhbE2V87nB8e2AQ';" alt="Basketball Shot Selection Coach S Clipboard Basketball Coaching And Playbook Basketball Shooting Basketball Basketball Coach">
+										<div class="card-body">
+						<h3 class="h5"><b>The USA TODAY Sports Top 25 womens basketball poll with first-place votes received teams RECORDS THROUGH MONDAY total points based on 25 for first place through one point for 25th and.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball coaches poll</strong>. 
+								
+																	Louisville leads UConn drops in 1st Power 10 of February 2021 NCAA womens basketball. 
+																	Womens College Basketball Rankings - Week 11 2020-21 2019-20 2018-19 2017-18 2016-17 2015-16 2014-15 2013-14 2012-13 2011-12 2010-11 2009-10 2008-09 2007-08 2006-07 2005-06 2004-05 2003-04 2002. 
+																	Both Hope College mens and womens lacrosse teams were picked to finish on top of the Michigan Intercollegiate Athletic Association in the coaches preseason poll. 
+																	Western Carolina womens soccer was picked to finish sixth in the 2020-21 Southern Conference preseason coaches poll announced today by the league office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The mens team earned 35 points in the poll and received five of the seven possible first-place votes. 
+																	DII womens basketball rankings. 
+																	The USA TODAY Sports womens basketball coaches poll is conducted weekly throughout the regular season using a panel of head coaches at Division I schools. 
+																	USA TODAY Sports Scott Gleeson breaks down the latest Ferris Mowers Mens Basketball Coaches Poll. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vs Alabama W 87-63 Auburn W 77-58. 
+																	The USA TODAY Sports womens basketball coaches poll is conducted weekly throughout the regular season using a panel of head coaches at Division I schools. 
+																	Get the latest College Basketball rankings for the 2020-21 season. 
+																	The Flying Dutchmen are the defending MIAA champions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Two human polls make up the 201920 NCAA Division I womens basketball rankings the AP Poll and the Coaches Poll in addition to various publications preseason polls. 
+																	Find out where your favorite team is ranked in the AP Top 25 Coaches Poll Top 25 And 1 NET or RPI polls and rankings. 
+																	1 in the first WBCA poll of the 2020-21 DII womens basketball season. 
+																	Womens College Basketball Rankings - Week 11. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a result the NCAA did not bestow a national championship. 
+																	Remembering John Chaney By The. 
+																	The Bruins who fell to the Cardinal in the 2019 Womens College Cup semifinals came out. 
+																	Due to the COVID-19 pandemic the season ended March 12 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Drury is ranked No. 
+																	WCU is notorious for exceeding expectations as the team was chosen to finish seventh in 2019 and ended. 
+																	Louisville leads UConn drops in 1st Power 10 of February Basketball Hall of Fame and WBCA. 
+																	The panel is chosen by the Womens. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The USA TODAY Sports womens basketball coaches poll is conducted weekly throughout the regular season using a panel of head coaches at Division I schools. 
+																	The panel is chosen by the Womens. 
+																	All things football to get you ready for the super bowl By One37pm. 
+																	The panel is chosen by the Womens. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The panel is chosen by the Womens. 
+																	See where your favorite team is ranked in the AP Top 25 Poll for NCAA Womens College Basketball. 
+																	UCLA was picked to finish second in the coaches poll with 110 points collecting four first-place votes. 
+																	The USA TODAY Sports womens basketball coaches poll is conducted weekly throughout the regular season using a panel of head coaches at Division I schools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens College Basketball Rankings - Preseason 2020-21 2019-20 2018-19 2017-18 2016-17 2015-16 2014-15 2013-14 2012-13 2011-12 2010-11 2009-10 2008-09 2007-08 2006-07 2005-06 2004-05 2003-04 2002. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/4d/84/4f4d84a4acf860c6768a67d4dc2b4f04.jpg" data-lightbox="roadtrip" data-title="Lady Panthers Move Up Two Spots To No 7 In Ncaa Ii Poll Drury University Ncaa Athlete">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/4d/84/4f4d84a4acf860c6768a67d4dc2b4f04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt0ZUZSFeRQmWaJbtzjCSZfa0LR1WCESHPIg';" alt="Lady Panthers Move Up Two Spots To No 7 In Ncaa Ii Poll Drury University Ncaa Athlete">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lady Panthers Move Up Two Spots To No 7 In Ncaa Ii Poll Drury University Ncaa Athlete</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/df/e6/bedfe60226c19cb8e8bcc629c6333914.jpg" data-lightbox="roadtrip" data-title="Predictions For The Women S Ncaa Basketball Conference Tournaments Ncaa Basketball Basketball Tournaments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/df/e6/bedfe60226c19cb8e8bcc629c6333914.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbR2ffhxWZ2y6Cj9NGgruN5YUXmxv_qadLLA';" alt="Predictions For The Women S Ncaa Basketball Conference Tournaments Ncaa Basketball Basketball Tournaments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Predictions For The Women S Ncaa Basketball Conference Tournaments Ncaa Basketball Basketball Tournaments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/c7/98/6cc79898e500ed60a6c9f59c474ccdeb.jpg" data-lightbox="roadtrip" data-title="Pin On Stanford Women S Basketball Season 2019 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/c7/98/6cc79898e500ed60a6c9f59c474ccdeb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb2GAqlAZDThbXG-vg9JfLaPNBwoz0KpWb1g';" alt="Pin On Stanford Women S Basketball Season 2019 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Stanford Women S Basketball Season 2019 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/15/41/ab1541834a374ad1fa750b210c0fe9fd.jpg" data-lightbox="roadtrip" data-title="Pin On Wcbb 2015 16">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/15/41/ab1541834a374ad1fa750b210c0fe9fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMyJR66FryWAe4GzQ60t-N4udw6QYqnrM4Q';" alt="Pin On Wcbb 2015 16">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wcbb 2015 16</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/f3/3a/62f33ae780fc893785baa56de6d78c65.jpg" data-lightbox="roadtrip" data-title="Peach Belt Announces Women S Basketball Preseason Coaches Poll Basketball Coaching Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/f3/3a/62f33ae780fc893785baa56de6d78c65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLQOGWcQDxAvbqmflvS6rUOxwIieMUpeyFJQ';" alt="Peach Belt Announces Women S Basketball Preseason Coaches Poll Basketball Coaching Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Peach Belt Announces Women S Basketball Preseason Coaches Poll Basketball Coaching Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/fa/16/f3fa16cfe7c135f60e52efe6b253f9ac.jpg" data-lightbox="roadtrip" data-title="Get Ncaa Women S College Basketball Rankings From The Associated Press Usa Today Wbca And Ncaa Committee College Basketball Basketball News Ncaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/fa/16/f3fa16cfe7c135f60e52efe6b253f9ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgNgvvqCe_Afsr9C6oDFM-bKTLKf78ZwAfJQ';" alt="Get Ncaa Women S College Basketball Rankings From The Associated Press Usa Today Wbca And Ncaa Committee College Basketball Basketball News Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Ncaa Women S College Basketball Rankings From The Associated Press Usa Today Wbca And Ncaa Committee College Basketball Basketball News Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/6c/20/116c2064d494ebbb485d5d50f69fa6d3.jpg" data-lightbox="roadtrip" data-title="2013 Ncaa Women S Basketball Tournament Womens Basketball Basketball Girls I Love Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/6c/20/116c2064d494ebbb485d5d50f69fa6d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4_4kpR78eAYju8jNrDiaxmJA5rWz2Y5X9A';" alt="2013 Ncaa Women S Basketball Tournament Womens Basketball Basketball Girls I Love Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2013 Ncaa Women S Basketball Tournament Womens Basketball Basketball Girls I Love Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/f7/ad/1cf7adffb395f789350ab7f0aa9bd98f.png" data-lightbox="roadtrip" data-title="Marvel At This Breanna Stewart Dunk In All Its Slow Motion Majesty Uconn Womens Basketball Womens Basketball Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/f7/ad/1cf7adffb395f789350ab7f0aa9bd98f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsaqci6s-qHKpUKPy4p77YDHmIgAEvlMoONw';" alt="Marvel At This Breanna Stewart Dunk In All Its Slow Motion Majesty Uconn Womens Basketball Womens Basketball Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marvel At This Breanna Stewart Dunk In All Its Slow Motion Majesty Uconn Womens Basketball Womens Basketball Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/6c/32/b06c322932415c836948e7325ad9c6d1.jpg" data-lightbox="roadtrip" data-title="Kentucky Women Rise To No 5 In Coaches Poll 1 31 12 Kentucky Sports Kentucky Big Blue Nation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/6c/32/b06c322932415c836948e7325ad9c6d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOsT8OHetkhCNA23mwCrOIhaPNY_rA-gzC6A';" alt="Kentucky Women Rise To No 5 In Coaches Poll 1 31 12 Kentucky Sports Kentucky Big Blue Nation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Women Rise To No 5 In Coaches Poll 1 31 12 Kentucky Sports Kentucky Big Blue Nation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/20/7c/22/207c22a8ae61e77793084260b6101cb2.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Takes On Marietta Womens Basketball Basketball Marietta">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/20/7c/22/207c22a8ae61e77793084260b6101cb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVha1P8DcVbGpCJ-E0U7mt2YilHEBNyyOvjA';" alt="Women S Basketball Takes On Marietta Womens Basketball Basketball Marietta">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Takes On Marietta Womens Basketball Basketball Marietta</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/a0/ea/f8a0eaa888db443cf1963d6fdc0c01e6.jpg" data-lightbox="roadtrip" data-title="Crusaders Debut At 16 In Latest Avca Coaches Poll Women Volleyball Coaching Coaching Volleyball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/a0/ea/f8a0eaa888db443cf1963d6fdc0c01e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfj5XLsTpi2zAvdqwwMqu3ef_Uqz2mV89svA';" alt="Crusaders Debut At 16 In Latest Avca Coaches Poll Women Volleyball Coaching Coaching Volleyball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Crusaders Debut At 16 In Latest Avca Coaches Poll Women Volleyball Coaching Coaching Volleyball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/1e/10/351e10801fc6bee9d91b9d88d869b6f8.jpg" data-lightbox="roadtrip" data-title="Uconn Women Win Fourth Straight Ncaa Basketball Title 11th For Auriemma Fox News Nbafunnymeme Co Womens Basketball Uconn Womens Basketball Ncaa Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/1e/10/351e10801fc6bee9d91b9d88d869b6f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMqv8FCnyBBn1IZ6PHrcjt_9eChkcu_BHH5w';" alt="Uconn Women Win Fourth Straight Ncaa Basketball Title 11th For Auriemma Fox News Nbafunnymeme Co Womens Basketball Uconn Womens Basketball Ncaa Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn Women Win Fourth Straight Ncaa Basketball Title 11th For Auriemma Fox News Nbafunnymeme Co Womens Basketball Uconn Womens Basketball Ncaa Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/b6/3c/73b63c1573e7188677bcbab2faf6a63a.jpg" data-lightbox="roadtrip" data-title="Kristine Anigwe S Growth On Off The Court Leads Cal Women College Basketball Game Womens Basketball Ncaa College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/b6/3c/73b63c1573e7188677bcbab2faf6a63a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCJEhvQGc_W_xMnL2mjBgoNwC7bsoJEocMaw';" alt="Kristine Anigwe S Growth On Off The Court Leads Cal Women College Basketball Game Womens Basketball Ncaa College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kristine Anigwe S Growth On Off The Court Leads Cal Women College Basketball Game Womens Basketball Ncaa College</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/saint-vincent-college-womens-basketball-roster.html">Saint Vincent College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/rounding-out-post-9-11-gi-bill.html">Rounding Out Post 9 11 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/rankings-of-college-womens-basketball.html">Rankings Of College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/reason-to-go-to-college.html">Reason To Go To College</a></li>
+													<li class="list-group-item"><a href="/rothco-9-gi-type-combat-boot.html">Rothco 9 Gi Type Combat Boot</a></li>
+													<li class="list-group-item"><a href="/reserve-gi-bill-requirements.html">Reserve Gi Bill Requirements</a></li>
+													<li class="list-group-item"><a href="/regis-college-womens-basketball-roster.html">Regis College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/ranger-college-womens-basketball-schedule.html">Ranger College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/reasons-why-u-should-go-to-college.html">Reasons Why U Should Go To College</a></li>
+													<li class="list-group-item"><a href="/reasons-you-should-not-go-to-college.html">Reasons You Should Not Go To College</a></li>
+													<li class="list-group-item"><a href="/roanoke-college-womens-basketball-schedule.html">Roanoke College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/ramapo-college-womens-basketball-roster.html">Ramapo College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/rust-college-womens-basketball-coach.html">Rust College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/reserve-gi-bill-rates.html">Reserve Gi Bill Rates</a></li>
+													<li class="list-group-item"><a href="/receive-my-gi-bill.html">Receive My Gi Bill</a></li>
+													<li class="list-group-item"><a href="/rollins-college-womens-basketball-roster.html">Rollins College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/san-diego-bah-2020-gi-bill.html">San Diego Bah 2020 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/reserve-gi-bill-benefits.html">Reserve Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/ripon-college-womens-basketball-roster.html">Ripon College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/reasons-to-go-to-college-of-charleston.html">Reasons To Go To College Of Charleston</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

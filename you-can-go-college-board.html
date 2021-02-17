@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>You Can Go College Board - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "You Can Go College Board",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/1a/04/f5/1a04f56c0ca00bac7e77784938ba0435.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=you+can+go+college+board",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>You Can Go College Board</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The SAT tests abilities in reading writing and mathematics. The College Board is an American not-for-profit organization that was formed in December 1899 as the College Entrance Examination Board CEEB to expand access to higher educationWhile the College Board is not an association of colleges it runs a membership association of institutions including over 6000 schools colleges universities and other educational organizations. Definition of College Board used for administration of tests of aptitude and achievement considered by some colleges in determining admission and placement of students Learn More about College Board Dictionary Entries near College Board. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/ncaa-womens-basketball-maryland.html">ncaa womens basketball maryland</a>
+											<a class="badge badge-warning" href="/ncaa-womens-basketball-powerhouse-crossword.html">ncaa womens basketball powerhouse crossword</a>
+											<a class="badge badge-success" href="/ncaa-womens-basketball-rankings-usa-today.html">ncaa womens basketball rankings usa today</a>
+											<a class="badge badge-info" href="/ncaa-womens-basketball-coaches-salaries-2020.html">ncaa womens basketball coaches salaries 2020</a>
+											<a class="badge badge-info" href="/ncaa-womens-basketball-division-1-teams.html">ncaa womens basketball division 1 teams</a>
+											<a class="badge badge-info" href="/ncaa-college-womens-basketball-scores.html">ncaa college womens basketball scores</a>
+											<a class="badge badge-dark" href="/ncaa-womens-basketball-rankings-mid-major.html">ncaa womens basketball rankings mid major</a>
+											<a class="badge badge-success" href="/navy-transfer-gi-bill-benefits.html">navy transfer gi bill benefits</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to visit the right blog.  Our website provides you with hints for seeing the maximum quality video and picture content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/21/0e/ba210e67e5c90dc566273c11e3ee3233.jpg" data-lightbox="roadtrip" data-title="We Went To College You Can Too Bulletin Board For College Awareness Elementaryschoolcouns College Awareness High School Counseling College Bulletin Boards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/21/0e/ba210e67e5c90dc566273c11e3ee3233.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgT5yO0XNR0mguAV1cMmykvmKFX9FbIweXYA';" alt="We Went To College You Can Too Bulletin Board For College Awareness Elementaryschoolcouns College Awareness High School Counseling College Bulletin Boards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Went To College You Can Too Bulletin Board For College Awareness Elementaryschoolcouns College Awareness High School Counseling College Bulletin Boards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/ff/15/e3ff1567d8c3178a36291bad2b9c6160.jpg" data-lightbox="roadtrip" data-title="Henry County Public Schools College Bulletin Boards High School Counseling College Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/ff/15/e3ff1567d8c3178a36291bad2b9c6160.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60T4VGbzerKrkLGC_m5fTXEmkZS4jlIINpQ';" alt="Henry County Public Schools College Bulletin Boards High School Counseling College Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Henry County Public Schools College Bulletin Boards High School Counseling College Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/18/12/a91812fc7386a9ac701e074ab64b211b.jpg" data-lightbox="roadtrip" data-title="Oh The Places You Ll Go College Acceptances Bulletin Board Created By My Nyu Guidance College Advising School Counseling Bulletin Boards College Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/18/12/a91812fc7386a9ac701e074ab64b211b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlOlaEnfamEMkku5agNoia57Ip3UAgcgbXw';" alt="Oh The Places You Ll Go College Acceptances Bulletin Board Created By My Nyu Guidance College Advising School Counseling Bulletin Boards College Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oh The Places You Ll Go College Acceptances Bulletin Board Created By My Nyu Guidance College Advising School Counseling Bulletin Boards College Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/65/32/1e6532c5f633b5408df00f28279ee729.jpg" data-lightbox="roadtrip" data-title="A Cool Way To Display Where School Staff Attended College And Which Colleges Current Students Will College Awareness Teachers College High School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/65/32/1e6532c5f633b5408df00f28279ee729.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT11qnI2PgnQJ6EbT8HY-39ZWJBELq-1NrF0Q';" alt="A Cool Way To Display Where School Staff Attended College And Which Colleges Current Students Will College Awareness Teachers College High School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Cool Way To Display Where School Staff Attended College And Which Colleges Current Students Will College Awareness Teachers College High School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/04/f5/1a04f56c0ca00bac7e77784938ba0435.jpg" data-lightbox="roadtrip" data-title="Oh The Places You Ll Go Good For College Week Or Just To Inspire Door Decorations College School Decorations College Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/04/f5/1a04f56c0ca00bac7e77784938ba0435.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp-c9TC225g7CuERnFPIjpGx360707UBJXDQ';" alt="Oh The Places You Ll Go Good For College Week Or Just To Inspire Door Decorations College School Decorations College Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oh The Places You Ll Go Good For College Week Or Just To Inspire Door Decorations College School Decorations College Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/f5/d8/58f5d8d403b2590147e6f0dd9d2fe6b1.jpg" data-lightbox="roadtrip" data-title="Pin By Courtney Spies On Teaching College Bulletin Boards High School Bulletin Boards Bulletin Boards Theme">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/f5/d8/58f5d8d403b2590147e6f0dd9d2fe6b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Pa6wRYYH5McMaxEmI0Or_BEjM8NXJUCjHQ';" alt="Pin By Courtney Spies On Teaching College Bulletin Boards High School Bulletin Boards Bulletin Boards Theme">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Courtney Spies On Teaching College Bulletin Boards High School Bulletin Boards Bulletin Boards Theme</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ba/21/0e/ba210e67e5c90dc566273c11e3ee3233.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Pa6wRYYH5McMaxEmI0Or_BEjM8NXJUCjHQ';" alt="Pin By Courtney Spies On Teaching College Bulletin Boards High School Bulletin Boards Bulletin Boards Theme">
+										<div class="card-body">
+						<h3 class="h5"><b>They should be in this order.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>You can go college board</strong>. 
+								
+																	A charitable organization with ongoing fund raising activities by Church and Business community. 
+																	You might have a paper due on Tuesday and two exams that each require 10 hours of preparation on Wednesday. 
+																	Make sure to take advantage of your 2021 free score send before the June 20 deadline. 
+																	College is a great place to learn time-management skills. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If public speaking is something you want to improve go ahead and take a speech. 
+																	Due date to register to the college i want to go is on january 30. 
+																	Meet Your Enrollment Goals With Search. 
+																	Yes You Can Go to College. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Meanwhile Kings College London s Covid Symptom Study estimates there were 20360 Brits falling unwell with the disease every day last week right down 29 per cent on the 28645 the week. 
+																	However more than 30 percent of high school students dont see college as a possibility for them even after theyve gained admission. 
+																	If youre skateboarding in college our top recommendation would be to pick up a longboard like the Sector 9 Danger Fort or a super short board like the Penny Board. 
+																	Explore Higher Ed Services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On the other side of the board the four packs of Fun Sports Re-Exam and Flunk cards should be placed with these words up. 
+																	More information Free resources from College Board. 
+																	AP Action Plan for the School Year. 
+																	I applied for student aid last week and received an email saying how much i get and i was going to register directly to college but my friend said you need a college board test to go to college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These students didnt think they could go to college but they made it happen. 
+																	You can order as many score reports as you need. 
+																	Watch their stories at YouCanGo. 
+																	Offers Education and Career opportunities for students to attend College through SAT preparation Scholarships and Annual College Tours. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As well as providing guides on GCSEs A-levels and. 
+																	To use your free score send sign in to My AP go to My AP Profile select the Score Send tab and choose the college university or scholarship organization that you want to receive your score report. 
+																	Connect to 300M in Scholarships. 
+																	You can also take your weaknesses and build on them in college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They do not store directly personal information but are based on uniquely identifying your browser and internet device. 
+																	The website provides you with access to AP SAT and CLEP test prep assignments and practice tests giving you the opportunity to strengthen your scores before taking on the tests in a real-world setting. 
+																	You can send scores online anytime for a fee. 
+																	The grades achieved can play a big role in determining what colleges sixth forms universities and jobs you can go into so you need to know all about them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View Your PSAT 89 Scores. 
+																	Figuring out your strengths and weaknesses can help you assess what kind of major to go into. 
+																	Webinars to Support Your Search Strategy. 
+																	--- Check DOLLARS FOR SCHOLARS Program at Scholarships link. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Discover what most students consider important. 
+																	With the government once more overhauling the education system it is imperative to read up on grades subjects and university to help ensure students reach their full potential. 
+																	Freshman Sophomore Junior and Senior. 
+																	This is where College Board excels. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apr 10 2012 - Taking time to think about your likes and dislikes your interests and your goals can help you plan for the future. 
+																	Pay for College Experts bust myths about paying for college More on how financial aid works Explore Careers Add up. 
+																	The playing cards are lined up with the four packs of picture cards face up on one side of the playing board. 
+																	He said i can take the test and register to college on august but from january to august is a -load of time and now Im stuck. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They may be used by those companies to build a profile of your interests and show you relevant advertising from College Board on other sites. 
+																	With a College Board Account you go through the process of applying for financial aid. 
+																	If you do not allow these cookies you will experience less targeted advertising. 
+																	It is one of the two main tests colleges use for admissions the other one being ACTAmerican College Testing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out how they overcame their obstacles. 
+																	Contact us at E-mail address. 
+																	The College Board is a non-profit organization that clears a path for all students to own their future through the AP Program SAT SATPractice on Khan Academy BigFuture and more. 
+																	Top 10 questions to ask yourself as you begin planning for college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College is a big step along the path to success in many careers. 
+																	And lets throw in a quiz on. 
+																	Register to Meet University of Florida Vanderbilt and More on Feb. 
+																	Take the College Board Opportunity Scholarships Pledge and Receive a Free Digital Toolkit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For example if public speaking isnt really your thing you might want to avoid majors that could lead to careers like being a news anchor or spokesperson. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/eb/32/c4eb3253c7c8a91d196407d199d623fa.jpg" data-lightbox="roadtrip" data-title="Pin By Melanie Scofield On Bulletin Boards For Work Ideas College Bulletin Boards High School Bulletin Boards School Counselor Bulletin Boards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/eb/32/c4eb3253c7c8a91d196407d199d623fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpAblEq8WUaTnD4W-XeCymEWC-6T2c9M38og';" alt="Pin By Melanie Scofield On Bulletin Boards For Work Ideas College Bulletin Boards High School Bulletin Boards School Counselor Bulletin Boards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Melanie Scofield On Bulletin Boards For Work Ideas College Bulletin Boards High School Bulletin Boards School Counselor Bulletin Boards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/83/f5/7883f59e8a66217f4fd97fb30e29c138.jpg" data-lightbox="roadtrip" data-title="Back To School College Board Ra Rabulletinboards Back To School College Board Ra College Board Dorm Bulletin Boards College Bulletin Boards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/83/f5/7883f59e8a66217f4fd97fb30e29c138.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ll4AYdOTFcTHI7e6a4dl_2XakzZiEaHlcw';" alt="Back To School College Board Ra Rabulletinboards Back To School College Board Ra College Board Dorm Bulletin Boards College Bulletin Boards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Back To School College Board Ra Rabulletinboards Back To School College Board Ra College Board Dorm Bulletin Boards College Bulletin Boards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/8b/57/e38b57a2e2d3f289b016a3d23835e551.jpg" data-lightbox="roadtrip" data-title="Pin By Robin Jackson On Assistant Principal Ideas School Counseling Office School Counseling Bulletin Boards College Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/8b/57/e38b57a2e2d3f289b016a3d23835e551.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxedfzCGOnPhtAsY8Ty7J-92F-7BAHz5YEhg';" alt="Pin By Robin Jackson On Assistant Principal Ideas School Counseling Office School Counseling Bulletin Boards College Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Robin Jackson On Assistant Principal Ideas School Counseling Office School Counseling Bulletin Boards College Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/1c/8f/e71c8fdb9d8348638c9b42e9fe165d28.jpg" data-lightbox="roadtrip" data-title="Where Are You Going To College College Awareness Teachers College High School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/1c/8f/e71c8fdb9d8348638c9b42e9fe165d28.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TkHNEJF-YbEZiJbfcUjbgZ_D3k01aGQRkA';" alt="Where Are You Going To College College Awareness Teachers College High School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Where Are You Going To College College Awareness Teachers College High School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/7d/9f/ca7d9f28cdb7186b075290515e6f1ee1.jpg" data-lightbox="roadtrip" data-title="College Board High School Counseling School Counselor College Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/7d/9f/ca7d9f28cdb7186b075290515e6f1ee1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKadkYENg00amQrolyT93RZuDn1z3sH3nHEw';" alt="College Board High School Counseling School Counselor College Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Board High School Counseling School Counselor College Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/0e/ed/160eed0935eb7439d71cb1fb29c56138.jpg" data-lightbox="roadtrip" data-title="College Is Not A Dream It Is A Plan From Modoc High School Avid Middle School Counseling High School Counseling College Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/0e/ed/160eed0935eb7439d71cb1fb29c56138.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT71c_Yq2MUXAlHTHpewOXpsTMl2jvGObifPA';" alt="College Is Not A Dream It Is A Plan From Modoc High School Avid Middle School Counseling High School Counseling College Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Is Not A Dream It Is A Plan From Modoc High School Avid Middle School Counseling High School Counseling College Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/3a/be/16/3abe1615174106549a19b7f415e0e67d.jpg" data-lightbox="roadtrip" data-title="You Will Initially Require To Put In An Application To That Sch High School Counseling Bulletin Boards School Counseling Bulletin Boards High School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/3a/be/16/3abe1615174106549a19b7f415e0e67d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTynwabXYLHkOjxq_UE-TE2ZRPGAuzgTcQlfQ';" alt="You Will Initially Require To Put In An Application To That Sch High School Counseling Bulletin Boards School Counseling Bulletin Boards High School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Will Initially Require To Put In An Application To That Sch High School Counseling Bulletin Boards School Counseling Bulletin Boards High School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/2a/04/3d2a046357b7aea8d73e33c2716014a8.jpg" data-lightbox="roadtrip" data-title="College Going Culture Education College College Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/2a/04/3d2a046357b7aea8d73e33c2716014a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg-mtBTZSCZL2sQ-5ek4bHQbFcaEfwSWK3gQ';" alt="College Going Culture Education College College Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Going Culture Education College College Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/1e/86/b01e86c478a865e1b4842776890413f1.jpg" data-lightbox="roadtrip" data-title="Katie Hrubec Millard Kolette Haverback Bartley Julie Forrest Munn High School Bulletin Boards School Counseling Bulletin Boards College Bulletin Boards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/1e/86/b01e86c478a865e1b4842776890413f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQthd-kDzk2ehdp0bl3SN1C2MJlUYw92ZcMMw';" alt="Katie Hrubec Millard Kolette Haverback Bartley Julie Forrest Munn High School Bulletin Boards School Counseling Bulletin Boards College Bulletin Boards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Katie Hrubec Millard Kolette Haverback Bartley Julie Forrest Munn High School Bulletin Boards School Counseling Bulletin Boards College Bulletin Boards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/7d/34/f37d34694ff5edb14b3ece0177a8cb98.jpg" data-lightbox="roadtrip" data-title="Pin On Classroom Genius">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/7d/34/f37d34694ff5edb14b3ece0177a8cb98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDtrKhRxC4VHDQt8QsCdvR7TvxVB5wC_lEDA';" alt="Pin On Classroom Genius">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Classroom Genius</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/3a/f9/5a3af91f22e13b1311b852797c7c312e.jpg" data-lightbox="roadtrip" data-title="February Board Self Love Tinder College Ra Made With A Mirror My Residents Loved It College Bulletin Boards Res Life Bulletin Boards Dorm Bulletin Boards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/3a/f9/5a3af91f22e13b1311b852797c7c312e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mqlANbSe40ZAZgbIL2Jb3UlfBGyK9qtpew';" alt="February Board Self Love Tinder College Ra Made With A Mirror My Residents Loved It College Bulletin Boards Res Life Bulletin Boards Dorm Bulletin Boards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">February Board Self Love Tinder College Ra Made With A Mirror My Residents Loved It College Bulletin Boards Res Life Bulletin Boards Dorm Bulletin Boards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/94/b0/bd94b0fef910924cfe29dbbd275168fb.jpg" data-lightbox="roadtrip" data-title="College Bound Bulletin Board I Would Modify For Junior High Would The High Schools Donate S College Bulletin Boards College Awareness High School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/94/b0/bd94b0fef910924cfe29dbbd275168fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-JD_azTh6HfUxHnGhFlX1XeLPkVc4X4fTbQ';" alt="College Bound Bulletin Board I Would Modify For Junior High Would The High Schools Donate S College Bulletin Boards College Awareness High School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Bound Bulletin Board I Would Modify For Junior High Would The High Schools Donate S College Bulletin Boards College Awareness High School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/e1/5b/f5e15b4668fc38871c644f1b2e0aa2d7.jpg" data-lightbox="roadtrip" data-title="Pin By Peoria Unified School District On Peoria Unified Classrooms School Counseling Bulletin Boards High School Bulletin Boards School Counselor Bulletin Boards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/e1/5b/f5e15b4668fc38871c644f1b2e0aa2d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN_003r6PZOyt3AKNllpSoR9MgQfYUGyhQbg';" alt="Pin By Peoria Unified School District On Peoria Unified Classrooms School Counseling Bulletin Boards High School Bulletin Boards School Counselor Bulletin Boards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Peoria Unified School District On Peoria Unified Classrooms School Counseling Bulletin Boards High School Bulletin Boards School Counselor Bulletin Boards</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-education-gi-bill-phone-number.html">Va Education Gi Bill Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-education-benefitsgov.html">Va Education Benefitsgov</a></li>
+													<li class="list-group-item"><a href="/va-education-enrollment-verification.html">Va Education Enrollment Verification</a></li>
+													<li class="list-group-item"><a href="/va-education-programs-for-dependents.html">Va Education Programs For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-education-office-san-antonio.html">Va Education Office San Antonio</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-waiver-form.html">Va Education Benefits Waiver Form</a></li>
+													<li class="list-group-item"><a href="/va-education-for-spouse.html">Va Education For Spouse</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-taxable.html">Va Education Benefits Taxable</a></li>
+													<li class="list-group-item"><a href="/va-education-stipend.html">Va Education Stipend</a></li>
+													<li class="list-group-item"><a href="/va-education-chapter-33.html">Va Education Chapter 33</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-time-limit.html">Va Education Benefits Time Limit</a></li>
+													<li class="list-group-item"><a href="/va-education-change-of-program-form.html">Va Education Change Of Program Form</a></li>
+													<li class="list-group-item"><a href="/va-education-requirements.html">Va Education Requirements</a></li>
+													<li class="list-group-item"><a href="/va-education-office-oklahoma.html">Va Education Office Oklahoma</a></li>
+													<li class="list-group-item"><a href="/va-education-loan.html">Va Education Loan</a></li>
+													<li class="list-group-item"><a href="/va-education-loan-repayment.html">Va Education Loan Repayment</a></li>
+													<li class="list-group-item"><a href="/va-education-direct-deposit.html">Va Education Direct Deposit</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-what-is-full-time.html">Va Education Benefits What Is Full Time</a></li>
+													<li class="list-group-item"><a href="/va-education-schools.html">Va Education Schools</a></li>
+													<li class="list-group-item"><a href="/va-education-claim-status.html">Va Education Claim Status</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

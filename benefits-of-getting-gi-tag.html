@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Benefits Of Getting Gi Tag - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Benefits Of Getting Gi Tag",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/7d/be/a5/7dbea5a044a4bca6eb8b3f5eab3e458f.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=benefits+of+getting+gi+tag",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Benefits Of Getting Gi Tag</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It is different from trade mark which is granted to individual companiesThe consultant said the members of Haleem Makers. The authentic spice is expected to fetch better price in. A GI tag A particular item has originated from a particular region only. <br>				
+			</p>
+										<a class="badge badge-dark" href="/post-911-gi-bill-mha.html">post 911 gi bill mha</a>
+											<a class="badge badge-primary" href="/post-911-gi-bill-transfer-education-benefits.html">post 911 gi bill transfer education benefits</a>
+											<a class="badge badge-warning" href="/post-911-gi-bill-tuition-payment.html">post 911 gi bill tuition payment</a>
+											<a class="badge badge-secondary" href="/post-911-gi-bill-monthly-housing-allowance.html">post 911 gi bill monthly housing allowance</a>
+											<a class="badge badge-primary" href="/post-911-gi-bill-payment-dates.html">post 911 gi bill payment dates</a>
+											<a class="badge badge-dark" href="/post-911-gi-bill-not-getting-paid.html">post 911 gi bill not getting paid</a>
+											<a class="badge badge-light" href="/post-911-gi-bill-online-benefits.html">post 911 gi bill online benefits</a>
+											<a class="badge badge-info" href="/post-911-gi-bill-us-code.html">post 911 gi bill us code</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the right site.  Our site provides you with suggestions for viewing the highest quality video and image content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you view.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/3f/e1/c3/3fe1c333adc9536d94501493b281fa72.jpg" data-lightbox="roadtrip" data-title="What Is Gi Tag Benefits Of Gi Tags In India Tags Benefit Fun Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/3f/e1/c3/3fe1c333adc9536d94501493b281fa72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSml5YqCX5XuNkwgYOpvKTSjIm_mTawhqsw2Q';" alt="What Is Gi Tag Benefits Of Gi Tags In India Tags Benefit Fun Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Gi Tag Benefits Of Gi Tags In India Tags Benefit Fun Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/86/e7/1d/86e71ddc68cf9c51ce628631eec6f980.jpg" data-lightbox="roadtrip" data-title="What Is Gi Tag Benefits Of Gi Tags In India In 2020 India Important Facts Tags">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/86/e7/1d/86e71ddc68cf9c51ce628631eec6f980.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk4-N2DtxIsr5NjXxUdoUmqVrhrlV-0VbKOw';" alt="What Is Gi Tag Benefits Of Gi Tags In India In 2020 India Important Facts Tags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Gi Tag Benefits Of Gi Tags In India In 2020 India Important Facts Tags</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/d1/33/36d1330970961eec8ebdc9b4df1e1e35.jpg" data-lightbox="roadtrip" data-title="Geographical Indication Gi Is One Of The Hot Question Topics For Almost All Competitive Exams Including India Facts Indian History Facts Indigenous Knowledge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/d1/33/36d1330970961eec8ebdc9b4df1e1e35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkeUYZ1nnN3saSwtQ5Cvk3kSyPVBJmcLOggg';" alt="Geographical Indication Gi Is One Of The Hot Question Topics For Almost All Competitive Exams Including India Facts Indian History Facts Indigenous Knowledge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Geographical Indication Gi Is One Of The Hot Question Topics For Almost All Competitive Exams Including India Facts Indian History Facts Indigenous Knowledge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/be/a5/7dbea5a044a4bca6eb8b3f5eab3e458f.png" data-lightbox="roadtrip" data-title="What Is Gi Tag Benefits Of Gi Tags In India World Breaking News Fun Facts Union Minister">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/be/a5/7dbea5a044a4bca6eb8b3f5eab3e458f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vuNFG0yRkDRQ5ZEbe0fWWdw4WBE_ccqOOA';" alt="What Is Gi Tag Benefits Of Gi Tags In India World Breaking News Fun Facts Union Minister">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Gi Tag Benefits Of Gi Tags In India World Breaking News Fun Facts Union Minister</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c8/fe/87/c8fe87b8cc31d968a094cce1b9d18506.jpg" data-lightbox="roadtrip" data-title="With Over A Dozen Unique Products In Its Kitty Jammu Still Yearns For Gi Tag In 2021 Jammu Old Question Papers Mizoram">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c8/fe/87/c8fe87b8cc31d968a094cce1b9d18506.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmBY9NwMSUwsQs9pyZfV5zKI_S1SkBy3_koQ';" alt="With Over A Dozen Unique Products In Its Kitty Jammu Still Yearns For Gi Tag In 2021 Jammu Old Question Papers Mizoram">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">With Over A Dozen Unique Products In Its Kitty Jammu Still Yearns For Gi Tag In 2021 Jammu Old Question Papers Mizoram</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/3_t1A_QIAPw/maxresdefault.jpg" data-lightbox="roadtrip" data-title="What Is Gi Tag Benefits Of Gi Tags In India Important Facts Tags Topics">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/3_t1A_QIAPw/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfRPFptKg7B8pPTNk1LRk43vR2KSBLvMpp5A';" alt="What Is Gi Tag Benefits Of Gi Tags In India Important Facts Tags Topics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Gi Tag Benefits Of Gi Tags In India Important Facts Tags Topics</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/d3/00/cd/d300cd1734243a430aef5ac5bb36d2b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfRPFptKg7B8pPTNk1LRk43vR2KSBLvMpp5A';" alt="What Is Gi Tag Benefits Of Gi Tags In India Important Facts Tags Topics">
+										<div class="card-body">
+						<h3 class="h5"><b>The farmers are hoping to benefit from the increase in demand.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Benefits of getting gi tag</strong>. 
+								
+																	Legal protection to the products Prevents unauthorised use of GI tag products by others It helps consumers to get quality products of desired traits and is assured of authenticity. 
+																	Data from Intellectual Property India Infographic by Nandita Singh. 
+																	Click here httpsbitly2wJs0SV to Download our Android APP to have access to 1000s of Smart_Courses covering length and breadth of almost all competitiv. 
+																	However farmers who are the ultimate recipients need to register themselves as authorized users to avail the benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI tag ensures that none other than those registered as authorised users or at least those residing inside the geographic territory are allowed to use the popular product name. 
+																	The Department for Promotion of Industry and Internal Trade is actively involved in promotion and marketing of GIs the press statement said. 
+																	GI tag helps the farmers get a premium price and creates an export marketplace which further leads to a gush in international demand. 
+																	The various unique features of the Sirsi Supari listed in the application include their round and flattened coin shape taste weight etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This will help them to produce maximum tea and sell it at an economically viable price. 
+																	GI tags also boost sales and exports as the geographical limitation on production and official recognition of historical and cultural significance increase demand and create a legacy. 
+																	A GI registration is given to an area not a trader but once a product gets the registration traders dealing in the product can apply for selling it with the GI logo. 
+																	According to the locals efforts to get GI tag for the Sirsi Supari started in the year 2013. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These are listed below. 
+																	A GI tag provides a better market for these products and prevents misuse of the name. 
+																	A boost to the product Geographical indication GI refers to any indication that identifies the goods as originating from a particular place where a given quality reputation or other. 
+																	GI products can benefit the rural economy in remote areas by supplementing the incomes of artisans farmers weavers and craftsmen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Authorised traders are each assigned a unique GI number. 
+																	Keep in mind that the characteristics qualities and. 
+																	Ramnagar brinjal Adamchini rice and Banarasi Langda mango all from Varanasi will get GI Geographical Indication tag that will help give a boost to export of these agri products. 
+																	Darjeeling tea was the first GI-tagged product in India gaining its label in 2004-2005. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Darjeeling tea became the first GI tagged product in India in 20042005. 
+																	As is mentioned in the same report since registration of the GI tag 18 years ago producers of Italian Toscano olive oil started earning a premium of almost 20. 
+																	For example flavonoids content in the Areca Nut grown in other areas is 80 while it is 90 in the Sirsi Supari. 
+																	The GI tag is granted under GI Act 1999 to protect traditional products. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Geographical Indication registration confers the following benefits. 
+																	Products with a GI tag get premium pricing thus helping exporters earn better and which in turn incentivises producers. 
+																	According to official reports the GI tag will not only stop the adulteration of the spice but also improve its value in the export market. 
+																	A GI tag is a sign used on products that have a specific geographical origin and possess origin-based qualities and reputation in the region. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Also this will reduce the market competition for the tea breeders in Darjeeling. 
+																	The consumer-benefit purpose of the protection rights granted to the beneficiaries generally speaking the GI producers has similarities to but also differences from the trademark rights. 
+																	Conferring GI tag to Darjeeling tea will ensure that the export of authentic Darjeeling tea from Indian tea plantations increases. 
+																	Kanchipuram Silk Saree Alphanso Mango Nagpur Orange Kolhapuri Chappal Bikaneri Bhujia Agra Petha So outsiders cannot sell other variety of teas with titlelabel Darjeeling else they can be punished. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While GIs denote a geographical origin of a good trademarks denote a commercial origin of an enterprise. 
+																	A GI is a distinctive sign used to differentiate goods on the basis of its unique characteristics The GI tag for the same product to both the neighbouring states recognizes the two distinct. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e4/96/ea/e496eaf29162dbb4a75a9e8466e933c5.jpg" data-lightbox="roadtrip" data-title="Konkan Alphonso Mangoes Get A Geographical Indication Tag Hungryforever Food Blog Mango Health Benefits Mango Benefits Mangoes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e4/96/ea/e496eaf29162dbb4a75a9e8466e933c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsdCVvGqYd19vYsbk5SVHJuqVNNXLUa0TIuQ';" alt="Konkan Alphonso Mangoes Get A Geographical Indication Tag Hungryforever Food Blog Mango Health Benefits Mango Benefits Mangoes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Konkan Alphonso Mangoes Get A Geographical Indication Tag Hungryforever Food Blog Mango Health Benefits Mango Benefits Mangoes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d3/00/cd/d300cd1734243a430aef5ac5bb36d2b2.jpg" data-lightbox="roadtrip" data-title="Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d3/00/cd/d300cd1734243a430aef5ac5bb36d2b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2QeHpAwT7QjDVpM1AC1wF9dXRoVJZ837qMQ';" alt="Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/05/58/68/0558682b54f6dc220f1873dd363ea75a.jpg" data-lightbox="roadtrip" data-title="Orange Is Widely Considered One Of The Healthiest Beverages Because Of Its Wide Range Of Health Benefits Their Peel In 2020 Skin Protection Agriculture Handicraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/05/58/68/0558682b54f6dc220f1873dd363ea75a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkfvLDIqbOLO_33ZBdjZPr3MXv3CN8l7XEjQ';" alt="Orange Is Widely Considered One Of The Healthiest Beverages Because Of Its Wide Range Of Health Benefits Their Peel In 2020 Skin Protection Agriculture Handicraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Orange Is Widely Considered One Of The Healthiest Beverages Because Of Its Wide Range Of Health Benefits Their Peel In 2020 Skin Protection Agriculture Handicraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/53/79/035379f490013a78fdcc5d586a78106b.png" data-lightbox="roadtrip" data-title="Trick Or Treat It S Our Treat Get 15 Flat Discount On Teas Use Promo Halloween15 Valid Till 5th Nov Shop Www Golde Celebrities First Love Festival Season">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/53/79/035379f490013a78fdcc5d586a78106b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyDkXVARQm1t_wBQiNsb9osdbGFrnJ2JPTQ';" alt="Trick Or Treat It S Our Treat Get 15 Flat Discount On Teas Use Promo Halloween15 Valid Till 5th Nov Shop Www Golde Celebrities First Love Festival Season">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trick Or Treat It S Our Treat Get 15 Flat Discount On Teas Use Promo Halloween15 Valid Till 5th Nov Shop Www Golde Celebrities First Love Festival Season</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/62/2a/52/622a527776f05c06f940fca1a846e6f7.jpg" data-lightbox="roadtrip" data-title="Dhanu Gholvad Chikoo Gi Tag Of Mahrastra In 2020 Fruit Health Fruit Best Fruits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/62/2a/52/622a527776f05c06f940fca1a846e6f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRyw2Henk0XttKFojdRAG6UaNduQn1zGwR5A';" alt="Dhanu Gholvad Chikoo Gi Tag Of Mahrastra In 2020 Fruit Health Fruit Best Fruits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dhanu Gholvad Chikoo Gi Tag Of Mahrastra In 2020 Fruit Health Fruit Best Fruits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/fa/da/4efada1e89b949a1557f8e8bf3c901af.png" data-lightbox="roadtrip" data-title="Darjeeling Planters Apprehensive About Future Of Darjeeling Tea Exports Pin Hopes On Gi Tag The Darjeeling Tea Healthy Recipes Clean Healthy Eating Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/fa/da/4efada1e89b949a1557f8e8bf3c901af.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKswJ-racVVxZMM6gtBbO-B-565IMEhBmP3g';" alt="Darjeeling Planters Apprehensive About Future Of Darjeeling Tea Exports Pin Hopes On Gi Tag The Darjeeling Tea Healthy Recipes Clean Healthy Eating Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Darjeeling Planters Apprehensive About Future Of Darjeeling Tea Exports Pin Hopes On Gi Tag The Darjeeling Tea Healthy Recipes Clean Healthy Eating Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/d5/91/bed5917780412fa6cbd227fa1bd662f2.jpg" data-lightbox="roadtrip" data-title="Sambalpur S Residents Sought Gi Tag For Sarsatia In 2020 Sambalpur Tags Resident">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/d5/91/bed5917780412fa6cbd227fa1bd662f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzAIABZY5O-99xnqD0V4MhiVej6tihS8rbMg';" alt="Sambalpur S Residents Sought Gi Tag For Sarsatia In 2020 Sambalpur Tags Resident">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sambalpur S Residents Sought Gi Tag For Sarsatia In 2020 Sambalpur Tags Resident</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/16/3a/2f/163a2f7deaf86a641d2a664f3e87eee9.jpg" data-lightbox="roadtrip" data-title="Nanjangud Banana Gi Tag Of Karnataka Fruit Benefits Banana Fruit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/16/3a/2f/163a2f7deaf86a641d2a664f3e87eee9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPUECEnvyfY25Sh1ClwCwtv8ovMqbaRPtGiA';" alt="Nanjangud Banana Gi Tag Of Karnataka Fruit Benefits Banana Fruit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nanjangud Banana Gi Tag Of Karnataka Fruit Benefits Banana Fruit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a3/50/71/a3507176365c4b01a7c525cf38a27769.jpg" data-lightbox="roadtrip" data-title="Vazhakulam Pineapple Gi Tag Of Kerala Agriculture Pineapple Fruit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a3/50/71/a3507176365c4b01a7c525cf38a27769.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMREjVUippJmHhJ_z1lGiNgIFxefkCfPR6hg';" alt="Vazhakulam Pineapple Gi Tag Of Kerala Agriculture Pineapple Fruit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vazhakulam Pineapple Gi Tag Of Kerala Agriculture Pineapple Fruit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/89/cb/0e/89cb0e359ca70e73f9455bb59b4acc75.jpg" data-lightbox="roadtrip" data-title="Sangli Turmeric Gi Tag Of Maharastra Turmeric Health Turmeric Health Benefits Turmeric Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/89/cb/0e/89cb0e359ca70e73f9455bb59b4acc75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYOZNgqhdBZY2fx-fhtKCbLgykmLK_hHhCqQ';" alt="Sangli Turmeric Gi Tag Of Maharastra Turmeric Health Turmeric Health Benefits Turmeric Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sangli Turmeric Gi Tag Of Maharastra Turmeric Health Turmeric Health Benefits Turmeric Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a3/26/5b/a3265ba138881d7d8d688ec0c0b31e38.jpg" data-lightbox="roadtrip" data-title="Kangra Paintings Gi Tag Of Himachal Pradesh Painting Art Handicraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a3/26/5b/a3265ba138881d7d8d688ec0c0b31e38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkgIawXbOUPEKJkz-iug55BIfRdkaqHP5GDw';" alt="Kangra Paintings Gi Tag Of Himachal Pradesh Painting Art Handicraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kangra Paintings Gi Tag Of Himachal Pradesh Painting Art Handicraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ab/d7/a1/abd7a182b6c6c5b5167658e6c0d05610.jpg" data-lightbox="roadtrip" data-title="Guntur Sannam Chilli Gi Tag Of Andhra Pradesh Agriculture Vegetables Stuffed Peppers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ab/d7/a1/abd7a182b6c6c5b5167658e6c0d05610.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSa5XRyE0KJ95Yz7Qp73MMIAhFNO2ds0S_sg';" alt="Guntur Sannam Chilli Gi Tag Of Andhra Pradesh Agriculture Vegetables Stuffed Peppers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guntur Sannam Chilli Gi Tag Of Andhra Pradesh Agriculture Vegetables Stuffed Peppers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/d3/e5/19d3e56d38dc41b923a8ff3d5091779c.jpg" data-lightbox="roadtrip" data-title="Sikkim S Dalle Khursani Chilli Gets Gi Tag Free Pdf Download Sikkim Hot Chillies Heat Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/d3/e5/19d3e56d38dc41b923a8ff3d5091779c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtQh6k903dG1_5zNG9BoG1wZ-pZ5OFXO1SVg';" alt="Sikkim S Dalle Khursani Chilli Gets Gi Tag Free Pdf Download Sikkim Hot Chillies Heat Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sikkim S Dalle Khursani Chilli Gets Gi Tag Free Pdf Download Sikkim Hot Chillies Heat Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/post-911-veterans-educational-assistance-act.html">Post 911 Veterans Educational Assistance Act</a></li>
+													<li class="list-group-item"><a href="/providence-college-womens-basketball-stats.html">Providence College Womens Basketball Stats</a></li>
+													<li class="list-group-item"><a href="/post-asco-gi-2020.html">Post Asco Gi 2020</a></li>
+													<li class="list-group-item"><a href="/pre-vs-post-911-gi-bill.html">Pre Vs Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/presentation-college-womens-basketball-roster.html">Presentation College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/post-upper-gi-series.html">Post Upper Gi Series</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-when-do-i-get-paid.html">Post 911 Gi Bill When Do I Get Paid</a></li>
+													<li class="list-group-item"><a href="/pretty-female-college-basketball-players.html">Pretty Female College Basketball Players</a></li>
+													<li class="list-group-item"><a href="/pre-911-gi-bill-transfer.html">Pre 911 Gi Bill Transfer</a></li>
+													<li class="list-group-item"><a href="/pre-college-christmas-gifts.html">Pre College Christmas Gifts</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-years-of-service.html">Post 911 Gi Bill Years Of Service</a></li>
+													<li class="list-group-item"><a href="/post-911-statement-of-benefits.html">Post 911 Statement Of Benefits</a></li>
+													<li class="list-group-item"><a href="/post-911-veterans-are-different.html">Post 911 Veterans Are Different</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-vocational-rehabilitation.html">Post 911 Gi Bill Vocational Rehabilitation</a></li>
+													<li class="list-group-item"><a href="/post-911-va-caregiver-program.html">Post 911 Va Caregiver Program</a></li>
+													<li class="list-group-item"><a href="/post-upper-gi-endoscopy.html">Post Upper Gi Endoscopy</a></li>
+													<li class="list-group-item"><a href="/post-911-veterans-benefits.html">Post 911 Veterans Benefits</a></li>
+													<li class="list-group-item"><a href="/pronote-college-guy-de-maupassant-gareoult-espace-parent.html">Pronote College Guy De Maupassant Gareoult Espace Parent</a></li>
+													<li class="list-group-item"><a href="/pre-911-gi-bill.html">Pre 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-with-general-discharge.html">Post 911 Gi Bill With General Discharge</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

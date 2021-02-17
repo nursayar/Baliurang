@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Womens Basketball Assist Leaders - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Womens Basketball Assist Leaders",
+  "datePublished": "2021-02-17",
+  "image": "https://www.theday.com/storyimage/NL/20100407/SPORT06/304079882/AR/0/AR-304079882.jpg&amp;Maxw=800&amp;q=62",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+womens+basketball+assist+leaders",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Womens Basketball Assist Leaders</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Get the latest stats for College Basketball on CBS Sports. NCAA Leaders Leaders for. Discover the current NCAA Division II Womens Basketball leaders in every stats category as well as historic leaders. <br>				
+			</p>
+										<a class="badge badge-danger" href="/va-gi-bill-ojt.html">va gi bill ojt</a>
+											<a class="badge badge-secondary" href="/va-gi-bill-reimbursement.html">va gi bill reimbursement</a>
+											<a class="badge badge-success" href="/va-gi-bill-specialist-phone-number.html">va gi bill specialist phone number</a>
+											<a class="badge badge-primary" href="/va-gi-bill-name.html">va gi bill name</a>
+											<a class="badge badge-primary" href="/va-gi-bill-summer-2020.html">va gi bill summer 2020</a>
+											<a class="badge badge-secondary" href="/va-gi-bill-tuition-cap.html">va gi bill tuition cap</a>
+											<a class="badge badge-warning" href="/va-gi-bill-disbursement-dates.html">va gi bill disbursement dates</a>
+											<a class="badge badge-primary" href="/va-gi-bill-eligibility-form.html">va gi bill eligibility form</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the right site.  Our site provides you with suggestions for viewing the highest quality video and image content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/7/70/Courtney_Vandersloot.jpg" data-lightbox="roadtrip" data-title="List Of Ncaa Division I Women S Basketball Career Assists Leaders Wikiwand">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/7/70/Courtney_Vandersloot.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV2OJvJ-sQy0qIdbRUyrlmFiuSnPX5FPP-eA';" alt="List Of Ncaa Division I Women S Basketball Career Assists Leaders Wikiwand">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">List Of Ncaa Division I Women S Basketball Career Assists Leaders Wikiwand</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/womenshoopsworld.com/wp-content/uploads/2019/03/Barrs.png?ssl=1" data-lightbox="roadtrip" data-title="One On One With Ncaa All Time Steals Leader Chastadie Barrs Women S Hoops World">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/womenshoopsworld.com/wp-content/uploads/2019/03/Barrs.png?ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo10jHCqj4CQDTUB2Rd40w5Tqs7uq9bjE1zw';" alt="One On One With Ncaa All Time Steals Leader Chastadie Barrs Women S Hoops World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One On One With Ncaa All Time Steals Leader Chastadie Barrs Women S Hoops World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2020/02/17/cunane-ncstate-acc-ncaa-2020-wbb.JPG?itok=6gdKsPTF" data-lightbox="roadtrip" data-title="7 Players Who Can Impact The Race To The Women S Basketball Final Four Ncaa Com">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2020/02/17/cunane-ncstate-acc-ncaa-2020-wbb.JPG?itok=6gdKsPTF" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKuMA5hQcho4T2LKT2tPe0C6ZQ9jfWTMRvRg';" alt="7 Players Who Can Impact The Race To The Women S Basketball Final Four Ncaa Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Players Who Can Impact The Race To The Women S Basketball Final Four Ncaa Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.insider.com/5e5842edfee23d5581338b33?width=700" data-lightbox="roadtrip" data-title="Ncaa Women S Basketball Tournament 2020 Top Players To Watch Business Insider">
+											<img class="card-img v-image ads-img " src="https://i.insider.com/5e5842edfee23d5581338b33?width=700" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdkmfEmB04-LhBGhUSRHsbbAeOQm9KciS0zQ';" alt="Ncaa Women S Basketball Tournament 2020 Top Players To Watch Business Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Women S Basketball Tournament 2020 Top Players To Watch Business Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/20/96/36209660fe0b3b8adce9c549b944a0dc.png" data-lightbox="roadtrip" data-title="Ncaa All Time Leader Sabrina Ionescu Womens Basketball Womens Lacrosse Bicycle Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/20/96/36209660fe0b3b8adce9c549b944a0dc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD0SARqNWowHJxZVbgtDo5qMwFHoOq5j0Pfg';" alt="Ncaa All Time Leader Sabrina Ionescu Womens Basketball Womens Lacrosse Bicycle Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa All Time Leader Sabrina Ionescu Womens Basketball Womens Lacrosse Bicycle Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2020-01/aliyah-boston-sc-wbb-ncaa-2020.jpeg?h=d2a6b535&amp;itok=ShzSYiJk" data-lightbox="roadtrip" data-title="These Are 5 High Impact Freshmen In Women S College Basketball And What They Do Best Ncaa Com">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2020-01/aliyah-boston-sc-wbb-ncaa-2020.jpeg?h=d2a6b535&amp;itok=ShzSYiJk" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXjIDQnYFaXY_keU1h1r6fPijbfpKYop4Xzg';" alt="These Are 5 High Impact Freshmen In Women S College Basketball And What They Do Best Ncaa Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Are 5 High Impact Freshmen In Women S College Basketball And What They Do Best Ncaa Com</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2020/01/27/skylar-diggins-nd-wbb-2020.png?itok=HOwQ1m03" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXjIDQnYFaXY_keU1h1r6fPijbfpKYop4Xzg';" alt="These Are 5 High Impact Freshmen In Women S College Basketball And What They Do Best Ncaa Com">
+										<div class="card-body">
+						<h3 class="h5"><b>Discover the 2021 womens college basketball individual and team leaders across every major statistical category.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa womens basketball assist leaders</strong>. 
+								
+																	The only player on this list to be enshrined in the Naismith Memorial Basketball Hall of Fame is Cheryl Miller. 
+																	NCAA Division I Womens Basketball Statistics - 2020-21 Season. 
+																	In basketball an assist is a pass to a teammate that directly leads to a score by field goal. 
+																	From 1906 to 1955 there were no classifications to the NCAA nor its predecessor the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2021 NCAA womens basketball tournament selection show. 
+																	While the NCAAs current three-division format has been in place since the 197374 season the organization. 
+																	Points Per Game Rebounds Per Game Assists Per Game Steals Per Game Points Scored Total Rebounds Assists Steals Turnovers Blocked Shots Personal Fouls Field Goal Percentage Free Throw Percentage Three Point Field Goal Percentage. 
+																	The top 25 highest steals totals in National Collegiate Athletic Association NCAA Division I womens basketball history are listed below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Utah Jazz point guard John Stockton holds the record for most assists in a career with 15806 and in a season with 1164 in the 1990-91 season. 
+																	Points Per Game Rebounds Per Game Assists Per Game Steals Per Game Points Scored Total Rebounds Assists Steals Turnovers Blocked Shots Personal Fouls Field Goal Percentage Free Throw Percentage Three Point Field Goal Percentage. 
+																	In NCAA Division I mens basketball the record for assists in a game is 22 achieved by three different players. 
+																	It began recording assists in Division I in 198586. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	News scores polls. 
+																	News scores polls social conferences stats videos odds. 
+																	Season Points Career Rebounds Yearly Assists Season Wins Career W-L College Basketball Scores UNLV 77 Duke 79 Kentucky 103 Duke 104 UNC 54 Kansas 53 NC State 54 Houston 52. 
+																	In basketball a steal is the act of legally gaining possession of the ball by a defensive player who causes the opponent to turn the ball over. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NCAA Division I Mens Basketball Statistics - 2020-21. 
+																	As of 2010 the NBA record for assists in a game is 30 by Orlando Magic guard Scott Skiles in December 1990. 
+																	NCAA Leaders Choose A Leader. 
+																	NCAA Leaders Choose A Leader. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Season Points Career Rebounds Yearly Assists Season Wins Career W-L College Basketball Scores UNLV 77 Duke 79 Kentucky 103 Duke 104 UNC 54 Kansas 53 NC State 54 Houston 52. 
+																	The NCAA did not split into its current divisions format until August 1973. 
+																	The top 25 highest assists totals in National Collegiate Athletic Association NCAA Division I mens basketball history are listed below. 
+																	The NCAA did not immediately record assists throughout womens college basketball when it began sponsoring womens sports in the 198182 school year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	News scores and statistics for your favorite teams and players throughout the 2020-21 season. 
+																	The all-time leader in career assists is Suzie McConnell of Penn State. 
+																	Date time TV channel Regional sites named for 2021 and 2022 DI womens basketball championship Follow NCAA Womens Basketball. 
+																	Check out this Womens Basketball Schedule sortable by date and including information on game time network coverage and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The all-time leading rebounder in Division I history is Courtney Paris of Oklahoma who recorded 2034 rebounds from 200506 to 200809 making her the only D-I womens player to date to surpass the 2000-rebound mark. 
+																	Get Womens Basketball rankings news schedules and championship brackets. 
+																	The NCAA Womens Basketball DI official home. 
+																	Premier boxing champions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Division I American East Atlantic 10 Atlantic Coast Atlantic Sun Big 12 Big East Big Sky Big South Big Ten Big West Colonial Athletic Conference USA Horizon Independents Ivy League Metro Atlantic Mid-American Mid-Eastern Athletic Missouri Valley Mountain West Northeast Ohio Valley Pacific 12 Patriot League Southern Southeastern Southland Southwestern Athletic Summit. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2020/01/27/skylar-diggins-nd-wbb-2020.png?itok=HOwQ1m03" data-lightbox="roadtrip" data-title="We Picked The All Time Starting Five For Notre Dame Women S Basketball Ncaa Com">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2020/01/27/skylar-diggins-nd-wbb-2020.png?itok=HOwQ1m03" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNktWTSq58JWAXc_uCqy_Agnj2WkgFOIx5lg';" alt="We Picked The All Time Starting Five For Notre Dame Women S Basketball Ncaa Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Picked The All Time Starting Five For Notre Dame Women S Basketball Ncaa Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.theday.com/storyimage/NL/20100407/SPORT06/304079882/AR/0/AR-304079882.jpg&amp;Maxw=800&amp;q=62" data-lightbox="roadtrip" data-title="The Day 2009 2010 Ncaa Women S Basketball National Champions News From Southeastern Connecticut">
+											<img class="card-img v-image ads-img " src="https://www.theday.com/storyimage/NL/20100407/SPORT06/304079882/AR/0/AR-304079882.jpg&amp;Maxw=800&amp;q=62" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH5FmMENBYBYDRPLGSzK3_SkXWmrKr3TrjRA';" alt="The Day 2009 2010 Ncaa Women S Basketball National Champions News From Southeastern Connecticut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Day 2009 2010 Ncaa Women S Basketball National Champions News From Southeastern Connecticut</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/thumbnails/2019-04-03/Sabrinia_Ionescu.jpg?h=ed27e282&amp;itok=KyJKn3PT" data-lightbox="roadtrip" data-title="Napheesa Collier Leads 2018 19 Ap Women S All America Team Ncaa Com">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/thumbnails/2019-04-03/Sabrinia_Ionescu.jpg?h=ed27e282&amp;itok=KyJKn3PT" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMzx8DcKX1spAEiRzNob1S0RqwG1aUo5NJ6A';" alt="Napheesa Collier Leads 2018 19 Ap Women S All America Team Ncaa Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Napheesa Collier Leads 2018 19 Ap Women S All America Team Ncaa Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/xXJ6C4Rh_McHCRcE2RouhV4fh9w=/0x0:3900x2578/1200x800/filters:focal(1420x793:2044x1417)/cdn.vox-cdn.com/uploads/chorus_image/image/67551393/usa_today_10595872.0.jpg" data-lightbox="roadtrip" data-title="Syracuse Orange Wbb Ranked No 23 In Espn S Way Too Early Top 25 Troy Nunes Is An Absolute Magician">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/xXJ6C4Rh_McHCRcE2RouhV4fh9w=/0x0:3900x2578/1200x800/filters:focal(1420x793:2044x1417)/cdn.vox-cdn.com/uploads/chorus_image/image/67551393/usa_today_10595872.0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDCNYyT3YBgFkSkabuVhd_CK4vTEYRtrHe7w';" alt="Syracuse Orange Wbb Ranked No 23 In Espn S Way Too Early Top 25 Troy Nunes Is An Absolute Magician">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Syracuse Orange Wbb Ranked No 23 In Espn S Way Too Early Top 25 Troy Nunes Is An Absolute Magician</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2020/02/10/sc-boston-ncaa-wbb-ododa.JPG?itok=R0vxsZhA" data-lightbox="roadtrip" data-title="How No 1 South Carolina Finally Beat Uconn In Women S Basketball Ncaa Com">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2020/02/10/sc-boston-ncaa-wbb-ododa.JPG?itok=R0vxsZhA" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt6reKhKRMQ3gayQzP3Njr8hxRMOKNR-_nKA';" alt="How No 1 South Carolina Finally Beat Uconn In Women S Basketball Ncaa Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How No 1 South Carolina Finally Beat Uconn In Women S Basketball Ncaa Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/idahopress.com/content/tncms/assets/v3/editorial/7/23/7235f3c8-a24b-5f89-97ce-635245fd2131/5e1a8381f3a53.image.jpg?resize=1200%2C797" data-lightbox="roadtrip" data-title="Nation S Assist Leader Jayde Christopher Helps Speed Up Boise State S Offense Boise State Women S Basketball Idahopress Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/idahopress.com/content/tncms/assets/v3/editorial/7/23/7235f3c8-a24b-5f89-97ce-635245fd2131/5e1a8381f3a53.image.jpg?resize=1200%2C797" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdslYZeNfrR9nKcwtqLZIlRk2cD0gpBBzhHw';" alt="Nation S Assist Leader Jayde Christopher Helps Speed Up Boise State S Offense Boise State Women S Basketball Idahopress Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nation S Assist Leader Jayde Christopher Helps Speed Up Boise State S Offense Boise State Women S Basketball Idahopress Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2020-02/sabrina-ionescu-oregon-ducks-2000-points-1000-rebounds-1000-assists.jpg?h=ec041e41&amp;itok=E_LjoAp5" data-lightbox="roadtrip" data-title="Where Oregon S Sabrina Ionescu Ranks Among All Time Greats Across Eras Ncaa Com">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/images/2020-02/sabrina-ionescu-oregon-ducks-2000-points-1000-rebounds-1000-assists.jpg?h=ec041e41&amp;itok=E_LjoAp5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE3N-pmGYKemGmNQm7PGrRwx8EbVL_f6GtZw';" alt="Where Oregon S Sabrina Ionescu Ranks Among All Time Greats Across Eras Ncaa Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Where Oregon S Sabrina Ionescu Ranks Among All Time Greats Across Eras Ncaa Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wwwcache.ncaa.com/_flysystem/public-s3/styles/stax_large_content_tile/public-s3/images/2020-02/Womens-basketball-selection-show.png?h=a06414e7&amp;itok=W1ukzzvf" data-lightbox="roadtrip" data-title="Ncaa College Women S Basketball Di Stats Ncaa Com">
+											<img class="card-img v-image ads-img " src="https://wwwcache.ncaa.com/_flysystem/public-s3/styles/stax_large_content_tile/public-s3/images/2020-02/Womens-basketball-selection-show.png?h=a06414e7&amp;itok=W1ukzzvf" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzJeP3r2LHmkti7YgRZ8B3wo4qddnxK7ENig';" alt="Ncaa College Women S Basketball Di Stats Ncaa Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa College Women S Basketball Di Stats Ncaa Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/gopack.com/images/2019/12/4/NCSU_NCAA_Maryland_0054.jpg" data-lightbox="roadtrip" data-title="Aislinn Konig 2019 20 Women S Basketball Nc State University Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/gopack.com/images/2019/12/4/NCSU_NCAA_Maryland_0054.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgNCXbPX7X5M6qTZNbDQL5YJx46i6WUIzESQ';" alt="Aislinn Konig 2019 20 Women S Basketball Nc State University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aislinn Konig 2019 20 Women S Basketball Nc State University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://res-2.cloudinary.com/ybmedia/image/upload/c_crop,h_800,w_1425,x_0,y_224/c_fill,f_auto,h_495,q_auto,w_880/v1/m/b/f/bf8865641c161fd1d2ea3d4bd821c9e03973869e/GettyImages-178343097.jpg" data-lightbox="roadtrip" data-title="The 25 Best Women S Ncaa Tournament Players Of All Time Yardbarker">
+											<img class="card-img v-image ads-img " src="http://res-2.cloudinary.com/ybmedia/image/upload/c_crop,h_800,w_1425,x_0,y_224/c_fill,f_auto,h_495,q_auto,w_880/v1/m/b/f/bf8865641c161fd1d2ea3d4bd821c9e03973869e/GettyImages-178343097.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX6x-ihPtfyWYg_1UuosMUBu-3UoauE_PcPA';" alt="The 25 Best Women S Ncaa Tournament Players Of All Time Yardbarker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 25 Best Women S Ncaa Tournament Players Of All Time Yardbarker</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1054994307936726" data-lightbox="roadtrip" data-title="Icymi Former Uconn Great Sue Bird Uconn Women S Basketball Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1054994307936726" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq_cC-asHJO3t7a2ot4zzkQ7w4OlmFtqJEVA';" alt="Icymi Former Uconn Great Sue Bird Uconn Women S Basketball Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Icymi Former Uconn Great Sue Bird Uconn Women S Basketball Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2020/01/29/sabrina-bball-oreg.jpeg?itok=Kvo4RtE4" data-lightbox="roadtrip" data-title="Women S Basketball Sabrina Ionescu S Record Breaking Week Headlines This Week S Starting Five Ncaa Com">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2020/01/29/sabrina-bball-oreg.jpeg?itok=Kvo4RtE4" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzaHQIRO5wViWE8pOtjqiWu_tSozei8O-oCQ';" alt="Women S Basketball Sabrina Ionescu S Record Breaking Week Headlines This Week S Starting Five Ncaa Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Sabrina Ionescu S Record Breaking Week Headlines This Week S Starting Five Ncaa Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/huskers.com/images/2020/2/13/WBB_vs_Penn_State_IT0189.jpg" data-lightbox="roadtrip" data-title="Hannah Whitish 2019 20 Women S Basketball University Of Nebraska">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/huskers.com/images/2020/2/13/WBB_vs_Penn_State_IT0189.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LZFAktFIcXOpA7ILbB5eHde1IsJdiCi_AA';" alt="Hannah Whitish 2019 20 Women S Basketball University Of Nebraska">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hannah Whitish 2019 20 Women S Basketball University Of Nebraska</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/9-gb-to-mb.html">9 Gb To Mb</a></li>
+													<li class="list-group-item"><a href="/2019-va-gi-bill-bah.html">2019 Va Gi Bill Bah</a></li>
+													<li class="list-group-item"><a href="/30-gin-glass.html">30 Gin Glass</a></li>
+													<li class="list-group-item"><a href="/2020-college-graduation-gifts.html">2020 College Graduation Gifts</a></li>
+													<li class="list-group-item"><a href="/30-gl-voc.html">30 Gl Voc</a></li>
+													<li class="list-group-item"><a href="/30-gigs-of-ram.html">30 Gigs Of Ram</a></li>
+													<li class="list-group-item"><a href="/30-tuoi-mac-gi-dep.html">30 Tuoi Mac Gi Dep</a></li>
+													<li class="list-group-item"><a href="/9-11-post-gi-bill-calculator.html">9 11 Post Gi Bill Calculator</a></li>
+													<li class="list-group-item"><a href="/10-reasons-not-to-go-to-college.html">10 Reasons Not To Go To College</a></li>
+													<li class="list-group-item"><a href="/30-gibbs.html">30 Gibbs</a></li>
+													<li class="list-group-item"><a href="/9-gbp-to-cad.html">9 Gbp To Cad</a></li>
+													<li class="list-group-item"><a href="/1606-gi-bill-eligibility.html">1606 Gi Bill Eligibility</a></li>
+													<li class="list-group-item"><a href="/30-gif.html">30 Gif</a></li>
+													<li class="list-group-item"><a href="/1606-reserve-gi-bill.html">1606 Reserve Gi Bill</a></li>
+													<li class="list-group-item"><a href="/9-gbp-to-usd.html">9 Gbp To Usd</a></li>
+													<li class="list-group-item"><a href="/30-palabras-con-gi-intermedia.html">30 Palabras Con Gi Intermedia</a></li>
+													<li class="list-group-item"><a href="/2020-gi-bill-mha.html">2020 Gi Bill Mha</a></li>
+													<li class="list-group-item"><a href="/30-gifts-for-turning-30-for-him.html">30 Gifts For Turning 30 For Him</a></li>
+													<li class="list-group-item"><a href="/2020-reserve-gi-bill.html">2020 Reserve Gi Bill</a></li>
+													<li class="list-group-item"><a href="/35-tuoi-gi.html">35 Tuoi Gi</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

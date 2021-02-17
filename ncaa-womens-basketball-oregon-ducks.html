@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Womens Basketball Oregon Ducks - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Womens Basketball Oregon Ducks",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/57/3a/83/573a8314aae2eeac500cf54e82a5c79a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+womens+basketball+oregon+ducks",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Womens Basketball Oregon Ducks</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">When COVID-19 forced NCAA sports into remission last March I struggled to wrap my head around an Oregon Ducks womens basketball team with three of the schools greatest players Sabrina. Basketball is one of 11 varsity womens sports at the University of Oregon. The official Womens Basketball page for the University of Oregon Ducks. <br>				
+			</p>
+										<a class="badge badge-warning" href="/college-go-week-fee-waivers.html">college go week fee waivers</a>
+											<a class="badge badge-success" href="/college-go-students.html">college go students</a>
+											<a class="badge badge-danger" href="/college-graduation-gift-ideas-cheap.html">college graduation gift ideas cheap</a>
+											<a class="badge badge-info" href="/college-graduation-gift-ideas-son.html">college graduation gift ideas son</a>
+											<a class="badge badge-dark" href="/college-go-week-activities.html">college go week activities</a>
+											<a class="badge badge-dark" href="/college-graduation-gifts-engineer.html">college graduation gifts engineer</a>
+											<a class="badge badge-danger" href="/college-graduation-gifts-for-her-etsy.html">college graduation gifts for her etsy</a>
+											<a class="badge badge-info" href="/college-go-week-2021.html">college go week 2021</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the ideal site.  Our website provides you with hints for seeing the highest quality video and picture content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you see.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/16/26/b616267c6a60a0a5d0cd453eacb4102e.jpg" data-lightbox="roadtrip" data-title="Civil War Women S Basketball Oregon Ducks Oregon State Beavers Loaded With 5 Star Talent Oregon Ducks Womens Basketball Oregon Ducks Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/16/26/b616267c6a60a0a5d0cd453eacb4102e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cJKpWKq48-q1h0LutAhluaMamMsp8SdO_w';" alt="Civil War Women S Basketball Oregon Ducks Oregon State Beavers Loaded With 5 Star Talent Oregon Ducks Womens Basketball Oregon Ducks Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil War Women S Basketball Oregon Ducks Oregon State Beavers Loaded With 5 Star Talent Oregon Ducks Womens Basketball Oregon Ducks Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/c5/77/d5c57759032495c5a52e37b1ba9bc5c6.jpg" data-lightbox="roadtrip" data-title="Oregon S Ionescu Is Espnw S Preseason Player Of The Year Basketball Players College Basketball Players The Sporting Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/c5/77/d5c57759032495c5a52e37b1ba9bc5c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCkOGPevtqwtmAKRjBbKyBOH_mAmPxejajgg';" alt="Oregon S Ionescu Is Espnw S Preseason Player Of The Year Basketball Players College Basketball Players The Sporting Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon S Ionescu Is Espnw S Preseason Player Of The Year Basketball Players College Basketball Players The Sporting Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/6f/11/f96f1105b08cf066da34150c95863fd0.jpg" data-lightbox="roadtrip" data-title="Civil War Women S Basketball Oregon Ducks Oregon State Beavers Loaded With 5 Star Talent Oregon Ducks Oregon Ducks Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/6f/11/f96f1105b08cf066da34150c95863fd0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQpNmdF51ZWET7JjHrblsPhL4uVOwdNIFNcA';" alt="Civil War Women S Basketball Oregon Ducks Oregon State Beavers Loaded With 5 Star Talent Oregon Ducks Oregon Ducks Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil War Women S Basketball Oregon Ducks Oregon State Beavers Loaded With 5 Star Talent Oregon Ducks Oregon Ducks Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/b4/94/9fb494afbe9615fc0b82a03629c9bd18.jpg" data-lightbox="roadtrip" data-title="Oregon Ducks Women S Basketball Team Has Lots Of Ties To Spokane Sports Eugene Oregon Basketball Teams Oregon Ducks Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/b4/94/9fb494afbe9615fc0b82a03629c9bd18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Yxud0CMJFTh6ok5ib1wm3QbFU2YuF8_fTg';" alt="Oregon Ducks Women S Basketball Team Has Lots Of Ties To Spokane Sports Eugene Oregon Basketball Teams Oregon Ducks Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Ducks Women S Basketball Team Has Lots Of Ties To Spokane Sports Eugene Oregon Basketball Teams Oregon Ducks Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/04/0f/83/040f83e0e5d238f35137cebc64b5e10b.jpg" data-lightbox="roadtrip" data-title="Canzano Oregon Ducks Now Have Unfinished Final Four Business Oregon Ducks Basketball Oregon Ducks Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/04/0f/83/040f83e0e5d238f35137cebc64b5e10b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmgqHOuYlxkXh1o_gQtx75Xs9O2QHEBe81g';" alt="Canzano Oregon Ducks Now Have Unfinished Final Four Business Oregon Ducks Basketball Oregon Ducks Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Canzano Oregon Ducks Now Have Unfinished Final Four Business Oregon Ducks Basketball Oregon Ducks Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/0c/6c/670c6cdf6d8a3b8b5ac94c65323bcd70.png" data-lightbox="roadtrip" data-title="The 2015 16 Oregon Ducks Women S Basketball Digital Guide Vs Ucla And Usc Featuring Jillian Alleyne Goducks University Of Oregon Ucla Oregon Ducks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/0c/6c/670c6cdf6d8a3b8b5ac94c65323bcd70.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT024HVX5Jc6qssNlTM0E0Y8OiQ0ZF7QQbCFQ';" alt="The 2015 16 Oregon Ducks Women S Basketball Digital Guide Vs Ucla And Usc Featuring Jillian Alleyne Goducks University Of Oregon Ucla Oregon Ducks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 2015 16 Oregon Ducks Women S Basketball Digital Guide Vs Ucla And Usc Featuring Jillian Alleyne Goducks University Of Oregon Ucla Oregon Ducks</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/38/1a/58/381a58109b56d78bd55acab71df63325.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT024HVX5Jc6qssNlTM0E0Y8OiQ0ZF7QQbCFQ';" alt="The 2015 16 Oregon Ducks Women S Basketball Digital Guide Vs Ucla And Usc Featuring Jillian Alleyne Goducks University Of Oregon Ucla Oregon Ducks">
+										<div class="card-body">
+						<h3 class="h5"><b>Stanford is ranked No.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa womens basketball oregon ducks</strong>. 
+								
+																	Womens college basketball Preseason Power 10 rankings for 2020-21 All of Oregons freshmen have brought a strong presence but the two that have stood out the most are true-freshman. 
+																	Erin Boley after Oregons 63-53 win over the South Dakota State Jackrabbits in the Sweet 16. 
+																	NCAA record-holder for consecutive field goals made 33. 
+																	2 Oregon womens basketball team 31-2 17-1 Pac-12. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This channel was generated automatically by YouTubes video discovery system. 
+																	11 Oregon the three-time defending Pac-12 champion will play. 
+																	2 in Oregon history in points 2368 double-figure scoring games 123 and games played 144. 
+																	Fridays game with Arizona. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ducks sweep Beavers in Civil War series Oregons head coach Kelly Graves on what Sabrina Ionescu brings as a teammate Share. 
+																	The team is a member of the Pac-12 Conference and a Division I team in the National Collegiate Athletic Association. 
+																	The Ducks next two games against Utah and Colorado have been postponed. 
+																	3 in Oregon history in rebounds 1299 and No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	F the Oregon or Oregon State womens basketball teams make it to the NCAA womens basketball tournament this spring they will take the court inside an NCAA bubble of sorts with one geographical site. 
+																	Oregon womens basketball adds nonconference game versus UC Davis The Oregonian 1856 3-Feb-21. 
+																	AP PhotoJohn Locher File No. 
+																	Oregon Ducks t was quite the week for the now- No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oregon womens game against Arizona State postponed The Register Guard 2317 2-Feb-21. 
+																	51 career games of 20 points or more five with 30. 
+																	Oregon is the third womens basketball program in the Pac-12 that is currently on pause joining Cal and Arizona. 
+																	Listed below here is the full regular-season schedule for Oregons womens basketball team for the 2019-20 season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oregon Ducks full 2019-20 womens basketball schedule. 
+																	Nike Oregon Ducks Apple Green Womens Rain Windbreaker Jacket Packable Large 8995 New Nike Oregon Ducks Tailgate Element Half Zip Top Womens XL 34708x Webfoots. 
+																	Oregon Ducks Schedule 2020-21 2020-21 2019-20 2018-19 2017-18 2016-17 2015-16 2014-15 2013-14 2012-13 2011-12 2010-11 2009-10 2008-09 2007-08 2006-07 2005-06 2004-05 2003-04 2002-03 hidden Add to. 
+																	Kelly Graves encourage by way shorthanded Ducks held off UW Oregon womens basketball coach Kelly Graves broke down the way his team played in Sundays 69-52 win over Washington. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	7 Oregon State womens basketball. 
+																	Oregon Ducks 2020-21 womens basketball schedule released The Oregon womens basketball program has a game to prepare for next week. 
+																	Listed along with. 
+																	2 in the womens NCAA college basketball poll released Tuesday Nov. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oregon womens basketball adds non-league game for Saturday DuckTerritory 1904 3-Feb-21. 
+																	San Antonio is the likely landing spot. 
+																	The Oregon Ducks womens basketball team is the official womens basketball team of the University of Oregon in Eugene Oregon. 
+																	Chris Pietsch AP Oregons Taylor Chavez passes the ball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	5 in double-doubles 55. 
+																	One of only five UO players ever to surpass 2000 career points and 1000 career rebounds. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/8c/d7/5e8cd739add19284b7369b7ac568fb35.jpg" data-lightbox="roadtrip" data-title="Oregon Guard Sabrina Ionescu Oregon Basketball Basketball Players Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/8c/d7/5e8cd739add19284b7369b7ac568fb35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TWDdwa6P8v4MeNYwwsTMBcgdsZAdGiRM1w';" alt="Oregon Guard Sabrina Ionescu Oregon Basketball Basketball Players Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Guard Sabrina Ionescu Oregon Basketball Basketball Players Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/33/9b/ce339bc320162e3238d4cfdbc8961193.jpg" data-lightbox="roadtrip" data-title="The Oregon Ducks Take On The Portland State Vikings In Round One Of The 2019 Ncaa Women S Basketball Champ Oregon Ducks Basketball Eric Evans Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/33/9b/ce339bc320162e3238d4cfdbc8961193.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZCLuXLfSpOwPK1pr6K0jCQVot4q3DxQcyCw';" alt="The Oregon Ducks Take On The Portland State Vikings In Round One Of The 2019 Ncaa Women S Basketball Champ Oregon Ducks Basketball Eric Evans Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Oregon Ducks Take On The Portland State Vikings In Round One Of The 2019 Ncaa Women S Basketball Champ Oregon Ducks Basketball Eric Evans Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/b7/a8/23b7a800bd00d2d8801b52082f0f0bd1.jpg" data-lightbox="roadtrip" data-title="Puddles Cheers On The University Of Oregon Women S Basketball Team Road Cycling Women Womens Basketball Womens Lacrosse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/b7/a8/23b7a800bd00d2d8801b52082f0f0bd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPXUOVUA7ZhllBx6UzvZxdhVxb2FfFbA-FBQ';" alt="Puddles Cheers On The University Of Oregon Women S Basketball Team Road Cycling Women Womens Basketball Womens Lacrosse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Puddles Cheers On The University Of Oregon Women S Basketball Team Road Cycling Women Womens Basketball Womens Lacrosse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/53/12/ce5312cb428f2e7269854f3d94676853.jpg" data-lightbox="roadtrip" data-title="Pin On Ncaa Wbb 17 18">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/53/12/ce5312cb428f2e7269854f3d94676853.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgUS5piGtA-byNVEKif4782t1xfwCuPuYwFQ';" alt="Pin On Ncaa Wbb 17 18">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ncaa Wbb 17 18</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/f9/e1/f9f9e10f8b7ae389785f11d8ccb72c9f.gif" data-lightbox="roadtrip" data-title="Lfg Oregon Ducks Superstar Sabrina Ionescu Made History Tonigh Sabrina Oregon Ducks Superstar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/f9/e1/f9f9e10f8b7ae389785f11d8ccb72c9f.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUOf49bVHIy2fPi6w70ec_UNwL-k4Y0tTMkg';" alt="Lfg Oregon Ducks Superstar Sabrina Ionescu Made History Tonigh Sabrina Oregon Ducks Superstar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lfg Oregon Ducks Superstar Sabrina Ionescu Made History Tonigh Sabrina Oregon Ducks Superstar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/79/c2/6979c272ffea96214a56e9f336911704.jpg" data-lightbox="roadtrip" data-title="Pin On Ncaa Wbb 18 19">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/79/c2/6979c272ffea96214a56e9f336911704.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4JQVvUW_-qF48CldN_gbdzjFXHxmddpGreg';" alt="Pin On Ncaa Wbb 18 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ncaa Wbb 18 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/38/29/4c382986fefb273beb5ae1e009b2b22a.jpg" data-lightbox="roadtrip" data-title="Pin By Women S Basketball Daily On Ncaa Wbb 19 20 Basketball Girls Basketball Pictures Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/38/29/4c382986fefb273beb5ae1e009b2b22a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt-01Tx2oBzfg9nPyFVZd5q7OHjxHnQOaViw';" alt="Pin By Women S Basketball Daily On Ncaa Wbb 19 20 Basketball Girls Basketball Pictures Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Women S Basketball Daily On Ncaa Wbb 19 20 Basketball Girls Basketball Pictures Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/20/96/36209660fe0b3b8adce9c549b944a0dc.png" data-lightbox="roadtrip" data-title="Ncaa All Time Leader Sabrina Ionescu Womens Basketball Womens Lacrosse Bicycle Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/20/96/36209660fe0b3b8adce9c549b944a0dc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD0SARqNWowHJxZVbgtDo5qMwFHoOq5j0Pfg';" alt="Ncaa All Time Leader Sabrina Ionescu Womens Basketball Womens Lacrosse Bicycle Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa All Time Leader Sabrina Ionescu Womens Basketball Womens Lacrosse Bicycle Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/3a/83/573a8314aae2eeac500cf54e82a5c79a.jpg" data-lightbox="roadtrip" data-title="Photo Oregon S Sabrina Ionescu Right And Maryland S Shatori Walker Kimbrough In The Second Half Female Athletes Sabrina Love And Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/3a/83/573a8314aae2eeac500cf54e82a5c79a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYLyj2sGaUMz4jHLwKn-21H2qNJZtDnv8qSg';" alt="Photo Oregon S Sabrina Ionescu Right And Maryland S Shatori Walker Kimbrough In The Second Half Female Athletes Sabrina Love And Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo Oregon S Sabrina Ionescu Right And Maryland S Shatori Walker Kimbrough In The Second Half Female Athletes Sabrina Love And Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/e4/fa/30e4fa38302e1110b7444ab9b1eb251f.jpg" data-lightbox="roadtrip" data-title="Women S Final Four Primer What To Watch For In Baylor Oregon And Notre Dame Uconn Uconn Basketball Girls Final Four">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/e4/fa/30e4fa38302e1110b7444ab9b1eb251f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCh0QowjK5S8C_ECOzr09NUNz-HpOMys4rA';" alt="Women S Final Four Primer What To Watch For In Baylor Oregon And Notre Dame Uconn Uconn Basketball Girls Final Four">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Final Four Primer What To Watch For In Baylor Oregon And Notre Dame Uconn Uconn Basketball Girls Final Four</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a7/e4/70/a7e4702273fbbd5c452f24bcf3b1679e.jpg" data-lightbox="roadtrip" data-title="In Just The Second Loss Ever To A College Team Oregon S Ionescu And Sabally Combined For 55 Points To Defea Team Usa Oregon Ducks Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a7/e4/70/a7e4702273fbbd5c452f24bcf3b1679e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5g9ofhYDUkmLXVmjB6x28UMLaz_C3XHnjDw';" alt="In Just The Second Loss Ever To A College Team Oregon S Ionescu And Sabally Combined For 55 Points To Defea Team Usa Oregon Ducks Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In Just The Second Loss Ever To A College Team Oregon S Ionescu And Sabally Combined For 55 Points To Defea Team Usa Oregon Ducks Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/d8/9e/86d89ed4e6a5c9de369c86513bc75c55.jpg" data-lightbox="roadtrip" data-title="Pin On Ncaa Wbb 19 20">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/d8/9e/86d89ed4e6a5c9de369c86513bc75c55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4WcEJWAHpFOOCGfl1RZB3Mf7NU1YUlJaXLQ';" alt="Pin On Ncaa Wbb 19 20">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ncaa Wbb 19 20</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/38/1a/58/381a58109b56d78bd55acab71df63325.jpg" data-lightbox="roadtrip" data-title="Study Finds Ionescu Cruse Would Ve Been Among Top Nil Earners In 2020 Sabrina Love And Basketball Oregon Ducks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/38/1a/58/381a58109b56d78bd55acab71df63325.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yUimhNnw8Kfdrt3q5SXje3twRHEgjpViSQ';" alt="Study Finds Ionescu Cruse Would Ve Been Among Top Nil Earners In 2020 Sabrina Love And Basketball Oregon Ducks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Study Finds Ionescu Cruse Would Ve Been Among Top Nil Earners In 2020 Sabrina Love And Basketball Oregon Ducks</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-chapter-35-change-of-address.html">Va Chapter 35 Change Of Address</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-benefits-contact-number.html">Va Chapter 35 Benefits Contact Number</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-benefits-explained.html">Va Chapter 35 Benefits Explained</a></li>
+													<li class="list-group-item"><a href="/va-chapter-1606-benefits.html">Va Chapter 1606 Benefits</a></li>
+													<li class="list-group-item"><a href="/va-certificate-of-eligibility-for-gi-bill-benefits.html">Va Certificate Of Eligibility For Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/va-911-gi-bill-phone-number.html">Va 911 Gi Bill Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-education-benefits-number.html">Va Chapter 35 Education Benefits Number</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-benefits-number.html">Va Chapter 35 Benefits Number</a></li>
+													<li class="list-group-item"><a href="/va-and-gi-bill.html">Va And Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-benefits-gi-bill-comparison-tool.html">Va Benefits Gi Bill Comparison Tool</a></li>
+													<li class="list-group-item"><a href="/va-911-gi-bill-payments.html">Va 911 Gi Bill Payments</a></li>
+													<li class="list-group-item"><a href="/va-chapter-1606-rates.html">Va Chapter 1606 Rates</a></li>
+													<li class="list-group-item"><a href="/va-benefits-chapter-30.html">Va Benefits Chapter 30</a></li>
+													<li class="list-group-item"><a href="/va-benefits-chapter-31-voc-rehab.html">Va Benefits Chapter 31 Voc Rehab</a></li>
+													<li class="list-group-item"><a href="/va-benefits-for-montgomery-gi-bill.html">Va Benefits For Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-benefits-gi-bill-post-911.html">Va Benefits Gi Bill Post 911</a></li>
+													<li class="list-group-item"><a href="/va-chapter-1606-application.html">Va Chapter 1606 Application</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-contact-number.html">Va Chapter 35 Contact Number</a></li>
+													<li class="list-group-item"><a href="/va-benefits-post-911-transfer.html">Va Benefits Post 911 Transfer</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-information.html">Va Chapter 35 Information</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

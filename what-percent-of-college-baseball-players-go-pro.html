@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Percent Of College Baseball Players Go Pro - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Percent Of College Baseball Players Go Pro",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/96/07/5e/96075e1c522f70b4a93380bff884db41.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+percent+of+college+baseball+players+go+pro",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Percent Of College Baseball Players Go Pro</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">There are 117 division 1 college teams on average about 80 players per team. The goal of many college athletes is a lucrative contract with a marquee professional sports team. But it is a truth that is rarely spelled out. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/gi-bill-or-post-911-which-is-better.html">gi bill or post 911 which is better</a>
+											<a class="badge badge-primary" href="/gi-bill-living-expenses.html">gi bill living expenses</a>
+											<a class="badge badge-light" href="/gi-bill-life-insurance.html">gi bill life insurance</a>
+											<a class="badge badge-success" href="/gi-bill-information-va.html">gi bill information va</a>
+											<a class="badge badge-secondary" href="/gi-bill-mha-rates-2021.html">gi bill mha rates 2021</a>
+											<a class="badge badge-secondary" href="/gi-bill-monthly-rates.html">gi bill monthly rates</a>
+											<a class="badge badge-light" href="/gi-bill-military-benefits.html">gi bill military benefits</a>
+											<a class="badge badge-success" href="/gi-bill-military-income.html">gi bill military income</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to pay a visit to the ideal blog.  Our site provides you with hints for seeing the highest quality video and image content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this video for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://widget.campusexplorer.com/media/original/media-BCB5CA38.jpg" data-lightbox="roadtrip" data-title="Where Did Pro Baseball Players Go To College">
+											<img class="card-img v-image ads-img " src="https://widget.campusexplorer.com/media/original/media-BCB5CA38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNYtSIf_iP3yHeEIQlToHozqpWGyH8QC_Uw';" alt="Where Did Pro Baseball Players Go To College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Where Did Pro Baseball Players Go To College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b1/28/1a/b1281acb8e8f5e72c415c44270741ba4.jpg" data-lightbox="roadtrip" data-title="15 Sample Athletic Resumes And Letters Go Pro Ideas Of Go Pro For Sales Gopro Gopro36 High School Baseball Players High School Baseball College Baseball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b1/28/1a/b1281acb8e8f5e72c415c44270741ba4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIPNi2Af8US6NYcCc4E4pFgTviyV6eYmAdqw';" alt="15 Sample Athletic Resumes And Letters Go Pro Ideas Of Go Pro For Sales Gopro Gopro36 High School Baseball Players High School Baseball College Baseball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Sample Athletic Resumes And Letters Go Pro Ideas Of Go Pro For Sales Gopro Gopro36 High School Baseball Players High School Baseball College Baseball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/e2/e4/43e2e4cfe8e5625f459bb644eece1cd8.jpg" data-lightbox="roadtrip" data-title="Fraley After Being Suspended 8 Games By Mlb Rougned Odor Has 100 Percent Support From Coaches Sportsday Texas Rangers Texas Rangers Baseball Rougned Odor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/e2/e4/43e2e4cfe8e5625f459bb644eece1cd8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjKyCRFOdjjzlOnvBd136dComajcjETge6dw';" alt="Fraley After Being Suspended 8 Games By Mlb Rougned Odor Has 100 Percent Support From Coaches Sportsday Texas Rangers Texas Rangers Baseball Rougned Odor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fraley After Being Suspended 8 Games By Mlb Rougned Odor Has 100 Percent Support From Coaches Sportsday Texas Rangers Texas Rangers Baseball Rougned Odor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/57/c1/5657c1a5d2ce306f869b422caed694ef.jpg" data-lightbox="roadtrip" data-title="Kirk Gibson Dodgers Baseball Cubs Team Baseball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/57/c1/5657c1a5d2ce306f869b422caed694ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYLrzM4LCTJ9OFCWEzXP1whM5vzz7NepQSeg';" alt="Kirk Gibson Dodgers Baseball Cubs Team Baseball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kirk Gibson Dodgers Baseball Cubs Team Baseball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dw3jhbqsbya58.cloudfront.net/editorial/article/2/5/d/25d219e9-1448-4e94-9a22-c3685b980edf/2d4fa487-82ce-e211-a98a-002655e6c126_original.jpg" data-lightbox="roadtrip" data-title="More Baseball Players Do The Bryce Harper Hop Skip High School Teams Maxpreps">
+											<img class="card-img v-image ads-img " src="https://dw3jhbqsbya58.cloudfront.net/editorial/article/2/5/d/25d219e9-1448-4e94-9a22-c3685b980edf/2d4fa487-82ce-e211-a98a-002655e6c126_original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7DavEpi-TSoZW5w2w_YW0UaI7ivn1TPUZAA';" alt="More Baseball Players Do The Bryce Harper Hop Skip High School Teams Maxpreps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">More Baseball Players Do The Bryce Harper Hop Skip High School Teams Maxpreps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/presto/2019/03/20/PPHX/c7d5450b-ebdf-4a4e-9c3b-d5e535a99697-MLB005.jpg?width=660&amp;height=446&amp;fit=crop&amp;format=pjpg&amp;auto=webp" data-lightbox="roadtrip" data-title="From Mlb To Little League Diversity Dwindling Among Baseball Players">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/presto/2019/03/20/PPHX/c7d5450b-ebdf-4a4e-9c3b-d5e535a99697-MLB005.jpg?width=660&amp;height=446&amp;fit=crop&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkX4eDYQeeTplMDcK-usKKGyZIBY-NtH5Dfw';" alt="From Mlb To Little League Diversity Dwindling Among Baseball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From Mlb To Little League Diversity Dwindling Among Baseball Players</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.gannett-cdn.com/presto/2019/03/20/PPHX/c7d5450b-ebdf-4a4e-9c3b-d5e535a99697-MLB005.jpg?width=660&amp;height=446&amp;fit=crop&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkX4eDYQeeTplMDcK-usKKGyZIBY-NtH5Dfw';" alt="From Mlb To Little League Diversity Dwindling Among Baseball Players">
+										<div class="card-body">
+						<h3 class="h5"><b>Ross was drafted in the seventh round in 1998 and won.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What percent of college baseball players go pro</strong>. 
+								
+																	This will sound high but nearly 4 get drafted. 
+																	Im a little worried about a possible decline in my googling prowess. 
+																	College baseball and Pro baseball are the same thing except that in collee they are. 
+																	Approximately one in 200 or approximately 05 percent of high school senior boys playing interscholastic baseball will eventually be drafted by an MLB team. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But according to Al Jazeera less than 2 of these players go pro leaving 98 to undergo some. 
+																	Baseball has the highest percentage of NCAA players to go pro with 97 percent but they also have the highest number of draft spots available with 1215 picks. 
+																	I found out that 1 in 50000 high school players go pro. 
+																	ODay was undrafted out of college but has become one of the best relief pitchers in baseball making his first All-Star appearance in 2015. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What needs to be said is that college soccer is the biggest obstacle to progress in the area of developing future pro players. 
+																	Now this is not exact of course. 
+																	The dice have been loaded slightly toward pessimistic outcomes. 
+																	Not all of the student-athletes drafted go on to play professional baseball and many draftees fail to reach the Major League. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	High-school basketball to college female. 
+																	The college baseball project started in 2003 courtesy of ground breaking research done by Rick Benner. 
+																	Little Leaguers from the US have to compete with the best international players to make it to the big leagues. 
+																	The few players from American universities in international leagues often get those jobs from pre-existing agent or college coach. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since then Baseball Almanac has added college data to nearly nine-thousand former Major League ballplayer biographies and cross-linked them into the two-hundred plus college specific pages featured on the menu above. 
+																	High-school basketball to pros female003 percent. 
+																	By going to college first a player gets his education the college experience and misses out on many of the low A and Rookie Ball experiences such as long bus rides to small towns bad food from the concession stand after games and bad fields. 
+																	Or 1 in 3333. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I cant believe such a simple factoid has been so hard to find. 
+																	There are 32 teams and 25 players on the active roster for each team 800 players. 
+																	There are 250 players drafted each year so do the math and it is a little under 4. 
+																	The chance of earning a degree is significantly higher though with division III athletes having a 87 percent graduation success rate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do you know of a college that a former player attended AND played baseball. 
+																	Only one sport baseball had more than 2 of NCAA players go pro. 
+																	That is a little over 9300 players. 
+																	Many high picks out of college will go to High A ball or even AA with the chance for rapid advancement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3 How many of these MLB players are from the US. 
+																	These numbers are artificially low since they only count players who go pro in the US. 
+																	About 20 percent of college baseball players go pro. 
+																	But as you might expect the stats for pro football outcomes were nearly as bad at 008 percent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Percent NCAA to Pro calculated as number of NCAA student-athletes taken in the draft divided by the approximate number draft eligible calculated as 791 8002 99. 
+																	Then theres another take on playing college soccer and going to the pros. 
+																	The stats for basketball players are the worst. 
+																	Guys make it undrafted Some teams have more than eighty players. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Statistical reports show that major league baseball holds the lowest percentage of professional athletes with a college degree at an estimated 43 percent but the context of this percentage must be understood. 
+																	High-school athletes in other sports werent that much more likely to make. 
+																	So if we round up and say 150 female and male players end up playing professional soccer somewhere around the world after college a liberal estimation that would indicate about 03 of high school female and male participants go pro. 
+																	The NCAA found that 116 percent of college baseball players play in the Major Leagues though 06 percent of high school players. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the NCAA only 17 percent of college football players and 008 percent of high school players play at any professional level. 
+																	Given that only 1 in 4233 high school players go from high school to college to the pros there is a giant gap between college players dreams and reality. 
+																	Less than eleven in 100 or about 105 percent of NCAA senior male baseball players will get drafted by a Major League Baseball MLB team. 
+																	But either way the chances are really. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I found out there are 118 Division 1-A schools and that about 500 players a year go pro but I dont know how many college players there are. 
+																	Everyone apart from a few college diehards knows this to be the truth. 
+																	May it be MLB or Triple-A College baseball and pro baseball. 
+																	28 of the players in the MLB are from. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Percent NCAA to Pro calculated as number of NCAA student-athletes taken in the draft divided by the approximate number draft eligible calculated as 791 8002 99. 
+																	2 The total number of Major League Baseball MLB Players. 
+																	In baseball for instance only 21 of. 
+																	Someone please help me. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not all of the student-athletes drafted go on to play professional baseball and many draftees fail to reach the Major League. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://athlonsports.com/sites/athlonsports.com/files/FranciscoLindor_2018_getty_1.jpg" data-lightbox="roadtrip" data-title="Mlb 2019 25 Best Baseball Players 25 And Under">
+											<img class="card-img v-image ads-img " src="https://athlonsports.com/sites/athlonsports.com/files/FranciscoLindor_2018_getty_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8mGM4P2BbXph220jPb1v6yzvRuWLtJ01oA';" alt="Mlb 2019 25 Best Baseball Players 25 And Under">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mlb 2019 25 Best Baseball Players 25 And Under</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://globalsportmatters.com/wp-content/uploads/2018/08/pitchers1.jpg" data-lightbox="roadtrip" data-title="From Mlb To Youth Sports Baseball Sees Increased Arm Injuries In Pitchers Global Sport Matters">
+											<img class="card-img v-image ads-img " src="https://globalsportmatters.com/wp-content/uploads/2018/08/pitchers1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67jUeHbitIDz2Qlk3olqgYPMvOecPLxXK1A';" alt="From Mlb To Youth Sports Baseball Sees Increased Arm Injuries In Pitchers Global Sport Matters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From Mlb To Youth Sports Baseball Sees Increased Arm Injuries In Pitchers Global Sport Matters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/30/2a/f6302a655711a255a486a0e08605bc56.jpg" data-lightbox="roadtrip" data-title="Pin By Terrence Smalls On Baseball 2 Dodgers Dodgers Nation Mlb Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/30/2a/f6302a655711a255a486a0e08605bc56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg9jtAEKu6KgTmbKhJvMddM3GQj1-KbZa4Tw';" alt="Pin By Terrence Smalls On Baseball 2 Dodgers Dodgers Nation Mlb Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Terrence Smalls On Baseball 2 Dodgers Dodgers Nation Mlb Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/d7/61/3dd761f203f52b916898c029d026ffe8.jpg" data-lightbox="roadtrip" data-title="Pin By Joe Benner On Vintage Baseball Famous Baseball Players New York Mets Mets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/d7/61/3dd761f203f52b916898c029d026ffe8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVZHc65-IRUaRK1QXEQT6WddmtEGMpbJxcRg';" alt="Pin By Joe Benner On Vintage Baseball Famous Baseball Players New York Mets Mets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Joe Benner On Vintage Baseball Famous Baseball Players New York Mets Mets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/c3/13/02c3131793856bd6d5ae00f0bef2b57a.jpg" data-lightbox="roadtrip" data-title="Mlb Notes Foreign Born Players At Record Percentage In Majors World Baseball Classic Baseball Mlb">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/c3/13/02c3131793856bd6d5ae00f0bef2b57a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7FFc73221lO1Dbvr9IMvSVq2AGUNsOArmdg';" alt="Mlb Notes Foreign Born Players At Record Percentage In Majors World Baseball Classic Baseball Mlb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mlb Notes Foreign Born Players At Record Percentage In Majors World Baseball Classic Baseball Mlb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/2e/85/282e8517cab2fbbc85e37c6fd4b96789.jpg" data-lightbox="roadtrip" data-title="Don T Worry Humanity S Fine Jamie Moyer Baseball Players Baseball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/2e/85/282e8517cab2fbbc85e37c6fd4b96789.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl41gWiUmU3YYjxgBlJRk9C27fU5CkRXHW_g';" alt="Don T Worry Humanity S Fine Jamie Moyer Baseball Players Baseball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Worry Humanity S Fine Jamie Moyer Baseball Players Baseball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/4e/ec/634eece38ac0a1098180a3a47a6ac5e5.jpg" data-lightbox="roadtrip" data-title="100 Greatest Sports Photos Of All Time Sports Photos Ted Williams Sports Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/4e/ec/634eece38ac0a1098180a3a47a6ac5e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm5hVRxZ15v_Hzy77Lru-P02iyn2SeBBRg_A';" alt="100 Greatest Sports Photos Of All Time Sports Photos Ted Williams Sports Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Greatest Sports Photos Of All Time Sports Photos Ted Williams Sports Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/74/02/e8/7402e8e92cea492e43c45493f85d711d.jpg" data-lightbox="roadtrip" data-title="Pin By Jorge Marquez On Baseball Players Who Played Winter Ball In Puerto Rico In 2020 Sports Pictures Sports Baseball Players">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/74/02/e8/7402e8e92cea492e43c45493f85d711d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKgvA0gKgEunwql5BIaB7x9g0KZvQabvU90Q';" alt="Pin By Jorge Marquez On Baseball Players Who Played Winter Ball In Puerto Rico In 2020 Sports Pictures Sports Baseball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jorge Marquez On Baseball Players Who Played Winter Ball In Puerto Rico In 2020 Sports Pictures Sports Baseball Players</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/07/5e/96075e1c522f70b4a93380bff884db41.jpg" data-lightbox="roadtrip" data-title="Pin By John Morgan On Cincinnati Reds V W X With Images Cincinnati Reds Baseball Cincinnati Reds Baseball Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/07/5e/96075e1c522f70b4a93380bff884db41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1jU5HDXzBB-EptgUwEQpDjCyUO4dKAEo7w';" alt="Pin By John Morgan On Cincinnati Reds V W X With Images Cincinnati Reds Baseball Cincinnati Reds Baseball Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By John Morgan On Cincinnati Reds V W X With Images Cincinnati Reds Baseball Cincinnati Reds Baseball Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/9rJwZ3H41zDKpa49UebCfiNI3yM=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/16307860/Andrew_Vaughn_1st_base_AP_Ringer.jpg" data-lightbox="roadtrip" data-title="Why The Mlb Draft S Best Hitting Prospect Might Also Be Its Biggest Gamble The Ringer">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/9rJwZ3H41zDKpa49UebCfiNI3yM=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/16307860/Andrew_Vaughn_1st_base_AP_Ringer.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0i_QvlvFtOX8mvLvgn13RjBN7Xfws8F4trQ';" alt="Why The Mlb Draft S Best Hitting Prospect Might Also Be Its Biggest Gamble The Ringer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why The Mlb Draft S Best Hitting Prospect Might Also Be Its Biggest Gamble The Ringer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/c6/e7/b4c6e7120e2703434030cd6981ef477c.jpg" data-lightbox="roadtrip" data-title="Steve Garvey Dodgers Baseball Baseball La Dodgers Baseball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/c6/e7/b4c6e7120e2703434030cd6981ef477c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5O0iDxvBJ8nMmhpUNf6SfTRa_NVT0W87xog';" alt="Steve Garvey Dodgers Baseball Baseball La Dodgers Baseball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Steve Garvey Dodgers Baseball Baseball La Dodgers Baseball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/presto/2019/03/29/USAT/b8022355-6afc-4b61-9c1f-7d831a0fffc9-USATSI_11188071.jpg" data-lightbox="roadtrip" data-title="2019 Mlb Salaries The Best Team 9 1 Million Can Buy">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/presto/2019/03/29/USAT/b8022355-6afc-4b61-9c1f-7d831a0fffc9-USATSI_11188071.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTihQ2LXR3V-AlM_enAaH9HYql4fFRMhwrfmw';" alt="2019 Mlb Salaries The Best Team 9 1 Million Can Buy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Mlb Salaries The Best Team 9 1 Million Can Buy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Aaron_Judge_2018.jpg/1200px-Aaron_Judge_2018.jpg" data-lightbox="roadtrip" data-title="Aaron Judge Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Aaron_Judge_2018.jpg/1200px-Aaron_Judge_2018.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXuYlZ7jPb0RZyxZwU1JGvIWWFhSzBZz5kkw';" alt="Aaron Judge Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aaron Judge Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/when-do-va-education-benefits-expire.html">When Do Va Education Benefits Expire</a></li>
+													<li class="list-group-item"><a href="/where-to-buy-gift-of-college-cards.html">Where To Buy Gift Of College Cards</a></li>
+													<li class="list-group-item"><a href="/when-should-you-go-on-college-visits.html">When Should You Go On College Visits</a></li>
+													<li class="list-group-item"><a href="/where-does-ani-go-to-college-13-reasons-why.html">Where Does Ani Go To College 13 Reasons Why</a></li>
+													<li class="list-group-item"><a href="/which-colleges-have-gymnastics-teams.html">Which Colleges Have Gymnastics Teams</a></li>
+													<li class="list-group-item"><a href="/when-should-i-expect-my-gi-bill-payment.html">When Should I Expect My Gi Bill Payment</a></li>
+													<li class="list-group-item"><a href="/where-do-college-students-go-in-florida-for-spring-break.html">Where Do College Students Go In Florida For Spring Break</a></li>
+													<li class="list-group-item"><a href="/where-does-college-board-money-go.html">Where Does College Board Money Go</a></li>
+													<li class="list-group-item"><a href="/when-did-the-gi-bill-passed.html">When Did The Gi Bill Passed</a></li>
+													<li class="list-group-item"><a href="/when-is-college-go-week-2019.html">When Is College Go Week 2019</a></li>
+													<li class="list-group-item"><a href="/when-did-yugioh-start.html">When Did Yugioh Start</a></li>
+													<li class="list-group-item"><a href="/when-does-the-post-911-gi-bill-pay-you.html">When Does The Post 911 Gi Bill Pay You</a></li>
+													<li class="list-group-item"><a href="/when-does-gi-bill-housing-allowance-get-paid.html">When Does Gi Bill Housing Allowance Get Paid</a></li>
+													<li class="list-group-item"><a href="/when-will-gi-bill-pay-tuition.html">When Will Gi Bill Pay Tuition</a></li>
+													<li class="list-group-item"><a href="/when-do-my-gi-bill-benefits-expire.html">When Do My Gi Bill Benefits Expire</a></li>
+													<li class="list-group-item"><a href="/when-did-gi-jane-come-out.html">When Did Gi Jane Come Out</a></li>
+													<li class="list-group-item"><a href="/where-did-you-go-bernadette.html">Where Did You Go Bernadette</a></li>
+													<li class="list-group-item"><a href="/where-is-my-gi-bill-housing-allowance.html">Where Is My Gi Bill Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/where-did-we-go-wrong.html">Where Did We Go Wrong</a></li>
+													<li class="list-group-item"><a href="/who-can-use-the-forever-gi-bill.html">Who Can Use The Forever Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

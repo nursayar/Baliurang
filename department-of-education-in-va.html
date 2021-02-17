@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Department Of Education In Va - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Department Of Education In Va",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/be/d1/45/bed1457a55f69b658693823155e73ba5.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=department+of+education+in+va",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Department Of Education In Va</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Alexandria Department of Education is a Virginia state or federal agency whose mission is to provide leadership develop policy and disseminate funding information and other resources in support of student achievement in Alexandria VA. News Announcements Data to Support Student Academic and Career Planning. The Education Secretariat provides guidance to the Virginia Department of Education VDOE the Virginia Community College System VCCS and The State Council of Higher Education for Virginia SCHEV as well as Virginias 16 public colleges and universities 23 community colleges and five higher education and research centers. <br>				
+			</p>
+										<a class="badge badge-dark" href="/dem-30-cung-gi.html">dem 30 cung gi</a>
+											<a class="badge badge-dark" href="/did-jeff-bezos-go-to-college.html">did jeff bezos go to college</a>
+											<a class="badge badge-info" href="/daytona-state-college-gi-bill.html">daytona state college gi bill</a>
+											<a class="badge badge-danger" href="/did-jim-carrey-go-to-college.html">did jim carrey go to college</a>
+											<a class="badge badge-dark" href="/department-of-military-veterans-education-support-2019.html">department of military veterans education support 2019</a>
+											<a class="badge badge-primary" href="/did-duke-die-in-gi-joe-movie.html">did duke die in gi joe movie</a>
+											<a class="badge badge-light" href="/did-nghia-la-gi.html">did nghia la gi</a>
+											<a class="badge badge-primary" href="/department-of-education-west-virginia.html">department of education west virginia</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the ideal site.  Our site gives you hints for viewing the highest quality video and image content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/82/d1/3e82d1623dcd31056ae71acfdad6c428.jpg" data-lightbox="roadtrip" data-title="Try The Following Exam Which Was Given In 1931 By The West Virginia Department Of Education To Students Seeki School Testing Teacher Discounts Education Today">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/82/d1/3e82d1623dcd31056ae71acfdad6c428.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0Yc7oAfGBw9JLjCwM5xU3MyXLbt2hwOvTQ';" alt="Try The Following Exam Which Was Given In 1931 By The West Virginia Department Of Education To Students Seeki School Testing Teacher Discounts Education Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Try The Following Exam Which Was Given In 1931 By The West Virginia Department Of Education To Students Seeki School Testing Teacher Discounts Education Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/79/fe/0d79fe3cf3de82e362685c98e02d7ffd.jpg" data-lightbox="roadtrip" data-title="Proposed Changes To The Virginia Studies Standards Of Learning Virginia Studies Homeschool Social Studies Teaching Blogs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/79/fe/0d79fe3cf3de82e362685c98e02d7ffd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ7zfSzU74ExEBBbD_uNg-jXz8KGMMoZ2kpA';" alt="Proposed Changes To The Virginia Studies Standards Of Learning Virginia Studies Homeschool Social Studies Teaching Blogs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Proposed Changes To The Virginia Studies Standards Of Learning Virginia Studies Homeschool Social Studies Teaching Blogs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/c0/6e/c8c06e2bfdbf0db2e2b416e110e62600.jpg" data-lightbox="roadtrip" data-title="A Parent S Guide To Special Education Vdoe Special Education Parenting Guide Special Education Parent">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/c0/6e/c8c06e2bfdbf0db2e2b416e110e62600.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9KRlBXkdlgKI93xtqZeAxA8FmFaJiifiE5A';" alt="A Parent S Guide To Special Education Vdoe Special Education Parenting Guide Special Education Parent">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Parent S Guide To Special Education Vdoe Special Education Parenting Guide Special Education Parent</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/91/5c/60915cc4a7da94c9dce9953ed06746d6.jpg" data-lightbox="roadtrip" data-title="Virginia Regions Unit Virginia Studies Homeschool Social Studies Word Wall Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/91/5c/60915cc4a7da94c9dce9953ed06746d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlRxqPU7qNxeFKJT271_TuXezFIlpqxRZDag';" alt="Virginia Regions Unit Virginia Studies Homeschool Social Studies Word Wall Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Regions Unit Virginia Studies Homeschool Social Studies Word Wall Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/84/c6/ce84c6e531619431d0815f4f85562680.jpg" data-lightbox="roadtrip" data-title="Pin On Too Cool For School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/84/c6/ce84c6e531619431d0815f4f85562680.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXY9cuMTcOKIl6sK8pyjf1dpmRWQxiWpImQ';" alt="Pin On Too Cool For School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Too Cool For School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/d1/45/bed1457a55f69b658693823155e73ba5.png" data-lightbox="roadtrip" data-title="Pin On Math">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/d1/45/bed1457a55f69b658693823155e73ba5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMCG-L3JCN8r2GAZ4COKlyk3kWRAwfXeYT8w';" alt="Pin On Math">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Math</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9e/99/bd/9e99bdbf420578d1cf04ddc6e0fc7df3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMCG-L3JCN8r2GAZ4COKlyk3kWRAwfXeYT8w';" alt="Pin On Math">
+										<div class="card-body">
+						<h3 class="h5"><b>Welcome to the National Department of Basic Educations website.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Department of education in va</strong>. 
+								
+																	The Virginia Department of Education VDOE has been working closely with the Governors Office the Virginia Department of Health and other state agencies to ensure our schools and communities have the most up-to-date information and resources. 
+																	Main Location 101 North 14th Street Richmond VA 23219 Directions. 
+																	Use the toggle on the map below to see the operational status of each division throughout the 2020-2021 school year. 
+																	Here you will find information on amongst others the Curriculum what to do if youve lost your matric certificate links to previous Grade 12 exam papers for revision purposes and our contact details should you need to get in touch with us. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Programs for Financial Assistance for Attendance at Private Schools. 
+																	Word which identified 2020 General Assembly revisions to the Standards of Quality SOQ 221-253131 requires the Department of Education to annually compile a list of i the top 100 professions in the Commonwealth by median pay and the. 
+																	The Virginia Department of Education is the state education agency of the Commonwealth of VirginiaIt is headquartered in the James Monroe Building in Richmond. 
+																	The Virginia Department of Education is tracking school divisions operating status for the 2020-2021 school year in response to the COVID-19 pandemic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Fredericksburg Department of Education is a Virginia state or federal agency whose mission is to provide leadership develop policy and disseminate funding information and other resources in support of student achievement in Fredericksburg VA. 
+																	Locations Additional Contacts. 
+																	The Va Department of Education located in Richmond VA oversees local educational programs including public school systems in Richmond. 
+																	Pursuant to Superintendents Memo 258-20-This is a Word document. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA education and training benefits can help you pay for college tuition find the right school or training program get career counseling and more. 
+																	While the missions of Virginia Departments of Education are similar to the federal Department of Education state Departments of Education play. 
+																	Pre-K to 12th. 
+																	Department of Education Announces Biden-Harris Appointees At the Request of President Biden Acting Secretary of Education Will Extend Pause on Federal Student Loan Payments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Education in Virginia addresses the needs of students from pre-kindergarten through adult educationVirginias educational system consistently ranks in the top ten states on the US. 
+																	Please note that the operational status is subject to change as public health conditions evolve. 
+																	Department of Education the Va Department. 
+																	While the missions of Virginia Departments of Education are similar to the federal Department of Education state Departments of Education play a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Visit COVID-19 Virginia Public Schools for access to the latest information. 
+																	Pre-K to 12th Grade. 
+																	Find out if youre eligible and how to apply for VA education benefits for Veterans service members and their qualified family members. 
+																	Working with the Virginia state Department of Education and the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Education Improvement Scholarships Tax Credits Program was established in 2012 and allows individuals business entities and corporations to receive Virginia state tax credits for charitable contributions to state-department-of-education-approved scholarship foundations beginning in the taxable year 2013. 
+																	We also provide support to seven state-funded artscultural. 
+																	The department is headed by the Secretary of Education who is a member of the Virginia Governors Cabinet and the Superintendent of Public Instruction a position that is also appointed by the Governor of Virginia. 
+																	Department of Educations National Assessment of Educational Progress with Virginia students outperforming the average in almost all subject areas and grade levels tested. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The mission of the Virginia Department of Education VDOE is to lead and facilitate the development and implementation of a quality public education system that meets the needs of students and assists them in becoming educated productive and responsible citizens. 
+																	The Department of Education sets policies on enrollment provides educational programs and offers resources for parents and education providers. 
+																	Whether you are a learner looking for study guides a parentguardian wanting a. 
+																	Education Department Letter Highlights Effort to Help Americans Pursue Higher Ed During Pandemic US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The mission of the Virginia Department of Education VDOE is to lead and facilitate the development and implementation of a quality public education system that meets the needs of students and assists them in becoming educated productive and responsible citizens. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/e1/dc/68e1dc9f70b01a475d8297293c908a1d.jpg" data-lightbox="roadtrip" data-title="Department Of Education Continues Academic Standards Meetings Formative Assessment Educational Reading Classroom Assessment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/e1/dc/68e1dc9f70b01a475d8297293c908a1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIzMwQZa3znU2BZlMLOCbaGxjvAL7CjfK70Q';" alt="Department Of Education Continues Academic Standards Meetings Formative Assessment Educational Reading Classroom Assessment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Education Continues Academic Standards Meetings Formative Assessment Educational Reading Classroom Assessment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/c5/67/3d/c5673d37fc0b6d6bb03c9831352c1edc.jpg" data-lightbox="roadtrip" data-title="Powhatan Colored School Powhatan County Imprint C Aug 1937 Virginia Department Of Education Division Of Powhatan County Public School School Building">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/c5/67/3d/c5673d37fc0b6d6bb03c9831352c1edc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFcn7TDmerv8uLXU9pz3oRAH7Pi3K-FAwlww';" alt="Powhatan Colored School Powhatan County Imprint C Aug 1937 Virginia Department Of Education Division Of Powhatan County Public School School Building">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Powhatan Colored School Powhatan County Imprint C Aug 1937 Virginia Department Of Education Division Of Powhatan County Public School School Building</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/76/6d/a2766d8deb4ef4616c4d6e396f04b5ce.jpg" data-lightbox="roadtrip" data-title="Training And Education Education Early Learning Teacher Prep">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/76/6d/a2766d8deb4ef4616c4d6e396f04b5ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWM8D07VTBFO12N52idGw53nWzvDK_NcjTlw';" alt="Training And Education Education Early Learning Teacher Prep">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Training And Education Education Early Learning Teacher Prep</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/cc/f5/b2ccf5ce891ac18f60d003724f3ffb8e.png" data-lightbox="roadtrip" data-title="Peatc A Webinar Presented By Dr Thomas Manthey Virginia Department Of Education Special Educ Special Education Students Student Services Special Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/cc/f5/b2ccf5ce891ac18f60d003724f3ffb8e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQJDwEwS5B38BSVuDER0OGpAT3aGC51KW6eA';" alt="Peatc A Webinar Presented By Dr Thomas Manthey Virginia Department Of Education Special Educ Special Education Students Student Services Special Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Peatc A Webinar Presented By Dr Thomas Manthey Virginia Department Of Education Special Educ Special Education Students Student Services Special Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/ef/71/83ef7120f7dad78782072940aaaf31e7.jpg" data-lightbox="roadtrip" data-title="University Of Virginia Charlottesville Va Us Education Desk United S Education System In Usa Us Education System University Of Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/ef/71/83ef7120f7dad78782072940aaaf31e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Y3sQ88OFLif-ghyGMG8J4w4sUUuWNuOeRw';" alt="University Of Virginia Charlottesville Va Us Education Desk United S Education System In Usa Us Education System University Of Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Virginia Charlottesville Va Us Education Desk United S Education System In Usa Us Education System University Of Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/9c/15/d49c15bafc22d2b88bea8c9a107fc89c.jpg" data-lightbox="roadtrip" data-title="Department Of Education Wordpress Theme High School Education Education Wordpress Themes Smart School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/9c/15/d49c15bafc22d2b88bea8c9a107fc89c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm3v03aaIVZPGfTdoVyJiraxUAghyailPJfw';" alt="Department Of Education Wordpress Theme High School Education Education Wordpress Themes Smart School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of Education Wordpress Theme High School Education Education Wordpress Themes Smart School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/25/87/d4/2587d4d9da8b5edd6f6ca3abc5c4d61f--logos-classroom.jpg" data-lightbox="roadtrip" data-title="Pin On My Classroom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/25/87/d4/2587d4d9da8b5edd6f6ca3abc5c4d61f--logos-classroom.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRekQ3nGyl7aMZ7Z8Z1AxxXb8HvUbCRNatlxA';" alt="Pin On My Classroom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Classroom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" data-lightbox="roadtrip" data-title="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaDVTaYO7BjRnpMQeKqJD_kwSTSHSNf_sTQ';" alt="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/99/bd/9e99bdbf420578d1cf04ddc6e0fc7df3.jpg" data-lightbox="roadtrip" data-title="Va Teacher Resource Ttac Brain Breaks Teacher Resources Childrens Bible">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/99/bd/9e99bdbf420578d1cf04ddc6e0fc7df3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-qxQy2fJ4yz0bZD-Fz_nFT5dfjMdZMFjBmw';" alt="Va Teacher Resource Ttac Brain Breaks Teacher Resources Childrens Bible">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Teacher Resource Ttac Brain Breaks Teacher Resources Childrens Bible</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/e9/df/6fe9dfb3b2fb31a4d99563f8ffb9c3b3.jpg" data-lightbox="roadtrip" data-title="This Week In History Brown V Board Of Education Educational Board Education Separate But Equal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/e9/df/6fe9dfb3b2fb31a4d99563f8ffb9c3b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6fbbmT9bE2kaWElO20QNzawx248BR1dEqOA';" alt="This Week In History Brown V Board Of Education Educational Board Education Separate But Equal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Week In History Brown V Board Of Education Educational Board Education Separate But Equal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/95/e4/2595e467ea311d293e89d6a1ddee72a4.jpg" data-lightbox="roadtrip" data-title="Western Migration Notes And Activities Virginia Studies Sol 6c Virginia Studies Social Studies Study">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/95/e4/2595e467ea311d293e89d6a1ddee72a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoQQ3Fa4LYm9DfSpoonM12I3dqUUolanjTPA';" alt="Western Migration Notes And Activities Virginia Studies Sol 6c Virginia Studies Social Studies Study">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Western Migration Notes And Activities Virginia Studies Sol 6c Virginia Studies Social Studies Study</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/b7/dc/8ab7dcdd274fb35951a0300d53371c79.png" data-lightbox="roadtrip" data-title="Pin On Back To Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/b7/dc/8ab7dcdd274fb35951a0300d53371c79.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS16kc2cWCurmjGxZkDhf4SA5zCeWwa4LIQUA';" alt="Pin On Back To Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Back To Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/0e/9b/c70e9b815fa92b0eac9ff22ebac51ef4.png" data-lightbox="roadtrip" data-title="Preschool Teacher Assistant Resume Teacher Resume Examples Teacher Resume Preschool Teacher Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/0e/9b/c70e9b815fa92b0eac9ff22ebac51ef4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjKkLn2Xc7w_Rqngz7CW-XN_RA53Fc8-dt0Q';" alt="Preschool Teacher Assistant Resume Teacher Resume Examples Teacher Resume Preschool Teacher Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Preschool Teacher Assistant Resume Teacher Resume Examples Teacher Resume Preschool Teacher Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/womens-college-basketball-unc.html">Womens College Basketball Unc</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-stat-leaders.html">Womens College Basketball Stat Leaders</a></li>
+													<li class="list-group-item"><a href="/womens-junior-college-basketball-rankings.html">Womens Junior College Basketball Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-teams-near-me.html">Womens College Basketball Teams Near Me</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-tv-today.html">Womens College Basketball Tv Today</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-watch.html">Womens College Basketball Watch</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-team-rankings.html">Womens College Basketball Team Rankings</a></li>
+													<li class="list-group-item"><a href="/yellow-ribbon-for-va.html">Yellow Ribbon For Va</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-team-names.html">Womens College Basketball Team Names</a></li>
+													<li class="list-group-item"><a href="/wright-state-gi-fellowship.html">Wright State Gi Fellowship</a></li>
+													<li class="list-group-item"><a href="/york-college-womens-basketball-coach.html">York College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/world-war-ii-gi-bill-restoration-act.html">World War Ii Gi Bill Restoration Act</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-sec-standings.html">Womens College Basketball Sec Standings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-standings-2019.html">Womens College Basketball Standings 2019</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-basketball-scores-today.html">Womens Ncaa Basketball Scores Today</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-uconn.html">Womens College Basketball Uconn</a></li>
+													<li class="list-group-item"><a href="/wwii-black-veterans-gi-bill.html">Wwii Black Veterans Gi Bill</a></li>
+													<li class="list-group-item"><a href="/womens-college-gymnastics-youtube.html">Womens College Gymnastics Youtube</a></li>
+													<li class="list-group-item"><a href="/womens-tournament-in-college-basketball.html">Womens Tournament In College Basketball</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-scores.html">Womens College Basketball Scores</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

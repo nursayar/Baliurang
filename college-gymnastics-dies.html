@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Gymnastics Dies - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Gymnastics Dies",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/e2/63/00/e26300d7dbabf322308695924614dc4d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+gymnastics+dies",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Gymnastics Dies</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Melanie Coleman a junior on Southern Connecticut State Universitys gymnastics team was training on Friday Nov. Melanie Coleman a 20-year-old junior nursing student from Milford Connecticut was practicing on. An accomplished gymnast at Southern Connecticut State University has died following a serious spinal cord injury suffered in a training accident. <br>				
+			</p>
+										<a class="badge badge-light" href="/can-you-use-gi-bill-part-time.html">can you use gi bill part time</a>
+											<a class="badge badge-info" href="/can-you-go-college-at-20.html">can you go college at 20</a>
+											<a class="badge badge-primary" href="/can-you-transfer-gi-bill-benefits-after-retirement.html">can you transfer gi bill benefits after retirement</a>
+											<a class="badge badge-primary" href="/can-you-use-your-gi-bill-more-than-once.html">can you use your gi bill more than once</a>
+											<a class="badge badge-primary" href="/can-you-use-your-post-911-gi-bill-for-online-classes.html">can you use your post 911 gi bill for online classes</a>
+											<a class="badge badge-secondary" href="/can-you-split-the-gi-bill-between-dependents.html">can you split the gi bill between dependents</a>
+											<a class="badge badge-dark" href="/can-the-gi-bill-be-used-for-grandchildren.html">can the gi bill be used for grandchildren</a>
+											<a class="badge badge-success" href="/can-you-use-your-gi-bill-to-start-a-business.html">can you use your gi bill to start a business</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to pay a visit to the ideal site.  Our site gives you hints for seeing the maximum quality video and image content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/f3/80/12f38090e0dc8e58a949b2264639d102.png" data-lightbox="roadtrip" data-title="College Gymnast Dies Following Practice Accident In Connecticut Gymnastics Connecticut College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/f3/80/12f38090e0dc8e58a949b2264639d102.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMkzS2O4qX7cHOAw5oGVOt6pF6Ssc6AmVWLQ';" alt="College Gymnast Dies Following Practice Accident In Connecticut Gymnastics Connecticut College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gymnast Dies Following Practice Accident In Connecticut Gymnastics Connecticut College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/18/76/7d1876d0bfd8b37a48345afc7f992c66.jpg" data-lightbox="roadtrip" data-title="A College Gymnast From Connecticut Has Died Following A Training Accident Gymnastics Coleman Melanie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/18/76/7d1876d0bfd8b37a48345afc7f992c66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4EkFJdAOe5m483piVwo_3R2mubkLyFqLe-Q';" alt="A College Gymnast From Connecticut Has Died Following A Training Accident Gymnastics Coleman Melanie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A College Gymnast From Connecticut Has Died Following A Training Accident Gymnastics Coleman Melanie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/3e/ef/2b3eef7fc7ea4cdb9e36032e5a107943.jpg" data-lightbox="roadtrip" data-title="Katelyn Ohashi Performs On The Floor Exercise During The Finals Of The Ncaa Gymnastics In Ann Arbor Mi Gymnastics Routines Katelyn Ohashi Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/3e/ef/2b3eef7fc7ea4cdb9e36032e5a107943.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyNqZ-UXxZxsOINVwmH0v50uelPF7OF5rnIA';" alt="Katelyn Ohashi Performs On The Floor Exercise During The Finals Of The Ncaa Gymnastics In Ann Arbor Mi Gymnastics Routines Katelyn Ohashi Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Katelyn Ohashi Performs On The Floor Exercise During The Finals Of The Ncaa Gymnastics In Ann Arbor Mi Gymnastics Routines Katelyn Ohashi Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/2d/2e/c62d2e0cfaf380d94c82435a2a966781.jpg" data-lightbox="roadtrip" data-title="Kurt Thomas World Champion Gymnast Dead From Stroke At 64 Gymnastics Gymnastics Championships Usa Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/2d/2e/c62d2e0cfaf380d94c82435a2a966781.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpYIDHB9pRInbIsyz1nCmpS7UNOg1SXymrlQ';" alt="Kurt Thomas World Champion Gymnast Dead From Stroke At 64 Gymnastics Gymnastics Championships Usa Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kurt Thomas World Champion Gymnast Dead From Stroke At 64 Gymnastics Gymnastics Championships Usa Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/b8/84/cdb8848a790c6c48d87cb74984f02e74.png" data-lightbox="roadtrip" data-title="Pin By Vincent Phillips On Pose Gymnastics Photography Gymnastics Pictures Female Gymnast">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/b8/84/cdb8848a790c6c48d87cb74984f02e74.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCY0pE7xSHa06MPAF6wUOwxeSDVpOjieYHaw';" alt="Pin By Vincent Phillips On Pose Gymnastics Photography Gymnastics Pictures Female Gymnast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Vincent Phillips On Pose Gymnastics Photography Gymnastics Pictures Female Gymnast</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/20/f6/7d20f683d049b8b98b72d7f11cd27f80.jpg" data-lightbox="roadtrip" data-title="Paige Zaziski Gymnastics Girls Ballet Leotards For Girls Female Gymnast">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/20/f6/7d20f683d049b8b98b72d7f11cd27f80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRNVqfgz8_nIJCoQi14oH3khZXsF8tWfLNbw';" alt="Paige Zaziski Gymnastics Girls Ballet Leotards For Girls Female Gymnast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paige Zaziski Gymnastics Girls Ballet Leotards For Girls Female Gymnast</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/7d/18/76/7d1876d0bfd8b37a48345afc7f992c66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRNVqfgz8_nIJCoQi14oH3khZXsF8tWfLNbw';" alt="Paige Zaziski Gymnastics Girls Ballet Leotards For Girls Female Gymnast">
+										<div class="card-body">
+						<h3 class="h5"><b>Direct Link Melanie Coleman a decorated gymnast and junior nursing student attending Southern Connecticut State University died on Sunday after sustaining a devastating accident during gymnastics.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College gymnastics dies</strong>. 
+								
+																	Melanie Coleman of Milford Connecticut was a former All-State gymnast and a Womens Collegiate Gymnastics Association Scholastic All-American. 
+																	CNN A gymnast at Southern Connecticut State University who loved coaching children has died after a fall during practice. 
+																	Colemans head coach Mary Fredericks said the team was heartbroken and stunned over her death. 
+																	Melanie Coleman 20 of Milford was practicing on the bars when she suffered a spinal cord injury according to the Connecticut Post. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She died at Yale New Haven Hospital. 
+																	Melanie Coleman a 20-year-old competitive gymnast at Southern Connecticut State University died after suffering a serious spinal injury in a fall from the. 
+																	In 1988 15-year-old Julissa Gomez became paralyzed after an accident on the vault. 
+																	An All-American college gymnast from Connecticut has died after suffering a spinal cord injury during a training accident. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She died of complications from her injuries three years later. 
+																	The 20-year-old gymnast at Southern Connecticut State University was polishing her uneven bars routine at the New Era Gymnastics facility in Hamden on Friday where her team trains once a week when the tragic accident occurred. 
+																	A US college gymnast has died from spinal injuries she sustained two days earlier during practice. 
+																	Southern Connecticut State University Melanie Coleman a nursing student and gymnast at Southern Connecticut State University died on Sunday two days after sustaining a spinal cord injury while training on the uneven bars. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About 100000 gymnasts suffer injuries every year. 
+																	College gymnast dies after practice accident. 
+																	Melanie Coleman 20 passed away on Sunday at Yale New Haven Hospital two. 
+																	A talented gymnast at Southern Connecticut State University tragically lost her life Sunday after a training accident. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When Melanie Coleman a gymnast at Southern Connecticut State University died after falling off the uneven bars veterans of the sport were stunned. 
+																	Melanie Coleman a 20-year-old gymnast at Southern Connecticut State University died on Sunday after suffering a serious spinal cord injury during training. 
+																	Associated Press Nov 12 2019 734 AM EST. 
+																	Melanie Coleman 20 died Sunday two days after. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A college gymnast died of a spinal cord injury after suffering a tragic freak accident while practicing on the uneven bars her family said. 
+																	8 when she sustained a serious injury the university announced on their website. 
+																	Officials at Southern Connecticut State University say Melanie Coleman 20 died Sunday at Yale New Haven. 
+																	Melanie Coleman 20 of Milford Connecticut was. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click to share on Facebook Opens in new window Click to share on Twitter. 
+																	College gymnast Melanie Coleman 20 was a. 
+																	An accomplished gymnast at Southern Connecticut State University has died after she suffered a serious spinal cord injury in a training accident. 
+																	An accomplished gymnast at Southern Connecticut State University has died following a serious spinal cord injury suffered in a training accident. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Friday the Milford Connecticut. 
+																	Family of college gymnast who died after slipping on uneven bars during a training session will donate the 20-year-olds organs so her spirit will live on Family of Melanie Coleman 20 are. 
+																	Melanie Coleman fell during routine exercise on the uneven bars Friday. 
+																	A college gymnast from Connecticut has died following an accident during training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Former Michigan State Detroit Lions wide receiver Charles Rogers dies at 38. 
+																	Melanie Coleman 20 of Milford Connecticut was. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/5c/0b/2b5c0b3791d713cab40cdddf8c04345a.png" data-lightbox="roadtrip" data-title="Gymnastics Is A Team Sport However It Isn T You Are On A Team But You Do Everything By Yourself Olympic Gymnastics Usa Gymnastics Simone Biles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/5c/0b/2b5c0b3791d713cab40cdddf8c04345a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvsqcJaW2Hu107dW0pK0qdUM99aQHdpkHy-Q';" alt="Gymnastics Is A Team Sport However It Isn T You Are On A Team But You Do Everything By Yourself Olympic Gymnastics Usa Gymnastics Simone Biles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gymnastics Is A Team Sport However It Isn T You Are On A Team But You Do Everything By Yourself Olympic Gymnastics Usa Gymnastics Simone Biles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/cf/90/afcf90a2b40670da96bdcb833a3dbe7c.jpg" data-lightbox="roadtrip" data-title="Women S Gymnastics Deserves Better Tv Coverage Gymnastics Pictures Gymnastics Gymnastics Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/cf/90/afcf90a2b40670da96bdcb833a3dbe7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDhkeWbpfg2ZjETNdQhu-YmI2I8DvxkrTYXw';" alt="Women S Gymnastics Deserves Better Tv Coverage Gymnastics Pictures Gymnastics Gymnastics Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Gymnastics Deserves Better Tv Coverage Gymnastics Pictures Gymnastics Gymnastics Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f0/b2/8f/f0b28f5a03cb7f189d132832b535da10.jpg" data-lightbox="roadtrip" data-title="Gymnastics Wallpaper In 2020 Gymnastics Wallpaper Gymnastics Moves Gymnastics Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f0/b2/8f/f0b28f5a03cb7f189d132832b535da10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFmlJYQXDxUNh1y_wmTmc5xoZRWdHH0te-Hw';" alt="Gymnastics Wallpaper In 2020 Gymnastics Wallpaper Gymnastics Moves Gymnastics Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gymnastics Wallpaper In 2020 Gymnastics Wallpaper Gymnastics Moves Gymnastics Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ad/87/28/ad8728251d5e2afcd4a30a0bc8d0bf18.jpg" data-lightbox="roadtrip" data-title="Kurt Thomas Trailblazing Champion Gymnast Dies At 64 Gymnastics Championships Gymnastics Events Artistic Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ad/87/28/ad8728251d5e2afcd4a30a0bc8d0bf18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcM3HGQ46R2zWwHmwUWIjCIdTLPWojMrLwHw';" alt="Kurt Thomas Trailblazing Champion Gymnast Dies At 64 Gymnastics Championships Gymnastics Events Artistic Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kurt Thomas Trailblazing Champion Gymnast Dies At 64 Gymnastics Championships Gymnastics Events Artistic Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/79/e9/0f79e908694bb5a12425bfbfb1d03aa8.jpg" data-lightbox="roadtrip" data-title="Mary Lou On Floor Ex Note One Of My Favorite Routines Of All Times Totally My Style Mary Lou Retton Gymnastics Pictures Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/79/e9/0f79e908694bb5a12425bfbfb1d03aa8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPyRC9MkqO8hWOwf3TavuY5WE_VKsaewHqGQ';" alt="Mary Lou On Floor Ex Note One Of My Favorite Routines Of All Times Totally My Style Mary Lou Retton Gymnastics Pictures Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mary Lou On Floor Ex Note One Of My Favorite Routines Of All Times Totally My Style Mary Lou Retton Gymnastics Pictures Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/d9/9e/82d99e9d8945b0a0ca53150ed893f1bd.jpg" data-lightbox="roadtrip" data-title="June 4 Junior Competition Shania Adams In 2020 Competition Athletic Junior">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/d9/9e/82d99e9d8945b0a0ca53150ed893f1bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUMmVMY_JIUYYXdj7bF6lblVYKq5VFefJi9A';" alt="June 4 Junior Competition Shania Adams In 2020 Competition Athletic Junior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">June 4 Junior Competition Shania Adams In 2020 Competition Athletic Junior</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/63/00/e26300d7dbabf322308695924614dc4d.jpg" data-lightbox="roadtrip" data-title="Jordyn Wieber Usa Gymnastics Usa Gymnastics Gymnastics Team Usa Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/63/00/e26300d7dbabf322308695924614dc4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa561oEwrGltub-fDPa4BZ2F_zyhcHhcx0gg';" alt="Jordyn Wieber Usa Gymnastics Usa Gymnastics Gymnastics Team Usa Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jordyn Wieber Usa Gymnastics Usa Gymnastics Gymnastics Team Usa Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/0f/38/4e0f38f0fbb8ff362e02d7a2bcb1e529.jpg" data-lightbox="roadtrip" data-title="Mckayla Maroney Vault Leads U S Women S Gymnastics Team To Gold Gymnastics Team Mckayla Maroney Vault Female Gymnast">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/0f/38/4e0f38f0fbb8ff362e02d7a2bcb1e529.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsT-gcIemijL5qHp8UyVIEwPz8h44IN5d2RQ';" alt="Mckayla Maroney Vault Leads U S Women S Gymnastics Team To Gold Gymnastics Team Mckayla Maroney Vault Female Gymnast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mckayla Maroney Vault Leads U S Women S Gymnastics Team To Gold Gymnastics Team Mckayla Maroney Vault Female Gymnast</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/dc/5f/fbdc5ff05ed42a3e48e5bb9c8fcddc3b.jpg" data-lightbox="roadtrip" data-title="Yuna Kim Is Queen Perfection Queen Gymnastics Photos Female Gymnast Amazing Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/dc/5f/fbdc5ff05ed42a3e48e5bb9c8fcddc3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHfQPJJQtXcHLiWs6fv_29qmhKzI0xBcBfNw';" alt="Yuna Kim Is Queen Perfection Queen Gymnastics Photos Female Gymnast Amazing Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yuna Kim Is Queen Perfection Queen Gymnastics Photos Female Gymnast Amazing Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/1a/43/111a4359a994c549a8355a1b86436689.jpg" data-lightbox="roadtrip" data-title="Gymnastics Gymnastics Photos Gymnastics Photography Gymnastics Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/1a/43/111a4359a994c549a8355a1b86436689.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEGj6r1F4b4Wl-XLykGiHKqopnIzXR_v7rlQ';" alt="Gymnastics Gymnastics Photos Gymnastics Photography Gymnastics Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gymnastics Gymnastics Photos Gymnastics Photography Gymnastics Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e2/80/42/e28042a311d0306ca473d4f45ebdb3d9--utes-basketball-coaches.jpg" data-lightbox="roadtrip" data-title="Rick Majerus A Proven Winner As A College Basketball Coach Dies Basketball Coach Basketball History College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e2/80/42/e28042a311d0306ca473d4f45ebdb3d9--utes-basketball-coaches.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd2A4NuFyDPrFLz5_oNDLe4z5jkYWEaKIqSQ';" alt="Rick Majerus A Proven Winner As A College Basketball Coach Dies Basketball Coach Basketball History College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rick Majerus A Proven Winner As A College Basketball Coach Dies Basketball Coach Basketball History College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e1/aa/0b/e1aa0b5630dfb3082d46ebc0d7620ecb.jpg" data-lightbox="roadtrip" data-title="Alexa Moreno Biography Wiki Age Height Weight Medal Record Mexican Artistic Gymnast Glob Intel Celebrity News Sports Tech Moreno Gymnastics Biography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e1/aa/0b/e1aa0b5630dfb3082d46ebc0d7620ecb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3PvMputR5NScFA_d81cG8YJ7FTvY4jG1XkA';" alt="Alexa Moreno Biography Wiki Age Height Weight Medal Record Mexican Artistic Gymnast Glob Intel Celebrity News Sports Tech Moreno Gymnastics Biography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alexa Moreno Biography Wiki Age Height Weight Medal Record Mexican Artistic Gymnast Glob Intel Celebrity News Sports Tech Moreno Gymnastics Biography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/25/de/df/25dedfe03cfaee9c0ea72c1b494d4e3a.jpg" data-lightbox="roadtrip" data-title="Und Sie Tun Dies Wahrend Sie Auf Der Hand Einer Anderen Person Stehen Cheerleading Und Sie Tun D In 2020 Dancer Workout Gymnastics Workout Flexibility Workout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/25/de/df/25dedfe03cfaee9c0ea72c1b494d4e3a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxpUpwlGJiBDaxgBYZ7u8VYuSUSsTgXbIl-w';" alt="Und Sie Tun Dies Wahrend Sie Auf Der Hand Einer Anderen Person Stehen Cheerleading Und Sie Tun D In 2020 Dancer Workout Gymnastics Workout Flexibility Workout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Und Sie Tun Dies Wahrend Sie Auf Der Hand Einer Anderen Person Stehen Cheerleading Und Sie Tun D In 2020 Dancer Workout Gymnastics Workout Flexibility Workout</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/bah-for-post-911-gi-bill-online.html">Bah For Post 911 Gi Bill Online</a></li>
+													<li class="list-group-item"><a href="/army-post-911-gi-bill-benefits.html">Army Post 911 Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/apply-for-va-post-911-gi-bill.html">Apply For Va Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/bah-post-911-gi-bill-rates.html">Bah Post 911 Gi Bill Rates</a></li>
+													<li class="list-group-item"><a href="/bah-for-chapter-33-gi-bill.html">Bah For Chapter 33 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/apply-for-chapter-33-benefits.html">Apply For Chapter 33 Benefits</a></li>
+													<li class="list-group-item"><a href="/army-montgomery-gi-bill-amount.html">Army Montgomery Gi Bill Amount</a></li>
+													<li class="list-group-item"><a href="/apply-for-ch-35-benefits.html">Apply For Ch 35 Benefits</a></li>
+													<li class="list-group-item"><a href="/are-va-chapter-35-benefits-taxable.html">Are Va Chapter 35 Benefits Taxable</a></li>
+													<li class="list-group-item"><a href="/apply-for-gi-bill-education-benefits.html">Apply For Gi Bill Education Benefits</a></li>
+													<li class="list-group-item"><a href="/ap-womens-college-basketball-player-of-the-year.html">Ap Womens College Basketball Player Of The Year</a></li>
+													<li class="list-group-item"><a href="/army-post-911-gi-bill-policy.html">Army Post 911 Gi Bill Policy</a></li>
+													<li class="list-group-item"><a href="/apply-for-post-911-gi-bill.html">Apply For Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/average-womens-college-basketball-coach-salary.html">Average Womens College Basketball Coach Salary</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-montgomery-gi-bill.html">Army National Guard Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/ashford-university-and-gi-bill.html">Ashford University And Gi Bill</a></li>
+													<li class="list-group-item"><a href="/are-officers-eligible-for-the-gi-bill.html">Are Officers Eligible For The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/associated-press-womens-college-basketball-rankings.html">Associated Press Womens College Basketball Rankings</a></li>
+													<li class="list-group-item"><a href="/apply-for-1606-gi-bill.html">Apply For 1606 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/associated-press-womens-college-basketball-poll.html">Associated Press Womens College Basketball Poll</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

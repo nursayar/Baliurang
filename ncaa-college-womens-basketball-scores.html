@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa College Womens Basketball Scores - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa College Womens Basketball Scores",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/600x315/6b/68/67/6b6867b067565a0a8dd0da85c780be32.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+college+womens+basketball+scores",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa College Womens Basketball Scores</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The tournament will feature 64 teams competing from March 21 through April 4 to. Five womens college basketball players who could be X factors in March. Primesport Tickets Affiliate Offers. <br>				
+			</p>
+										<a class="badge badge-danger" href="/benefitsvagovgibillpost911-gibillasp.html">benefitsvagovgibillpost911 gibillasp</a>
+											<a class="badge badge-danger" href="/benefits-of-gi-vital-softgel.html">benefits of gi vital softgel</a>
+											<a class="badge badge-warning" href="/benefits-of-gift-cards.html">benefits of gift cards</a>
+											<a class="badge badge-light" href="/benefits-of-montgomery-bill.html">benefits of montgomery bill</a>
+											<a class="badge badge-secondary" href="/berry-college-womens-basketball-roster.html">berry college womens basketball roster</a>
+											<a class="badge badge-dark" href="/benefits-of-low-gi-foods.html">benefits of low gi foods</a>
+											<a class="badge badge-primary" href="/benefits-of-giving-birth-in-uae.html">benefits of giving birth in uae</a>
+											<a class="badge badge-light" href="/benefits-of-gips-compliance.html">benefits of gips compliance</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the right blog.  Our website gives you hints for viewing the highest quality video and picture content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/bf/25/45bf25142248618b1cbc7ef81120bd1b.gif" data-lightbox="roadtrip" data-title="2019 Ncaa Women S Basketball Tournament Bracket Schedule Scores Ncaa Com Basketball Tournament National Championship Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/bf/25/45bf25142248618b1cbc7ef81120bd1b.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYFUtU-dhd2oVViNSxBUg9NXSbfPFjcjDwHA';" alt="2019 Ncaa Women S Basketball Tournament Bracket Schedule Scores Ncaa Com Basketball Tournament National Championship Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Ncaa Women S Basketball Tournament Bracket Schedule Scores Ncaa Com Basketball Tournament National Championship Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/6b/68/67/6b6867b067565a0a8dd0da85c780be32.jpg" data-lightbox="roadtrip" data-title="Ncaa College Basketball Scores Ncaa College College Basketball Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/6b/68/67/6b6867b067565a0a8dd0da85c780be32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHwTkGWVh_cTCt0TzpIuyLjqcncpHYFiuh1A';" alt="Ncaa College Basketball Scores Ncaa College College Basketball Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa College Basketball Scores Ncaa College College Basketball Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/90/b1/3490b1e2e2f18605edac27944268cf6a.jpg" data-lightbox="roadtrip" data-title="Find Ncaa Di Women 39 S College Basketball Scores Schedules Rankings Brackets Stats Video News College Basketball Sports Picks Basketball Tshirt Designs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/90/b1/3490b1e2e2f18605edac27944268cf6a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjUNFCrzuiLKN1O09G7pPk-ma_hiAl1dpOeg';" alt="Find Ncaa Di Women 39 S College Basketball Scores Schedules Rankings Brackets Stats Video News College Basketball Sports Picks Basketball Tshirt Designs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Find Ncaa Di Women 39 S College Basketball Scores Schedules Rankings Brackets Stats Video News College Basketball Sports Picks Basketball Tshirt Designs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/88/80/3d888083b1e73325abe43de7ace69dde.jpg" data-lightbox="roadtrip" data-title="Women S Tournament Bracket Schedule And Scores Uconn Womens Basketball Uconn Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/88/80/3d888083b1e73325abe43de7ace69dde.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8wuq5rbTEvMeEWXe9I-jCb9KmQkdhMW9ACw';" alt="Women S Tournament Bracket Schedule And Scores Uconn Womens Basketball Uconn Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Tournament Bracket Schedule And Scores Uconn Womens Basketball Uconn Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/75/3a/85753ac60123f78ab093ff265f902ec1.jpg" data-lightbox="roadtrip" data-title="Ncaa Women S Basketball Tournament 2015 Sweet 16 Scores And Elite 8 Bracket Basketball Tournament Womens Basketball Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/75/3a/85753ac60123f78ab093ff265f902ec1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxp5pTw3kSSwellR3NW5yzClAxweZCrL3uaw';" alt="Ncaa Women S Basketball Tournament 2015 Sweet 16 Scores And Elite 8 Bracket Basketball Tournament Womens Basketball Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Women S Basketball Tournament 2015 Sweet 16 Scores And Elite 8 Bracket Basketball Tournament Womens Basketball Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/40/aa/3340aa96898315e59fce186f21a89c4b.jpg" data-lightbox="roadtrip" data-title="Ncaa Women S Basketball Tournament 2015 Sweet 16 Scores And Elite 8 Bracket Basketball Tournament Womens Basketball Uconn Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/40/aa/3340aa96898315e59fce186f21a89c4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVYz-WvZNRtrQaidn8fUCl0Tylubxq2Y6C2g';" alt="Ncaa Women S Basketball Tournament 2015 Sweet 16 Scores And Elite 8 Bracket Basketball Tournament Womens Basketball Uconn Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Women S Basketball Tournament 2015 Sweet 16 Scores And Elite 8 Bracket Basketball Tournament Womens Basketball Uconn Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/5c/bb/23/5cbb23c727ccc8cd1dbacef51805b7ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVYz-WvZNRtrQaidn8fUCl0Tylubxq2Y6C2g';" alt="Ncaa Women S Basketball Tournament 2015 Sweet 16 Scores And Elite 8 Bracket Basketball Tournament Womens Basketball Uconn Womens Basketball">
+										<div class="card-body">
+						<h3 class="h5"><b>Louisville leads UConn drops in 1st Power 10 of February Basketball Hall of Fame and WBCA.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa college womens basketball scores</strong>. 
+								
+																	Live Womens Basketball DII scores and schedules searchable by date and conference. 
+																	The Bears are 17-0 with 15 double-digit wins a college basketball-best scoring margin more Quadrant 1 wins than No. 
+																	East American Big 12 Big East Big Sky Big South Big Ten Big West C-USA CAA Horizon Ivy MAAC MAC MEAC MVC Mountain West NEC OVC Pac. 
+																	Five womens college basketball players who could be X factors in March Some of the most underrated players on top-10 contenders could be the difference leading into the NCAA tournament. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Live college basketball scores and postgame recaps. 
+																	Louisville leads UConn drops in 1st Power 10 of February Basketball Hall of Fame and WBCA. 
+																	Ole Miss upsets No. 
+																	The San Antonio region will host the entire NCAA womens basketball tournament. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Louisville leads UConn drops in 1st Power 10 of February. 
+																	Womens Final Four. 
+																	2020 mens college basketball calendar. 
+																	Get the latest teams as well as full coverage of the NHL from USA TODAY. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DI Womens Basketball News. 
+																	Womens College Basketball News Saint Francis PA Red Flash vs Merrimack Warriors February 5 Preview Game Time Matchup Statistics VCU Rams vs Davidson Wildcats February 5 Preview Game Time. 
+																	An entertaining Big Ten battle that bordered on perhaps the most aesthetically pleasing college basketball game of the season fell in favor of No. 
+																	25 Georgia survives Alabama in overtime. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 candidates named to the 2021 Katrina McClain Award watch list. 
+																	NCAA College Womens Basketball DII Scores Schedule Previous Month. 
+																	One could argue. 
+																	7 Ohio State on Thursday as the Buckeyes went on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DI Womens Basketball NCAA student-athletes celebrate reflect on NGWSD 2021 Womens basketball rankings. 
+																	San Antonio and the surrounding region will play host to the 2021 NCAA Division I Womens Basketball Championship. 
+																	Schedule latest COVID-19 news for the 2020-21 season. 
+																	The womens NCAA basketball tournament will be held on six courts at five venues in the San Antonio region from March 21 to April 4 it was announced Friday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The move Friday was made to help mitigate the risks of COVID-19 and matches that of the mens tournament which. 
+																	Scores from Saturdays. 
+																	The Alamodome will host the Womens. 
+																	Captain Sir Tom Moore who raised over 32m for the UKs NHS has died with coronavirus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 Gonzaga and more top-10 wins than Gonzaga. 
+																	Schedule first games NCAA tournament dates. 
+																	NCAAW Basketball Scoreboard Top 25 Division I A 10 ACC ASUN Am. 
+																	Real-time NCAAM College Basketball scores on ESPN. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some of the most underrated players on top-10 contenders could be the difference leading into the NCAA tournament. 
+																	Live college basketball scores and postgame recaps. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/a1/6c/9ea16c54b8e00e9a7e561bec653e76af.jpg" data-lightbox="roadtrip" data-title="Uconn Women Score Most Lopsided Win Of Season Uconn Uconn Womens Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/a1/6c/9ea16c54b8e00e9a7e561bec653e76af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_KPwdAjms7YayRoNyJFXeeKQGCc6e0LB0IA';" alt="Uconn Women Score Most Lopsided Win Of Season Uconn Uconn Womens Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn Women Score Most Lopsided Win Of Season Uconn Uconn Womens Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/b7/72/75b7727d1ecc1d5fe436231c49e653c9.jpg" data-lightbox="roadtrip" data-title="South Carolina Vs Uconn 2018 Results Scores And Highlights From Women S Elite Eight Game Uconn College Basketball Teams Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/b7/72/75b7727d1ecc1d5fe436231c49e653c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1gNAPDvVqAlqXSToYvZTxNTcetZHlHs0EEw';" alt="South Carolina Vs Uconn 2018 Results Scores And Highlights From Women S Elite Eight Game Uconn College Basketball Teams Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">South Carolina Vs Uconn 2018 Results Scores And Highlights From Women S Elite Eight Game Uconn College Basketball Teams Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/03/e8/c903e86a0b9c5ec28fac66ff01ff52b9.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Games Of The Week 1 30 2 3 Womens Basketball Best Basketball Shoes Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/03/e8/c903e86a0b9c5ec28fac66ff01ff52b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOeUxdlKUQOopg6hixf6rwi9_mSZcyIW_qNA';" alt="Women S Basketball Games Of The Week 1 30 2 3 Womens Basketball Best Basketball Shoes Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Games Of The Week 1 30 2 3 Womens Basketball Best Basketball Shoes Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/1d/0a/d31d0a381b13b4077949afdb6feea4e2.jpg" data-lightbox="roadtrip" data-title="Uconn Still No 1 As Top Four Of Women S Hoops Poll Same Uconn Womens Basketball Basketball Girls Uconn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/1d/0a/d31d0a381b13b4077949afdb6feea4e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQAHc6-VIIutVRdD30lEjyc1W2giQiO0ujYg';" alt="Uconn Still No 1 As Top Four Of Women S Hoops Poll Same Uconn Womens Basketball Basketball Girls Uconn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn Still No 1 As Top Four Of Women S Hoops Poll Same Uconn Womens Basketball Basketball Girls Uconn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/6c/5c/3b6c5c6e627b9b4d0244f1a09c007b34.jpg" data-lightbox="roadtrip" data-title="Defreese Scores 26 In Blue Hens 65 53 Win Vs Uncw Womens Basketball College Of Charleston Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/6c/5c/3b6c5c6e627b9b4d0244f1a09c007b34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl-JRO6SQ1jaKjxyNfGP1782LJ5YRcUO3OA';" alt="Defreese Scores 26 In Blue Hens 65 53 Win Vs Uncw Womens Basketball College Of Charleston Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defreese Scores 26 In Blue Hens 65 53 Win Vs Uncw Womens Basketball College Of Charleston Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/13/ae/c713ae37a6244956ad89c524204cecdb.jpg" data-lightbox="roadtrip" data-title="Kml Scores Triple Double In Huskies Win Over St Joseph S Uconn Womens Basketball Uconn Uconn Huskies Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/13/ae/c713ae37a6244956ad89c524204cecdb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmKGc8C-7n16hg3Xw8uARBqDhL2kCdDWeE8A';" alt="Kml Scores Triple Double In Huskies Win Over St Joseph S Uconn Womens Basketball Uconn Uconn Huskies Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kml Scores Triple Double In Huskies Win Over St Joseph S Uconn Womens Basketball Uconn Uconn Huskies Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/bb/23/5cbb23c727ccc8cd1dbacef51805b7ef.jpg" data-lightbox="roadtrip" data-title="Espn The Worldwide Leader In Sports Espn College Basketball Teams Basketball Finals Final Four">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/bb/23/5cbb23c727ccc8cd1dbacef51805b7ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzkOdYlxFI8AAj2QqiLjfrQCCDMQMiTm8KHA';" alt="Espn The Worldwide Leader In Sports Espn College Basketball Teams Basketball Finals Final Four">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Espn The Worldwide Leader In Sports Espn College Basketball Teams Basketball Finals Final Four</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/9c/6f/da9c6f58044817930b91d3e2cca692ab.jpg" data-lightbox="roadtrip" data-title="Four Wolverines Score In Double Digits In Wesley S 86 35 Win Over Valley Forge College Athletics College Sports Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/9c/6f/da9c6f58044817930b91d3e2cca692ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdYF5xFJ4kpaFyrn-9zJ-tPt3HwYtIsc0WIA';" alt="Four Wolverines Score In Double Digits In Wesley S 86 35 Win Over Valley Forge College Athletics College Sports Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Four Wolverines Score In Double Digits In Wesley S 86 35 Win Over Valley Forge College Athletics College Sports Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/17/6d/d3176de6737061a8dd5cc51550de5faf.jpg" data-lightbox="roadtrip" data-title="Amber Orrange Would Score 17 In The Sweet Sixteen Loss Stanford Womens Basketball Basketball Photos Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/17/6d/d3176de6737061a8dd5cc51550de5faf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOlaNT0QwsZGCAygCrHOlCy8rAEsQdtL3hXg';" alt="Amber Orrange Would Score 17 In The Sweet Sixteen Loss Stanford Womens Basketball Basketball Photos Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amber Orrange Would Score 17 In The Sweet Sixteen Loss Stanford Womens Basketball Basketball Photos Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/e5/94/c8e59409086d273353838c44616ef7a5.jpg" data-lightbox="roadtrip" data-title="Louisville Women S College Basketball Cardinals Photos Espn Uconn Womens Basketball College Basketball Teams Uconn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/e5/94/c8e59409086d273353838c44616ef7a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-CFZYCKX4qUHuFVwa03F3H9iWFQstKeZyVg';" alt="Louisville Women S College Basketball Cardinals Photos Espn Uconn Womens Basketball College Basketball Teams Uconn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Louisville Women S College Basketball Cardinals Photos Espn Uconn Womens Basketball College Basketball Teams Uconn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/3c/69/553c69d5d79d85a96922e8e97f5ccb91.jpg" data-lightbox="roadtrip" data-title="Stanford Player S React To A Score In The Second Half Of An Ncaa College Basketball Game Against Stanford Womens Basketball Basketball College Basketball Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/3c/69/553c69d5d79d85a96922e8e97f5ccb91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAyoVFlRHDzVdDTM9OLp9_1OSpLhatah-B9A';" alt="Stanford Player S React To A Score In The Second Half Of An Ncaa College Basketball Game Against Stanford Womens Basketball Basketball College Basketball Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stanford Player S React To A Score In The Second Half Of An Ncaa College Basketball Game Against Stanford Womens Basketball Basketball College Basketball Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/32/11/ab321104b3cfb8db766e8203608cc648.jpg" data-lightbox="roadtrip" data-title="Uconn Women Win Making School Center Of College Hoops World Uconn Womens Basketball Uconn Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/32/11/ab321104b3cfb8db766e8203608cc648.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS68Jl3w4pCdVZo5lnjIM1IPNGySrYSh6iXVw';" alt="Uconn Women Win Making School Center Of College Hoops World Uconn Womens Basketball Uconn Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn Women Win Making School Center Of College Hoops World Uconn Womens Basketball Uconn Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/e9/d5/56e9d5962eec87fccded14e3921561d3.jpg" data-lightbox="roadtrip" data-title="Uconn S Napheesa Collier Making Most Of Her Trips To The Foul Line Uconn Basketball Highlights Uconn Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/e9/d5/56e9d5962eec87fccded14e3921561d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqhmUDco801XVujmeSr7Fc6bvCYjPsXIr63Q';" alt="Uconn S Napheesa Collier Making Most Of Her Trips To The Foul Line Uconn Basketball Highlights Uconn Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn S Napheesa Collier Making Most Of Her Trips To The Foul Line Uconn Basketball Highlights Uconn Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/college-gift-ideas-for-him.html">College Gift Ideas For Him</a></li>
+													<li class="list-group-item"><a href="/college-gift-basket-for-guys.html">College Gift Basket For Guys</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-uc.html">College Essay Guy Uc</a></li>
+													<li class="list-group-item"><a href="/college-gift-guide-2020.html">College Gift Guide 2020</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-resume.html">College Essay Guy Resume</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-values-exercise.html">College Essay Guy Values Exercise</a></li>
+													<li class="list-group-item"><a href="/college-gift-aid.html">College Gift Aid</a></li>
+													<li class="list-group-item"><a href="/college-fund-gift-certificate-template.html">College Fund Gift Certificate Template</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-rates.html">College Essay Guy Rates</a></li>
+													<li class="list-group-item"><a href="/college-giberville-horaires.html">College Giberville Horaires</a></li>
+													<li class="list-group-item"><a href="/college-gifts-buzzfeed.html">College Gifts Buzzfeed</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-youtube.html">College Essay Guy Youtube</a></li>
+													<li class="list-group-item"><a href="/college-gives-me-panic-attacks.html">College Gives Me Panic Attacks</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-wake-forest.html">College Essay Guy Wake Forest</a></li>
+													<li class="list-group-item"><a href="/college-essentials-gifts.html">College Essentials Gifts</a></li>
+													<li class="list-group-item"><a href="/college-essay-guycom.html">College Essay Guycom</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-workshop-in-a-box.html">College Essay Guy Workshop In A Box</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-pomona.html">College Essay Guy Pomona</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-workbook.html">College Essay Guy Workbook</a></li>
+													<li class="list-group-item"><a href="/college-fund-gift-cards.html">College Fund Gift Cards</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

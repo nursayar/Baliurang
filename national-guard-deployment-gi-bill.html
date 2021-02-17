@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Guard Deployment Gi Bill - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Guard Deployment Gi Bill",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/40/90/e0/4090e095d22e229d78115c5ebddd2730.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+guard+deployment+gi+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Guard Deployment Gi Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Use them right up until the moment where they might actually get something from it 41K41K. Members of the Washington Air National Guard at a. Lawmakers are concerned that thousands of troops wont get credit for the time served securing the halls of Congress. <br>				
+			</p>
+										<a class="badge badge-light" href="/post-911-gi-bill-hybrid-courses.html">post 911 gi bill hybrid courses</a>
+											<a class="badge badge-primary" href="/post-911-gi-bill-dependent-benefits.html">post 911 gi bill dependent benefits</a>
+											<a class="badge badge-primary" href="/post-911-gi-bill-housing-benefits.html">post 911 gi bill housing benefits</a>
+											<a class="badge badge-dark" href="/post-911-gi-bill-for-air-force-reserve.html">post 911 gi bill for air force reserve</a>
+											<a class="badge badge-light" href="/post-911-gi-bill-how-much-does-it-cover.html">post 911 gi bill how much does it cover</a>
+											<a class="badge badge-secondary" href="/post-911-gi-bill-benefits-expire.html">post 911 gi bill benefits expire</a>
+											<a class="badge badge-primary" href="/post-911-gi-bill-for-disabled-veterans.html">post 911 gi bill for disabled veterans</a>
+											<a class="badge badge-warning" href="/post-911-gi-bill-calculator.html">post 911 gi bill calculator</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the right site.  Our site provides you with suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d7/71/85/d771859d6faf7a92750bc75c86d64b61.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d7/71/85/d771859d6faf7a92750bc75c86d64b61.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2JL212_PikwWqCfrqqtiyAXtOY-9z2pjCpg';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/a7/c3/daa7c3b3d612ac9242e538bdad1afe45.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/a7/c3/daa7c3b3d612ac9242e538bdad1afe45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuRXmqex1EG4JI0j7pMTV51XNg4BCjHnihxg';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/74/0f/07/740f0758b1c9793fc4c976b7a7725345.jpg" data-lightbox="roadtrip" data-title="Pin On Wall Of Shame">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/74/0f/07/740f0758b1c9793fc4c976b7a7725345.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrQHBNxIFC6Q5LAEexIKilqaS4LvNK7aQwSA';" alt="Pin On Wall Of Shame">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wall Of Shame</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/78/2e/b5/782eb5bacbeefafbddc8aa2bd7109732.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/78/2e/b5/782eb5bacbeefafbddc8aa2bd7109732.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4d7ffg0whQ77dbnmcod2ulOli-rMsq9vOA';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/e3/5a/57e35a552883e9482ecd3e055aa45df2.png" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/e3/5a/57e35a552883e9482ecd3e055aa45df2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTND-rGpMrL8sFCG6Qa_L3xCGxF39AelMbwwQ';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/90/e0/4090e095d22e229d78115c5ebddd2730.jpg" data-lightbox="roadtrip" data-title="Pin On Hypocrites Bigots And An Old Orange Man">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/90/e0/4090e095d22e229d78115c5ebddd2730.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQTg5dClEqzctY6aDGfJ00C25BQyWjzRInA';" alt="Pin On Hypocrites Bigots And An Old Orange Man">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hypocrites Bigots And An Old Orange Man</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9e/fa/36/9efa361eafb0d569222a31e4d4be7a3b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQTg5dClEqzctY6aDGfJ00C25BQyWjzRInA';" alt="Pin On Hypocrites Bigots And An Old Orange Man">
+										<div class="card-body">
+						<h3 class="h5"><b>January 22 2021 On the 48th Anniversary of Legal Abortion in America We Must Use Love to End Abortion National Review.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National guard deployment gi bill</strong>. 
+								
+																	The days and nights National Guard troops spent securing Capitol Hill will count towards time needed to qualify for GI Bill education benefits according to a memo sent to lawmakers on Thursday. 
+																	January 22 2021 Will the Guards Capitol Hill deployment count towards GI Bill benefits. 
+																	May 19 2020 214 PM. 
+																	January 22 2021 Will the Guards Capitol Hill deployment count towards GI Bill benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reservists who enlist reenlist or extend in the Reserve force for a period of six years are eligible for this benefit. 
+																	This program requires no contribution and can provide up. 
+																	January 22 2021 Texas Guard staff sergeant identified as soldier who died in Kuwait. 
+																	Eliminates the 40-percent benefit level and expands the 60-percent benefit level under the Post 911 GI Bill program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI Bill benefits are available for Selected Reserve servicemembers to help with education and training costs this guide will help to explain the Montgomery GI Bill - Selected Reserve MGIB-SR. 
+																	Provisions allowing Guard members to transfer some or all of their Post- 911 GI Bill benefits to their spouse or children are set to change limiting the timeframe Soldiers and Airmen can transfer those benefits. 
+																	Department of Veterans Affairs website outlines. 
+																	For the thousands of Guard troops deployed to Washington last year over civil unrest there was no special national emergency declaration so those members did not earn time toward their GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2021 United States National Guard ELIGIBILITY. 
+																	National Guard and Reserve members may be eligible for the following benefits. 
+																	Post-911 GI Bill - at least 90 aggregate days of active service after September 10 2001 or were discharged with a service-connected disability after serving at least 30 consecutive days after that date. 
+																	May 19 Rachel Maddow on report that President Trump is ending National Guard coronavirus deployments a day before members become eligible for federal benefits under GI bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eric Little director of manpower and personnel for the National Guard Bureau wrote to lawmakers saying the mission counted toward troops eligibility for Post-911 GI Bill benefits. 
+																	January 22 2021 Health suffers as rural hospitals close. 
+																	Traditional college is not required for all career paths and this education benefit helps veterans gain a competitive edge when seeking employment outside the military. 
+																	Service performed on or after September 11 2001 may be considered qualifying service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This means many members may now qualify for the Post-911 GI Bill or qualify for an increase to their current benefit amount. 
+																	If youre a member of the Army Navy Air Force Marine Corps or Coast Guard Reserve Army National Guard or Air National Guard you may be eligible for this benefit. 
+																	E-Mail Address Password Remember Me Login Forgot Your Password. 
+																	While many military-connected students know the Post-911 GI Bill can fund undergraduate and graduate degrees there are several alternative uses that may be overlooked. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	January 22 2021 Isaiah Livers red hot first-half leads Michigan to 34-21 halftime lead over Purdue. 
+																	Find out if you qualify. 
+																	Trump Screws National Guard Virus Workers Out Of GI Bill Credit With the knowledge that 90 days of service means the government would have to credit the National Guards service Trump is fine with terminating. 
+																	An individual with aggregate service of 90 days but less than six months of active-duty service excluding entry and skill training now qualifies at the 50-percent benefit level. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	January 22 2021 Virginia Teachers Union Insists Students Get Vaccine Before Schools Reopen Washington Free Beacon. 
+																	January 22 2021 The Senate Impeachment Court of. 
+																	The Montgomery GI Bill Selected Reserve MGIB-SR program offers up to 36 months of education and training benefits. 
+																	Trump Administration to End National Guard COVID Deployments One Day Before GI Bill Benefits Kick In. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Service under section 502 f for the purpose of responding to a national emergency now qualifies members for the Post-911 GI Bill. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dd/0f/89/dd0f8911814db0442241e70b531ef676.jpg" data-lightbox="roadtrip" data-title="Accredited Training We Offer A Wide Range Of Training Courses Including Hypnotherapy Nlp More Http Bathh C Gi Bill Tuition Assistance Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dd/0f/89/dd0f8911814db0442241e70b531ef676.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4UxB6o-dYJN8JxuoLELnsiB1iJ-QK6lcMQ';" alt="Accredited Training We Offer A Wide Range Of Training Courses Including Hypnotherapy Nlp More Http Bathh C Gi Bill Tuition Assistance Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Accredited Training We Offer A Wide Range Of Training Courses Including Hypnotherapy Nlp More Http Bathh C Gi Bill Tuition Assistance Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/74/5a/62/745a627017bec4805c1e719a01c21607.jpg" data-lightbox="roadtrip" data-title="Va Implements More Forever Gi Bill Benefit Provisions Military Pay Military Pay Chart Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/74/5a/62/745a627017bec4805c1e719a01c21607.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcaVGeszUFomxUSW5e0eSaB_2CM4t_0xdfSA';" alt="Va Implements More Forever Gi Bill Benefit Provisions Military Pay Military Pay Chart Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Implements More Forever Gi Bill Benefit Provisions Military Pay Military Pay Chart Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a2/45/64/a24564e2a9e87e6686fecbce34b3b897.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a2/45/64/a24564e2a9e87e6686fecbce34b3b897.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9dqGUIURDcpM4qmjJVE6txppk1eH9Tq47w';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/fa/36/9efa361eafb0d569222a31e4d4be7a3b.png" data-lightbox="roadtrip" data-title="You Can Learn Newsroom Media And Photojournalism Skills In The Guard As Mos 46s Public Affairs Mass Communic Army Couple United States Military Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/fa/36/9efa361eafb0d569222a31e4d4be7a3b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOn24Q6oWPzE4pFKrlzNTTPZRiVMAL8gc2XA';" alt="You Can Learn Newsroom Media And Photojournalism Skills In The Guard As Mos 46s Public Affairs Mass Communic Army Couple United States Military Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Can Learn Newsroom Media And Photojournalism Skills In The Guard As Mos 46s Public Affairs Mass Communic Army Couple United States Military Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/44/98/6a4498ba7d6f318a40d8a306588f329e.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/44/98/6a4498ba7d6f318a40d8a306588f329e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVkYgbQyT9tp-uh_88BK0MCVMy8x_fwh1k9A';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/ea/8b/3bea8b8640a3cb5bc91375a9c302dc7a.jpg" data-lightbox="roadtrip" data-title="Moving Forward And Continuing To Serve Read How Thanks To The Gi Bill A Duke Scholarship And The Tillman Foundation A Former Moving Forward Moving Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/ea/8b/3bea8b8640a3cb5bc91375a9c302dc7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEI2T1bjXOioN_FiIw5gzM6kk7_nfeS3t6_A';" alt="Moving Forward And Continuing To Serve Read How Thanks To The Gi Bill A Duke Scholarship And The Tillman Foundation A Former Moving Forward Moving Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moving Forward And Continuing To Serve Read How Thanks To The Gi Bill A Duke Scholarship And The Tillman Foundation A Former Moving Forward Moving Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/b6/38/d3b63818735d740dc95cf0c97566f825.jpg" data-lightbox="roadtrip" data-title="Kansas Has Over 20 000 000 Veterans Residing In The Sunflower State According To The Va Find Kansas State And Lo Veterans Benefits Veteran Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/b6/38/d3b63818735d740dc95cf0c97566f825.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Zsn_T156_VeLThYbJ7h6F32QuYfk8pcnWA';" alt="Kansas Has Over 20 000 000 Veterans Residing In The Sunflower State According To The Va Find Kansas State And Lo Veterans Benefits Veteran Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kansas Has Over 20 000 000 Veterans Residing In The Sunflower State According To The Va Find Kansas State And Lo Veterans Benefits Veteran Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/ba/d7/7cbad7700fccb1c6d94ef9878da3e5a3.jpg" data-lightbox="roadtrip" data-title="Pin On Vietnam Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/ba/d7/7cbad7700fccb1c6d94ef9878da3e5a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr6hpoBit9poABHsjyT3uJgLtDjbwEpW4dEQ';" alt="Pin On Vietnam Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vietnam Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/56/02/45/5602455d24cc4de2ef0b5f16f4529940.jpg" data-lightbox="roadtrip" data-title="Gi Bill Transfer Parameters Are Different Gi Bill Military Spouse Career Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/56/02/45/5602455d24cc4de2ef0b5f16f4529940.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXIfTD-DCgHm3KDg2tbTDrXaVpVlp0gj8avw';" alt="Gi Bill Transfer Parameters Are Different Gi Bill Military Spouse Career Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Transfer Parameters Are Different Gi Bill Military Spouse Career Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/be/af/04beaf332a6ec31a670a347a73b4bb0d.jpg" data-lightbox="roadtrip" data-title="Military Families Magazine By Ameriforce Media Education Yellow Ribbon Family Magazine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/be/af/04beaf332a6ec31a670a347a73b4bb0d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbeKaNnmNRYWVsM7AZkKnyWc7leAyyB-UZkA';" alt="Military Families Magazine By Ameriforce Media Education Yellow Ribbon Family Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Families Magazine By Ameriforce Media Education Yellow Ribbon Family Magazine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/7d/26/6b7d262c631eec62f044ad4a180d581b.jpg" data-lightbox="roadtrip" data-title="41 Troops Who Just Returned Home Soldier Troops Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/7d/26/6b7d262c631eec62f044ad4a180d581b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTCAb0ueJjbkt6KS1jbvlmP4ofeBrEpV8eHw';" alt="41 Troops Who Just Returned Home Soldier Troops Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">41 Troops Who Just Returned Home Soldier Troops Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e0/4a/23/e04a236987c9e8756f8ab9452082a5d2.jpg" data-lightbox="roadtrip" data-title="The Difference Between Types Of Military Military Benefits Army Reserve Active Guard Reserve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e0/4a/23/e04a236987c9e8756f8ab9452082a5d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwG1PxR2F3zJWTHkricphyviXzOp2yEnawuw';" alt="The Difference Between Types Of Military Military Benefits Army Reserve Active Guard Reserve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Difference Between Types Of Military Military Benefits Army Reserve Active Guard Reserve</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/2d/10/df2d10c0dd0eef8f167fc9123cab5c20.jpg" data-lightbox="roadtrip" data-title="When You Finally Came Home Happy Photos Military Homecoming Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/2d/10/df2d10c0dd0eef8f167fc9123cab5c20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokC9NbRaXVNh3pMngu5KF-IZWbrJiwOvV_g';" alt="When You Finally Came Home Happy Photos Military Homecoming Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When You Finally Came Home Happy Photos Military Homecoming Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/will-gi-bill-pay-for-cdl-training.html">Will Gi Bill Pay For Cdl Training</a></li>
+													<li class="list-group-item"><a href="/will-college-students-go-back-in-fall.html">Will College Students Go Back In Fall</a></li>
+													<li class="list-group-item"><a href="/why-is-my-gi-bill-bah-low.html">Why Is My Gi Bill Bah Low</a></li>
+													<li class="list-group-item"><a href="/who-is-eligible-for-yellow-ribbon-program.html">Who Is Eligible For Yellow Ribbon Program</a></li>
+													<li class="list-group-item"><a href="/why-did-yu-gi-oh-bam-close.html">Why Did Yu Gi Oh Bam Close</a></li>
+													<li class="list-group-item"><a href="/whole30-gastrointestinal-issues.html">Whole30 Gastrointestinal Issues</a></li>
+													<li class="list-group-item"><a href="/wiley-college-womens-basketball-roster.html">Wiley College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/who-is-number-1-in-womens-college-basketball.html">Who Is Number 1 In Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-all-time-scoring-leaders.html">Womens College Basketball All Time Scoring Leaders</a></li>
+													<li class="list-group-item"><a href="/will-college-go-online-again.html">Will College Go Online Again</a></li>
+													<li class="list-group-item"><a href="/wi-gi-bill-for-spouses.html">Wi Gi Bill For Spouses</a></li>
+													<li class="list-group-item"><a href="/why-is-the-gi-bill-only-36-months.html">Why Is The Gi Bill Only 36 Months</a></li>
+													<li class="list-group-item"><a href="/who-eligible-for-the-gi-bill.html">Who Eligible For The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/will-gi-bill-pay-for-two-degrees.html">Will Gi Bill Pay For Two Degrees</a></li>
+													<li class="list-group-item"><a href="/wisconsin-gi-bill-for-dependents.html">Wisconsin Gi Bill For Dependents</a></li>
+													<li class="list-group-item"><a href="/who-wrote-the-forever-gi-bill.html">Who Wrote The Forever Gi Bill</a></li>
+													<li class="list-group-item"><a href="/winningest-coaches-in-womens-college-basketball.html">Winningest Coaches In Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/wi-va-gi-bill.html">Wi Va Gi Bill</a></li>
+													<li class="list-group-item"><a href="/why-do-college-students-have-anxiety.html">Why Do College Students Have Anxiety</a></li>
+													<li class="list-group-item"><a href="/who-is-eligible-for-va-chapter-35-benefits.html">Who Is Eligible For Va Chapter 35 Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

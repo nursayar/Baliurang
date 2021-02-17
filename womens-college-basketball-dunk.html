@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Dunk - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Dunk",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/4a/16/57/4a165739a2621cc32bfeed5bb09d016e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+dunk",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Dunk</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For Belibis first career dunk not the latest milestone on a long list of them for VanDerveer. 21 1984 West Virginias womens basketball team was facing off against the University of Charleston when Georgeann Wells caught a pass at midcourt with no defenders in front of her and. Get Womens Basketball rankings news schedules and championship brackets. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/the-gi-bill-ww2.html">the gi bill ww2</a>
+											<a class="badge badge-success" href="/the-gi-bill-history.html">the gi bill history</a>
+											<a class="badge badge-success" href="/the-gi-bill-helped-world-war-ii-veterans-by.html">the gi bill helped world war ii veterans by</a>
+											<a class="badge badge-dark" href="/thomas-college-womens-basketball-roster.html">thomas college womens basketball roster</a>
+											<a class="badge badge-dark" href="/to-go-to-college-or-university.html">to go to college or university</a>
+											<a class="badge badge-danger" href="/texas-va-education-benefits-for-dependents.html">texas va education benefits for dependents</a>
+											<a class="badge badge-success" href="/surface-go-2-good-for-college.html">surface go 2 good for college</a>
+											<a class="badge badge-danger" href="/the-gi-bill-provided-veterans-with-which-of-the-following.html">the gi bill provided veterans with which of the following</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to visit the right blog.  Our site provides you with suggestions for seeing the highest quality video and picture content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to see.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/45/e9/d945e9c7e3586b022326a6048b8d8541.jpg" data-lightbox="roadtrip" data-title="Baylor C Britteny Griner Becomes The 2nd Player After Candace Parker To Dunk In A Women S Ncaa Tournament Ga Brittney Griner Womens Basketball Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/45/e9/d945e9c7e3586b022326a6048b8d8541.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7aAtYqRmsCsiCRe-foAbyYGzjnY7Hr4BBXA';" alt="Baylor C Britteny Griner Becomes The 2nd Player After Candace Parker To Dunk In A Women S Ncaa Tournament Ga Brittney Griner Womens Basketball Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Baylor C Britteny Griner Becomes The 2nd Player After Candace Parker To Dunk In A Women S Ncaa Tournament Ga Brittney Griner Womens Basketball Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/76/ac/f076ac77d79451446056ed4c26977e7d.jpg" data-lightbox="roadtrip" data-title="Candace Parker Dunking In College Part Ii Candace Parker Candace Female Athletes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/76/ac/f076ac77d79451446056ed4c26977e7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBHk3LpIIC7Hr5Lwy2QbbTPLK59Uxbia6uhg';" alt="Candace Parker Dunking In College Part Ii Candace Parker Candace Female Athletes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Candace Parker Dunking In College Part Ii Candace Parker Candace Female Athletes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/d5/2b/ddd52bdc0acf179434aa9e1a6cee307d.jpg" data-lightbox="roadtrip" data-title="Pin On Ru Crazy Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/d5/2b/ddd52bdc0acf179434aa9e1a6cee307d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz39fBpImZEllr8E_Dm-IlRE0cuNpeiEeSKQ';" alt="Pin On Ru Crazy Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ru Crazy Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/a3/f3/02a3f30741629eb11e1c310f8f90cc91.jpg" data-lightbox="roadtrip" data-title="Image Detail For Trick Shots By A Women S Basketball Player You Ll See Pretty Much Ever Deportes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/a3/f3/02a3f30741629eb11e1c310f8f90cc91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMGk5E90lw8UtSHIWRlezDI3Wuh7AnCrUTOA';" alt="Image Detail For Trick Shots By A Women S Basketball Player You Ll See Pretty Much Ever Deportes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Detail For Trick Shots By A Women S Basketball Player You Ll See Pretty Much Ever Deportes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f8/91/44/f891448cd810c948be9af1de23284edf.jpg" data-lightbox="roadtrip" data-title="College Basketball Pictures College Basketball Pictures College Basketball Bilder Photos De B Uconn Womens Basketball Womens Basketball Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f8/91/44/f891448cd810c948be9af1de23284edf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8XQY2jUcklktSeQLH9qZObxkrifZ1ZGw7ng';" alt="College Basketball Pictures College Basketball Pictures College Basketball Bilder Photos De B Uconn Womens Basketball Womens Basketball Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Basketball Pictures College Basketball Pictures College Basketball Bilder Photos De B Uconn Womens Basketball Womens Basketball Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/a1/8e/e8a18e4e1f24e3315e6af0ebe481f307.jpg" data-lightbox="roadtrip" data-title="Brittney Griner Dunks Twice In Wnba Debut Now Has 2 Of The 5 Dunks In Wnba History Basketball Girls Wnba Brittney Griner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/a1/8e/e8a18e4e1f24e3315e6af0ebe481f307.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR61rrfb8wsBzwz5x6GfMK-8LeQftBJ77iqSA';" alt="Brittney Griner Dunks Twice In Wnba Debut Now Has 2 Of The 5 Dunks In Wnba History Basketball Girls Wnba Brittney Griner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brittney Griner Dunks Twice In Wnba Debut Now Has 2 Of The 5 Dunks In Wnba History Basketball Girls Wnba Brittney Griner</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/64/dd/42/64dd4215e8c075dffbab37c8868b55a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR61rrfb8wsBzwz5x6GfMK-8LeQftBJ77iqSA';" alt="Brittney Griner Dunks Twice In Wnba Debut Now Has 2 Of The 5 Dunks In Wnba History Basketball Girls Wnba Brittney Griner">
+										<div class="card-body">
+						<h3 class="h5"><b>It was the moment womens college basketball fans had been waiting for.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball dunk</strong>. 
+								
+																	Today and everyday we celebrate girls and women who play and work in sports. 
+																	Dunking In Womens College BasketballIS BACK. 
+																	Stanford has the look of a national champion Oregon is the preseason No. 
+																	In her WNBA debut on 27 May 2013 Griner dunked twice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mechelle Voepel covers the WNBA womens college basketball and other college sports for espnW. 
+																	The Top 50 NCAA Dunks Of All Time. 
+																	1 followed by Baylor but Tara VanDerveer and her Cardinal right on their heels. 
+																	Voepel began covering womens basketball in 1984 and has been with ESPN since 1996. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With 11 minutes 18 seconds remaining in the game West Virginias 6-foot-7 junior center Georgeann Wells took a long pass at half court and with a clear path to the basket rose up and slammed. 
+																	Years later the womens team at the University of North Carolina. 
+																	We had not seen a dunk in womens college basketball since Brittany Griner did it in 2013 but Francesca Belibi has already dunked twice in the 2020-2021 season. 
+																	As of 2018 she has 13 WNBA dunks including the first in a playoff game 25 August 2014. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By Joe Kinsey about a month ago updated about a month ago 6 Its been seven long years since Brittney Griner dunked in womens college basketball but now Stanfords Fran Belibi has dunked for the Cardinal. 
+																	Actually it was two moments theyve waited years for. 
+																	One of womens college basketballs brightest stars threw down a mid-game dunk against her teams top rivals Stanford Cardinal sophomore Fran Belibi is one of the few players in womens college. 
+																	Francesca Belibi finally dunked in a college game and Paige Bueckers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A top womens high school basketball player threw down a monster alley-oop dunk WNBA superstar Sue Bird gives college basketballs newest sensation some advice on playing at UConn under Geno Auriemma Sue Bird said her legacy is already written and described her last 2 WNBA championships as bonuses because shes playing on borrowed time. 
+																	At the 2012 London Olympics Liz Cambage of the Australian Opals became. 
+																	Stanfords star finished the day with 14 points 8 rebounds and 3 steals. 
+																	Mechelle Voepel covers the WNBA womens college basketball and other college sports for espnW. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Voepel began covering womens basketball in 1984 and has been with ESPN since 1996. 
+																	As a standout at Baylor University Griner became the seventh player to dunk during a womens college basketball game and the second woman to dunk twice in a single college game. 
+																	The 61 sophomore forward for the. 
+																	In late 1984 67 West Virginia University sophomore Georgeann Wells became the first woman to dunk in a college basketball game. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens College Basketball Womens Basketball Scores - Womens College Basketball Scoreboard - ESPN ESPN. 
+																	Here we are with a rim-rattler bringing back dunking to the womens game. 
+																	Stanford Cardinal sophomore Fran Belibi is one of the few players in womens college basketball who can dunk. 
+																	Fans of womens basketball will inform you that this isnt new for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Against the Cal Golden Bears Belibi picked off a pass dribbled the length of the court and threw down an impressive slam. 
+																	Fran Belibi keeps dunking all over womens basketball. 
+																	The longtime Stanford coach tied the late Pat Summitt as winningest womens coach in NCAA Division I basketball history with 1098 on Sunday night as the top-ranked Cardinal beat rival California 83-38. 
+																	Top 10 sophomores of 2020-21 so far Zia Cooke and South Carolina opened the season at No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Womens Basketball DI official home. 
+																	1 and are now ranked fifth after falling to NC State in a top-10 showdown. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/0e/44/7c0e44d1216a3549457daa7a4e132983.jpg" data-lightbox="roadtrip" data-title="Baylors Brittney Griner Dunks During Practice For A Regional Semifinal Game In The Womens Ncaa National Basketball League Love And Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/0e/44/7c0e44d1216a3549457daa7a4e132983.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeZxNAQOCX1XDYiEJRikFrc31PJI8VoZ03PA';" alt="Baylors Brittney Griner Dunks During Practice For A Regional Semifinal Game In The Womens Ncaa National Basketball League Love And Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Baylors Brittney Griner Dunks During Practice For A Regional Semifinal Game In The Womens Ncaa National Basketball League Love And Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/d9/b8/fad9b86e4dc105f283b0be30296a1cd4.jpg" data-lightbox="roadtrip" data-title="Lisa Leslie First Player To Dunk In The Wnba Female Athletes Lisa Leslie Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/d9/b8/fad9b86e4dc105f283b0be30296a1cd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDXmqvs4F6somTdtg9zHfvcDyXXLYg2QURaw';" alt="Lisa Leslie First Player To Dunk In The Wnba Female Athletes Lisa Leslie Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lisa Leslie First Player To Dunk In The Wnba Female Athletes Lisa Leslie Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/6c/e1/e66ce10a6a5375d546c5f40d630874f2.jpg" data-lightbox="roadtrip" data-title="Ncaaw Photo Gallery Yahoo Sports Basketball Girls Brittney Griner Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/6c/e1/e66ce10a6a5375d546c5f40d630874f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO4v-p-OlpcQ8st7RKY33H0WwVF44_dpvq5w';" alt="Ncaaw Photo Gallery Yahoo Sports Basketball Girls Brittney Griner Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaaw Photo Gallery Yahoo Sports Basketball Girls Brittney Griner Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/78/b4/1c78b462eb8f069e73b526400e68a13d.jpg" data-lightbox="roadtrip" data-title="Griner S 2nd Dunk Brittney Griner Girls Basketball Clothes Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/78/b4/1c78b462eb8f069e73b526400e68a13d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT84CafqEX32TG3HwMxBG_c8BiTPKGop_C7Q';" alt="Griner S 2nd Dunk Brittney Griner Girls Basketball Clothes Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Griner S 2nd Dunk Brittney Griner Girls Basketball Clothes Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/a5/55/b7a55560afd1566b78d6bdea77c9915e.jpg" data-lightbox="roadtrip" data-title="Candace Parker Dunking Candace Parker Wnba Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/a5/55/b7a55560afd1566b78d6bdea77c9915e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv9qTWXe1WZ637Qa0I6f7gH0YvZimJYE9KaQ';" alt="Candace Parker Dunking Candace Parker Wnba Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Candace Parker Dunking Candace Parker Wnba Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/00/69/450069346cbde232d6d12b0b159a9ef8.jpg" data-lightbox="roadtrip" data-title="76 Great Moments In Sports Womens Basketball Sports Love And Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/00/69/450069346cbde232d6d12b0b159a9ef8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRly-GncCx3lbh7Og7ccJs5WlfB0SlvP32ZMA';" alt="76 Great Moments In Sports Womens Basketball Sports Love And Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">76 Great Moments In Sports Womens Basketball Sports Love And Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/a3/cb/88a3cb436e29dad7ccbd003f8ba3de95.jpg" data-lightbox="roadtrip" data-title="Connecticut Women S College Basketball Huskies Photos Espn Notre Dame Womens Basketball Skylar Diggins College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/a3/cb/88a3cb436e29dad7ccbd003f8ba3de95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJiKFXfPu3Wssd3qRGtg4Jl9wzFF96e7miuA';" alt="Connecticut Women S College Basketball Huskies Photos Espn Notre Dame Womens Basketball Skylar Diggins College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Connecticut Women S College Basketball Huskies Photos Espn Notre Dame Womens Basketball Skylar Diggins College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/50/6b/96506bab62e3feb3e69215396296888c.jpg" data-lightbox="roadtrip" data-title="Heavenly Shaped Basketball Jumping Drills Pop Over To This Website Basketball Workouts Uconn Basketball Drills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/50/6b/96506bab62e3feb3e69215396296888c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZI2p4jRG2uR0s5yKQJTf-byMuD6gKpdZNPg';" alt="Heavenly Shaped Basketball Jumping Drills Pop Over To This Website Basketball Workouts Uconn Basketball Drills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Heavenly Shaped Basketball Jumping Drills Pop Over To This Website Basketball Workouts Uconn Basketball Drills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/16/57/4a165739a2621cc32bfeed5bb09d016e.jpg" data-lightbox="roadtrip" data-title="Breanna Stewart Dunk Google Search">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/16/57/4a165739a2621cc32bfeed5bb09d016e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFikG5kZNJcQmCKAeyaVLMqAMN3z8Eyg57YQ';" alt="Breanna Stewart Dunk Google Search">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breanna Stewart Dunk Google Search</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/86/03/2b860389429da9fae93a0877f3fefc37.jpg" data-lightbox="roadtrip" data-title="Brittney Griner 42 Of Baylor Basketball 2nd Woman To Dunk In The Ncaa Women S Basketball Tournament Brittney Griner Baylor Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/86/03/2b860389429da9fae93a0877f3fefc37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT95ycGqnPwRH0XbSHazlCHetGTv2lY9sysRQ';" alt="Brittney Griner 42 Of Baylor Basketball 2nd Woman To Dunk In The Ncaa Women S Basketball Tournament Brittney Griner Baylor Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brittney Griner 42 Of Baylor Basketball 2nd Woman To Dunk In The Ncaa Women S Basketball Tournament Brittney Griner Baylor Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/dd/42/64dd4215e8c075dffbab37c8868b55a8.jpg" data-lightbox="roadtrip" data-title="Cambage Dunks In Australia S Win Over Russia Olympics Womens Basketball Summer Olympics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/dd/42/64dd4215e8c075dffbab37c8868b55a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOMOHkZfRq_YsLgukmyrFqWrqu9M1Wrh7pAg';" alt="Cambage Dunks In Australia S Win Over Russia Olympics Womens Basketball Summer Olympics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cambage Dunks In Australia S Win Over Russia Olympics Womens Basketball Summer Olympics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/28/f4/2828f498707a2d0b0f1b3499e479166c.jpg" data-lightbox="roadtrip" data-title="College Basketball Stanford Women With Sweet Upset Knock Off Top Seed Notre Dame College Basketball College Basketball Game Stanford Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/28/f4/2828f498707a2d0b0f1b3499e479166c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOyGye04nbPBmuV3aslEEXq_GP5gheFv3OqA';" alt="College Basketball Stanford Women With Sweet Upset Knock Off Top Seed Notre Dame College Basketball College Basketball Game Stanford Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Basketball Stanford Women With Sweet Upset Knock Off Top Seed Notre Dame College Basketball College Basketball Game Stanford Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/9c/05/6b9c0586254c592a54a0d3b57ca68053.jpg" data-lightbox="roadtrip" data-title="The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads The Way Basketball Workouts College Basketball College Basketball Shirts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/9c/05/6b9c0586254c592a54a0d3b57ca68053.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8W7ZnEy6HalCLh2l9HPT7UscTTlVfag2QOw';" alt="The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads The Way Basketball Workouts College Basketball College Basketball Shirts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads The Way Basketball Workouts College Basketball College Basketball Shirts</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-non-taxable-income.html">Gi Bill Non Taxable Income</a></li>
+													<li class="list-group-item"><a href="/gi-bill-kicker-amount.html">Gi Bill Kicker Amount</a></li>
+													<li class="list-group-item"><a href="/gi-bill-max-tuition-by-state.html">Gi Bill Max Tuition By State</a></li>
+													<li class="list-group-item"><a href="/gi-bill-kicker.html">Gi Bill Kicker</a></li>
+													<li class="list-group-item"><a href="/gi-bill-jewish.html">Gi Bill Jewish</a></li>
+													<li class="list-group-item"><a href="/gi-bill-of-rights-definition-us-history-quizlet.html">Gi Bill Of Rights Definition Us History Quizlet</a></li>
+													<li class="list-group-item"><a href="/gi-bill-kicker-reddit.html">Gi Bill Kicker Reddit</a></li>
+													<li class="list-group-item"><a href="/gi-bill-max-amount-2019.html">Gi Bill Max Amount 2019</a></li>
+													<li class="list-group-item"><a href="/gi-bill-online-bah-2021.html">Gi Bill Online Bah 2021</a></li>
+													<li class="list-group-item"><a href="/gi-bill-login.html">Gi Bill Login</a></li>
+													<li class="list-group-item"><a href="/gi-bill-it-certifications.html">Gi Bill It Certifications</a></li>
+													<li class="list-group-item"><a href="/gi-bill-jobs.html">Gi Bill Jobs</a></li>
+													<li class="list-group-item"><a href="/gi-bill-other-than-college.html">Gi Bill Other Than College</a></li>
+													<li class="list-group-item"><a href="/gi-bill-kicker-application.html">Gi Bill Kicker Application</a></li>
+													<li class="list-group-item"><a href="/gi-bill-marine-corps.html">Gi Bill Marine Corps</a></li>
+													<li class="list-group-item"><a href="/gi-bill-months-per-semester.html">Gi Bill Months Per Semester</a></li>
+													<li class="list-group-item"><a href="/gi-bill-online-bah-calculator.html">Gi Bill Online Bah Calculator</a></li>
+													<li class="list-group-item"><a href="/gi-bill-military-benefits.html">Gi Bill Military Benefits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-lawsuit.html">Gi Bill Lawsuit</a></li>
+													<li class="list-group-item"><a href="/gi-bill-lifetime-learning-credit.html">Gi Bill Lifetime Learning Credit</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

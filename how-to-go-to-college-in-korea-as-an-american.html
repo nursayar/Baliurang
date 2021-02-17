@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How To Go To College In Korea As An American - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How To Go To College In Korea As An American",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/55/2a/50/552a5029119157a980de248021b059fe.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+go+to+college+in+korea+as+an+american",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How To Go To College In Korea As An American</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">I cannot wait to travel to back to Korea and experience new things and meet more people. While participating in a variety of courses taught in English at Korea Universitys impressive campus students also have the opportuni. Ranked joint 69th in the world and third in the South Korea ranking Korea University currently has a student body of around 37000 and of its faculty of 1700 over 95 percent hold a PhD or equivalent within their field. <br>				
+			</p>
+										<a class="badge badge-light" href="/using-gi-bill-overseas.html">using gi bill overseas</a>
+											<a class="badge badge-danger" href="/usmc-post-911-gi-bill-transfer.html">usmc post 911 gi bill transfer</a>
+											<a class="badge badge-info" href="/use-gi-bill-for-pilot-training.html">use gi bill for pilot training</a>
+											<a class="badge badge-warning" href="/using-gi-bill-for-phd.html">using gi bill for phd</a>
+											<a class="badge badge-info" href="/using-my-gi-bill-benefits.html">using my gi bill benefits</a>
+											<a class="badge badge-info" href="/usmc-gi-bill-kicker.html">usmc gi bill kicker</a>
+											<a class="badge badge-success" href="/using-your-post-911-gi-bill.html">using your post 911 gi bill</a>
+											<a class="badge badge-secondary" href="/using-gi-bill-to-become-a-pilot.html">using gi bill to become a pilot</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the right blog.  Our site gives you suggestions for seeing the highest quality video and picture content, hunt and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/91/49/b6914985e60f46b476d5818d720e1a52.jpg" data-lightbox="roadtrip" data-title="Study In The Us Guide For International Students In 2021 International Students University Life Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/91/49/b6914985e60f46b476d5818d720e1a52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROe7MmCc8xGWjV7LfRjgsnR4DPM4yZaJWYqw';" alt="Study In The Us Guide For International Students In 2021 International Students University Life Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Study In The Us Guide For International Students In 2021 International Students University Life Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/df/42/c8/df42c8fe1cb44b637932a441bb78e942.jpg" data-lightbox="roadtrip" data-title="Pin By U 2 On Korea Building Images University Campus University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/df/42/c8/df42c8fe1cb44b637932a441bb78e942.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR679LUTYGnIx0xku3Jq4KdDwYgROPOaUP3XA';" alt="Pin By U 2 On Korea Building Images University Campus University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By U 2 On Korea Building Images University Campus University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/94/43/f6944312c0d070cbff48df35d38e01f9.jpg" data-lightbox="roadtrip" data-title="Seoul South Korea Travel Korea Travel Seoul Korea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/94/43/f6944312c0d070cbff48df35d38e01f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTkwN-ml9AHNaIyQScNHBKt4uBAa1hq6TqUA';" alt="Seoul South Korea Travel Korea Travel Seoul Korea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seoul South Korea Travel Korea Travel Seoul Korea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/88/0b/6a880bfc0a0f6c88819191819388a0d7.jpg" data-lightbox="roadtrip" data-title="Go To South Korea Yonsei University School Building Design Korea University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/88/0b/6a880bfc0a0f6c88819191819388a0d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHv51GVe-GrYSixeSJccgnGLW4OZVSma2_jw';" alt="Go To South Korea Yonsei University School Building Design Korea University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go To South Korea Yonsei University School Building Design Korea University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/65/5d/bb655d970f9262db80b13b21b3d35709.jpg" data-lightbox="roadtrip" data-title="Ehwa University Seoul Seoul Places Dream Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/65/5d/bb655d970f9262db80b13b21b3d35709.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkdkztu_tnwAzG74Rz4cuZVzH6D79cQmBAAA';" alt="Ehwa University Seoul Seoul Places Dream Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ehwa University Seoul Seoul Places Dream Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/ff/06/4cff06382d9223e3c079910628aa820b.jpg" data-lightbox="roadtrip" data-title="What To Know Before Visiting South Korea As A North American Tourist South Korea Travel Seoul Travel Korea Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/ff/06/4cff06382d9223e3c079910628aa820b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnV2w_hWT0pJI7FxRXTfnmVmO5vnVPHn5B-w';" alt="What To Know Before Visiting South Korea As A North American Tourist South Korea Travel Seoul Travel Korea Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Know Before Visiting South Korea As A North American Tourist South Korea Travel Seoul Travel Korea Travel</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/55/2a/50/552a5029119157a980de248021b059fe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnV2w_hWT0pJI7FxRXTfnmVmO5vnVPHn5B-w';" alt="What To Know Before Visiting South Korea As A North American Tourist South Korea Travel Seoul Travel Korea Travel">
+										<div class="card-body">
+						<h3 class="h5"><b>If you are interested in this scholarship you need to go to Seoul National University Scholarships for more information about the application procedure.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to go to college in korea as an american</strong>. 
+								
+																	Most American college students have roommates even when living out of a dormitory. 
+																	I havent gone to college yet and I would really like to be able to attend school in Korea however my TOPIK level is 1. 
+																	Applying to a university in South Korea is a relatively easy process and the international office is there to help you along the way so make sure you use them as much as you need. 
+																	Otto Frederick Warmbier December 12 1994 June 19 2017 was an American college student who was imprisoned in North Korea in 2016 on a charge of subversionIn June 2017 he was released by North Korea in a vegetative state and died soon afterward. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But now there are TONS of Americans and travelers in Korea. 
+																	Travel to the Korean Demilitarized Zone catch a movie screening traditional concert or theater performance. 
+																	But what happened to Warmbierthe American college student who was sent home brain-damaged from North Koreais even more shocking than anyone knew. 
+																	It shares a land border with North Korea and oversea borders with Japan and China. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Students usually compute to school from their parents house or move out of home to live closer to school. 
+																	South Koreas terrain is comprised mostly of mountains with some coastal plains rolling hills river basins and valleys. 
+																	The schools college of law is reputed for offering one of the most prestigious undergraduate law programs in the country. 
+																	Last time I talked about why you shouldnt come to a Korean College but I thought it wouldnt be fair if I didnt share with you all the reasons why I loved. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Americans Teaching in Korea My mother has been an elementary teacher in the public school system all her life so my experience in elementary school comes from having helped her in classrooms as well as having worked in US. 
+																	I know that TOPIK level 3 is generally accepted for colleges as the requirement to enter their classes. 
+																	And probably help you to be more attractive in the Korean market. 
+																	Its a school particularly for Korean-Americans or non Korean speakers looking to study in South Korea. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ive studied at universities from St Louis Los Angeles and New York City. 
+																	But with dense populations in the cities there isnt room for student dorms near most campuses in Korea. 
+																	Almost every university will require you to apply directly to the university through an online application just like South Korean students do so check out their website for more information. 
+																	To apply to Korean universities as an undergraduate you need to take a standardized test for high school students such as the United States SAT and ACT. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They often turn to book rentals and e-books attempting each semesterquarter to find textbooks for a decent price. 
+																	Busy students walking. 
+																	Hope you like it and give us many ideas on what to ask. 
+																	However through online research it seems level 3 only passes for about 50 of the lecture. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Warmbier entered North Korea as part of a guided tour group on December 29 2015. 
+																	Depending on the country that you are from the required standardized test will be different. 
+																	Michael USA I love the atmosphere of my new homeThe smell of cotton candy is laying in the air paired with laughter. 
+																	To sum up to live and work in Korea if youre a foreigner you have to have a Masters degree from abroad or at. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Bachelors degree isnt enough in most cases. 
+																	I love the atmosphere of my new home. 
+																	Its the first day of school at Hankuk University of Foreign Studies and the college clubs try to recruit new members. 
+																	Id like to know what are your opinions and suggestions of going to school in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Businesses and having taught other types of adult workshops due to my Masters degree. 
+																	Many American folks also have households ideally females and a few even discover jobs there and so forth. 
+																	The ordinary of Americans marrying a Korean is 14 it raised plenty from four. 
+																	There has been a surprising broaden within the populace of Americans dwelling inside Korea. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is our first interview video. 
+																	Undergraduate Courses at Kookmin in Seoul. 
+																	Dont forget to subscri. 
+																	It is located in the southern part of the Korean Peninsula in East Asia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Seoul National University is one of the Ivy Leagues of Korea called the SKY universities. 
+																	South Korea is officially known as the Republic of Korea. 
+																	Also give us feedback on the video itself. 
+																	With the already competitive acceptance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It has a humid continental and subtropical climate with. 
+																	After finally getting into a university American students are faced with the struggle of affording textbooks. 
+																	On the other hand in Korea the academic situation is quite different. 
+																	By Doug Bock Clar k. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With CIEE study abroad in South Korea youll have access to an international buddy program and university clubs plus day-long and extended cultural excursions that create an immersive international experience like none other. 
+																	But studying for a Bachelors degree in Korea will allow you to turn your student visa to a work visa. 
+																	As for colleges the one that would suit you best is Yonsei University. 
+																	Study in Seoul at Korea University one of the countrys leading private institutions thats on par with the Ivy League schools in the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are plenty of Americans there now so you will. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/2a/50/552a5029119157a980de248021b059fe.png" data-lightbox="roadtrip" data-title="This Post Explains The Korean Government Scholarship Program Kgsp For International Students From First Hand Experience I Korea University South Korea Korea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/2a/50/552a5029119157a980de248021b059fe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKMsKQVt5lpyefHKO7KxkwRjkDE5qi52Yd_g';" alt="This Post Explains The Korean Government Scholarship Program Kgsp For International Students From First Hand Experience I Korea University South Korea Korea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Post Explains The Korean Government Scholarship Program Kgsp For International Students From First Hand Experience I Korea University South Korea Korea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/07/62/c70762ec8695c82e99a61ecdb20d4f36.jpg" data-lightbox="roadtrip" data-title="Korean Schooling By Andres Gallardo Ignant School Hallways Building Aesthetic School Yard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/07/62/c70762ec8695c82e99a61ecdb20d4f36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6LHclLaLRUKNrfbXdI-6y3whkfP-TCcVn9Q';" alt="Korean Schooling By Andres Gallardo Ignant School Hallways Building Aesthetic School Yard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Korean Schooling By Andres Gallardo Ignant School Hallways Building Aesthetic School Yard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/fe/3c/8afe3ccd83e38f01992912ed92626ac6.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/fe/3c/8afe3ccd83e38f01992912ed92626ac6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf8mSr6Hv5lU6T3JMU5LDY-m_1_lulk0kF_w';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/6b/68/d16b680b2161ca62e51ef0be670dc797.jpg" data-lightbox="roadtrip" data-title="Korea University Korea University South Korea Yonsei University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/6b/68/d16b680b2161ca62e51ef0be670dc797.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_c-WcyAzu-lBjW6o3lwWEuywoZkVrWE-2g';" alt="Korea University Korea University South Korea Yonsei University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Korea University Korea University South Korea Yonsei University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/7e/b3/587eb3feb1eedc95b11e27fac51d180c.jpg" data-lightbox="roadtrip" data-title="Seoul Republic Of Korea Sogang University Gonzaga Plaza South Korea Travel Korea Travel South Korea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/7e/b3/587eb3feb1eedc95b11e27fac51d180c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm1CdJjbVnNuPivWrBg893jMnaQGZbFKI4aQ';" alt="Seoul Republic Of Korea Sogang University Gonzaga Plaza South Korea Travel Korea Travel South Korea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seoul Republic Of Korea Sogang University Gonzaga Plaza South Korea Travel Korea Travel South Korea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/7a/0a/0d7a0a9d3d4277f2269608f97b7a5e3f.jpg" data-lightbox="roadtrip" data-title="University Yonsei Yonsei University University Campus Korea University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/7a/0a/0d7a0a9d3d4277f2269608f97b7a5e3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaaN0NF1rZZQcRUk2oQFlv9hbjS37JLiqd4w';" alt="University Yonsei Yonsei University University Campus Korea University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Yonsei Yonsei University University Campus Korea University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/9d/1a/b59d1afba21337be5dab483bb4b3a748.jpg" data-lightbox="roadtrip" data-title="Korea University Seoul South Korea Korea University Beautiful Places To Visit Beautiful Places">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/9d/1a/b59d1afba21337be5dab483bb4b3a748.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIZ3fhX0lbSoAi6Oe0Cn8qyM9o7nyFCSEcPw';" alt="Korea University Seoul South Korea Korea University Beautiful Places To Visit Beautiful Places">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Korea University Seoul South Korea Korea University Beautiful Places To Visit Beautiful Places</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/0a/f6/b50af648cee9db5a7b1931e16e40868f.jpg" data-lightbox="roadtrip" data-title="Main Hall Of Korea University Seoul South Korea Stock Photo Affiliate Korea University Main Hall Ad Bangunan Korea Selatan Sekolah">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/0a/f6/b50af648cee9db5a7b1931e16e40868f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdSyuainwfy1-vxME_BSqr6QoHBF8tI_VdA';" alt="Main Hall Of Korea University Seoul South Korea Stock Photo Affiliate Korea University Main Hall Ad Bangunan Korea Selatan Sekolah">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Main Hall Of Korea University Seoul South Korea Stock Photo Affiliate Korea University Main Hall Ad Bangunan Korea Selatan Sekolah</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/9d/ea/fc9deaf048d74affcb0c0e9cafb52ac5.jpg" data-lightbox="roadtrip" data-title="Top 24 Most Inspiring Photos Of 2012 Student Photo Photo Inspiration Cheer Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/9d/ea/fc9deaf048d74affcb0c0e9cafb52ac5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIP-cqEs5c49NNGAh3mtFhG9TaVN5Dts471A';" alt="Top 24 Most Inspiring Photos Of 2012 Student Photo Photo Inspiration Cheer Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 24 Most Inspiring Photos Of 2012 Student Photo Photo Inspiration Cheer Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/e1/07/3ae107922940e20c99d990993cd245d3.jpg" data-lightbox="roadtrip" data-title="Yonsei Yonsei University Korea University Dream College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/e1/07/3ae107922940e20c99d990993cd245d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDDgDYF8n2mfVexzo8QCBo7A9PYSSoHKsTjg';" alt="Yonsei Yonsei University Korea University Dream College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yonsei Yonsei University Korea University Dream College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/92/fa/da92fae18aa2da363fc9cbb96889c26e.jpg" data-lightbox="roadtrip" data-title="Alex S East Asian Studies Yonsei University South Korea Travel Korea University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/92/fa/da92fae18aa2da363fc9cbb96889c26e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeEILx5e-K5xRGWFkpr_enbDQBg2Fh2S6XAg';" alt="Alex S East Asian Studies Yonsei University South Korea Travel Korea University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alex S East Asian Studies Yonsei University South Korea Travel Korea University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/ad/a6/4bada643da772fa5cbe161a3ff540f06.jpg" data-lightbox="roadtrip" data-title="For Those Who Love South Korea Korea University Samsung Suwon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/ad/a6/4bada643da772fa5cbe161a3ff540f06.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFlrtDSyakuJKeV3SBNZKyg-VeH6hdZg8Mbg';" alt="For Those Who Love South Korea Korea University Samsung Suwon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Those Who Love South Korea Korea University Samsung Suwon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/60/a0/6060a08d46988980b2aec5d19b5a00e9.jpg" data-lightbox="roadtrip" data-title="Inside Korea S Presitigious University Tour Of Yonsei Yonsei University Korea University University Campus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/60/a0/6060a08d46988980b2aec5d19b5a00e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1UCEv6z4k8m7m9eCu7ySjdGuctNLu_HFrRA';" alt="Inside Korea S Presitigious University Tour Of Yonsei Yonsei University Korea University University Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inside Korea S Presitigious University Tour Of Yonsei Yonsei University Korea University University Campus</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/womens-college-basketball-individual-rankings.html">Womens College Basketball Individual Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-games-last-night.html">Womens College Basketball Games Last Night</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-coaching-vacancies.html">Womens College Basketball Coaching Vacancies</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-coaching-openings.html">Womens College Basketball Coaching Openings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-coaches-with-most-wins.html">Womens College Basketball Coaches With Most Wins</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-coach-with-alzheimers.html">Womens College Basketball Coach With Alzheimers</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-coaches-salaries.html">Womens College Basketball Coaches Salaries</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-kentucky.html">Womens College Basketball Kentucky</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-assistant-coaching-jobs.html">Womens College Basketball Assistant Coaching Jobs</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-coaches-agents.html">Womens College Basketball Coaches Agents</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-jerseys.html">Womens College Basketball Jerseys</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-game-tonight.html">Womens College Basketball Game Tonight</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-coach-with-most-wins.html">Womens College Basketball Coach With Most Wins</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-halves-or-quarters.html">Womens College Basketball Halves Or Quarters</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-attendance-rankings.html">Womens College Basketball Attendance Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-full-rankings.html">Womens College Basketball Full Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-division-2-rankings.html">Womens College Basketball Division 2 Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-finals-schedule.html">Womens College Basketball Finals Schedule</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-coach-barnes.html">Womens College Basketball Coach Barnes</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-championship-2018.html">Womens College Basketball Championship 2018</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

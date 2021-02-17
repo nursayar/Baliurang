@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Can My Gi Bill Be Garnished - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Can My Gi Bill Be Garnished",
+  "datePublished": "2021-02-17",
+  "image": "https://thechildsupporthustle.com/wp-content/uploads/2020/07/VerSlide.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=can+my+gi+bill+be+garnished",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Can My Gi Bill Be Garnished</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Im not sure what state you are in but in my state TX I had to include my GI Bill BAH as my income when I went to court to get child support for my daughter. At the time I was unemployed and was not able to pay the lump sum. Procedures must be followed and they may vary depending on circumstances current federal law the nature of the indebtedness and other variables. <br>				
+			</p>
+										<a class="badge badge-danger" href="/how-did-gigi-die.html">how did gigi die</a>
+											<a class="badge badge-light" href="/height-of-womens-college-basketball-players.html">height of womens college basketball players</a>
+											<a class="badge badge-dark" href="/hi-billy-hi-ron.html">hi billy hi ron</a>
+											<a class="badge badge-primary" href="/hope-college-womens-basketball-score.html">hope college womens basketball score</a>
+											<a class="badge badge-light" href="/helicopter-schools-gi-bill.html">helicopter schools gi bill</a>
+											<a class="badge badge-dark" href="/how-do-i-check-the-status-of-my-gi-bill.html">how do i check the status of my gi bill</a>
+											<a class="badge badge-info" href="/how-can-i-go-to-college-with-no-money.html">how can i go to college with no money</a>
+											<a class="badge badge-dark" href="/hi-nabor-bill-payment.html">hi nabor bill payment</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the ideal site.  Our site provides you with hints for viewing the highest quality video and image content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/4d/f0/564df0249eab5398b6f56915e8d9e0af.png" data-lightbox="roadtrip" data-title="Check Your Current Post 9 11 Gi Bill Enrollment Status On Ebenefits Gi Bill Military Benefits Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/4d/f0/564df0249eab5398b6f56915e8d9e0af.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhjIDBB6_GdHJ1EMMHgZpUrZVXhD4xUqw1Vg';" alt="Check Your Current Post 9 11 Gi Bill Enrollment Status On Ebenefits Gi Bill Military Benefits Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Your Current Post 9 11 Gi Bill Enrollment Status On Ebenefits Gi Bill Military Benefits Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/4a/12/514a12dd7519cca8056dc2aaa68e9338.png" data-lightbox="roadtrip" data-title="Pin On Health Benefits Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/4a/12/514a12dd7519cca8056dc2aaa68e9338.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREqqCukMUogVch49GXHkKJYs6x09p_kD0HRg';" alt="Pin On Health Benefits Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Benefits Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/10/Retiree-Pay-Garnishment.jpg" data-lightbox="roadtrip" data-title="Retiree Pay Garnishment Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/10/Retiree-Pay-Garnishment.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhL6w8H6ljMREzZk2YpfiAkd92y_Jb24kQVQ';" alt="Retiree Pay Garnishment Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retiree Pay Garnishment Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/pexels-josh-willink-105952-768x512.jpg" data-lightbox="roadtrip" data-title="Can Va Disability Benefits Be Garnished Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/pexels-josh-willink-105952-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXBQIOPB7-G5Yhr5P49mbLngu7rqGreMaJow';" alt="Can Va Disability Benefits Be Garnished Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can Va Disability Benefits Be Garnished Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/10/Military-Pay-Garnishment.jpg" data-lightbox="roadtrip" data-title="Military Pay Garnishment Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/10/Military-Pay-Garnishment.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm3wqbHjrL1NTEtqYhO2vZdKqD3m8x3wvh4w';" alt="Military Pay Garnishment Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Pay Garnishment Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thechildsupporthustle.com/wp-content/uploads/2020/07/VerSlide.jpg" data-lightbox="roadtrip" data-title="Garnishing Veteran Benefits For Child Support The Child Support Hustle">
+											<img class="card-img v-image ads-img " src="https://thechildsupporthustle.com/wp-content/uploads/2020/07/VerSlide.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6kcBGSTFdYr5QnnpVdzSIdnb8bKt56eH2A';" alt="Garnishing Veteran Benefits For Child Support The Child Support Hustle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Garnishing Veteran Benefits For Child Support The Child Support Hustle</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/fc/23/f8/fc23f84d9062abe10d78534492634e6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6kcBGSTFdYr5QnnpVdzSIdnb8bKt56eH2A';" alt="Garnishing Veteran Benefits For Child Support The Child Support Hustle">
+										<div class="card-body">
+						<h3 class="h5"><b>Federal Debt VA benefits cannot be garnished to repay consumer debt such as a past due credit card bill or a personal loan.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Can my gi bill be garnished</strong>. 
+								
+																	Others such as Social Security benefits may be deducted before you receive them to pay child support or alimony. 
+																	I obviously did not pass the classes and had to repay the money. 
+																	Any amount not ACTUALLY spent for school you are not eligible to receive in the first place. 
+																	I know that VA Disability benefits are able to be garnished for child support but the court is trying to take my BAH from my GIBILL from me. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hello Will my post 911 GI Bill housing allowance payments be garnished or intercepted to pay child support arrears. 
+																	Can my whole gi bill bah benifit be garnished for back child support. 
+																	The following FAQs are provided to assist you in answering your debt related questions. 
+																	By continuing to use this site you consent to the use of cookies on your device as described in our cookie policy unless you have disabled them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Can the feds garnish your federal tax return to pay this balance. 
+																	You can apply for GI Bill benefits online or in person at a VA regional office near you. 
+																	Or would it be only counted if modification was filed. 
+																	Any income at all can be used in calculating child support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I am currently paying child support for my daughter that I have joint custody of. 
+																	Generally speaking you cannot simply garnish the wages of a military member even if you have a valid claim that the servicemember owes you or your company money. 
+																	Your bank account can be garnished if you have an unpaid bill that has remained unpaid for a long time. 
+																	Ask a lawyer and get. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thank you Gerald-Esquire. 
+																	This is done after the creditor has been awarded damages in a civil court and presented the debtors employer or other provider of income with a order of garnishment. 
+																	If you need further assistance the Debt Management Center is the authoritative source for debt collection information. 
+																	Without that money I am screwed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	US Army Veteran CURRENT GI Bill user my own experience. 
+																	While each state has its own garnishment laws most say that Social Security benefits disability payments retirement funds child support and alimony cannot be garnished for most types of debt. 
+																	You can reach them at 800 827-0648 612-713-6415 for international callers or by e-mail at. 
+																	Answer 2 3006 2015 0332 The GI bill pays for school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Garnishment is when an individual has some of his wages or other form of income seized before they can be given to him. 
+																	The company or the debt collector can take legal action to recover the money owed from. 
+																	Any advise or legal. 
+																	The type of income is what determines how it is calculated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That will limit the amount that can be garnished from your taxes. 
+																	Can my Montgomery GI Bill or my disability from the VA for an injury I sustained in Iraq be taken from for child - Answered by a verified Lawyer. 
+																	Can they garnish the gi bill bah like they did my tax return and take all of it for back pay. 
+																	Therefore it is. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I am a current full time student and the GI BIll pays my bills. 
+																	The funds that are disbursed via the GI. 
+																	We use cookies to give you the best possible experience on our website. 
+																	You can also call 1-888-GI BILL-1 to ask the VA to mail an application. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill are earmarked funds specifically set out for use in obtaining post-secondary school education and as such are most typically unavailable for attachment by your spouse in regards to any amount of child support owed. 
+																	How to apply for your GI Bill. 
+																	Garnishment of Wages After GI Bill Use. 
+																	I am paying the 570 for court ordered payment from my paycheck for my job. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Due to some unforeseen circumstances I had to stop taking my college classes that were paid for by my GI Bill. 
+																	Kind regards Gerald Please do not forget to rate me click the five stars. 
+																	Benefits also cannot be garnished to repay past due federal student loan debt or be included in bankruptcy proceedings. 
+																	An account is frozen in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Information About GI Bill Overpayments and Debts. 
+																	The VA agreed to withhold my disability benefits until the delinquent balance is paid. 
+																	It adds nothing additional to your costs but it helps me greatly. 
+																	However there are some situations where these funds are not protected and may be garnished. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For example some of these federal benefits may be used to pay delinquent federal taxes or student loans. 
+																	Alimony And Child Support. 
+																	Plus it is good Karma for you. 
+																	It is unclear what is meant by GI Bill but a military retirement pension or disability award can be garnished for child support. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The employer then stops the amount due to the creditor from each monthly wage check. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Cash%204.jpg?itok=Sr7k-T_V" data-lightbox="roadtrip" data-title="Garnishment Of Military Pay Retirement Military Divorce Guide">
+											<img class="card-img v-image ads-img " src="https://www.military-divorce-guide.com/sites/default/files/styles/max_500px/public/field/image/Cash%204.jpg?itok=Sr7k-T_V" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-_WHfPhTwrNR2p7R2Wy-igx1vRCi91enkQ';" alt="Garnishment Of Military Pay Retirement Military Divorce Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Garnishment Of Military Pay Retirement Military Divorce Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://myfloridalaw5-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/garnishment.jpg" data-lightbox="roadtrip" data-title="Garnishing Benefits To Collect Support Ayo And Iken">
+											<img class="card-img v-image ads-img " src="https://myfloridalaw5-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/garnishment.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvIfNEvb_WbXW9pGs693Yqi7iXXHNxWoxpag';" alt="Garnishing Benefits To Collect Support Ayo And Iken">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Garnishing Benefits To Collect Support Ayo And Iken</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/23/f8/fc23f84d9062abe10d78534492634e6d.jpg" data-lightbox="roadtrip" data-title="The Four Foodies Are Landlocked Over 1 200 Miles To The Nearest Coast Going East Or West So It Was An Amazing Gift That Was Gi Halibut Recipes Halibut Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/23/f8/fc23f84d9062abe10d78534492634e6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNuhZDxvteycJurh4J9Ugvqb8cMTqdnA6LMA';" alt="The Four Foodies Are Landlocked Over 1 200 Miles To The Nearest Coast Going East Or West So It Was An Amazing Gift That Was Gi Halibut Recipes Halibut Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Four Foodies Are Landlocked Over 1 200 Miles To The Nearest Coast Going East Or West So It Was An Amazing Gift That Was Gi Halibut Recipes Halibut Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images04.military.com/sites/default/files/styles/full/public/2020-08/background-of-the-many-american-one-hundred-dollar-banknotes-picture-id1160534857.jpg?itok=OKThaw-o" data-lightbox="roadtrip" data-title="Retiree Pay Garnishment Military Com">
+											<img class="card-img v-image ads-img " src="https://images04.military.com/sites/default/files/styles/full/public/2020-08/background-of-the-many-american-one-hundred-dollar-banknotes-picture-id1160534857.jpg?itok=OKThaw-o" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6K_4oo1S0VAHN5V51-woMQAt46Nh3-alZLg';" alt="Retiree Pay Garnishment Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retiree Pay Garnishment Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/ca7010d6e772445b9a08bed3c046bce0.jpg" data-lightbox="roadtrip" data-title="What Income Can Creditors Not Garnish">
+											<img class="card-img v-image ads-img " src="https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/ca7010d6e772445b9a08bed3c046bce0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIdAyxmPZ9sSoXTq1jGc3dNMbsySJCd2Rscg';" alt="What Income Can Creditors Not Garnish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Income Can Creditors Not Garnish</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/b8/79/2fb87987198760e271a5d50701324fea.jpg" data-lightbox="roadtrip" data-title="Italian Food Pasta Spaghtti With Tomato Sauce Olives And Garnish Italian Recipes Italian Pasta Recipes Pasta Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/b8/79/2fb87987198760e271a5d50701324fea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5x5yBbDzIied133oDcsXy_lds4sSjcfxG8w';" alt="Italian Food Pasta Spaghtti With Tomato Sauce Olives And Garnish Italian Recipes Italian Pasta Recipes Pasta Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Italian Food Pasta Spaghtti With Tomato Sauce Olives And Garnish Italian Recipes Italian Pasta Recipes Pasta Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/4d/35/034d35ec1ef28030c038c9cf3eab6989.jpg" data-lightbox="roadtrip" data-title="Les Enfants Sont Parfois Complique La Solution Est Une Assiette Sympas Et Rigolote Creative Food Fun Kids Food Baby Food Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/4d/35/034d35ec1ef28030c038c9cf3eab6989.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXm4vxhNxKMEuJCHd-aTLisSwZ6HyiwFHrAQ';" alt="Les Enfants Sont Parfois Complique La Solution Est Une Assiette Sympas Et Rigolote Creative Food Fun Kids Food Baby Food Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Les Enfants Sont Parfois Complique La Solution Est Une Assiette Sympas Et Rigolote Creative Food Fun Kids Food Baby Food Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://blog.credit.com/wp-content/uploads/2011/11/studentdebt_a.mina_CCFlickr.jpg" data-lightbox="roadtrip" data-title="Q A Student Loan Defaults And Garnished Wages Credit Com">
+											<img class="card-img v-image ads-img " src="http://blog.credit.com/wp-content/uploads/2011/11/studentdebt_a.mina_CCFlickr.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKmzahcOdiVtnMQM9de0WkBMdR8Ko2hAaHZQ';" alt="Q A Student Loan Defaults And Garnished Wages Credit Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Q A Student Loan Defaults And Garnished Wages Credit Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/a3/ec/bfa3ec9c3915635731f997a4eda12d9e.jpg" data-lightbox="roadtrip" data-title="Keto Hershey Almonds Candy Cacao Recipes Low Carb Candy Low Carb Desserts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/a3/ec/bfa3ec9c3915635731f997a4eda12d9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTxhFBPDWtAA7oj8XTHibUZvLXA0k4ZBz-xQ';" alt="Keto Hershey Almonds Candy Cacao Recipes Low Carb Candy Low Carb Desserts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Keto Hershey Almonds Candy Cacao Recipes Low Carb Candy Low Carb Desserts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/b5/41/31b541a2a84ba40de78eb1fd826362d3.jpg" data-lightbox="roadtrip" data-title="Trip To The Store With Grandma Retro Junk Article Dinosaur Play Playset Vintage Toys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/b5/41/31b541a2a84ba40de78eb1fd826362d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzUkjPBfYAezgnPGl7PqyYsiuVnxqXLS58cA';" alt="Trip To The Store With Grandma Retro Junk Article Dinosaur Play Playset Vintage Toys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trip To The Store With Grandma Retro Junk Article Dinosaur Play Playset Vintage Toys</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/bf/61/d1bf619cd8c673dc6f2b67f376bf3630.jpg" data-lightbox="roadtrip" data-title="Blog Archive Inspiration Nook Cravings Cheesy Potatoes Food Cheesy Potatoes Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/bf/61/d1bf619cd8c673dc6f2b67f376bf3630.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxLNQ-70Qhs3E78dhQxwgBCaRmgbmUHKZWXg';" alt="Blog Archive Inspiration Nook Cravings Cheesy Potatoes Food Cheesy Potatoes Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blog Archive Inspiration Nook Cravings Cheesy Potatoes Food Cheesy Potatoes Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/db/c3/97dbc36233d731e6d1ac8c114e1eee06.png" data-lightbox="roadtrip" data-title="Pin On Savoury">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/db/c3/97dbc36233d731e6d1ac8c114e1eee06.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSswCWTDb5ZJqAW7Lg9kTmguSCTEN26bKd9GQ';" alt="Pin On Savoury">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Savoury</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/78/f6/3278f623b9a9896607095e6c29cd4166.jpg" data-lightbox="roadtrip" data-title="Mikaela Reuben S Recipes Dairy Free Gluten Free Healthy And Delicious Pictured Here Collard Green Breakfast Wraps Green Breakfast Healthy Eating Smoothies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/78/f6/3278f623b9a9896607095e6c29cd4166.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa-bGSVqA8IXf5Csw20p7tMHdDzoLWcOspCA';" alt="Mikaela Reuben S Recipes Dairy Free Gluten Free Healthy And Delicious Pictured Here Collard Green Breakfast Wraps Green Breakfast Healthy Eating Smoothies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mikaela Reuben S Recipes Dairy Free Gluten Free Healthy And Delicious Pictured Here Collard Green Breakfast Wraps Green Breakfast Healthy Eating Smoothies</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/montgomery-bill-vs-post-911.html">Montgomery Bill Vs Post 911</a></li>
+													<li class="list-group-item"><a href="/military-tuition-assistance-vs-gi-bill.html">Military Tuition Assistance Vs Gi Bill</a></li>
+													<li class="list-group-item"><a href="/montgomery-gastroenterology-md.html">Montgomery Gastroenterology Md</a></li>
+													<li class="list-group-item"><a href="/missouri-womens-college-basketball-espn.html">Missouri Womens College Basketball Espn</a></li>
+													<li class="list-group-item"><a href="/mgib-chapter-1606.html">Mgib Chapter 1606</a></li>
+													<li class="list-group-item"><a href="/montgomery-gastroenterology-silver-spring-md.html">Montgomery Gastroenterology Silver Spring Md</a></li>
+													<li class="list-group-item"><a href="/military-college-benefits-gi-bill.html">Military College Benefits Gi Bill</a></li>
+													<li class="list-group-item"><a href="/mi-9-test-point.html">Mi 9 Test Point</a></li>
+													<li class="list-group-item"><a href="/milconnect-gi-bill-transfer.html">Milconnect Gi Bill Transfer</a></li>
+													<li class="list-group-item"><a href="/military-divorce-gi-bill.html">Military Divorce Gi Bill</a></li>
+													<li class="list-group-item"><a href="/midland-college-womens-basketball-roster.html">Midland College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-and-online-classes.html">Montgomery Gi Bill And Online Classes</a></li>
+													<li class="list-group-item"><a href="/montgomery-bill-passed.html">Montgomery Bill Passed</a></li>
+													<li class="list-group-item"><a href="/michigan-army-national-guard-agr-jobs.html">Michigan Army National Guard Agr Jobs</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-2020.html">Montgomery Gi Bill 2020</a></li>
+													<li class="list-group-item"><a href="/montgomery-bill-military.html">Montgomery Bill Military</a></li>
+													<li class="list-group-item"><a href="/mississippi-college-womens-basketball-coach.html">Mississippi College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/montgomery-bill-chapter-30.html">Montgomery Bill Chapter 30</a></li>
+													<li class="list-group-item"><a href="/montgomery-billiards.html">Montgomery Billiards</a></li>
+													<li class="list-group-item"><a href="/military-spouse-gi-bill-bah.html">Military Spouse Gi Bill Bah</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

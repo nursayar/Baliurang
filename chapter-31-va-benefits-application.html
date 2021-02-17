@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Chapter 31 Va Benefits Application - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Chapter 31 Va Benefits Application",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/6c/4c/97/6c4c97371efc9149bcfbd5f32aebd30c.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=chapter+31+va+benefits+application",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Chapter 31 Va Benefits Application</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Soon to be retired teacher early retirement. Im only looking to become certified as an IT Specialist and have no training. Determining eligibility and applying seems fairly cut and dry to me. <br>				
+			</p>
+										<a class="badge badge-primary" href="/the-gi-bill-comparison-tool.html">the gi bill comparison tool</a>
+											<a class="badge badge-info" href="/tech-schools-that-accept-gi-bill.html">tech schools that accept gi bill</a>
+											<a class="badge badge-primary" href="/titanium-30-ch-benefits-in-hindi.html">titanium 30 ch benefits in hindi</a>
+											<a class="badge badge-danger" href="/the-gi-bill-of-1944-quizlet.html">the gi bill of 1944 quizlet</a>
+											<a class="badge badge-dark" href="/statement-of-understanding-navy-gi-bill.html">statement of understanding navy gi bill</a>
+											<a class="badge badge-success" href="/the-gi-bill-did-not.html">the gi bill did not</a>
+											<a class="badge badge-danger" href="/the-gi-bill-helped-what-business-in-the-united-states-boom-in-the-1950s.html">the gi bill helped what business in the united states boom in the 1950s</a>
+											<a class="badge badge-primary" href="/stillman-college-womens-basketball-schedule.html">stillman college womens basketball schedule</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the ideal blog.  Our website provides you with suggestions for viewing the highest quality video and picture content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/10/61/6f1061d2f1d5d8c1a4b2be5a34066f83.jpg" data-lightbox="roadtrip" data-title="Pin On Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/10/61/6f1061d2f1d5d8c1a4b2be5a34066f83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZgT9w5RsU8G_Gb_lht6fW-eVhaRxB5aXy2Q';" alt="Pin On Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/51/be/31/51be319dae9c3a05a3f2e66169e48bb4.jpg" data-lightbox="roadtrip" data-title="Planning And Organization Methods And Resources For A Productive 2019 Productivity Planning Bulletjournal We How To Plan Getting Things Done Productivity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/51/be/31/51be319dae9c3a05a3f2e66169e48bb4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEyUqbL13P9Z_4wBLXeX4WgqRdj1CiZvNNIw';" alt="Planning And Organization Methods And Resources For A Productive 2019 Productivity Planning Bulletjournal We How To Plan Getting Things Done Productivity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Planning And Organization Methods And Resources For A Productive 2019 Productivity Planning Bulletjournal We How To Plan Getting Things Done Productivity</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/34/01/2834011aadb67cae4a85ded6641084da.png" data-lightbox="roadtrip" data-title="Education Benefits For Service Members And Their Families Education Military Benefits Reduce Debt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/34/01/2834011aadb67cae4a85ded6641084da.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_fX-x_iYxbGPsJSsFXlbiQx2lQrCfkGZqew';" alt="Education Benefits For Service Members And Their Families Education Military Benefits Reduce Debt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Education Benefits For Service Members And Their Families Education Military Benefits Reduce Debt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6d/b8/6f/6db86f37fda2bc6f1a1c01a8003ada73.jpg" data-lightbox="roadtrip" data-title="Career Assessment Career Assessment Educational Assessment Assessment Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6d/b8/6f/6db86f37fda2bc6f1a1c01a8003ada73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWNRKJwdGXB7ULtzeTkmgCRVRBAc51z497PQ';" alt="Career Assessment Career Assessment Educational Assessment Assessment Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Career Assessment Career Assessment Educational Assessment Assessment Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/75/8f/f4758fad072307d158f9ca0cb5f0c607.jpg" data-lightbox="roadtrip" data-title="Try Softer Inspirational Quotes Quotes Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/75/8f/f4758fad072307d158f9ca0cb5f0c607.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeTGC7Y-Uz0pYv0vrYtU3FIlTOwWeAMBHzRw';" alt="Try Softer Inspirational Quotes Quotes Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Try Softer Inspirational Quotes Quotes Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/71/64/86716425d946257639a3b0a75b4b8cd5.jpg" data-lightbox="roadtrip" data-title="Journal Of Vocational Rehabilitation Ios Press Rehabilitation Special Education Resources Return To Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/71/64/86716425d946257639a3b0a75b4b8cd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgA83KJ3qmuqZxn2-Rioz4Uzw8-6IX_DYxDA';" alt="Journal Of Vocational Rehabilitation Ios Press Rehabilitation Special Education Resources Return To Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Journal Of Vocational Rehabilitation Ios Press Rehabilitation Special Education Resources Return To Work</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ac/71/2e/ac712e7c1d6743abadea62bbf2fb3191.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgA83KJ3qmuqZxn2-Rioz4Uzw8-6IX_DYxDA';" alt="Journal Of Vocational Rehabilitation Ios Press Rehabilitation Special Education Resources Return To Work">
+										<div class="card-body">
+						<h3 class="h5"><b>Interested applicants need to meet with a VA counselor to apply for Chapter 31 benefits or apply online.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Chapter 31 va benefits application</strong>. 
+								
+																	A veteran who is eligible for an evaluation under Chapter 31 must. 
+																	I contacted Student Veteran Services at a local public college trying to get information about the Hazelwood Act and how to use it. 
+																	Veterans using this benefit have their tuition mandatory fees books and supplies paid for a period of time determined by a VA counselor. 
+																	Once the application is completed mail it to the nearest VA regional office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to apply When applying for vocational rehabilitation benefits contact the Louisville Regional Office to work directly with a local VA counselor. 
+																	Veteran Education Benefits Service members or veterans enrolled at the university can use Veteran Affairs VA education benefits under Chapter 31 and Chapter 33. 
+																	Any input is helpful. 
+																	If you would like to complete a paper application instead of the electronic version please complete the VA Form 28-1900 and submit to your closest VA Regional Office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Form 28-8832 is an application for counseling only. 
+																	The Veteran Readiness and Employment VRE Program is authorized by Congress under Title 38 USC Chapter 31 and Code of Federal Regulations Part 21. 
+																	This program assists Veterans with service-connected disabilities to prepare for find and keep suitable jobs. 
+																	It also helps entitled transitioning Servicemembers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For Veterans with service-connected disabilities so severe that they cannot. 
+																	This program is also known as Chapter 31. 
+																	Chapter 31 Vocational Rehabilitation VA Application Process. 
+																	Once your application is received we will provide you a comprehensive evaluation where a VA Vocational Rehabilitation Counselor VRC will work with you to determine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Would I qualify for the new Chapter 31 Vocational Rehabilitation and Employment VRE Benefits. 
+																	Chapter 31 Vocational Rehabilitation Benefits. 
+																	But you can download VA Form 28-1900 Disabled Veterans Application for Vocational Rehabilitation from the VAs Web site at wwwvbavagovpubsformsVBA-28-1900-AREpdf. 
+																	These forms are available at wwwvagovvaforms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The veteran also receives a monthly stipend based on their. 
+																	Chris Mosser Admissions and Benefits Coordinator NOTE. 
+																	If you meet the requirements for entitlement Chapter 31 benefits. 
+																	Associated with VA disability rating Eligibility for VA Benefits To learn about your eligibility for any of the above benefits visit the VA website try the VA Welcome Toolkit or contact the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A memorandum rating memo rating is established for a Service member who applies for Chapter 31 benefits within six months prior to his or her discharge and 12 months after his or her discharge from active military service. 
+																	Once the VA has determined a veterans. 
+																	If eligible a VRE Counselor will invite you to an orientation session at your nearest VA Regional office. 
+																	It is referred to as the Chapter 31 program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In some cases your family members may also qualify for certain benefits. 
+																	AND EMPLOYMENT BENEFITS Chapter 31 use the VA form 28-1900 Disabled Veterans Application For Vocational Rehabilitation or for VETERANS EDUCATION ASSISTANCE Chapter 30 32 33 1606 or 1607 use the VA Form 22-1990 Application For VA Education Benefits. 
+																	It is sometimes referred to as the Chapter 31 program. 
+																	The VRE program is authorized under Title 38 US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I enrolledcompleted the old Vocational Rehabilitation Program from 1987-1991. 
+																	You can still file a claim and apply for benefits during the coronavirus pandemic. 
+																	Use VA Form 28-1900 Disabled Veterans Application for Vocational Rehabilitation. 
+																	The basic period of eligibility in which VRE services may be used is 12 years from the date of separation from active military service or 12 years from the date the veteran was first notified by VA of a service-connected disability rating. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For service members and Veterans with service-connected disabilities VRE tracks for service members and Veterans. 
+																	This programalso known as Chapter 31 or VREhelps you explore employment options and address training needs. 
+																	It assists entitled Veterans with service- connected disabilities and an employment handicap to prepare for obtain and maintain a job. 
+																	Veterans using Chapter 31 Vocational Rehabilitation Voc Rehab DO NOT EVER submit a Clockwork application while in the program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I spoke with a retired Army veteran that suggested I look into trying to use Chapter 3136 first then the Hazelwood Act if that didnt work. 
+																	Chapter 31 Veteran Readiness. 
+																	Applying for Chapter 31 Benefits You cannot apply online for Chapter 31 benefits. 
+																	Chapter 31 Vocational Rehabilitation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Students can apply for these benefits online through the Office of Veteran and Military Programs and Services. 
+																	Jeanine Frederick VetSuccess on Campus USF Vocational Rehabilitation Certifying Official. 
+																	Do not use this form to apply for vocational rehabilitation and employment benefits Chapter 31. 
+																	Veterans with a 10 or more VA service connect disability rating may apply and receive a comprehensive evaluation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chapter 31 Veteran Readiness Employment VRE General Vocational Rehabilitation questions. 
+																	Find out how to apply for Veteran Readiness and Employment VRE formerly called VA Vocational Rehabilitation and Employment. 
+																	These forms are available on the Internet at wwwvagovvaforms. 
+																	The application VA form 22-1900 is available on the Veterans ON-line APPlication VONAPP website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chapter 31 Vocational Rehabilitation Employment VRE This program assists veterans with service-connected disabilities to prepare for find and keep suitable jobs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/4b/0c/3e4b0c30155e3bd8e17fbfb5285ca976.jpg" data-lightbox="roadtrip" data-title="Clinical Series Spinal Cord Injury Center Wheelchair Spinal Cord Injury Clinic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/4b/0c/3e4b0c30155e3bd8e17fbfb5285ca976.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXDSAqvrgJhEr0alhhTOkte9qLCiO3F27UUQ';" alt="Clinical Series Spinal Cord Injury Center Wheelchair Spinal Cord Injury Clinic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Clinical Series Spinal Cord Injury Center Wheelchair Spinal Cord Injury Clinic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/06/e5/7e06e553596a474201d168bed2e715db.png" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Chapter 33 Payment Rates For 2018 Academic Year August 1 2018 July 31 20 Gi Bill Education And Training Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/06/e5/7e06e553596a474201d168bed2e715db.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpPaL_7JcIl9QCAo6f7hL1uzYBNrHqHR4pcA';" alt="Post 9 11 Gi Bill Chapter 33 Payment Rates For 2018 Academic Year August 1 2018 July 31 20 Gi Bill Education And Training Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Chapter 33 Payment Rates For 2018 Academic Year August 1 2018 July 31 20 Gi Bill Education And Training Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/01/b5/f9/01b5f993938fcc0665f0109a193ccc1d.jpg" data-lightbox="roadtrip" data-title="Pdf Career Development Employment And Disability In Rehabilitation From Theory To Practice Read Career Development Rehabilitation Career Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/01/b5/f9/01b5f993938fcc0665f0109a193ccc1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSzSwFiZpsRLfRW9zCpVl0J-QV60FVN07lIg';" alt="Pdf Career Development Employment And Disability In Rehabilitation From Theory To Practice Read Career Development Rehabilitation Career Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf Career Development Employment And Disability In Rehabilitation From Theory To Practice Read Career Development Rehabilitation Career Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/4c/97/6c4c97371efc9149bcfbd5f32aebd30c.png" data-lightbox="roadtrip" data-title="Vso Logo Veteran Scholarships Veteran Veterans Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/4c/97/6c4c97371efc9149bcfbd5f32aebd30c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4OMvxsJOOwl5AmMsMwnDj_HBnRU4NrnuVQ';" alt="Vso Logo Veteran Scholarships Veteran Veterans Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vso Logo Veteran Scholarships Veteran Veterans Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/99/4d/b6/994db6d2c6b5c4eb12ee487142de343c.jpg" data-lightbox="roadtrip" data-title="Eligibility And Entitlement Vocational Rehabilitation And Employment Vr Amp E Veterans Affairs Entitlement Rehabilitation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/99/4d/b6/994db6d2c6b5c4eb12ee487142de343c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYoXkuDzNA7EA9wnB8OBu1rdPKX1SBu0rxtg';" alt="Eligibility And Entitlement Vocational Rehabilitation And Employment Vr Amp E Veterans Affairs Entitlement Rehabilitation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eligibility And Entitlement Vocational Rehabilitation And Employment Vr Amp E Veterans Affairs Entitlement Rehabilitation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/25/ad/f9/25adf9246f088389b7af31a116066dd1--evaluation-state-of-the-art.jpg" data-lightbox="roadtrip" data-title="Handbook Of Vocational Rehabilitation And Disability Evaluation Application And Implementation Of The Icf Hardcove Rehabilitation Evaluation Graduate Studies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/25/ad/f9/25adf9246f088389b7af31a116066dd1--evaluation-state-of-the-art.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZPujc5jiILdjj0PeoTokuI7tmxZgJqtxMPQ';" alt="Handbook Of Vocational Rehabilitation And Disability Evaluation Application And Implementation Of The Icf Hardcove Rehabilitation Evaluation Graduate Studies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Handbook Of Vocational Rehabilitation And Disability Evaluation Application And Implementation Of The Icf Hardcove Rehabilitation Evaluation Graduate Studies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/28/b6/e228b62545875fb38e2879f7f411f41d.png" data-lightbox="roadtrip" data-title="The Digital Code Available For Purchase Allows You To Access Ava S Resource Guide For Vascular Access On T Continuing Medical Education Vascular Resource Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/28/b6/e228b62545875fb38e2879f7f411f41d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQVU8bUpuAmNOVA-YuyoUqdfM3fMVczpoSsw';" alt="The Digital Code Available For Purchase Allows You To Access Ava S Resource Guide For Vascular Access On T Continuing Medical Education Vascular Resource Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Digital Code Available For Purchase Allows You To Access Ava S Resource Guide For Vascular Access On T Continuing Medical Education Vascular Resource Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/71/2e/ac712e7c1d6743abadea62bbf2fb3191.jpg" data-lightbox="roadtrip" data-title="Ponte Vedra Beach Fl Feb 27 Miap Motorcycle Poker Run Benefits The Missing In America Project Miap That T Motorcycle Events Charity Events Soldier Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/71/2e/ac712e7c1d6743abadea62bbf2fb3191.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdSowzcUHjJWKxjiNDEWRBE9Quox_v4RNODQ';" alt="Ponte Vedra Beach Fl Feb 27 Miap Motorcycle Poker Run Benefits The Missing In America Project Miap That T Motorcycle Events Charity Events Soldier Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ponte Vedra Beach Fl Feb 27 Miap Motorcycle Poker Run Benefits The Missing In America Project Miap That T Motorcycle Events Charity Events Soldier Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/09/59/63/0959633fb80691236088cf422241b483.jpg" data-lightbox="roadtrip" data-title="Online Certificate Programs Free Onlinenursingschools Onlineschools Webcourses Coursesites Importance Of Time Management Sample Resume Online Nursing Schools">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/09/59/63/0959633fb80691236088cf422241b483.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6RVXGNK8XoVG-oNvZ5g82y2KihSjDLB040w';" alt="Online Certificate Programs Free Onlinenursingschools Onlineschools Webcourses Coursesites Importance Of Time Management Sample Resume Online Nursing Schools">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Certificate Programs Free Onlinenursingschools Onlineschools Webcourses Coursesites Importance Of Time Management Sample Resume Online Nursing Schools</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/44/d2/9144d22964fee88ae80e82154e5988d5.jpg" data-lightbox="roadtrip" data-title="Merced Ca Apr 9 2016 11th Annual Veterans Memorial Support The Troops Run We Will Be Collecting Monetary Donati Veterans Memorial Veteran Soldier Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/44/d2/9144d22964fee88ae80e82154e5988d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7bQMACD5usxZXYG7n_ERi5g9AD5SkwZR34Q';" alt="Merced Ca Apr 9 2016 11th Annual Veterans Memorial Support The Troops Run We Will Be Collecting Monetary Donati Veterans Memorial Veteran Soldier Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Merced Ca Apr 9 2016 11th Annual Veterans Memorial Support The Troops Run We Will Be Collecting Monetary Donati Veterans Memorial Veteran Soldier Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/27/41/96/274196864aaf14a0500ddebd1ccdc093.jpg" data-lightbox="roadtrip" data-title="Climate Vs Weather Sorting Activity Weather Science Weather Vs Climate Weather And Climate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/27/41/96/274196864aaf14a0500ddebd1ccdc093.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyztaKZaroQhlWM7YeyfNPaHR-6mJTmgF6-g';" alt="Climate Vs Weather Sorting Activity Weather Science Weather Vs Climate Weather And Climate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Climate Vs Weather Sorting Activity Weather Science Weather Vs Climate Weather And Climate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/9e/f3/e29ef36523dedeeab7f193af201fea24.jpg" data-lightbox="roadtrip" data-title="El Paso Tx Mar 13 2016 Rough Riders Mc 12th Annual Veterans Motorcycle Run Proceeds Benefit Veterans Causes Motorcycle Events Rough Riders Soldier Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/9e/f3/e29ef36523dedeeab7f193af201fea24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvhNqL94ueLPGjjcPqxV4s1vhIUasfwVzUA';" alt="El Paso Tx Mar 13 2016 Rough Riders Mc 12th Annual Veterans Motorcycle Run Proceeds Benefit Veterans Causes Motorcycle Events Rough Riders Soldier Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">El Paso Tx Mar 13 2016 Rough Riders Mc 12th Annual Veterans Motorcycle Run Proceeds Benefit Veterans Causes Motorcycle Events Rough Riders Soldier Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/c9/88/edc988f984eda1e47c1f8e464e6eba5d.jpg" data-lightbox="roadtrip" data-title="Does Workplace Competition Create Sharks And Saboteurs For Coworkers Infographic Workplace How Are You Feeling Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/c9/88/edc988f984eda1e47c1f8e464e6eba5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Q8bsuwpdDPu7I_6Hz1_bKjUFyiGLKnBRuQ';" alt="Does Workplace Competition Create Sharks And Saboteurs For Coworkers Infographic Workplace How Are You Feeling Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Does Workplace Competition Create Sharks And Saboteurs For Coworkers Infographic Workplace How Are You Feeling Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-education-jobs.html">Va Education Jobs</a></li>
+													<li class="list-group-item"><a href="/va-education-fund.html">Va Education Fund</a></li>
+													<li class="list-group-item"><a href="/va-education-liaison-representative.html">Va Education Liaison Representative</a></li>
+													<li class="list-group-item"><a href="/va-education-regional-office.html">Va Education Regional Office</a></li>
+													<li class="list-group-item"><a href="/va-education-debt-payment.html">Va Education Debt Payment</a></li>
+													<li class="list-group-item"><a href="/va-education-hotline.html">Va Education Hotline</a></li>
+													<li class="list-group-item"><a href="/va-education-training.html">Va Education Training</a></li>
+													<li class="list-group-item"><a href="/va-education-financial-hardship.html">Va Education Financial Hardship</a></li>
+													<li class="list-group-item"><a href="/va-education-requirements.html">Va Education Requirements</a></li>
+													<li class="list-group-item"><a href="/va-education-form.html">Va Education Form</a></li>
+													<li class="list-group-item"><a href="/va-education-ranking.html">Va Education Ranking</a></li>
+													<li class="list-group-item"><a href="/va-education-department-phone-number.html">Va Education Department Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-telephone-number.html">Va Education Benefits Telephone Number</a></li>
+													<li class="list-group-item"><a href="/va-education-portal.html">Va Education Portal</a></li>
+													<li class="list-group-item"><a href="/va-education-stem-program.html">Va Education Stem Program</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-yellow-ribbon-program.html">Va Education Benefits Yellow Ribbon Program</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-transfer.html">Va Education Benefits Transfer</a></li>
+													<li class="list-group-item"><a href="/va-education-programs-for-dependents.html">Va Education Programs For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-education-rates-2021.html">Va Education Rates 2021</a></li>
+													<li class="list-group-item"><a href="/va-education-transfer-benefits.html">Va Education Transfer Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

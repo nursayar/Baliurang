@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Best Womens College Basketball Coaches Of All Time - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Best Womens College Basketball Coaches Of All Time",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/db/9d/83/db9d83f4dfc5a226ae00aef639e564ce.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=best+womens+college+basketball+coaches+of+all+time",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Best Womens College Basketball Coaches Of All Time</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">With Calhoun nearing the top five in all-time victories he has taken his place among the greatest names in the coaching profession. The 28 best. The list includes only games at the NCAA AIAW and NAIA levels. <br>				
+			</p>
+										<a class="badge badge-info" href="/gi-bill-certification-status.html">gi bill certification status</a>
+											<a class="badge badge-light" href="/gi-bill-dependents-housing-allowance.html">gi bill dependents housing allowance</a>
+											<a class="badge badge-dark" href="/gi-bill-certification-reimbursement-form.html">gi bill certification reimbursement form</a>
+											<a class="badge badge-warning" href="/gi-bill-changes-august-2020.html">gi bill changes august 2020</a>
+											<a class="badge badge-success" href="/gi-bill-book-stipend-fall-2019.html">gi bill book stipend fall 2019</a>
+											<a class="badge badge-info" href="/gi-bill-education-and-training.html">gi bill education and training</a>
+											<a class="badge badge-light" href="/gi-bill-during-summer-break.html">gi bill during summer break</a>
+											<a class="badge badge-info" href="/gi-bill-dependent-eligibility.html">gi bill dependent eligibility</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the right site.  Our site gives you hints for viewing the maximum quality video and image content, search and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/b4/a6/f4b4a6fcf755616c8c6bd9f261ee3890.jpg" data-lightbox="roadtrip" data-title="Potentially The Two Best College Basketball Coaches Of All Time Mbb Wbb Pat Summitt Sports Illustrated Covers College Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/b4/a6/f4b4a6fcf755616c8c6bd9f261ee3890.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdymLzZDaGBIjvR71xm8JRSNC52D5X9vA_9A';" alt="Potentially The Two Best College Basketball Coaches Of All Time Mbb Wbb Pat Summitt Sports Illustrated Covers College Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Potentially The Two Best College Basketball Coaches Of All Time Mbb Wbb Pat Summitt Sports Illustrated Covers College Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/cf/f5/94cff5d7d04cfa77c29dfc8f5035ac52.jpg" data-lightbox="roadtrip" data-title="Pat Summitt A Legend And One Of The Best Lady Basketball Coaches There Will Ever Be Pat Summitt Lady Vols Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/cf/f5/94cff5d7d04cfa77c29dfc8f5035ac52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAt3hHIzS6zm2g-gs1mCR-URgCf8T8pmlmJA';" alt="Pat Summitt A Legend And One Of The Best Lady Basketball Coaches There Will Ever Be Pat Summitt Lady Vols Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt A Legend And One Of The Best Lady Basketball Coaches There Will Ever Be Pat Summitt Lady Vols Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/0a/f4/dc0af4ca6f02857e01778aa0933bec41.jpg" data-lightbox="roadtrip" data-title="The Best Coach In Women S Basketball History Tennessee Lady Volunteer Coach Pat Summit Pat Summitt Basketball History Tennessee Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/0a/f4/dc0af4ca6f02857e01778aa0933bec41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR19WXFVlnUEWJShqsjXPNoPFcqVGo-2JJh_Q';" alt="The Best Coach In Women S Basketball History Tennessee Lady Volunteer Coach Pat Summit Pat Summitt Basketball History Tennessee Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Coach In Women S Basketball History Tennessee Lady Volunteer Coach Pat Summit Pat Summitt Basketball History Tennessee Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/01/58/f20158b58218091825cf878a7a1f8672.jpg" data-lightbox="roadtrip" data-title="The Top 10 College Basketball Coaches Of All Time The Grueling Truth Bob Knight Basketball Coach Indiana">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/01/58/f20158b58218091825cf878a7a1f8672.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIY9-CJBRsGqDW3Hu5dTMLNnYSGFenibFiKw';" alt="The Top 10 College Basketball Coaches Of All Time The Grueling Truth Bob Knight Basketball Coach Indiana">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Top 10 College Basketball Coaches Of All Time The Grueling Truth Bob Knight Basketball Coach Indiana</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/32/93/6f/32936f61a217b19c93ed96fcda9a9328.jpg" data-lightbox="roadtrip" data-title="Winningest Division I College Basketball Coaches Basketball Coach Olympic Sports Notre Dame Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/32/93/6f/32936f61a217b19c93ed96fcda9a9328.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWLaPOtHxhiNWY8YAn2G-MkK8eUqTxQTekbA';" alt="Winningest Division I College Basketball Coaches Basketball Coach Olympic Sports Notre Dame Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Winningest Division I College Basketball Coaches Basketball Coach Olympic Sports Notre Dame Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/06/bf/c3/06bfc31ccabf159afcbe749c4a404493.jpg" data-lightbox="roadtrip" data-title="Pin On Teachers Admin Coaches Pro Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/06/bf/c3/06bfc31ccabf159afcbe749c4a404493.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0PqT6MlW_B0SPlskyMkYQTysddbWHwEugpQ';" alt="Pin On Teachers Admin Coaches Pro Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Teachers Admin Coaches Pro Women</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/7d/e5/e2/7de5e2e618d290a2191383ea2780a31d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0PqT6MlW_B0SPlskyMkYQTysddbWHwEugpQ';" alt="Pin On Teachers Admin Coaches Pro Women">
+										<div class="card-body">
+						<h3 class="h5"><b>Read on for more on Calhoun and the rest of the top 100 coaches.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Best womens college basketball coaches of all time</strong>. 
+								
+																	Among the all-time winningest college coaches regardless of gender Stringer is one of six women to win more than 1000 games and she is the first African-American coach to win 1000 college. 
+																	The incredible legacy of Pat Summitt Stanfords Tara VanDerveer became the winningest coach in Division I womens basketball on Tuesday Dec. 
+																	Of the top 25 ranked teams by AP before the start of the season. 
+																	Vivian Stringer She is the winningest African American womens college basketball coach of all time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mike Krzyzewski has the most total victories mens or womens with 1162. 
+																	Two NBA assistant coaches told Insider that they talked to Amanda Butler the head coach of Clemsons womens team. 
+																	In a league that churns through coaches like Elizabeth Taylor through husbands a select few have enjoyed. 
+																	In 2009 Sporting News ranked the 50 greatest coaches of all time in an issue of the magazine and Summitt who won eight NCAA championships at Tennessee was in the top 15. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But before we do that lets take a look at the list of coaches who came close but did not qualify to be in the top 20 rankings of college coaches. 
+																	Ranking the 25 best college basketball coaches ever who have left a mark on the history of NCAA basketball such as John Wooden Bob Knight and Coach K. 
+																	Pat Summitt is not only the most successful womens college basketball coach of all time she also helped bring the sport to the mainstream. 
+																	Through his three-plus decades as head coach at Duke all Mike Krzyzewski has done is go to 11 Final Fours win four national championships become college basketballs all-time wins leader in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Geno Auriemma of Connecticut has built one of the dominant programs in womens college basketball and is the only coach who can compare with Pat Summitt in terms of accomplishment. 
+																	She has one of the best records in the womens basketball history. 
+																	Legendary African-American basketball coach Charlaine Vivian Stringer was born on March 16 1948 and currently serves as the head coach of the Rutgers University womens basketball team. 
+																	This is a list of college womens basketball coaches by number of career wins. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Zone defense a common scheme in college basketball is on the rise in the NBA. 
+																	A lot of them are long-time college basketball powerhouses and one way thats reflected is in the salaries of their head coaches. 
+																	Honorable Mention Next 1 of 22 Prev post. 
+																	Pat Summitt Legacy Stanfords Tara VanDerveer became the winningest coach in Division I womens basketball on Tuesday Dec. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Auriemma earns 988000 per year in base salary and incentives put his pay well over the 1 million mark. 
+																	In all more than 300 men have been head coaches in the NBA. 
+																	Soon after Pat Summitt the basketball Hall of Famer and the winningest college coach of all time mens or womens died on Tuesday morning the tributes to her career came rushing in. 
+																	Most havent lasted long. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Auriemmas UConn Lady Huskies have won seven national championships and completed a record 90-game winning. 
+																	Leading the best teams most likely to win March Madness 2018 the best college basketball coaches of all time are the winningest and most decorated men ever to coach NCAA college basketballFrom the legends of the game from many decades ago to those coaches currently in their prime these top college basketball coaches of all time will always be remembered as the best leaders and most. 
+																	15 when her Cardinal defeated Pacific 104-61. 
+																	15 when her Cardinal defeated Pacific 104-61. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is a list of college mens basketball coaches by number of career wins across all three divisions of the National Collegiate Athletic Association NCAA and both divisions of the National Association of Intercollegiate Athletics NAIA. 
+																	College basketball has seen many great. 
+																	The highest winning percentage in the group belongs to Geno Auriemma head coach of. 
+																	She has 949 career victories and is also the first coach in NCAA history to lead. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tara VanDerveer the head coach of Idaho from 1978-80 Ohio State from 1980-85 and Stanford from 198595 and from 1996-present tops the list with 1109 career wins. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/5a/e2/dc5ae271de7f1fa249b5a45ee5da0847.jpg" data-lightbox="roadtrip" data-title="Winningest Division I College Basketball Coaches Basketball Coach Basketball Games Online College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/5a/e2/dc5ae271de7f1fa249b5a45ee5da0847.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsxbf7FK_rDp1pb7a4qdURb8K22j4GjK1GyQ';" alt="Winningest Division I College Basketball Coaches Basketball Coach Basketball Games Online College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Winningest Division I College Basketball Coaches Basketball Coach Basketball Games Online College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/e0/87/26e087f55d1786a58c7f90a6aaca7a77.jpg" data-lightbox="roadtrip" data-title="Pat Summitt Is A Former Women S College Basketball Head Coach She Now Serves As The Head Coach Emeritus Of The Univers Pat Summitt Team Quotes Champion Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/e0/87/26e087f55d1786a58c7f90a6aaca7a77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPPSDhqFsvOjyaZehpJYB5_dA8uQqfOmlRw';" alt="Pat Summitt Is A Former Women S College Basketball Head Coach She Now Serves As The Head Coach Emeritus Of The Univers Pat Summitt Team Quotes Champion Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt Is A Former Women S College Basketball Head Coach She Now Serves As The Head Coach Emeritus Of The Univers Pat Summitt Team Quotes Champion Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/48/d5/8a/48d58ae7313866896aec65d197f799a7--tyler-summitt-basketball-coach.jpg" data-lightbox="roadtrip" data-title="Pat Summitt Statue Pat Summitt Basketball Coach Vols Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/48/d5/8a/48d58ae7313866896aec65d197f799a7--tyler-summitt-basketball-coach.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkM7-VXzvKrE4mEPbeyF4cGkc__e0Wk4zrzQ';" alt="Pat Summitt Statue Pat Summitt Basketball Coach Vols Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt Statue Pat Summitt Basketball Coach Vols Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/9c/05/6b9c0586254c592a54a0d3b57ca68053.jpg" data-lightbox="roadtrip" data-title="The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads Way Basketball Workouts College Basketball College Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/9c/05/6b9c0586254c592a54a0d3b57ca68053.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8W7ZnEy6HalCLh2l9HPT7UscTTlVfag2QOw';" alt="The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads Way Basketball Workouts College Basketball College Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads Way Basketball Workouts College Basketball College Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/3b/61/433b6183d0dc70639cee9164a49eaba6.jpg" data-lightbox="roadtrip" data-title="Candace Parker Photos Candace Parker And Pat Summitt Candace Parker Pat Summitt Lady Vols Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/3b/61/433b6183d0dc70639cee9164a49eaba6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZv_oQ-cmAbGd1MUTStpamZiIEbzqJTM9RxQ';" alt="Candace Parker Photos Candace Parker And Pat Summitt Candace Parker Pat Summitt Lady Vols Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Candace Parker Photos Candace Parker And Pat Summitt Candace Parker Pat Summitt Lady Vols Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/9d/83/db9d83f4dfc5a226ae00aef639e564ce.jpg" data-lightbox="roadtrip" data-title="Pin By Victoria Pellerin On Go Vols Candace Parker Love And Basketball Candace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/9d/83/db9d83f4dfc5a226ae00aef639e564ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS87WBXmYfwo-xjemspxBnCIZ_5pvI_jEUh3Q';" alt="Pin By Victoria Pellerin On Go Vols Candace Parker Love And Basketball Candace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Victoria Pellerin On Go Vols Candace Parker Love And Basketball Candace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/28/ad/59/28ad593c87d6b66b02ba5749ea80e99c.jpg" data-lightbox="roadtrip" data-title="Hottest Women Basketball Players From The Wnba Elena Delle Donne Find Local Schools And Teachers On Ed Womens Basketball Basketball Players Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/28/ad/59/28ad593c87d6b66b02ba5749ea80e99c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLHzI8h79_BD6qbgH9FHdR0h8Vnoqnw9MVZg';" alt="Hottest Women Basketball Players From The Wnba Elena Delle Donne Find Local Schools And Teachers On Ed Womens Basketball Basketball Players Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hottest Women Basketball Players From The Wnba Elena Delle Donne Find Local Schools And Teachers On Ed Womens Basketball Basketball Players Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/79/c8/5d79c87aa502251efb5bb2baeb3fbdbc.jpg" data-lightbox="roadtrip" data-title="Hays Terps Hawkins Turns Into Top Player Basketball Uniforms Design College Basketball Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/79/c8/5d79c87aa502251efb5bb2baeb3fbdbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5vbQKCdcN7XduPwWrOCObFeqX7DNHPgYcQ';" alt="Hays Terps Hawkins Turns Into Top Player Basketball Uniforms Design College Basketball Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hays Terps Hawkins Turns Into Top Player Basketball Uniforms Design College Basketball Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/96/ef/1896ef54874b27cefe47500a0559ad72.jpg" data-lightbox="roadtrip" data-title="Diana Taurasi Usa Basketball Gold Medalist 2012 London One Of The Purest Women Players To Ever P Uconn Womens Basketball Team Usa Basketball Sports Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/96/ef/1896ef54874b27cefe47500a0559ad72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDgq4HpnX6b4krCSAhHjJly7kzKWeUrnlfug';" alt="Diana Taurasi Usa Basketball Gold Medalist 2012 London One Of The Purest Women Players To Ever P Uconn Womens Basketball Team Usa Basketball Sports Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diana Taurasi Usa Basketball Gold Medalist 2012 London One Of The Purest Women Players To Ever P Uconn Womens Basketball Team Usa Basketball Sports Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/25/5f/80255f97f32a3b9f60a12f67ef367e72.jpg" data-lightbox="roadtrip" data-title="Sabrina Ionescu Get To Know Best Player In College Basketball College Basketball Players College Basketball Basketball Players">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/25/5f/80255f97f32a3b9f60a12f67ef367e72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY7RJXQbQGasccmPK2siCkJuM-IvF9mTmkRg';" alt="Sabrina Ionescu Get To Know Best Player In College Basketball College Basketball Players College Basketball Basketball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sabrina Ionescu Get To Know Best Player In College Basketball College Basketball Players College Basketball Basketball Players</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/e5/e2/7de5e2e618d290a2191383ea2780a31d.jpg" data-lightbox="roadtrip" data-title="The 10 Best Women S Basketball Recruits Regardless Of Class Womens Basketball Basketball Girls Uconn Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/e5/e2/7de5e2e618d290a2191383ea2780a31d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTRbWc1sPE14WjhfAeUgYmqYnekyuHCleJQ';" alt="The 10 Best Women S Basketball Recruits Regardless Of Class Womens Basketball Basketball Girls Uconn Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 10 Best Women S Basketball Recruits Regardless Of Class Womens Basketball Basketball Girls Uconn Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/98/19/0b9819104ee7a36bd441d419819f5ccf.png" data-lightbox="roadtrip" data-title="Swish Appeal A Women S Basketball Community Womens Basketball Basketball Basketball News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/98/19/0b9819104ee7a36bd441d419819f5ccf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdbs7VekFehaFdT16ImZjAesVpvkBqK2kl9Q';" alt="Swish Appeal A Women S Basketball Community Womens Basketball Basketball Basketball News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Swish Appeal A Women S Basketball Community Womens Basketball Basketball Basketball News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/28/3c/b9283c2c2b963932982df4231780cd82.jpg" data-lightbox="roadtrip" data-title="Women S College Basketball Women S Ncaa Tournament Sooner Head Coach Sherri Coale Watches In The Second Half As Th Women Street Style Chic Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/28/3c/b9283c2c2b963932982df4231780cd82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ij_Xo-2iV5SoA6f5orrBGJs5FEhq-239mA';" alt="Women S College Basketball Women S Ncaa Tournament Sooner Head Coach Sherri Coale Watches In The Second Half As Th Women Street Style Chic Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S College Basketball Women S Ncaa Tournament Sooner Head Coach Sherri Coale Watches In The Second Half As Th Women Street Style Chic Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/scores-womens-college-basketball-games-today.html">Scores Womens College Basketball Games Today</a></li>
+													<li class="list-group-item"><a href="/schoolgirl-question.html">Schoolgirl Question</a></li>
+													<li class="list-group-item"><a href="/state-gis-jobs.html">State Gis Jobs</a></li>
+													<li class="list-group-item"><a href="/site-du-college-guy-de-maupassant-limoges.html">Site Du College Guy De Maupassant Limoges</a></li>
+													<li class="list-group-item"><a href="/stanford-gi-bill-yellow-ribbon.html">Stanford Gi Bill Yellow Ribbon</a></li>
+													<li class="list-group-item"><a href="/state-gis-data.html">State Gis Data</a></li>
+													<li class="list-group-item"><a href="/spouse-using-montgomery-gi-bill.html">Spouse Using Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/should-i-go-to-college-quiz.html">Should I Go To College Quiz</a></li>
+													<li class="list-group-item"><a href="/state-grid-corporation-of-china-stock.html">State Grid Corporation Of China Stock</a></li>
+													<li class="list-group-item"><a href="/state-gym-hours-winter-break.html">State Gym Hours Winter Break</a></li>
+													<li class="list-group-item"><a href="/state-give-backpack.html">State Give Backpack</a></li>
+													<li class="list-group-item"><a href="/should-i-go-to-college-or-not-quiz.html">Should I Go To College Or Not Quiz</a></li>
+													<li class="list-group-item"><a href="/stanford-ignite-post-911-veterans.html">Stanford Ignite Post 911 Veterans</a></li>
+													<li class="list-group-item"><a href="/state-gifts-usa.html">State Gifts Usa</a></li>
+													<li class="list-group-item"><a href="/state-gi-bill.html">State Gi Bill</a></li>
+													<li class="list-group-item"><a href="/smith-college-womens-basketball-team.html">Smith College Womens Basketball Team</a></li>
+													<li class="list-group-item"><a href="/spouse-veteran-education-benefits.html">Spouse Veteran Education Benefits</a></li>
+													<li class="list-group-item"><a href="/south-georgia-state-college-womens-basketball.html">South Georgia State College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/starting-college-gift-box.html">Starting College Gift Box</a></li>
+													<li class="list-group-item"><a href="/state-fair-gi-ne.html">State Fair Gi Ne</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

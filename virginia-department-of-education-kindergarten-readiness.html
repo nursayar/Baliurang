@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Department Of Education Kindergarten Readiness - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Department Of Education Kindergarten Readiness",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/94/80/c3/9480c30d5420e063a535f1ea22f60261.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+department+of+education+kindergarten+readiness",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Department Of Education Kindergarten Readiness</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">N n What does it mean to be ready for school. Visit COVID-19 Virginia Public Schools for access to the latest information. The Virginia Kindergarten Readiness Program VKRP expands the assessment of children beyond literacy PALS to include the school readiness domains of math social skills and self-regulation. <br>				
+			</p>
+										<a class="badge badge-danger" href="/forever-gi-bill-qualifications.html">forever gi bill qualifications</a>
+											<a class="badge badge-info" href="/g1-billie-eilish.html">g1 billie eilish</a>
+											<a class="badge badge-primary" href="/gastroenterology-ward-kings-college-hospital.html">gastroenterology ward kings college hospital</a>
+											<a class="badge badge-warning" href="/free-college-football-contests.html">free college football contests</a>
+											<a class="badge badge-secondary" href="/forever-nghia-la-gi.html">forever nghia la gi</a>
+											<a class="badge badge-warning" href="/forever-gi-bill-transfer-benefits.html">forever gi bill transfer benefits</a>
+											<a class="badge badge-success" href="/gastroenterology-medical-college-of-wisconsin.html">gastroenterology medical college of wisconsin</a>
+											<a class="badge badge-info" href="/gastrointestinal-laboratory-college-station-tx.html">gastrointestinal laboratory college station tx</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the right site.  Our site provides you with suggestions for seeing the highest quality video and image content, search and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this movie for you to view.  You can also contribute to supporting this website by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/76/6d/a2766d8deb4ef4616c4d6e396f04b5ce.jpg" data-lightbox="roadtrip" data-title="Training And Education Education Early Learning Teacher Prep">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/76/6d/a2766d8deb4ef4616c4d6e396f04b5ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWM8D07VTBFO12N52idGw53nWzvDK_NcjTlw';" alt="Training And Education Education Early Learning Teacher Prep">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Training And Education Education Early Learning Teacher Prep</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/04/c4/2404c437f8d5147c76e83df6ca318310.png" data-lightbox="roadtrip" data-title="Kindergarten Readiness Checklist Ohio Department Of Education S Site To Help Parents Dete Kindergarten Readiness Checklist Kindergarten Readiness Kindergarten">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/04/c4/2404c437f8d5147c76e83df6ca318310.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD3B5pBH3OaPI703UTQtkP61C1_RuDD2q0vw';" alt="Kindergarten Readiness Checklist Ohio Department Of Education S Site To Help Parents Dete Kindergarten Readiness Checklist Kindergarten Readiness Kindergarten">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kindergarten Readiness Checklist Ohio Department Of Education S Site To Help Parents Dete Kindergarten Readiness Checklist Kindergarten Readiness Kindergarten</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/d8/cb/49d8cb510ff38c425d473d9bb24631fe.png" data-lightbox="roadtrip" data-title="Kindergarten Readiness Checklist Um We Have Been Doing This For Like A Year B Kindergarten Readiness Checklist Kindergarten Checklist Kindergarten Readiness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/d8/cb/49d8cb510ff38c425d473d9bb24631fe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuFIShTr5d4sC5ou0-JVJ85HmdI_TvAZayAQ';" alt="Kindergarten Readiness Checklist Um We Have Been Doing This For Like A Year B Kindergarten Readiness Checklist Kindergarten Checklist Kindergarten Readiness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kindergarten Readiness Checklist Um We Have Been Doing This For Like A Year B Kindergarten Readiness Checklist Kindergarten Checklist Kindergarten Readiness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/22/f1/8322f174852a8e3680adb6bf9eb2e48e.png" data-lightbox="roadtrip" data-title="Examples Of Formative Assessments Formative Assessment Classroom Assessment Educational Reading">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/22/f1/8322f174852a8e3680adb6bf9eb2e48e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCzR7p786lqJyXzQy7ByS4pkjofNgrtH4gbQ';" alt="Examples Of Formative Assessments Formative Assessment Classroom Assessment Educational Reading">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Examples Of Formative Assessments Formative Assessment Classroom Assessment Educational Reading</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/a9/88/c3a988db8afb7cefe8e94a5d4d5632ac.jpg" data-lightbox="roadtrip" data-title="Verso Workplace Readiness Skills For The Commonwealth Poster 2012 Education Skills Workplace Employee Handbook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/a9/88/c3a988db8afb7cefe8e94a5d4d5632ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYX_X3C4kTvLT7feISyLDQxrV3Qh_T1FvbjQ';" alt="Verso Workplace Readiness Skills For The Commonwealth Poster 2012 Education Skills Workplace Employee Handbook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Verso Workplace Readiness Skills For The Commonwealth Poster 2012 Education Skills Workplace Employee Handbook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/71/61/3a71613ce300e6e4416c4ed715b1a70c.jpg" data-lightbox="roadtrip" data-title="A Model For Inquiry In Pe Physical Education Lessons Elementary Physical Education Physical Education Teacher">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/71/61/3a71613ce300e6e4416c4ed715b1a70c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZkdbliY0n_BpZ5LLRhjiM4Gg0mGGLMmSpjg';" alt="A Model For Inquiry In Pe Physical Education Lessons Elementary Physical Education Physical Education Teacher">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Model For Inquiry In Pe Physical Education Lessons Elementary Physical Education Physical Education Teacher</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a2/76/6d/a2766d8deb4ef4616c4d6e396f04b5ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZkdbliY0n_BpZ5LLRhjiM4Gg0mGGLMmSpjg';" alt="A Model For Inquiry In Pe Physical Education Lessons Elementary Physical Education Physical Education Teacher">
+										<div class="card-body">
+						<h3 class="h5"><b>The Virginia Kindergarten Readiness Program VKRP builds a more comprehensive understanding of school readiness and success.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia department of education kindergarten readiness</strong>. 
+								
+																	Since each childs degree of readiness differs and is highly individualized kindergarten readiness also entails the capacity of schools to be prepared to serve all children effectively regardless of a childs individual developmental level in each of the five developmental domains of school readiness. 
+																	A collaboration of all these efforts will help to prepare our youngest learners for school. 
+																	Hildren develop C holistically and at an individual rate. 
+																	N A childs readiness for kindergarten includes both academic and social-emotional skills developed at home school and in their community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each component children families schools and communities plays an essential role in the development of school. 
+																	For more details about the initiative view the VKRP Snapshot and visit the VKRP website. 
+																	Superintendents Memo 167-18 The Virginia General Assembly passed legislation that requires all kindergarten students be assessed using the Virginia Kindergarten Readiness Program VKRP by the end of the 2019-2020 school year and annually thereafter HB5002 Item 128 H. 
+																	West Virginia defines kindergarten readinessas a stage of transition that encompasses the childs various learning experiences and general knowledge physical well-being social and emotional development and familiarity and ease with expressing themselves and understanding language. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	High-quality preschool programs support school readiness. 
+																	Now over a decade later as a research associate professor at the University of Virginias Curry School of Education she is leading the way in helping Virginia roll out the comprehensive Kindergarten Readiness Program a battery of readiness assessments for incoming kindergarteners including measures of students math self-regulation and social skills. 
+																	A childs health is another critical aspect of school readiness. 
+																	Announcements PALS fall window for Pre-K and K begin 6 weeks after the first day of class. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coordinated Assessments VKRP measures math self-regulation and social skills to complement Virginias statewide assessment of literacy skills using Phonological. 
+																	Piloted in 2014 the program is now. 
+																	Virginia Kindergarten Readiness Program In partnership with the Virginia Department of Education VDOE the Virginia Kindergarten Readiness Program VKRP builds a more comprehensive understanding of school readiness. 
+																	Parents daycare providers pediatricians and preschool programs all play an enormous role in the timely recognition of developmental delays. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mathematics Literacy Self-Regulation. 
+																	The Virginia Department of Education VDOE has been working closely with the Governors Office the Virginia Department of Health and other state agencies to ensure our schools and communities have the most up-to-date information and resources. 
+																	The recommended final date for collecting data is November 2. 
+																	Virginias Definition of School Readiness PDF describes the capabilities of children families schools and communities that promote student success in kindergarten and beyond. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PALS Plus window begins 2 weeks after the first day of class. 
+																	The Virginia Kindergarten Readiness Program VKRP The VKRP provides teachers parents and administrators a comprehensive understanding of students school readiness skills at kindergarten entry as well as their skills at the end of kindergarten. 
+																	For more details about the initiative view the VKRP Snapshot and visit the VKRP website. 
+																	The Virginia Department of Education School Readiness School readiness describes the capabilities of children their families schools and communities that will best promote student success in kindergarten and beyond. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginias Focus on School Readiness The years before a child enters kindergarten directly impact a childs ability to thrive in kindergarten and beyond. 
+																	Kindergarten Standards Support for West Virginia College- and Career- Readiness Standards Allows students to work towards mastery of grade level and course content standards while working at individual ability levels Identifies the pre-requisites and enabling skills for each standard. 
+																	Each component children families schools and communities plays an essential role in developing school readiness. 
+																	The Virginia Kindergarten Readiness Program VKRP has developed family resource packets and curated a list of additional resources that provide ideas on how to support readiness skills mathematics self-regulation social skills and literacy at home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On January 14. 
+																	School Readiness means preparing all children for kindergarten by supporting birth-to-age-five programming including the Virginia Preschool Initiative and Early Childhood Special Education. 
+																	New information from the VDOE this week includes. 
+																	The Virginia Kindergarten Readiness Program VKRP builds a more comprehensive understanding of school readiness and success. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Longitudinal studies of these early childhood programs find increased test scores decreased rates of being held back a grade in school and decreased placement in special education among low-income children. 
+																	The Virginia Kindergarten Readiness Program VKRP gives schools teachers and families a complete picture of school readiness in 4 key areas. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/44/44/38/4444387eaf296283be47d5866396ae5d.jpg" data-lightbox="roadtrip" data-title="Pe Poster Tour What S On My Gym Walls Visuals For Physical Education Class Gymc Elementary Physical Education Physical Education Lessons Physical Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/44/44/38/4444387eaf296283be47d5866396ae5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAjAfnKv17RskfRIeNW8y2BSrupRjBfayqoA';" alt="Pe Poster Tour What S On My Gym Walls Visuals For Physical Education Class Gymc Elementary Physical Education Physical Education Lessons Physical Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pe Poster Tour What S On My Gym Walls Visuals For Physical Education Class Gymc Elementary Physical Education Physical Education Lessons Physical Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vkrponline.org/wp-content/uploads/sites/3/2020/04/VA_DOE_new.png" data-lightbox="roadtrip" data-title="Meet The Partners Virginia Kindergarten Readiness Program">
+											<img class="card-img v-image ads-img " src="https://vkrponline.org/wp-content/uploads/sites/3/2020/04/VA_DOE_new.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYYIK68FquwMHo4_-qXOtNqD9O8kRcjuHNlw';" alt="Meet The Partners Virginia Kindergarten Readiness Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet The Partners Virginia Kindergarten Readiness Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://schoolquality.virginia.gov/wp-content/themes/doe_reportcard/includes/img/logo-va-doe.png" data-lightbox="roadtrip" data-title="Virginia State Quality Profile Virginia School Quality Profiles">
+											<img class="card-img v-image ads-img " src="https://schoolquality.virginia.gov/wp-content/themes/doe_reportcard/includes/img/logo-va-doe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5MkUF3zOXkbDUAuJeEnt5iEHAZRgBG8Dj8Q';" alt="Virginia State Quality Profile Virginia School Quality Profiles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia State Quality Profile Virginia School Quality Profiles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/d0/84/68d084bb33e6a74feea16116d70bdc88.jpg" data-lightbox="roadtrip" data-title="These Are Task Cards That Show And Describe A Physical Activity On Each Card The Tasks Are Sim Physical Activities For Kids Physical Activities Preschool Gym">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/d0/84/68d084bb33e6a74feea16116d70bdc88.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5BE6zCb6q_kB5R1IPw7YFEM74q1kGRZ5ONQ';" alt="These Are Task Cards That Show And Describe A Physical Activity On Each Card The Tasks Are Sim Physical Activities For Kids Physical Activities Preschool Gym">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Are Task Cards That Show And Describe A Physical Activity On Each Card The Tasks Are Sim Physical Activities For Kids Physical Activities Preschool Gym</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/76/1c/f9/761cf994a632ee7c9515779eabb8a3d2.jpg" data-lightbox="roadtrip" data-title="Pin On To Teach Progress Monitoring">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/76/1c/f9/761cf994a632ee7c9515779eabb8a3d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfHOnoA5tCUYwqaiTmTOnQCSVhhCKyFjPbcQ';" alt="Pin On To Teach Progress Monitoring">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On To Teach Progress Monitoring</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://content.govdelivery.com/system/images/76867/original/banner_vadoe_v3.png?1583514587" data-lightbox="roadtrip" data-title="Vdoe Readiness Connections March 13 2020">
+											<img class="card-img v-image ads-img " src="https://content.govdelivery.com/system/images/76867/original/banner_vadoe_v3.png?1583514587" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiSuJAJFt5rY6K9uIJLVP2PauWJbZrkn1RyA';" alt="Vdoe Readiness Connections March 13 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vdoe Readiness Connections March 13 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/8d/30/fc8d303851a56cd9d4766d8839eaa029.png" data-lightbox="roadtrip" data-title="Counseling Bulletin Boards For Your Middle School Office Counseling Bulletin Boards Middle School Counseling Middle School Bulletin Boards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/8d/30/fc8d303851a56cd9d4766d8839eaa029.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YHEzd3XWiOiUJ2Kzy64Lb4IG6J1C6RYfXw';" alt="Counseling Bulletin Boards For Your Middle School Office Counseling Bulletin Boards Middle School Counseling Middle School Bulletin Boards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Counseling Bulletin Boards For Your Middle School Office Counseling Bulletin Boards Middle School Counseling Middle School Bulletin Boards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/ae/25/caae25b1a3f30a6731b20db7b28731cc.png" data-lightbox="roadtrip" data-title="Rubric Team Physical Education Lessons Elementary Physical Education Educational Assessment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/ae/25/caae25b1a3f30a6731b20db7b28731cc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqJoXIq_ZwILsscE_kOX7dGcKXe-AMr0FoZQ';" alt="Rubric Team Physical Education Lessons Elementary Physical Education Educational Assessment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rubric Team Physical Education Lessons Elementary Physical Education Educational Assessment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/38/4d/44384d5dbc667462503e42ef7aa7ca98.jpg" data-lightbox="roadtrip" data-title="Pin On Pe Assessment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/38/4d/44384d5dbc667462503e42ef7aa7ca98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7qE7Xw40zpIqENqVq5wecm8PmmeqTmfTNOw';" alt="Pin On Pe Assessment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pe Assessment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/95/e4/2595e467ea311d293e89d6a1ddee72a4.jpg" data-lightbox="roadtrip" data-title="Western Migration Notes And Activities Virginia Studies Sol 6c Virginia Studies Social Studies Study">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/95/e4/2595e467ea311d293e89d6a1ddee72a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoQQ3Fa4LYm9DfSpoonM12I3dqUUolanjTPA';" alt="Western Migration Notes And Activities Virginia Studies Sol 6c Virginia Studies Social Studies Study">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Western Migration Notes And Activities Virginia Studies Sol 6c Virginia Studies Social Studies Study</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://content.govdelivery.com/attachments/fancy_images/VADOE/2020/02/3138595/new-ec-govdelivery-banner_original.jpg" data-lightbox="roadtrip" data-title="Vdoe Readiness Connections August 14 2020">
+											<img class="card-img v-image ads-img " src="https://content.govdelivery.com/attachments/fancy_images/VADOE/2020/02/3138595/new-ec-govdelivery-banner_original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxauaR8hF7MU_9mBt3YgaEDk6kGCzbai6jbQ';" alt="Vdoe Readiness Connections August 14 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vdoe Readiness Connections August 14 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/80/c3/9480c30d5420e063a535f1ea22f60261.png" data-lightbox="roadtrip" data-title="Use Of The Ipad For Students With Significant Intellectual Disabilities Virginia Commonwealth University Training And Technic Disability Student Intellectual">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/80/c3/9480c30d5420e063a535f1ea22f60261.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfVGCcytJAQqkNbzYipxjByk6CglQ8VPxGtA';" alt="Use Of The Ipad For Students With Significant Intellectual Disabilities Virginia Commonwealth University Training And Technic Disability Student Intellectual">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use Of The Ipad For Students With Significant Intellectual Disabilities Virginia Commonwealth University Training And Technic Disability Student Intellectual</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/51/f0/9751f0da016cebcfdb2d3fddf177fe84.png" data-lightbox="roadtrip" data-title="School Counseling Student Check In Tracker School Counselor School Counseling High School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/51/f0/9751f0da016cebcfdb2d3fddf177fe84.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqttOEdCMQTcz4hS8OplEitTBbVnyHvPIOfA';" alt="School Counseling Student Check In Tracker School Counselor School Counseling High School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">School Counseling Student Check In Tracker School Counselor School Counseling High School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/post-gi-bill-housing-allowance.html">Post Gi Bill Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/pressure-to-go-to-college.html">Pressure To Go To College</a></li>
+													<li class="list-group-item"><a href="/providence-college-womens-basketball-recruits.html">Providence College Womens Basketball Recruits</a></li>
+													<li class="list-group-item"><a href="/post-911-veterans-definition.html">Post 911 Veterans Definition</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-yellow-ribbon.html">Post 911 Gi Bill Yellow Ribbon</a></li>
+													<li class="list-group-item"><a href="/post-malone-gi.html">Post Malone Gi</a></li>
+													<li class="list-group-item"><a href="/pt-failure-discharge-gi-bill.html">Pt Failure Discharge Gi Bill</a></li>
+													<li class="list-group-item"><a href="/post-tpa-gi-bleed.html">Post Tpa Gi Bleed</a></li>
+													<li class="list-group-item"><a href="/post-montgomery-gi-bill.html">Post Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/post-ercp-gi-bleed.html">Post Ercp Gi Bleed</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-zip-code.html">Post 911 Gi Bill Zip Code</a></li>
+													<li class="list-group-item"><a href="/pros-and-cons-of-montgomery-gi-bill-and-post-911.html">Pros And Cons Of Montgomery Gi Bill And Post 911</a></li>
+													<li class="list-group-item"><a href="/post-gi-bill-payment-schedule.html">Post Gi Bill Payment Schedule</a></li>
+													<li class="list-group-item"><a href="/post-gi-bill-yellow-ribbon.html">Post Gi Bill Yellow Ribbon</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-who-is-eligible.html">Post 911 Gi Bill Who Is Eligible</a></li>
+													<li class="list-group-item"><a href="/post-gi-bill-transfer.html">Post Gi Bill Transfer</a></li>
+													<li class="list-group-item"><a href="/post-911-veterans-by-state.html">Post 911 Veterans By State</a></li>
+													<li class="list-group-item"><a href="/post-911-transfer-benefits.html">Post 911 Transfer Benefits</a></li>
+													<li class="list-group-item"><a href="/post-911-veterans-statistics.html">Post 911 Veterans Statistics</a></li>
+													<li class="list-group-item"><a href="/post-gi-bill-requirements.html">Post Gi Bill Requirements</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

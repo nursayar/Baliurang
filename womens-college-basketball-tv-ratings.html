@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Tv Ratings - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Tv Ratings",
+  "datePublished": "2021-02-17",
+  "image": "https://cdn.statcdn.com/Statistic/250000/251560-blank-754.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+tv+ratings",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Tv Ratings</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Lacking healthy players. Find local TV listings for your local broadcast cable and satellite providers and watch full episodes of your favorite TV shows online. Womens college basketball coaching clash provides ultimate GirlDad moment. <br>				
+			</p>
+										<a class="badge badge-primary" href="/where-did-gin-originate.html">where did gin originate</a>
+											<a class="badge badge-primary" href="/when-was-the-gi-bill-established.html">when was the gi bill established</a>
+											<a class="badge badge-primary" href="/when-will-i-receive-my-gi-bill-benefits.html">when will i receive my gi bill benefits</a>
+											<a class="badge badge-info" href="/which-gi-bill-is-better.html">which gi bill is better</a>
+											<a class="badge badge-primary" href="/when-did-the-post-911-gi-bill-start.html">when did the post 911 gi bill start</a>
+											<a class="badge badge-light" href="/when-does-my-gi-bill-run-out.html">when does my gi bill run out</a>
+											<a class="badge badge-danger" href="/when-is-the-montgomery-gi-bill-better.html">when is the montgomery gi bill better</a>
+											<a class="badge badge-primary" href="/where-is-my-va-education-benefits-check.html">where is my va education benefits check</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the ideal site.  Our website provides you with hints for seeing the highest quality video and image content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.statista.com/graphic/1/219645/ncaa-basketball-tournament-games-by-tv-ratings.jpg" data-lightbox="roadtrip" data-title="Ncaa March Madness Games Tv Ratings 1975 2019 Statista">
+											<img class="card-img v-image ads-img " src="https://www.statista.com/graphic/1/219645/ncaa-basketball-tournament-games-by-tv-ratings.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNOWaoc2qsSMJTI2T-Fq3OLSsinFEoWOhoIw';" alt="Ncaa March Madness Games Tv Ratings 1975 2019 Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa March Madness Games Tv Ratings 1975 2019 Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.statcdn.com/Statistic/250000/251560-blank-754.png" data-lightbox="roadtrip" data-title="March Madness Ncaa Basketball Tv Viewership 2019 Statista">
+											<img class="card-img v-image ads-img " src="https://cdn.statcdn.com/Statistic/250000/251560-blank-754.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNTf8O7SLccV_oYolEI7GA64DMaNRvTTogdw';" alt="March Madness Ncaa Basketball Tv Viewership 2019 Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">March Madness Ncaa Basketball Tv Viewership 2019 Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sportsmediawatch.com/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGd3d3LnNwb3J0c21lZGlhd2F0Y2guY29tJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDIwJTJGMDMlMkZ0b3BjYmIyMDE5MjAucG5nJmNhY2hlTWFya2VyPTE2MTA5OTczNDMtMzk5MTcmdG9rZW49MTU5NGYxNmJhZjJjYTNmZg.q.png" data-lightbox="roadtrip" data-title="Ootmhqu2zimchm">
+											<img class="card-img v-image ads-img " src="https://www.sportsmediawatch.com/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGd3d3LnNwb3J0c21lZGlhd2F0Y2guY29tJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDIwJTJGMDMlMkZ0b3BjYmIyMDE5MjAucG5nJmNhY2hlTWFya2VyPTE2MTA5OTczNDMtMzk5MTcmdG9rZW49MTU5NGYxNmJhZjJjYTNmZg.q.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfGgLBEmOTaNNIT3QMUTmH8UFQtcG-uvKLgw';" alt="Ootmhqu2zimchm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ootmhqu2zimchm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.statcdn.com/Statistic/290000/290198-blank-754.png" data-lightbox="roadtrip" data-title="Distribution Of Ncaa Basketball Tv Audience By Gender 2013 Statista">
+											<img class="card-img v-image ads-img " src="https://cdn.statcdn.com/Statistic/290000/290198-blank-754.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn4NVFhro5Js_sysjqpht5H3ZwCbvGAwDVPA';" alt="Distribution Of Ncaa Basketball Tv Audience By Gender 2013 Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Distribution Of Ncaa Basketball Tv Audience By Gender 2013 Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/09/04/cc0904db88f81f6bdf64540f79952060.jpg" data-lightbox="roadtrip" data-title="2019 Ncaa Division I Women S Basketball Tournament Tv And Announcer Schedule On Espn Networks Ncaa Final Four Final Four Basketball Tournament">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/09/04/cc0904db88f81f6bdf64540f79952060.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEGe8_9r2ZzlCixBcR8v-b4Ye775opZ0puFA';" alt="2019 Ncaa Division I Women S Basketball Tournament Tv And Announcer Schedule On Espn Networks Ncaa Final Four Final Four Basketball Tournament">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Ncaa Division I Women S Basketball Tournament Tv And Announcer Schedule On Espn Networks Ncaa Final Four Final Four Basketball Tournament</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/15/06/47150637b272993c4e727a19a10483fc.png" data-lightbox="roadtrip" data-title="2012 Ncaa March Madness And Social Media Ncaa March Madness Basketball March Madness Basketball Ncaa March Madness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/15/06/47150637b272993c4e727a19a10483fc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEBXUMKA5XOoHOLGMGNbJAtZsCa6QwDASfdQ';" alt="2012 Ncaa March Madness And Social Media Ncaa March Madness Basketball March Madness Basketball Ncaa March Madness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2012 Ncaa March Madness And Social Media Ncaa March Madness Basketball March Madness Basketball Ncaa March Madness</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://cdn.statcdn.com/Statistic/290000/290198-blank-754.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEBXUMKA5XOoHOLGMGNbJAtZsCa6QwDASfdQ';" alt="2012 Ncaa March Madness And Social Media Ncaa March Madness Basketball March Madness Basketball Ncaa March Madness">
+										<div class="card-body">
+						<h3 class="h5"><b>Womens college basketball transfer rankings for 2020-21 and 2021-22.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball tv ratings</strong>. 
+								
+																	Dosh at the Business at College Sports website explains why womens college basketball programs dont make money - and the answer has nothing to do with attendance or TV ratings. 
+																	Page 1 of 32 1 2 32 Next. 
+																	NASCAR Raceday on FS1 was second with 806000. 
+																	New rankings every week from the Associated Press. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Last Sundays Connecticut-Louisville Womens NCAA Tournament regional final earned a 09 rating and 129 million viewers on ESPN up 80 in ratings and 71 in viewership from last year Louisville-Oregon State. 
+																	Is the Big Ten on the verge of a breakthrough. 
+																	Womens college basketball TV ratings PGA Cadillac Championship NASCAR Raceday Rangers-Blackhawks lead cable sports nets for Sunday March 8 2015. 
+																	Date time TV channel Regional sites named for 2021 and 2022 DI womens basketball championship Follow NCAA Womens Basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	05 753K and up 29 and 28 respectively from 2017 Stanford-Notre Dame. 
+																	Date time TV channel Regional sites named for 2021 and 2022 DI womens basketball championship Follow NCAA Womens Basketball. 
+																	Earlier this week the mens NCAA semifinals on CBS and Turner Sports drew a 25-year high in ratingsthe best TV audience the tournament has seen since its current format started in 1991 according to Deadline. 
+																	The New York Rangers vs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pardon the Interruption averaged 895000 viewers and was tops in adults 18-49 for the day among the cable sports. 
+																	PGA tour coverage of the Cadillac Championship from 1-3p on the Golf Channel led the cable sports networks on Sunday with 879000 viewers. 
+																	Wisconsins blowout win over Iowa topped all cable sports on Wednesday averaging 979000 viewers anda 03 adults 18-49 rating. 
+																	Sundays Baylor-Notre Dame Womens NCAA Tournament national championship earned a 21 rating and 369 million viewers on ESPN up a tick in ratings and 4 in viewership from Notre Dame-Mississippi State last year 20 354M and down 9 and 4 respectively from South Carolina-Mississippi State in 2017 23 383M. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mixed results so far this college basketball season. 
+																	Connecticuts win over Notre Dame in the womens NCAA basketball tournament championship led the cable sports landscape for the day with 3081 million viewers and a 07 adults 18-49 rating but was down 28 from last years 427 million viewers. 
+																	Womens College Basketball Rankings - Week 11 2020-21 2019-20 2018-19 2017-18 2016-17 2015-16 2014-15 2013-14 2012-13 2011-12 2010-11 2009-10 2008-09 2007-08 2006-07 2005-06 2004-05 2003-04 2002. 
+																	The highest-rated game ever was the national championship game matchup of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to make womens college basketball even better in 2021 A competitive UConn-Tennessee game some competition for Baylor in the Big 12 and a race for player of the year would be good for the. 
+																	Below are listed the current Womens NCAA college basketball ratings as computed by the Donchess Inference Index. 
+																	2021 NCAA womens basketball tournament selection show. 
+																	Overnight ratings flat for Womens Final Four Fridays Notre Dame-UConn Womens NCAA Tournament national semifinal delivered a 15 overnight rating on ESPN2 even with the same matchup last year and down 21 from Mississippi State-UConn in 2017 19. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DII Rating This is a NCAA basketball ratings system that is a combination of the Standard Rating and the Aegis RatingThe Aegis Rating is weighted more highly in the beginning of the season whereas the Standard Rating is weighted more highly at the end of the season. 
+																	Womens College Basketball ratings Iowa-Wisconsin PTI LSU-Florida lead Cable Sports TV Ratings for Tuesday January 20 2015. 
+																	2021 NCAA womens basketball tournament selection show. 
+																	Games on ESPN require a subscription which can be purchased here affiliate link. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See where your favorite team is ranked in the AP Top 25 Poll for NCAA Womens College Basketball. 
+																	Womens NCAA Tournament schedule here. 
+																	Lady Vols kneel during anthem after DC. 
+																	While this years March Madness is earning record-high TV ratings for mens games womens college basketball is publicly coping with a persistent problem. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 2019-20 womens college basketball TV schedule on ESPN ESPN2 CBSSN Fox Sports BTN and Pac-12 Network. 
+																	The statistic depicts the highest-rated broadcasts of the NCAA basketball tournament championship games from 1975 to 2019. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.statcdn.com/Statistic/215000/219827-blank-355.png" data-lightbox="roadtrip" data-title="Ncaa Basketball Attendances Statista">
+											<img class="card-img v-image ads-img " src="https://cdn.statcdn.com/Statistic/215000/219827-blank-355.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtlBzWbF4uv9yvi3z9F9oxNERtGL936cD4TQ';" alt="Ncaa Basketball Attendances Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Basketball Attendances Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/FmL9z3M0pzI/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Women S College Basketball Rankings Stanford Is New No 1 In Power 10 Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/FmL9z3M0pzI/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxmdfDacMOcQdKahulaMup5vWZIVP41vlySg';" alt="Women S College Basketball Rankings Stanford Is New No 1 In Power 10 Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S College Basketball Rankings Stanford Is New No 1 In Power 10 Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/f9/7e/b7f97e85652d954431ff2e2560431c9f.png" data-lightbox="roadtrip" data-title="Pin By Grace H On Kelsey Plum Movie Posters Poster Spalding">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/f9/7e/b7f97e85652d954431ff2e2560431c9f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9XHjW2UQwOmHCrPWOKB-m2U6izQTlI_EOcA';" alt="Pin By Grace H On Kelsey Plum Movie Posters Poster Spalding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Grace H On Kelsey Plum Movie Posters Poster Spalding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/7a/ff/757aff996862369035884e6041d70025.jpg" data-lightbox="roadtrip" data-title="Perry Ellis Ku Kansas Basketball Kansas University Basketball Ncaa Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/7a/ff/757aff996862369035884e6041d70025.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-2_gFKxIoluhBrU099oMpMFLG5ki-dbv6g';" alt="Perry Ellis Ku Kansas Basketball Kansas University Basketball Ncaa Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Perry Ellis Ku Kansas Basketball Kansas University Basketball Ncaa Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b7/b4/34/b7b4347e2efc2b70671595032acf06fb.jpg" data-lightbox="roadtrip" data-title="Laettner Calderon Wallpaper In 2020 Wnba Woman Quotes Superstar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b7/b4/34/b7b4347e2efc2b70671595032acf06fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQ9WXma7nphFN3x6lXvqd3dt7pQ2uql_nCA';" alt="Laettner Calderon Wallpaper In 2020 Wnba Woman Quotes Superstar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Laettner Calderon Wallpaper In 2020 Wnba Woman Quotes Superstar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/75/4c/37/754c3788c27d3775dbb00ac594294fed.jpg" data-lightbox="roadtrip" data-title="Tonyamurray Memphis Grizzlies Splash Brothers All Star">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/75/4c/37/754c3788c27d3775dbb00ac594294fed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBb-dvYb9dKiCgGJ0zcY-VuteboaS0INiS2A';" alt="Tonyamurray Memphis Grizzlies Splash Brothers All Star">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tonyamurray Memphis Grizzlies Splash Brothers All Star</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/e2/ff/44e2ffcd647327b6ca68c28f49070b7d.jpg" data-lightbox="roadtrip" data-title="D2 Women S Basketball Conference Tournament Central Http Herosports Com News D2 Womens Basketball Conference Tournam Womens Basketball Basketball Tournaments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/e2/ff/44e2ffcd647327b6ca68c28f49070b7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBR1lcyUVcUAvr7xVgldHjrih2Zm3TTGRDuA';" alt="D2 Women S Basketball Conference Tournament Central Http Herosports Com News D2 Womens Basketball Conference Tournam Womens Basketball Basketball Tournaments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">D2 Women S Basketball Conference Tournament Central Http Herosports Com News D2 Womens Basketball Conference Tournam Womens Basketball Basketball Tournaments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/f5/3b/e1f53b21ef8d31d3fbaa5f0b05acc066.jpg" data-lightbox="roadtrip" data-title="Panthers Earn Wbi Bid Play At Stephen F Austin Thursday Womens Basketball Fitness Inspiration Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/f5/3b/e1f53b21ef8d31d3fbaa5f0b05acc066.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrjMkEOrycNAB2x1w6nLgQTZLwwbYiCNFxpA';" alt="Panthers Earn Wbi Bid Play At Stephen F Austin Thursday Womens Basketball Fitness Inspiration Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Panthers Earn Wbi Bid Play At Stephen F Austin Thursday Womens Basketball Fitness Inspiration Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b5/fa/bd/b5fabd2f6d994a2553f436e51776d649.jpg" data-lightbox="roadtrip" data-title="Ncaa Tournament Committee Reveals Its Top 16 Seeds With Virginia At No 1 Overall Basketball Basketball Games For Kids Basketball Scoreboard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b5/fa/bd/b5fabd2f6d994a2553f436e51776d649.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfceoeX5MqI3AS4a2SWQANQBkAIzEsfgiaCQ';" alt="Ncaa Tournament Committee Reveals Its Top 16 Seeds With Virginia At No 1 Overall Basketball Basketball Games For Kids Basketball Scoreboard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Tournament Committee Reveals Its Top 16 Seeds With Virginia At No 1 Overall Basketball Basketball Games For Kids Basketball Scoreboard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/32/ad/0532ad62682b589528118408574c89d0.jpg" data-lightbox="roadtrip" data-title="828 Wins Walsh 1980 1983 Akron 1984 1989 Cincinnati 1989 2005 Basketball Games Online Basketball Coach College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/32/ad/0532ad62682b589528118408574c89d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMsw3D4wpccIZhDzVODweBmz9NBwbxTC0CHQ';" alt="828 Wins Walsh 1980 1983 Akron 1984 1989 Cincinnati 1989 2005 Basketball Games Online Basketball Coach College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">828 Wins Walsh 1980 1983 Akron 1984 1989 Cincinnati 1989 2005 Basketball Games Online Basketball Coach College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c0/dc/ee/c0dcee26f468b0d9636ec3912a5f6166.jpg" data-lightbox="roadtrip" data-title="Pin By Itc On Saying Knee Injury Sport Outfits Athlete">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c0/dc/ee/c0dcee26f468b0d9636ec3912a5f6166.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1j7yAZIFUNnUNrteOy9RE7j-eJTMWtPSBA';" alt="Pin By Itc On Saying Knee Injury Sport Outfits Athlete">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Itc On Saying Knee Injury Sport Outfits Athlete</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/f2/28/f7f228fa6f909f248b225ccc09cafcc4.jpg" data-lightbox="roadtrip" data-title="Warriors Parade 2017 Route Date Schedule Tv Info And More Bleacher Report Nba Finals Game Golden State Warriors Golden State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/f2/28/f7f228fa6f909f248b225ccc09cafcc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr56KPRUbaPXg_oEeayqgh2tD84sJX9GEttg';" alt="Warriors Parade 2017 Route Date Schedule Tv Info And More Bleacher Report Nba Finals Game Golden State Warriors Golden State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warriors Parade 2017 Route Date Schedule Tv Info And More Bleacher Report Nba Finals Game Golden State Warriors Golden State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.statcdn.com/Statistic/290000/290221-blank-355.png" data-lightbox="roadtrip" data-title="Age Breakdown Of Regular Season Ncaa Men S Basketball Tv Audience 2014 Statista">
+											<img class="card-img v-image ads-img " src="https://cdn.statcdn.com/Statistic/290000/290221-blank-355.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2jCWG_bdhyqrytIsXUIqynY5QdpKwziKBMw';" alt="Age Breakdown Of Regular Season Ncaa Men S Basketball Tv Audience 2014 Statista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Age Breakdown Of Regular Season Ncaa Men S Basketball Tv Audience 2014 Statista</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/north-carolina-va-educational-benefits.html">North Carolina Va Educational Benefits</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-uniform-rules.html">Ncaa Womens Basketball Uniform Rules</a></li>
+													<li class="list-group-item"><a href="/northwestern-college-womens-basketball-roster.html">Northwestern College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-standings-by-conference.html">Ncaa Womens Basketball Standings By Conference</a></li>
+													<li class="list-group-item"><a href="/notre-dame-boston-college-womens-basketball.html">Notre Dame Boston College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/odessa-college-womens-basketball-coach.html">Odessa College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-college-basketball-final-four.html">Ncaa Womens College Basketball Final Four</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-tournament-vegas-odds.html">Ncaa Womens Basketball Tournament Vegas Odds</a></li>
+													<li class="list-group-item"><a href="/nyack-college-womens-basketball-schedule.html">Nyack College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-texas.html">Ncaa Womens Basketball Texas</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-tournament-division-3.html">Ncaa Womens Basketball Tournament Division 3</a></li>
+													<li class="list-group-item"><a href="/nyack-college-womens-basketball-roster.html">Nyack College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/nice-college-graduation-gifts-for-her.html">Nice College Graduation Gifts For Her</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-timeouts.html">Ncaa Womens Basketball Timeouts</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-gymnastics-schedule-2021.html">Ncaa Womens Gymnastics Schedule 2021</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-virginia-tech.html">Ncaa Womens Basketball Virginia Tech</a></li>
+													<li class="list-group-item"><a href="/odds-for-womens-college-basketball.html">Odds For Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-tallest-player.html">Ncaa Womens Basketball Tallest Player</a></li>
+													<li class="list-group-item"><a href="/new-gi-bill-eligibility.html">New Gi Bill Eligibility</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-scoring-leaders-all-time.html">Ncaa Womens Basketball Scoring Leaders All Time</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Forever Gifts For Her - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Forever Gifts For Her",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/53/65/4a/53654a34e6a854a5fab6a56e05e6509b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=forever+gifts+for+her",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Forever Gifts For Her</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Elemis Skin Solution Facials. Forever Gifts Grand Prairie TX. Find thoughtful Valentines gifts for her with inspiration and ideas from the UKs best small creative businesses. <br>				
+			</p>
+										<a class="badge badge-dark" href="/how-to-celebrate-a-college-graduation-during-quarantine.html">how to celebrate a college graduation during quarantine</a>
+											<a class="badge badge-danger" href="/how-to-get-full-bah-gi-bill.html">how to get full bah gi bill</a>
+											<a class="badge badge-light" href="/how-to-go-to-college-early.html">how to go to college early</a>
+											<a class="badge badge-warning" href="/how-to-go-to-kings-college-hospital.html">how to go to kings college hospital</a>
+											<a class="badge badge-light" href="/how-to-give-30-day-notice.html">how to give 30 day notice</a>
+											<a class="badge badge-info" href="/how-to-enter-the-military-base-in-gta-5-undetected.html">how to enter the military base in gta 5 undetected</a>
+											<a class="badge badge-success" href="/how-to-build-a-yugioh-deck-from-scratch.html">how to build a yugioh deck from scratch</a>
+											<a class="badge badge-dark" href="/how-to-go-to-st-xavier-college.html">how to go to st xavier college</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the ideal blog.  Our site provides you with hints for viewing the maximum quality video and picture content, search and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/5f/98/ea5f98a829e664da075d6e5c699cc9c8.jpg" data-lightbox="roadtrip" data-title="Tweet Hearts Forever Gifts For Her Love Gifts For Her Forever Gifts Love Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/5f/98/ea5f98a829e664da075d6e5c699cc9c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt9OIYKbq97wBFeUlUl4bw74oPHEsebljmwA';" alt="Tweet Hearts Forever Gifts For Her Love Gifts For Her Forever Gifts Love Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tweet Hearts Forever Gifts For Her Love Gifts For Her Forever Gifts Love Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/8d/26/6a8d26cf7c3606ed62b5f5aeb7040e62.jpg" data-lightbox="roadtrip" data-title="24k Gold Dipped Eternity Rose Give The Ultimate Gift Of Romanceguaranteed To Last Forever Gifts Fo In 2020 Girlfriend Gifts Gifts For My Boyfriend Girlfriend Jewelry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/8d/26/6a8d26cf7c3606ed62b5f5aeb7040e62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR0ZaKdgcQKFE1lNd8xpU3w7NQ7OQo0Sim7g';" alt="24k Gold Dipped Eternity Rose Give The Ultimate Gift Of Romanceguaranteed To Last Forever Gifts Fo In 2020 Girlfriend Gifts Gifts For My Boyfriend Girlfriend Jewelry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">24k Gold Dipped Eternity Rose Give The Ultimate Gift Of Romanceguaranteed To Last Forever Gifts Fo In 2020 Girlfriend Gifts Gifts For My Boyfriend Girlfriend Jewelry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e0/b7/a3/e0b7a3d32d8eb0d357c14aff68225054.jpg" data-lightbox="roadtrip" data-title="Defaith 24k Gold Dipped Real Rose Forever Gifts For Her Anniversary Valentine S Day Christmas Natural Sh Forever Gifts Valentines Gifts For Her Gifts For Her">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e0/b7/a3/e0b7a3d32d8eb0d357c14aff68225054.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThqo9wb9UvHR5oJTqwNgtJ1Dl2ZejRVjTyEQ';" alt="Defaith 24k Gold Dipped Real Rose Forever Gifts For Her Anniversary Valentine S Day Christmas Natural Sh Forever Gifts Valentines Gifts For Her Gifts For Her">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defaith 24k Gold Dipped Real Rose Forever Gifts For Her Anniversary Valentine S Day Christmas Natural Sh Forever Gifts Valentines Gifts For Her Gifts For Her</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6e/04/88/6e0488639de890ec4008ec1054b68945.jpg" data-lightbox="roadtrip" data-title="I Love You Forever Gifts For Her Christmas Love Hearts Jewelry December Birthstone Blue Topaz Necklace Anniversary Birthday Gifts For Women From Hughdeal4less Blue Topaz Necklace Sterling Silver Heart Necklace Forever">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6e/04/88/6e0488639de890ec4008ec1054b68945.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWGsQkv2BAvL3-Q5iWZ8fTyfFvIBhq_awdqQ';" alt="I Love You Forever Gifts For Her Christmas Love Hearts Jewelry December Birthstone Blue Topaz Necklace Anniversary Birthday Gifts For Women From Hughdeal4less Blue Topaz Necklace Sterling Silver Heart Necklace Forever">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love You Forever Gifts For Her Christmas Love Hearts Jewelry December Birthstone Blue Topaz Necklace Anniversary Birthday Gifts For Women From Hughdeal4less Blue Topaz Necklace Sterling Silver Heart Necklace Forever</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/5c/da/2b5cda72a24754770cb0cbc1abc3ea78.jpg" data-lightbox="roadtrip" data-title="Best Friends Forever Gifts Friends Forever Funny Diy Best Friend Gifts Best Friend Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/5c/da/2b5cda72a24754770cb0cbc1abc3ea78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGg4Id3LogtPY3wniP0zGO2J-DLfntO9nJXw';" alt="Best Friends Forever Gifts Friends Forever Funny Diy Best Friend Gifts Best Friend Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Friends Forever Gifts Friends Forever Funny Diy Best Friend Gifts Best Friend Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/d8/55/ced855cfe62435a4aceb6a9997dae7ab.jpg" data-lightbox="roadtrip" data-title="Defaith Real Rose 24k Gold Dipped Forever Gifts For Her Valentines Day Love Gifts For Her Gold Dipped Rose Forever Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/d8/55/ced855cfe62435a4aceb6a9997dae7ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS1L5Tb0hY6AvnyWnc1fcK2m45g12zC1Vbew';" alt="Defaith Real Rose 24k Gold Dipped Forever Gifts For Her Valentines Day Love Gifts For Her Gold Dipped Rose Forever Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defaith Real Rose 24k Gold Dipped Forever Gifts For Her Valentines Day Love Gifts For Her Gold Dipped Rose Forever Gifts</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ea/5f/98/ea5f98a829e664da075d6e5c699cc9c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS1L5Tb0hY6AvnyWnc1fcK2m45g12zC1Vbew';" alt="Defaith Real Rose 24k Gold Dipped Forever Gifts For Her Valentines Day Love Gifts For Her Gold Dipped Rose Forever Gifts">
+										<div class="card-body">
+						<h3 class="h5"><b>81 likes 1 talking about this.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Forever gifts for her</strong>. 
+								
+																	Oversized Organza Scrunchies. 
+																	Oversized Organza Scrunchies Add to cart. 
+																	Gifts for him. 
+																	Weve added new gifts to this list including the Parveen 12 Brass Tailor Scissors the KitchenAid Artisan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Friends forever never apart friendship gift best friend gift long distance gifts for her colleague leaving present wooden heart gift MantaMakesLtd 5 out of 5 stars 6920. 
+																	1000 Skinny Dip Jewelry Sabyle Post Earring Add to cart. 
+																	Call 1888496-6530 to order yours now. 
+																	Home Gifts For Her Whatever your budget weve got a gift for every lady. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Personalised presents for her are a simple way to get across a thoughtful message whether your words go on a pillow notebook or mug. 
+																	Home Gifts for her. 
+																	Ill say go for handmade thing. 
+																	Gifts for Her Personalized gifts for her including medical ID bracelets for women engraved promise rings and many more engraved gifts for her. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Heres a few ideas to get you started - browse the rest of our website for more lovely gifts for ladies. 
+																	11 Gifts Thatll Last Forever or Extremely Close Updated December 2 2020. 
+																	From bath gift sets to reed diffusers sculptures for the home jewellery fragrance gift sets and more. 
+																	Offer Of The Month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gifts for her. 
+																	Elemis BIOTEC Skin Treatments. 
+																	Charlotte Gomez BuzzFeed We hope you love the products we recommend. 
+																	Gifts for her are generally more difficult to get right than gifts for guys with a near-overwhelming amount of products to choose from and an always-discerning recipient to take. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can make diary for her. 
+																	They are worth every penny. 
+																	Gifts For Her Home Gifts For Her Gifts For Her Showing 125 of 68 results. 
+																	Create personalised birthday gifts that will sweep her off her feet at Forever Bespoke. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Treat the Special Woman in your life to Personalised and Inspirational Gifts that make lasting keepsake presents for life. 
+																	Nov 25 2013 - Forever 21 is the authority on fashion the go-to retailer for the latest trends styles the hottest deals. 
+																	3D Shark Wine Glass 1295. 
+																	29 Amazing Gifts Thatll Basically Last Forever. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Just so you know. 
+																	Shop small this year and treat her to handcrafted jewellery made by hand to be loved forever. 
+																	GIFTS FOR FOREVER - Gifts for Men and Women Gifts for Him and Her Best Friend Wife Mom Nana Grandmother Nani Husband Dad Papa Grandpa Or Grandfather T. 
+																	From bath gift sets to reed diffusers sculptures for the home jewellery fragrance gift sets and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A bar of handmade chocolate is sure to win her heart especially when its decorated with your own meaningful message. 
+																	65 Apothecary. 
+																	Make handmade gift for her. 
+																	New Mama. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Personalised Forever Day Print - Custom Wall Art Frame - Wedding Anniversary Gifts - For Him Her Men Women Couples Husband Wife VioletGraceUK From shop VioletGraceUK. 
+																	3D Skull Wine Glass 2500. 
+																	Heres a few ideas to get you started - browse the rest of our website for more lovely gifts for ladies. 
+																	Treasure precious moments with a personalised print or a special piece of keep-forever jewellery. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whatever your budget weve got a gift for every lady. 
+																	3D Skull Mug 1495. 
+																	ForeverGifts personalized rings inexpensive personalized gifts engraved promise rings pocket knives cufflinks more. 
+																	Elemis Anti Aging Touch Facials. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Special Occasions such as Birthdays and Landmark Anniversaries call for unique Gift Ideas. 
+																	Shop Forever Bespoke for engraved trinket boxes printed cotton shoulder bags customised mugs jewellery and so much more. 
+																	Shop dresses tops tees leggings more. 
+																	Forever Gifts Inc designs brands and sources products for outdoor living solar lighting home decor seasonal assortments and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Write your precious moments with dates if you. 
+																	For those in need of some rest we have down-time indulgence from scented candles to artisan gin. 
+																	Whether youre hunting for the perfect birthday gift for your mom sister best friend or wife you can create personalised birthday presents engraved with heartfelt words or a funny saying to really brighten up her day. 
+																	Card article You can gift her all her photos that you have your couple photos too. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Skinny Dip Jewelry Sabyle Post Earring. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/46/28/7d4628fcbfbcfe518efae6e44ab1824b.png" data-lightbox="roadtrip" data-title="To My Gorgeous Girlfriend I Love You Forever Luxury Heart Shape Necklace Anniversary Gift For Wife Girlfriend Gifts Personalised Gifts For Girlfriend Presents For Girlfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/46/28/7d4628fcbfbcfe518efae6e44ab1824b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHxFXZxCaMJ5p1fqz2trgIMa30RukUDMl3cA';" alt="To My Gorgeous Girlfriend I Love You Forever Luxury Heart Shape Necklace Anniversary Gift For Wife Girlfriend Gifts Personalised Gifts For Girlfriend Presents For Girlfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To My Gorgeous Girlfriend I Love You Forever Luxury Heart Shape Necklace Anniversary Gift For Wife Girlfriend Gifts Personalised Gifts For Girlfriend Presents For Girlfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/23/ea/5723ea68683aa7163fa5fa2991cf704b.jpg" data-lightbox="roadtrip" data-title="Free Shipping Gift For Women Owl Necklace Or Keyring Owl Forever Gifts Gifts For Her Gifts For Friends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/23/ea/5723ea68683aa7163fa5fa2991cf704b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7amwhPmpRDBXgaJKn4d3TifQYL4PnRnU55g';" alt="Free Shipping Gift For Women Owl Necklace Or Keyring Owl Forever Gifts Gifts For Her Gifts For Friends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Shipping Gift For Women Owl Necklace Or Keyring Owl Forever Gifts Gifts For Her Gifts For Friends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/65/4a/53654a34e6a854a5fab6a56e05e6509b.jpg" data-lightbox="roadtrip" data-title="Real Rose 24k Gold Dipped With Crescent Stand Forever Gifts For Her Valentines In 2020 Forever Gifts Gifts For Her Girlfriend Valentines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/65/4a/53654a34e6a854a5fab6a56e05e6509b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP95T9Hxv4FAhBDzI8xkV9m6R5jdfPyLj13A';" alt="Real Rose 24k Gold Dipped With Crescent Stand Forever Gifts For Her Valentines In 2020 Forever Gifts Gifts For Her Girlfriend Valentines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Rose 24k Gold Dipped With Crescent Stand Forever Gifts For Her Valentines In 2020 Forever Gifts Gifts For Her Girlfriend Valentines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/9d/a2/e79da227b9ab88fe690832810d850f52.jpg" data-lightbox="roadtrip" data-title="We Will Be Friends Forever Keyring Personalized Engraved Etsy Engraved Keychain Engraved Keepsakes Personalized Gifts For Her">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/9d/a2/e79da227b9ab88fe690832810d850f52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7gRLn0_eSBDYjRr7bC_WdK0fmH4OGN9OzHQ';" alt="We Will Be Friends Forever Keyring Personalized Engraved Etsy Engraved Keychain Engraved Keepsakes Personalized Gifts For Her">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Will Be Friends Forever Keyring Personalized Engraved Etsy Engraved Keychain Engraved Keepsakes Personalized Gifts For Her</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/29/88/4f/29884fb4fbd5615a62fc70f2ba525d2a.jpg" data-lightbox="roadtrip" data-title="Defaith Real Rose 24k Gold Dipped Forever Gifts For Her Valentines Day Anniversary Wedding And Proposal King Gol Forever Gifts 24k Gold Rose Valentine Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/29/88/4f/29884fb4fbd5615a62fc70f2ba525d2a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaCuDJ3_gDfPdd9KN6p8e5CVuGINAtVgH5DA';" alt="Defaith Real Rose 24k Gold Dipped Forever Gifts For Her Valentines Day Anniversary Wedding And Proposal King Gol Forever Gifts 24k Gold Rose Valentine Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defaith Real Rose 24k Gold Dipped Forever Gifts For Her Valentines Day Anniversary Wedding And Proposal King Gol Forever Gifts 24k Gold Rose Valentine Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/23/1f/1d231fb4968d5a128ca52f8d71b6b7a2.jpg" data-lightbox="roadtrip" data-title="Defaith 24k Gold Dipped Real Rose Forever Gifts For Her Anniversary Valentine鈥檚 Day Christmas Natural Shape Forever Gifts Valentines Gifts For Her Valentines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/23/1f/1d231fb4968d5a128ca52f8d71b6b7a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStCxyWwHCdH8vv8v0xAiSPiLLWYq8DU-irKQ';" alt="Defaith 24k Gold Dipped Real Rose Forever Gifts For Her Anniversary Valentine鈥檚 Day Christmas Natural Shape Forever Gifts Valentines Gifts For Her Valentines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defaith 24k Gold Dipped Real Rose Forever Gifts For Her Anniversary Valentine鈥檚 Day Christmas Natural Shape Forever Gifts Valentines Gifts For Her Valentines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/77/25/ba/7725baaf2aa1522c0acc79ab97b8c424.jpg" data-lightbox="roadtrip" data-title="Toqi Gold Plated Rose 24k Gold Dipped Rose Flowers Forever Gifts For Her Valentine S Day Anniversary Wedding Gold Dipped Rose Gold Dipped Rose Gold Plates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/77/25/ba/7725baaf2aa1522c0acc79ab97b8c424.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzHZooC0lz_aoglMGqHBHK_1RC1J2CciRDqQ';" alt="Toqi Gold Plated Rose 24k Gold Dipped Rose Flowers Forever Gifts For Her Valentine S Day Anniversary Wedding Gold Dipped Rose Gold Dipped Rose Gold Plates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Toqi Gold Plated Rose 24k Gold Dipped Rose Flowers Forever Gifts For Her Valentine S Day Anniversary Wedding Gold Dipped Rose Gold Dipped Rose Gold Plates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/d8/ea/a0d8eab3274cf85488d60b495bfcf52e.jpg" data-lightbox="roadtrip" data-title="Forever Gift Jar Valentine S Day Gift Wife Gift Etsy Sentimental Gifts Girlfriend Gifts Forever Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/d8/ea/a0d8eab3274cf85488d60b495bfcf52e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl6PffYPOCpSt_0PEZFAtH4F-idwojCMBUVQ';" alt="Forever Gift Jar Valentine S Day Gift Wife Gift Etsy Sentimental Gifts Girlfriend Gifts Forever Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Forever Gift Jar Valentine S Day Gift Wife Gift Etsy Sentimental Gifts Girlfriend Gifts Forever Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/83/1d/bd/831dbd85ffd0e485ebd5113c7660f360.jpg" data-lightbox="roadtrip" data-title="Defaith Real Rose 9 Beauty And The Beast Forever Gifts For Her Anniversary Valentine S Day Moth Leather Anniversary Gift 3rd Anniversary Gifts Forever Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/83/1d/bd/831dbd85ffd0e485ebd5113c7660f360.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DAp3ZTct0xfA73JlfT1MWr1C0sUqRdGXSA';" alt="Defaith Real Rose 9 Beauty And The Beast Forever Gifts For Her Anniversary Valentine S Day Moth Leather Anniversary Gift 3rd Anniversary Gifts Forever Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defaith Real Rose 9 Beauty And The Beast Forever Gifts For Her Anniversary Valentine S Day Moth Leather Anniversary Gift 3rd Anniversary Gifts Forever Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d3/0a/fd/d30afdb2d7043bd0dcc68db75657df7e.jpg" data-lightbox="roadtrip" data-title="24k Gold Dipped Eternity Rose Gold Dipped Girlfriend Gifts 24k Gold">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d3/0a/fd/d30afdb2d7043bd0dcc68db75657df7e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAaY5i42XNojP03uyqfb85X3PhjBWzQXLHg';" alt="24k Gold Dipped Eternity Rose Gold Dipped Girlfriend Gifts 24k Gold">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">24k Gold Dipped Eternity Rose Gold Dipped Girlfriend Gifts 24k Gold</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/e8/7b/36e87b38fddaef9fb3e933ea74c80317.jpg" data-lightbox="roadtrip" data-title="Kdsdvmeimovgpm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/e8/7b/36e87b38fddaef9fb3e933ea74c80317.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYg8BqBFjpHNuIghYyt0Sxugh1JDv7v7dvZQ';" alt="Kdsdvmeimovgpm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kdsdvmeimovgpm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2e/fe/7d/2efe7d9a763206d451db26f974f1a75b.jpg" data-lightbox="roadtrip" data-title="Who Do You Love To The Moon And Back Grandma Necklace Great Grandma Gifts Mom Necklaces Grandma Jewelr Girl Power Gifts Best Gifts For Her Forever Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2e/fe/7d/2efe7d9a763206d451db26f974f1a75b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAyL4f2tGnQj0qIFeMo6Pnv1QmIV1V6IGzA';" alt="Who Do You Love To The Moon And Back Grandma Necklace Great Grandma Gifts Mom Necklaces Grandma Jewelr Girl Power Gifts Best Gifts For Her Forever Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Do You Love To The Moon And Back Grandma Necklace Great Grandma Gifts Mom Necklaces Grandma Jewelr Girl Power Gifts Best Gifts For Her Forever Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c4/ab/0c/c4ab0c96a650b94a35b019b54a57da9b.jpg" data-lightbox="roadtrip" data-title="Ad Ebay Link Premium Heart Necklace Anniversary Love Gift For Wife You Re My Queen Forever Gifts For Wife Love Gifts Gifts For Husband">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c4/ab/0c/c4ab0c96a650b94a35b019b54a57da9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_2E3s1OYX9vGgmPKzvXMckap7NQbgISf0A';" alt="Ad Ebay Link Premium Heart Necklace Anniversary Love Gift For Wife You Re My Queen Forever Gifts For Wife Love Gifts Gifts For Husband">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ad Ebay Link Premium Heart Necklace Anniversary Love Gift For Wife You Re My Queen Forever Gifts For Wife Love Gifts Gifts For Husband</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/jag-college-gifts.html">Jag College Gifts</a></li>
+													<li class="list-group-item"><a href="/keuka-college-womens-basketball-live-stream.html">Keuka College Womens Basketball Live Stream</a></li>
+													<li class="list-group-item"><a href="/is-there-a-gi-bill-today.html">Is There A Gi Bill Today</a></li>
+													<li class="list-group-item"><a href="/is-gi-bill-worth-it.html">Is Gi Bill Worth It</a></li>
+													<li class="list-group-item"><a href="/jobs-to-go-to-college-for-that-make-good-money.html">Jobs To Go To College For That Make Good Money</a></li>
+													<li class="list-group-item"><a href="/junior-college-womens-basketball-player-rankings.html">Junior College Womens Basketball Player Rankings</a></li>
+													<li class="list-group-item"><a href="/juniata-college-womens-basketball-coach.html">Juniata College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/kansas-christian-college-womens-basketball-roster.html">Kansas Christian College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/khatakgi-college-ki-chori-remix-song.html">Khatakgi College Ki Chori Remix Song</a></li>
+													<li class="list-group-item"><a href="/ithaca-college-womens-basketball.html">Ithaca College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/is-it-expensive-to-go-to-college-in-europe.html">Is It Expensive To Go To College In Europe</a></li>
+													<li class="list-group-item"><a href="/is-the-gi-bill-a-one-time-use.html">Is The Gi Bill A One Time Use</a></li>
+													<li class="list-group-item"><a href="/junior-college-womens-basketball-near-me.html">Junior College Womens Basketball Near Me</a></li>
+													<li class="list-group-item"><a href="/kansas-city-community-college-womens-basketball.html">Kansas City Community College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/kentucky-womens-college-basketball-schedule.html">Kentucky Womens College Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/kentucky-va-benefits.html">Kentucky Va Benefits</a></li>
+													<li class="list-group-item"><a href="/kansas-city-kansas-community-college-womens-basketball-schedule.html">Kansas City Kansas Community College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/is-the-gi-bill-transferable.html">Is The Gi Bill Transferable</a></li>
+													<li class="list-group-item"><a href="/is-going-to-college-in-europe-cheaper.html">Is Going To College In Europe Cheaper</a></li>
+													<li class="list-group-item"><a href="/is-my-gi-bill-expired.html">Is My Gi Bill Expired</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

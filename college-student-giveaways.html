@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Student Giveaways - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Student Giveaways",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/b7/5f/d7/b75fd79b1423a1de3eeb68be1ee33dad.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+student+giveaways",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Student Giveaways</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Custom Backpacks Like tote bags backpacks is the perfect promotional giveaway idea for college students because they are a useful staple for any student. Motivators makes marketing to college students easier than ever by connecting you with the items they need and the trends they love. Promotional giveaways giveaways for college freshman new student orientation get your colleges name noticedfast easy in a way that meets your marketing budget100 Risk-FREE. <br>				
+			</p>
+										<a class="badge badge-dark" href="/college-gymnastics-tv-schedule.html">college gymnastics tv schedule</a>
+											<a class="badge badge-dark" href="/college-homemade-gifts.html">college homemade gifts</a>
+											<a class="badge badge-success" href="/college-promotional-items.html">college promotional items</a>
+											<a class="badge badge-info" href="/college-life-gifts.html">college life gifts</a>
+											<a class="badge badge-danger" href="/college-ra-gifts.html">college ra gifts</a>
+											<a class="badge badge-dark" href="/college-of-idaho-womens-basketball-roster.html">college of idaho womens basketball roster</a>
+											<a class="badge badge-dark" href="/college-gymnastics-uniforms.html">college gymnastics uniforms</a>
+											<a class="badge badge-primary" href="/college-gymnastics-teams-near-me.html">college gymnastics teams near me</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the ideal blog.  Our website gives you hints for viewing the highest quality video and image content, hunt and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this video that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/f9/e5/36f9e5c1174fe3628f258b13b25d1f73.jpg" data-lightbox="roadtrip" data-title="10 Best College Fair Giveaways That Will Set You Apart A Student S Take College Fun College Activities College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/f9/e5/36f9e5c1174fe3628f258b13b25d1f73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVodNyNnFIsekYImFmlBo7zlfz3dbK_Qdchg';" alt="10 Best College Fair Giveaways That Will Set You Apart A Student S Take College Fun College Activities College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Best College Fair Giveaways That Will Set You Apart A Student S Take College Fun College Activities College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/0a/ef/640aef7d0c3ef378ed5f1b73e7cb482f.jpg" data-lightbox="roadtrip" data-title="10 Best College Fair Giveaways That Will Set You Apart A Student S Take College Fun Student Giveaways College Recruiting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/0a/ef/640aef7d0c3ef378ed5f1b73e7cb482f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIPlhZwdYZQxmR7DglEz71vqtoDd5bPP09Jg';" alt="10 Best College Fair Giveaways That Will Set You Apart A Student S Take College Fun Student Giveaways College Recruiting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Best College Fair Giveaways That Will Set You Apart A Student S Take College Fun Student Giveaways College Recruiting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/48/91/0f4891f1d68e2f393c5d7d0f209068ad.png" data-lightbox="roadtrip" data-title="Top College Giveaways For Students Epromos Giveaway Student College Marketing Campaign">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/48/91/0f4891f1d68e2f393c5d7d0f209068ad.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0mZ7a2u9yBWx_qBzrs1xX50-36mMhT8yP8A';" alt="Top College Giveaways For Students Epromos Giveaway Student College Marketing Campaign">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top College Giveaways For Students Epromos Giveaway Student College Marketing Campaign</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/52/7c/33527c9347d8a5b14fc5736dd56f0f59.jpg" data-lightbox="roadtrip" data-title="10 Best College Fair Giveaways That Will Set You Apart A Student S Take College Fun College 10 Things">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/52/7c/33527c9347d8a5b14fc5736dd56f0f59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDLfZOVfSWxjqTrZVymLfxo3cxgVJSuFOSFQ';" alt="10 Best College Fair Giveaways That Will Set You Apart A Student S Take College Fun College 10 Things">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Best College Fair Giveaways That Will Set You Apart A Student S Take College Fun College 10 Things</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/a7/59/4da759614e289ce84a7b9076a851135e.jpg" data-lightbox="roadtrip" data-title="College University Student Promotional Items Eco Promotional Products Eco Friendly Promotional Products University Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/a7/59/4da759614e289ce84a7b9076a851135e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUjHUIM8x8ANDtQIaDOwLgtPStRQj02DYMzA';" alt="College University Student Promotional Items Eco Promotional Products Eco Friendly Promotional Products University Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College University Student Promotional Items Eco Promotional Products Eco Friendly Promotional Products University Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/51/a7/f151a791f819a94db1fe6bbac2e12a98.jpg" data-lightbox="roadtrip" data-title="12 College Giveaway Ideas For Orientation Student Life And Spirit Week Bagmasters Blog In 2020 Student Giveaways Giveaway College Event">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/51/a7/f151a791f819a94db1fe6bbac2e12a98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbUYrzjPdiXYJRMQVtcdnJTFhY-mD6ph7uPw';" alt="12 College Giveaway Ideas For Orientation Student Life And Spirit Week Bagmasters Blog In 2020 Student Giveaways Giveaway College Event">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 College Giveaway Ideas For Orientation Student Life And Spirit Week Bagmasters Blog In 2020 Student Giveaways Giveaway College Event</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/236x/ed/8e/40/ed8e408f6d904d929d2c5c6d70e75951.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbUYrzjPdiXYJRMQVtcdnJTFhY-mD6ph7uPw';" alt="12 College Giveaway Ideas For Orientation Student Life And Spirit Week Bagmasters Blog In 2020 Student Giveaways Giveaway College Event">
+										<div class="card-body">
+						<h3 class="h5"><b>Space is limited for college students so choose giveaway items that are useful and but still throw in a little fun.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College student giveaways</strong>. 
+								
+																	Whether back to school or a graduation ceremony Swag can help you find the perfect student promotional giveaway idea beyond the usual flash drive stylus pen or keychain so to get more info drop us a line via email or social media and let us help you find the perfect item for your school. 
+																	So whether your campus is setting the bar for incoming freshman or welcoming students for your MBA program campus giveaways are a big part of helping them get organized while showing school spirit as well as concern for their health and safety. 
+																	Make the most of your marketing dollar by giving them merchandise they will cherish. 
+																	One of the best and most basic college giveaway ideas are notebooks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Every great idea needs to be accompanied by some great swag. 
+																	When considering what products to buy its important to ensure that they will keep your interest help you study from home or help you stay focused and mentally stimulated. 
+																	Motivators carries a large selection of top of the line items that can help impress your students and their families. 
+																	Collegiate life may be different in 2020 but its still well collegiate life. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	T-shirts are the perpetually popular giveaway so show some school spirit with a custom branded college t-shirt. 
+																	Or you can inspire prospective students with an upbeat design like your schools mascot. 
+																	After all we know thinking of some good suggestions for college student giveaway ideas can be tricky at times. 
+																	This drawstring bag is the perfect remedy for college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Students love cool and useful swag. 
+																	Sep 24 2020 - Pick the best promotional college orientation giveaways based on actual college students opinions. 
+																	Since the beginning of time students have always used notebooks to jot down notes lectures and reminders. 
+																	When the trial ends Amazon Student is 50 off the price of Amazon Prime. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Even with the continuous advancement of technology plenty of people still prefer to write down their notes on a piece of paper. 
+																	Business owners who want to take it to the next level can visit 1338Tryon for excellent products and services to help spread brand awareness. 
+																	Think about stuff they will be buying anyway and you have a come up with a successful. 
+																	You get instant video music plus free two-day shipping. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These products do just that and more. 
+																	See more ideas about college orientation college college students. 
+																	1 Hydro Powered Clock. 
+																	Another one of those trendy tech giveaways that college students love. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your t-shirt design can be classic and simple with your schools name and logo. 
+																	College Student Campus Life Promo Giveaways. 
+																	Greet your new student body with great orientation giveaways. 
+																	Promotional Swag for College Students. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	04666380 England and Wales VAT No. 
+																	110 lowest price match. 
+																	Motivators hand-picked selection of giveaways is among the best for marketing to college students. 
+																	Scroll down the page to find all manner of stuff you can get for free if you are a collegeuniversity student or even still at school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These college giveaways can help drive traffic and bring significant attention to the companys brand. 
+																	Student Free Stuff We know its not easy being a student these days with loans and tuition fees to find so getting the odd freebie should help ease the strain. 
+																	A great product with a great idea will be sure to set you apart. 
+																	Many colleges and universities select drawstring bags as a giveaway item but the quality of that bag is directly proportional to the amount of times a college student will actually use it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You cant go wrong with a classic drawstring bag. 
+																	Cheap pens will just be thrown away or misplaced. 
+																	Offering free items is the best way to capture the attention of college students. 
+																	Living in the dorm or an apartment will mean limited elbow room so smaller items and everyday-use items are the ones that will get used the most. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Make a good impression on your new college or university class with useful orientation gifts theyll love. 
+																	806 8067 22 Registered Office. 
+																	These PopSockets are everywhere around campus. 
+																	This website uses cookies so that we can provide you with the best user experience possible. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MARCO has been providing unbeatable prices quality service to colleges universities since 1964. 
+																	Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful. 
+																	The Student Room Get Revising and Marked by Teachers are trading names of The Student Room Group Ltd. 
+																	I always find myself wishing I had an extra bag but the bulkiness of typical duffels and purses arent compatible with dorm storage limitations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Now take that great idea and apply it to some great swag. 
+																	Amazon Student You can get Amazon Student for 6-months absolutely free which gives you a lot of the same benefits as Amazon Prime without the 99 a year price tag. 
+																	Commuting students are always in need of car items that will give your logo many miles every day. 
+																	International House Queens Road Brighton BN1 3XE. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 Wireless Charger Stand. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d5/33/19/d5331979ce16d08ae31d60836a81b935.jpg" data-lightbox="roadtrip" data-title="The 10 Best Giveaways For College Students Blue Soda Promo Blog College Experience Student College Students">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d5/33/19/d5331979ce16d08ae31d60836a81b935.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYVfDCzOKPANaF19MjHA-MuBmbdNqGIzzGA';" alt="The 10 Best Giveaways For College Students Blue Soda Promo Blog College Experience Student College Students">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 10 Best Giveaways For College Students Blue Soda Promo Blog College Experience Student College Students</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/6e/2e/d66e2e6b89682560d9b2e928dfe75634.jpg" data-lightbox="roadtrip" data-title="Giveaway Ends Monday School Giveaways College Students School Bundles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/6e/2e/d66e2e6b89682560d9b2e928dfe75634.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvgbs8io5z8rznTmlsHQRQpCggQl6cxQfNtA';" alt="Giveaway Ends Monday School Giveaways College Students School Bundles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Giveaway Ends Monday School Giveaways College Students School Bundles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/35/73/fd35737b08300f52eeec261143cf0a13.jpg" data-lightbox="roadtrip" data-title="Giveaways Student Council Student Council Campaign Student Council Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/35/73/fd35737b08300f52eeec261143cf0a13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUQzn-4cMQSz8AlVo9VekkK2m13hZipAWUQ';" alt="Giveaways Student Council Student Council Campaign Student Council Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Giveaways Student Council Student Council Campaign Student Council Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/6c/6c/136c6ce154810f605056a8dd6b001eb2.jpg" data-lightbox="roadtrip" data-title="Free Printable List Ideas For College Care Packages Homeschool Giveaways College Gifts College Care Package College Student Care Package">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/6c/6c/136c6ce154810f605056a8dd6b001eb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRccFMF6i_Swe56xMK1VrkLogFGwlsJVQho1g';" alt="Free Printable List Ideas For College Care Packages Homeschool Giveaways College Gifts College Care Package College Student Care Package">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Printable List Ideas For College Care Packages Homeschool Giveaways College Gifts College Care Package College Student Care Package</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/44/55/80/44558022fad9522b299411065f794d57.jpg" data-lightbox="roadtrip" data-title="Promotional Keychains For Colleges Swag Giveaways Custom Keychain College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/44/55/80/44558022fad9522b299411065f794d57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqmFl4VWVfZCECauBXHdU4ICu9JHXj1wSjQ';" alt="Promotional Keychains For Colleges Swag Giveaways Custom Keychain College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Promotional Keychains For Colleges Swag Giveaways Custom Keychain College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/26/56/cd26567a821fa695b1e63a696437df9a.png" data-lightbox="roadtrip" data-title="Giveaways Giveaway Saving For College Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/26/56/cd26567a821fa695b1e63a696437df9a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxym7lU0_JItGMSVHcEkMziVzH5Rhz8ZPqwA';" alt="Giveaways Giveaway Saving For College Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Giveaways Giveaway Saving For College Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/ed/8e/40/ed8e408f6d904d929d2c5c6d70e75951.jpg" data-lightbox="roadtrip" data-title="College Discounts Freebies Giveaways Student 15 Student Discounts And Giveaways That You Need In 2020 Scholarships For College College Freebies Education College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/ed/8e/40/ed8e408f6d904d929d2c5c6d70e75951.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKd2xgaaN-CI1Ccbgciu9GbCQiHWHOk6IGA';" alt="College Discounts Freebies Giveaways Student 15 Student Discounts And Giveaways That You Need In 2020 Scholarships For College College Freebies Education College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Discounts Freebies Giveaways Student 15 Student Discounts And Giveaways That You Need In 2020 Scholarships For College College Freebies Education College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/97/b9/d997b9400fff58cb5c438b38fcb78946.jpg" data-lightbox="roadtrip" data-title="Top 10 Back To School Promotional Items For Students Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/97/b9/d997b9400fff58cb5c438b38fcb78946.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQOwMxBivSfq-Oax7fbhi3UZcvXDj60nYZ7w';" alt="Top 10 Back To School Promotional Items For Students Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Back To School Promotional Items For Students Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/67/5c/c0675cde9f0355cb7ed3b0850c213eb5.jpg" data-lightbox="roadtrip" data-title="Sweepstakes Giveaways For College Students Scholarships Sweepstakes Giveaways College Students">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/67/5c/c0675cde9f0355cb7ed3b0850c213eb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjc-o9aphHlwWsgJePkD7qKp80eSTWSJL8GQ';" alt="Sweepstakes Giveaways For College Students Scholarships Sweepstakes Giveaways College Students">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sweepstakes Giveaways For College Students Scholarships Sweepstakes Giveaways College Students</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/5f/d7/b75fd79b1423a1de3eeb68be1ee33dad.jpg" data-lightbox="roadtrip" data-title="Promotional Basics Plastik Bt7455 Ballpoint Highlighter College Logo Advertising School Customized Plas Trade Show Giveaways Ballpoint College Products">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/5f/d7/b75fd79b1423a1de3eeb68be1ee33dad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZVKogK1E2ipwqcEMhfM9V8buQxoKGNDmiA';" alt="Promotional Basics Plastik Bt7455 Ballpoint Highlighter College Logo Advertising School Customized Plas Trade Show Giveaways Ballpoint College Products">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Promotional Basics Plastik Bt7455 Ballpoint Highlighter College Logo Advertising School Customized Plas Trade Show Giveaways Ballpoint College Products</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/35/96/793596dc195ec20091cffeedccacb43f.jpg" data-lightbox="roadtrip" data-title="The Perfect Git For College Students Shop With Me Mama College Students Student College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/35/96/793596dc195ec20091cffeedccacb43f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf-sRyBR0QTUCsSHsjI0hbudCgvffJRmRzkw';" alt="The Perfect Git For College Students Shop With Me Mama College Students Student College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Perfect Git For College Students Shop With Me Mama College Students Student College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/7e/b4/bf7eb42dba9ed95d82cf1b2c6b74baa1.jpg" data-lightbox="roadtrip" data-title="Clipping Money College Back To School Mystery Box Giveaway School Giveaways Back To School School Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/7e/b4/bf7eb42dba9ed95d82cf1b2c6b74baa1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_AGpSthHIUS4u0u-Ayb7eV1TLlXTsNgUe6g';" alt="Clipping Money College Back To School Mystery Box Giveaway School Giveaways Back To School School Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Clipping Money College Back To School Mystery Box Giveaway School Giveaways Back To School School Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/6b/24/276b24ae27a79236a7c04c519b57cecc.jpg" data-lightbox="roadtrip" data-title="Creative Trade Show Giveaways Google Search Trade Show Giveaways Corporate Gifts Corporate Giveaways">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/6b/24/276b24ae27a79236a7c04c519b57cecc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRulSYTQojA2nv0Lr2Ym7w2AODI5JdFREqFPw';" alt="Creative Trade Show Giveaways Google Search Trade Show Giveaways Corporate Gifts Corporate Giveaways">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Creative Trade Show Giveaways Google Search Trade Show Giveaways Corporate Gifts Corporate Giveaways</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/vet-tech-programs-near-me.html">Vet Tech Programs Near Me</a></li>
+													<li class="list-group-item"><a href="/veteran-affairs-gi-bill-post-9-11.html">Veteran Affairs Gi Bill Post 9 11</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-gi-bill-contact-number.html">Veterans Administration Gi Bill Contact Number</a></li>
+													<li class="list-group-item"><a href="/vaed-treas-310-xxva-ch33-gi-bill.html">Vaed Treas 310 Xxva Ch33 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-state-tuition-assistance-national-guard.html">Va State Tuition Assistance National Guard</a></li>
+													<li class="list-group-item"><a href="/va-website-post-911-gi-bill.html">Va Website Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-vet-tech-programs.html">Va Vet Tech Programs</a></li>
+													<li class="list-group-item"><a href="/va-tech-yellow-ribbon-program.html">Va Tech Yellow Ribbon Program</a></li>
+													<li class="list-group-item"><a href="/veteran-transfer-gi-bill-to-child.html">Veteran Transfer Gi Bill To Child</a></li>
+													<li class="list-group-item"><a href="/va-taking-forever-to-process-gi-bill.html">Va Taking Forever To Process Gi Bill</a></li>
+													<li class="list-group-item"><a href="/vagov-post-911-gi-bill.html">Vagov Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/vagov-chapter-35-benefits.html">Vagov Chapter 35 Benefits</a></li>
+													<li class="list-group-item"><a href="/va-tuition-assistance-top-up.html">Va Tuition Assistance Top Up</a></li>
+													<li class="list-group-item"><a href="/vagov-gi-bill-benefits.html">Vagov Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/va-programs-for-veteran-farmers.html">Va Programs For Veteran Farmers</a></li>
+													<li class="list-group-item"><a href="/va-scholarships-chapter-35.html">Va Scholarships Chapter 35</a></li>
+													<li class="list-group-item"><a href="/va-tech-education-department.html">Va Tech Education Department</a></li>
+													<li class="list-group-item"><a href="/vagov-gi-bill-application.html">Vagov Gi Bill Application</a></li>
+													<li class="list-group-item"><a href="/vagov-chapter-35-form.html">Vagov Chapter 35 Form</a></li>
+													<li class="list-group-item"><a href="/va-tuition-assistance-for-employees.html">Va Tuition Assistance For Employees</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

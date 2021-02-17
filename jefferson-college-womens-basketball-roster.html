@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Jefferson College Womens Basketball Roster - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Jefferson College Womens Basketball Roster",
+  "datePublished": "2021-02-17",
+  "image": "https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2019/1/7/F03Q9309.JPG",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=jefferson+college+womens+basketball+roster",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Jefferson College Womens Basketball Roster</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Carodine Jaylin Diouf Anne Goodman Annalicia Green Madison Hazell Jamia Irvine Casey Jefferson Kiki Marciszewski Eleanore McDaniel Peyton Neff Claire Oppenheimer Nikki Ouderkirk Steph Smith Morgan Tinsley Brianna Tucker Rayne Williams Bailey Go. Washington Jefferson Womens Basketball Individual Records 1000 Point Scorers 1. 4201 Henry Avenue Philadelphia PA. <br>				
+			</p>
+										<a class="badge badge-light" href="/college-womens-basketball-championship-history.html">college womens basketball championship history</a>
+											<a class="badge badge-primary" href="/college-womens-basketball-game-length.html">college womens basketball game length</a>
+											<a class="badge badge-success" href="/college-womens-basketball-champions.html">college womens basketball champions</a>
+											<a class="badge badge-dark" href="/college-student-giveaway-ideas.html">college student giveaway ideas</a>
+											<a class="badge badge-info" href="/college-supply-giveaway.html">college supply giveaway</a>
+											<a class="badge badge-dark" href="/college-womens-basketball-halves-or-quarters.html">college womens basketball halves or quarters</a>
+											<a class="badge badge-info" href="/college-survival-gift-basket-ideas.html">college survival gift basket ideas</a>
+											<a class="badge badge-primary" href="/college-womens-basketball-rankings.html">college womens basketball rankings</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the right site.  Our website provides you with suggestions for seeing the highest quality video and picture content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, so we recommend this video that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gopresidents.com/images/2019/1/14/WBB_Team_Photo.jpg?width=1600" data-lightbox="roadtrip" data-title="2018 19 Women S Basketball Roster Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://gopresidents.com/images/2019/1/14/WBB_Team_Photo.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPf3LLspanxmX0_6mMTC1VdWxdli4HS3y0Yw';" alt="2018 19 Women S Basketball Roster Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2018 19 Women S Basketball Roster Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gopresidents.com/images/2017/12/1/team_pic.jpg?width=1600" data-lightbox="roadtrip" data-title="2017 18 Women S Basketball Roster Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://gopresidents.com/images/2017/12/1/team_pic.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlLFnCcG57vvTRjkC8v-PgZ78T9ySsxiKKQ';" alt="2017 18 Women S Basketball Roster Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2017 18 Women S Basketball Roster Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.jeffco.edu/sites/default/files/styles/original/public/bball_cta_3.jpg?itok=SX0jzoQi" data-lightbox="roadtrip" data-title="Basketball Jefferson College">
+											<img class="card-img v-image ads-img " src="https://www.jeffco.edu/sites/default/files/styles/original/public/bball_cta_3.jpg?itok=SX0jzoQi" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMwtySkDlslhaVrD4QNr_kLIxjzGlCXOoT5w';" alt="Basketball Jefferson College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Jefferson College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gopresidents.com/images/2020/1/23/F03Q9151.JPG?width=1600" data-lightbox="roadtrip" data-title="2019 20 Women S Basketball Roster Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://gopresidents.com/images/2020/1/23/F03Q9151.JPG?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS754I4Iq7qovZYv9y_3sRvEfNLPzVBSH4AIg';" alt="2019 20 Women S Basketball Roster Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 20 Women S Basketball Roster Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gopresidents.com/images/2018/11/5/MBB_Team_Photo.png?width=1600" data-lightbox="roadtrip" data-title="2018 19 Men S Basketball Roster Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://gopresidents.com/images/2018/11/5/MBB_Team_Photo.png?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2BWmTdO_b0n032H7WoU6ZHg6jfkSkpI1xow';" alt="2018 19 Men S Basketball Roster Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2018 19 Men S Basketball Roster Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2018/2/23/Moore_Amirah_10_.jpg" data-lightbox="roadtrip" data-title="Amirah Moore Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2018/2/23/Moore_Amirah_10_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lpUUIpJIww8YGXD8vFOYkGOBq-ytlSGmyg';" alt="Amirah Moore Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amirah Moore Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2020/1/23/Gutierrez_Maddie_012320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lpUUIpJIww8YGXD8vFOYkGOBq-ytlSGmyg';" alt="Amirah Moore Women S Basketball Washington Jefferson College Athletics">
+										<div class="card-body">
+						<h3 class="h5"><b>PrestoSports is a software-as-a-service company providing technology to colleges and conference offices.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Jefferson college womens basketball roster</strong>. 
+								
+																	The Official Athletic Site of the Virginia Cavaliers partner of WMT Digital. 
+																	Goldey-Beacom College Athletics. 
+																	The official 2019-20 Womens Basketball schedule for the Washington Jefferson College Presidents. 
+																	Thomas Jefferson University students like to play as hard as they work. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	229 Womens Basketball. 
+																	Nov 04 Wed 500 PM CST VS Bible Baptist College Scrimmage January. 
+																	Prospective student athletes their parents coaches and counselors are given a copy of the annual disclosure information by race gender and sport at the time theyRead More. 
+																	Oct 24 Sat 200 PM CDT AT Three Rivers Community College - MO November. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Leigh Sulkowski 2002-06 2034 2. 
+																	During her tenure Iowa Western had a 77 percent win record had been ranked nationally and qualified for the NJCAA National Tournament in 2016-17. 
+																	Sophomore Kiki Jefferson and freshman Peyton McDaniel of James Madison womens basketball have swept the Colonial Athletic Association weekly honors as announced by the league on Monday afternoon. 
+																	The official Womens Basketball page for the Washington Jefferson College Presidents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After stellar performances Jefferson was named the CAA Player of the Week while McDaniel earned the CAA Rookie of the Week accolade. 
+																	Become an athlete join a club or cheer on your fellow Rams. 
+																	MENS GOLF WOMENS GOLF CROSS COUNTRY Coming soon E-SPORTS Coming soon Graduation and transfer-out rates for students who received athletically-related financial aid are available on the Consumer Information page. 
+																	Ashley McGee Head Coachamcgeejeffcoedu Ashley McGee served as the womens basketball assistant coach at Iowa Western Community College since 2015 where she also taught Coaching Theory I and II. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Follow the basketball team on social media for the latest news - Twitter Facebook and Instagram Jefferson College - Open the door to a new world of possibilities. 
+																	The official website for the Goldey-Beacom College Lightning athletics Skip Navigation Links. 
+																	Player Position Year Home Town High School 2 Keegan Dankenbring B FR O Fallon MO Ft. 
+																	View Jefferson College Player Stats. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jan 11 Mon 300 PM CST VS Missouri Baptist JV Scrimmage Recap. 
+																	NAME NAME NAMEPOS HT YR HOMETOWN 4Coral MolistGF511FRTona Spain5Myisha MalonePG55FRMilwaukee WI10Katerina PatkovaG55SOPrague Czech Republic12Laia TorrentPG54FRCornella de Llobregat Spain15Sara. 
+																	The official 2021 Womens Lacrosse Roster for the Washington Jefferson College Presidents. 
+																	Jan 17 Sun 200 PM. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Backed by Battery Ventures PrestoSports delivers solutions for building athletic brands igniting fans and funding sports programs. 
+																	The official General page for the. 
+																	The most comprehensive coverage of Virginia Cavaliers Womens Basketball on the web with highlights scores game summaries and rosters. 
+																	The official 2020-21 Womens Basketball Roster for the Washington Jefferson College Presidents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jefferson Womens Basketball Players Soluri Malbouf and Zicari Named Fall 2020 BATTLE Athletes November 27 BB Jefferson Softball Players Soluri Fredenburg and Zicari Named Fall 2020 BATTLE Athletes November 23 BB. 
+																	Womens Basketball Schedule Roster Statistics Facility Additional Links 2020-21 Womens Basketball Roster Choose a Player. 
+																	2020-21 Womens Basketball Schedule. 
+																	Zumwalt West 3 Aldo Villafuerte B FR Santa Cruz Bolivia 4 Marcos Avila Torres B SO Reno NV North Valley. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With 17 mens and womens varsity teams countless athletic clubs and state-of-the-art facilities its easy to be a part of the athletic community. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2020/1/16/F03Q8954.JPG" data-lightbox="roadtrip" data-title="Victoria Koeck Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2020/1/16/F03Q8954.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkwY6dvaMAD9Pq0-HZ8_CT_N2d5SgB4BQgOg';" alt="Victoria Koeck Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Victoria Koeck Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2018/12/5/Carlee_Stelter.jpg" data-lightbox="roadtrip" data-title="Carlee Stelter Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2018/12/5/Carlee_Stelter.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRooohnIzHSlmruGRpysRC9M04jiihx5C7N8Q';" alt="Carlee Stelter Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carlee Stelter Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2019/11/18/Martin_Catherine_111819.jpg" data-lightbox="roadtrip" data-title="Catherine Martin Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2019/11/18/Martin_Catherine_111819.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0NNM2UN9GaQfl1cCv0rMj4LWX5woy_txVGA';" alt="Catherine Martin Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Catherine Martin Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2014/1/28/Kronthal1.JPG" data-lightbox="roadtrip" data-title="Andrea Kronthal Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2014/1/28/Kronthal1.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmE4BI7FFyoFTmw5fiXo6oo2hnPFVN_Sw9WA';" alt="Andrea Kronthal Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Andrea Kronthal Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://uisprairiestars.com/images/2018/1/29/Women_s_Basketball_Team_2018_001.JPG?width=1600" data-lightbox="roadtrip" data-title="2017 18 Women S Basketball Roster Uis Athletics">
+											<img class="card-img v-image ads-img " src="https://uisprairiestars.com/images/2018/1/29/Women_s_Basketball_Team_2018_001.JPG?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8wwOZYiFc9oEjXmxIKCpdNOqkFDCe8Z2DMw';" alt="2017 18 Women S Basketball Roster Uis Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2017 18 Women S Basketball Roster Uis Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2014/3/18/Apke5.JPG" data-lightbox="roadtrip" data-title="Chelsea Apke Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2014/3/18/Apke5.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkggFk7M6Q95UDNPBkugsZ-rYGYre7NRHuQ';" alt="Chelsea Apke Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chelsea Apke Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2014/2/19/Burzese2.JPG" data-lightbox="roadtrip" data-title="Alexa Burzese Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2014/2/19/Burzese2.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7VY81R1tR2rwn9GqG9JJs-zdNN1irRXm8tA';" alt="Alexa Burzese Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alexa Burzese Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2020/1/27/Williams_Megan_012720.jpg" data-lightbox="roadtrip" data-title="Megan Williams Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2020/1/27/Williams_Megan_012720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHBNH952xXSrgRqVIoYljGyWgUhXUbXCCRqg';" alt="Megan Williams Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Megan Williams Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2020/1/23/Johnston_Hannah_012320.jpg" data-lightbox="roadtrip" data-title="Hannah Johnston Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2020/1/23/Johnston_Hannah_012320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcyqFIOYYRJkGvO7cQ7GwaYVKHLUxRjxxf5w';" alt="Hannah Johnston Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hannah Johnston Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2020/1/23/Gutierrez_Maddie_012320.jpg" data-lightbox="roadtrip" data-title="Maddie Gutierrez Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2020/1/23/Gutierrez_Maddie_012320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-bh_UCI8l2ozDPRinH_vXBKGowID2FfobOg';" alt="Maddie Gutierrez Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maddie Gutierrez Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2019/1/7/F03Q9309.JPG" data-lightbox="roadtrip" data-title="Brooke Mccleester Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2019/1/7/F03Q9309.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb8O_bZK3n6TqUzQLiBQP3bPWYyXBvEh3gSQ';" alt="Brooke Mccleester Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brooke Mccleester Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2015/12/18/Wilson%203.jpg" data-lightbox="roadtrip" data-title="Katey Wilson Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2015/12/18/Wilson%203.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVlITVM3LMA13oYeYXZtaCCP-1_Ktn-5Q4tA';" alt="Katey Wilson Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Katey Wilson Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2018/10/31/cd.jpg" data-lightbox="roadtrip" data-title="Cierra Davis Women S Basketball Washington Jefferson College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/washjeff.sidearmsports.com/images/2018/10/31/cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTKDXylWCFYHCEIPUnadPmXtb0QWEgwAsViw';" alt="Cierra Davis Women S Basketball Washington Jefferson College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cierra Davis Women S Basketball Washington Jefferson College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-the-community-college-you-go-to-matter.html">Does The Community College You Go To Matter</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-pay-out-of-state-tuition.html">Does The Gi Bill Pay Out Of State Tuition</a></li>
+													<li class="list-group-item"><a href="/does-it-matter-what-college-you-go-to-for-nursing.html">Does It Matter What College You Go To For Nursing</a></li>
+													<li class="list-group-item"><a href="/does-nyu-accept-gi-bill.html">Does Nyu Accept Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-coding-dojo-accept-gi-bill.html">Does Coding Dojo Accept Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-jschlatt-go-to-college.html">Does Jschlatt Go To College</a></li>
+													<li class="list-group-item"><a href="/does-the-coast-guard-have-the-gi-bill.html">Does The Coast Guard Have The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-affect-financial-aid.html">Does The Gi Bill Affect Financial Aid</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-cover-your-spouse.html">Does The Gi Bill Cover Your Spouse</a></li>
+													<li class="list-group-item"><a href="/does-it-matter-what-college-you-go-to-reddit.html">Does It Matter What College You Go To Reddit</a></li>
+													<li class="list-group-item"><a href="/does-the-air-force-have-the-gi-bill.html">Does The Air Force Have The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-it-matter-if-you-go-to-college-or-university.html">Does It Matter If You Go To College Or University</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-cover-out-of-state.html">Does Gi Bill Cover Out Of State</a></li>
+													<li class="list-group-item"><a href="/does-penn-state-give-merit-scholarships.html">Does Penn State Give Merit Scholarships</a></li>
+													<li class="list-group-item"><a href="/does-penn-state-take-gi-bill.html">Does Penn State Take Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-cover-cdl-training.html">Does Gi Bill Cover Cdl Training</a></li>
+													<li class="list-group-item"><a href="/does-the-forever-gi-bill-apply-to-the-montgomery-gi-bill.html">Does The Forever Gi Bill Apply To The Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-give-you-bah.html">Does The Gi Bill Give You Bah</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-pay-for-everything.html">Does The Gi Bill Pay For Everything</a></li>
+													<li class="list-group-item"><a href="/does-mit-accept-gi-bill.html">Does Mit Accept Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

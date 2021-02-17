@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gx9 X12 - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gx9 X12",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/50/07/02/500702d7dc99ca3181c246e93d1c2f87.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gx9+x12",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gx9 X12</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The equation solver allows you to enter your problem and solve the equation to see the result. Mathematics 21062019 1430 TheCampingStone. This can be useful if the original function is too complicated to work on. <br>				
+			</p>
+										<a class="badge badge-success" href="/using-gi-bill-after-active-duty.html">using gi bill after active duty</a>
+											<a class="badge badge-dark" href="/using-gi-bill-for-phd.html">using gi bill for phd</a>
+											<a class="badge badge-primary" href="/using-gi-bill-overseas-reddit.html">using gi bill overseas reddit</a>
+											<a class="badge badge-light" href="/use-gi-bill-for-mba.html">use gi bill for mba</a>
+											<a class="badge badge-info" href="/using-your-gi-bill-for-flight-training.html">using your gi bill for flight training</a>
+											<a class="badge badge-primary" href="/using-post-911-gi-bill-while-on-active-duty.html">using post 911 gi bill while on active duty</a>
+											<a class="badge badge-dark" href="/ut-austin-post-911-gi-bill.html">ut austin post 911 gi bill</a>
+											<a class="badge badge-success" href="/using-gi-bill-on-active-duty.html">using gi bill on active duty</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the right blog.  Our website provides you with hints for viewing the maximum quality video and image content, search and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/2d/89/0f2d89e68dabad4baf7494514b8d56d5.png" data-lightbox="roadtrip" data-title="Algebra 2 Worksheets Polynomial Functions Worksheets Algebra 2 Worksheets Algebra Worksheets Polynomial Functions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/2d/89/0f2d89e68dabad4baf7494514b8d56d5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw05zjKv_XcjaUtEdfqumsfXQkS9WUzfTfJQ';" alt="Algebra 2 Worksheets Polynomial Functions Worksheets Algebra 2 Worksheets Algebra Worksheets Polynomial Functions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Algebra 2 Worksheets Polynomial Functions Worksheets Algebra 2 Worksheets Algebra Worksheets Polynomial Functions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/3d/e3/a93de354fa510cd2c1ea49f1b8a3dfe2.jpg" data-lightbox="roadtrip" data-title="Function Operations Interactive Notebook Page Mrseteachesmath Blogspot Com Studying Math Math Methods Math Lessons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/3d/e3/a93de354fa510cd2c1ea49f1b8a3dfe2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWXCS-jANoJCObHhE6DymCR0DMXcfjmz1TIg';" alt="Function Operations Interactive Notebook Page Mrseteachesmath Blogspot Com Studying Math Math Methods Math Lessons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Function Operations Interactive Notebook Page Mrseteachesmath Blogspot Com Studying Math Math Methods Math Lessons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/9a/9b/bd9a9bd423a610180a7c1faa6139dd6e.png" data-lightbox="roadtrip" data-title="Pin On Fun Math Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/9a/9b/bd9a9bd423a610180a7c1faa6139dd6e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDPd_BouGH5RtWDdKIWVxycR5JQht-RWlsuw';" alt="Pin On Fun Math Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fun Math Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/61/54/d8/6154d8eb2af02043ae1407e91b65bb40.jpg" data-lightbox="roadtrip" data-title="Evaluating Functions From Equations Last Teaching Blogs Teaching Math Love Math">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/61/54/d8/6154d8eb2af02043ae1407e91b65bb40.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlsScUbVdY1ck6wGItuiuMmbdGXDNgrTkglw';" alt="Evaluating Functions From Equations Last Teaching Blogs Teaching Math Love Math">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evaluating Functions From Equations Last Teaching Blogs Teaching Math Love Math</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/c9/85/64c98550a19388b17413f7170f626560.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Yanela Vasquez Berrocal Di Fungsi Komposisi Buku Sketsa Buku Komposisi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/c9/85/64c98550a19388b17413f7170f626560.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReddp9zsVVwErxRkgiSydT4raZFUZErPi-cQ';" alt="Pin Oleh Yanela Vasquez Berrocal Di Fungsi Komposisi Buku Sketsa Buku Komposisi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Yanela Vasquez Berrocal Di Fungsi Komposisi Buku Sketsa Buku Komposisi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/59/30/bb5930bc018ad74eecf57273ba3aa7ab.png" data-lightbox="roadtrip" data-title="Functions Eamples For 9 1 Gcse Maths Functions Math Math Examples Math">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/59/30/bb5930bc018ad74eecf57273ba3aa7ab.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-0CU0QmDv2XnT4ajikR4nuDDuMMwgEnKvug';" alt="Functions Eamples For 9 1 Gcse Maths Functions Math Math Examples Math">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Functions Eamples For 9 1 Gcse Maths Functions Math Math Examples Math</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/236x/01/0b/b0/010bb021edbb6e47e15df33b1d769c5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-0CU0QmDv2XnT4ajikR4nuDDuMMwgEnKvug';" alt="Functions Eamples For 9 1 Gcse Maths Functions Math Math Examples Math">
+										<div class="card-body">
+						<h3 class="h5"><b>1 Get Other questions on the subject.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gx9 x12</strong>. 
+								
+																	Gain more understanding of your homework with steps and hints guiding you from problems to answers. 
+																	Then fxgx 4x 2 4x 1 1. 
+																	The first number is 8 less than half the second number. 
+																	Simplifyfrac1x1cdot fracx25 simplifyfracx24x-45x2x-30 simplifyfracx214x4949-x2 simplifyfrac6x-1-frac3x1 simplifyfrac5x6frac3x2 simplify-calculator. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For x62x3 check correct solution x3. 
+																	Gxx1x2x3 Roots Y-intercept Lead Term. 
+																	Solve your math problems using our free math solver with step-by-step solutions. 
+																	Fracx1x-1 x 1 x 1 Expand. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Quadratic equation x 2 - 4 x - 5 0. 
+																	Our math solver supports basic math pre-algebra algebra trigonometry calculus and more. 
+																	Xleftx3rightleftx-1rightleftx1right Rewrite the complete factored expression. 
+																	Free math problem solver answers your algebra geometry trigonometry calculus and statistics homework questions with step-by-step explanations just like a math tutor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Try to find a line yk such that fracx214x9z22x3 - k 0 has only one solution that k is a max above the max there is no solution below there are two solutions or a. 
+																	Free math problem solver answers your algebra geometry trigonometry calculus and statistics homework questions with step-by-step explanations just like a math tutor. 
+																	Free equations calculator - solve linear quadratic polynomial radical exponential and logarithmic equations with all the steps. 
+																	Middle School Math Solutions Equation Calculator. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our math solver supports basic math pre-algebra algebra trigonometry calculus and more. 
+																	Fx x 1x. 
+																	More Examples Here are more examples of how to check your answers with Algebra Calculator. 
+																	For math science nutrition history. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	G o fx gfx first apply f then apply g We must also respect. 
+																	After you enter the expression Algebra Calculator will plug x6 in for the equation 2x315. 
+																	4 sin theta cos. 
+																	Free equations calculator - solve linear quadratic polynomial radical exponential and logarithmic equations with all the steps. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That function can be made from these two functions. 
+																	The sum of two numbers is 58. 
+																	Type in any equation to get the solution steps and graph. 
+																	Feel free to try them now. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Summary Function Composition is applying one function to the results of another. 
+																	Rewrite x2-1 as x2-12. 
+																	The calculator prints True to let you know that the answer is right. 
+																	Solve your math problems using our free math solver with step-by-step solutions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	G o fx gfx gx 1x x 1x 2. 
+																	The mathematical expression 9 t means. 
+																	Try to find a line y k such that z 2 2 x 3 x 2 1 4 x 9 k 0 has only one solution that k is a max above the max there is no solution below. 
+																	Welcome to our new Getting Started math solutions series. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mathematics 21062019 1230 Becky81. 
+																	Use step-by-step calculators for chemistry calculus algebra trigonometry equation solving basic math and more. 
+																	In elementary algebra the quadratic formula is a formula that provides the solutions to a quadratic equation. 
+																	The difference of squares can be factored using the rule. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thus degfg 0 which is not greater than the degrees of f and g which each had degree 1. 
+																	Gx x 2. 
+																	Solve in one variable or many. 
+																	Compute answers using Wolframs breakthrough technology knowledgebase relied on by millions of students professionals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Let c represent the first number. 
+																	Fundamental theorem of. 
+																	X 2 4 x 5 0. 
+																	9x09 to the power of x equals 0Take the log of both sides log109xlog100 Rewrite the left side of the equation using the rule for the log of a power xlog109log100 Isolate the variable x. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Type in any equation to get the solution steps and graph. 
+																	Over the next few weeks well be. 
+																	Since the norm function is not defined for the zero element of the ring we consider the degree of the polynomial fx 0 to also be undefined so that it follows the rules of a norm in a Euclidean domain. 
+																	There are other ways of solving a quadratic equation instead of using the quadratic formula such as factoring direct factoring grouping AC method completing the square graphing and others. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Related Symbolab blog posts. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/0d/df/440ddf963ff4f72f364443c1ce649480.png" data-lightbox="roadtrip" data-title="Pin By Math Teacher On Algebra High School Algebra School Algebra Algebra Worksheets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/0d/df/440ddf963ff4f72f364443c1ce649480.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0x_IqNRB0l-RdHEYxR_sSRiF5d0UtogzH0Q';" alt="Pin By Math Teacher On Algebra High School Algebra School Algebra Algebra Worksheets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Math Teacher On Algebra High School Algebra School Algebra Algebra Worksheets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/09/23/3f/09233f9609216c7f3ad37d58a284d93f.jpg" data-lightbox="roadtrip" data-title="Functions And Relations In Algebra 2 Inb Pages School Algebra High School Algebra College Algebra">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/09/23/3f/09233f9609216c7f3ad37d58a284d93f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiQ3aCHooOQjTaHeQVNIYHHn95HgQIx8Gwpw';" alt="Functions And Relations In Algebra 2 Inb Pages School Algebra High School Algebra College Algebra">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Functions And Relations In Algebra 2 Inb Pages School Algebra High School Algebra College Algebra</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/4f/d7/f04fd719e1fa30b3ce82957bdc1e9d1a.jpg" data-lightbox="roadtrip" data-title="Algebra 2 Interactive Notebook Pages Galore Math Methods Learning Math Teaching Algebra">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/4f/d7/f04fd719e1fa30b3ce82957bdc1e9d1a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgJq1m7zPl_2KRjDOIfX6FhtUWa_70ANbqYA';" alt="Algebra 2 Interactive Notebook Pages Galore Math Methods Learning Math Teaching Algebra">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Algebra 2 Interactive Notebook Pages Galore Math Methods Learning Math Teaching Algebra</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/00/b2/c7/00b2c7ecfb634c5ed4d8fe48d303aaef.jpg" data-lightbox="roadtrip" data-title="This Is A Bundle Of 13 Homework Assignments And Daily Content Quizzes For Differentiation Designed For Ap Calculus Ab Or B Calculus Ap Calculus Ab Ap Calculus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/00/b2/c7/00b2c7ecfb634c5ed4d8fe48d303aaef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsuEPt5YndfBrYAQj5BsGVJ6hXuk0jAtqo6Q';" alt="This Is A Bundle Of 13 Homework Assignments And Daily Content Quizzes For Differentiation Designed For Ap Calculus Ab Or B Calculus Ap Calculus Ab Ap Calculus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is A Bundle Of 13 Homework Assignments And Daily Content Quizzes For Differentiation Designed For Ap Calculus Ab Or B Calculus Ap Calculus Ab Ap Calculus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/75/f0/af75f0a8faec97cce6704a02564be0e8.jpg" data-lightbox="roadtrip" data-title="Pin By Kerry Clancy On For My Classroom In 2020 Teaching Algebra High School Math Lesson Plans Math Lesson Plans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/75/f0/af75f0a8faec97cce6704a02564be0e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_KCNFT2nUDrXPmamL8I8Tgk_zuwed_woqGg';" alt="Pin By Kerry Clancy On For My Classroom In 2020 Teaching Algebra High School Math Lesson Plans Math Lesson Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kerry Clancy On For My Classroom In 2020 Teaching Algebra High School Math Lesson Plans Math Lesson Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/01/0b/b0/010bb021edbb6e47e15df33b1d769c5e.jpg" data-lightbox="roadtrip" data-title="Ssc Adda Algebraic Formulas P Math Methods Studying Math Math">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/01/0b/b0/010bb021edbb6e47e15df33b1d769c5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuBqi3YzQEmQqbuD_3dHFhBXBLws15-_c-LA';" alt="Ssc Adda Algebraic Formulas P Math Methods Studying Math Math">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ssc Adda Algebraic Formulas P Math Methods Studying Math Math</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/10/f3/3910f332edcd0f8a7a95d06b0e86a541.gif" data-lightbox="roadtrip" data-title="Derivative Rules Ap Calculus Math Methods Calculus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/10/f3/3910f332edcd0f8a7a95d06b0e86a541.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDCkSo3Ow8EDZEwnO1pa1y_eso4T--UrjN3w';" alt="Derivative Rules Ap Calculus Math Methods Calculus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Derivative Rules Ap Calculus Math Methods Calculus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/ee/ef/b0eeefdf9d676e2a830be3d837b8a69b.png" data-lightbox="roadtrip" data-title="Ncert Solutions For Class 10 Maths Chapter 2 Ex 2 3 Maths Ncert Solutions Math Books Math Textbook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/ee/ef/b0eeefdf9d676e2a830be3d837b8a69b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnMTCxe8eTgtvCpSrRWCIxOqOblOB7Arjn8A';" alt="Ncert Solutions For Class 10 Maths Chapter 2 Ex 2 3 Maths Ncert Solutions Math Books Math Textbook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncert Solutions For Class 10 Maths Chapter 2 Ex 2 3 Maths Ncert Solutions Math Books Math Textbook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/19/50/fc1950bcb89ecd9aaff6f95e19c9824a.jpg" data-lightbox="roadtrip" data-title="Pin By Harivony Randrianarivony On Astuces Mathematiques Algebra Fun Math Games Purple Bedding Sets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/19/50/fc1950bcb89ecd9aaff6f95e19c9824a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_qxDeZQR-sahFItlOS89m5XZjJAFUiIoA6Q';" alt="Pin By Harivony Randrianarivony On Astuces Mathematiques Algebra Fun Math Games Purple Bedding Sets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Harivony Randrianarivony On Astuces Mathematiques Algebra Fun Math Games Purple Bedding Sets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/41/ee/b041ee651a3fed8475477c86f57eeeb2.jpg" data-lightbox="roadtrip" data-title="Inverse Trigonometric Derivatives F X Arccos 2x 1 Math Videos Maths Exam Calculus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/41/ee/b041ee651a3fed8475477c86f57eeeb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpiYeoDPIFJYKAeEJSaGI8DnOBMhpAUTg8CQ';" alt="Inverse Trigonometric Derivatives F X Arccos 2x 1 Math Videos Maths Exam Calculus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inverse Trigonometric Derivatives F X Arccos 2x 1 Math Videos Maths Exam Calculus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/ec/b3/d5ecb3245e3288e28fd169779930cbb8.jpg" data-lightbox="roadtrip" data-title="Pin By Peyton Mcwhorter On Pre Calculus Unit 1 Review Calculus Sheet Music The Unit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/ec/b3/d5ecb3245e3288e28fd169779930cbb8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6yttEDchO9Xbnfbxekolq6a51Ib5Arz1Qew';" alt="Pin By Peyton Mcwhorter On Pre Calculus Unit 1 Review Calculus Sheet Music The Unit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Peyton Mcwhorter On Pre Calculus Unit 1 Review Calculus Sheet Music The Unit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/b4/22/afb42264105c02aa9cfa7320c5a915dc.jpg" data-lightbox="roadtrip" data-title="Teaching Statistics Made4math Function Operations Teaching Algebra School Algebra Teaching Middle School Maths">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/b4/22/afb42264105c02aa9cfa7320c5a915dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpnYff13RsAT5KJu_8XUkb3xHdrTtlth4ceg';" alt="Teaching Statistics Made4math Function Operations Teaching Algebra School Algebra Teaching Middle School Maths">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Teaching Statistics Made4math Function Operations Teaching Algebra School Algebra Teaching Middle School Maths</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/07/02/500702d7dc99ca3181c246e93d1c2f87.jpg" data-lightbox="roadtrip" data-title="Fog Gof Worksheet Worksheet Template Linear Function Algebra">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/07/02/500702d7dc99ca3181c246e93d1c2f87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe95k8fv0LN-5SdOIF4MdS20HsyLKtkJYpfg';" alt="Fog Gof Worksheet Worksheet Template Linear Function Algebra">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fog Gof Worksheet Worksheet Template Linear Function Algebra</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/post-911-gi-bill-usage.html">Post 911 Gi Bill Usage</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-payment-schedule-2020.html">Post 911 Gi Bill Payment Schedule 2020</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-mba.html">Post 911 Gi Bill Mba</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-online-classes.html">Post 911 Gi Bill Online Classes</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-technical-schools.html">Post 911 Gi Bill Technical Schools</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-payments-2019.html">Post 911 Gi Bill Payments 2019</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-overseas-schools.html">Post 911 Gi Bill Overseas Schools</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-tuition-refund.html">Post 911 Gi Bill Tuition Refund</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-va-chapter-35.html">Post 911 Gi Bill Va Chapter 35</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-payment.html">Post 911 Gi Bill Payment</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-qualifying-time.html">Post 911 Gi Bill Qualifying Time</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-rules.html">Post 911 Gi Bill Rules</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-mha-calculator.html">Post 911 Gi Bill Mha Calculator</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-rate-of-pursuit.html">Post 911 Gi Bill Rate Of Pursuit</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-online-benefits.html">Post 911 Gi Bill Online Benefits</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-payments.html">Post 911 Gi Bill Payments</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-questions.html">Post 911 Gi Bill Questions</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-transfer-to-child.html">Post 911 Gi Bill Transfer To Child</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-residency-requirements.html">Post 911 Gi Bill Residency Requirements</a></li>
+													<li class="list-group-item"><a href="/post-911-gi-bill-status.html">Post 911 Gi Bill Status</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

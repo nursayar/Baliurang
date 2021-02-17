@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Billi Ka Rona In Islam - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Billi Ka Rona In Islam",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/e2/b4/d6/e2b4d626b80022b552d06c687d072ce4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=billi+ka+rona+in+islam",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Billi Ka Rona In Islam</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Chuha billi is a dark subject. Wazifa for love love Marriage Surah Fatiha Ka Ye Amal Band. May 6 2020 - tabeer e khawab Khuwab main Mout dekhna kesa he Pakistan Tv Pakistan News Today AOA Brothers and Sisters Today I am here with this new video of tabee. <br>				
+			</p>
+										<a class="badge badge-danger" href="/va-post-911-gi-bill-customer-service.html">va post 911 gi bill customer service</a>
+											<a class="badge badge-light" href="/va-post-911-gi-bill-phone-number.html">va post 911 gi bill phone number</a>
+											<a class="badge badge-warning" href="/va-post-911-gi-bill-payments.html">va post 911 gi bill payments</a>
+											<a class="badge badge-secondary" href="/va-login-gi-bill.html">va login gi bill</a>
+											<a class="badge badge-light" href="/va-post-911-gi-bill-questions.html">va post 911 gi bill questions</a>
+											<a class="badge badge-info" href="/va-gov-education-benefits-status.html">va gov education benefits status</a>
+											<a class="badge badge-secondary" href="/va-post-911-gi-bill-online-bah.html">va post 911 gi bill online bah</a>
+											<a class="badge badge-success" href="/va-post-911-gi-bill-enrollment.html">va post 911 gi bill enrollment</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the right blog.  Our site gives you suggestions for seeing the maximum quality video and image content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/7f/81/2e7f8124e86fee1ce0936899452b74ed.jpg" data-lightbox="roadtrip" data-title="Pin On Tib E Nabvi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/7f/81/2e7f8124e86fee1ce0936899452b74ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIMKRezO7JYN_s7Ntrq-hT5ih3HT7mJp-9Og';" alt="Pin On Tib E Nabvi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tib E Nabvi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/10/5c/a3/105ca3bd7ca7c25006ec134a227aca54.jpg" data-lightbox="roadtrip" data-title="Cat Billi Ka Rona Jinnat Jin Billi Ka Rasta Kaatna Kali Billi Horror Youtube Cat Crying Cats Youtube">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/10/5c/a3/105ca3bd7ca7c25006ec134a227aca54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-myr93seIO-TuKUob_88elFpFNBNSeo9zew';" alt="Cat Billi Ka Rona Jinnat Jin Billi Ka Rasta Kaatna Kali Billi Horror Youtube Cat Crying Cats Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cat Billi Ka Rona Jinnat Jin Billi Ka Rasta Kaatna Kali Billi Horror Youtube Cat Crying Cats Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/73/d6/75/73d675d636fe0f81c6aad6d5fc32dfd4.jpg" data-lightbox="roadtrip" data-title="Cat Billi Ka Rona Jinnat Jin Billi Ka Rasta Kaatna Kali Billi Horror Mehrban Youtube Ali Quotes Islamic Videos Rona">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/73/d6/75/73d675d636fe0f81c6aad6d5fc32dfd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6JeOZMGDAoFnG3zYwj6l-hlpW1sXvZe32SQ';" alt="Cat Billi Ka Rona Jinnat Jin Billi Ka Rasta Kaatna Kali Billi Horror Mehrban Youtube Ali Quotes Islamic Videos Rona">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cat Billi Ka Rona Jinnat Jin Billi Ka Rasta Kaatna Kali Billi Horror Mehrban Youtube Ali Quotes Islamic Videos Rona</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/23/59/88235967b9ac525a9d3cd5621bff777c.jpg" data-lightbox="roadtrip" data-title="Pin On Billi Ka Rona">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/23/59/88235967b9ac525a9d3cd5621bff777c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZeSahCPV1jCp9TYFL17M2kuQNK6QSlWtDqg';" alt="Pin On Billi Ka Rona">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Billi Ka Rona</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d0/2b/ff/d02bff7904ab85da56643d6dad9733a4.jpg" data-lightbox="roadtrip" data-title="Pin By Mussa Qadri On اسماء ال ہی اور ان کی برکتیں فضائل Asma Husna Islam Facts Iqbal Poetry Meant To Be">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d0/2b/ff/d02bff7904ab85da56643d6dad9733a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR449-fM18eSfv99bpIV3VRr4EQ7cjIYdGVrQ';" alt="Pin By Mussa Qadri On اسماء ال ہی اور ان کی برکتیں فضائل Asma Husna Islam Facts Iqbal Poetry Meant To Be">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Mussa Qadri On اسماء ال ہی اور ان کی برکتیں فضائل Asma Husna Islam Facts Iqbal Poetry Meant To Be</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/91/e1/b4/91e1b4526cfc0ca2e4866906ecec6d81.jpg" data-lightbox="roadtrip" data-title="یا اللہ ہماری مدد فرما امین Quran Quotes Quran Quotes Inspirational Islamic Love Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/91/e1/b4/91e1b4526cfc0ca2e4866906ecec6d81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4eyWi8lvKuqDZCmATtagkEbsQ4sIzo2HY2Q';" alt="یا اللہ ہماری مدد فرما امین Quran Quotes Quran Quotes Inspirational Islamic Love Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">یا اللہ ہماری مدد فرما امین Quran Quotes Quran Quotes Inspirational Islamic Love Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/d0/2b/ff/d02bff7904ab85da56643d6dad9733a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4eyWi8lvKuqDZCmATtagkEbsQ4sIzo2HY2Q';" alt="یا اللہ ہماری مدد فرما امین Quran Quotes Quran Quotes Inspirational Islamic Love Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>Doodh Mein Shahad Mila Kar Peene ke Fawaid Benefits of Honey Milk Sh.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Billi ka rona in islam</strong>. 
+								
+																	Data-full-width-responsivetrue data-full-width-responsivetrue Related Articles. 
+																	Data-full-width-responsivetrue data-full-width-responsivetrue Related Articles. 
+																	From Imam Ali AS to Shah Shams Tabrez and from him to Mehrban. 
+																	I play a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Islamic Gathering Islamic Web Articles Hadith Bayan Lectures Naat Tilawat Videos Islamic Stores. 
+																	Kia Billi ka Rona Kisi Khatray ki Alamat Hai. 
+																	Billi ka ghar mein ana rat ko billi ka aa k rona is kia haqeeqat hai. 
+																	Hafiz M Azam Nazir---Editor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wazifa for love love Marriage Surah Fatiha Ka Ye Amal Band. 
+																	Chandi Ka Ilaaj. 
+																	بلی کا رونا اور رستہ کاٹنا Crying cat and the way chop बलल कटन और रसत चलन Cat Billi Ka Rona aur Billi Ka. 
+																	Kia cats k rony sy kuch hota hai. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Baaz gharoun men raat ko bi. 
+																	Hafiz M Azam Nazir-----. 
+																	Billi Ka Rona Dr Farhat Hashmi Islam Updates. 
+																	Sote Waqt Moon Se Raal Kyun Behti Hai Muh se Raal tapakna aur is ka il. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	15 Answers Listen to Expert Answers on Vokal - Indias Largest Question Answers Platform in 11 Indian Languages. 
+																	All the knowledge that has transcended is being shared with you in an unbiased manner. 
+																	Islamic Gathering Islamic Web Articles Hadith Bayan Lectures Naat Tilawat Videos Islamic Stores. 
+																	May 7 2020 - Enjoy the videos and music you love upload original content and share it all with friends family and the world on YouTube. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kia Billi ka Rona Kisi Khatray ki Alamat Hai. 
+																	Nov 25 2018 - Enjoy the videos and music you love upload original content and share it all with friends family and the world on YouTube. 
+																	Mumbai Feb 4 IANS Adah Sharma will next be seen in a film titled Chuha Billi a dark subject that casts her as a girl who is bipolar and depressed. 
+																	DrFarhat hashmi CE Founder of Al Huda International Welfare FoundationA seeker of knowledge and teacher of Quranالہدی اسلام كے بنيادي اصولوں پر قائمهر. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Billioun ka rona lia hai. 
+																	 
+																	Post a comment blogger Populars. 
+																	May 7 2020 - Today I am here with this new video of ayatul kursi ayatul kursi ki fazilat In Islam آیت الکرسی Allah Muhammad Islamic Videos ayatul kursi Allah Muh. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apr 14 2018 - Eji Darshan diyo mora naath Daasi chhun teri Darshan diyo mora naath Eji Daasi teri Sami tere dar ubhi Araj kare chhe jodi haath. 
+																	In This Video We will Learn aboutKali billi ka Rasta Katna Billi ka Rona Islam Islamic WordsKalli billi kiun roti ha Billi rona Bili Ka ronaBili ka. 
+																	Kia Billi ka Rona Kisi Khatray ki Alamat Billi ka rona in islam in urd. 
+																	Billi Ka Rona Kya Koi Foat Hone Wala Hai Deen Squad---Voice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Billi Ka Rona Ka Matlab Kya Hota Hai. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7c/da/62/7cda620aa20e9da94e0a52e6ef2998ae.jpg" data-lightbox="roadtrip" data-title="Ya Wahhabo یا وہاب Islamic Love Quotes Islamic Phrases Quran Quotes Inspirational">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7c/da/62/7cda620aa20e9da94e0a52e6ef2998ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPgbQwUGT0w56pmh0-ykCufoRgnJmLEiQD3w';" alt="Ya Wahhabo یا وہاب Islamic Love Quotes Islamic Phrases Quran Quotes Inspirational">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ya Wahhabo یا وہاب Islamic Love Quotes Islamic Phrases Quran Quotes Inspirational</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e3/73/23/e373230f63bc134d38f3b3551e27edfb.jpg" data-lightbox="roadtrip" data-title="Ya Hakimo یا حکیم Quran Quotes Inspirational Islamic Love Quotes Islamic Phrases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e3/73/23/e373230f63bc134d38f3b3551e27edfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSJMDAVNsVnadwEjOUociqW1jRnrY2znn_fA';" alt="Ya Hakimo یا حکیم Quran Quotes Inspirational Islamic Love Quotes Islamic Phrases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ya Hakimo یا حکیم Quran Quotes Inspirational Islamic Love Quotes Islamic Phrases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ea/96/2a/ea962ab7ca59b237350cb20a5137dfea.jpg" data-lightbox="roadtrip" data-title="Pin By Mano Billi On Roohani Elaj Quran Quotes Inspirational Muslim Love Quotes Quran Quotes Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ea/96/2a/ea962ab7ca59b237350cb20a5137dfea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFpW20XRBtxKDk5oyDijXvsGzJ__e0AxpITg';" alt="Pin By Mano Billi On Roohani Elaj Quran Quotes Inspirational Muslim Love Quotes Quran Quotes Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Mano Billi On Roohani Elaj Quran Quotes Inspirational Muslim Love Quotes Quran Quotes Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/96/5a/4f/965a4f15637f5037be138878b9155974.jpg" data-lightbox="roadtrip" data-title="Jumma Ke Din Ka Wazifa Islamic Love Quotes Islamic Quotes Quran Islamic Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/96/5a/4f/965a4f15637f5037be138878b9155974.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWVZGoYlNHBjikW29uNijDDomhgaIypfzp1w';" alt="Jumma Ke Din Ka Wazifa Islamic Love Quotes Islamic Quotes Quran Islamic Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jumma Ke Din Ka Wazifa Islamic Love Quotes Islamic Quotes Quran Islamic Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/b4/d6/e2b4d626b80022b552d06c687d072ce4.jpg" data-lightbox="roadtrip" data-title="Pin By Aim Urdu On Dua Wo Wazaif Quran Quotes Love Islamic Messages Islamic Love Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/b4/d6/e2b4d626b80022b552d06c687d072ce4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyNpLvp_CkkArnlNHN7VoFVX-ysuFdpzAZKA';" alt="Pin By Aim Urdu On Dua Wo Wazaif Quran Quotes Love Islamic Messages Islamic Love Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Aim Urdu On Dua Wo Wazaif Quran Quotes Love Islamic Messages Islamic Love Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/23/13/6d2313adcf097a483992e9d703981803.jpg" data-lightbox="roadtrip" data-title="Pin On My Saves">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/23/13/6d2313adcf097a483992e9d703981803.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlwrxTAlr0yHkVqMEU__KkW4JA_LBjGOUgiw';" alt="Pin On My Saves">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Saves</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/1c/4a/741c4a4d3153412d7feb7a796812c2e6.jpg" data-lightbox="roadtrip" data-title="Pin By Adnan Majeed On Islam Is Beautiful Islamic Quotes Quran Islamic Love Quotes Islamic Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/1c/4a/741c4a4d3153412d7feb7a796812c2e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTRG1mpzNFRxjjkNxFsZGKvktSLLMGontTOA';" alt="Pin By Adnan Majeed On Islam Is Beautiful Islamic Quotes Quran Islamic Love Quotes Islamic Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Adnan Majeed On Islam Is Beautiful Islamic Quotes Quran Islamic Love Quotes Islamic Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/70/07/0f70070cc0a59c94a415364923e7ff75.jpg" data-lightbox="roadtrip" data-title="Pin By Ameer Hamza On My Creation Islamic Messages Islamic Quotes Quran Online Quran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/70/07/0f70070cc0a59c94a415364923e7ff75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPft6KJkzkuOmwAtaMZp8J3lElNthA5KCCGg';" alt="Pin By Ameer Hamza On My Creation Islamic Messages Islamic Quotes Quran Online Quran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ameer Hamza On My Creation Islamic Messages Islamic Quotes Quran Online Quran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9b/27/01/9b2701183007d5608ea5bffa12604270.jpg" data-lightbox="roadtrip" data-title="Ya Raqibo یا رقیب Quran Quotes Love Islamic Love Quotes Quran Quotes Inspirational">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9b/27/01/9b2701183007d5608ea5bffa12604270.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSabAhP-rnyDdKRT4mnrNP8aR1ioIAT4KzIDw';" alt="Ya Raqibo یا رقیب Quran Quotes Love Islamic Love Quotes Quran Quotes Inspirational">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ya Raqibo یا رقیب Quran Quotes Love Islamic Love Quotes Quran Quotes Inspirational</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/a5/b7/5aa5b7f852b37fc3c5ca28353760a5a2.jpg" data-lightbox="roadtrip" data-title="Pin On Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/a5/b7/5aa5b7f852b37fc3c5ca28353760a5a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTlAHznWLUSULcx6Pxwbo2tgTZW5LzKj5rA';" alt="Pin On Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/53/c2/4f53c29c2221772366d75384f77261e2.png" data-lightbox="roadtrip" data-title="Pin On Ismail">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/53/c2/4f53c29c2221772366d75384f77261e2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoROVJeTP0xh2x3o_4ZPjeecdv3oNSfPYROQ';" alt="Pin On Ismail">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ismail</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/bd/73/8c/bd738c6344fa4bdc3cf078324c589e47.jpg" data-lightbox="roadtrip" data-title="Pin Op Ptn Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/bd/73/8c/bd738c6344fa4bdc3cf078324c589e47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXaOQSdHtHfE-csE1JuK9wacHZXLBrVbfP_w';" alt="Pin Op Ptn Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Op Ptn Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1b/c0/61/1bc06140bd78cd17760472f3b1cbd633.jpg" data-lightbox="roadtrip" data-title="Pin By Yusuf On Short Duas Islamic Messages Jummah Mubarak Messages Islamic Love Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1b/c0/61/1bc06140bd78cd17760472f3b1cbd633.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlnBhF5yQTUHWFkaDkOe8LuRE3VNj_hUD44A';" alt="Pin By Yusuf On Short Duas Islamic Messages Jummah Mubarak Messages Islamic Love Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Yusuf On Short Duas Islamic Messages Jummah Mubarak Messages Islamic Love Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-many-players-on-a-womens-college-basketball-team.html">How Many Players On A Womens College Basketball Team</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-gi-bill-worth-2019.html">How Much Is The Gi Bill Worth 2019</a></li>
+													<li class="list-group-item"><a href="/how-many-years-of-service-for-gi-bill.html">How Many Years Of Service For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-many-veterans-use-the-post-911-gi-bill.html">How Many Veterans Use The Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-is-housing-allowance-for-gi-bill.html">How Much Is Housing Allowance For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-gi-bill-2020.html">How Much Is The Gi Bill 2020</a></li>
+													<li class="list-group-item"><a href="/how-much-do-i-get-paid-for-post-911-gi-bill.html">How Much Do I Get Paid For Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-gi-bill-pay-for-a-masters.html">How Much Does The Gi Bill Pay For A Masters</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-montgomery-gi-bill-cover.html">How Much Does The Montgomery Gi Bill Cover</a></li>
+													<li class="list-group-item"><a href="/how-much-is-my-gi-bill-kicker.html">How Much Is My Gi Bill Kicker</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-stem-extension-gi-bill.html">How To Apply For Stem Extension Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-be-eligible-for-post-911-gi-bill.html">How To Be Eligible For Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-do-tattoo-apprentices-get-paid.html">How Much Do Tattoo Apprentices Get Paid</a></li>
+													<li class="list-group-item"><a href="/how-many-quarters-in-womens-college-basketball.html">How Many Quarters In Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/how-much-do-apprentice-lineman-make.html">How Much Do Apprentice Lineman Make</a></li>
+													<li class="list-group-item"><a href="/how-much-is-bah-for-online-classes.html">How Much Is Bah For Online Classes</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-gi-bill-kicker.html">How Much Is The Gi Bill Kicker</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-chapter-33-benefits.html">How To Apply For Chapter 33 Benefits</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-my-gi-bill.html">How To Apply For My Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-is-my-gi-bill-worth.html">How Much Is My Gi Bill Worth</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

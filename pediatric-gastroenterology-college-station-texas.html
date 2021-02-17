@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Pediatric Gastroenterology College Station Texas - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Pediatric Gastroenterology College Station Texas",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/c0/2f/51/c02f51e312652484ebe09c5e7fbd7a09.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=pediatric+gastroenterology+college+station+texas",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Pediatric Gastroenterology College Station Texas</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Joseph Health - College Station TX is dedicated to delivering high quality compassionate care and access to College Station and nearby communities. Joseph Health - College Station TX located at 4401 Texas 6 Frontage Rd College Station TX. Specialists Cardiologists Chiropractors Dermatologists ENT Doctors Eye Doctors Family Doctors. <br>				
+			</p>
+										<a class="badge badge-light" href="/ncaa-womens-basketball-powerhouse-crossword.html">ncaa womens basketball powerhouse crossword</a>
+											<a class="badge badge-primary" href="/ncaa-womens-basketball-georgia-tech.html">ncaa womens basketball georgia tech</a>
+											<a class="badge badge-dark" href="/ncaa-womens-basketball-most-consecutive-wins.html">ncaa womens basketball most consecutive wins</a>
+											<a class="badge badge-dark" href="/ncaa-womens-basketball-rankings-rutgers.html">ncaa womens basketball rankings rutgers</a>
+											<a class="badge badge-info" href="/ncaa-womens-basketball-ohio-state.html">ncaa womens basketball ohio state</a>
+											<a class="badge badge-dark" href="/ncaa-womens-basketball-final-four-2019-tickets.html">ncaa womens basketball final four 2019 tickets</a>
+											<a class="badge badge-light" href="/ncaa-womens-basketball-division-2-stats.html">ncaa womens basketball division 2 stats</a>
+											<a class="badge badge-dark" href="/ncaa-womens-basketball-draft.html">ncaa womens basketball draft</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the ideal site.  Our website gives you hints for viewing the maximum quality video and image content, search and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/15/c9/d3/15c9d3ae06af9b95775b405ce5afa062.jpg" data-lightbox="roadtrip" data-title="Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatrics Pediatric Medicine Pediatric Specialties">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/15/c9/d3/15c9d3ae06af9b95775b405ce5afa062.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ev30WS8x096Dd_SIc-_QYnRp2uFqJSXDhQ';" alt="Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatrics Pediatric Medicine Pediatric Specialties">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatrics Pediatric Medicine Pediatric Specialties</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/ce/79/f4ce792a07a9cc7ced0260417612f474.png" data-lightbox="roadtrip" data-title="Go Texan Day Was A Huge Hit At Texaschildrens Huge Shout Out To Our Texaschildrenspeople For Always Gi Texas Childrens Hospital Childrens Hospital Childrens">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/ce/79/f4ce792a07a9cc7ced0260417612f474.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS58rPUn78-OXSfUDh5rJ55xRAXGHYGPJJzlg';" alt="Go Texan Day Was A Huge Hit At Texaschildrens Huge Shout Out To Our Texaschildrenspeople For Always Gi Texas Childrens Hospital Childrens Hospital Childrens">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go Texan Day Was A Huge Hit At Texaschildrens Huge Shout Out To Our Texaschildrenspeople For Always Gi Texas Childrens Hospital Childrens Hospital Childrens</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e8/57/46/e85746d1baa774c861148306afab7e16.jpg" data-lightbox="roadtrip" data-title="Osce Pediatrics Pictures Wilson S Disease Pediatrics Kawasaki Disease">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e8/57/46/e85746d1baa774c861148306afab7e16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS093orj3Sdxif10XdvK5hXoouTTdKLTLj-FQ';" alt="Osce Pediatrics Pictures Wilson S Disease Pediatrics Kawasaki Disease">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Osce Pediatrics Pictures Wilson S Disease Pediatrics Kawasaki Disease</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/06/71/17/06711746853d456b4d659ce329c873ee.jpg" data-lightbox="roadtrip" data-title="Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatric Medicine Pediatrics Pediatric Specialties">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/06/71/17/06711746853d456b4d659ce329c873ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9NpCgtKiaivqKqRlXCL562vR3xZ3nHjmuzg';" alt="Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatric Medicine Pediatrics Pediatric Specialties">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatric Medicine Pediatrics Pediatric Specialties</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/28/f3/89/28f38919bb7b541e5f423eead3498088.jpg" data-lightbox="roadtrip" data-title="Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatrics Medical Knowledge Fetal Alcohol Syndrome">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/28/f3/89/28f38919bb7b541e5f423eead3498088.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj0dllDZrgHhOPkIGR3pCsyYJESHJjXTKqrA';" alt="Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatrics Medical Knowledge Fetal Alcohol Syndrome">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatrics Medical Knowledge Fetal Alcohol Syndrome</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dellchildrens.net/images/profiles/seton/Challa-Bharani.jpg" data-lightbox="roadtrip" data-title="David J Easley Md Dell Children S Medical Center Of Central Texas">
+											<img class="card-img v-image ads-img " src="https://www.dellchildrens.net/images/profiles/seton/Challa-Bharani.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-UkyaejQdI1fzX3iuWzchswlf3a30iFP5bQ';" alt="David J Easley Md Dell Children S Medical Center Of Central Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">David J Easley Md Dell Children S Medical Center Of Central Texas</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/15/c9/d3/15c9d3ae06af9b95775b405ce5afa062.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-UkyaejQdI1fzX3iuWzchswlf3a30iFP5bQ';" alt="David J Easley Md Dell Children S Medical Center Of Central Texas">
+										<div class="card-body">
+						<h3 class="h5"><b>The Vitals website is provided for your informational use only.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Pediatric gastroenterology college station texas</strong>. 
+								
+																	Practitioners understand disorders of the digestive systems of infants children and adolescents. 
+																	Pediatric Care in Bryan TX and College Station TX CHI St. 
+																	Nothing contained or offered by on or. 
+																	A subspecialty certification by the Board of Pediatrics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College Station TX. 
+																	Practitioners understand disorders of the digestive systems of infants children and adolescents. 
+																	Find local pediatric gastroenterology specialists in College Station TX. 
+																	College Station TX 77845 From Business. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pediatric Gastroenterology What is a Pediatric Gastroenterology. 
+																	See reviews photos directions phone numbers and more for the best Physicians Surgeons Pediatrics-Gastroenterology in College Station TX. 
+																	See all Gastroenterologist office locations in College Station doctor ratings and insurance accepted. 
+																	GASTROENTEROLOGY DISORDERS IN COLLEGE STATION TEXAS At the office of K. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Easley joined the Pediatric Gastroenterology Division of Specially For Children in 2009. 
+																	Enjoy the convenience of online scheduling in College Station TX today. 
+																	Get Listed Internists Massage Naturopaths OBGYN Oncologists Pediatricians. 
+																	Easley and his wife are active members of their church community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gastroenterology is the branch of medicine 2. 
+																	Find a Gastroenterologist near you in College Station TX. 
+																	Find a Gastroenterologist in College Station TX. 
+																	What is a Pediatric Gastroenterology. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ragupathis office we specialize in the diagnosis and treatment of gastroenterology disorders and diseases. 
+																	As part of the CHI network Pediatrics - CHI St. 
+																	Pediatric Gastroenterology - Medical discipline that studies the pathological processes in the digestive system of children and adolescents - possibilities of diagnostics treatment and prevention. 
+																	Joseph and Texas AM Health Network pediatricians have access to every treatment and care resource of the regions largest health system. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Easley and his wife are active members of their church community. 
+																	Visit Pediatrics - CHI St. 
+																	The doctors and care teams deliver multi-specialty pediatric care to children of all ages including teenagers. 
+																	Physical Therapists Podiatrists Surgeons. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Baylor Scott White Medical Center College Station is a five-story 143-bed hospital located on a 98-acre campus near the intersection of Texas Highway 6 and Rock Prairie Road. 
+																	Ragupathi MD we specialize in gastroenterology disorders and diseases providing diagnosis and treatment for gallstones hepatitis ulcers colitis and other conditions. 
+																	Community Well-being Index Blue Zones Project. 
+																	Cities with Pediatric Gastroenterologists Click on any of the following 2 cities to find more pediatric gastroenterologists near College Station TX Austin TX San Angelo TX. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gastroenterologist reviews phone number address and map. 
+																	College Station Pediatric Gastroenterology Doctors and Specialists for GERD in Infants and Children Type of Physician. 
+																	Baylor Scott White Clinic College Station Rock Prairie a four-story medical office building is also located on the campus adjacent to the hospital. 
+																	Gastroenterology online appointment scheduling for Ascension. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to Texas Childrens Pediatrics University Pediatric Association the Brazos Valleys oldest and largest pediatric specialty practice. 
+																	Enjoy the convenience of online scheduling in College Station TX today. 
+																	Our team of Board Certified physicians is dedicated to providing the highest level of pediatric care for every child in College Station because we believe every child deserves a specialist. 
+																	Pediatric Gastroenterology in Texas College Station. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	His outside interests include fishing woodworking and tennis. 
+																	A subspecialty certification by the Board of Pediatrics. 
+																	Find the best Gastroenterologist in College Station TX. 
+																	30 years exp erience. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Central Texas pediatric sub-specialty group Specially for Children has eight outpatient clinics in Austin College Station Kyle Round Rock and San Angelo. 
+																	He and his wife Kristy have two daughters and one grandchild. 
+																	His outside interests include fishing woodworking and tennis. 
+																	Pediatric Gastroenterology online appointment scheduling for Ascension. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He and his wife Kristy have two daughters and one grandchild. 
+																	Easley joined the Pediatric Gastroenterology Division of Specially For Children in 2009. 
+																	David J Easley MD Pediatric Gastroenterology. 
+																	Established in 1996 the Specially for Children pediatric group now. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Make an appointment with us today and get the care you need to manage your condition and feel better. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://healthcare.ascension.org/ui/healthcare/assets/images/core/ascension-logo.svg" data-lightbox="roadtrip" data-title="Specially For Children College Station Ascension">
+											<img class="card-img v-image ads-img " src="https://healthcare.ascension.org/ui/healthcare/assets/images/core/ascension-logo.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFm-60xA0Cw41rULqLnv50Uc2LSzAcHJFUAA';" alt="Specially For Children College Station Ascension">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Specially For Children College Station Ascension</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.austinregionalclinic.com/templates/ARC/uploads/Doctor40576.jpg" data-lightbox="roadtrip" data-title="Kathryn B Wheeler Do Pediatrics Austin Regional Clinic">
+											<img class="card-img v-image ads-img " src="https://www.austinregionalclinic.com/templates/ARC/uploads/Doctor40576.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFI9OPkSZmZhiVR5_g18dNMS-2vcUF2g5lpQ';" alt="Kathryn B Wheeler Do Pediatrics Austin Regional Clinic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kathryn B Wheeler Do Pediatrics Austin Regional Clinic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/09/8e/e1098ec00ebea7e40f1ec9113a2fb7d1.png" data-lightbox="roadtrip" data-title="Texas A M Aggies Football Team 2012 Schedule Kentucky Wildcats Football Texas Aggies Football Texas Aggies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/09/8e/e1098ec00ebea7e40f1ec9113a2fb7d1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFDhj4FVRSvuRONAg6SpZ4hP_OgijUWevhYg';" alt="Texas A M Aggies Football Team 2012 Schedule Kentucky Wildcats Football Texas Aggies Football Texas Aggies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas A M Aggies Football Team 2012 Schedule Kentucky Wildcats Football Texas Aggies Football Texas Aggies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bswhealth.com/SiteCollectionImages/500x500/child-dc-playing-outside_500.jpg" data-lightbox="roadtrip" data-title="Pediatric Gastroenterology Baylor Scott White Mclane Children S">
+											<img class="card-img v-image ads-img " src="https://www.bswhealth.com/SiteCollectionImages/500x500/child-dc-playing-outside_500.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSHLdVS1p5bagM3ZLlDwIAxtqipDjb02i1qg';" alt="Pediatric Gastroenterology Baylor Scott White Mclane Children S">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pediatric Gastroenterology Baylor Scott White Mclane Children S</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/24/b5/ff24b582d86dfeb9125df241614b9557.jpg" data-lightbox="roadtrip" data-title="Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatrics Chiari Malformation Pediatric Medicine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/24/b5/ff24b582d86dfeb9125df241614b9557.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkXqnvphW8dxdRb8izaxxlSNdEYmmx6sYJLA';" alt="Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatrics Chiari Malformation Pediatric Medicine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Osce Stations On Clinical Signs In Pediatrics Dnb Pediatrics Pediatrics Chiari Malformation Pediatric Medicine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/d8/ce/cad8cefe5ccb73485a16fd490003ba9f.jpg" data-lightbox="roadtrip" data-title="Bronchiolitis Rsv Pediatric Nursing Nursing Notes Pediatric Nurse Practitioner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/d8/ce/cad8cefe5ccb73485a16fd490003ba9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDlhSyh3vkiO0BXcT2PyqG1AexUWYLAMbDZw';" alt="Bronchiolitis Rsv Pediatric Nursing Nursing Notes Pediatric Nurse Practitioner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bronchiolitis Rsv Pediatric Nursing Nursing Notes Pediatric Nurse Practitioner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/ec/c8/f4ecc84c96fe5b654575cee5f51e5584.png" data-lightbox="roadtrip" data-title="Peptic Ulcer Disease Concept Map Nursing School Notes Nursing School Tips Nursing School Survival">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/ec/c8/f4ecc84c96fe5b654575cee5f51e5584.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-OCeMKHGS4yRoGrqqn2jKFRgpfQHxSYArg';" alt="Peptic Ulcer Disease Concept Map Nursing School Notes Nursing School Tips Nursing School Survival">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Peptic Ulcer Disease Concept Map Nursing School Notes Nursing School Tips Nursing School Survival</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/2f/51/c02f51e312652484ebe09c5e7fbd7a09.jpg" data-lightbox="roadtrip" data-title="Pharmacology Nursing Mnemonics Tips Nurseslabs Pharmacology Nursing Nursing Mnemonics Pharmacology Mnemonics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/2f/51/c02f51e312652484ebe09c5e7fbd7a09.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHogRoDHlCuPFlHl7KMQun3gKZYgafmTnAeA';" alt="Pharmacology Nursing Mnemonics Tips Nurseslabs Pharmacology Nursing Nursing Mnemonics Pharmacology Mnemonics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pharmacology Nursing Mnemonics Tips Nurseslabs Pharmacology Nursing Nursing Mnemonics Pharmacology Mnemonics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/5d/3b/315d3bc7cdfe3846854df1f2cacddd33.jpg" data-lightbox="roadtrip" data-title="Information For Nursing Students And New Nurses From The Former Dean Of A Nursing Program In Texa Perioperative Nursing Online Nursing Schools Nursing Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/5d/3b/315d3bc7cdfe3846854df1f2cacddd33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQA5vNTX54uQRyfDQqyvKq9Y-rLYpWDBdUWA';" alt="Information For Nursing Students And New Nurses From The Former Dean Of A Nursing Program In Texa Perioperative Nursing Online Nursing Schools Nursing Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Information For Nursing Students And New Nurses From The Former Dean Of A Nursing Program In Texa Perioperative Nursing Online Nursing Schools Nursing Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/48/b9/4548b961ad7659788f0eb33061a59bf4.png" data-lightbox="roadtrip" data-title="Types Of Pediatric Central Venous Access Devices Nursing School Survival Pediatric Nursing Nursing School Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/48/b9/4548b961ad7659788f0eb33061a59bf4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrxmPkhNcSu0gQMqChGq1pCIlSQQNH52vU_Q';" alt="Types Of Pediatric Central Venous Access Devices Nursing School Survival Pediatric Nursing Nursing School Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Types Of Pediatric Central Venous Access Devices Nursing School Survival Pediatric Nursing Nursing School Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/f7/64/1af764014ae1cec8e7f782bc2c5cfb2c.jpg" data-lightbox="roadtrip" data-title="Heart Defects In Kids Aortic Stenosis Pediatric Nursing Nursing Exam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/f7/64/1af764014ae1cec8e7f782bc2c5cfb2c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQzqsxdbbMGEV0_5UBNDKBRHzPx7MSIjWhYA';" alt="Heart Defects In Kids Aortic Stenosis Pediatric Nursing Nursing Exam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Heart Defects In Kids Aortic Stenosis Pediatric Nursing Nursing Exam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/0b/5d/d40b5d7805cd20d85fa4002a8ece3bf7.jpg" data-lightbox="roadtrip" data-title="Rosh Review Nursing Mnemonics Emergency Medicine Nursing Flashcards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/0b/5d/d40b5d7805cd20d85fa4002a8ece3bf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn5_8WsXLdN2QINlGyV8NcHqfd_dXSUXh2ZA';" alt="Rosh Review Nursing Mnemonics Emergency Medicine Nursing Flashcards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rosh Review Nursing Mnemonics Emergency Medicine Nursing Flashcards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/8d/92/8b8d924d0e38a03aa6b54861eaa77f2b.jpg" data-lightbox="roadtrip" data-title="Celebrex Bone And Joint Pharmacology Dance Contest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/8d/92/8b8d924d0e38a03aa6b54861eaa77f2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfdwMP4ubjF7BpHrfefo6luWs-fFm74ZE8g';" alt="Celebrex Bone And Joint Pharmacology Dance Contest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Celebrex Bone And Joint Pharmacology Dance Contest</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-the-gi-bill-pay-for-online-college.html">Does The Gi Bill Pay For Online College</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-apply-to-spouses.html">Does The Gi Bill Apply To Spouses</a></li>
+													<li class="list-group-item"><a href="/does-post-911-gi-bill-pay-for-housing.html">Does Post 911 Gi Bill Pay For Housing</a></li>
+													<li class="list-group-item"><a href="/does-in-and-out-pay-for-college.html">Does In And Out Pay For College</a></li>
+													<li class="list-group-item"><a href="/does-snhu-accept-gi-bill.html">Does Snhu Accept Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-cover-health-insurance.html">Does Gi Bill Cover Health Insurance</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-cover-overseas-schools.html">Does Gi Bill Cover Overseas Schools</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-pay-for-private-college.html">Does Gi Bill Pay For Private College</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-apply-to-officers.html">Does The Gi Bill Apply To Officers</a></li>
+													<li class="list-group-item"><a href="/does-college-cause-anxiety.html">Does College Cause Anxiety</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-cover-online-classes.html">Does The Gi Bill Cover Online Classes</a></li>
+													<li class="list-group-item"><a href="/does-penn-state-give-merit-scholarships.html">Does Penn State Give Merit Scholarships</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-pay-for-harvard.html">Does The Gi Bill Pay For Harvard</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-cover-housing.html">Does The Gi Bill Cover Housing</a></li>
+													<li class="list-group-item"><a href="/does-it-matter-if-you-go-to-community-college.html">Does It Matter If You Go To Community College</a></li>
+													<li class="list-group-item"><a href="/does-coast-guard-have-gi-bill.html">Does Coast Guard Have Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-chapter-35-back-pay.html">Does Chapter 35 Back Pay</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-pay-for-housing-for-dependents.html">Does Gi Bill Pay For Housing For Dependents</a></li>
+													<li class="list-group-item"><a href="/does-college-make-you-more-successful.html">Does College Make You More Successful</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-pay-tuition.html">Does Gi Bill Pay Tuition</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

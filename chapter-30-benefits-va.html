@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Chapter 30 Benefits Va - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Chapter 30 Benefits Va",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/d0/7b/a3/d07ba30d163d456d1c72ba3794bc7e0a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=chapter+30+benefits+va",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Chapter 30 Benefits Va</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Youre entitled to receive this benefit if one of the followings occurred. Please make sure to complete the Getting Started steps Apply for Benefits. Member can exhaust all Ch. <br>				
+			</p>
+										<a class="badge badge-success" href="/college-gymnastics-quiz.html">college gymnastics quiz</a>
+											<a class="badge badge-dark" href="/college-gym-fanscom.html">college gym fanscom</a>
+											<a class="badge badge-dark" href="/college-gym-fans-recruits.html">college gym fans recruits</a>
+											<a class="badge badge-success" href="/college-gymnastics-blogs.html">college gymnastics blogs</a>
+											<a class="badge badge-light" href="/college-gymnastics-levels.html">college gymnastics levels</a>
+											<a class="badge badge-success" href="/college-gymnastics-florida.html">college gymnastics florida</a>
+											<a class="badge badge-danger" href="/college-gym-fans-injury.html">college gym fans injury</a>
+											<a class="badge badge-primary" href="/college-gymnastics-picture-poses.html">college gymnastics picture poses</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to visit the right site.  Our site provides you with suggestions for viewing the maximum quality video and image content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this movie that you see.  You can also contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/28/c9/e928c9f4fe832ca75b592dde3d34baa5.jpg" data-lightbox="roadtrip" data-title="The Next Chapter After Divorce Divorce Puget Sound Washington Home Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/28/c9/e928c9f4fe832ca75b592dde3d34baa5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiSCT42b7rjHCD-QryaU_v1KF4WxtcU7M-mA';" alt="The Next Chapter After Divorce Divorce Puget Sound Washington Home Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Next Chapter After Divorce Divorce Puget Sound Washington Home Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/80/00/6e8000bd359717f290df553397dadea9.png" data-lightbox="roadtrip" data-title="Pin By Louisville Kentucky Mortgage F On Credit Scores Needed To Qualify For A Kentucky Fha Va Khs Usda And Rural Housing Mortgage Loans Mortgage Brokers Fha Mortgage Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/80/00/6e8000bd359717f290df553397dadea9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Yrwxlms6YXy3npgo3XksNTfjOxmt1Urgbw';" alt="Pin By Louisville Kentucky Mortgage F On Credit Scores Needed To Qualify For A Kentucky Fha Va Khs Usda And Rural Housing Mortgage Loans Mortgage Brokers Fha Mortgage Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Louisville Kentucky Mortgage F On Credit Scores Needed To Qualify For A Kentucky Fha Va Khs Usda And Rural Housing Mortgage Loans Mortgage Brokers Fha Mortgage Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8c/2b/7a/8c2b7a4d39731b8a8595e0ce1a40e89b.jpg" data-lightbox="roadtrip" data-title="Are You Caring For Veteran With Alzheimer S Disease Or Another Type Dementia Check Out This Useful Article From The Va Caregiver Support Caregiver Supportive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8c/2b/7a/8c2b7a4d39731b8a8595e0ce1a40e89b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLdKhBXHCtCaWTLypIK8LCo01orOphKt0kpA';" alt="Are You Caring For Veteran With Alzheimer S Disease Or Another Type Dementia Check Out This Useful Article From The Va Caregiver Support Caregiver Supportive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Caring For Veteran With Alzheimer S Disease Or Another Type Dementia Check Out This Useful Article From The Va Caregiver Support Caregiver Supportive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/79/30/ea/7930ea34478dab4356c0152ee9de2989.jpg" data-lightbox="roadtrip" data-title="Va Disability Back Pay Va Disability Disability Disability Payments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/79/30/ea/7930ea34478dab4356c0152ee9de2989.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOsQ94ia0kocicplVsp9dBZN1jR-pNwzlV0A';" alt="Va Disability Back Pay Va Disability Disability Disability Payments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Back Pay Va Disability Disability Disability Payments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/7a/e9/d17ae9444bf5164b29c412b4a8a62e95.jpg" data-lightbox="roadtrip" data-title="Havelock Nc Mar 25 2017 Dice Run For Dav Proceeds To Benefit The Disabled American Veteran S Chapter 2 Motorcycle Events Charity Events American Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/7a/e9/d17ae9444bf5164b29c412b4a8a62e95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9s5KwapO-IfSW-UmSWlq9uLx885OJIdIK-w';" alt="Havelock Nc Mar 25 2017 Dice Run For Dav Proceeds To Benefit The Disabled American Veteran S Chapter 2 Motorcycle Events Charity Events American Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Havelock Nc Mar 25 2017 Dice Run For Dav Proceeds To Benefit The Disabled American Veteran S Chapter 2 Motorcycle Events Charity Events American Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/7e/36/24/7e3624e8ccb1dd71b3e035cd57ddaca9.jpg" data-lightbox="roadtrip" data-title="Your Military Health Insurance Is Likely To End On The Day Your Partner Leaves The Service In 2020 Health Insurance Options Health Care Options Health Administration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/7e/36/24/7e3624e8ccb1dd71b3e035cd57ddaca9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9PIgkG7xT7AzL94W3UDRrPEAH2OHhy1XXuQ';" alt="Your Military Health Insurance Is Likely To End On The Day Your Partner Leaves The Service In 2020 Health Insurance Options Health Care Options Health Administration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Military Health Insurance Is Likely To End On The Day Your Partner Leaves The Service In 2020 Health Insurance Options Health Care Options Health Administration</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/83/91/ea/8391eae91dd48c3bef11f4c2b6c887c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9PIgkG7xT7AzL94W3UDRrPEAH2OHhy1XXuQ';" alt="Your Military Health Insurance Is Likely To End On The Day Your Partner Leaves The Service In 2020 Health Insurance Options Health Care Options Health Administration">
+										<div class="card-body">
+						<h3 class="h5"><b>However approval is not guaranteed.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Chapter 30 benefits va</strong>. 
+								
+																	Well I just got their letter today denying it. 
+																	Had at least 1 day of entitlement left under the Vietnam Era GI Bill Chapter 34 as of December 31 1989. 
+																	Active duty and veterans. 
+																	Please contact the unit Education Officer or the Department of Veterans Affairs Education Benefits at 1-888-442-4551. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not transferable to dependents. 
+																	Of Veterans Affairs beginning the last day of every month before receiving their benefit checks. 
+																	Verification Monthly verification requirement. 
+																	30 of title 38 USC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Recipients receive a monthly stipend from the VA and can receive up to 36 months benefits. 
+																	Chapter 30 MGIB of Title 38 United States Code is specifically for active duty military members and former service members who served more than three years on active duty and were honorably discharged. 
+																	The Montgomery GI Bill MGIB is an educational benefit for military members and is administered by the Department of Veterans Affairs VA. 
+																	Recipients who combine this benefit with one or more other Chapter Benefits can receive up to 48 months of total benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Post Jul 07 2009 1 2009-07-07T1540. 
+																	Chapter 30 The student must obtain a copy of VA Form 22-1990 Application for Veterans Affairs Educational Benefits from the PSC veterans affairs advisor andor apply through wwwgibillvagov. 
+																	Multiple people at the VA have told me several times since his death that I need to apply for his Chapter 30 refund so I did. 
+																	A recipients benefit amount is affected by their training time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	30 Montgomery GI Bill provides up to 36 months of education benefits to veterans. 
+																	30 benefits and receive an additional 12 months of Ch. 
+																	The veteran. 
+																	There are several education benefits that are offered by the Department of Veterans Affairs VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Up to 48 months of. 
+																	Apply for Financial Aid. 
+																	Served at least one day between 101984 and 63085 and stayed on active duty through 63088 or through 63087 if you entered the Selected Reserve within one year of leaving active duty and served four years On 123189 you had entitlement left from Vietnam-era GI Bill. 
+																	Veterans who have at least a 20 disability rating are eligible to apply. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MONTGOMERY GI BILL ACTIVE DUTY CHAPTER 30 INCREASED EDUCATIONAL BENEFIT Effective October 1 2017 Educational Assistance Allowance for trainees under the Montgomery GI Bill - Active Duty Ch. 
+																	This month all three. 
+																	Chapter 30 benefits generally apply to honorably discharged veterans who began active duty service for the first time after June 30 1985 who had their pay reduced by 100 a month for 12 months. 
+																	Not eligible for MGIB under Category I or II. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The following basic monthly rates are effective October 1 2017. 
+																	Eligibility requirements are set by law and are complex. 
+																	Must bring your. 
+																	Served at least 1 day between October 19 1984 and June 30 1985 and stayed on active duty through June 30 1988 or through June 30 1987 if you entered the Selected Reserve within 1 year of leaving active duty and served 4 years and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Chapter 30 GI BILL Benefits Late VA Chapter 30 GI BILL Benefits Late. 
+																	Service members may be eligible for more than one VA benefit. 
+																	If eligible veterans will have up to 10 years following the release from active duty to utilize their benefits. 
+																	Paperwork Needed for Enrollment at CSU. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chapter 30 Chapter 1606 and 1607 benefits users must verify their enrollment with the Dept. 
+																	The Montgomery GI Bill - Active Duty Chapter 30 also called MGIB or MGIB-AD is an education benefit that provides up to 36 months of full-time payments to eligible veterans and service members for approved education and training programs. 
+																	After reviewing veterans education records it appears he is not entitled a refund of his military contributions. 
+																	You may include this information on the document you submit or you may contact us. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Chapter Benefits. 
+																	For questions concerning eligibility please contact Veterans Affairs. 
+																	Students using Chapter 30 must verify attendance monthly by phone or online. 
+																	For information on the four eligibility categories visit the VAgov information page for Chapter 30. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chapter 30 Benefit Description Veterans or active duty service members who enrolled in and paid 1200 into the program within their first year of service and who also meet qualifying criteria in one of the four program categories may be eligible receive up to 36 months of education benefits. 
+																	The Montgomery GI Bill Active Duty MGIB-AD program also known as Chapter 30 offers education benefits to those who have served at least two years of active duty. 
+																	The Office of Military and Veterans Affairs will make it as smooth as possible for you to use your MGIB-AD benefits at Creighton University. 
+																	Myself my spouse and a good friend are all continuing students that have been using benefits for a while. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Start using your VA Education Benefits In person by visiting the Veterans Resource Center. 
+																	Vocational Rehabilitation Employment. 
+																	Home Student Services Veterans VA Education Benefits Chapter 30 - Montgomery GI Bill Chapter 30 Using Your Benefits. 
+																	Please be sure to inform us of the VA Chapter of benefits you are using Ch. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hello gang Im trying to see if there are any other vets out there that are having issues with their chapter 30 benefits. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/be/ce/c2bece56eae8087dd08e6757af5c7199.jpg" data-lightbox="roadtrip" data-title="Introduction To Algorithms Introduction To Algorithms Algorithm Textbook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/be/ce/c2bece56eae8087dd08e6757af5c7199.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZWOy6A50M9CIOGJCiyn2SrEIHDucZQIHMHA';" alt="Introduction To Algorithms Introduction To Algorithms Algorithm Textbook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Introduction To Algorithms Introduction To Algorithms Algorithm Textbook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/1b/c1/821bc10032ec76f5e3ea8c726488ef9c.jpg" data-lightbox="roadtrip" data-title="Ers Tiers 3 And 4 Benefits Tiers Retirement Pension Fund">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/1b/c1/821bc10032ec76f5e3ea8c726488ef9c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9K1eGCXDpu7KniCXjGSJDFfVMVSxOdGTM7Q';" alt="Ers Tiers 3 And 4 Benefits Tiers Retirement Pension Fund">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ers Tiers 3 And 4 Benefits Tiers Retirement Pension Fund</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/c0/f0/9cc0f03ea7ea5bc36bd072399eeec4dc.jpg" data-lightbox="roadtrip" data-title="Trifold Membership Brochure For The International Association Of Administrative Professionals Booz Allen Chapter Graphic De Villanueva Graphic Design Chapter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/c0/f0/9cc0f03ea7ea5bc36bd072399eeec4dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSErT-bwb4rkZ0nK0R-QmF9GO2b1Bzzfz-3Xg';" alt="Trifold Membership Brochure For The International Association Of Administrative Professionals Booz Allen Chapter Graphic De Villanueva Graphic Design Chapter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trifold Membership Brochure For The International Association Of Administrative Professionals Booz Allen Chapter Graphic De Villanueva Graphic Design Chapter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/ee/35/f9ee3568df2883419242f5bdac636abe.jpg" data-lightbox="roadtrip" data-title="Are You A 30 Minute Drive From Your Nearest Va Medical Facility This Map Will Show You Medical Veterans Health Care Driving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/ee/35/f9ee3568df2883419242f5bdac636abe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrMUKY3AtCk7zuxkIutKmfIsyqz6t7IqUbfA';" alt="Are You A 30 Minute Drive From Your Nearest Va Medical Facility This Map Will Show You Medical Veterans Health Care Driving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You A 30 Minute Drive From Your Nearest Va Medical Facility This Map Will Show You Medical Veterans Health Care Driving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/ef/af/a1efaf031de175403135285c86a75a01.png" data-lightbox="roadtrip" data-title="Pin On Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/ef/af/a1efaf031de175403135285c86a75a01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE4CpUqCEerczGUbA-gx00U1_r67o_AY68Kw';" alt="Pin On Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/13/9d/eb139d2c519cfacfb881d57606eaf2f6.png" data-lightbox="roadtrip" data-title="Kentucky Rural Housing Usda Credit And Income Guidelines For 2018 Kentucky Rural Housing Usda Credit And Incom Loans For Bad Credit Usda Loan No Credit Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/13/9d/eb139d2c519cfacfb881d57606eaf2f6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlmehY1qjk6b4Xvnb8JR8zQ1AlPqWH0imgg';" alt="Kentucky Rural Housing Usda Credit And Income Guidelines For 2018 Kentucky Rural Housing Usda Credit And Incom Loans For Bad Credit Usda Loan No Credit Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Rural Housing Usda Credit And Income Guidelines For 2018 Kentucky Rural Housing Usda Credit And Incom Loans For Bad Credit Usda Loan No Credit Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/73/5d/2a735d9c76e7382dbac6ca17b67d96de.jpg" data-lightbox="roadtrip" data-title="Pin By Norcom Mortgage On Lunch And Learns Events Business Regulations Continuing Education Class Action Lawsuits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/73/5d/2a735d9c76e7382dbac6ca17b67d96de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Rghyh4vRWuU6kYqXPHbVMOgURs3HA1cQdw';" alt="Pin By Norcom Mortgage On Lunch And Learns Events Business Regulations Continuing Education Class Action Lawsuits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Norcom Mortgage On Lunch And Learns Events Business Regulations Continuing Education Class Action Lawsuits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/b0/12/c7b012b01a65278a8d81907a00174518.jpg" data-lightbox="roadtrip" data-title="Joann Frazier Mortgage Loan Officer Www Wjbradley Com Joann Frazier Mortgage Loan Officer Mortgage Loans Loan Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/b0/12/c7b012b01a65278a8d81907a00174518.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu7-zr61Cbbi-7Vo-ttz8JHT74CEs1V8aypw';" alt="Joann Frazier Mortgage Loan Officer Www Wjbradley Com Joann Frazier Mortgage Loan Officer Mortgage Loans Loan Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Joann Frazier Mortgage Loan Officer Www Wjbradley Com Joann Frazier Mortgage Loan Officer Mortgage Loans Loan Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/c1/18/87c11814cd74d0b5c45d28bc710dab21.jpg" data-lightbox="roadtrip" data-title="Veterans Mortgage Rates Have Dropped Great Time For A Refinance Veterans Veteranownedbusiness Va Service Home Heal Home Loans Loan Lowest Mortgage Rates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/c1/18/87c11814cd74d0b5c45d28bc710dab21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ1AzUktYE-yIrA49ZMIgxh-IMzcNyykNY3A';" alt="Veterans Mortgage Rates Have Dropped Great Time For A Refinance Veterans Veteranownedbusiness Va Service Home Heal Home Loans Loan Lowest Mortgage Rates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Mortgage Rates Have Dropped Great Time For A Refinance Veterans Veteranownedbusiness Va Service Home Heal Home Loans Loan Lowest Mortgage Rates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f4/5c/6d/f45c6d2279a8f8a7685bf6ac72a0edfb.jpg" data-lightbox="roadtrip" data-title="Calculate Child Support Payments Child Support Calculator Parental Income Influences Child Support Child Support Quotes Child Support Payments Child Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f4/5c/6d/f45c6d2279a8f8a7685bf6ac72a0edfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT55fAAn0ppHDRQkHjfldlRiRuWeQRhWu9GeQ';" alt="Calculate Child Support Payments Child Support Calculator Parental Income Influences Child Support Child Support Quotes Child Support Payments Child Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Calculate Child Support Payments Child Support Calculator Parental Income Influences Child Support Child Support Quotes Child Support Payments Child Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/7b/a3/d07ba30d163d456d1c72ba3794bc7e0a.jpg" data-lightbox="roadtrip" data-title="Va Certified Course To Enter The It Industry El Paso Tx March 11 2013 Miami Fl February 28 2013 Http Military Ci Veteran Jobs Ccna Au University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/7b/a3/d07ba30d163d456d1c72ba3794bc7e0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsMeFBVkH8Y64DMBLd5_CksAD-6KDzOGK2jw';" alt="Va Certified Course To Enter The It Industry El Paso Tx March 11 2013 Miami Fl February 28 2013 Http Military Ci Veteran Jobs Ccna Au University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Certified Course To Enter The It Industry El Paso Tx March 11 2013 Miami Fl February 28 2013 Http Military Ci Veteran Jobs Ccna Au University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/0a/23/d10a2329897c6c3591d7a8116a79a223.png" data-lightbox="roadtrip" data-title="Did You Have A Short Sale Foreclosure Or Bankruptcy In The Past Here Are The Waiting Periods To Be Able To Buy A Home Af Home Buying Informative Shorts Sale">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/0a/23/d10a2329897c6c3591d7a8116a79a223.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCh7aedf8zqVGnv52lHDBotLpHca28Vrs7LA';" alt="Did You Have A Short Sale Foreclosure Or Bankruptcy In The Past Here Are The Waiting Periods To Be Able To Buy A Home Af Home Buying Informative Shorts Sale">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Did You Have A Short Sale Foreclosure Or Bankruptcy In The Past Here Are The Waiting Periods To Be Able To Buy A Home Af Home Buying Informative Shorts Sale</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/83/91/ea/8391eae91dd48c3bef11f4c2b6c887c6.jpg" data-lightbox="roadtrip" data-title="When Will My Milk Come In Poster Breastfeeding Breastfeeding Breastfeeding Support Breastfeeding And Pumping">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/83/91/ea/8391eae91dd48c3bef11f4c2b6c887c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_YzCKStYG6nxBUFJro8XmuQW8iPVpdjdjZg';" alt="When Will My Milk Come In Poster Breastfeeding Breastfeeding Breastfeeding Support Breastfeeding And Pumping">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Will My Milk Come In Poster Breastfeeding Breastfeeding Breastfeeding Support Breastfeeding And Pumping</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-can-the-gi-bill-be-used-for.html">What Can The Gi Bill Be Used For</a></li>
+													<li class="list-group-item"><a href="/what-certifications-does-the-gi-bill-cover.html">What Certifications Does The Gi Bill Cover</a></li>
+													<li class="list-group-item"><a href="/voorhees-college-womens-basketball-schedule.html">Voorhees College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/what-colleges-accept-post-911-gi-bill.html">What Colleges Accept Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/virginia-tuition-assistance-grant-vtag.html">Virginia Tuition Assistance Grant Vtag</a></li>
+													<li class="list-group-item"><a href="/what-bah-rate-does-the-gi-bill-pay.html">What Bah Rate Does The Gi Bill Pay</a></li>
+													<li class="list-group-item"><a href="/what-channel-is-college-gymnastics-on.html">What Channel Is College Gymnastics On</a></li>
+													<li class="list-group-item"><a href="/wagner-college-womens-basketball-schedule.html">Wagner College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/what-are-the-womens-college-basketball-rankings.html">What Are The Womens College Basketball Rankings</a></li>
+													<li class="list-group-item"><a href="/what-college-to-go-to-quiz.html">What College To Go To Quiz</a></li>
+													<li class="list-group-item"><a href="/what-college-is-best-for-zoology.html">What College Is Best For Zoology</a></li>
+													<li class="list-group-item"><a href="/washington-college-womens-basketball-schedule.html">Washington College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/what-do-va-benefits-include.html">What Do Va Benefits Include</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-do-quizlet.html">What Did The Gi Bill Do Quizlet</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-retired-military-get.html">What Benefits Do Retired Military Get</a></li>
+													<li class="list-group-item"><a href="/what-college-guys-want-for-christmas.html">What College Guys Want For Christmas</a></li>
+													<li class="list-group-item"><a href="/was-the-gi-bill-successful.html">Was The Gi Bill Successful</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-do-for-many-returning-world-war-ii-veterans.html">What Did The Gi Bill Do For Many Returning World War Ii Veterans</a></li>
+													<li class="list-group-item"><a href="/what-college-do-i-go-to-quiz.html">What College Do I Go To Quiz</a></li>
+													<li class="list-group-item"><a href="/washington-air-national-guard-agr-jobs.html">Washington Air National Guard Agr Jobs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

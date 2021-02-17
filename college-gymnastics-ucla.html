@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Gymnastics Ucla - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Gymnastics Ucla",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/51/01/07/5101078ac3b38f2dbaf0cf272d52dba7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+gymnastics+ucla",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Gymnastics Ucla</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">1309 Murphy Hall Box 951413 Los Angeles CA 90095-1413 t 310 206-1953 f 310 267-2343. Hometown High School Club. The UCLA seniors viral floor exercise prompted shout-outs from Michelle Obama and Janet Jackson by leaning into the freedom of expression unique to college gymnastics Last modified on Thu 28. <br>				
+			</p>
+										<a class="badge badge-light" href="/ncaa-mens-gymnastics-team-rankings.html">ncaa mens gymnastics team rankings</a>
+											<a class="badge badge-primary" href="/ncaa-womens-basketball-all-time-rebound-leaders.html">ncaa womens basketball all time rebound leaders</a>
+											<a class="badge badge-warning" href="/ncaa-womens-basketball-powerhouse-crossword.html">ncaa womens basketball powerhouse crossword</a>
+											<a class="badge badge-info" href="/ncaa-womens-basketball-league-standings.html">ncaa womens basketball league standings</a>
+											<a class="badge badge-success" href="/ncaa-womens-basketball-merchandise.html">ncaa womens basketball merchandise</a>
+											<a class="badge badge-secondary" href="/ncaa-womens-basketball-all-time-records.html">ncaa womens basketball all time records</a>
+											<a class="badge badge-warning" href="/ncaa-womens-basketball-championships-by-year.html">ncaa womens basketball championships by year</a>
+											<a class="badge badge-secondary" href="/nc-va-education-benefits-number.html">nc va education benefits number</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the right blog.  Our site provides you with suggestions for seeing the highest quality video and picture content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this video for you to see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/a7/4c/56a74c09408fb4b1d84470896271e876.jpg" data-lightbox="roadtrip" data-title="Pin Pa Ulca Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/a7/4c/56a74c09408fb4b1d84470896271e876.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqatesxb-qWq2PlBwMUbdJFHd8MyNTlIOV3w';" alt="Pin Pa Ulca Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Pa Ulca Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/3b/0f/cb3b0fe315ed747614f867c031ab0f07.jpg" data-lightbox="roadtrip" data-title="Gymnastics Roster Ucla Bruins Official Athletic Site Uclabruins Com Ucla Gymnastics Usa Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/3b/0f/cb3b0fe315ed747614f867c031ab0f07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3CpEITxazVCfqZP9GfQsdU_9Kz6d4WW6vw';" alt="Gymnastics Roster Ucla Bruins Official Athletic Site Uclabruins Com Ucla Gymnastics Usa Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gymnastics Roster Ucla Bruins Official Athletic Site Uclabruins Com Ucla Gymnastics Usa Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0c/72/c4/0c72c42a57bd63c1c54a745b58d01da5.jpg" data-lightbox="roadtrip" data-title="Ucla Ncaa Gymnastic Winners 2018 Posters Sports Amazing Gymnastics Gymnastics Routines Usa Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0c/72/c4/0c72c42a57bd63c1c54a745b58d01da5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSehAzbuik55-HbuWsfD_Dsz91SM-y64UkNTA';" alt="Ucla Ncaa Gymnastic Winners 2018 Posters Sports Amazing Gymnastics Gymnastics Routines Usa Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ucla Ncaa Gymnastic Winners 2018 Posters Sports Amazing Gymnastics Gymnastics Routines Usa Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/6e/a3/316ea318dabc7f5e68fef26b52494c08.jpg" data-lightbox="roadtrip" data-title="Pin On Ulca Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/6e/a3/316ea318dabc7f5e68fef26b52494c08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTNamC-ap2k5oxZX2G9ESg5N0HSK6lqVS5SQ';" alt="Pin On Ulca Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ulca Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/3a/f3/a73af32c9011b76ee8f73aa3a288c4ac.jpg" data-lightbox="roadtrip" data-title="College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/3a/f3/a73af32c9011b76ee8f73aa3a288c4ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUbRparf81Gmpz3iQtzXxR2nX_T7dW1u56yA';" alt="College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/92/e8/c092e8c781775895fbb5b7faf30b4cc1.jpg" data-lightbox="roadtrip" data-title="Pin On Ulca Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/92/e8/c092e8c781775895fbb5b7faf30b4cc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy87sjQluJixM1gcdXuwHqer9rlmvtlv1Y1Q';" alt="Pin On Ulca Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ulca Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/da/92/31/da9231d61beeaf3555f186e65eaded09.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy87sjQluJixM1gcdXuwHqer9rlmvtlv1Y1Q';" alt="Pin On Ulca Gymnastics">
+										<div class="card-body">
+						<h3 class="h5"><b>Ohashis floor routine went viral earlier in 2019 but.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College gymnastics ucla</strong>. 
+								
+																	The official 2021 Gymnastics Roster for the UCLA Bruins. 
+																	Katelyn Ohashi - 100 on Floor Exercise 1-12-19. 
+																	The official Gymnastics page for the UCLA Bruins. 
+																	CNN UCLA gymnast Nia Dennis floor routine not only won her a top score its getting high-profile acclaim. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UCLA gymnast Nia Dennis went viral in 2020 for her Beyonce and Homecoming floor routine so viral that she ended up on The Ellen DeGeneres Show. 
+																	They currently compete in Pauley Pavilion Los Angeles CA. 
+																	Your personal information will not be used or shared for any other purpose. 
+																	Ive never heard of a situation like that unless it was a Make. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sign up here to receive periodic updates on the latest news and information. 
+																	The official 2021 Gymnastics Roster for the UCLA Bruins Skip To Main Content. 
+																	A 10 isnt enough for this floor routine by katelyn_ohashi the UCLA Gymnastics official Twitter account tweeted Sunday sharing a video of Ohashis stellar showing at the Collegiate Challenge. 
+																	UCLAs decision to also recruit someone with no competition record stood out to some college gymnastics observers at the time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	New Decade New Coaches for UCLA Gymnastics December 19 2019 Brandis Heffner Featured Features NCAA WAG As a new season decade and chapter of UCLA gymnastics draws near the advice of the late John Wooden resonates through the coaching staff of the Bruins gymnastics team. 
+																	An inside look at the first day of practice for the 2020 UCLA Gymnastics team. 
+																	At UCLA College we constantly strive to stay connected with our community. 
+																	With more than 109 academic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UCLA gymnast Katelyn Ohashi concluded her collegiate gymnastics career Saturday with a near-perfect routine that enthralled Twitter as usual. 
+																	After the coronavirus pandemic brought a premature end to the 2020 NCAA gymnastics season and with it the conclusion of the collegiate careers of many of the sports biggest names it has been a. 
+																	Missy Elliott and Simone Biles are among those adding Twitter applause to the video. 
+																	Involved in their community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And become versatile engaged individuals who use their abilities to produce victories beyond the field of play. 
+																	A isnt enough for this floor routine by. 
+																	The UCLA Bruins womens gymnastics team represents the University of California Los Angeles and competes in the Pac-12 Conference. 
+																	And because these can be the most defining years in a students life deciding on a major can be just as meaningful as deciding on a university. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UCLAs unique view toward athletics creates athletes that are more than just winners. 
+																	Whatever your intellectual curiosities hobbies or career aspirations chances are youll find what youre looking for at UCLA. 
+																	UCLAs Olympic gymnasts wagered fortune and fame against college eligibility Freshman Madison Kocian is one of three Olympic gold medalists that are currently part of the UCLA team. 
+																	UCLA gymnastics ready to return from long layoff The Bruins who had their 2020 season ended in March by the pandemic open the season Saturday hosting Arizona State Chris Waller seen at the Meet. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They are invested in their academics. 
+																	Undergraduates can choose from 125 majors offered by the College and professional schools. 
+																	UCLA gymnast Katelyn Ohashi threw down an incredible floor routine Saturday night that not only landed her a perfect 10 but blew up the internet. 
+																	The team coached by Chris Waller has won 21 Regional titles and 7 NCAA National Championships most recently in 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It also led to four undefeated seasons and 10 national championships more than any other coach in college basketball history. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/e6/0b/13e60b4ed24eacafab582918b3c5645d.jpg" data-lightbox="roadtrip" data-title="Pin On Sports Vixens">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/e6/0b/13e60b4ed24eacafab582918b3c5645d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuHmhsidqTEIkE11HIurzQWI6P0GEkZ8Z5JA';" alt="Pin On Sports Vixens">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sports Vixens</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/14/2d/c7142da6f312e720ec7cf78c2c2bfd6d.jpg" data-lightbox="roadtrip" data-title="Pin On Ulca Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/14/2d/c7142da6f312e720ec7cf78c2c2bfd6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWdGe2gf6wWtZZUYy3M6EGk3Xf1c-qoAJZlw';" alt="Pin On Ulca Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ulca Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/5a/f7/e15af791cc74ec37f6abddb047af619c.jpg" data-lightbox="roadtrip" data-title="Pin On Ulca Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/5a/f7/e15af791cc74ec37f6abddb047af619c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIVZ0KVIvVBnnrcLH80wmEgBWrPiNouUJ3zw';" alt="Pin On Ulca Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ulca Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/c3/40/c5c340002eee3e60e1473796b52272e2.jpg" data-lightbox="roadtrip" data-title="Kyla Ross Ucla Female Athletes Gymnastics Girls Sport Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/c3/40/c5c340002eee3e60e1473796b52272e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2IASoAxF8QnEzaRxSy8oJHSh1cSAXiJf9BQ';" alt="Kyla Ross Ucla Female Athletes Gymnastics Girls Sport Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kyla Ross Ucla Female Athletes Gymnastics Girls Sport Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6d/26/7a/6d267a90d725da98b0571594d3994b55.jpg" data-lightbox="roadtrip" data-title="Pin On Ucla Leos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6d/26/7a/6d267a90d725da98b0571594d3994b55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmwLlNUwgJ_qZ17Z58fLYjg1IvZ9hGYLi6Yw';" alt="Pin On Ucla Leos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ucla Leos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/77/86/c9778606d3273595db02a349245f4fd7.jpg" data-lightbox="roadtrip" data-title="Pin Pa Ulca Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/77/86/c9778606d3273595db02a349245f4fd7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsxhfto9OslIr99h4rfFVWSx4riYO13RTK0w';" alt="Pin Pa Ulca Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Pa Ulca Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/01/07/5101078ac3b38f2dbaf0cf272d52dba7.jpg" data-lightbox="roadtrip" data-title="98 Female Gymnast Gymnastics Pictures Gymnastics Poses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/01/07/5101078ac3b38f2dbaf0cf272d52dba7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7aMRI1wbifbpJDVBP12winzWRNYhIaitBtQ';" alt="98 Female Gymnast Gymnastics Pictures Gymnastics Poses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">98 Female Gymnast Gymnastics Pictures Gymnastics Poses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/92/31/da9231d61beeaf3555f186e65eaded09.png" data-lightbox="roadtrip" data-title="Kyla Ross Ucla 2017 Ncaa Championships Semifinal I X Female Gymnast Ncaa Championship Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/92/31/da9231d61beeaf3555f186e65eaded09.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQudUNqLcacxWkbHh4-9sZQOyztp1jQrRS4xQ';" alt="Kyla Ross Ucla 2017 Ncaa Championships Semifinal I X Female Gymnast Ncaa Championship Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kyla Ross Ucla 2017 Ncaa Championships Semifinal I X Female Gymnast Ncaa Championship Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/0f/2a/bc0f2abeedf109e4efcde8d6ec3b0318.png" data-lightbox="roadtrip" data-title="Katelyn Ohashi Ucla 2017 Ncaa Championships Super Six X Katelyn Ohashi Female Athletes Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/0f/2a/bc0f2abeedf109e4efcde8d6ec3b0318.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQD1F1YsdExyo3wdlE7hs9CFF_M0-8n2tVPg';" alt="Katelyn Ohashi Ucla 2017 Ncaa Championships Super Six X Katelyn Ohashi Female Athletes Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Katelyn Ohashi Ucla 2017 Ncaa Championships Super Six X Katelyn Ohashi Female Athletes Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/97/1c/01971c3d2f7d434eef836d5638075673.jpg" data-lightbox="roadtrip" data-title="Kyla Ross Ucla 2017 Ncaa Championships Semifinal I X Cheerleading Gymnastics Ncaa Championship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/97/1c/01971c3d2f7d434eef836d5638075673.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVLXrZzy0QOHEZHRDXKSVkeQ5AeGe00T3Zmw';" alt="Kyla Ross Ucla 2017 Ncaa Championships Semifinal I X Cheerleading Gymnastics Ncaa Championship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kyla Ross Ucla 2017 Ncaa Championships Semifinal I X Cheerleading Gymnastics Ncaa Championship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/55/c9/da55c9fcc6ef4eeafec1e03e799e712a.jpg" data-lightbox="roadtrip" data-title="Katelyn Ohashi Ucla 2017 Ncaa Championships Semifinal I X Ginasta">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/55/c9/da55c9fcc6ef4eeafec1e03e799e712a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU4XsrbGJd2peOJP9HuoPURLOf1mNLCpeM_A';" alt="Katelyn Ohashi Ucla 2017 Ncaa Championships Semifinal I X Ginasta">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Katelyn Ohashi Ucla 2017 Ncaa Championships Semifinal I X Ginasta</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/7f/aa/e37faa2d5368153f90057269f0ca0c13.jpg" data-lightbox="roadtrip" data-title="Gymnast Doesn T Let Fall Throw Game Off Balance Takes First In All Around Daily Bruin Katelyn Ohashi Female Athletes Gymnastics Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/7f/aa/e37faa2d5368153f90057269f0ca0c13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSEkBgKw2TVlp6lECNZimBAxNZwKvbIqMgkg';" alt="Gymnast Doesn T Let Fall Throw Game Off Balance Takes First In All Around Daily Bruin Katelyn Ohashi Female Athletes Gymnastics Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gymnast Doesn T Let Fall Throw Game Off Balance Takes First In All Around Daily Bruin Katelyn Ohashi Female Athletes Gymnastics Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/96/b8/9996b8a50338bffad178186e4cb17352.jpg" data-lightbox="roadtrip" data-title="Katelyn Ohashi Ucla 2017 Ncaa Championships Katelyn Ohashi Ncaa Championship Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/96/b8/9996b8a50338bffad178186e4cb17352.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6_VJp46i8Ze4hCTdDaGMHsRw0qoXpzhGjw';" alt="Katelyn Ohashi Ucla 2017 Ncaa Championships Katelyn Ohashi Ncaa Championship Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Katelyn Ohashi Ucla 2017 Ncaa Championships Katelyn Ohashi Ncaa Championship Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-calicut-university.html">Gi Calicut University</a></li>
+													<li class="list-group-item"><a href="/gi-housing-share-price.html">Gi Housing Share Price</a></li>
+													<li class="list-group-item"><a href="/gi-joe-number-35.html">Gi Joe Number 35</a></li>
+													<li class="list-group-item"><a href="/gi-joe-911.html">Gi Joe 911</a></li>
+													<li class="list-group-item"><a href="/gi-clinic-university-of-iowa.html">Gi Clinic University Of Iowa</a></li>
+													<li class="list-group-item"><a href="/gi-bill-zip-code-calculator.html">Gi Bill Zip Code Calculator</a></li>
+													<li class="list-group-item"><a href="/gi-bill-who-is-eligible.html">Gi Bill Who Is Eligible</a></li>
+													<li class="list-group-item"><a href="/gi-lamp-post.html">Gi Lamp Post</a></li>
+													<li class="list-group-item"><a href="/gi-bill-ww2.html">Gi Bill Ww2</a></li>
+													<li class="list-group-item"><a href="/gi-joe-air-force-uniform.html">Gi Joe Air Force Uniform</a></li>
+													<li class="list-group-item"><a href="/gi-education-benefits-number.html">Gi Education Benefits Number</a></li>
+													<li class="list-group-item"><a href="/gi-keqing-build.html">Gi Keqing Build</a></li>
+													<li class="list-group-item"><a href="/gi-joe-air-force-special-ops.html">Gi Joe Air Force Special Ops</a></li>
+													<li class="list-group-item"><a href="/gi-ne-post-office.html">Gi Ne Post Office</a></li>
+													<li class="list-group-item"><a href="/gi-lab-college-of-vet-med.html">Gi Lab College Of Vet Med</a></li>
+													<li class="list-group-item"><a href="/gi-bill-with-general-under-honorable-conditions.html">Gi Bill With General Under Honorable Conditions</a></li>
+													<li class="list-group-item"><a href="/gi-community-college.html">Gi Community College</a></li>
+													<li class="list-group-item"><a href="/gi-bill-yellow-ribbon-bah.html">Gi Bill Yellow Ribbon Bah</a></li>
+													<li class="list-group-item"><a href="/gi-joe-post-244.html">Gi Joe Post 244</a></li>
+													<li class="list-group-item"><a href="/gi-mona-build.html">Gi Mona Build</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

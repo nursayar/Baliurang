@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Gymnastics Recruiting Rankings - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Gymnastics Recruiting Rankings",
+  "datePublished": "2021-02-17",
+  "image": "https://www.collegemagazine.com/wp-content/uploads/2020/08/Screen-Shot-2020-08-07-at-1.12.11-PM.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+gymnastics+recruiting+rankings",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Gymnastics Recruiting Rankings</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Take a look at all the NCAA commits top club meet results and training updates from the past month in college gymnastics recruiting. That means each team can award a certain amount of full scholarships. Since then the site has transformed into a one-stop-shop for college gymnastics news from recruiting analysis to meet coverage at the NCAA national championships thanks to the hard work of 10-plus contributors. <br>				
+			</p>
+										<a class="badge badge-success" href="/new-hampshire-veterans-education-benefits.html">new hampshire veterans education benefits</a>
+											<a class="badge badge-success" href="/notre-dame-college-womens-basketball-schedule.html">notre dame college womens basketball schedule</a>
+											<a class="badge badge-dark" href="/ncaa-womens-college-basketball-news.html">ncaa womens college basketball news</a>
+											<a class="badge badge-primary" href="/new-york-gi-bill-bah.html">new york gi bill bah</a>
+											<a class="badge badge-dark" href="/niagara-college-womens-basketball-coach.html">niagara college womens basketball coach</a>
+											<a class="badge badge-info" href="/nyack-college-womens-basketball-roster.html">nyack college womens basketball roster</a>
+											<a class="badge badge-warning" href="/numero-30-yu-gi-oh-espanol.html">numero 30 yu gi oh espanol</a>
+											<a class="badge badge-success" href="/ncaa-womens-college-basketball-national-champions.html">ncaa womens college basketball national champions</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the right blog.  Our site gives you hints for viewing the highest quality video and image content, search and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://athletics.ithaca.edu/images/2019/1/15/Rankings_Week_1.jpg" data-lightbox="roadtrip" data-title="Gymnastics Ranks No 1 In Ncga Division Iii Through Opening Week Of Competition Ithaca College Athletics">
+											<img class="card-img v-image ads-img " src="https://athletics.ithaca.edu/images/2019/1/15/Rankings_Week_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0NKrXUD7jR8Iujk-pu1w3vM7Uhyu-cxe-Xg';" alt="Gymnastics Ranks No 1 In Ncga Division Iii Through Opening Week Of Competition Ithaca College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gymnastics Ranks No 1 In Ncga Division Iii Through Opening Week Of Competition Ithaca College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://collegegymnews.com/wp-content/uploads/2020/06/Harris.png" data-lightbox="roadtrip" data-title="Top Uncommitted Recruits In The Class Of 2022 College Gym News">
+											<img class="card-img v-image ads-img " src="http://collegegymnews.com/wp-content/uploads/2020/06/Harris.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8czMD5e-rLKgI_wc3zkoEUKJFPdpgRoLjBA';" alt="Top Uncommitted Recruits In The Class Of 2022 College Gym News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top Uncommitted Recruits In The Class Of 2022 College Gym News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://collegegymnews.com/wp-content/uploads/2020/10/Recruit-Ratings-Featured-Image-1.png" data-lightbox="roadtrip" data-title="College Gym News">
+											<img class="card-img v-image ads-img " src="http://collegegymnews.com/wp-content/uploads/2020/10/Recruit-Ratings-Featured-Image-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRghqj4MJR9gCoazjeGZZ0CHxXbA8MfM6-20w';" alt="College Gym News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gym News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.collegemagazine.com/wp-content/uploads/2020/08/Screen-Shot-2020-08-07-at-1.12.11-PM.png" data-lightbox="roadtrip" data-title="Top 10 Collegiate Gymnastics Programs In The U S">
+											<img class="card-img v-image ads-img " src="https://www.collegemagazine.com/wp-content/uploads/2020/08/Screen-Shot-2020-08-07-at-1.12.11-PM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTU_n6TFQ7gX9X1WNCI0429Q1zXxzS_jynMw';" alt="Top 10 Collegiate Gymnastics Programs In The U S">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Collegiate Gymnastics Programs In The U S</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fightingillini.com/common/controls/image_handler.aspx?thumb_id=0&amp;image_path=/images/2019/11/14/NLI_Template_Final_GYMNASTICS_BODER.jpg" data-lightbox="roadtrip" data-title="Seven Top 25 Recruits Commit To Illini Men S Gymnastics University Of Illinois Athletics">
+											<img class="card-img v-image ads-img " src="https://fightingillini.com/common/controls/image_handler.aspx?thumb_id=0&amp;image_path=/images/2019/11/14/NLI_Template_Final_GYMNASTICS_BODER.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs_bLX_cJGzauttecBnpX6OHlEFjuHwpyv2Q';" alt="Seven Top 25 Recruits Commit To Illini Men S Gymnastics University Of Illinois Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seven Top 25 Recruits Commit To Illini Men S Gymnastics University Of Illinois Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://collegegymnews.com/wp-content/uploads/2020/07/kyla-750x450.jpg" data-lightbox="roadtrip" data-title="Leotard Rankings Rebecca S Top 15 Leos Of All Time College Gym News">
+											<img class="card-img v-image ads-img " src="http://collegegymnews.com/wp-content/uploads/2020/07/kyla-750x450.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAjLx-oDRO3PgCEB5rfgJ-KaKziGdZ8E3GQ';" alt="Leotard Rankings Rebecca S Top 15 Leos Of All Time College Gym News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leotard Rankings Rebecca S Top 15 Leos Of All Time College Gym News</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://athletics.ithaca.edu/images/2019/1/15/Rankings_Week_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAjLx-oDRO3PgCEB5rfgJ-KaKziGdZ8E3GQ';" alt="Leotard Rankings Rebecca S Top 15 Leos Of All Time College Gym News">
+										<div class="card-body">
+						<h3 class="h5"><b>We provide prospective student athletes parents and club coaches with resources and guidance to navigate the college gymnastics recruiting process using both virtual meetings and learning platforms.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College gymnastics recruiting rankings</strong>. 
+								
+																	Gymnastics secures nine Mens gymnastics adds five womens gymnastics welcomes four Photo. 
+																	College gymnastics coaches are looking for strong leaders and well-rounded student athletes. 
+																	College gymnastics teams are often one the highest GPA-ranked teams at many schools. 
+																	A good place to start is the Gymnastics Scholarships page. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Create a Recruiting Profile. 
+																	Our website is full of information and resources to help you work your way through the recruitment process. 
+																	OU is close behind 2nd with Michigan just 0013 behind the Sooners. 
+																	However college gymnastics is no joke. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College mens gymnastics will cease to exist. 
+																	Since then the site has transformed into a one-stop-shop for college gymnastics news from recruiting analysis to meet coverage at the NCAA national championships thanks to the hard work of 10-plus contributors. 
+																	From their state-of-the-art facility to success story after success story the Oklahoma Sooners surely bring the heat to their competitors. 
+																	If you are looking to get recruited to a college gymnastics team you will need to be a successful gymnast as well. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gymnastics is one of the most competitive sports at the college level. 
+																	Tournaments are very competitive and schedules are demanding. 
+																	Additionally check out how this months commits changed their teams class rankings. 
+																	Filter Results 1 Stanford University. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In NCAA Division 1 college gymnastics is a headcount sport for both men and women. 
+																	Individual ratings are devised by combining score points with video review points for a total of 25 per event and 100 overall. 
+																	NCAA College Gymnastics Recruiting How to get Recruited and be a Collegiate Gymnast. 
+																	Its a lot going. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We proudly boast a 100 placement rate. 
+																	College Gym News was founded in 2015 by Editor-in-Chief Elizabeth Grimsley. 
+																	The UCLA Bruin gymnasts received an unexpected spotlight when graduate Katelyn Ohashis energetic. 
+																	Schedule a Free Consult. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LSU Gymnastics Recruiting Thread Posted by LSU Patrick on 12621 at 1138 am to Tigerbait357 So the coaches submit the level to the judges before hand then the gymnast must fulfill the expectations matching the level. 
+																	Our gymnastics recruiting service can help you get recruited and be part of the NCAA gymnastics championships. 
+																	Women - Division I. 
+																	We aim to teach and instill life skills in young athletes for their future in gymnastics and beyond. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Team Class Ranking Tracer. 
+																	Get Womens Gymnastics rankings news schedules and championship brackets. 
+																	UCLA leads the way ahead of Florida and California. 
+																	Five stars are awarded to recruits that earn at least 78 points with 4-star recruits earning between 63 and 77 points and 3-star recruits receiving at least 48. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The gymnastics center went through renovations in 2010 to include a new gym locker rooms training rooms and award rooms. 
+																	Take an Online Recruiting. 
+																	College Gym News was founded in 2015 by Editor-in-Chief Elizabeth Grimsley. 
+																	College Gym News was founded in 2015 by Editor-in-Chief Elizabeth Grimsley. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Florida holds the top spot in the Womens National Rankings for the week of January 18th. 
+																	Building the most comprehensive source on the web. 
+																	NCAA Gymnastics results statistics schedules teams and gymnasts. 
+																	College Gymnastics Menu 2020 Collegiate Gymnastics Rankings - March 2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Make sure you find a college that is a good fit for you to increase your likelihood of success in your major and your sport. 
+																	The top 25 ranked teams of the class of 2021 remained unchanged this month. 
+																	In Division II and lower gymnastics is an equivalency sport with a scholarship limit of 54 for mens and 6 for womens. 
+																	3 Coach Emails per Month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Iowa State Women - Division II. 
+																	The limit per team is 6 for mens teams and 12 for womens teams. 
+																	Request Info 2 University of Illinois at. 
+																	I dont know anyone elses career that literally just doesnt exist anymore. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Womens Gymnastics NC official home. 
+																	You might be the best gymnast at. 
+																	Advanced College University Search One-Time Gift of 10 Coach Contacts. 
+																	Since then the site has transformed into a one-stop-shop for college gymnastics news from recruiting analysis to meet coverage at the NCAA national championships thanks to the hard work of 10-plus contributors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By Sofia Scekic on November 19 2020. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://collegegymnews.com/wp-content/uploads/2020/11/Wong-420x300.png" data-lightbox="roadtrip" data-title="Tracking The Class Of 2021 Signings College Gym News">
+											<img class="card-img v-image ads-img " src="http://collegegymnews.com/wp-content/uploads/2020/11/Wong-420x300.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxOCjTWSZsZqIOIE7Nt5FS4Y2p9wQmdcwiw';" alt="Tracking The Class Of 2021 Signings College Gym News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tracking The Class Of 2021 Signings College Gym News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://collegegymnews.com/wp-content/uploads/2020/01/Screen-Shot-2020-01-15-at-9.33.21-AM.png" data-lightbox="roadtrip" data-title="Leotard Rankings Week 2 College Gym News">
+											<img class="card-img v-image ads-img " src="http://collegegymnews.com/wp-content/uploads/2020/01/Screen-Shot-2020-01-15-at-9.33.21-AM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRURQJctQ-uE6WKxvRZd3fkgudvFHHbl1UqXQ';" alt="Leotard Rankings Week 2 College Gym News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leotard Rankings Week 2 College Gym News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://collegegymnews.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-21-at-10.05.59-AM.png" data-lightbox="roadtrip" data-title="Leotard Rankings Rhythmic Gymnastics College Gym News">
+											<img class="card-img v-image ads-img " src="http://collegegymnews.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-21-at-10.05.59-AM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45XhNZ-UkprHZZiTb-WadII5zgJUXOdbYqw';" alt="Leotard Rankings Rhythmic Gymnastics College Gym News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leotard Rankings Rhythmic Gymnastics College Gym News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/www.dailycal.org/assets/uploads/2019/04/wgymnastics_karen-chow_ss.jpg?ssl=1" data-lightbox="roadtrip" data-title="Cal Women S Gymnastics Ranked 8th In Preseason Poll Ties Program Record">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/www.dailycal.org/assets/uploads/2019/04/wgymnastics_karen-chow_ss.jpg?ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWuc_8qmUgldSwjzhlA8dGeNhm_RjRRis4Ww';" alt="Cal Women S Gymnastics Ranked 8th In Preseason Poll Ties Program Record">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cal Women S Gymnastics Ranked 8th In Preseason Poll Ties Program Record</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.newyork1.vip.townnews.com/collegian.psu.edu/content/tncms/assets/v3/editorial/4/c8/4c8cb420-3a6d-11ea-8af2-cbd7cb34a4c3/5e23cf8825093.image.jpg?resize=400%2C307" data-lightbox="roadtrip" data-title="Penn State Men S Gymnastics Inks No 4 Ranked Recruiting Class For 2021 Penn State Division I Sports Daily Collegian Collegian Psu Edu">
+											<img class="card-img v-image ads-img " src="https://bloximages.newyork1.vip.townnews.com/collegian.psu.edu/content/tncms/assets/v3/editorial/4/c8/4c8cb420-3a6d-11ea-8af2-cbd7cb34a4c3/5e23cf8825093.image.jpg?resize=400%2C307" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb2U5rIk631QDrQ3qc-RH3TVV7ZF-L2NzQJA';" alt="Penn State Men S Gymnastics Inks No 4 Ranked Recruiting Class For 2021 Penn State Division I Sports Daily Collegian Collegian Psu Edu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Penn State Men S Gymnastics Inks No 4 Ranked Recruiting Class For 2021 Penn State Division I Sports Daily Collegian Collegian Psu Edu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://collegegymnews.com/wp-content/uploads/2020/08/Screen-Shot-2020-08-19-at-11.09.53-AM-750x450.png" data-lightbox="roadtrip" data-title="Leotard Rankings Dance Leotards College Gym News">
+											<img class="card-img v-image ads-img " src="http://collegegymnews.com/wp-content/uploads/2020/08/Screen-Shot-2020-08-19-at-11.09.53-AM-750x450.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqxFoy0y-jpGGz5TpVdZkz--IAeuEOD6jk4Q';" alt="Leotard Rankings Dance Leotards College Gym News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leotard Rankings Dance Leotards College Gym News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d2779tscntxxsw.cloudfront.net/5d93c0e512744.png?width=1200&amp;quality=80" data-lightbox="roadtrip" data-title="Auburn Women S Gymnastics Sign Four In 2021 Recruiting Class">
+											<img class="card-img v-image ads-img " src="https://d2779tscntxxsw.cloudfront.net/5d93c0e512744.png?width=1200&amp;quality=80" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjJZRt4_SrIvS00_yl8d0B5UCQdWgDjH47hQ';" alt="Auburn Women S Gymnastics Sign Four In 2021 Recruiting Class">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Auburn Women S Gymnastics Sign Four In 2021 Recruiting Class</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usagym.org/images/post_images/3156.jpg" data-lightbox="roadtrip" data-title="Usa Gymnastics Women S College Scholarships And The Recruitment Process">
+											<img class="card-img v-image ads-img " src="https://usagym.org/images/post_images/3156.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsHXKkvBeIPXSsm985mRLZ4chbR-4AwrariQ';" alt="Usa Gymnastics Women S College Scholarships And The Recruitment Process">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Gymnastics Women S College Scholarships And The Recruitment Process</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e5/9c/5a/e59c5ac0f6be421963b986f555860490.jpg" data-lightbox="roadtrip" data-title="Pin On Leos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e5/9c/5a/e59c5ac0f6be421963b986f555860490.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aH9WoLXPyv_I93wkvJ9ZS6v1qI3k3c6Ctg';" alt="Pin On Leos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Leos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wp.stanforddaily.com/wp-content/uploads/2020/11/Gymnastics-Practice-Facility_052912_DF_120.jpg" data-lightbox="roadtrip" data-title="Recruiting Roundup Gymnastics Secures Nine The Stanford Daily">
+											<img class="card-img v-image ads-img " src="https://wp.stanforddaily.com/wp-content/uploads/2020/11/Gymnastics-Practice-Facility_052912_DF_120.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWTmnTOUYOXipKXDNH_uW-LrTZ7cA0GDCHw';" alt="Recruiting Roundup Gymnastics Secures Nine The Stanford Daily">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Recruiting Roundup Gymnastics Secures Nine The Stanford Daily</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/06/bd/3506bd76fe8cb6d4fd7187897cd5321f.jpg" data-lightbox="roadtrip" data-title="Athletic Scholarship Costs Don T Always Add Up For Hopeful Parents Athletic Scholarships Scholarships College Recruiting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/06/bd/3506bd76fe8cb6d4fd7187897cd5321f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4IO0kv72j8DS6G-wFXJqHihbE8QsYw3SlIQ';" alt="Athletic Scholarship Costs Don T Always Add Up For Hopeful Parents Athletic Scholarships Scholarships College Recruiting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Athletic Scholarship Costs Don T Always Add Up For Hopeful Parents Athletic Scholarships Scholarships College Recruiting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://collegegymnews.com/wp-content/uploads/2020/08/Feature-Pic-300x240.png" data-lightbox="roadtrip" data-title="Leotard Rankings College Gym News">
+											<img class="card-img v-image ads-img " src="http://collegegymnews.com/wp-content/uploads/2020/08/Feature-Pic-300x240.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR27r_L9OF1VSoUO4XrY2niRB_VPZIXZZbjgw';" alt="Leotard Rankings College Gym News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leotard Rankings College Gym News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/iowastatedaily.com/content/tncms/assets/v3/editorial/b/65/b6549b48-40e1-11e8-8573-57c7cc1f20df/5ad3a5688ec4f.image.jpg?resize=1200%2C800" data-lightbox="roadtrip" data-title="From 1938 To 2018 The Numbers Keep Dropping In College Men S Gymnastics Sports Iowastatedaily Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/iowastatedaily.com/content/tncms/assets/v3/editorial/b/65/b6549b48-40e1-11e8-8573-57c7cc1f20df/5ad3a5688ec4f.image.jpg?resize=1200%2C800" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_BwA0sftmlAlkvQXkjub8UYEllmXkyNDxg';" alt="From 1938 To 2018 The Numbers Keep Dropping In College Men S Gymnastics Sports Iowastatedaily Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From 1938 To 2018 The Numbers Keep Dropping In College Men S Gymnastics Sports Iowastatedaily Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-education-benefits-amount.html">Va Education Benefits Amount</a></li>
+													<li class="list-group-item"><a href="/va-dependent-education-benefits-form.html">Va Dependent Education Benefits Form</a></li>
+													<li class="list-group-item"><a href="/va-department-of-education-address.html">Va Department Of Education Address</a></li>
+													<li class="list-group-item"><a href="/va-disability-gi-bill.html">Va Disability Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-dependent-gi-bill.html">Va Dependent Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-buffalo-ny.html">Va Education Benefits Buffalo Ny</a></li>
+													<li class="list-group-item"><a href="/va-education-association.html">Va Education Association</a></li>
+													<li class="list-group-item"><a href="/va-dependents-educational-assistance-program.html">Va Dependents Educational Assistance Program</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-tuition-waiver.html">Va Chapter 35 Tuition Waiver</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-rates.html">Va Chapter 35 Rates</a></li>
+													<li class="list-group-item"><a href="/va-dept-education-license-query.html">Va Dept Education License Query</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-questions.html">Va Chapter 35 Questions</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-certification.html">Va Education Benefits Certification</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-chapter-1606.html">Va Education Benefits Chapter 1606</a></li>
+													<li class="list-group-item"><a href="/va-education-assistance-program.html">Va Education Assistance Program</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-transfer.html">Va Chapter 35 Transfer</a></li>
+													<li class="list-group-item"><a href="/va-chapter-5-benefits.html">Va Chapter 5 Benefits</a></li>
+													<li class="list-group-item"><a href="/va-education-and-training.html">Va Education And Training</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-retroactive.html">Va Chapter 35 Retroactive</a></li>
+													<li class="list-group-item"><a href="/va-education-benefit-payments-calendar-for-2019.html">Va Education Benefit Payments Calendar For 2019</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

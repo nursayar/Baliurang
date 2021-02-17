@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Kings College Hospital Gastroenterology Unit - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Kings College Hospital Gastroenterology Unit",
+  "datePublished": "2021-02-17",
+  "image": "https://www.timeoutdubai.com/public/styles/full_img/public/images/2020/05/27/Radiology_Department,_King%E2%80%99s_College_Hospital_Dubai_(1).jpg?itok=-aJXsAZh",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=kings+college+hospital+gastroenterology+unit",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Kings College Hospital Gastroenterology Unit</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The major strengths of the unit include mucosal immunology and genetics of IBD. Dr Danielle Adebayo Gastroenterology. Our Liver Unit treats a diverse range of liver conditions as well as rare diseases. <br>				
+			</p>
+										<a class="badge badge-primary" href="/how-did-the-gi-bill-help-returning-soldiers.html">how did the gi bill help returning soldiers</a>
+											<a class="badge badge-secondary" href="/hi-billy-mays-here-south-park.html">hi billy mays here south park</a>
+											<a class="badge badge-warning" href="/how-did-the-gi-bill-boost-the-postwar-economy.html">how did the gi bill boost the postwar economy</a>
+											<a class="badge badge-danger" href="/hi-nabor-bill-payment.html">hi nabor bill payment</a>
+											<a class="badge badge-success" href="/hope-college-womens-basketball-roster.html">hope college womens basketball roster</a>
+											<a class="badge badge-success" href="/how-did-the-gi-bill-of-rights-help-war-veterans.html">how did the gi bill of rights help war veterans</a>
+											<a class="badge badge-dark" href="/hbo-go-with-college.html">hbo go with college</a>
+											<a class="badge badge-success" href="/how-did-the-gi-bill-help-world-war-2-veterans.html">how did the gi bill help world war 2 veterans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to pay a visit to the ideal blog.  Our site provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2017/06/kingslogo.svg" data-lightbox="roadtrip" data-title="The Best Consultant Gastroenterologist In Dubai I Gastroenterology Clinic">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2017/06/kingslogo.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ-YnbLJevvUCgw1Z13kZ_VycHQ1xnK-mrjA';" alt="The Best Consultant Gastroenterologist In Dubai I Gastroenterology Clinic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Consultant Gastroenterologist In Dubai I Gastroenterology Clinic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://kingscollegehospitaldubai.com/wp-content/uploads/2020/03/popup-iimg.jpg" data-lightbox="roadtrip" data-title="Advanced Gastroenterology Clinic At King S Best Uk International Doctors">
+											<img class="card-img v-image ads-img " src="http://kingscollegehospitaldubai.com/wp-content/uploads/2020/03/popup-iimg.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpcx389wRrcpmrjSpKPrUq27mMX35j9kGseg';" alt="Advanced Gastroenterology Clinic At King S Best Uk International Doctors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advanced Gastroenterology Clinic At King S Best Uk International Doctors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2019/02/IMG_8812_02.jpg" data-lightbox="roadtrip" data-title="Dr Kaiser Raja Best Consultant Gastroenterologist In Dubai Uae">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2019/02/IMG_8812_02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJg-af6IX2NoLXNjQiW6SL39DWhkemCII_hg';" alt="Dr Kaiser Raja Best Consultant Gastroenterologist In Dubai Uae">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dr Kaiser Raja Best Consultant Gastroenterologist In Dubai Uae</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2020/01/Dr-Amyn-Haji-3.jpg" data-lightbox="roadtrip" data-title="The Best Laparoscopic Colorectal Surgeon In Dubai Colorectal Surgery">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2020/01/Dr-Amyn-Haji-3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmBIjXOkylbCl5VnVfHQshQxsn4BYXLpnqWA';" alt="The Best Laparoscopic Colorectal Surgeon In Dubai Colorectal Surgery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Laparoscopic Colorectal Surgeon In Dubai Colorectal Surgery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2019/02/24-hour-emergency-department-600x600.jpg" data-lightbox="roadtrip" data-title="Emergency Hospital In Dubai 24 Hours Hospital In Dubai Uae">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2019/02/24-hour-emergency-department-600x600.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd940K_hvn7eD2ER4XDwlY2fIcFmzrcTrHDA';" alt="Emergency Hospital In Dubai 24 Hours Hospital In Dubai Uae">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emergency Hospital In Dubai 24 Hours Hospital In Dubai Uae</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2019/01/hesham-souka-e1547971668342.jpg" data-lightbox="roadtrip" data-title="Dr Hesham Souka Consultant General Surgeon Uae">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2019/01/hesham-souka-e1547971668342.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn1gZKKFIr0V0yjKmIOtfZFTIxZqd-OyNN4A';" alt="Dr Hesham Souka Consultant General Surgeon Uae">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dr Hesham Souka Consultant General Surgeon Uae</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2018/07/Marina-reception.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn1gZKKFIr0V0yjKmIOtfZFTIxZqd-OyNN4A';" alt="Dr Hesham Souka Consultant General Surgeon Uae">
+										<div class="card-body">
+						<h3 class="h5"><b>As leader of the endoscopy unit at Kings College Hospital 2003-2010 lead for Research and Development for hollow organ gastroenterology services at Kings College Hospital and the author of over 250 peer reviewed clinical papers Professor Bjarnason delivers the highest quality care for patients.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Kings college hospital gastroenterology unit</strong>. 
+								
+																	Dr Maxwell Asante Consultant. 
+																	Covid 19 Test Covid 19 Test. 
+																	Hepatobiliary and pancreatic HPB Hepatitis. 
+																	They share the responsibility for ensuring 24 hour a day 7 day a week cover for the liver intensive care unit through a 14 rota. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Information supplied by Kings College Hospital NHS Foundation Trust Report an issue with the information on this page. 
+																	Dr Imdadur Rahman. 
+																	Read full profile. 
+																	Gastroenterology This service is provided by the Childrens Adolescent Services department run by the Kings College Hospital NHS Foundation Trust. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Consultant will be responsible for your care as both an outpatient and as an inpatient. 
+																	Learn more about our staff. 
+																	He is Professor of Gastroenterology at Kings College London. 
+																	Professor Julia Wendon MB ChB MRCP FRCP FFICM was appointed as Consultant Physician at Kings College Hospital in 1992. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The following table shows staffing levels on wards that provide this service. 
+																	Every Kings patient is under the care of a named Consultant who will have specialist knowledge of the condition and the latest treatments available. 
+																	He also spent a year at Kings College Hospital Liver Transplant Unit where he developed experience in transplant medicine. 
+																	Name Phone Number Email Location Preferred Date Date Format. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is woven into the fabric of the clinical service which has one of the largest IBD practices in the UK. 
+																	Dr Tang pursued subspecialty training in advanced endoscopycolonoscopy and ERCP as Assistant Professor at the Chinese University of Hong Kong 1998-1999 and delivers a comprehensive diagnostic and therapeutic endoscopyERCP service at the Royal Free London NHS Foundation Trust Barnet and Chase Farm Hospital. 
+																	There are general gastroenterology clinics at Gate 12 Level 1 Brunel Building and at Cossham Hospital Lodge Road Kingswood Bristol. 
+																	Research is embedded in all of our clinics and endoscopy sessions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Patients at risk of cancer can be referred via the two-week cancer pathway. 
+																	Call switchboard on 020 3299 9000 and ask to speak with the SpRs in gastroenterology or one of the four consultants. 
+																	Book In-Person Consultation Location. 
+																	Dr Rutter has a special interest in intestinal failture and is accredited in upper and lower gastrointestinal endoscopies including inserting feeding tubes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Professional profile Dr King graduated from The Royal Free Hospital School of Medicine in 1991. 
+																	1pm to 5pm Dr Terlevich and Dr Chelvaratnam. 
+																	He qualified at Charing Cross Hospital London in 1984 and undertook his postgraduate training in London and in Australia. 
+																	Kings College Dubai Hills Hospital offers Drive-through COVID PCR testing 247 from the comfort of your car. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prof Sheron is a professor of. 
+																	He completed his specialist training in gastroenterology and general medicine on the South East Thames Specialist Registrar training rotation which included posts at Kings College Hospital Liver Unit and Guys and St Thomas Hospitals. 
+																	Tuesday 9am to 1pm Dr Przemioslo Dr Valliani and Dr Terlevich Cossham Hospital. 
+																	Dr Patel is a consultant gastroenterologist with an interest in luminal gastroenterology and endoscopy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prof Ingvar Bjarnason Professor. 
+																	Thomas Hospitals where he was appointed in 1995. 
+																	Jeremy Sanderson is a Consultant Gastroenterologist at Guys and St. 
+																	The gastroenterology department also includes gastrointestinal surgery paediatric gastroenterology endoscopy services and the Louise Ryan GI physiology unit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At Kings College Hospital London UAE the Department of Gastroenterology and Liver Diseases is a full-fledged unit that provides patients with exceptional healthcare following well accepted protocols established at Kings College Hospital London UK based on the NICE guidelines The National Institute for Health and Care Excellence. 
+																	Where wards provide more than one service the results include. 
+																	You can find out more about our consultants using the search below. 
+																	Monday 12pm to 4pm Dr Griffiths. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He graduated from Imperial College in 2006 and completed his specialist training in London including Advanced Training Programme at Kings College Hospital Liver Transplant and Intensive Care Unit. 
+																	Dr Vinod Audimoolam Consultant Gastroenterologist and Hepatologist. 
+																	Dr Fong is currently completing his PhD research regarding the use of metabonomics in IBD. 
+																	The liver intensive care unit is staffed by a team of 4 dedicated consultant intensivists. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Visit Kings College Hospital NHS Foundation Trusts website for information about these services. 
+																	What we do Kings hepatology liver medicine service is renowned worldwide and is provided by a team that includes leading specialist liver doctors. 
+																	He is dual-accredited in both Gastroenterology and General Internal Medicine. 
+																	The Consultants at Kings College Hospital are among the best in the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MM slash DD slash YYYY. 
+																	Number of People to be Tested Please enter a number from 1 to 100. 
+																	Dr Nowlan Selvapatt is a Consultant Hepatologist and Gastroenterologist working at Imperial College Healthcare NHS Trust. 
+																	He has published several peer-reviewed articles authored many abstracts at international meetings and has been awarded prizes from the American Gastroenterology Association. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Read full profile. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.arabianbusiness.com/public/images/2020/06/09/Radiology_Department_King%E2%80%99s_College_Hospital_Dubai.jpg" data-lightbox="roadtrip" data-title="The Hero Project Radiology Department King S College Hospital Dubai Arabianbusiness">
+											<img class="card-img v-image ads-img " src="https://www.arabianbusiness.com/public/images/2020/06/09/Radiology_Department_King%E2%80%99s_College_Hospital_Dubai.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXD3qhkIkmDOzcXoZeDLiECxbveOQ1fLetw';" alt="The Hero Project Radiology Department King S College Hospital Dubai Arabianbusiness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Hero Project Radiology Department King S College Hospital Dubai Arabianbusiness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2020/04/LDR-1.jpg" data-lightbox="roadtrip" data-title="King S Maternity Gallery King S College Hospital Dubai">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2020/04/LDR-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0ZydCy8eXMvgV9Q7-OjMtRg1VvYunrpyl2w';" alt="King S Maternity Gallery King S College Hospital Dubai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">King S Maternity Gallery King S College Hospital Dubai</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2018/07/Marina-reception.jpg" data-lightbox="roadtrip" data-title="Dubai Marina King S College Hospital Dubai">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2018/07/Marina-reception.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREeHAzQhdeSqM6biInzNsn7i_-M7BxkbLvcQ';" alt="Dubai Marina King S College Hospital Dubai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dubai Marina King S College Hospital Dubai</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2019/01/reception-1.jpg" data-lightbox="roadtrip" data-title="King S College Hospital London Opens The Doors Of Its Dubai Based Hospital Featuring The Best Of British Healthcare King S College Hospital Dubai">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2019/01/reception-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEijDe9lOZaCCWjo0Wc2vu0n-KmeCt1CjWVw';" alt="King S College Hospital London Opens The Doors Of Its Dubai Based Hospital Featuring The Best Of British Healthcare King S College Hospital Dubai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">King S College Hospital London Opens The Doors Of Its Dubai Based Hospital Featuring The Best Of British Healthcare King S College Hospital Dubai</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2020/03/Wael-Dahhan_Final-web-image-scaled.jpg" data-lightbox="roadtrip" data-title="The Best Gastroenterologist In Dubai Gastroenterology Clinic In Uae">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2020/03/Wael-Dahhan_Final-web-image-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYEJJ5-GwlEhQMmSYa0f5oa49m0swtHEZDAg';" alt="The Best Gastroenterologist In Dubai Gastroenterology Clinic In Uae">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Gastroenterologist In Dubai Gastroenterology Clinic In Uae</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2017/07/Dr-Samina.jpg" data-lightbox="roadtrip" data-title="Dr Samina Dornan Best Obgyn In Dubai Best Fetal Medicine Specialist">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2017/07/Dr-Samina.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXYxHW2X8vcv_J8Cy0XN8Rex9eHZDtUeqDzQ';" alt="Dr Samina Dornan Best Obgyn In Dubai Best Fetal Medicine Specialist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dr Samina Dornan Best Obgyn In Dubai Best Fetal Medicine Specialist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.timeoutdubai.com/public/styles/full_img/public/images/2020/05/27/Radiology_Department,_King%E2%80%99s_College_Hospital_Dubai_(1).jpg?itok=-aJXsAZh" data-lightbox="roadtrip" data-title="The Hero Project Radiology Department King S College Hospital Dubai The Hero Project Time Out Dubai">
+											<img class="card-img v-image ads-img " src="https://www.timeoutdubai.com/public/styles/full_img/public/images/2020/05/27/Radiology_Department,_King%E2%80%99s_College_Hospital_Dubai_(1).jpg?itok=-aJXsAZh" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3yB1CCbVYqF0xMKEvbFXy_o2dpjONgmNAvQ';" alt="The Hero Project Radiology Department King S College Hospital Dubai The Hero Project Time Out Dubai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Hero Project Radiology Department King S College Hospital Dubai The Hero Project Time Out Dubai</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://kingscollegehospitaldubai.com/wp-content/uploads/2019/06/Bariatric-Multi-disciplinary-team-e1560931540596.jpg" data-lightbox="roadtrip" data-title="Weight Loss Surgery Dubai Bariatric Surgery Dubai Uae">
+											<img class="card-img v-image ads-img " src="http://kingscollegehospitaldubai.com/wp-content/uploads/2019/06/Bariatric-Multi-disciplinary-team-e1560931540596.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5xI3YPaKBLkh18busWH4Rhg8-prZPHSt9Eg';" alt="Weight Loss Surgery Dubai Bariatric Surgery Dubai Uae">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Weight Loss Surgery Dubai Bariatric Surgery Dubai Uae</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2017/09/consultant_missing.jpg" data-lightbox="roadtrip" data-title="Dr Emran Khan Best Endocrinologist Dubai Best Diabetes Doctor Uae">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2017/09/consultant_missing.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDESjWzqpR-C9TVDYYCPxkmUrwikW8FjwCyQ';" alt="Dr Emran Khan Best Endocrinologist Dubai Best Diabetes Doctor Uae">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dr Emran Khan Best Endocrinologist Dubai Best Diabetes Doctor Uae</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2017/06/philosophy_strip5.jpg" data-lightbox="roadtrip" data-title="King S College Hospital London Dubai King S Clinics In Dubai">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2017/06/philosophy_strip5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8FTa_f4yOGTmsAFBxMTimGSyq8BKtpFjbg';" alt="King S College Hospital London Dubai King S Clinics In Dubai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">King S College Hospital London Dubai King S Clinics In Dubai</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2019/06/IMG_9312.jpg" data-lightbox="roadtrip" data-title="Sameh Fakhry King S College Hospital Dubai">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2019/06/IMG_9312.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAWJeyMXAA2NFsnNOBRBUa6PsrxVIa3NQPqw';" alt="Sameh Fakhry King S College Hospital Dubai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sameh Fakhry King S College Hospital Dubai</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2017/09/cutting-the-ribon-600x324.jpg" data-lightbox="roadtrip" data-title="King S College Hospital London Expands Uae Footprint King S College Hospital Dubai">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2017/09/cutting-the-ribon-600x324.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Rhx5hfOwcI7UY3gdjuCdNOB_Ehnfmr15Ug';" alt="King S College Hospital London Expands Uae Footprint King S College Hospital Dubai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">King S College Hospital London Expands Uae Footprint King S College Hospital Dubai</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kingscollegehospitaldubai.com/wp-content/uploads/2020/11/MargaretMojisolaOnibudo_KCH_BG_LQ.jpg" data-lightbox="roadtrip" data-title="Midwifes King S College Hospital Dubai">
+											<img class="card-img v-image ads-img " src="https://kingscollegehospitaldubai.com/wp-content/uploads/2020/11/MargaretMojisolaOnibudo_KCH_BG_LQ.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGEs_m4-4WmtS6sBsiAoTdfeVuXjBof8x5_g';" alt="Midwifes King S College Hospital Dubai">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Midwifes King S College Hospital Dubai</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-education-benefits-application.html">Va Education Benefits Application</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-appeal.html">Va Education Benefits Appeal</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-transfer.html">Va Chapter 35 Transfer</a></li>
+													<li class="list-group-item"><a href="/va-disability-chapter-13.html">Va Disability Chapter 13</a></li>
+													<li class="list-group-item"><a href="/va-disability-chapter-35.html">Va Disability Chapter 35</a></li>
+													<li class="list-group-item"><a href="/va-college-benefits-for-dependents-in-california.html">Va College Benefits For Dependents In California</a></li>
+													<li class="list-group-item"><a href="/va-dependent-education-assistance-program.html">Va Dependent Education Assistance Program</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-online-classes.html">Va Chapter 35 Online Classes</a></li>
+													<li class="list-group-item"><a href="/va-education-benefit-programs.html">Va Education Benefit Programs</a></li>
+													<li class="list-group-item"><a href="/va-dependent-education-benefits-eligibility.html">Va Dependent Education Benefits Eligibility</a></li>
+													<li class="list-group-item"><a href="/va-dependents-educational-assistance-phone-number.html">Va Dependents Educational Assistance Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-dependents-educational-assistance-dea.html">Va Dependents Educational Assistance Dea</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-update.html">Va Chapter 35 Update</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-approved-schools.html">Va Education Benefits Approved Schools</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-phone-number.html">Va Chapter 35 Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-chapter-sierra-club.html">Va Chapter Sierra Club</a></li>
+													<li class="list-group-item"><a href="/va-dea-chapter-35.html">Va Dea Chapter 35</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-calculator.html">Va Education Benefits Calculator</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-work-study.html">Va Chapter 35 Work Study</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-payment-rates.html">Va Chapter 35 Payment Rates</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

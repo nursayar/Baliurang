@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Womens Basketball All Time Scoring Leader - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Womens Basketball All Time Scoring Leader",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/d3/08/e4/d308e48dd6e462003579312ea5adb3f8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+womens+basketball+all+time+scoring+leader",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Womens Basketball All Time Scoring Leader</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Most notably Lynette Woodard of Kansas whose career total of 3649 points makes her the all-time womens college basketball scoring leader is not recognized as the NCAA career leader because her entire college career 197781 predated NCAA sponsorship of womens sports. The 2021 NCAA womens basketball season is almost here. Heres one thing to know about every team in the APs preseason top 25 poll. <br>				
+			</p>
+										<a class="badge badge-success" href="/va-chapter-35-retroactive.html">va chapter 35 retroactive</a>
+											<a class="badge badge-primary" href="/va-education-benefits-1606.html">va education benefits 1606</a>
+											<a class="badge badge-light" href="/va-education-benefits-bah-calculator.html">va education benefits bah calculator</a>
+											<a class="badge badge-dark" href="/va-ebenefits-gi-bill.html">va ebenefits gi bill</a>
+											<a class="badge badge-info" href="/va-chapter-35-summer-benefits.html">va chapter 35 summer benefits</a>
+											<a class="badge badge-warning" href="/va-education-benefits-buffalo-regional-office.html">va education benefits buffalo regional office</a>
+											<a class="badge badge-danger" href="/va-department-of-education-colleges.html">va department of education colleges</a>
+											<a class="badge badge-dark" href="/va-education-benefits-after-gi-bill.html">va education benefits after gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the right blog.  Our site gives you hints for viewing the highest quality video and image content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to see.  You can also bring about supporting this website by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/20/96/36209660fe0b3b8adce9c549b944a0dc.png" data-lightbox="roadtrip" data-title="Ncaa All Time Leader Sabrina Ionescu Womens Basketball Womens Lacrosse Bicycle Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/20/96/36209660fe0b3b8adce9c549b944a0dc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD0SARqNWowHJxZVbgtDo5qMwFHoOq5j0Pfg';" alt="Ncaa All Time Leader Sabrina Ionescu Womens Basketball Womens Lacrosse Bicycle Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa All Time Leader Sabrina Ionescu Womens Basketball Womens Lacrosse Bicycle Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/7f/9a/f77f9acca9724e6b8b8bdcef6152cfaf.jpg" data-lightbox="roadtrip" data-title="1 430 Likes 9 Comments Espnw Espnw On Instagram History Kelsey Plum Passes Jackie Stiles As The Nc Basketball History Womens Basketball Seattle Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/7f/9a/f77f9acca9724e6b8b8bdcef6152cfaf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDd_Z6du_hOw66a-D4vu1SmiNoIx0kemYQA';" alt="1 430 Likes 9 Comments Espnw Espnw On Instagram History Kelsey Plum Passes Jackie Stiles As The Nc Basketball History Womens Basketball Seattle Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1 430 Likes 9 Comments Espnw Espnw On Instagram History Kelsey Plum Passes Jackie Stiles As The Nc Basketball History Womens Basketball Seattle Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/81/14/2a8114ecf2d54817ed867bc9220eb6d9.jpg" data-lightbox="roadtrip" data-title="Megan Gustafson Is Iowa S Career Leader In Points And Rebounds From Port Wing Wisconsin Iowa Basketball Womens Basketball Iowa Hawkeye Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/81/14/2a8114ecf2d54817ed867bc9220eb6d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRph8oPNZ_nPx_sLAF_q6X4IQ2GMm_2eoV9Pg';" alt="Megan Gustafson Is Iowa S Career Leader In Points And Rebounds From Port Wing Wisconsin Iowa Basketball Womens Basketball Iowa Hawkeye Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Megan Gustafson Is Iowa S Career Leader In Points And Rebounds From Port Wing Wisconsin Iowa Basketball Womens Basketball Iowa Hawkeye Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/4c/b4/0f4cb4e5d63dc0b5384c8d43ee464be2.jpg" data-lightbox="roadtrip" data-title="Taurasi Becomes Wnba All Time Leading Scorer Sport Inewsphoto Wnba All About Time Diana">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/4c/b4/0f4cb4e5d63dc0b5384c8d43ee464be2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTggGVlgkAcOHSnGUP--PbjVdHlGSxVYDwO5A';" alt="Taurasi Becomes Wnba All Time Leading Scorer Sport Inewsphoto Wnba All About Time Diana">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Taurasi Becomes Wnba All Time Leading Scorer Sport Inewsphoto Wnba All About Time Diana</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/ee/f7/94eef7eb96ca032fe8c03e1beff408f5.jpg" data-lightbox="roadtrip" data-title="Katie Lou Samuelson Solidified Herself As One Of The Greatest Huskies Of All Time Sunday With Her 2 Uconn Womens Basketball Womens Basketball Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/ee/f7/94eef7eb96ca032fe8c03e1beff408f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP47pLR__-cEmdSQD7QW2HMMUsqPQlRPiLnA';" alt="Katie Lou Samuelson Solidified Herself As One Of The Greatest Huskies Of All Time Sunday With Her 2 Uconn Womens Basketball Womens Basketball Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Katie Lou Samuelson Solidified Herself As One Of The Greatest Huskies Of All Time Sunday With Her 2 Uconn Womens Basketball Womens Basketball Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/8c/9f/aa8c9fd632899eaa218c208a0fcb2b1b.jpg" data-lightbox="roadtrip" data-title="Two Favorite Hoopers Ever Uconn Womens Basketball Womens Basketball Nba Rumors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/8c/9f/aa8c9fd632899eaa218c208a0fcb2b1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM93Nz_EIAh-ArY_MOSmqZJx9FZ_FeRB4o3g';" alt="Two Favorite Hoopers Ever Uconn Womens Basketball Womens Basketball Nba Rumors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Two Favorite Hoopers Ever Uconn Womens Basketball Womens Basketball Nba Rumors</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/90/21/e6/9021e69d3fba6d8c20148025f6c548df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM93Nz_EIAh-ArY_MOSmqZJx9FZ_FeRB4o3g';" alt="Two Favorite Hoopers Ever Uconn Womens Basketball Womens Basketball Nba Rumors">
+										<div class="card-body">
+						<h3 class="h5"><b>The all-time leader in three-point field goals made and attempted is Kelsey Mitchell of Ohio State.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa womens basketball all time scoring leader</strong>. 
+								
+																	In National Collegiate Athletic Association NCAA Division I basketball where a players career is at most four seasons it is considered a notable achievement to reach the 1000-points scored threshold. 
+																	The womens line remains at 20 ft 9 in. 
+																	Montgomery is now 13th. 
+																	The two-time NCAA Champion and four-time NCAA Coach of the Year not only made an impact on the court she impacted hundreds of young women off the court. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kelsey Plum currently holds the single-season scoring record for NCAA Division I of 1109 points set during her senior season at Washington. 
+																	VanDerveer has coached hundreds of players who have became All-Americans WNBA players and leaders in their industries and communities. 
+																	Moore was a scoring nightmare as she holds the 10 th all-time in scoring in NCAA Division I history and owns the Huskies scoring with 3036 career points. 
+																	McDermott who plays for Creighton University has recently entered into the top 10 list of all-time NCAA basketball scoring leaders when he scored 29 points against Seton Hall on February 23 to pass Alfredrick Hughes of Loyola Chicago who played college basketball in the early 1980s. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Winner of the Wade Trophy and. 
+																	College basketball career scoring leaders 11. 
+																	While the NCAAs current three-division format has been in place since the 197374 season the organization did not sponsor womens sports. 
+																	Discover the 2021 womens college basketball individual and team leaders across every major statistical category. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In basketball points are the sum of the score accumulated through free throw or field goal. 
+																	NCAA Division I Womens Basketball Statistics - 2020-21 Season. 
+																	Azzi was a dynamic force on the great 1989-90 team who led Stanford to its first Final Four first NCAA title and put the Cardinal on the map in womens basketball. 
+																	In basketball a rebound is the act of gaining possession of the ball after a missed field goal or free throwThe top 25 players in career rebounds in National Collegiate Athletic Association NCAA Division I womens basketball history are listed below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1988 ncaa 1976 ncaa 1940 ncaa 1950 ncaa 1981 ncaa Play Index Player Season Finder Player Game Finder NCAA Tournament Player Game Finder Matchup Finder NCAA Tournament Matchup Finder. 
+																	She is also the only NCAA Division I womens basketball player who scored more than 900 points in more than one season 201516 and 201617. 
+																	Maya Moores single-season scoring record finished at 754 points while Renee Montgomery finished her career sixth all-time on UConns scoring list with 1990 points. 
+																	Womens College Basketball Player Statistics - 2020-21 Year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In her four-year career from 2014 to 2018 she made 497 threes in 1286 attempts 386. 
+																	2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 2003 2002. 
+																	Iowa is 1 of the must-watch womens basketball games this week NCAA student-athletes celebrate reflect on NGWSD 2021 West Virginias Kysre Gondrezick leads this weeks starting 5 the. 
+																	She also owns UConns records for career. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Discover the current NCAA Division II Womens Basketball leaders in every stats category as well as historic leaders. 
+																	Plum a certified bucket-getter at. 
+																	And McDermott isnt even close to being done as he moved into the ninth spot on March 4 against Georgetown. 
+																	Kelsey Plum became Division I womens basketballs all-time leading scorer in 2017 breaking a 16-year-old record held by Missouri States Jackie Stiles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tara VanDerveer enters 2020-21 season 4 wins away from matching Pat Summitt. 
+																	In even rarer instances players have reached the 2000- and 3000-point plateaus no player has. 
+																	1 team who held the nations longest winning streak 26 gamesDespite losing two key seniors this team will look to enter the 2020-21 season with a young force. 
+																	Here are the all-time scoring leaders in DI mens college basketball from the official NCAA record book. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Gamecocks ended the 2019-20 season as the No. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/08/e4/d308e48dd6e462003579312ea5adb3f8.jpg" data-lightbox="roadtrip" data-title="Uconn Image By Keeley Schmitt Uconn Uconn Womens Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/08/e4/d308e48dd6e462003579312ea5adb3f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJLdPgt0Xv8qZYMs9hgPCWXKGMTnNq5A03g';" alt="Uconn Image By Keeley Schmitt Uconn Uconn Womens Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn Image By Keeley Schmitt Uconn Uconn Womens Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/1d/67/951d675f7176d7c9699d0471545aabeb.jpg" data-lightbox="roadtrip" data-title="Acc Leading Rebounder Sarah Imovbioh Transfers From Virginia To South Carolina Womens Basketball Carolina South Carolina">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/1d/67/951d675f7176d7c9699d0471545aabeb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFGwpOZHA5O0SGGt2GqRln_x3uLbyX2D1aug';" alt="Acc Leading Rebounder Sarah Imovbioh Transfers From Virginia To South Carolina Womens Basketball Carolina South Carolina">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Acc Leading Rebounder Sarah Imovbioh Transfers From Virginia To South Carolina Womens Basketball Carolina South Carolina</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/f7/ad/1cf7adffb395f789350ab7f0aa9bd98f.png" data-lightbox="roadtrip" data-title="Marvel At This Breanna Stewart Dunk In All Its Slow Motion Majesty Uconn Womens Basketball Womens Basketball Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/f7/ad/1cf7adffb395f789350ab7f0aa9bd98f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsaqci6s-qHKpUKPy4p77YDHmIgAEvlMoONw';" alt="Marvel At This Breanna Stewart Dunk In All Its Slow Motion Majesty Uconn Womens Basketball Womens Basketball Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marvel At This Breanna Stewart Dunk In All Its Slow Motion Majesty Uconn Womens Basketball Womens Basketball Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/b9/79/8db979b8ec0a00cc8c9b43c1f650c975.jpg" data-lightbox="roadtrip" data-title="Jeff Jacobs No Basketball Champion Has Ever Been Ripped Off Worse Than Diana Taurasi Basketball Workouts Coaching Volleyball Ncaa Champion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/b9/79/8db979b8ec0a00cc8c9b43c1f650c975.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDOi2ZDt0cH9fDLQ-qFUg7VgQ8VC4R4Gn2Ew';" alt="Jeff Jacobs No Basketball Champion Has Ever Been Ripped Off Worse Than Diana Taurasi Basketball Workouts Coaching Volleyball Ncaa Champion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jeff Jacobs No Basketball Champion Has Ever Been Ripped Off Worse Than Diana Taurasi Basketball Workouts Coaching Volleyball Ncaa Champion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/e2/52/b6e252d02ee2a276351ed15faa6fce28.jpg" data-lightbox="roadtrip" data-title="Nba S All Time Scoring Leaders Si Com Photos Nba Players Basketball Photography Nba">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/e2/52/b6e252d02ee2a276351ed15faa6fce28.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjOeS6N1N5yNN_bGbF3E1NlT8PEtFCqyhrhw';" alt="Nba S All Time Scoring Leaders Si Com Photos Nba Players Basketball Photography Nba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nba S All Time Scoring Leaders Si Com Photos Nba Players Basketball Photography Nba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f5/1d/c8/f51dc8bfdd2efdb715b6c42b28dd0fbb.jpg" data-lightbox="roadtrip" data-title="Hours After Honoring Her Mentor Kobe Bryant Oregon S Sabrina Ionescu Made Ncaa History Basketball Girls Basketball Workouts Basketball Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f5/1d/c8/f51dc8bfdd2efdb715b6c42b28dd0fbb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9j7J77l2QIG3C14ihEsfOKLeHQP__9kLDow';" alt="Hours After Honoring Her Mentor Kobe Bryant Oregon S Sabrina Ionescu Made Ncaa History Basketball Girls Basketball Workouts Basketball Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hours After Honoring Her Mentor Kobe Bryant Oregon S Sabrina Ionescu Made Ncaa History Basketball Girls Basketball Workouts Basketball Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/e3/26/47e326309e8d29a3c4d6d842ccc71676.jpg" data-lightbox="roadtrip" data-title="Pin By Bernie Stein On Sports Pics Womens Basketball Basketball Games For Kids Street Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/e3/26/47e326309e8d29a3c4d6d842ccc71676.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4XzJnUheTXFc7Lyc-psFWqAzmSvioyG9f0w';" alt="Pin By Bernie Stein On Sports Pics Womens Basketball Basketball Games For Kids Street Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Bernie Stein On Sports Pics Womens Basketball Basketball Games For Kids Street Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/6f/17/bf6f17a5642bb159cec244f40b85881b.jpg" data-lightbox="roadtrip" data-title="Brittney Griner One Of The Most Celebrated Women S College Basketball Players Brittney Griner Cam College Basketball Players Female Athletes Brittney Griner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/6f/17/bf6f17a5642bb159cec244f40b85881b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-6fuoBzkn2UAyC2H2ecU1qg78PQ8or39T5Q';" alt="Brittney Griner One Of The Most Celebrated Women S College Basketball Players Brittney Griner Cam College Basketball Players Female Athletes Brittney Griner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brittney Griner One Of The Most Celebrated Women S College Basketball Players Brittney Griner Cam College Basketball Players Female Athletes Brittney Griner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/d9/d2/08d9d20d36802b40ae0135f2865af70b.jpg" data-lightbox="roadtrip" data-title="Breanna Stewart Moriah Jefferson Compiling Some Eye Popping Stats Uconn Uconn Womens Basketball Uconn Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/d9/d2/08d9d20d36802b40ae0135f2865af70b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAkDR5MlfztWxZMSowOKOggeZeNWOyzgcn3Q';" alt="Breanna Stewart Moriah Jefferson Compiling Some Eye Popping Stats Uconn Uconn Womens Basketball Uconn Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breanna Stewart Moriah Jefferson Compiling Some Eye Popping Stats Uconn Uconn Womens Basketball Uconn Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/00/c4/9a00c4b0e643470bddfaa40c7e2fc964.jpg" data-lightbox="roadtrip" data-title="Uconn S Morgan Tuck Says She Will Announce A Uconn Return Or Wnba After Title Game Uconn Womens Basketball Uconn Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/00/c4/9a00c4b0e643470bddfaa40c7e2fc964.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjw_v6pCdB2d0xBRkabJ3h7dzKEucybkzT5g';" alt="Uconn S Morgan Tuck Says She Will Announce A Uconn Return Or Wnba After Title Game Uconn Womens Basketball Uconn Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn S Morgan Tuck Says She Will Announce A Uconn Return Or Wnba After Title Game Uconn Womens Basketball Uconn Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/a8/d6/54a8d6cdf55b1642f6d849aa0887cff7.jpg" data-lightbox="roadtrip" data-title="Breanna Stewart Moriah Jefferson Became Highest Scoring Uconn Classmates In Postseason History Uconn Womens Basketball Uconn Basketball T Shirt Designs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/a8/d6/54a8d6cdf55b1642f6d849aa0887cff7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFRfM6X_47MOBUBSdgPNhyvp509ru_1Hftbw';" alt="Breanna Stewart Moriah Jefferson Became Highest Scoring Uconn Classmates In Postseason History Uconn Womens Basketball Uconn Basketball T Shirt Designs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breanna Stewart Moriah Jefferson Became Highest Scoring Uconn Classmates In Postseason History Uconn Womens Basketball Uconn Basketball T Shirt Designs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/21/e6/9021e69d3fba6d8c20148025f6c548df.jpg" data-lightbox="roadtrip" data-title="Oregon S Sabrina Ionescu Is The First Player In Ncaa History To Reach 2 000 Points 1 000 Rebounds And 1 000 Assists Sabrina Sports Pictures Basketball Players">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/21/e6/9021e69d3fba6d8c20148025f6c548df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZzReQtQD9MluFRoticfvtbSNbUFrfrBAtVA';" alt="Oregon S Sabrina Ionescu Is The First Player In Ncaa History To Reach 2 000 Points 1 000 Rebounds And 1 000 Assists Sabrina Sports Pictures Basketball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon S Sabrina Ionescu Is The First Player In Ncaa History To Reach 2 000 Points 1 000 Rebounds And 1 000 Assists Sabrina Sports Pictures Basketball Players</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/3c/4c/dc3c4c8de416ef5e1d92d2d692a9b38e.jpg" data-lightbox="roadtrip" data-title="Another Night Another Record Kelsey Plum Dropped 38 Points And Recorded Her First Career Double Tank Man Instagram Posts Mens Tops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/3c/4c/dc3c4c8de416ef5e1d92d2d692a9b38e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAmgDOUpW8tdShN9_MtkrL8IE13tXwlH4BuA';" alt="Another Night Another Record Kelsey Plum Dropped 38 Points And Recorded Her First Career Double Tank Man Instagram Posts Mens Tops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Another Night Another Record Kelsey Plum Dropped 38 Points And Recorded Her First Career Double Tank Man Instagram Posts Mens Tops</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/college-gymnastics-in-south-carolina.html">College Gymnastics In South Carolina</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-nia-dennis.html">College Gymnastics Nia Dennis</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-hip-hop-floor-routine.html">College Gymnastics Hip Hop Floor Routine</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-america.html">College Gymnastics America</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-board.html">College Gymnastics Board</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-conferences.html">College Gymnastics Conferences</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-preseason-rankings-2021.html">College Gymnastics Preseason Rankings 2021</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-bars.html">College Gymnastics Bars</a></li>
+													<li class="list-group-item"><a href="/college-gym-fans-injury.html">College Gym Fans Injury</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-merchandise.html">College Gymnastics Merchandise</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-australia.html">College Gymnastics Australia</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-meets-2021.html">College Gymnastics Meets 2021</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-coaching-jobs.html">College Gymnastics Coaching Jobs</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-live.html">College Gymnastics Live</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-event-rankings.html">College Gymnastics Event Rankings</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-leotards-for-sale.html">College Gymnastics Leotards For Sale</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-katelyn-ohashi.html">College Gymnastics Katelyn Ohashi</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-dies.html">College Gymnastics Dies</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-national-rankings.html">College Gymnastics National Rankings</a></li>
+													<li class="list-group-item"><a href="/college-gymnastics-breaks-both-legs.html">College Gymnastics Breaks Both Legs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

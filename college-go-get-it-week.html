@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Go Get It Week - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Go Get It Week",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/1a/04/f5/1a04f56c0ca00bac7e77784938ba0435.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+go+get+it+week",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Go Get It Week</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Aug 17 2020 - Explore Stella Singletons board Education Go Get It Week followed by 144 people on Pinterest. 04 February 2021. Beginning with the last full week in September and continuing through November the annual campaign kicks off a full semester of efforts designed to help Hoosiers of all ages plan for education beyond high school. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/what-is-gi-bill-chapter-35.html">what is gi bill chapter 35</a>
+											<a class="badge badge-dark" href="/what-is-a-chapter-13-discharge-from-the-army.html">what is a chapter 13 discharge from the army</a>
+											<a class="badge badge-warning" href="/what-does-a-gi-nurse-do.html">what does a gi nurse do</a>
+											<a class="badge badge-warning" href="/what-is-gi-abbreviation.html">what is gi abbreviation</a>
+											<a class="badge badge-dark" href="/what-is-forever-gi-bill-benefits.html">what is forever gi bill benefits</a>
+											<a class="badge badge-danger" href="/what-is-the-difference-between-college-and-elite-gymnastics.html">what is the difference between college and elite gymnastics</a>
+											<a class="badge badge-danger" href="/what-does-chapter-33-benefits-pay-for.html">what does chapter 33 benefits pay for</a>
+											<a class="badge badge-danger" href="/what-is-considered-full-time-for-the-gi-bill.html">what is considered full time for the gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to visit the right blog.  Our website provides you with suggestions for viewing the highest quality video and image content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie that you view.  You can also contribute to supporting this site by sharing videos and graphics that you like on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/2a/a5/052aa58135d85625a2dd33c97ad21bbf.png" data-lightbox="roadtrip" data-title="For Our College Go Get It Week My Principal And Counselor Came Up With The In 2020 School Counseling Bulletin Boards High School Counseling High School Bulletin Boards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/2a/a5/052aa58135d85625a2dd33c97ad21bbf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Wycr3NB2ur_GQSRPY2RudcBET53WcUya2w&amp;ec=45771800';" alt="For Our College Go Get It Week My Principal And Counselor Came Up With The In 2020 School Counseling Bulletin Boards High School Counseling High School Bulletin Boards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Our College Go Get It Week My Principal And Counselor Came Up With The In 2020 School Counseling Bulletin Boards High School Counseling High School Bulletin Boards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/ff/15/e3ff1567d8c3178a36291bad2b9c6160.jpg" data-lightbox="roadtrip" data-title="Henry County Public Schools College Bulletin Boards High School Counseling College Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/ff/15/e3ff1567d8c3178a36291bad2b9c6160.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60T4VGbzerKrkLGC_m5fTXEmkZS4jlIINpQ&amp;ec=45771800';" alt="Henry County Public Schools College Bulletin Boards High School Counseling College Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Henry County Public Schools College Bulletin Boards High School Counseling College Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7b/1a/d1/7b1ad1beb87b5ba5577756389d724aec.jpg" data-lightbox="roadtrip" data-title="Virtual College Career Week Ideas For Distance Learning Career Exploration Middle School School Counseling Activities High School World History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7b/1a/d1/7b1ad1beb87b5ba5577756389d724aec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoh1vTJGdmSMuHmug69Jo-eZJdAB61cnnNpg&amp;ec=45771800';" alt="Virtual College Career Week Ideas For Distance Learning Career Exploration Middle School School Counseling Activities High School World History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virtual College Career Week Ideas For Distance Learning Career Exploration Middle School School Counseling Activities High School World History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/63/30/56633003156e72e64b0ae191171b433d.jpg" data-lightbox="roadtrip" data-title="College Awareness And A College Going Attitude Starts In Elementary School These Activities Less College Awareness College Activities College Week Elementary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/63/30/56633003156e72e64b0ae191171b433d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLB8iLurb_sW6mJbLGHmgiiTfaTRRDmHSKBw&amp;ec=45771800';" alt="College Awareness And A College Going Attitude Starts In Elementary School These Activities Less College Awareness College Activities College Week Elementary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Awareness And A College Going Attitude Starts In Elementary School These Activities Less College Awareness College Activities College Week Elementary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/04/f5/1a04f56c0ca00bac7e77784938ba0435.jpg" data-lightbox="roadtrip" data-title="Oh The Places You Ll Go Good For College Week Or Just To Inspire Door Decorations College School Decorations College Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/04/f5/1a04f56c0ca00bac7e77784938ba0435.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp-c9TC225g7CuERnFPIjpGx360707UBJXDQ&amp;ec=45771800';" alt="Oh The Places You Ll Go Good For College Week Or Just To Inspire Door Decorations College School Decorations College Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oh The Places You Ll Go Good For College Week Or Just To Inspire Door Decorations College School Decorations College Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/2e/08/e32e084bc57654980f9a3e47388d752b.png" data-lightbox="roadtrip" data-title="Virtual College And Career Week Lisakingcounselor Com Career Exploration Middle School Career Readiness High School Career Readiness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/2e/08/e32e084bc57654980f9a3e47388d752b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUwtIYkEEq0aSRlU3Xa9MVosUp52yeoyBBhg&amp;ec=45771800';" alt="Virtual College And Career Week Lisakingcounselor Com Career Exploration Middle School Career Readiness High School Career Readiness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virtual College And Career Week Lisakingcounselor Com Career Exploration Middle School Career Readiness High School Career Readiness</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e8/28/bd/e828bda0a780517c677f03b964ce31ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUwtIYkEEq0aSRlU3Xa9MVosUp52yeoyBBhg&amp;ec=45771800';" alt="Virtual College And Career Week Lisakingcounselor Com Career Exploration Middle School Career Readiness High School Career Readiness">
+										<div class="card-body">
+						<h3 class="h5"><b>There are several universities in the state of Indiana that waive their.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College go get it week</strong>. 
+								
+																	This video aims to encourage the participation of under-represented groups at higher education but also aims to raise awareness of degrees that dont put you on a direct path to a certain career. 
+																	HoW College Staff Member Making Strides for. 
+																	College Go Get it Week. 
+																	1 Post 5 Items Public. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See more ideas about school counselor school counseling college bulletin boards. 
+																	Spring Term ends 2021 01 April 2021. 
+																	We recognize this event to help students prepare for their futures. 
+																	Yes i agree 9-5 is far to long i dread it every week but some how i get through it plus ema helps sometimes i wish i had part time job which i could fit around college but cant find any at moment must concentrate and finish this year 6 months to go and get my DDM move on and off to University far away from London. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College Ready Career Prepared City Supported as part of the Fourth Annual College Go Get It Week district-wid. 
+																	Sep 13 2015 - Explore Danielle Darnells board College go week followed by 174 people on Pinterest. 
+																	This week September 23rd through the 27th is College GO Week in the state of Indiana. 
+																	It started in 2009 and was designed to give all Hoosiers the information and support they need to apply and prepare for college if college is a part of their future. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go College Week or Education Go Get It Week EGGI Week is meant for students to start thinking about their future in education. 
+																	In honor of College Go Week here is a list of ideas to get students involved and excited with dress up days. 
+																	Just Right Reading and Writing. 
+																	Week followed by 628 people on Pinterest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	23012020 - For our College Go Get It week my principal and counselor came up with the idea For our College Go Get It week my principal and counselor came up with the idea of graphing weekly salaries based on educational levels from not finishing high school up to a doctorate. 
+																	Students all over the district and state learn about post-secondary educational opportunities including college military and vocational training. 
+																	Should students go to college. 
+																	November 14-18th is Education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LHS JV Cheerleaders College Go Get It Week Show on 102011. 
+																	Apr 26 2020 - Explore Bridget Helmss board College Go. 
+																	HoW College student nails her own future. 
+																	My mum booked a holiday last year to go abroad in a few weeks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nottingham College offers a comprehensive range of further and higher education courses and training opportunities for business and industry. 
+																	February Study Week 2021 15 February 2021 - 19 February 2021. 
+																	March Open Event 20 March 2021. 
+																	This event always takes place during the last full week of September. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Isle of Wight Wandering for Charity. 
+																	See more ideas about school counseling school counselor high school counseling. 
+																	Show more details Wish List. 
+																	The purpose of this week is to provide both information and encouragement to all students in regards to pursuing post-secondary education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These students discuss subjects needed for entry into their college courses alternative entry routes as well as career opportunities available to them upon completion of their degree. 
+																	But you may find some. 
+																	We start to think about things we are interested in and things we are good at. 
+																	See more ideas about school counseling college awareness school counselor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This panel discussion will take place during College Awareness Week on Tuesday 24 November at 10am and will consist of a diverse student panel in terms of age gender and ethnicity with representatives from both further and higher education. 
+																	Lancaster ISDs annual College Go Get It Week is September 10 2012 through September 15 2012. 
+																	Read more It looks like you have JavaScript turned off. 
+																	A Celebration of Hilary Wallace. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Good Friday 2021 02 April 2021. 
+																	This is a district wide initiative to encourage students to. 
+																	ZIP 214 MB A two week unit that helps. 
+																	PreK K 1 st 2 nd 3 rd 4 th 5 th 6 th 7 th 8 th. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I started back at college today and im going to be off college for a week from the 5th of october to the 9th and im worried about what to say when i go on holiday. 
+																	Lancaster ISD kicked off College Week 2013. 
+																	Go Get It Week in Texas. 
+																	Should i tell college im ill or tell them the truth that im going on holiday because im doing a btec so i will need them to give me my assignments to do on the weekend i. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What is the purpose of EGGI Week. 
+																	We decided to represent it with a pictograph using play money. 
+																	College Awareness Week the Union of Students Ireland and Irish Second-Level Students Union will co-host College Connections. 
+																	Pretty much everything should work. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Monday 4th January 2021 the Prime Minister announced another national lockdown affecting schools and colleges in England. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/f2/da/d0f2da896fb92399aeb34fe213d9c1f6.jpg" data-lightbox="roadtrip" data-title="Roll Tide College Week At School Door Decoration No Excuses Anyone Can Go To Colleg School Door Decorations Door Decorations College Teacher Door Decorations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/f2/da/d0f2da896fb92399aeb34fe213d9c1f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp0baFitqb_wj39D0gJHKvdEcqYD-LEtm8cQ&amp;ec=45771800';" alt="Roll Tide College Week At School Door Decoration No Excuses Anyone Can Go To Colleg School Door Decorations Door Decorations College Teacher Door Decorations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Roll Tide College Week At School Door Decoration No Excuses Anyone Can Go To Colleg School Door Decorations Door Decorations College Teacher Door Decorations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/30/76/8930760628a57b75a53c6647fa1da2e9.jpg" data-lightbox="roadtrip" data-title="Pin By Amanda Tucker On Creating A College Going Culture School Year Themes College Awareness College Banner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/30/76/8930760628a57b75a53c6647fa1da2e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Z-Us62MYWgCPH2ZXroIsj0tRM_vTnv9mSQ&amp;ec=45771800';" alt="Pin By Amanda Tucker On Creating A College Going Culture School Year Themes College Awareness College Banner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Amanda Tucker On Creating A College Going Culture School Year Themes College Awareness College Banner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/10/51/c2/1051c29ab7f4b06850edfd077cba15f2.jpg" data-lightbox="roadtrip" data-title="Image Result For College Pennant Bulletin Board Ideas College Pennants College Counseling High School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/10/51/c2/1051c29ab7f4b06850edfd077cba15f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxvrnHPzheKxBdJQaauboOJiVILcinMNreZg&amp;ec=45771800';" alt="Image Result For College Pennant Bulletin Board Ideas College Pennants College Counseling High School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For College Pennant Bulletin Board Ideas College Pennants College Counseling High School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/06/2b/08062b50e4fe378eff10bb9aaac2f030.png" data-lightbox="roadtrip" data-title="College Colors Day Flyer Activities And Graduation Cap Template College Awareness College Colors College Awareness Week">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/06/2b/08062b50e4fe378eff10bb9aaac2f030.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBT4oqcUqvSd0NGLmRnMLMDHXjHj2yL57nvQ&amp;ec=45771800';" alt="College Colors Day Flyer Activities And Graduation Cap Template College Awareness College Colors College Awareness Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Colors Day Flyer Activities And Graduation Cap Template College Awareness College Colors College Awareness Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/94/00/7d9400553dc8adc94c6083f0ee141f3e.png" data-lightbox="roadtrip" data-title="The Abilene Regional P 16 Council Provides Free College Focused Activities And Financial Literacy Middle School Counselor College Awareness College Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/94/00/7d9400553dc8adc94c6083f0ee141f3e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsPjsnXLOkEtkN97HWbkbxNt5aRM2cB_tD4A&amp;ec=45771800';" alt="The Abilene Regional P 16 Council Provides Free College Focused Activities And Financial Literacy Middle School Counselor College Awareness College Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Abilene Regional P 16 Council Provides Free College Focused Activities And Financial Literacy Middle School Counselor College Awareness College Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/ea/ae/5eeaaeb8a82bbb4ab02981e8abd7a73c.jpg" data-lightbox="roadtrip" data-title="Pin By Maria Melendres On My Classroom College Bulletin Boards College Awareness Door Decorations Classroom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/ea/ae/5eeaaeb8a82bbb4ab02981e8abd7a73c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpNqPHdKUbwpSBUOeq6OTe0KE04LJbxrKMYg&amp;ec=45771800';" alt="Pin By Maria Melendres On My Classroom College Bulletin Boards College Awareness Door Decorations Classroom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Maria Melendres On My Classroom College Bulletin Boards College Awareness Door Decorations Classroom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/2f/ab/962fab1f49eee580e0c32a881493a0af.jpg" data-lightbox="roadtrip" data-title="College Week Teacher Classroom Door Decor Minions College A Minion Ways To Go Door Decorations Classroom Classroom Contests Door Decorations College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/2f/ab/962fab1f49eee580e0c32a881493a0af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqnSlSTc5PQl8BOuCF_86JDgvJkkasrmKcQw&amp;ec=45771800';" alt="College Week Teacher Classroom Door Decor Minions College A Minion Ways To Go Door Decorations Classroom Classroom Contests Door Decorations College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Week Teacher Classroom Door Decor Minions College A Minion Ways To Go Door Decorations Classroom Classroom Contests Door Decorations College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/3f/d9/453fd963be22adc663cac24d9882ea89.jpg" data-lightbox="roadtrip" data-title="Go Get It Week Door Contest At Santa Rita Elementary Midland Texas College Theme Abilene Chri Teacher Survival School Doors Bulletin Boards Classroom Door">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/3f/d9/453fd963be22adc663cac24d9882ea89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY1TNHH33hmuJqMaa3KuV8hm7GYno7r_k6_A&amp;ec=45771800';" alt="Go Get It Week Door Contest At Santa Rita Elementary Midland Texas College Theme Abilene Chri Teacher Survival School Doors Bulletin Boards Classroom Door">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go Get It Week Door Contest At Santa Rita Elementary Midland Texas College Theme Abilene Chri Teacher Survival School Doors Bulletin Boards Classroom Door</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/1b/2b/291b2ba746470f2317b1290e1050beb6.jpg" data-lightbox="roadtrip" data-title="Pin On College Go Week">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/1b/2b/291b2ba746470f2317b1290e1050beb6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx0Z3fnyHrrd_7aZEhpZBqcP9enCFLMMf7nw&amp;ec=45771800';" alt="Pin On College Go Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Go Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/9d/1d/6c9d1d61ea51baae4f8f90e19888a01e.jpg" data-lightbox="roadtrip" data-title="College Awareness Week College Awareness College Awareness Week Middle School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/9d/1d/6c9d1d61ea51baae4f8f90e19888a01e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL9GATUzwdN_K0xQjYl5siAiaCddMgqHJkqg&amp;ec=45771800';" alt="College Awareness Week College Awareness College Awareness Week Middle School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Awareness Week College Awareness College Awareness Week Middle School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/23/0e/a7230e9432355e4cf6d88664d9cbd2db.jpg" data-lightbox="roadtrip" data-title="Pin On Teaching Is My Passion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/23/0e/a7230e9432355e4cf6d88664d9cbd2db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpyV8pAaYb66Io6bs37dImom74ZrWqvFvJsg&amp;ec=45771800';" alt="Pin On Teaching Is My Passion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Teaching Is My Passion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/3a/8f/a23a8fc94cd4fc72d02fb0b6a06849fb.jpg" data-lightbox="roadtrip" data-title="School Door For College And Career Week Frozen And Olaf Themed Door Decorations College School Door Decorations Winter Classroom Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/3a/8f/a23a8fc94cd4fc72d02fb0b6a06849fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8y4lV71Wg0ubm55ZPdcxVGo5J_H1EqYvM4Q&amp;ec=45771800';" alt="School Door For College And Career Week Frozen And Olaf Themed Door Decorations College School Door Decorations Winter Classroom Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">School Door For College And Career Week Frozen And Olaf Themed Door Decorations College School Door Decorations Winter Classroom Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/28/bd/e828bda0a780517c677f03b964ce31ac.jpg" data-lightbox="roadtrip" data-title="Pin By B Roc On Middle School Counseling College Awareness College Awareness Week Morning Announcements">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/28/bd/e828bda0a780517c677f03b964ce31ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyhGDe9AqlWHOtlqlZxoXjJn35Mqx-2agP-Q&amp;ec=45771800';" alt="Pin By B Roc On Middle School Counseling College Awareness College Awareness Week Morning Announcements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By B Roc On Middle School Counseling College Awareness College Awareness Week Morning Announcements</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-filing-taxes.html">Gi Bill Filing Taxes</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-grandchildren-of-veterans.html">Gi Bill For Grandchildren Of Veterans</a></li>
+													<li class="list-group-item"><a href="/gi-bill-extension-48-months.html">Gi Bill Extension 48 Months</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-letter.html">Gi Bill Eligibility Letter</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-calculator.html">Gi Bill Eligibility Calculator</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-for-officers.html">Gi Bill Eligibility For Officers</a></li>
+													<li class="list-group-item"><a href="/gi-bill-fitness-certification.html">Gi Bill Fitness Certification</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-apprenticeships.html">Gi Bill For Apprenticeships</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-nurses.html">Gi Bill For Nurses</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-requirements.html">Gi Bill Eligibility Requirements</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-masters.html">Gi Bill For Masters</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-nyu.html">Gi Bill For Nyu</a></li>
+													<li class="list-group-item"><a href="/gi-bill-education-for-dependents.html">Gi Bill Education For Dependents</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-air-force.html">Gi Bill For Air Force</a></li>
+													<li class="list-group-item"><a href="/gi-bill-first-bah-payment.html">Gi Bill First Bah Payment</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-language-training.html">Gi Bill For Language Training</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-harvard.html">Gi Bill For Harvard</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-housing.html">Gi Bill For Housing</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-dummies.html">Gi Bill For Dummies</a></li>
+													<li class="list-group-item"><a href="/gi-bill-education-requirements.html">Gi Bill Education Requirements</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

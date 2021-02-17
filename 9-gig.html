@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>9 Gig - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "9 Gig",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/06/5e/6c/065e6ca4aa6661363f075d87030f9306.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=9+gig",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>9 Gig</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">There are 0 Solar 9 gigs on this website. There are many music venues in London. A 9 Giga Networks conta com uma rede de sites alem de parcerias com intuito de trazer conteudo exclusivo e. <br>				
+			</p>
+										<a class="badge badge-light" href="/college-essay-guy-johns-hopkins.html">college essay guy johns hopkins</a>
+											<a class="badge badge-dark" href="/college-essay-guy-northwestern.html">college essay guy northwestern</a>
+											<a class="badge badge-dark" href="/college-essay-guy-michigan.html">college essay guy michigan</a>
+											<a class="badge badge-info" href="/college-board-giving-gift-cards.html">college board giving gift cards</a>
+											<a class="badge badge-secondary" href="/college-boyfriend-christmas-gifts.html">college boyfriend christmas gifts</a>
+											<a class="badge badge-secondary" href="/college-design-gifts.html">college design gifts</a>
+											<a class="badge badge-secondary" href="/college-christmas-gifts-for-guys.html">college christmas gifts for guys</a>
+											<a class="badge badge-dark" href="/college-emile-zola-giberville-14730.html">college emile zola giberville 14730</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to pay a visit to the right blog.  Our website provides you with suggestions for viewing the highest quality video and picture content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you see.  You can also bring about supporting this website by sharing videos and graphics that you like on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/49/83/28/498328af83e1babe9d6b0fe482f68f0f.jpg" data-lightbox="roadtrip" data-title="Pin On Hints And Tips 2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/49/83/28/498328af83e1babe9d6b0fe482f68f0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZU510K3_XC0fpIVGYA1Pe8S88eQUL8IEUuQ';" alt="Pin On Hints And Tips 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hints And Tips 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/36/c2/8136c2ca973069e5e22c329f930ca80b.jpg" data-lightbox="roadtrip" data-title="Heirlooms 12 9 Gig Poster Graphic Design Illustration Gig Posters Screen Printing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/36/c2/8136c2ca973069e5e22c329f930ca80b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWHxpsMsBpZNe4BvSZTQIuugwl1kmV1c9MAg';" alt="Heirlooms 12 9 Gig Poster Graphic Design Illustration Gig Posters Screen Printing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Heirlooms 12 9 Gig Poster Graphic Design Illustration Gig Posters Screen Printing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/9e/43/8e9e43269b9bd7bbf30ec837f634c1ca.jpg" data-lightbox="roadtrip" data-title="Pin On Logo Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/9e/43/8e9e43269b9bd7bbf30ec837f634c1ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoYRJa-KrKT-Qs3SOGeB6ZvkA3w0Vzilj8uQ';" alt="Pin On Logo Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Logo Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ce/9c/1f/ce9c1f2f4701e87102e5ca45db4dd5d3.jpg" data-lightbox="roadtrip" data-title="9 Mindset From Gig To Business With Tricia Chaney Business Gig Writing Mindset Writers Healthcare Online Jobs For Moms Business Advice Business Mindset">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ce/9c/1f/ce9c1f2f4701e87102e5ca45db4dd5d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJkPdfERbtEjnRvLeVjniGEpbqtgCLHbQIuw';" alt="9 Mindset From Gig To Business With Tricia Chaney Business Gig Writing Mindset Writers Healthcare Online Jobs For Moms Business Advice Business Mindset">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Mindset From Gig To Business With Tricia Chaney Business Gig Writing Mindset Writers Healthcare Online Jobs For Moms Business Advice Business Mindset</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/f3/67/56f3678d5bd306f4c5c109577ea11087.jpg" data-lightbox="roadtrip" data-title="Gig Poster Program 9 16 On Behance Gig Posters Poster Goddess Of The Sea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/f3/67/56f3678d5bd306f4c5c109577ea11087.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdUdxpTZnN3xpVnakcbTWR64gPwQaS1YsLUA';" alt="Gig Poster Program 9 16 On Behance Gig Posters Poster Goddess Of The Sea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gig Poster Program 9 16 On Behance Gig Posters Poster Goddess Of The Sea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/00/66/cf0066c82302b0cd920e4b8fe900274e.png" data-lightbox="roadtrip" data-title="I Will Design A Catchy Logo For Your Brand In 2020 Company Logo Design Logo Design Cost Dental Logo Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/00/66/cf0066c82302b0cd920e4b8fe900274e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqJKHFvlWK5bkgUU_U_fhApgxH2dOvjsTOA';" alt="I Will Design A Catchy Logo For Your Brand In 2020 Company Logo Design Logo Design Cost Dental Logo Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Will Design A Catchy Logo For Your Brand In 2020 Company Logo Design Logo Design Cost Dental Logo Design</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/a8/3c/7e/a83c7e2ab85cf614ca3a97427f2a9359.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqJKHFvlWK5bkgUU_U_fhApgxH2dOvjsTOA';" alt="I Will Design A Catchy Logo For Your Brand In 2020 Company Logo Design Logo Design Cost Dental Logo Design">
+										<div class="card-body">
+						<h3 class="h5"><b>Here you can find selected shows across multiple music genres from new album launch tours to watching your favourite band perform live our gigs and tours guide has it all covered.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>9 gig</strong>. 
+								
+																	020 8600 2911. 
+																	Gig workers are independent contractors online platform workers contract firm workers on-call workers and. 
+																	Ethernetics Ethernetics is a Belgian high. 
+																	For COBRA KAI KARATE KID A Brief WALKING DEAD SPOILERIn this video we will be giving you our BINGE BREAKDOWN of the BRAND NEW TRAILER FOR COB. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The gig economy involves the exchange of labour for money between individuals or companies via digital platforms that actively facilitate matching between providers and customers on a short-term and payment by task basis. 
+																	GIG9s revolutionary platform will be first of its kind to promoting a peer-to-peer decentralized marketplace controlled independently by the market participants. 
+																	The Cornish pilot is a six-oared rowing boat 32 feet 98m in length made of elm. 
+																	You can book an interview here or contact us below please book or call ahead for all office locations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Posted by 1 month ago SPOILERLevel 9 Street Kid GIG. 
+																	There is a gig mission at the garage of redwood st. 
+																	Meanwhile it is estimated that gig workers size which covers independent or non-conventional workers is 20 to 30 of the economically active population in the United. 
+																	Gig Guide for Solar 9 band. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join GIG today a platform to grow your career upskill and diversify your CV. 
+																	Explore 9GAG Trending for the rising memes interesting stories awesome GIFs and viral videos on the internet. 
+																	9GAG is your best source of FUN. 
+																	Someone please guide me in the right direction. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have already registered for GIG or applied for a specific role one of the team will get in touch with you to book your interview. 
+																	Open by appointment only. 
+																	The entirely free GIG academy provides workers with the opportunity to improve their skills and knowledge-base through open apprenticeships and online learning courses whilst continuing to earn. 
+																	Gig carts are constructed with the drivers seat sitting higher than the level of the shafts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	9 Giga Networks Sao Bernardo do Campo Sao Bernardo do Campo Brazil. 
+																	A light gig can be used for carriage racing. 
+																	Kantang nababagay sa nalalapit na halalan. 
+																	But the reality of working in the gig economy isnt nearly as glamorous as the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many gigs are canceled due to corona virus. 
+																	One Cornish gig rower said before the announcement she thought it unlikely the 2021 championships would be held. 
+																	Dolly Partons 5 to 9 Superbowl ad is just as catchy and upbeat as her original hit song 9 to 5. 
+																	OED gives the date of first. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A gig also called chair or chaise is a light two-wheeled sprung cart pulled by one horse. 
+																	By Gert De Spiegeleer Ethernetics on Aug 19. 
+																	The GIG Academy is for those looking to further their career and become the managers and leaders of tomorrow. 
+																	9 gig update an I cant find anything on it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The future of the global services industry reimagined on the Ethereum blockchain technology. 
+																	And it references a cartoon breath taking actor and one of his most famous movie series. 
+																	Please check with venue before traveling Solar 9 Gig List Solar 9 Gig List. 
+																	Solar 9 Gig List. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By Jeroen Van Langenhove. 
+																	Whats On London Gig Guide. 
+																	Stratford London E15. 
+																	Live Music in Essex and the Surrounding Area. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Last month Jeroen Van Langenhove joined GIGTECH to strengthen our sales forces Read more. 
+																	SPOILERLevel 9 Street Kid GIG. 
+																	Find out where the band Solar 9 are playing in your local area. 
+																	You can catch a new album performance from your favourite singer or dance along to well known tracks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GIG Cloud has just received another update and it comes packed with Read more. 
+																	Traditionally a gig is more formal than a village cart or a meadowbrook cart and more comfortable usually being sprung. 
+																	If you are a member of the public looking for information and advice about coronavirus COVID-19 including information about the COVID-19 vaccine go to the NHS websiteYou can also find guidance and support on the GOVUK website. 
+																	97 percent of adults from 14 EU countries participated in the gig economy in 2017 according to the survey. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our advice for clinicians on the coronavirus is here. 
+																	Just thought Id share so others can see it for themselves. 
+																	Explore 9GAG for the most popular memes breaking stories awesome GIFs and viral videos on the internet. 
+																	To The Solar 9 Photos page To Solar 9 Band info page for a set list contact. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Highlights of the UK Gig calendar. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/1a/57/ad1a57a6f8e4fbeaaf64f2936e23da20.jpg" data-lightbox="roadtrip" data-title="Find Your Profitable Freelance Writing Niche And Say Goodbye To Your 9 5 Job For Good Elna Cain Writing Jobs Freelance Writing Jobs Creative Writing Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/1a/57/ad1a57a6f8e4fbeaaf64f2936e23da20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0P1IuqRQ8CROw8k7sttgiwxAD3iyjCl1w-Q';" alt="Find Your Profitable Freelance Writing Niche And Say Goodbye To Your 9 5 Job For Good Elna Cain Writing Jobs Freelance Writing Jobs Creative Writing Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Find Your Profitable Freelance Writing Niche And Say Goodbye To Your 9 5 Job For Good Elna Cain Writing Jobs Freelance Writing Jobs Creative Writing Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0b/0f/c3/0b0fc37bd4f3790915fa573e2732aca4.jpg" data-lightbox="roadtrip" data-title="9 Of 9 Gig Globalintergold Gold Goldbar Goldcareer Earning Earnwithgig Earningopportunity 9 Of 9 Gig G I Love Gold Forex Trading Strategies Gold">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0b/0f/c3/0b0fc37bd4f3790915fa573e2732aca4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Gg2dw6xUOlNG25pVEKwVExq2ie-afbKQKA';" alt="9 Of 9 Gig Globalintergold Gold Goldbar Goldcareer Earning Earnwithgig Earningopportunity 9 Of 9 Gig G I Love Gold Forex Trading Strategies Gold">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Of 9 Gig Globalintergold Gold Goldbar Goldcareer Earning Earnwithgig Earningopportunity 9 Of 9 Gig G I Love Gold Forex Trading Strategies Gold</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6d/53/5d/6d535df7e6e9ef9954c7892565ee1e56.jpg" data-lightbox="roadtrip" data-title="Effectively Scheduling Your Work Week Time Management Tips Work Week Business Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6d/53/5d/6d535df7e6e9ef9954c7892565ee1e56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVw_77wECRQCeaGngs_jkQBMa7OMZnHXXeA';" alt="Effectively Scheduling Your Work Week Time Management Tips Work Week Business Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Effectively Scheduling Your Work Week Time Management Tips Work Week Business Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/06/5e/6c/065e6ca4aa6661363f075d87030f9306.jpg" data-lightbox="roadtrip" data-title="Freelancing Tips To Handle The End Of A Gig Like A Boss With Images Blog Organization Like A Boss Gigs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/06/5e/6c/065e6ca4aa6661363f075d87030f9306.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsswaWzAkCIgKvdzSLXIJnWXtjJKbstqLi1A';" alt="Freelancing Tips To Handle The End Of A Gig Like A Boss With Images Blog Organization Like A Boss Gigs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Freelancing Tips To Handle The End Of A Gig Like A Boss With Images Blog Organization Like A Boss Gigs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a8/3c/7e/a83c7e2ab85cf614ca3a97427f2a9359.jpg" data-lightbox="roadtrip" data-title="Fiverr Gig Image Templates Tutorial To Build Your Gig Gallery What Is Seo Fiverr Gigs Fiverr">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a8/3c/7e/a83c7e2ab85cf614ca3a97427f2a9359.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXDvKaDYpyVwj9Nkwp4RJ_6Iv8w9pEYh1TuA';" alt="Fiverr Gig Image Templates Tutorial To Build Your Gig Gallery What Is Seo Fiverr Gigs Fiverr">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fiverr Gig Image Templates Tutorial To Build Your Gig Gallery What Is Seo Fiverr Gigs Fiverr</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/44/d0/ef/44d0eff14765628d01348139d76cf104.jpg" data-lightbox="roadtrip" data-title="Don T Trap Yourself In Your 9 To 5 Gig You Can Still Run A Successful Side Hustle Like Part Time Proofre Proofreading Jobs How To Get Money Working From Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/44/d0/ef/44d0eff14765628d01348139d76cf104.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjhNWhIQJUKg9nzf5Zn2Yw6cJYctcxRynvJA';" alt="Don T Trap Yourself In Your 9 To 5 Gig You Can Still Run A Successful Side Hustle Like Part Time Proofre Proofreading Jobs How To Get Money Working From Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Trap Yourself In Your 9 To 5 Gig You Can Still Run A Successful Side Hustle Like Part Time Proofre Proofreading Jobs How To Get Money Working From Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e9/1d/1e/e91d1e96df130af7d29bfe9944dcae95.jpg" data-lightbox="roadtrip" data-title="Pin On Gigging">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e9/1d/1e/e91d1e96df130af7d29bfe9944dcae95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-EEG7fbY8Uh1I8vpzkVpuhuRBX03B_RcUTg';" alt="Pin On Gigging">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gigging</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/dd/99/3add9916b1d0867b2becb4cc1bbd9f24.jpg" data-lightbox="roadtrip" data-title="Live Lockdown Disco Lockdown Gig Kitchen Disco Kitchen Party At Disco Gigs Cover Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/dd/99/3add9916b1d0867b2becb4cc1bbd9f24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAujHOXgMJKw-56VCFycfrs25xU0i0xD3pHQ';" alt="Live Lockdown Disco Lockdown Gig Kitchen Disco Kitchen Party At Disco Gigs Cover Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Live Lockdown Disco Lockdown Gig Kitchen Disco Kitchen Party At Disco Gigs Cover Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/63/c8/1f/63c81fb6eec0f7f443bb8e9f3603987b.jpg" data-lightbox="roadtrip" data-title="Zipswork I Will Build 150 Links Pr Up To 9 For 5 On Fiverr Com In 2020 Backlinks Local Seo Services Pr Strategy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/63/c8/1f/63c81fb6eec0f7f443bb8e9f3603987b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsJQu5Ynz2PF0lyCFi6HsK39dH4jelMZMb4g';" alt="Zipswork I Will Build 150 Links Pr Up To 9 For 5 On Fiverr Com In 2020 Backlinks Local Seo Services Pr Strategy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zipswork I Will Build 150 Links Pr Up To 9 For 5 On Fiverr Com In 2020 Backlinks Local Seo Services Pr Strategy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/05/ed/34/05ed342d11c85c9a7ff9778c32b3466b.jpg" data-lightbox="roadtrip" data-title="Details About 10 7 8 9 Gig Gigexchange Play Station Video Game Ad Flyer In 2020 Flyer Video Games Playstation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/05/ed/34/05ed342d11c85c9a7ff9778c32b3466b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSov4Fqa0ZVEPvWO2zNh1XyGdMHm2_bSTOCeQ';" alt="Details About 10 7 8 9 Gig Gigexchange Play Station Video Game Ad Flyer In 2020 Flyer Video Games Playstation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Details About 10 7 8 9 Gig Gigexchange Play Station Video Game Ad Flyer In 2020 Flyer Video Games Playstation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/83/4e/2b834ecaee66917e6124f26c423d49dd.png" data-lightbox="roadtrip" data-title="Pin On Money Make More Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/83/4e/2b834ecaee66917e6124f26c423d49dd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5NiWO6i9ZPw2U9a5m6mJEt_ET3G3daHL7Qw';" alt="Pin On Money Make More Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Money Make More Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/74/83/9374836e47b8eb11aa0665aee0f5262c.png" data-lightbox="roadtrip" data-title="Cash In On The Side Gig Economy With These 9 Apps Get 17 00 Right Now Making It Pay To Stay Side Gigs Gigs Economy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/74/83/9374836e47b8eb11aa0665aee0f5262c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGOtlHjdPVay8BOSWbhqFG_LvG-8L_4Zu-zg';" alt="Cash In On The Side Gig Economy With These 9 Apps Get 17 00 Right Now Making It Pay To Stay Side Gigs Gigs Economy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cash In On The Side Gig Economy With These 9 Apps Get 17 00 Right Now Making It Pay To Stay Side Gigs Gigs Economy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/c1/86/e9c186378a19e1fe848a5c89f5d0bc15.jpg" data-lightbox="roadtrip" data-title="Pin On Logo Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/c1/86/e9c186378a19e1fe848a5c89f5d0bc15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGj68r09aYZunqEiWabYrETronnkETw36KfA';" alt="Pin On Logo Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Logo Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-to-put-in-a-gift-basket-for-a-college-student.html">What To Put In A Gift Basket For A College Student</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-college-football-players-go-on-to-play-professional-football.html">What Percentage Of College Football Players Go On To Play Professional Football</a></li>
+													<li class="list-group-item"><a href="/what-to-get-college-age-boy-for-christmas.html">What To Get College Age Boy For Christmas</a></li>
+													<li class="list-group-item"><a href="/what-to-put-in-a-college-gift-basket.html">What To Put In A College Gift Basket</a></li>
+													<li class="list-group-item"><a href="/what-is-yellow-ribbon-scholarship.html">What Is Yellow Ribbon Scholarship</a></li>
+													<li class="list-group-item"><a href="/what-percent-of-veterans-use-gi-bill.html">What Percent Of Veterans Use Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-the-new-gi-bill.html">What Is The New Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-the-yellow-ribbon-program-for-veterans.html">What Is The Yellow Ribbon Program For Veterans</a></li>
+													<li class="list-group-item"><a href="/what-to-gift-college-students.html">What To Gift College Students</a></li>
+													<li class="list-group-item"><a href="/what-qualifies-for-gi-bill.html">What Qualifies For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-yellow-ribbon-program.html">What Is The Gi Bill Yellow Ribbon Program</a></li>
+													<li class="list-group-item"><a href="/what-to-go-to-college-for-quiz.html">What To Go To College For Quiz</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-top-up.html">What Is The Gi Bill Top Up</a></li>
+													<li class="list-group-item"><a href="/what-to-get-a-college-guy-for-christmas.html">What To Get A College Guy For Christmas</a></li>
+													<li class="list-group-item"><a href="/wheaton-college-womens-basketball-schedule.html">Wheaton College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/what-percent-of-college-soccer-players-go-pro.html">What Percent Of College Soccer Players Go Pro</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill.html">What Is The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-was-the-main-purpose-of-the-gi-bill.html">What Was The Main Purpose Of The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-to-do-if-i-didnt-go-to-college.html">What To Do If I Didnt Go To College</a></li>
+													<li class="list-group-item"><a href="/what-will-gi-bill-pay-for.html">What Will Gi Bill Pay For</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

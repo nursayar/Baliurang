@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does Gi Bill Certificate Of Eligibility Look Like - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does Gi Bill Certificate Of Eligibility Look Like",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/c5/93/c1/c593c18733c1ce451e04229705420bbb.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+gi+bill+certificate+of+eligibility+look+like",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does Gi Bill Certificate Of Eligibility Look Like</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Theres one thing you definitely need to remember. Youll need to request a new Certificate of Eligibility letter to check your GI Bill benefit status. Education and Training Home Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. <br>				
+			</p>
+										<a class="badge badge-danger" href="/how-much-is-the-army-gi-bill-worth.html">how much is the army gi bill worth</a>
+											<a class="badge badge-success" href="/how-many-quarters-in-womens-college-basketball.html">how many quarters in womens college basketball</a>
+											<a class="badge badge-warning" href="/how-to-become-a-gi-nurse.html">how to become a gi nurse</a>
+											<a class="badge badge-info" href="/how-much-is-bah-for-e5-with-dependents.html">how much is bah for e5 with dependents</a>
+											<a class="badge badge-dark" href="/how-much-does-western-governors-university-pay.html">how much does western governors university pay</a>
+											<a class="badge badge-warning" href="/how-much-is-the-reserve-gi-bill-worth.html">how much is the reserve gi bill worth</a>
+											<a class="badge badge-warning" href="/how-much-is-the-monthly-housing-allowance-for-gi-bill.html">how much is the monthly housing allowance for gi bill</a>
+											<a class="badge badge-success" href="/how-much-of-my-gi-bill-is-left.html">how much of my gi bill is left</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the ideal site.  Our site provides you with suggestions for viewing the maximum quality video and picture content, hunt and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/1c/8e/891c8ea0236f4025ef62496e41e80b84.jpg" data-lightbox="roadtrip" data-title="Sample I20 Page 1 Certificate Of Eligibility Power Of Attorney Form Legal Forms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/1c/8e/891c8ea0236f4025ef62496e41e80b84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHNW4UT_kH9wNh6WStHTktXsViWBgDbB4LTw';" alt="Sample I20 Page 1 Certificate Of Eligibility Power Of Attorney Form Legal Forms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sample I20 Page 1 Certificate Of Eligibility Power Of Attorney Form Legal Forms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e6/cf/33/e6cf33059a81f2185731344644795768.jpg" data-lightbox="roadtrip" data-title="How Indian Visa Looks Visa Visa Online Presentation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e6/cf/33/e6cf33059a81f2185731344644795768.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gXT1-VDmcN83Nva1RMZTcQUDp8steFcHjw';" alt="How Indian Visa Looks Visa Visa Online Presentation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Indian Visa Looks Visa Visa Online Presentation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/XgldXVQGCPg/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Reality Of Mci Eligibility Certificate How To Get Mci Eligibility Cer Reality Certificate How To Get">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/XgldXVQGCPg/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrI3O70at9umvgHiXt3gievQ8tnaYArPiRFA';" alt="Reality Of Mci Eligibility Certificate How To Get Mci Eligibility Cer Reality Certificate How To Get">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reality Of Mci Eligibility Certificate How To Get Mci Eligibility Cer Reality Certificate How To Get</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e9/1e/10/e91e106274a14e4ab233d99003b89e91.jpg" data-lightbox="roadtrip" data-title="Pin On Kreacje">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e9/1e/10/e91e106274a14e4ab233d99003b89e91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZj5DgL5DMHBA6uGUwYxfMag4bLQCnm6A7g';" alt="Pin On Kreacje">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Kreacje</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/84/60/9084606648f23f7c7a7ab1c4f0df3c0c.png" data-lightbox="roadtrip" data-title="Your Insurance Billing Plan 5 Of 5 With Jeremy Zug Pop 406 How To Start Grow And Scale A Private Practice Practice Of The Practice How To Plan Billings Jeremy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/84/60/9084606648f23f7c7a7ab1c4f0df3c0c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9nrsE7H9OCxmACRumwgBXxQjfDXtk_zsgcA';" alt="Your Insurance Billing Plan 5 Of 5 With Jeremy Zug Pop 406 How To Start Grow And Scale A Private Practice Practice Of The Practice How To Plan Billings Jeremy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Insurance Billing Plan 5 Of 5 With Jeremy Zug Pop 406 How To Start Grow And Scale A Private Practice Practice Of The Practice How To Plan Billings Jeremy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/75/93/72759392bbf562a640c0ddba480398a6.jpg" data-lightbox="roadtrip" data-title="Gop Attempt To Slash Food Stamps Eligibility Would Hurt Flagler And Florida Families Food Stamps Book Stamp Food Stamp Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/75/93/72759392bbf562a640c0ddba480398a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP-nM4CJ4k5YtCMlrhRM0dtZJULZT_KEOfcw';" alt="Gop Attempt To Slash Food Stamps Eligibility Would Hurt Flagler And Florida Families Food Stamps Book Stamp Food Stamp Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gop Attempt To Slash Food Stamps Eligibility Would Hurt Flagler And Florida Families Food Stamps Book Stamp Food Stamp Card</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.ytimg.com/vi/XgldXVQGCPg/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP-nM4CJ4k5YtCMlrhRM0dtZJULZT_KEOfcw';" alt="Gop Attempt To Slash Food Stamps Eligibility Would Hurt Flagler And Florida Families Food Stamps Book Stamp Food Stamp Card">
+										<div class="card-body">
+						<h3 class="h5"><b>Learn about GI Bill eligibility requirements and find out if you can get these benefits.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does gi bill certificate of eligibility look like</strong>. 
+								
+																	Your monthly payment amount including any buy-up or kicker payments will be. 
+																	There is more than one way to obtain a Certificate of Eligibility and while its a short and simple document it can stir up a lot of confusion. 
+																	The process for getting your GI Bill Certificate of Eligibility COE is relatively easy. 
+																	Its also important to note that the term Certificate of Eligibility can often be found in use on collegiate websites when discussing VA education benefits connected to the GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn about types of VA education benefits including the GI Bill and review what happens after you apply for a COE. 
+																	Were here Monday through Friday 800 am. 
+																	A duplicate Certificate of. 
+																	Several different programs make up the United States GI Bill and have different levels of eligibility and benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your Certificate of Eligibility provides you with basic information concerning your eligibility to the Montgomery GI Bill. 
+																	And you must have one of these free accounts. 
+																	The Montgomery GI Bill -Active Duty is also known as Chapter 30 and can provide up to 61000 in benefits for active duty service members. 
+																	To participate in the program service members must pay 100 per month for 12 months at the beginning of their enlistment period. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lets clear up the mayhem and tackle some of the. 
+																	Thanks to the Student Veteran Coronavirus Response Act of 2020 and Public Law 116-140 the Department of Veterans Affairs has been authorized to extend the eligibility periods for students who were pursuing a course of. 
+																	Getting a degree certificate or other professional license can help you make a successful transition from military to civilian life. 
+																	VA education benefits can help you pay your tuition pick out a school choose a career and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There have been multiple different versions of. 
+																	Also does anyone else have an issue updating their address in ebenefits. 
+																	The VA will issue a Certificate of Eligibility which lists your eligibility for Yellow Ribbon. 
+																	The GI Bill provides educational assistance to servicemembers veterans and their dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is the correct way to get a copy of your GI Bill Certificate of Eligibility or GI Bill Letter on VAs new website. 
+																	I got something that said how much of my gi bill im using and what percent im using but it doesnt say certificate of eligiilty on it. 
+																	Im not sure if I got mine or not. 
+																	Other blogs have outdated info. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is the. 
+																	Generally veterans with 36 months of service or more on active duty who qualify for the 100 benefit rate may qualify for the scholarship. 
+																	Plan for a longer time if you need to set up those credentials. 
+																	The VA clearly states that the process takes up to 30 days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For subject put GI Bill Certificate of Eligibility For question put in something like I am requesting a duplicate copy of my GI Bill Certificate of Eligibility be mailed to me. 
+																	Its the first step to using those GI Bill benefits and it does take time to get the paperwork back so go ahead and do it now. 
+																	Post 911 GI Bill Check Post 911 GI Bill benefits Post 911 GI Bill Statement of Benefits Please wait while we load the application for you. 
+																	If youre an active-duty service member or Veteran a member of the National Guard or Reserves or a qualified survivor or dependent find out if you can get VA education benefits through the GI Bill and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Submit your Application for VA Education Benefits well before you fully enroll in school. 
+																	Why Do You Need To Submit GI Bill COE Early. 
+																	I wanted to know what the COE for the post 911 gi bill looks like. 
+																	To request a COE please call the Education Call Center at 888-442-4551. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However the correct term for the official document detailing the education benefits belonging to an active or veteran member of the military is a Statement of Benefits As far as the VA is concerned. 
+																	The Certificate of Eligibility COE serves as that proof and tells a lender that an applicant has officially met the minimum service requirement. 
+																	GI Bill Extensions Available Due to COVID-19 ATTENTION GI Bill Beneficiaries. 
+																	Find out how to apply for Post-911 GI Bill benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out if you can get a Certificate of Eligibility COE for VA education benefits. 
+																	The GI Bill is one of the most significant pieces of legislation passed by the US. 
+																	Like the time before I submitted the GI Bill Certification request as I enrolled inevitably the same delay came but this time in the form of an erroneous denial of benefits letter. 
+																	Product is GI Bill Category is the benefit you are eligible for Under the benefit you are eligible for select eligibility Submit your request. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI Bill certificate of eligibility. 
+																	It says for the first address line. 
+																	Government in the 20th century. 
+																	The process to apply for a Certificate of Eligibility isnt terribly hard and will take less than 12 an hour if you have login credentials already established. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It does not contain information about any additional monies you may be entitled to such as the College Fund kicker and the 600 buy-up. 
+																	Once you apply for your benefits the VA will send you a certificate of eligibility that spells out exactly what you are eligible to receive. 
+																	Apparently the claims processor had denied my claim because he or she was not aware of a special rule giving an extra 12 months of benefits to those who were eligible for both Montgomery GI Bill and Post 911 GI. 
+																	To determine eligibility veterans must apply for Post-911 GI Bill benefits with the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 1947 nearly half of college admissions were for veterans clearly making use of the GI Bill. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/a2/78/b3a27838b6d64bb3f8b4e37b54a509a3.jpg" data-lightbox="roadtrip" data-title="This Document Is A Quick Look Into A Students Iep It Provides A Spot For Name Eligibility Dates Rea Reflection Activities Respect Activities Reading Levels">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/a2/78/b3a27838b6d64bb3f8b4e37b54a509a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp4FiEzxoUR3G7N1ykUSW8RdYGRSJmabbhdA';" alt="This Document Is A Quick Look Into A Students Iep It Provides A Spot For Name Eligibility Dates Rea Reflection Activities Respect Activities Reading Levels">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Document Is A Quick Look Into A Students Iep It Provides A Spot For Name Eligibility Dates Rea Reflection Activities Respect Activities Reading Levels</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8b/02/a6/8b02a6779b77333997e2f49c662bb125.jpg" data-lightbox="roadtrip" data-title="Va Loan Qualifications And Eligibility Requirements Va Mortgage Loan Eligibility Va Home Loan Watch This Bef Va Mortgage Loans Va Mortgages Refinance Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8b/02/a6/8b02a6779b77333997e2f49c662bb125.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq8iLE2PI3XYT_JUclxedX8q7YXCjHwkebwA';" alt="Va Loan Qualifications And Eligibility Requirements Va Mortgage Loan Eligibility Va Home Loan Watch This Bef Va Mortgage Loans Va Mortgages Refinance Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loan Qualifications And Eligibility Requirements Va Mortgage Loan Eligibility Va Home Loan Watch This Bef Va Mortgage Loans Va Mortgages Refinance Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/3d/6b/ca3d6b1bab5b9200b5295442652074a8.png" data-lightbox="roadtrip" data-title="Sign Up To Check Eligibility Survey Compare Is On The Look Out For People Born Before 2001 To In 2020 Top Paid Surveys Paid Surveys Online Surveys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/3d/6b/ca3d6b1bab5b9200b5295442652074a8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUr0nVEvQoqUye6pvIYZEgfqcz14BIjMbv2A';" alt="Sign Up To Check Eligibility Survey Compare Is On The Look Out For People Born Before 2001 To In 2020 Top Paid Surveys Paid Surveys Online Surveys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sign Up To Check Eligibility Survey Compare Is On The Look Out For People Born Before 2001 To In 2020 Top Paid Surveys Paid Surveys Online Surveys</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/e5/fd/ace5fd5b5811335002476e8a54db3bc1.jpg" data-lightbox="roadtrip" data-title="As A Doctor You Should Follow The Basic Tenets Of Writing An Informative Cover Letter Bysummarizing Y Cover Letter Sample Cover Letter For Resume Cover Letter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/e5/fd/ace5fd5b5811335002476e8a54db3bc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCHhOOEXF99hWsLzeK8ii4Do2F1AKOk3ZiYQ';" alt="As A Doctor You Should Follow The Basic Tenets Of Writing An Informative Cover Letter Bysummarizing Y Cover Letter Sample Cover Letter For Resume Cover Letter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As A Doctor You Should Follow The Basic Tenets Of Writing An Informative Cover Letter Bysummarizing Y Cover Letter Sample Cover Letter For Resume Cover Letter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/09/ee/cc09eea10250422bc98011924c4b5ffa.jpg" data-lightbox="roadtrip" data-title="If You Are Preparing For Ibps Exam And Looking For Its Study Material Syllabus Eligibility Criteria And Other Exam Calendar Exam Human Resource Development">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/09/ee/cc09eea10250422bc98011924c4b5ffa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMTReH4FE6ZF2j-0x8UabqEHfr9OZlfdOMNA';" alt="If You Are Preparing For Ibps Exam And Looking For Its Study Material Syllabus Eligibility Criteria And Other Exam Calendar Exam Human Resource Development">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are Preparing For Ibps Exam And Looking For Its Study Material Syllabus Eligibility Criteria And Other Exam Calendar Exam Human Resource Development</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/31/e8/a331e8ad8c35780ac0326972512f85bd.jpg" data-lightbox="roadtrip" data-title="Few Things You Need To Know While Applying For Study Loans Post Secondary Education Education Study">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/31/e8/a331e8ad8c35780ac0326972512f85bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZdwPEV5th038ktbnMDkuRG2Hyc02cPnmycw';" alt="Few Things You Need To Know While Applying For Study Loans Post Secondary Education Education Study">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Few Things You Need To Know While Applying For Study Loans Post Secondary Education Education Study</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/11/00/561100f49928d356a701878c3d233a51.png" data-lightbox="roadtrip" data-title="How To Guide For J 1 Visa Application Science Skills Application How To Apply">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/11/00/561100f49928d356a701878c3d233a51.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIwvSWrPUq4CfRRQaiEfQ7qFdqBDjvwH2Zsw';" alt="How To Guide For J 1 Visa Application Science Skills Application How To Apply">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Guide For J 1 Visa Application Science Skills Application How To Apply</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/80/8b/c2808bf102df803eaa79475dd7ead593.jpg" data-lightbox="roadtrip" data-title="Cover Letter For Library Job Cover Letter For Resume Lettering Cover Letter Example">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/80/8b/c2808bf102df803eaa79475dd7ead593.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPL0AGKndlJ1EzuK3lgc9lN7B_227eAeytLw';" alt="Cover Letter For Library Job Cover Letter For Resume Lettering Cover Letter Example">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cover Letter For Library Job Cover Letter For Resume Lettering Cover Letter Example</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/93/c1/c593c18733c1ce451e04229705420bbb.png" data-lightbox="roadtrip" data-title="Resume Template Questions Five Moments To Remember From Resume Template Questions This Or That Questions Professional Resume Writers Resume Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/93/c1/c593c18733c1ce451e04229705420bbb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR52H9FqoWFvtP6A8f7j55jvUGnXCAosn3OvQ';" alt="Resume Template Questions Five Moments To Remember From Resume Template Questions This Or That Questions Professional Resume Writers Resume Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Resume Template Questions Five Moments To Remember From Resume Template Questions This Or That Questions Professional Resume Writers Resume Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6c/d2/f0/6cd2f035e0e3123c80747d59f9fbb0ad.jpg" data-lightbox="roadtrip" data-title="My Girlfriend Makes My Handwriting Look Like Chicken Scrawl Side Note She Rushed This Essay Out In Ju Nice Handwriting Pretty Handwriting Neat Handwriting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6c/d2/f0/6cd2f035e0e3123c80747d59f9fbb0ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLTFuOo-X2B4fFd4BDrG7yNA1a4LEpmuINZg';" alt="My Girlfriend Makes My Handwriting Look Like Chicken Scrawl Side Note She Rushed This Essay Out In Ju Nice Handwriting Pretty Handwriting Neat Handwriting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Girlfriend Makes My Handwriting Look Like Chicken Scrawl Side Note She Rushed This Essay Out In Ju Nice Handwriting Pretty Handwriting Neat Handwriting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/4d/74/9a4d7453d548b9f3bd948212579dbdf4.png" data-lightbox="roadtrip" data-title="Pin On Early Literacy Development">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/4d/74/9a4d7453d548b9f3bd948212579dbdf4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjnLON8JYBq-fPCoYBuEE6fYvAPZHSaKw0Gw';" alt="Pin On Early Literacy Development">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Early Literacy Development</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/01/66/260166253e0210922365620d9244e924.gif" data-lightbox="roadtrip" data-title="Dubai Jobs Obgyn Specialist Dha Licensed Or Eligibility Letter Check Out Our Advert Link">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/01/66/260166253e0210922365620d9244e924.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBgspHtCC3OO0CQbYL0ma6MAG9MOoX4s8qbw';" alt="Dubai Jobs Obgyn Specialist Dha Licensed Or Eligibility Letter Check Out Our Advert Link">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dubai Jobs Obgyn Specialist Dha Licensed Or Eligibility Letter Check Out Our Advert Link</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/f7/5d/0ff75db3a902fb1da8cf85f6dbaa29c3.jpg" data-lightbox="roadtrip" data-title="Exclusive Looks Like He S Got The Job Student Who Sent Best Ever Cover Letter Saying He Was At Average University With No Special Skills Is In Talks With Job Cover Letter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/f7/5d/0ff75db3a902fb1da8cf85f6dbaa29c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCNaXZ5ITBTHArF5rVZdtbPnTzP5ZOepGA3w';" alt="Exclusive Looks Like He S Got The Job Student Who Sent Best Ever Cover Letter Saying He Was At Average University With No Special Skills Is In Talks With Job Cover Letter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exclusive Looks Like He S Got The Job Student Who Sent Best Ever Cover Letter Saying He Was At Average University With No Special Skills Is In Talks With Job Cover Letter</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/womens-college-basketball-scores.html">Womens College Basketball Scores</a></li>
+													<li class="list-group-item"><a href="/wwwvagov-education-benefits.html">Wwwvagov Education Benefits</a></li>
+													<li class="list-group-item"><a href="/yellow-ribbon-scholarship-requirements.html">Yellow Ribbon Scholarship Requirements</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-way-too-early-top-25.html">Womens College Basketball Way Too Early Top 25</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-top-25-teams.html">Womens College Basketball Top 25 Teams</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-time-clock.html">Womens College Basketball Time Clock</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-sec-tournament-2020.html">Womens College Basketball Sec Tournament 2020</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-basketball-scores-today.html">Womens Ncaa Basketball Scores Today</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-transfer-list.html">Womens College Basketball Transfer List</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-basketball-march-madness.html">Womens Ncaa Basketball March Madness</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-teams-in-georgia.html">Womens College Basketball Teams In Georgia</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-yesterday.html">Womens College Basketball Yesterday</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-basketball-final-four-tickets.html">Womens Ncaa Basketball Final Four Tickets</a></li>
+													<li class="list-group-item"><a href="/womens-college-gymnastics-espn.html">Womens College Gymnastics Espn</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-streams-reddit.html">Womens College Basketball Streams Reddit</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-top-25-standings.html">Womens College Basketball Top 25 Standings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-shot-clock.html">Womens College Basketball Shot Clock</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-tallest-players.html">Womens College Basketball Tallest Players</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-division-1-basketball-tournament.html">Womens Ncaa Division 1 Basketball Tournament</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-standings-pac-12.html">Womens College Basketball Standings Pac 12</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

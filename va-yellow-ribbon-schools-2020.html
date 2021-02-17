@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Yellow Ribbon Schools 2020 - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Yellow Ribbon Schools 2020",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/564x/1f/69/8c/1f698c67890b25e6e292aaf3ce10c65b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+yellow+ribbon+schools+2020",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Yellow Ribbon Schools 2020</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Get started on a search in our School Finder for schools participating in the Yellow Ribbon program. Search for schools that participate in the Yellow Ribbon Program. Your actual tuition fees costs may exceed these amounts if you are attending a private school or are attending a public school as a nonresident student. <br>				
+			</p>
+										<a class="badge badge-warning" href="/does-snhu-accept-gi-bill.html">does snhu accept gi bill</a>
+											<a class="badge badge-warning" href="/does-ashford-university-accept-gi-bill.html">does ashford university accept gi bill</a>
+											<a class="badge badge-success" href="/does-it-matter-what-college-you-go-to-for-business.html">does it matter what college you go to for business</a>
+											<a class="badge badge-light" href="/does-gi-bill-cover-spouses.html">does gi bill cover spouses</a>
+											<a class="badge badge-danger" href="/does-it-matter-what-college-you-go-to-for-undergraduate-in-india.html">does it matter what college you go to for undergraduate in india</a>
+											<a class="badge badge-info" href="/does-post-911-gi-bill-pay-for-housing.html">does post 911 gi bill pay for housing</a>
+											<a class="badge badge-light" href="/does-the-gi-bill-pay-for-everything.html">does the gi bill pay for everything</a>
+											<a class="badge badge-warning" href="/does-the-gi-bill-ever-expire.html">does the gi bill ever expire</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the right site.  Our site gives you suggestions for viewing the maximum quality video and image content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/da/3f/3ada3f3af5d264edffb875243730756d.jpg" data-lightbox="roadtrip" data-title="Excited To Share This Item From My Etsy Shop Graduation Ribbon Corsage For 2020 Graduate Black Yellow Whi Graduation Backdrop School Colors Accent Colors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/da/3f/3ada3f3af5d264edffb875243730756d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLhg8kNWdHmYBxjHnWj5g2qZdPQGvQYZ45og';" alt="Excited To Share This Item From My Etsy Shop Graduation Ribbon Corsage For 2020 Graduate Black Yellow Whi Graduation Backdrop School Colors Accent Colors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Excited To Share This Item From My Etsy Shop Graduation Ribbon Corsage For 2020 Graduate Black Yellow Whi Graduation Backdrop School Colors Accent Colors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/3b/92/623b92b167341a7668ce10e8d6a153b3.jpg" data-lightbox="roadtrip" data-title="Graduation Class Year Blue And Yellow Bunting Flags Zazzle Com In 2020 Bunting Flags Graduation Class Bunting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/3b/92/623b92b167341a7668ce10e8d6a153b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwoOuqJBgNZCqcYY7x8ppsP9lkBWmXp30k-A';" alt="Graduation Class Year Blue And Yellow Bunting Flags Zazzle Com In 2020 Bunting Flags Graduation Class Bunting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Graduation Class Year Blue And Yellow Bunting Flags Zazzle Com In 2020 Bunting Flags Graduation Class Bunting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/6a/85/6c6a85f56d6ba06c7ee4db5d90ae35f9.jpg" data-lightbox="roadtrip" data-title="Pin By Payscale On Public Colleges And Universities Arizona State University Arizona State Arizona">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/6a/85/6c6a85f56d6ba06c7ee4db5d90ae35f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTCNmpNqu74VqDJsk1RhBUBiZdnc-Ni5HPQ';" alt="Pin By Payscale On Public Colleges And Universities Arizona State University Arizona State Arizona">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Payscale On Public Colleges And Universities Arizona State University Arizona State Arizona</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/1f/69/8c/1f698c67890b25e6e292aaf3ce10c65b.jpg" data-lightbox="roadtrip" data-title="Education Logo Design Inspiration In 2020 Education Logo Design Education Logo Logo Design Inspiration Creative">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/1f/69/8c/1f698c67890b25e6e292aaf3ce10c65b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTkIBjj4JNuxBca_ay_ehvOIAtT__k3wZDEw';" alt="Education Logo Design Inspiration In 2020 Education Logo Design Education Logo Logo Design Inspiration Creative">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Education Logo Design Inspiration In 2020 Education Logo Design Education Logo Logo Design Inspiration Creative</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/87/fb/b487fb2a4fb620663ffaa0cd0ad0de17.jpg" data-lightbox="roadtrip" data-title="Snoopy With Glasses Teacher Sign In 2020 Teacher Signs Hanging Wooden Letters Hand Painted Ornaments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/87/fb/b487fb2a4fb620663ffaa0cd0ad0de17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmCqgH4FE45sl1o7biC4z842SgQPg9sWOh6Q';" alt="Snoopy With Glasses Teacher Sign In 2020 Teacher Signs Hanging Wooden Letters Hand Painted Ornaments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Snoopy With Glasses Teacher Sign In 2020 Teacher Signs Hanging Wooden Letters Hand Painted Ornaments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/38/33/bd38334f22e97e3aa2d70528f6075c26.png" data-lightbox="roadtrip" data-title="Virginia Commonwealth University Colleges In Virginia Virginia Commonwealth University University Logo Vcu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/38/33/bd38334f22e97e3aa2d70528f6075c26.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0WbZt0vrqJJETU4QW_LwHJzo8NhwZ1vI_zA';" alt="Virginia Commonwealth University Colleges In Virginia Virginia Commonwealth University University Logo Vcu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Commonwealth University Colleges In Virginia Virginia Commonwealth University University Logo Vcu</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/62/3b/92/623b92b167341a7668ce10e8d6a153b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0WbZt0vrqJJETU4QW_LwHJzo8NhwZ1vI_zA';" alt="Virginia Commonwealth University Colleges In Virginia Virginia Commonwealth University University Logo Vcu">
+										<div class="card-body">
+						<h3 class="h5"><b>Current VA Policy for Work Study Site Managers March 31 2020.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va yellow ribbon schools 2020</strong>. 
+								
+																	Yellow Ribbon Open Season has begun. 
+																	As the Department of. 
+																	Normally private schools are more expensive than public schools but schools that participate in the Yellow Ribbon Program agree to waive a. 
+																	Your school must agree to participate in The Yellow Ribbon Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This post is meant to be a. 
+																	You can expect to see more details on scholarships federal aid and more details on the Yellow Ribbon Program to help you determine how you will fund your MBA. 
+																	Or family memberlike health care disability education and more. 
+																	1 to July 31 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Funding for private schools is limited to 17500 per school year however Arizona Minnesota New Hampshire New York Pennsylvania South Carolina and Texas are the exceptions to this rule and will allow the maximum in-state public undergraduate tuition. 
+																	Stay in the know. 
+																	VA Yellow Ribbon Schools. 
+																	Google your schools name plus Yellow Ribbon Program example. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These schools are announced in. 
+																	We are asking all Institutions of Higher Learning to review this email which identifies current procedures and upcoming changes to school requirements for the. 
+																	The VAs 2020 Yellow Ribbon Schools. 
+																	To access the menus on this page please perform the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Yellow Ribbon Program helps pay higher education costs for student veterans that exceed the amount covered by the Post-911 Veterans Education Assistance Act known as the Post-911 GI Bill. 
+																	Search the VAs list of Yellow Ribbon schools for 2017-2018 academic year here. 
+																	Skip to page content. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yellow Ribbon Schools List for 2021 jump to a state Online. 
+																	The Post-911 GI Bill will pay you. 
+																	COVID 19 Rescind SCO FAQ message March 13 2020. 
+																	In regards to financial assistance for public. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The lower of the actual tuition. 
+																	Exceptions apply to this rule starting in 2020 see above. 
+																	While every effort has been made to ensure the accuracy of the information contained herein prospective students should only use this for a planning tool. 
+																	Click on the map or listing of states below to see the schools in that state or territory which are participants in the Yellow Ribbon Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Attention A T users. 
+																	The academic year lasts from Aug. 
+																	All resident tuition. 
+																	Yellow Ribbon Program March 16 to May 15 was the open season to apply for or make changes to participation for the Yellow Ribbon Program for the 2020-21 academic year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The amount of the Virginia Tech Yellow Ribbon Scholarship is up to 2500 for the academic year or 1250 each fall and spring semesters of the unmet tuition and fees for each term. 
+																	NJ State Yellow Ribbon Program Information 2019 2020. 
+																	The Yellow Ribbon GI Education Enhancement Program Yellow Ribbon Program is a provision of the Post-911 Veterans Educational Assistance Act of 2008. 
+																	The Yellow Ribbon Program allows funding from both private and public universities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA State Yellow Ribbon Program Information 2019 2020 Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Call your school or your potential schools admissions advisers to ask if theyre a Yellow Ribbon Program participant. 
+																	If your school funds 2000 through the Yellow Ribbon Program well also pay 2000 to your school and youll need to pay the remaining 2000. 
+																	The Yellow Ribbon Program allows private schools to enter into an agreement with the VA to fund the tuition and fee costs that exceeds the yearly national cap of 2516214 for students enrolled in private institutions after August 1 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Yellow Ribbon Program at Virginia Tech provides a total of 20 scholarships on a first-come first-serve basis to out-of-state undergraduates who are utilizing Post 911 GI Bill benefits. 
+																	Please refer to the cover letter and FAQs and information below to learn more about this program. 
+																	In Part 6 of the Military to MBA series there will be a lot more information about ways to finance your MBA. 
+																	University of Arizona Yellow Ribbon Program Post in the comments section below and well let you know whether or not. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This program allows institutions of higher learning degree granting institutions in the United States to voluntarily enter into an agreement with VA to fund tuition expenses. 
+																	Yellow Ribbon school search results search returned schools Information for participating schools is for the current academic year August 2020 through July 2021. 
+																	Schools participating in the Yellow Ribbon program have joined with the VA to help offset any tuition expenses not covered by the GI Bill. 
+																	Yellow Ribbon Program Information 2019-2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your school must certify your enrollment to the VA and provide Yellow Ribbon Program information. 
+																	The Department of Veterans Affairs announces a list of participating Yellow Ribbon schools on a yearly basis. 
+																	That maximum amount covered by the Post-911 GI Bill for the 2020-2021 school year is 2516214. 
+																	Your schools agreement may also state that theyll contribute only toward degrees at certain colleges or professional schools or only for certain degree levels like undergraduate graduate or doctoral degrees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	January 26 2020 Mark MBA MBA Info and Resources The VA. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/70/64/bb7064b5ad470e9057820aca9b6c7ce3.png" data-lightbox="roadtrip" data-title="The Name Alexia Is Generated On Write Name On Happy New Year 2020 Images Image Download And Shar Happy New Year Images Happy New Year Wishes New Year Wishes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/70/64/bb7064b5ad470e9057820aca9b6c7ce3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJDgUXHIz5Bak4FL7is6PqNIdPvxHm1wyXMw';" alt="The Name Alexia Is Generated On Write Name On Happy New Year 2020 Images Image Download And Shar Happy New Year Images Happy New Year Wishes New Year Wishes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Name Alexia Is Generated On Write Name On Happy New Year 2020 Images Image Download And Shar Happy New Year Images Happy New Year Wishes New Year Wishes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/1e/0e/d21e0e79e3e2d1f097c9dc36baf67f88.jpg" data-lightbox="roadtrip" data-title="Free Printable Happy New Year Banner Paper Trail Design New Year Banner Happy New Year Banner New Year Printables">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/1e/0e/d21e0e79e3e2d1f097c9dc36baf67f88.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz-rDbtgOxqT-DGwNC7ht6ifl90-N_Kpa3ew';" alt="Free Printable Happy New Year Banner Paper Trail Design New Year Banner Happy New Year Banner New Year Printables">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Printable Happy New Year Banner Paper Trail Design New Year Banner Happy New Year Banner New Year Printables</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/5d/3a/ae5d3af7e8b3900d7ba700d4dc6fde50.jpg" data-lightbox="roadtrip" data-title="2020 Happy New Year Greeting Card Celebration White Background With Snowflakes And Place F Happy New Year Greetings New Year Greeting Cards New Year Greetings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/5d/3a/ae5d3af7e8b3900d7ba700d4dc6fde50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFSflutFDqtgQa5ktwUVGf9rvr3xNdVCAFuQ';" alt="2020 Happy New Year Greeting Card Celebration White Background With Snowflakes And Place F Happy New Year Greetings New Year Greeting Cards New Year Greetings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Happy New Year Greeting Card Celebration White Background With Snowflakes And Place F Happy New Year Greetings New Year Greeting Cards New Year Greetings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/76/dc/3376dcab0e4111e8f15652ee7bca2242.jpg" data-lightbox="roadtrip" data-title="Amarillo Para Empezar Bien El Ano In 2020 School Motivation Education Lesson Plans Study Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/76/dc/3376dcab0e4111e8f15652ee7bca2242.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVHd13j3Dpp7pC4rgxY2MZhAbrJReTLmH7BA';" alt="Amarillo Para Empezar Bien El Ano In 2020 School Motivation Education Lesson Plans Study Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amarillo Para Empezar Bien El Ano In 2020 School Motivation Education Lesson Plans Study Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/df/d7/18dfd7d5e2a60d7b610a15ba5f75b23f.png" data-lightbox="roadtrip" data-title="Pin On Developingcareer Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/df/d7/18dfd7d5e2a60d7b610a15ba5f75b23f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNluPfNn5k-oCeQIuIAIU6WcsLCXuIKUWdBQ';" alt="Pin On Developingcareer Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Developingcareer Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/34/ee/9434eeba0dbc177241e2202238220dd9.png" data-lightbox="roadtrip" data-title="Kostenloses Bild Auf Pixabay Farbband Lesezeichen Bildung In 2020 Print Planner Digital Sticker Doodle Frame">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/34/ee/9434eeba0dbc177241e2202238220dd9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSBKxwleql2LUhwrDDPg2qB4YZ3WuE6ya8Eg';" alt="Kostenloses Bild Auf Pixabay Farbband Lesezeichen Bildung In 2020 Print Planner Digital Sticker Doodle Frame">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kostenloses Bild Auf Pixabay Farbband Lesezeichen Bildung In 2020 Print Planner Digital Sticker Doodle Frame</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/a4/ec/e8a4ec4df6889e48e6b1af94b6eb3b4e.jpg" data-lightbox="roadtrip" data-title="Graduation Decorations 2020 Congrats Grad Banner Etsy In 2020 Graduation Party Favors Candy Graduation Banner Graduation Party Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/a4/ec/e8a4ec4df6889e48e6b1af94b6eb3b4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzLiGSjnggPPXRuFaEemUDopH9pfWSJujaxw';" alt="Graduation Decorations 2020 Congrats Grad Banner Etsy In 2020 Graduation Party Favors Candy Graduation Banner Graduation Party Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Graduation Decorations 2020 Congrats Grad Banner Etsy In 2020 Graduation Party Favors Candy Graduation Banner Graduation Party Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/3d/fc/40/3dfc401d8129e246806134debd79f982.jpg" data-lightbox="roadtrip" data-title="Teacher Planner 2020 2021 Lesson Plan Books For Teachers 2020 2021 Happy And Colorful Cover Simple D Teacher Planner Lesson Plan Book Teacher Lesson Planner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/3d/fc/40/3dfc401d8129e246806134debd79f982.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQpMoehpXCQsJIPl0Uvrc8m5q1M9X2lNUFeQ';" alt="Teacher Planner 2020 2021 Lesson Plan Books For Teachers 2020 2021 Happy And Colorful Cover Simple D Teacher Planner Lesson Plan Book Teacher Lesson Planner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Teacher Planner 2020 2021 Lesson Plan Books For Teachers 2020 2021 Happy And Colorful Cover Simple D Teacher Planner Lesson Plan Book Teacher Lesson Planner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/04/a7/9a04a78f1d837498f7f60311e8d5c122.jpg" data-lightbox="roadtrip" data-title="Historically Black Colleges And Universities Hbcus Are Institutions Of Higher E Historically Black Colleges And Universities Historically Black Colleges Hbcu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/04/a7/9a04a78f1d837498f7f60311e8d5c122.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-B1G6121dpIzbcqdbxKn7jPCxtcOJ5oaRJA';" alt="Historically Black Colleges And Universities Hbcus Are Institutions Of Higher E Historically Black Colleges And Universities Historically Black Colleges Hbcu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Historically Black Colleges And Universities Hbcus Are Institutions Of Higher E Historically Black Colleges And Universities Historically Black Colleges Hbcu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/16/46/f2/1646f2cd118a043918b4289b4232e3cb.jpg" data-lightbox="roadtrip" data-title="No One Fights Alone Ribbon Temporary Tattoo Choose Hope In 2020 Cancer Awareness Tattoo Cancer Ribbon Tattoos Awareness Tattoo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/16/46/f2/1646f2cd118a043918b4289b4232e3cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsxuNByae46tQkaZM0AbcFdJVuCjsldIzh_w';" alt="No One Fights Alone Ribbon Temporary Tattoo Choose Hope In 2020 Cancer Awareness Tattoo Cancer Ribbon Tattoos Awareness Tattoo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No One Fights Alone Ribbon Temporary Tattoo Choose Hope In 2020 Cancer Awareness Tattoo Cancer Ribbon Tattoos Awareness Tattoo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/e3/37/00e3379c2023f5683da76878c0780cfd.png" data-lightbox="roadtrip" data-title="2020 National Recreation Movement In 2020 Portland State University Columbus State University Central Michigan University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/e3/37/00e3379c2023f5683da76878c0780cfd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaFJjHnzwDHeC0N0U6077wJWJ83xZHd83XKA';" alt="2020 National Recreation Movement In 2020 Portland State University Columbus State University Central Michigan University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 National Recreation Movement In 2020 Portland State University Columbus State University Central Michigan University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e1/58/a7/e158a7a4a0fab18b118d24bd44d1925f.jpg" data-lightbox="roadtrip" data-title="Deluxe Michigan Wreath University Of Michigan Wreath Go Blue Michigan Decor Wolverines In 2020 School Wreaths How To Make Wreaths Classroom Wreath">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e1/58/a7/e158a7a4a0fab18b118d24bd44d1925f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwypNka1ruUX6Ps24mPo3Cn52DJ6w4lPZETQ';" alt="Deluxe Michigan Wreath University Of Michigan Wreath Go Blue Michigan Decor Wolverines In 2020 School Wreaths How To Make Wreaths Classroom Wreath">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Deluxe Michigan Wreath University Of Michigan Wreath Go Blue Michigan Decor Wolverines In 2020 School Wreaths How To Make Wreaths Classroom Wreath</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/2a/47/f52a475c3998f25cdf75a00fd008e265.png" data-lightbox="roadtrip" data-title="مصاريف المعهد العالي للتعاون الزراعي بشبرا الخيمة 2019 2010 جميع الأقسام Personal Care Person Toothpaste">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/2a/47/f52a475c3998f25cdf75a00fd008e265.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScRYk8H0mOPKDupGAOMbMQGFdpmSWgDCgmNA';" alt="مصاريف المعهد العالي للتعاون الزراعي بشبرا الخيمة 2019 2010 جميع الأقسام Personal Care Person Toothpaste">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">مصاريف المعهد العالي للتعاون الزراعي بشبرا الخيمة 2019 2010 جميع الأقسام Personal Care Person Toothpaste</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-to-get-my-girlfriend-for-college-graduation.html">What To Get My Girlfriend For College Graduation</a></li>
+													<li class="list-group-item"><a href="/what-is-the-montgomery-gi-bill-active-duty.html">What Is The Montgomery Gi Bill Active Duty</a></li>
+													<li class="list-group-item"><a href="/what-should-i-get-my-daughter-for-college-graduation.html">What Should I Get My Daughter For College Graduation</a></li>
+													<li class="list-group-item"><a href="/what-was-the-1689-bill-of-rights.html">What Was The 1689 Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/what-is-the-yellow-ribbon-program-for-veterans.html">What Is The Yellow Ribbon Program For Veterans</a></li>
+													<li class="list-group-item"><a href="/what-is-the-phone-number-for-the-veterans-administration.html">What Is The Phone Number For The Veterans Administration</a></li>
+													<li class="list-group-item"><a href="/what-is-the-montgomery-gi-bill-national-guard.html">What Is The Montgomery Gi Bill National Guard</a></li>
+													<li class="list-group-item"><a href="/what-percent-of-veterans-use-gi-bill.html">What Percent Of Veterans Use Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-to-get-someone-going-off-to-college.html">What To Get Someone Going Off To College</a></li>
+													<li class="list-group-item"><a href="/what-was-the-purpose-of-the-gi-bill.html">What Was The Purpose Of The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-state-is-gi.html">What State Is Gi</a></li>
+													<li class="list-group-item"><a href="/whats-the-forever-gi-bill.html">Whats The Forever Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-the-percentage-of-college-athletes-that-go-pro.html">What Is The Percentage Of College Athletes That Go Pro</a></li>
+													<li class="list-group-item"><a href="/what-is-the-yellow-ribbon-for-military.html">What Is The Yellow Ribbon For Military</a></li>
+													<li class="list-group-item"><a href="/what-to-get-college-girlfriend-for-birthday.html">What To Get College Girlfriend For Birthday</a></li>
+													<li class="list-group-item"><a href="/what-to-get-girlfriend-for-college-graduation.html">What To Get Girlfriend For College Graduation</a></li>
+													<li class="list-group-item"><a href="/what-is-the-yellow-ribbon-program-for-military.html">What Is The Yellow Ribbon Program For Military</a></li>
+													<li class="list-group-item"><a href="/what-to-go-to-college-for-online.html">What To Go To College For Online</a></li>
+													<li class="list-group-item"><a href="/what-womens-college-basketball-games-are-on-today.html">What Womens College Basketball Games Are On Today</a></li>
+													<li class="list-group-item"><a href="/what-qualifications-do-you-need-to-be-a-gastroenterologist.html">What Qualifications Do You Need To Be A Gastroenterologist</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Gi Bill News - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Gi Bill News",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/43/f9/30/43f9300e0bca7fc77f1783e33c4b90d3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+gi+bill+news",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Gi Bill News</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The last fiasco was trying to implement changes brought about by the Forever GI Bill a series of needed changes to the Post 911 GI Bill. VA has been working to modernize its GI Bill benefits systems since 2018 when new statues in the 2017 Forever GI Bill sparked chaos within VAs systems for education benefits leaving some veterans without the funding they were entitled to for housing. Pandemic-Related Loss of Benefit Protection. <br>				
+			</p>
+										<a class="badge badge-danger" href="/ncaa-womens-basketball-texas-tech.html">ncaa womens basketball texas tech</a>
+											<a class="badge badge-light" href="/new-gi-bill-2019.html">new gi bill 2019</a>
+											<a class="badge badge-success" href="/ncaa-womens-college-basketball-news.html">ncaa womens college basketball news</a>
+											<a class="badge badge-success" href="/ncaa-womens-basketball-uconn-schedule.html">ncaa womens basketball uconn schedule</a>
+											<a class="badge badge-light" href="/north-carolina-va-educational-benefits.html">north carolina va educational benefits</a>
+											<a class="badge badge-dark" href="/new-gi-bill-changes.html">new gi bill changes</a>
+											<a class="badge badge-dark" href="/ncaa-womens-basketball-stat-leaders.html">ncaa womens basketball stat leaders</a>
+											<a class="badge badge-light" href="/ncaa-womens-college-basketball-stats.html">ncaa womens college basketball stats</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the right site.  Our site gives you hints for seeing the maximum quality video and image content, search and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/71/f3/4871f3346595c3df6cbac5df7665c1e8.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/71/f3/4871f3346595c3df6cbac5df7665c1e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlbsQeOpNet48Wg3FbT16O4kAyhnObMuVgA';" alt="Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/71/f6/bb/71f6bb9dd645d5725a4e4ba81279a320.jpg" data-lightbox="roadtrip" data-title="Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/71/f6/bb/71f6bb9dd645d5725a4e4ba81279a320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVcHw46-vuCHeRqr_Xc4vs9LemcHvkK1PHkw';" alt="Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/a5/9e/b2a59e15f12a6284edb0ed396f3b7721.jpg" data-lightbox="roadtrip" data-title="Great News Within Your First Year Of Being In The Army You Have The Potential To Obtain Enough College Credits F Tuition Assistance College Money Free College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/a5/9e/b2a59e15f12a6284edb0ed396f3b7721.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotFDrFvOwL5c2RCAYvR7F8q8Q7wKuFIecuQ';" alt="Great News Within Your First Year Of Being In The Army You Have The Potential To Obtain Enough College Credits F Tuition Assistance College Money Free College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great News Within Your First Year Of Being In The Army You Have The Potential To Obtain Enough College Credits F Tuition Assistance College Money Free College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/86/99/3a/86993a0e5383aedad85a66aedd41e2b9.jpg" data-lightbox="roadtrip" data-title="Pin On Military Benefits News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/86/99/3a/86993a0e5383aedad85a66aedd41e2b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3KoDZfXhTULdq87nQ8x8RmSV06hhzj7QmVw';" alt="Pin On Military Benefits News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Benefits News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/a2/12/f2a21236072c9f52234f46cf9db372bf.jpg" data-lightbox="roadtrip" data-title="Summer 2017 Veteran Owned Business Newsletter Veteran Owned Businesses News Vobeacon Veteran Owned Business Veteran Business Newsletter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/a2/12/f2a21236072c9f52234f46cf9db372bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLIyHGpxDt2aGQ7tRPRLsHxf3vMPcu-5DfyQ';" alt="Summer 2017 Veteran Owned Business Newsletter Veteran Owned Businesses News Vobeacon Veteran Owned Business Veteran Business Newsletter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Summer 2017 Veteran Owned Business Newsletter Veteran Owned Businesses News Vobeacon Veteran Owned Business Veteran Business Newsletter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/31/f3/fd31f3eca3fb7dcab961058ffec23d59.png" data-lightbox="roadtrip" data-title="Veteran Benefits Info News Resources Military Com Veterans Benefits Veteran Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/31/f3/fd31f3eca3fb7dcab961058ffec23d59.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXQDPvvXHeO6BpasBi8WT1FPg8NceOjJpEFA';" alt="Veteran Benefits Info News Resources Military Com Veterans Benefits Veteran Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Benefits Info News Resources Military Com Veterans Benefits Veteran Benefit</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/36/bc/c7/36bcc72ba85344545e278a407b9ea125.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXQDPvvXHeO6BpasBi8WT1FPg8NceOjJpEFA';" alt="Veteran Benefits Info News Resources Military Com Veterans Benefits Veteran Benefit">
+										<div class="card-body">
+						<h3 class="h5"><b>5 Education Benefits Updates from GI Bill Legislation Here are five of the educated-related benefits from the legislation known as the Johnny Isakson and David P.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va gi bill news</strong>. 
+								
+																	See how VA is responding to COVID-19 and supporting GI Bill beneficiaries. 
+																	Veterans Health Care and Benefits Improvements Act of 2020 that will have the most impact on veteran education. 
+																	The VA appeared to. 
+																	The Department of Veterans Affairs Under Secretary for Benefits Paul Lawrence took issue with a recent story published by NBC News that said the VA would not be reimbursing veterans who were underpaid benefits from the GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the NBC News story computer problems caused delayed or underpaid benefits to some veterans. 
+																	CBS46 -- Under the GI Bill veterans enrolled in school can get finical help with housing but with everyone being quarantined and schools turning to online classes that meant. 
+																	1 2021 all Post-911 GI Bill and Fry Scholarship users will be required to certify their attendance to the VA before they receive payment. 
+																	The VA will investigate if schools facing government legal action creditors or fines should not receive more GI Bill money she said adding advocates have been pushing for this protection for years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Beyond the SaaS acquisition. 
+																	House lawmakers on Wednesday finalized a massive sweeping veterans policy measure which includes new protections for student veterans new aid for veterans hurt by the ongoing pandemic and long. 
+																	Student Veterans will continue to receive their GI Bill benefits under S. 
+																	Some could not access benefits because they had not been given an honorable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can contact our call center at 1-888-442-4451 or ask a question pertaining to benefits or your claim. 
+																	The Forever GI Bill came under fire when it was first signed into law in 2017 and caused major IT disruption. 
+																	The primary concern was a provision that changed how a monthly housing stipend was calculated from using the zip code of where a veteran lived to that of where they go to school. 
+																	1 2021 all Post-911 GI Bill and Fry Scholarship users will be required to certify their attendance to the VA before they receive payment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In all but a. 
+																	Colmery Educational Assistance Act of 2017 also referred to as the Forever GI Bill. 
+																	3503 which President Trump signed into law March 21. 
+																	WASHINGTON A mammoth veterans bill approved by Congress on Wednesday increases legal protections for GI Bill benefits and aims to further scrutinize schools with a history of taking advantage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The time that a Reservist was ordered to active duty to receive authorized medical care be medically evaluated for disability or complete a Department of Defense DoD health care study on or after September 11 2001. 
+																	WASHINGTON The Department of Veterans Affairs announced Monday that it plans to terminate some GI Bill enrollments and withhold more than 200 million in payouts to certain universities for. 
+																	The Montgomery GI Bill provides a smaller standardized stipend for 36 months to veterans who served on active duty for at least three years and paid into the program upon enlistment. 
+																	Summaries Reserve Duty That Counts Toward Post-911 Eligibility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs VA implemented 15 more provisions of the Harry W. 
+																	GI Bill users will be able to visit. 
+																	Its no secret that the Veterans Affairs has been plagued by problems relating to administering the GI Bill in particular the Post 911 GI Bill. 
+																	The law enables VA to continue providing the same level of education benefits to students having to take courses online due to the coronavirus COVID-19 outbreak. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Colmery Veterans Educational Assistance Act. 
+																	The GI Bills Effect on Black Veterans From the start Black veterans had trouble securing the GI Bills benefits. 
+																	Forever GI Bill expands VA educational benefits 15 provisions enhance benefits for Veterans WASHINGTON Effective Aug. 
+																	Forever GI Bill - Harry W. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI Bill users will be able to visit. 
+																	Currently VA is processing the majority of original enrollments within 24 days and the majority of re-enrollments within 12 days. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/91/75/3e/91753e755ae2ce2e25dd0d994003d2f1.jpg" data-lightbox="roadtrip" data-title="Pin On A Bit Of This And That">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/91/75/3e/91753e755ae2ce2e25dd0d994003d2f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRus8_VVCe_wuRrFXewn3gqD4PeZmKejIK4pw';" alt="Pin On A Bit Of This And That">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On A Bit Of This And That</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/23/59/b223591d4b11f3ff0cb2fd8b243246ed.jpg" data-lightbox="roadtrip" data-title="Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/23/59/b223591d4b11f3ff0cb2fd8b243246ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLbEdCYyDacb1wcQBz1jy5nIPnhMzscXmo2w';" alt="Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/b2/1d/29b21d40125389c704762dcbd4ea4d50.png" data-lightbox="roadtrip" data-title="Pin On Veteran Owned Business Site Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/b2/1d/29b21d40125389c704762dcbd4ea4d50.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOyXL3wYToo3NH5V7AOAbYQRD4wwds4s3hvg';" alt="Pin On Veteran Owned Business Site Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Owned Business Site Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/f9/30/43f9300e0bca7fc77f1783e33c4b90d3.jpg" data-lightbox="roadtrip" data-title="The Pentagon Is Delaying A Change To Its Gi Bill Benefit Transfer Policy That Would Have Screwed Its Longest Serving Troops Gi Bill Education Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/f9/30/43f9300e0bca7fc77f1783e33c4b90d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxkwg2t9KPcZeg2jeSX8aJNAHby5U8eONBFQ';" alt="The Pentagon Is Delaying A Change To Its Gi Bill Benefit Transfer Policy That Would Have Screwed Its Longest Serving Troops Gi Bill Education Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Pentagon Is Delaying A Change To Its Gi Bill Benefit Transfer Policy That Would Have Screwed Its Longest Serving Troops Gi Bill Education Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/26/1e/e7/261ee7013b46b9156db2ee2cd220a84d.jpg" data-lightbox="roadtrip" data-title="Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/26/1e/e7/261ee7013b46b9156db2ee2cd220a84d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGf7NeA8NMRI2OMMYoM-WBXodQHHHbWt7cZg';" alt="Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vocational School For Veterans Benefits Expert Advice Vocational School Trade School Online School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/36/bc/c7/36bcc72ba85344545e278a407b9ea125.jpg" data-lightbox="roadtrip" data-title="Pin On Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/36/bc/c7/36bcc72ba85344545e278a407b9ea125.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLRNhqJIfnstnueIemKbb04AF1HKp4cGN48g';" alt="Pin On Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/86/19/0b86198d71cbe9f5c15ad8d85ba16245.jpg" data-lightbox="roadtrip" data-title="Student Veterans And The Nontraditional Path To Higher Ed Student Veteran Nontraditional">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/86/19/0b86198d71cbe9f5c15ad8d85ba16245.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuKCN-fgFQRqbp53kY1aJ1Qp623tIIJLmlxw';" alt="Student Veterans And The Nontraditional Path To Higher Ed Student Veteran Nontraditional">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Veterans And The Nontraditional Path To Higher Ed Student Veteran Nontraditional</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/89/64/cd896453ca2ab0d4c88a6abccced1ce0.jpg" data-lightbox="roadtrip" data-title="Military Veteran Benefits Are A Cornerstone Of Military Service Find Benefit Information Including Military Pay Military Veterans Benefits Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/89/64/cd896453ca2ab0d4c88a6abccced1ce0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX-RSD_w0EGu4fkdLp3tXMv9vZRaiP65Fi0A';" alt="Military Veteran Benefits Are A Cornerstone Of Military Service Find Benefit Information Including Military Pay Military Veterans Benefits Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Veteran Benefits Are A Cornerstone Of Military Service Find Benefit Information Including Military Pay Military Veterans Benefits Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ef/7a/1f/ef7a1f5727dc4f03e4053f417d370c46.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers 4 23 Job Sevice Mi Medical Jobs Healthcare Jobs Health Fair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ef/7a/1f/ef7a1f5727dc4f03e4053f417d370c46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiOtCY7W3xmiMNwoQP6VpbPCyJ19rgiLn28w';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers 4 23 Job Sevice Mi Medical Jobs Healthcare Jobs Health Fair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers 4 23 Job Sevice Mi Medical Jobs Healthcare Jobs Health Fair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/aa/ab/96/aaab96f6233e54a5b57fba4f39ac1c48.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Bronx Mini Job Fair 6 20 Job Fair Medical Jobs Driver Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/aa/ab/96/aaab96f6233e54a5b57fba4f39ac1c48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQidRw7ov9WLFoYYotsUjh61cjjs9qY0_XjiA';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Bronx Mini Job Fair 6 20 Job Fair Medical Jobs Driver Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Bronx Mini Job Fair 6 20 Job Fair Medical Jobs Driver Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9e/a7/ad/9ea7ad86635a3aee862bf147371cc6af.jpg" data-lightbox="roadtrip" data-title="Pin On Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9e/a7/ad/9ea7ad86635a3aee862bf147371cc6af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5NRe5TVgy8modQiOw9ozoGFfZ_NVgO3h-EA';" alt="Pin On Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/66/bd/ef66bd090f792abb59b439f47363a092.jpg" data-lightbox="roadtrip" data-title="Ohio University Today Fall Winter 1996 Gi Bill Ohio University Veterans Memorial Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/66/bd/ef66bd090f792abb59b439f47363a092.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8AXd9lu3-rvvF9UXpI7dz3EWpvV_CT8qQpg';" alt="Ohio University Today Fall Winter 1996 Gi Bill Ohio University Veterans Memorial Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ohio University Today Fall Winter 1996 Gi Bill Ohio University Veterans Memorial Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/05/76/b4057685c0d055148b67d351090a153c.png" data-lightbox="roadtrip" data-title="Military Veterans Worldwide Offers Free Resources To Veterans That Include Information On Benefits Veterans I Veteran Military Veterans Veteran Owned Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/05/76/b4057685c0d055148b67d351090a153c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM9ZMdqk664H-uPoyBv_bXaHgIhUYKXkZhcg';" alt="Military Veterans Worldwide Offers Free Resources To Veterans That Include Information On Benefits Veterans I Veteran Military Veterans Veteran Owned Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Veterans Worldwide Offers Free Resources To Veterans That Include Information On Benefits Veterans I Veteran Military Veterans Veteran Owned Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/state-gis-layer.html">State Gis Layer</a></li>
+													<li class="list-group-item"><a href="/state-grid.html">State Grid</a></li>
+													<li class="list-group-item"><a href="/should-i-go-to-community-college.html">Should I Go To Community College</a></li>
+													<li class="list-group-item"><a href="/state-gift-tax.html">State Gift Tax</a></li>
+													<li class="list-group-item"><a href="/shoes-for-college-guys.html">Shoes For College Guys</a></li>
+													<li class="list-group-item"><a href="/state-government.html">State Government</a></li>
+													<li class="list-group-item"><a href="/sierra-college-womens-basketball-schedule.html">Sierra College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/skagit-valley-college-womens-basketball-schedule.html">Skagit Valley College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/state-gift-ban-laws.html">State Gift Ban Laws</a></li>
+													<li class="list-group-item"><a href="/state-board-la-gi.html">State Board La Gi</a></li>
+													<li class="list-group-item"><a href="/shot-clock-in-womens-college-basketball.html">Shot Clock In Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/site-du-college-guy-de-maupassant-fleury-sur-andelle.html">Site Du College Guy De Maupassant Fleury Sur Andelle</a></li>
+													<li class="list-group-item"><a href="/state-github-api-connection.html">State Github Api Connection</a></li>
+													<li class="list-group-item"><a href="/state-gi-bill.html">State Gi Bill</a></li>
+													<li class="list-group-item"><a href="/sign-into-hbo-go-with-college.html">Sign Into Hbo Go With College</a></li>
+													<li class="list-group-item"><a href="/select-reserve-gi-bill.html">Select Reserve Gi Bill</a></li>
+													<li class="list-group-item"><a href="/shoes-college-guys-wear.html">Shoes College Guys Wear</a></li>
+													<li class="list-group-item"><a href="/state-gibbs-phase-rule.html">State Gibbs Phase Rule</a></li>
+													<li class="list-group-item"><a href="/state-giving-valid-reasons.html">State Giving Valid Reasons</a></li>
+													<li class="list-group-item"><a href="/state-gym-classes.html">State Gym Classes</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

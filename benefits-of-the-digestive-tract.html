@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Benefits Of The Digestive Tract - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Benefits Of The Digestive Tract",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/600x315/cd/09/24/cd0924e3f5107925d2b0ead2f727a0ea.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=benefits+of+the+digestive+tract",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Benefits Of The Digestive Tract</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Nutrient absorption gets a boost when a healthy intestinal lining provides a large surface for absorption. Believe it or. It helps keep your digestive system running smoothly. <br>				
+			</p>
+										<a class="badge badge-primary" href="/reasons-students-go-to-college.html">reasons students go to college</a>
+											<a class="badge badge-dark" href="/rentree-college-giberville.html">rentree college giberville</a>
+											<a class="badge badge-light" href="/reasons-to-go-to-community-college.html">reasons to go to community college</a>
+											<a class="badge badge-success" href="/rankings-of-college-gymnastics.html">rankings of college gymnastics</a>
+											<a class="badge badge-success" href="/rpi-for-womens-college-basketball.html">rpi for womens college basketball</a>
+											<a class="badge badge-light" href="/rounding-out-post-9-11-gi-bill.html">rounding out post 9 11 gi bill</a>
+											<a class="badge badge-primary" href="/regis-college-womens-basketball-roster.html">regis college womens basketball roster</a>
+											<a class="badge badge-dark" href="/ramapo-college-womens-basketball-roster.html">ramapo college womens basketball roster</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the right blog.  Our website provides you with suggestions for viewing the maximum quality video and image content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/14/10/d914105da3b8a6b3a8095c3233396c7c.jpg" data-lightbox="roadtrip" data-title="Digestive Benefits Of Fruit And Vegetables Via Live Love Fruit Health Wellbeing Natural Food Healthy Digestive Tract Food For Digestion Digestive Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/14/10/d914105da3b8a6b3a8095c3233396c7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZxuiQecICod8pHDEqdd5IGLURm30dpoRu9w';" alt="Digestive Benefits Of Fruit And Vegetables Via Live Love Fruit Health Wellbeing Natural Food Healthy Digestive Tract Food For Digestion Digestive Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Digestive Benefits Of Fruit And Vegetables Via Live Love Fruit Health Wellbeing Natural Food Healthy Digestive Tract Food For Digestion Digestive Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d2/31/57/d231573580ec4e38845e20b764ec6221.jpg" data-lightbox="roadtrip" data-title="20 Probiotics Benefits Probiotics Are Bacteria That Line Your Digestive Tract And Support Your Body S A Probiotic Benefits Coconut Health Benefits Probiotics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d2/31/57/d231573580ec4e38845e20b764ec6221.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ykijpLfhiWo0R4GIep8mJGVPalVQiIcgnQ';" alt="20 Probiotics Benefits Probiotics Are Bacteria That Line Your Digestive Tract And Support Your Body S A Probiotic Benefits Coconut Health Benefits Probiotics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Probiotics Benefits Probiotics Are Bacteria That Line Your Digestive Tract And Support Your Body S A Probiotic Benefits Coconut Health Benefits Probiotics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/35/be/bd35be6ea6de35358cdacd79e2ce5637.jpg" data-lightbox="roadtrip" data-title="Health Benefits Of Probiotics Probiotics Infographic Health Human Digestive System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/35/be/bd35be6ea6de35358cdacd79e2ce5637.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3R3qIwPnmdq69-BK-0M5didOcyiCGcualNw';" alt="Health Benefits Of Probiotics Probiotics Infographic Health Human Digestive System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Health Benefits Of Probiotics Probiotics Infographic Health Human Digestive System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/e4/6f/b9e46f3c23d44df81d5a58bd715d1ba1.jpg" data-lightbox="roadtrip" data-title="Do You Know The Health Benefits Of Yogurt Yogurt Is Tasty And Has Many Health Benefits First Yogurt Health Benefits Yogurt Benefits Nuts Health Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/e4/6f/b9e46f3c23d44df81d5a58bd715d1ba1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj5vCSwKtts0nd3np2B54ocHYzvkIz9qf7Rg';" alt="Do You Know The Health Benefits Of Yogurt Yogurt Is Tasty And Has Many Health Benefits First Yogurt Health Benefits Yogurt Benefits Nuts Health Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do You Know The Health Benefits Of Yogurt Yogurt Is Tasty And Has Many Health Benefits First Yogurt Health Benefits Yogurt Benefits Nuts Health Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/28/b5/9528b559b206cda177c477a239f2d30f.jpg" data-lightbox="roadtrip" data-title="Digestive Enzymes And Benefits Digestive System Anatomy Human Digestive System Digestive System Diagram">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/28/b5/9528b559b206cda177c477a239f2d30f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC4XzdJWWbi35y0Y1vHdVHx1GImqwsB731tQ';" alt="Digestive Enzymes And Benefits Digestive System Anatomy Human Digestive System Digestive System Diagram">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Digestive Enzymes And Benefits Digestive System Anatomy Human Digestive System Digestive System Diagram</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/85/92/5a8592a299d25e037daca32604353f61.jpg" data-lightbox="roadtrip" data-title="Human Digestive System Diagram Human Digestive System Digestive System Anatomy Digestive System Diagram">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/85/92/5a8592a299d25e037daca32604353f61.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXPqrRsfY6kq5JTmEjoCY-Xbvtpmed8K9jWQ';" alt="Human Digestive System Diagram Human Digestive System Digestive System Anatomy Digestive System Diagram">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Human Digestive System Diagram Human Digestive System Digestive System Anatomy Digestive System Diagram</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f7/44/5a/f7445a189879f8abf8c9af698b2355db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXPqrRsfY6kq5JTmEjoCY-Xbvtpmed8K9jWQ';" alt="Human Digestive System Diagram Human Digestive System Digestive System Anatomy Digestive System Diagram">
+										<div class="card-body">
+						<h3 class="h5"><b>It also helps in improving immunity which in turn helps ward off diseases.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Benefits of the digestive tract</strong>. 
+								
+																	Exercise has long been known to help digestion with research showing that it results in protective effects on the GI tract itself. 
+																	Each part of your digestive system helps to move food and liquid through your GI tract break food and liquid into smaller parts or both. 
+																	It has been associated with stomach ulcers diarrhea constipation and IBS 18 19 20 21Stress hormones directly affect your digestion. 
+																	1 Helps Relieve IBS Symptoms Irritable Bowel Syndrome IBS is a disorder that affects between 25-45 million Americans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some people have a naturally healthy digestive system and a very good metabolism which helps them to stay healthy. 
+																	What happens to the digested food molecules. 
+																	Some common symptoms of IBS include stomach cramps gas bloating constipation and diarrhea. 
+																	Digestion is important for breaking down food into nutrients which. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A healthy digestive system has been linked to improvements in mental health and immune response. 
+																	Increased Immune System and Disease Defenses. 
+																	According to ancient Chinese medicine and Indian culture starting the day with a glass of hot water helps kick-start the digestive system and provides a. 
+																	The same vascular benefits of exercise also benefit the gastrointestinal tract as it can improve the carrying capacity of macronutrients and micronutrients to all 37 trillion cells in the body. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Adding ginger to your diet can help relieve these symptoms because the spice can actually relax your intestines during flair ups. 
+																	Intermittent fasts can regulate your digestion and promote healthy bowel function thus improving your metabolic function. 
+																	What Are The Benefits Of A Healthy Digestive System. 
+																	7 The digestive system depends on it The bowel needs water to work properly. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is therefore vital to ensure that your digestive tract is healthy and functioning correctly. 
+																	Why is digestion important. 
+																	If your digestion is poor this can effect your ability to metabolise food and burn fat. 
+																	Probiotics are also currently being studied for their benefits to oral health and dermatological. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Stress can wreak havoc on your digestive system. 
+																	They have been linked to all sorts of digestive health benefits including helping irritable bowel syndrome and travellers diarrhoea. 
+																	Dehydration can lead to digestive problems constipation and an overly acidic stomach. 
+																	How does food move through the GI tract. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The digestive system not only is just stomach and intestine but it consists of - digestive tract hollow tract which starts from our mouth and ends at anus and organs which secretestore and release digestive juices. 
+																	In fact there is evidence that humans and animals who exercise are at a reduced risk of colon cancer regardless of the amount or type of exercise. 
+																	There are benefits to drinking hot water. 
+																	Probiotics are so-called friendly bacteria that are also found naturally in the gut. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The intestinal tract is a highly vascular tube of smooth muscle allowing for the transportation and transformation of essential nutrients. 
+																	Another benefit that follows healthy diet and digestive system is the reduction in mood disorder episodes. 
+																	Inadequate digestion and nutrient intake can lead to a whole host of health problems from weight gain and inflammation to fatigue and skin issues. 
+																	You can take probiotics as supplements available from health food shops or in live yoghurt which is a good natural source. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unused materials are discarded as faeces or stools. 
+																	How does digestion work - animation. 
+																	Friendly bacteria can help to stimulate the immune system of the gut lining ensuring fuller protection. 
+																	Digestive system and its function. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The second type of organs. 
+																	Thats why you need fiber even if you dont have a problem with constipation. 
+																	Your large intestine absorbs water and the waste products of digestion become stool. 
+																	When normal functioning of the pancreas is disrupted and causes insufficient enzyme production the body may be unable to properly break down foods that were ingested and absorb their nutrients. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When you have a healthy digestive system what you consume is properly digested and then the beneficial nutrients are immersed into the bloodstream via the small intestine. 
+																	The wellbeing of your digestive tract has an immediate impact on your overall health. 
+																	How do digestive juices in each organ of the GI tract break down food. 
+																	Organs which make up our digestion tract include mouth oesophagus stomach small intestine large intestinealso called the colon-rectum and anus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Intermittent fasting gives your digestive system a rest and this can energise your metabolism to burn through calories more efficiently. 
+																	How is the digestive process controlled. 
+																	Once foods are broken into small enough parts your body can absorb and move the nutrients to where they are needed. 
+																	Secondly and just as importantly exercise has been shown in studies to increase the proliferation of lymphocytes at various sites around the body including the gut wall. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Secreted mostly by the pancreas digestive enzymes aid the body in breaking down fats proteins and carbohydrates. 
+																	Why is digestion important. 
+																	Women under 50 years old should get 25 grams daily and men. 
+																	They can then be absorbed into your bloodstream so your body can use them for energy growth and repair. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your digestive system breaks down the food you eat into nutrients such as carbohydrates fats and proteins. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/ae/ae/02aeae663450d03999f73f9bb43f5c9d.jpg" data-lightbox="roadtrip" data-title="If Healthy Digestion Is What You Seek It Has To Start With The Food You Eat Read More About Thes Digestive Health Healthy Digestion Coconut Health Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/ae/ae/02aeae663450d03999f73f9bb43f5c9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQMDY6SnKuadWpqcajGhVy6W0pnUTcOkw3iA';" alt="If Healthy Digestion Is What You Seek It Has To Start With The Food You Eat Read More About Thes Digestive Health Healthy Digestion Coconut Health Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If Healthy Digestion Is What You Seek It Has To Start With The Food You Eat Read More About Thes Digestive Health Healthy Digestion Coconut Health Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/30/da/7230da2252279b28253d94021540401f.jpg" data-lightbox="roadtrip" data-title="Presentation Health Remedies Healthy Digestive Tract Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/30/da/7230da2252279b28253d94021540401f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST4BTEm1FnbF0KvUPxOboQLQuHOLAH9qclVA';" alt="Presentation Health Remedies Healthy Digestive Tract Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Presentation Health Remedies Healthy Digestive Tract Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/bf/d7/cdbfd72f35be47154b153a43e25e7da0.jpg" data-lightbox="roadtrip" data-title="22 Health Benefits Of Turkey Tail Mushrooms Digestive System Diagram Human Digestive System Digestive System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/bf/d7/cdbfd72f35be47154b153a43e25e7da0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSM5FIjROto2u_MEIqxfZqvBoxRVFoJy1Xbw';" alt="22 Health Benefits Of Turkey Tail Mushrooms Digestive System Diagram Human Digestive System Digestive System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">22 Health Benefits Of Turkey Tail Mushrooms Digestive System Diagram Human Digestive System Digestive System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/fb/30/edfb30330abe6177c2241165e908b45a.jpg" data-lightbox="roadtrip" data-title="Digestion And Digestive Enzymes Human Digestive System Digestion Digestive System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/fb/30/edfb30330abe6177c2241165e908b45a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo6sGxMiV2LwoOfsrAeQyt6ihwgL6Jyd-7Lg';" alt="Digestion And Digestive Enzymes Human Digestive System Digestion Digestive System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Digestion And Digestive Enzymes Human Digestive System Digestion Digestive System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/8d/a6/c78da6e22b63c0011a6a1700123d07e2.jpg" data-lightbox="roadtrip" data-title="Digestive Enzymes Prevent Nutrient Deficiency Support Gut Health Digestive Enzymes Benefits Digestive Enzymes Coconut Health Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/8d/a6/c78da6e22b63c0011a6a1700123d07e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RF7PRsNhsg2NfelmFxqAvbQqerhlMlsDNg';" alt="Digestive Enzymes Prevent Nutrient Deficiency Support Gut Health Digestive Enzymes Benefits Digestive Enzymes Coconut Health Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Digestive Enzymes Prevent Nutrient Deficiency Support Gut Health Digestive Enzymes Benefits Digestive Enzymes Coconut Health Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/cd/09/24/cd0924e3f5107925d2b0ead2f727a0ea.jpg" data-lightbox="roadtrip" data-title="Clinical Testing Of Alkaline Water For Digestive Health Alkaline Water Human Digestive System Iodine Rich Foods">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/cd/09/24/cd0924e3f5107925d2b0ead2f727a0ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlZAYE3VUVl6HfW_oEMV9v0WPu9LNtGIujBA';" alt="Clinical Testing Of Alkaline Water For Digestive Health Alkaline Water Human Digestive System Iodine Rich Foods">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Clinical Testing Of Alkaline Water For Digestive Health Alkaline Water Human Digestive System Iodine Rich Foods</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/19/5a/9b195a7b3be1392c58f625581a64be0d.jpg" data-lightbox="roadtrip" data-title="Benefits Of Fasting When I Discovered That Our Digestive Tract Is 30 Feet Long And That Our Body Has Waste Product Body Healing Health Coconut Health Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/19/5a/9b195a7b3be1392c58f625581a64be0d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPdf58Yoj-NZ1DzpjLo4F1amffZtSQsPKf6g';" alt="Benefits Of Fasting When I Discovered That Our Digestive Tract Is 30 Feet Long And That Our Body Has Waste Product Body Healing Health Coconut Health Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits Of Fasting When I Discovered That Our Digestive Tract Is 30 Feet Long And That Our Body Has Waste Product Body Healing Health Coconut Health Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/8e/8f/e78e8f9046f3bd5b6cc39a13534cd37c.jpg" data-lightbox="roadtrip" data-title="In Addition To Keeping Your Digestive Tract In Tip Top Shape Fibre Also Offers A List Of Other Healthy Benefits W Healthy Healthy Benefits Mineral Nutrition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/8e/8f/e78e8f9046f3bd5b6cc39a13534cd37c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1LtiDepHOWXrHcv9Vq1Wt5ZxkHn56oCXJog';" alt="In Addition To Keeping Your Digestive Tract In Tip Top Shape Fibre Also Offers A List Of Other Healthy Benefits W Healthy Healthy Benefits Mineral Nutrition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In Addition To Keeping Your Digestive Tract In Tip Top Shape Fibre Also Offers A List Of Other Healthy Benefits W Healthy Healthy Benefits Mineral Nutrition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/c7/76/afc776c1a79a2f541555abad217a70a5.jpg" data-lightbox="roadtrip" data-title="Dr Nelson Shows How To Get The Many Benefits Of A Healthy Digestive Tract Increased Energy Improv Healthy Digestive Tract Health And Beauty Tips Health Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/c7/76/afc776c1a79a2f541555abad217a70a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzVOSga2PZYDmLv9pSgl45n70xYrpTI065Qw';" alt="Dr Nelson Shows How To Get The Many Benefits Of A Healthy Digestive Tract Increased Energy Improv Healthy Digestive Tract Health And Beauty Tips Health Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dr Nelson Shows How To Get The Many Benefits Of A Healthy Digestive Tract Increased Energy Improv Healthy Digestive Tract Health And Beauty Tips Health Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/8b/f9/b08bf9baf9c5a8a676ac859c180c6089.png" data-lightbox="roadtrip" data-title="The Importance Of Gut Health Unicity Blog Gut Health Infographic Health Health Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/8b/f9/b08bf9baf9c5a8a676ac859c180c6089.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR796RQ4JMkpYmOMBpA2IYScZpPjtJYW0XoqQ';" alt="The Importance Of Gut Health Unicity Blog Gut Health Infographic Health Health Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Importance Of Gut Health Unicity Blog Gut Health Infographic Health Health Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/bc/13/44bc135e2bf75d8ca031ba584b5c87d7.jpg" data-lightbox="roadtrip" data-title="The Benefits Of A Healthy Microbiome Extend Far Beyond An Effective Digestive Tract In The Spirit Of Good Healt Healthy Microbiome Plexus Products Healthy Gut">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/bc/13/44bc135e2bf75d8ca031ba584b5c87d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAZ_DHNZH3Zb0zKJErl4JZSx6gaDDcuK5wDA';" alt="The Benefits Of A Healthy Microbiome Extend Far Beyond An Effective Digestive Tract In The Spirit Of Good Healt Healthy Microbiome Plexus Products Healthy Gut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Benefits Of A Healthy Microbiome Extend Far Beyond An Effective Digestive Tract In The Spirit Of Good Healt Healthy Microbiome Plexus Products Healthy Gut</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/8a/03/398a03fb72a4afaf732d2bde6ea19b25.jpg" data-lightbox="roadtrip" data-title="How Coconut Oil Benefits Digestive Health Infographic Coconut Health Benefits Eating Coconut Oil Digestive Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/8a/03/398a03fb72a4afaf732d2bde6ea19b25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBPmGbAH77gseijDpPkbe-ns7u37_dTIReoA';" alt="How Coconut Oil Benefits Digestive Health Infographic Coconut Health Benefits Eating Coconut Oil Digestive Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Coconut Oil Benefits Digestive Health Infographic Coconut Health Benefits Eating Coconut Oil Digestive Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/44/5a/f7445a189879f8abf8c9af698b2355db.jpg" data-lightbox="roadtrip" data-title="Health Benefits Of Prebiotics Infographic Prebiotics Gut Health Recipes Health Options">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/44/5a/f7445a189879f8abf8c9af698b2355db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfiyojdNNdC4_B2J8fVA8y896YW8vkm8WjaA';" alt="Health Benefits Of Prebiotics Infographic Prebiotics Gut Health Recipes Health Options">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Health Benefits Of Prebiotics Infographic Prebiotics Gut Health Recipes Health Options</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/alabama-gi-bill-for-dependents.html">Alabama Gi Bill For Dependents</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-polyp-guidelines.html">American College Of Gastroenterology Polyp Guidelines</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-eosinophilic-esophagitis-guideline.html">American College Of Gastroenterology Eosinophilic Esophagitis Guideline</a></li>
+													<li class="list-group-item"><a href="/amazon-college-gift-boxes.html">Amazon College Gift Boxes</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-peptic-ulcer-disease.html">American College Of Gastroenterology Peptic Ulcer Disease</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-hepatic-encephalopathy-guidelines.html">American College Of Gastroenterology Hepatic Encephalopathy Guidelines</a></li>
+													<li class="list-group-item"><a href="/alma-college-womens-basketball-schedule.html">Alma College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-h-pylori-guidelines.html">American College Of Gastroenterology H Pylori Guidelines</a></li>
+													<li class="list-group-item"><a href="/american-legion-gi-bill.html">American Legion Gi Bill</a></li>
+													<li class="list-group-item"><a href="/american-opportunity-credit-gi-bill.html">American Opportunity Credit Gi Bill</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-phone-number.html">American College Of Gastroenterology Phone Number</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-crohns-disease-guidelines.html">American College Of Gastroenterology Crohns Disease Guidelines</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-staff.html">American College Of Gastroenterology Staff</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-colonoscopy-recommendations.html">American College Of Gastroenterology Colonoscopy Recommendations</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-guidelines-crohns-disease.html">American College Of Gastroenterology Guidelines Crohns Disease</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-lynch-syndrome.html">American College Of Gastroenterology Lynch Syndrome</a></li>
+													<li class="list-group-item"><a href="/american-gunsmithing-institute-gi-bill.html">American Gunsmithing Institute Gi Bill</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-h-pylori-testing.html">American College Of Gastroenterology H Pylori Testing</a></li>
+													<li class="list-group-item"><a href="/although-womens-college-basketball-in-connecticut.html">Although Womens College Basketball In Connecticut</a></li>
+													<li class="list-group-item"><a href="/allegheny-college-womens-basketball-roster.html">Allegheny College Womens Basketball Roster</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

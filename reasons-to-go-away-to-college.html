@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Reasons To Go Away To College - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Reasons To Go Away To College",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/a3/44/e4/a344e497f2a749058ecb47ece1573ff7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=reasons+to+go+away+to+college",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Reasons To Go Away To College</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For some people the number one reason to go to college may simply be the opportunity to move to a new location. A lot of teenagers tend to think that you really figure out who youre going to be while in high school but that couldnt be more false. Since then a lot of high schoolers have asked my advice on going out of state for school so I wanted to share the top three reasons I believe you should go away to college. <br>				
+			</p>
+										<a class="badge badge-success" href="/using-post-911-gi-bill-for-flight-training.html">using post 911 gi bill for flight training</a>
+											<a class="badge badge-warning" href="/using-gi-bill-to-study-abroad.html">using gi bill to study abroad</a>
+											<a class="badge badge-light" href="/usi-college-go-week-2020.html">usi college go week 2020</a>
+											<a class="badge badge-secondary" href="/use-montgomery-gi-bill-then-post-9-11.html">use montgomery gi bill then post 9 11</a>
+											<a class="badge badge-primary" href="/using-your-montgomery-gi-bill.html">using your montgomery gi bill</a>
+											<a class="badge badge-success" href="/using-gi-bill-at-two-schools.html">using gi bill at two schools</a>
+											<a class="badge badge-secondary" href="/ut-austin-gi-bill.html">ut austin gi bill</a>
+											<a class="badge badge-primary" href="/using-gi-benefits.html">using gi benefits</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the right site.  Our website gives you suggestions for seeing the maximum quality video and picture content, hunt and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this video that you view.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/aa/eb/1baaeb6d48a96c76f95a04463de4455f.jpg" data-lightbox="roadtrip" data-title="Ptos Top 10 Reasons Students Leave Or Drop Out Of College High School Dropouts Higher Education Quotes Dropping Out Of College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/aa/eb/1baaeb6d48a96c76f95a04463de4455f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRndy6y08FD4Ab3RVj4n6yg_Mqpud7hyhyZzg';" alt="Ptos Top 10 Reasons Students Leave Or Drop Out Of College High School Dropouts Higher Education Quotes Dropping Out Of College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ptos Top 10 Reasons Students Leave Or Drop Out Of College High School Dropouts Higher Education Quotes Dropping Out Of College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/78/eb/21/78eb210033acc301ae2e14e4ec25e568.jpg" data-lightbox="roadtrip" data-title="6 Reasons Why Moms Cry When They Leave Their Kids At College College Parents College Kids College Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/78/eb/21/78eb210033acc301ae2e14e4ec25e568.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeX5ZTEbexWNbq5A1zGk2fjKg98mSJY76ViQ';" alt="6 Reasons Why Moms Cry When They Leave Their Kids At College College Parents College Kids College Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Reasons Why Moms Cry When They Leave Their Kids At College College Parents College Kids College Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/fa/d8/a9fad8ac95683d9fe18111cb503d545c.jpg" data-lightbox="roadtrip" data-title="Daughter Going To College Quotes Going Away Quotes Best Thoughts Sayings Forever College Quotes Go Away Quotes Farewell Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/fa/d8/a9fad8ac95683d9fe18111cb503d545c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8FQO7owE99yVk2L1O1foJQq_Nigl0MgyxyQ';" alt="Daughter Going To College Quotes Going Away Quotes Best Thoughts Sayings Forever College Quotes Go Away Quotes Farewell Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Daughter Going To College Quotes Going Away Quotes Best Thoughts Sayings Forever College Quotes Go Away Quotes Farewell Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/73/d1/9273d1005ce371b79a068d9f90efc695.jpg" data-lightbox="roadtrip" data-title="Going Away To College Gift College Gifts Going Away Presents Going Away Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/73/d1/9273d1005ce371b79a068d9f90efc695.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Y34SyPcOwLH1Kmo_0IaEq2PlUwPPpywIQg';" alt="Going Away To College Gift College Gifts Going Away Presents Going Away Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Going Away To College Gift College Gifts Going Away Presents Going Away Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/3e/a1/673ea1085a19987981829c56b36429a9.jpg" data-lightbox="roadtrip" data-title="Reasons Adults Should Go Back To School Right To Education Online College Going Back To School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/3e/a1/673ea1085a19987981829c56b36429a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCRzuocdlb1BT1F2gP74xZ86fKXOxT171uiQ';" alt="Reasons Adults Should Go Back To School Right To Education Online College Going Back To School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reasons Adults Should Go Back To School Right To Education Online College Going Back To School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/e1/52/24e152777f07f1887a84048e853a8bae.png" data-lightbox="roadtrip" data-title="6 Reasons Why Moms Cry When They Leave Their Kids At College College Mom Quotes College Mom College Parents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/e1/52/24e152777f07f1887a84048e853a8bae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtES54rGW8Xk8zigLF_JOOq1JwhLOEwgwoNg';" alt="6 Reasons Why Moms Cry When They Leave Their Kids At College College Mom Quotes College Mom College Parents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Reasons Why Moms Cry When They Leave Their Kids At College College Mom Quotes College Mom College Parents</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/24/e1/52/24e152777f07f1887a84048e853a8bae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtES54rGW8Xk8zigLF_JOOq1JwhLOEwgwoNg';" alt="6 Reasons Why Moms Cry When They Leave Their Kids At College College Mom Quotes College Mom College Parents">
+										<div class="card-body">
+						<h3 class="h5"><b>Here are five reasons why.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Reasons to go away to college</strong>. 
+								
+																	Meet Our New Research Associate Neetu Arnold is joining the NAS staff as our research. 
+																	You are no longer with the same group of people since kindergarten. 
+																	According to the National Center for Education Statistics the amount of first-time Bachelors seeking students who. 
+																	Educating the Rich and Powerful. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ill have to pick myself up when Im sad and guide myself through an intimidatingly new environment. 
+																	Shares 120 Facebook Tweet. 
+																	You can truly start fresh. 
+																	Value of College Degree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	REASONS NOT TO GO TO COLLEGE. 
+																	I wanted to escape the comfort of home and the familiar to achieve independence in college. 
+																	There are a couple of reasons why you should be attending college away from your home town and were going to highlight some of them. 
+																	Find out the reasons why you shouldnt go to college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Going to college is a great way to reinvent yourself whether that be socially or academically or even personally. 
+																	10 Reasons Why You Should Go to College Close to Home. 
+																	Either way I completely agree with the fact that moving away for college is the best way to go. 
+																	You Finally Become Independent One of the roles of a parent is preparing their children for adulthood. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	March 29 2019 by Kasia OBrien. 
+																	10 Reasons Not to Go to College. 
+																	Not only is college education long costly and often not micro-targeted its often outdated. 
+																	Here are all the reasons going to college close to home is the best decision you will ever make. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Im currently on my college journey just 20 minutes from home. 
+																	It will be up to you to handle the small logistics you might be used to your parents managing on your behalf. 
+																	Others may just want to get out of a small town and see the world. 
+																	No matter how much love you have for your friends or significant other. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Going away to college is a great chance for young people to experience a different type of life than they are used to figure out who they are what they like and what they want to do According to McKeever one key reason Megan chose to go away is that she wanted to experience new things. 
+																	Some of the most vital reasons to go away to college are recounted here as lived by me a real life college senior. 
+																	One of the biggest reasons why college grads cant find meaningful work is because theres too high a supply of the same people with the same credentials and not enough jobs demand to fill them all with meaningful work. 
+																	It gives you greater independence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While there are no obligatory reasons why you should go to college benefits are obvious including financial personal educational cultural even healthcare grounds. 
+																	Going to college far away from your home is also an option that presents a number of unique benefits. 
+																	1 Youre Going to Lose 4 or more years. 
+																	Things dont always go as planned though. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You get a fresh start. 
+																	College away from your hometown means discovering a place very unlike what youve known half your life especially if you are in India. 
+																	Working in the marketing. 
+																	For a college alternative thats a virtual business-in-a-box along with education instruction and even your own website check out the Knowledge Based Business program and other options such as Teachable and Udemy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It allows you to thrive in a way you cannot if mom and dad are a 5 minute to 1 hour drive away or in the next room. 
+																	Because sometimes you need real food In college your diet will consist of Easy Mac ramen cheap. 
+																	Deciding to go to college mainly because your friends or significant other decides to is likely to result in resentment disappointment frustration and possibly even a fractured relationship. 
+																	One of the ways you do so is by sending them out to the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A new place a fresh start. 
+																	When youre away from home in college you get to discover how strong you are while youre away especially in a different state away from family and high school friends. 
+																	Many northerners may want to go to school in the south to escape the cold. 
+																	Getting a Bachelors degree typically takes 4 years and if you get behind in your classes take time off or explore outside of your major it could take much longer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Distance from home doesnt determine whether or not youll grow and. 
+																	Mary Hilliard a sophomore at the University of Notre Dame knew she wanted to challenge herself to grow as a person. 
+																	You all have to live your own lives and make decisions rooted in what feels right. 
+																	And Ill still call you every so often for a little help but Ill rely mostly on myself and the friends I choose to surround myself with. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The College Backgrounds of Americas Richest and Its Top CEOs How higher education has influenced the business world. 
+																	College is where Im going to see what its like to be independent. 
+																	For one by going someplace new on your own you will inevitably gain more independence. 
+																	As kids people often interpret higher education as something alike to school with tons of homework that should be completed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With each new town housing a new. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/60/f5/4e60f5e3fe537f4b24e44b646e39e2f6.jpg" data-lightbox="roadtrip" data-title="Open When Cards For My Boyfriend When I Go Away To College Teenage Boyfriend Gifts Boyfriend Gifts Diy Anniversary Boyfriend Crafts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/60/f5/4e60f5e3fe537f4b24e44b646e39e2f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReI4Ri-VC97SsRxdo2Ba8lijDWh_oR3mgzog';" alt="Open When Cards For My Boyfriend When I Go Away To College Teenage Boyfriend Gifts Boyfriend Gifts Diy Anniversary Boyfriend Crafts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Open When Cards For My Boyfriend When I Go Away To College Teenage Boyfriend Gifts Boyfriend Gifts Diy Anniversary Boyfriend Crafts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/74/3b/bc743b8b048ee300416565665a3f036d.png" data-lightbox="roadtrip" data-title="Just To Claireify School Application Vocational School Trade School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/74/3b/bc743b8b048ee300416565665a3f036d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgDcqu1xr8q1inkknkS6YcN8TiMmlOjzI2qQ';" alt="Just To Claireify School Application Vocational School Trade School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Just To Claireify School Application Vocational School Trade School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e8/2d/42/e82d42b5bb137c8903fbc8a539174aa9.jpg" data-lightbox="roadtrip" data-title="19 Best Going Away To College Gift Ideas For Boyfriend College Gifts Boyfriend Gifts Unique Gifts For Boyfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e8/2d/42/e82d42b5bb137c8903fbc8a539174aa9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOcpB0XblVO-xtkDaWjH_f25Q2pObvhL8Q5g';" alt="19 Best Going Away To College Gift Ideas For Boyfriend College Gifts Boyfriend Gifts Unique Gifts For Boyfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">19 Best Going Away To College Gift Ideas For Boyfriend College Gifts Boyfriend Gifts Unique Gifts For Boyfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/b4/4a/5eb44a4c684b4845023a98bc09a7f2f0.jpg" data-lightbox="roadtrip" data-title="8 Creative Going Away Gift Ideas For Boyfriend Why I Love You Reasons Why I Love You Going Away Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/b4/4a/5eb44a4c684b4845023a98bc09a7f2f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxE58xEZTM9sltu0b5hBUm43e4rb-rsPuS6A';" alt="8 Creative Going Away Gift Ideas For Boyfriend Why I Love You Reasons Why I Love You Going Away Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Creative Going Away Gift Ideas For Boyfriend Why I Love You Reasons Why I Love You Going Away Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/be/fd/7fbefd8973e4f34580b5389bf63013bb.png" data-lightbox="roadtrip" data-title="5 Reasons To Join College Clubs The University Network College Club Writing Services Best Essay Writing Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/be/fd/7fbefd8973e4f34580b5389bf63013bb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmoiaGGK5D4Dg-o5GEyi_RWsHZEMuoqo7fog';" alt="5 Reasons To Join College Clubs The University Network College Club Writing Services Best Essay Writing Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Reasons To Join College Clubs The University Network College Club Writing Services Best Essay Writing Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1a/ab/5b/1aab5b1813d6e3ea87cd5ca05f83a2a0.jpg" data-lightbox="roadtrip" data-title="Why It S Probably A Good Thing If Your College Student Never Calls College Parents College Kids Parenting Stress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1a/ab/5b/1aab5b1813d6e3ea87cd5ca05f83a2a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLY3PQQhGUSL2Fhhwqjz_RLoNeC6adf5wLw';" alt="Why It S Probably A Good Thing If Your College Student Never Calls College Parents College Kids Parenting Stress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why It S Probably A Good Thing If Your College Student Never Calls College Parents College Kids Parenting Stress</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/44/e4/a344e497f2a749058ecb47ece1573ff7.jpg" data-lightbox="roadtrip" data-title="Pin On College Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/44/e4/a344e497f2a749058ecb47ece1573ff7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWRd1zWVMoHrDIzZriLsndgTRldzyMDecOCw';" alt="Pin On College Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/2a/87/ca2a8734f2a04e45dfb872ac0e608e4c.jpg" data-lightbox="roadtrip" data-title="6 Reasons Why Moms Cry When They Leave Their Kids At College College Mom College Parents College Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/2a/87/ca2a8734f2a04e45dfb872ac0e608e4c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg2o3uEY7FIU-VRk5pklCZQFOuE478ZOeVpA';" alt="6 Reasons Why Moms Cry When They Leave Their Kids At College College Mom College Parents College Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Reasons Why Moms Cry When They Leave Their Kids At College College Mom College Parents College Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/46/f2/b846f2d1a5310b4f3cd5497102b52285.jpg" data-lightbox="roadtrip" data-title="Open When Envelopes For College Kid Going Away To College Etsy Open When Letters Open When Envelopes Letter Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/46/f2/b846f2d1a5310b4f3cd5497102b52285.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfeVUrolj2wadBcFFm3qdGwTi8GA9vGubh3w';" alt="Open When Envelopes For College Kid Going Away To College Etsy Open When Letters Open When Envelopes Letter Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Open When Envelopes For College Kid Going Away To College Etsy Open When Letters Open When Envelopes Letter Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/32/64/6c/32646cf6ded5cb721dd8dbeadb15d392.jpg" data-lightbox="roadtrip" data-title="20 Going Away To College Gifts For Her College Gifts College Dorm Decorations Dorm Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/32/64/6c/32646cf6ded5cb721dd8dbeadb15d392.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZWN132U0x79UEN1trgEoIGskEgA2FBv0TQ';" alt="20 Going Away To College Gifts For Her College Gifts College Dorm Decorations Dorm Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Going Away To College Gifts For Her College Gifts College Dorm Decorations Dorm Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/bf/67/2fbf6747337f8be1dd7cb6e014b6ba06.jpg" data-lightbox="roadtrip" data-title="Going Away To College Gift Basket College Gifts College Gift Baskets Gift Baskets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/bf/67/2fbf6747337f8be1dd7cb6e014b6ba06.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSub1Lm8V8ZqUQh0z4_BHzTHGjlPZcZnm_SqQ';" alt="Going Away To College Gift Basket College Gifts College Gift Baskets Gift Baskets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Going Away To College Gift Basket College Gifts College Gift Baskets Gift Baskets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/8f/82/d98f82c800a8fd70f0067ed0fb44fee1.jpg" data-lightbox="roadtrip" data-title="This Was Put Together For A Friend Going Away To Her First Year Of College Here S A Few Tips To College Gifts College Gift Baskets First Year Of College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/8f/82/d98f82c800a8fd70f0067ed0fb44fee1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQjF0-I90K4mybRTijt6t3gaUCCpiY4zLhfw';" alt="This Was Put Together For A Friend Going Away To Her First Year Of College Here S A Few Tips To College Gifts College Gift Baskets First Year Of College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Was Put Together For A Friend Going Away To Her First Year Of College Here S A Few Tips To College Gifts College Gift Baskets First Year Of College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/a4/ad/8ea4ad2244bd43b1836278cccebc7608.jpg" data-lightbox="roadtrip" data-title="9 Cute Matching Bff Gifts For All Your Long Distance Friends Going Away To Coll Graduation Gifts For Friends Graduation Gifts For Best Friend Friend Graduation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/a4/ad/8ea4ad2244bd43b1836278cccebc7608.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvSj3pMMIGnyAkd6vYmy2q_639bVLbk8FF-A';" alt="9 Cute Matching Bff Gifts For All Your Long Distance Friends Going Away To Coll Graduation Gifts For Friends Graduation Gifts For Best Friend Friend Graduation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Cute Matching Bff Gifts For All Your Long Distance Friends Going Away To Coll Graduation Gifts For Friends Graduation Gifts For Best Friend Friend Graduation</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/womens-college-basketball-scores-yesterday.html">Womens College Basketball Scores Yesterday</a></li>
+													<li class="list-group-item"><a href="/york-college-womens-basketball-coach.html">York College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-three-point-line.html">Womens College Basketball Three Point Line</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-standings-top-25.html">Womens College Basketball Standings Top 25</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-vegas-lines.html">Womens College Basketball Vegas Lines</a></li>
+													<li class="list-group-item"><a href="/yellow-ribbon-program-qualifications.html">Yellow Ribbon Program Qualifications</a></li>
+													<li class="list-group-item"><a href="/york-college-jv-womens-basketball.html">York College Jv Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/yellow-ribbon-certificate-of-eligibility.html">Yellow Ribbon Certificate Of Eligibility</a></li>
+													<li class="list-group-item"><a href="/yellow-ribbon-program-without-gi-bill.html">Yellow Ribbon Program Without Gi Bill</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-basketball-final-four-2020.html">Womens Ncaa Basketball Final Four 2020</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-televised-games.html">Womens College Basketball Televised Games</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-videos.html">Womens College Basketball Videos</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-team-fouls.html">Womens College Basketball Team Fouls</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-basketball-fight.html">Womens Ncaa Basketball Fight</a></li>
+													<li class="list-group-item"><a href="/yellow-ribbon-flight-training.html">Yellow Ribbon Flight Training</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-watch.html">Womens College Basketball Watch</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-unc.html">Womens College Basketball Unc</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-basketball-tournament-history.html">Womens Ncaa Basketball Tournament History</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-streams-free.html">Womens College Basketball Streams Free</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-top-25-teams.html">Womens College Basketball Top 25 Teams</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

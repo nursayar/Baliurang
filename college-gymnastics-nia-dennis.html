@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Gymnastics Nia Dennis - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Gymnastics Nia Dennis",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/2f/e7/9a/2fe79a98f7a6525ebd4a2f2716bf1a69.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+gymnastics+nia+dennis",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Gymnastics Nia Dennis</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Photo by Katharine LotzeGetty Images The song mix was. Yes theres Nia Dennis whose floor routine an exuberant and powerful celebration of. UCLAs Nia Dennis competes on the floor during an NCAA gymnastics meet against Arizona State on Saturday in Los Angeles. <br>				
+			</p>
+										<a class="badge badge-info" href="/national-university-gi-bill-bah.html">national university gi bill bah</a>
+											<a class="badge badge-warning" href="/most-championships-in-womens-college-basketball.html">most championships in womens college basketball</a>
+											<a class="badge badge-light" href="/my-gi-bill-ran-out-now-what.html">my gi bill ran out now what</a>
+											<a class="badge badge-success" href="/montgomery-gi-bill-use.html">montgomery gi bill use</a>
+											<a class="badge badge-light" href="/national-guard-gi-bill-kicker.html">national guard gi bill kicker</a>
+											<a class="badge badge-secondary" href="/montgomery-gi-bill-veterans-education-benefits.html">montgomery gi bill veterans education benefits</a>
+											<a class="badge badge-warning" href="/morris-college-womens-basketball-stats.html">morris college womens basketball stats</a>
+											<a class="badge badge-success" href="/national-guard-officer-gi-bill.html">national guard officer gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to pay a visit to the ideal blog.  Our site provides you with suggestions for viewing the maximum quality video and image content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to see.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://footwearnews.com/wp-content/uploads/2021/01/nia-dennis.jpg?w=700&amp;h=437&amp;crop=1" data-lightbox="roadtrip" data-title="Watch Ucla Gymnast Nia Dennis Viral Floor Routine Video Footwear News">
+											<img class="card-img v-image ads-img " src="https://footwearnews.com/wp-content/uploads/2021/01/nia-dennis.jpg?w=700&amp;h=437&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqwFBNzfkArnErpHz7VLht_-bPjbGEEgQXIQ';" alt="Watch Ucla Gymnast Nia Dennis Viral Floor Routine Video Footwear News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch Ucla Gymnast Nia Dennis Viral Floor Routine Video Footwear News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://e0.365dm.com/21/01/2048x1152/skysports-nia-dennis-nia-dennis_5253013.jpg" data-lightbox="roadtrip" data-title="Us Gymnast Nia Dennis Floor Routine Celebrating Black Excellence Goes Viral Athletics News Sky Sports">
+											<img class="card-img v-image ads-img " src="https://e0.365dm.com/21/01/2048x1152/skysports-nia-dennis-nia-dennis_5253013.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs3xWJi6bYMjHBRJ7vcAI2qO5LP3Qx9qLW2g';" alt="Us Gymnast Nia Dennis Floor Routine Celebrating Black Excellence Goes Viral Athletics News Sky Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Gymnast Nia Dennis Floor Routine Celebrating Black Excellence Goes Viral Athletics News Sky Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://imageresizer.static9.net.au/hNtiBn3LybeuUqA7i1jglYr3oz4=/0x0/https%3A%2F%2Fprod.static9.net.au%2Ffs%2F57675b1b-7ca9-48ca-a07d-ccac6889b726" data-lightbox="roadtrip" data-title="Nia Dennis Gymnastics Floor Routine Dazzles America Simone Biles Michelle Obama">
+											<img class="card-img v-image ads-img " src="https://imageresizer.static9.net.au/hNtiBn3LybeuUqA7i1jglYr3oz4=/0x0/https%3A%2F%2Fprod.static9.net.au%2Ffs%2F57675b1b-7ca9-48ca-a07d-ccac6889b726" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPkE_DCaEHbLi7og1H7yoU1Dx_fMMKvBEig';" alt="Nia Dennis Gymnastics Floor Routine Dazzles America Simone Biles Michelle Obama">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nia Dennis Gymnastics Floor Routine Dazzles America Simone Biles Michelle Obama</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/_L39fHZPrO4/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Nia Dennis 6 Top Skills Viral Routine Elite Gymnastics Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/_L39fHZPrO4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo7FB7oS5ghyLN_SA89mEMjDISc-r894oPBg';" alt="Nia Dennis 6 Top Skills Viral Routine Elite Gymnastics Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nia Dennis 6 Top Skills Viral Routine Elite Gymnastics Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/Usy5dz3jIyp1InD5fn3tq4wNv_4=/0x0:3000x2001/1200x800/filters:focal(1264x499:1744x979)/cdn.vox-cdn.com/uploads/chorus_image/image/68717154/GettyImages_1144688667.7.jpg" data-lightbox="roadtrip" data-title="Ucla Gymnast Nia Dennis Goes Viral For Kendrick Lamar And Tupac Inspired Routine Revolt">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/Usy5dz3jIyp1InD5fn3tq4wNv_4=/0x0:3000x2001/1200x800/filters:focal(1264x499:1744x979)/cdn.vox-cdn.com/uploads/chorus_image/image/68717154/GettyImages_1144688667.7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-qwcNTp-K-rUCwKAqY04Yo0RZ_y2r9O1KXA';" alt="Ucla Gymnast Nia Dennis Goes Viral For Kendrick Lamar And Tupac Inspired Routine Revolt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ucla Gymnast Nia Dennis Goes Viral For Kendrick Lamar And Tupac Inspired Routine Revolt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.the-sun.com/wp-content/uploads/sites/6/2021/01/NINTCHDBPICT000632559135.jpg" data-lightbox="roadtrip" data-title="Who Is Ucla Gymnast Nia Dennis And Why Is She Trending">
+											<img class="card-img v-image ads-img " src="https://www.the-sun.com/wp-content/uploads/sites/6/2021/01/NINTCHDBPICT000632559135.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK_doyzhOhuAZzUJ4tYat-_srLNY9-3NnAcA';" alt="Who Is Ucla Gymnast Nia Dennis And Why Is She Trending">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Is Ucla Gymnast Nia Dennis And Why Is She Trending</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="http://lgs6632.com/photo/19college/19cr5/images/19cr22264.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK_doyzhOhuAZzUJ4tYat-_srLNY9-3NnAcA';" alt="Who Is Ucla Gymnast Nia Dennis And Why Is She Trending">
+										<div class="card-body">
+						<h3 class="h5"><b>Gymnast Nia Dennis viral routine leaps past famous shoutouts millions of views Firyal BawabDaily Bruin By Nico Edgar Jan.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College gymnastics nia dennis</strong>. 
+								
+																	UCLA gymnastics have continued to impress the world and Nia Dennis recent routine celebrating BlackExcellence was no exception. 
+																	This post was updated Jan. 
+																	UCLA gymnast Nia Dennis celebrates Black excellence in viral routine The Bruins gymnast has earned high praise from champ Simone Biles and other notable names. 
+																	Dennis joined the UCLA gymnastics team in 2017 and has been competing with the school ever since. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nia Dennis is a professional gymnast who attends the University of California Los Angeles campus. 
+																	Nia Dennis performs during the UCLA Womens Gymnastics versus the. 
+																	UCLAs Nia Dennis competes on the floor. 
+																	31 at 601 pm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UCLAs Nia Dennis performed to music by Beyonce Kendrick Lamar Missy Elliott 2Pac Megan Thee Stallion and more in a new 2021 floor routine. 
+																	She trained at Buckeye Gymnastics in Westerville Ohio and Legacy Elite Gymnastics in Naperville Illinois and is currently a member of the UCLA Bruins womens gymnastics team. 
+																	Her viral floor routine has prompted responses from Michelle Obama and Janet Jackson a routine which saw Dennis perform in a blue leotard to an upbeat mashup of Kendrick Lamar Beyonce Missy Elliott Megan Thee Stallion Soulja Boy and Tupac Shakur in a dual. 
+																	28 2021 634 pm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A National Team member since 2012 she began to represent the United States internationally in 2014. 
+																	UCLA Gymnast Nia Dennis Goes Viral Again After Epic Floor Routine. 
+																	The routine was nearly perfect scoring a 995 out of 10 in the Bruins gymnastics. 
+																	UCLA gymnast Nia Dennis celebrated Black culture in a floor routine performance over the weekend that has the internet doing flips. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UCLA gymnast Nia Dennis set the Internet ablaze for the second year. 
+																	UCLA Bruins gymnast Nia Dennis. 
+																	US gymnast Nia Dennis floor routine celebrating black excellence has gone viral. 
+																	Nia Denniss 2021 Floor Routine For UCLA Gymnastics Nia Denniss Floor Routine Is One Big Dance Party and It Pays Tribute to Black Culture January 24 2021 by Samantha Brodsky UCLA gymnast Nia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Joseph Salvador Publish date. 
+																	Jan 25 2021. 
+																	While she loves her sport Dennis admitted she had a tough time growing up without role models that mirrored her style or identity. 
+																	Nia Dennis a 21-year-old UCLA gymnastics star has delivered a sensational floor routine that has gone viral in the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Meet UCLA gymnast Nia Dennis who went viral after Black excellence floor routine Black culture is not really recognized or known in the sport of gymnastics so it was really important to me to. 
+																	The Bruins gymnastics team of the University of California Los Angeles has more than one secret weapon. 
+																	The seniors celebrated routine from Saturdays competition in Los Angeles kicked off with Kendrick Lamars song Humble. 
+																	Dennis an athlete at the University of California in Los Angeles UCLA incorporated songs by artists including. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Set to the music of Kendrick Lamar Soulja Boy Megan Thee Stallion Tupac Shakur and Elliott the routine scored a near-perfect 995 as UCLA beat Arizona State in a season-opening competition on the weekend. 
+																	She previously caught eyes for a 2020 routine. 
+																	Nia Dennis born February 23 1999 is an American artistic gymnast. 
+																	UCLA gymnast Nia Dennis competes on the uneven parallel bars during a 2019 meet against Stanford at Pauley Pavilion in Los Angeles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UCLA senior gymnast Nia Dennis performed an epic floor routine celebrating Black Excellence that went viral. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.huffingtonpost.com/asset/600ef7c1250000010fe238f9.jpeg?ops=scalefit_630_noupscale" data-lightbox="roadtrip" data-title="Ucla Gymnast Nia Dennis Viral Floor Routine Was An Ode To Black Culture Huffpost">
+											<img class="card-img v-image ads-img " src="https://img.huffingtonpost.com/asset/600ef7c1250000010fe238f9.jpeg?ops=scalefit_630_noupscale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyEF2t730VsHe9svYNFvtlnGn-X3eGSeVX1w';" alt="Ucla Gymnast Nia Dennis Viral Floor Routine Was An Ode To Black Culture Huffpost">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ucla Gymnast Nia Dennis Viral Floor Routine Was An Ode To Black Culture Huffpost</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/Es3tu5LXEAEr3MT.jpg" data-lightbox="roadtrip" data-title="College Gym News On Twitter You Ve Seen Uclagymnastics Nia Dennis Viral Routine Now Learn About The Brains Behind The Choreography Beejaydas Https T Co Qjufjrzyfl It S Unprecedented She Is A Genius That Way And She">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/Es3tu5LXEAEr3MT.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdBvFG5tDM3mhvTNY5O6hI09dTaTPJdHMsJw';" alt="College Gym News On Twitter You Ve Seen Uclagymnastics Nia Dennis Viral Routine Now Learn About The Brains Behind The Choreography Beejaydas Https T Co Qjufjrzyfl It S Unprecedented She Is A Genius That Way And She">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gym News On Twitter You Ve Seen Uclagymnastics Nia Dennis Viral Routine Now Learn About The Brains Behind The Choreography Beejaydas Https T Co Qjufjrzyfl It S Unprecedented She Is A Genius That Way And She</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/80/1d/57/801d5749e57cb079bfc2b32cc3fc0ee4.jpg" data-lightbox="roadtrip" data-title="Ucla Gymnast Nia Dennis Performs Her Routine On The Balance Beam Gymnastics Ucla Gymnastics Routines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/80/1d/57/801d5749e57cb079bfc2b32cc3fc0ee4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHO3RNtWI4fAQf4xMlPBmTTtLBKEjjCGlm7g';" alt="Ucla Gymnast Nia Dennis Performs Her Routine On The Balance Beam Gymnastics Ucla Gymnastics Routines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ucla Gymnast Nia Dennis Performs Her Routine On The Balance Beam Gymnastics Ucla Gymnastics Routines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.the-sun.com/wp-content/uploads/sites/6/2021/01/NINTCHDBPICT000632567603.jpg" data-lightbox="roadtrip" data-title="Who Is Gymnast Nia Dennis Dating">
+											<img class="card-img v-image ads-img " src="https://www.the-sun.com/wp-content/uploads/sites/6/2021/01/NINTCHDBPICT000632567603.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzzTl7t8dcqVL04gorRd80XWJNkeWZ8WyOQ';" alt="Who Is Gymnast Nia Dennis Dating">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Is Gymnast Nia Dennis Dating</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/ER335XsWoAMDky4.jpg" data-lightbox="roadtrip" data-title="Ucla Gymnastics On Twitter A Homecoming Performance That Would Make Beyonce Proud Dennisnia Made Us Lose Our Breath With Her 9 975 On Floor Exercise Last Weekend In Pauley Who Else Is Crazy">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/ER335XsWoAMDky4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNGvT5BGOsGrAKJYdDVpuI8zcwacJRE9AdSw';" alt="Ucla Gymnastics On Twitter A Homecoming Performance That Would Make Beyonce Proud Dennisnia Made Us Lose Our Breath With Her 9 975 On Floor Exercise Last Weekend In Pauley Who Else Is Crazy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ucla Gymnastics On Twitter A Homecoming Performance That Would Make Beyonce Proud Dennisnia Made Us Lose Our Breath With Her 9 975 On Floor Exercise Last Weekend In Pauley Who Else Is Crazy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/sT5o3lL9kjg/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&amp;rs=AOn4CLDmD9xnOraIllKLgJAidCNrdo_h_Q" data-lightbox="roadtrip" data-title="Vcltvxfy4hbhmm">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/sT5o3lL9kjg/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&amp;rs=AOn4CLDmD9xnOraIllKLgJAidCNrdo_h_Q" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnfn4suIArSMO-977n-Q6EKkPifz7MvMSAcA';" alt="Vcltvxfy4hbhmm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vcltvxfy4hbhmm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/ERFirFGU8AUqfWp.jpg" data-lightbox="roadtrip" data-title="Ucla Gymnastics On Twitter Nia Dennis Wears The This Week On Bruinbanter And Will Be Taking Your Questions Submit By 4pm Pt Today">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/ERFirFGU8AUqfWp.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-XC_ga7wF46fgjxDBaD90lYO3qlmrbBhIvg';" alt="Ucla Gymnastics On Twitter Nia Dennis Wears The This Week On Bruinbanter And Will Be Taking Your Questions Submit By 4pm Pt Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ucla Gymnastics On Twitter Nia Dennis Wears The This Week On Bruinbanter And Will Be Taking Your Questions Submit By 4pm Pt Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://lgs6632.com/photo/19college/19cr5/images/19cr22264.jpg" data-lightbox="roadtrip" data-title="Results From Search By College Program">
+											<img class="card-img v-image ads-img " src="http://lgs6632.com/photo/19college/19cr5/images/19cr22264.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HbIVMjbNfMP3g-bnx1xjJ2wjGbov_w7sdw';" alt="Results From Search By College Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Results From Search By College Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/Jutso4KqrATqIuKL7yaJkA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY2Ni4yNA--/https://s.yimg.com/uu/api/res/1.2/wRhKfpNKtLgtgYZU1Zr.Tw--~B/aD0xMzg4O3c9MjAwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/hello_giggles_454/02626cccb5a46cf89e8d87c4b6bd9b62" data-lightbox="roadtrip" data-title="Watch Nia Dennis Latest Viral Gymnastics Routine That S All About Black Excellence">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/Jutso4KqrATqIuKL7yaJkA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY2Ni4yNA--/https://s.yimg.com/uu/api/res/1.2/wRhKfpNKtLgtgYZU1Zr.Tw--~B/aD0xMzg4O3c9MjAwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/hello_giggles_454/02626cccb5a46cf89e8d87c4b6bd9b62" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8iz6_ux2zSV4qTUgmDcqscjURJt7rAg1wGA';" alt="Watch Nia Dennis Latest Viral Gymnastics Routine That S All About Black Excellence">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch Nia Dennis Latest Viral Gymnastics Routine That S All About Black Excellence</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/trYwmWutuD4/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Nia Dennis Ucla Floor Exercise 9 8 2018 Meet The Bruins Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/trYwmWutuD4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pyKaemKkl4I2pCTfqoCZ9ltwiaVhHR76VA';" alt="Nia Dennis Ucla Floor Exercise 9 8 2018 Meet The Bruins Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nia Dennis Ucla Floor Exercise 9 8 2018 Meet The Bruins Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/51/42/a4/5142a4fe1b12c7a3d235a7517ace698a.jpg" data-lightbox="roadtrip" data-title="Ucla Gymnast Nia Dennis Performs Her Routine On The Balance Beam Ucla Gymnastics Performance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/51/42/a4/5142a4fe1b12c7a3d235a7517ace698a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSizrZyMntvlsuLX5AUXU-Yi9tOWrxU_-bVyA';" alt="Ucla Gymnast Nia Dennis Performs Her Routine On The Balance Beam Ucla Gymnastics Performance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ucla Gymnast Nia Dennis Performs Her Routine On The Balance Beam Ucla Gymnastics Performance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://lgs6632.com/photo/19college/19cr5/images/19cr22331.jpg" data-lightbox="roadtrip" data-title="Results From Search By College Program">
+											<img class="card-img v-image ads-img " src="http://lgs6632.com/photo/19college/19cr5/images/19cr22331.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2B7CV-yNaxcbECYcFYRhiU4OwbrHHEegaMA';" alt="Results From Search By College Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Results From Search By College Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/e7/9a/2fe79a98f7a6525ebd4a2f2716bf1a69.jpg" data-lightbox="roadtrip" data-title="Nia Dennis Artistic Gymnastics Sports Women Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/e7/9a/2fe79a98f7a6525ebd4a2f2716bf1a69.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAhpuHnyg9MTo1iJYMo_ZniNjscosZiVv3NQ';" alt="Nia Dennis Artistic Gymnastics Sports Women Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nia Dennis Artistic Gymnastics Sports Women Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-vs-911.html">Gi Bill Vs 911</a></li>
+													<li class="list-group-item"><a href="/gi-bill-texas-rates.html">Gi Bill Texas Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-usage.html">Gi Bill Usage</a></li>
+													<li class="list-group-item"><a href="/gi-bill-time-limit.html">Gi Bill Time Limit</a></li>
+													<li class="list-group-item"><a href="/gi-bill-tuition-for-dependents.html">Gi Bill Tuition For Dependents</a></li>
+													<li class="list-group-item"><a href="/gi-bill-tuition-and-fees.html">Gi Bill Tuition And Fees</a></li>
+													<li class="list-group-item"><a href="/gi-bill-va-vocational-rehab.html">Gi Bill Va Vocational Rehab</a></li>
+													<li class="list-group-item"><a href="/gi-bill-stem-extension.html">Gi Bill Stem Extension</a></li>
+													<li class="list-group-item"><a href="/gi-bill-tuition-assistance.html">Gi Bill Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/gi-bill-transfer-to-spouse-divorce.html">Gi Bill Transfer To Spouse Divorce</a></li>
+													<li class="list-group-item"><a href="/gi-bill-top-up-program.html">Gi Bill Top Up Program</a></li>
+													<li class="list-group-item"><a href="/gi-bill-veterans-education-benefits.html">Gi Bill Veterans Education Benefits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-tool.html">Gi Bill Tool</a></li>
+													<li class="list-group-item"><a href="/gi-bill-unemployment.html">Gi Bill Unemployment</a></li>
+													<li class="list-group-item"><a href="/gi-bill-tuition-rates.html">Gi Bill Tuition Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-wave-website.html">Gi Bill Wave Website</a></li>
+													<li class="list-group-item"><a href="/gi-bill-summer-housing-allowance.html">Gi Bill Summer Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/gi-bill-summer-courses.html">Gi Bill Summer Courses</a></li>
+													<li class="list-group-item"><a href="/gi-bill-title-35.html">Gi Bill Title 35</a></li>
+													<li class="list-group-item"><a href="/gi-bill-stipend-online-classes.html">Gi Bill Stipend Online Classes</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

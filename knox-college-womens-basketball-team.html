@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Knox College Womens Basketball Team - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Knox College Womens Basketball Team",
+  "datePublished": "2021-02-17",
+  "image": "https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2019/12/14/knox_vs_lincoln_wbb_02.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=knox+college+womens+basketball+team",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Knox College Womens Basketball Team</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Knox College basketball teams were both able to put a stop to losing streaks against rival Monmouth College during a double header Tuesday night. 45 out of 5 stars. The Prairie Fire found themselves down by 15 points going. <br>				
+			</p>
+										<a class="badge badge-info" href="/gastroenterology-college-station-texas.html">gastroenterology college station texas</a>
+											<a class="badge badge-success" href="/forever-gin-chia-benefits-in-hindi.html">forever gin chia benefits in hindi</a>
+											<a class="badge badge-dark" href="/fundraiser-ideas-for-college-students.html">fundraiser ideas for college students</a>
+											<a class="badge badge-primary" href="/forever-gin-chia-review.html">forever gin chia review</a>
+											<a class="badge badge-success" href="/gastrointestinal-problems-post-covid.html">gastrointestinal problems post covid</a>
+											<a class="badge badge-light" href="/gastrointestinal-benefits-of.html">gastrointestinal benefits of</a>
+											<a class="badge badge-dark" href="/forever-gi-bill-monthly-housing-allowance-guide.html">forever gi bill monthly housing allowance guide</a>
+											<a class="badge badge-warning" href="/forever-gift-shop.html">forever gift shop</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to pay a visit to the right site.  Our site gives you hints for viewing the highest quality video and picture content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you see.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1554474394705190" data-lightbox="roadtrip" data-title="Knox College Women S Basketball 219 Photos College University 2 E South St Galesburg Il 61401">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1554474394705190" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pFxRRAi3Gq_TXN4M38CX8wPCpJv8RS6skA';" alt="Knox College Women S Basketball 219 Photos College University 2 E South St Galesburg Il 61401">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knox College Women S Basketball 219 Photos College University 2 E South St Galesburg Il 61401</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://prairiefire.knox.edu/images/2018/11/1/womens_basketball_team_2018_2019_19819.jpg?width=1600" data-lightbox="roadtrip" data-title="2018 19 Women S Basketball Roster Knox College Athletics">
+											<img class="card-img v-image ads-img " src="https://prairiefire.knox.edu/images/2018/11/1/womens_basketball_team_2018_2019_19819.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy0j5cthuJKQ3m1qb_xOTD6GGjmrdeFG7c8Q';" alt="2018 19 Women S Basketball Roster Knox College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2018 19 Women S Basketball Roster Knox College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://prairiefire.knox.edu/images/2019/11/12/Womens_Basketball_Team_Photos_13962.jpg?width=1600" data-lightbox="roadtrip" data-title="2019 2020 Women S Basketball Roster Knox College Athletics">
+											<img class="card-img v-image ads-img " src="https://prairiefire.knox.edu/images/2019/11/12/Womens_Basketball_Team_Photos_13962.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRczHLojSeJiVlEDWgU3CaosuSq4kz8phirhA';" alt="2019 2020 Women S Basketball Roster Knox College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 2020 Women S Basketball Roster Knox College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2018/1/29/W_Basketball_LakeForest_Homecoming_98816.jpg" data-lightbox="roadtrip" data-title="Jarrelyn Mccall 2019 2020 Women S Basketball Knox College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2018/1/29/W_Basketball_LakeForest_Homecoming_98816.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiuMXFJX-AZvZxUfD2gS1eLxZU80yqKIL-Tg';" alt="Jarrelyn Mccall 2019 2020 Women S Basketball Knox College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jarrelyn Mccall 2019 2020 Women S Basketball Knox College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2019/12/14/knox_vs_lincoln_wbb_02.jpg" data-lightbox="roadtrip" data-title="Kyra Huffman 2019 2020 Women S Basketball Knox College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2019/12/14/knox_vs_lincoln_wbb_02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-eWYSqP_uEDKOTVZXTYeKHEXtY_UysGzQg';" alt="Kyra Huffman 2019 2020 Women S Basketball Knox College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kyra Huffman 2019 2020 Women S Basketball Knox College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.knox.edu//images/_News/news_media/img/2018/WBB-37959789524_0362d37025_o.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Advances To Midwest Conference Tournament Knox College">
+											<img class="card-img v-image ads-img " src="http://www.knox.edu//images/_News/news_media/img/2018/WBB-37959789524_0362d37025_o.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlwMAImiSANV6j7faT75czjCc4bTX_EOyc_g';" alt="Women S Basketball Advances To Midwest Conference Tournament Knox College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Advances To Midwest Conference Tournament Knox College</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://thumbs.dreamstime.com/b/college-ncaa-div-iii-women-s-basketball-carroll-university-waukesha-wi-usa-jan-womens-midwest-conference-versus-knox-final-36481530.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlwMAImiSANV6j7faT75czjCc4bTX_EOyc_g';" alt="Women S Basketball Advances To Midwest Conference Tournament Knox College">
+										<div class="card-body">
+						<h3 class="h5"><b>Members of the Knox College womens basketball team hold hands to show solidarity with teammate Ariyana Smith on Wednesday during the national anthem before their game against Monmouth College.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Knox college womens basketball team</strong>. 
+								
+																	News Cross Country Cross Country. 
+																	The winner of the Knox vs. 
+																	2 E South St 149058 mi Galesburg IL 61401. 
+																	The player was suspended for one game for leaving the court and sitting out the competition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The team made their first Midwest Conference Tournament appearance in over 20 years in 2017-18. 
+																	In Memorial Gym and cheer for the Prairie. 
+																	College University in Galesburg Illinois. 
+																	Knox College Prairie Fire womens basketball head coach Emily Cline has returned from Austria where she led a team to victory in The United World Games. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Prairie Fire womens basketball team wrapped up a successful 2019-20 season on Friday falling to No. 
+																	The Lady Vols 12-3 6-1 SEC announced on Wednesday that they would be pausing all team activities following one positive. 
+																	The international sports tournament is held annually with more than 400 teams representing more than 40 countries competing in different sports this year. 
+																	Skip To Main Content. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Prairie Fire womens basketball team clinched their first Midwest Conference Tournament berth in more than two decades with a win over Illinois College on January 30. 
+																	The Midwest Conference MWC announced their womens basketball all-conference team on Tuesday. 
+																	552 people follow this. 
+																	Clines teams have steadily improved in her time at Knox and the team has finished with a winning record in each of the last five seasons 70-51 overall. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	551 people like this. 
+																	The official 2019-2020 Womens Basketball schedule for the Knox College Prairie Fire. 
+																	Kleiner is a member of the Womens Basketball Coaches Association WBCA and is USA Weight Lifting Certified. 
+																	Lake Forest 4 seed game at 3 p. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Smith was suspended from the team then reinstated after a demonstration before a game last Saturday. 
+																	The Tennessee womens basketball team is battling COVID-19 once more. 
+																	Knox College Prairie Fire Calendar. 
+																	Kasey Kleiner has been hired as the new assistant womens basketball coach at Knox College. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He helped guide Knox to an overall record of 29-22 overall and a 21-15 mark in the competitive Midwest Conference during his two years as an assistant with the Prairie Fire. 
+																	As a player at Carthage Kleiner was a team captain and was named All-Conference. 
+																	Cornell game will play the winner of the Ripon 1 seed vs. 
+																	Knox College Womens Basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The team finished fourth in the conference during both seasons as they made the conference tournament. 
+																	Their 14-5 record 9-2 in the conference this year is also the most wins since the 1996-97 season. 
+																	This is first time that the womens basketball team has qualified for the tournament in more than two decades. 
+																	Knox 16-8 11-5 MWC earned the number three seed and plays number two seed Cornell College in the opening contest of the tournament at 500 pm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kleiner received her Bachelor of Arts degree in exercise and. 
+																	CHRIS ZOELLER The Register-Mail. 
+																	The last time the team made a tournament appearance was in 1997. 
+																	The Knox College Womens Basketball teams most recent impressive victory gives the team a seven-game winning streak and an overall 7-2 record this season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Knox College Prairie Fire Calendar. 
+																	The official 2020-21 Womens Basketball Roster for the Knox College Prairie Fire Skip To Main Content. 
+																	The Knox College Womens Basketball team is off to a great start this year with a record of 6-2. 
+																	Upon review of the situation and discussion with the team and in recognition of the larger national context the decision was made to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She also won Team MVP and the Scholar Award. 
+																	See more of Knox College Womens Basketball on Facebook. 
+																	Prairiefireknoxedu Womens Basketball Defeats IC on the Road - Knox College Athletics. 
+																	Klassen spent the last two seasons as the assistant womens basketball coach at Knox College in Galesburg Illinois. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Catessa Duran led Knox with 24 points and Jarrelyn McCall added 14. 
+																	If youre in the area come to tomorrows game at 530 pm. 
+																	Fire Athletics Prairie Fire Performer of the Week Strength and Conditioning Student-Athlete Advisory Committee Visiting Team Travel Information Watch Games Live SMS Alerts Prairie Fire Gear K Club K Club Engagement Council Alumni Form Give Now Tailgate Policy National Girls and Women in. 
+																	Contact Knox College. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This past Saturday a Knox College womens basketball player staged a protest prior to the start of a regulation game in response to the events in Ferguson Missouri. 
+																	The Prairie Fire womens basketball team claimed a 59-56 victory at Illinois College on Tuesday night to clinch a spot in the conference tournament on February 28 and 29. 
+																	1 seed Ripon 68-56 in the Midwest Conference Tournament. 
+																	The Prairie Fire Womens basketball team won 111-90 and in the process snapped a 25-game losing streak to Monmouth dating back to the 2002-03 season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Emily Cline was named the head womens basketball coach at Knox College on May 26 2008. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2016/1/2/wbb_blue.jpg" data-lightbox="roadtrip" data-title="Jamie Blue 2015 16 Women S Basketball Knox College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2016/1/2/wbb_blue.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTulfvS0VZnpyKidd9pNgldlxHw8kqdmbFbmg';" alt="Jamie Blue 2015 16 Women S Basketball Knox College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jamie Blue 2015 16 Women S Basketball Knox College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://prairiefire.knox.edu/images/2018/11/7/mens_basketball_team_2018_2019_239782.jpg?width=1600" data-lightbox="roadtrip" data-title="2018 19 Men S Basketball Roster Knox College Athletics">
+											<img class="card-img v-image ads-img " src="https://prairiefire.knox.edu/images/2018/11/7/mens_basketball_team_2018_2019_239782.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTrfOwBjFxm9VkQXbrMtlLEvt5Vcz1_-dIg';" alt="2018 19 Men S Basketball Roster Knox College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2018 19 Men S Basketball Roster Knox College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2014/1/15/women-basketball-140648.jpg" data-lightbox="roadtrip" data-title="Becky Duffy 2014 15 Women S Basketball Knox College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2014/1/15/women-basketball-140648.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO0SvmRWSSvOxmgnFR7uBp6iT2G8EGQEd2tA';" alt="Becky Duffy 2014 15 Women S Basketball Knox College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Becky Duffy 2014 15 Women S Basketball Knox College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2015/2/4/16384106221_31135168dd_o.jpg" data-lightbox="roadtrip" data-title="Jodi Marver 2014 15 Women S Basketball Knox College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2015/2/4/16384106221_31135168dd_o.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Xg1gmCPs46lYGAk0wv0XNAUinsE9Z0gZ0w';" alt="Jodi Marver 2014 15 Women S Basketball Knox College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jodi Marver 2014 15 Women S Basketball Knox College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2017/12/4/basketball_women_2017_19934.jpg" data-lightbox="roadtrip" data-title="Hailey Leinart 2017 18 Women S Basketball Knox College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/knox.sidearmsports.com/images/2017/12/4/basketball_women_2017_19934.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDejXpOiQWUbEzf3ytYEYVncG3MU5fvVuzKA';" alt="Hailey Leinart 2017 18 Women S Basketball Knox College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hailey Leinart 2017 18 Women S Basketball Knox College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://prairiefire.knox.edu/images/2019/11/12/Mens_Basketball_Team_Photos_13992.jpg?width=1600" data-lightbox="roadtrip" data-title="2019 2020 Men S Basketball Roster Knox College Athletics">
+											<img class="card-img v-image ads-img " src="https://prairiefire.knox.edu/images/2019/11/12/Mens_Basketball_Team_Photos_13992.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQFL2f7Ejq6eGgK6XqYFovoIf_w3KP65QJA';" alt="2019 2020 Men S Basketball Roster Knox College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 2020 Men S Basketball Roster Knox College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.usi.edu/sports/webphotos/wbasketball/0809_wbbteam.jpg" data-lightbox="roadtrip" data-title="Usi Women S Basketball Roster">
+											<img class="card-img v-image ads-img " src="https://www.usi.edu/sports/webphotos/wbasketball/0809_wbbteam.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2PIiMMyIW793ZTl0JCine9PwRCocg3bwRLA';" alt="Usi Women S Basketball Roster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usi Women S Basketball Roster</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/dPJCA8YzYjA/hqdefault.jpg" data-lightbox="roadtrip" data-title="Knox College Athletics Official Athletics Website">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/dPJCA8YzYjA/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4mG1DVsq0CTMQ2O-EjiGf7MJDo093qeD9dw';" alt="Knox College Athletics Official Athletics Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knox College Athletics Official Athletics Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/ESuDxUnXYAEPDbo.jpg" data-lightbox="roadtrip" data-title="Knox Basketball Knox Basketball Twitter">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/ESuDxUnXYAEPDbo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5rc20NULfAzMFowVn0ozOdlL5vmx5fEp3Ug';" alt="Knox Basketball Knox Basketball Twitter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knox Basketball Knox Basketball Twitter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thumbs.dreamstime.com/b/college-ncaa-div-iii-women-s-basketball-carroll-university-waukesha-wi-usa-jan-womens-midwest-conference-versus-knox-final-36481530.jpg" data-lightbox="roadtrip" data-title="929 Basketball Bucket Photos Free Royalty Free Stock Photos From Dreamstime">
+											<img class="card-img v-image ads-img " src="https://thumbs.dreamstime.com/b/college-ncaa-div-iii-women-s-basketball-carroll-university-waukesha-wi-usa-jan-womens-midwest-conference-versus-knox-final-36481530.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrm4eHZf6z032hIl0rld_WMhiKi9q_Cohyw';" alt="929 Basketball Bucket Photos Free Royalty Free Stock Photos From Dreamstime">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">929 Basketball Bucket Photos Free Royalty Free Stock Photos From Dreamstime</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/f4/8d/0cf48dff3bf0e633f492cab50fe76f8a.jpg" data-lightbox="roadtrip" data-title="Gallery Hopkins Girls Basketball Brings Home Title Basketball Girls Hopkins Royal Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/f4/8d/0cf48dff3bf0e633f492cab50fe76f8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0HDj92c2yLAWaNZUj2js6Su02hppadHVQA';" alt="Gallery Hopkins Girls Basketball Brings Home Title Basketball Girls Hopkins Royal Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gallery Hopkins Girls Basketball Brings Home Title Basketball Girls Hopkins Royal Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/45/9f/00459f61b264e0ce9d1992fe32601e81.jpg" data-lightbox="roadtrip" data-title="Ku Women S Basketball Signees The Gonzalez Twins Photos Gonzalez Twins Basketball Girls Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/45/9f/00459f61b264e0ce9d1992fe32601e81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vOk7dORPz7MUGM7hp3Hp6qwiQBlDa2AMSw';" alt="Ku Women S Basketball Signees The Gonzalez Twins Photos Gonzalez Twins Basketball Girls Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ku Women S Basketball Signees The Gonzalez Twins Photos Gonzalez Twins Basketball Girls Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://basketballvictoria.com.au/wp-content/uploads/2016/08/knox-feature.jpg" data-lightbox="roadtrip" data-title="Big V Finals Showcase A Successful Knox Switch Basketball Victoria">
+											<img class="card-img v-image ads-img " src="https://basketballvictoria.com.au/wp-content/uploads/2016/08/knox-feature.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdhsgcT7d9mNhAq2-hIDe4UOJJAmkaRI1f6Q';" alt="Big V Finals Showcase A Successful Knox Switch Basketball Victoria">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Big V Finals Showcase A Successful Knox Switch Basketball Victoria</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/womens-college-basketball-money-lines.html">Womens College Basketball Money Lines</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-power-rankings.html">Womens College Basketball Power Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-scores-espn.html">Womens College Basketball Scores Espn</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-on-tv-this-week.html">Womens College Basketball On Tv This Week</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-playoffs.html">Womens College Basketball Playoffs</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-rankings-espn.html">Womens College Basketball Rankings Espn</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-play-quarters.html">Womens College Basketball Play Quarters</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-scores-today.html">Womens College Basketball Scores Today</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-preseason-rankings.html">Womens College Basketball Preseason Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-results-today.html">Womens College Basketball Results Today</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-rankings-preseason.html">Womens College Basketball Rankings Preseason</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-length.html">Womens College Basketball Length</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-player-rankings.html">Womens College Basketball Player Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-march-madness-2019.html">Womens College Basketball March Madness 2019</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-ncaa-rankings.html">Womens College Basketball Ncaa Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-schedule-espn.html">Womens College Basketball Schedule Espn</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-las-vegas.html">Womens College Basketball Las Vegas</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-recruiting-penn-state.html">Womens College Basketball Recruiting Penn State</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-national-rankings.html">Womens College Basketball National Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-rumors.html">Womens College Basketball Rumors</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

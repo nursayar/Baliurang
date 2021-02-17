@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Education Handbook - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Education Handbook",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/83/9e/13/839e13b76309b14cecd25b2d124a4add.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+education+handbook",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Education Handbook</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">However due to VAs ongoing response to COVID-19 we encourage Veterans their families and caregivers to visit. VA RESOURCES Some of these resources contain affiliate links. The DIY VA course is an A-Z of business start up. <br>				
+			</p>
+										<a class="badge badge-danger" href="/forever-gift-shop.html">forever gift shop</a>
+											<a class="badge badge-primary" href="/gastrointestinal-surgery-benefits.html">gastrointestinal surgery benefits</a>
+											<a class="badge badge-dark" href="/forever-gi-bill-stem.html">forever gi bill stem</a>
+											<a class="badge badge-success" href="/gastroenterology-state-college-pa.html">gastroenterology state college pa</a>
+											<a class="badge badge-light" href="/forevermygirl2018.html">forevermygirl2018</a>
+											<a class="badge badge-danger" href="/forever-gi-bill-transfer-to-spouse.html">forever gi bill transfer to spouse</a>
+											<a class="badge badge-light" href="/gastroenterology-continuing-education-for-nurse-practitioners.html">gastroenterology continuing education for nurse practitioners</a>
+											<a class="badge badge-secondary" href="/franklin-college-womens-basketball-coaching-staff.html">franklin college womens basketball coaching staff</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the ideal blog.  Our site provides you with hints for viewing the maximum quality video and image content, hunt and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1488557277997568" data-lightbox="roadtrip" data-title="The Va Handbook Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1488557277997568" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY5GcIdtA7DZsRHAms637CZicJ9Pt6aNzxYg';" alt="The Va Handbook Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Va Handbook Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="G5NnvBzwYNwBAM" data-lightbox="roadtrip" data-title="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8855">
+											<img class="card-img v-image ads-img " src="G5NnvBzwYNwBAM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs3iLE_-5tn7RTj1iOAXbQb2_g4ZKGOAgEwA';" alt="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8855">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8855</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="EZKZTzE-GyajxM" data-lightbox="roadtrip" data-title="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 545 Ftype 2">
+											<img class="card-img v-image ads-img " src="EZKZTzE-GyajxM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrzYQF40Rn21X56YakLuQgt0iEi73JLRoYw';" alt="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 545 Ftype 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vapubs Viewpublication Asp Pub Id 545 Ftype 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/4b/b2/c94bb204d62ac251e6c2d8aad88cab44.jpg" data-lightbox="roadtrip" data-title="Verso Competitive Events Handbook For Va Hosa 2015 Medical Careers Education College Medical Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/4b/b2/c94bb204d62ac251e6c2d8aad88cab44.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPh36x0Ho08TXSG-5gCWPfOpwj5KNNS0u6Sw';" alt="Verso Competitive Events Handbook For Va Hosa 2015 Medical Careers Education College Medical Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Verso Competitive Events Handbook For Va Hosa 2015 Medical Careers Education College Medical Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="7iI1jPPd7jLHQM" data-lightbox="roadtrip" data-title="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 870 Ftype 2">
+											<img class="card-img v-image ads-img " src="7iI1jPPd7jLHQM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_olIASQReNjlYMfZPQmZXCWifO0rQC6C7gQ';" alt="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 870 Ftype 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vapubs Viewpublication Asp Pub Id 870 Ftype 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.benefits.va.gov/GIBILL/images/buttons/SCOTraininglogoandbutton.PNG" data-lightbox="roadtrip" data-title="School Certifying Official Sco Training Education And Training">
+											<img class="card-img v-image ads-img " src="https://www.benefits.va.gov/GIBILL/images/buttons/SCOTraininglogoandbutton.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXAb5kc2Liy9qzth0W7X9oKtu8Wpmk2ZKkPw';" alt="School Certifying Official Sco Training Education And Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">School Certifying Official Sco Training Education And Training</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/1c/34/df/1c34df342cd9dc08284556e1f2855d91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXAb5kc2Liy9qzth0W7X9oKtu8Wpmk2ZKkPw';" alt="School Certifying Official Sco Training Education And Training">
+										<div class="card-body">
+						<h3 class="h5"><b>As the SAA the Division provides occupation evaluation and approval services oversight and monitors veteran apprentice training programs and provides technical assistance to sponsorsemployers.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va education handbook</strong>. 
+								
+																	These laws give VA temporary authority to pay education benefits and Monthly Housing Allowance MHA payments to GI Bill students at the resident rate when their programs are converted to online learning solely due to COVID-19 until December 21 2021. 
+																	This means if you sign up using my link then Ill receive a small fee for referring you. 
+																	2 The Foundry St Georges Mews Brighton East Sussex BN1 4EU. 
+																	If you qualify apply for VA education and training benefits online in person or request an application over the phone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The information contained in this handbook is not an exhaustive collection of all information related to veterans education benefits programs. 
+																	This contact method is. 
+																	Ask us a Question - Get an answer in four to five working days. 
+																	Certification instructions in this handbook are based on the use of VA -ONCE and include general information about the program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Clinical Training at the VA 7 How May We Help You. 
+																	VA education benefits help Veterans service members and their qualified family members with needs like paying college tuition finding the right school or training program and getting career counseling. 
+																	I subscribed to Jos newsletters and then I eventually bought the course - it has been a game changer. 
+																	You can also search for answers to frequently asked questions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans Affairs VA as the State Approving Agency SAA for VA Education Benefits for veterans participating in Apprenticeship. 
+																	The Handbook for Students Utilizing Veterans Education enefits is designed to assist those students utilizing some type of veterans education benefit. 
+																	VA Responsibilities 7 Unit and Student Responsibilities 7-8 Keeping Our Veterans Safe 9 Know Your Role in Safety 10 COVID-19 Precautions 10 COVID-19 Infection Prevention and PPE Usage 11 COVID. 
+																	Please note that I only recommend products I use myself or have tried and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This handbook is a collaboration of the three Regional Processing Offices and Education Service and is intended to be the official source of information for VA Certifying Officials. 
+																	This Handbook is a collaboration of the three Regional Processing Offices and Education Service and is intended to be the official source of information for VA Certifying Officials. 
+																	Section 3 - Primary schools. 
+																	Added form submission. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Section 4 - Post-primary schedule of accommodation update - List of changes - From 1 March 2014. 
+																	Specifcally for information about COVID-19 and how it afects VA health care and beneft services visit our coronavirus. 
+																	Section 1 - Procedures. 
+																	This Veterans Health Administration VHA Handbook provides specific direction and procedures related to the operation of the educational assistance program at Department of Veterans Affairs VA health care facilities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Originally these special COVID-19 laws were in effect from March 1 to December 21 2020. 
+																	Updated forms and removed forms no longer in use. 
+																	Specifically the Education Debt. 
+																	Handbook for Clinical Trainees Page 1 062020 Handbook for Clinical Faculty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Section 2 - Nursery schools. 
+																	I have 3 children and it took me forever to set up but Im glad I did it. 
+																	Learn how to apply for and manage the education and training benefits youve earned. 
+																	Recommended by Joanne Munro from The VA Handbook these useful resources tools and apps will help you set up and run a successful Virtual Assistant business. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However in the fall of 2020 PL 116-154 extended. 
+																	The 2020 Federal Benefts Handbook for Veterans and Dependents provides information on benefts and services currently available by law and regulation. 
+																	Find trainings resources guides and information on GI Bill programs to support military-connected students. 
+																	Its so resourceful as you exchange ideas and help each other go through the journey like a family or sisterhood. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This on-line handbook is written for VA Certifying Officials and anyone at a school involved with certification of beneficiaries of VA education benefits. 
+																	Its really an excellent resource and I highly recommend that you check it out. 
+																	The VA Handbook Ltd is a company registered in England and Wales with Company Number 1119884. 
+																	I followed the VA Handbook website for a long time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs VA NonProfit Research and Education Corporations Authorized by Title 38 USC. 
+																	VAT No 236 465 787 Registered Office. 
+																	Resources for schools is a one-stop shop for School Certifying Officials SCOs and school administrators assisting students who are using their VA benefits to pursue education and training programs. 
+																	SUMMARY OF CONTENTSMAJOR CHANGESThis handbook sets forth mandatory VA procedures on employee development. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Certification of beneficiaries of VA education benefits. 
+																	However keep in mind that Joanne is in the UK so some of the information may be related to that region. 
+																	Published 11 March 2014 Last updated 17 April 2019 show all updates. 
+																	Section 4 - Secondary schools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Meet Your Education Contacts 5 Campus Map Parking 6 Getting Started. 
+																	Call us at 888-GIBILL-1 888-442-4551 between 7 am. 
+																	Sections 7361 Through 7366 14RD - Research and Development 04272016. 
+																	VA -ONCE is a VA Internet. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This change establishes procedures for the reimbursement of continuing professional education expenses for full-time board certified physicians and dentists. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="BByPKCkkfsLd0M" data-lightbox="roadtrip" data-title="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 1053 Ftype 2">
+											<img class="card-img v-image ads-img " src="BByPKCkkfsLd0M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxjgf2QTbhIYZIRyZboBAqEJ1bG7voo7n4mw';" alt="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 1053 Ftype 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vapubs Viewpublication Asp Pub Id 1053 Ftype 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www2.virginia.edu/registrar/img_ww/image001.jpg" data-lightbox="roadtrip" data-title="Ureg Wahoo Warrior Handbook">
+											<img class="card-img v-image ads-img " src="https://www2.virginia.edu/registrar/img_ww/image001.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUkRi6OfN9koV5jNeWPkqru8rb0lHUYCqg6A';" alt="Ureg Wahoo Warrior Handbook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ureg Wahoo Warrior Handbook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1c/34/df/1c34df342cd9dc08284556e1f2855d91.jpg" data-lightbox="roadtrip" data-title="This List Will Help You Figure Out What Va Services To Offer Virtual Assistant Jobs Virtual Assistant Business Virtual Assistant Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1c/34/df/1c34df342cd9dc08284556e1f2855d91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjoQSt0Q51mIXN60RLmG9FN8uctA_tuLr5FQ';" alt="This List Will Help You Figure Out What Va Services To Offer Virtual Assistant Jobs Virtual Assistant Business Virtual Assistant Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This List Will Help You Figure Out What Va Services To Offer Virtual Assistant Jobs Virtual Assistant Business Virtual Assistant Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="X8929wHifyVW_M" data-lightbox="roadtrip" data-title="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 1736">
+											<img class="card-img v-image ads-img " src="X8929wHifyVW_M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUTPQYIFl1Q9bBRUR0gN7JcDBUdVdXfi1Y_w';" alt="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 1736">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 1736</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="XCfMBU-jrkBwwM" data-lightbox="roadtrip" data-title="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8794">
+											<img class="card-img v-image ads-img " src="XCfMBU-jrkBwwM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwjf_oZ3cTdoigwtAvE6eQ9oOg8GHAnJzTvQ';" alt="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8794">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8794</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="qk-FTaCe13RZ6M" data-lightbox="roadtrip" data-title="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8512">
+											<img class="card-img v-image ads-img " src="qk-FTaCe13RZ6M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwa8SzF1zoh6F8rgHpyxkKO6DvohDDJcDneQ';" alt="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8512">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8512</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/9e/13/839e13b76309b14cecd25b2d124a4add.png" data-lightbox="roadtrip" data-title="30 Days To Va Virtual Assistant Virtual Assistant Business Social Media Schedule">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/9e/13/839e13b76309b14cecd25b2d124a4add.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3eDoCOZdA89OPAwTlZoCFD_ZT_g5ZQolSzw';" alt="30 Days To Va Virtual Assistant Virtual Assistant Business Social Media Schedule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Days To Va Virtual Assistant Virtual Assistant Business Social Media Schedule</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="nBFEbP3NSeJtUM" data-lightbox="roadtrip" data-title="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 5378">
+											<img class="card-img v-image ads-img " src="nBFEbP3NSeJtUM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-cfttit2MisMgH0hGegLTi3UJ0NIHPdMAFg';" alt="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 5378">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 5378</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Cb0LJc3z8ao_wM" data-lightbox="roadtrip" data-title="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8816">
+											<img class="card-img v-image ads-img " src="Cb0LJc3z8ao_wM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyC0syp0qJWoP3Z7uxK9qWFwsHE9Ez8ltprA';" alt="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8816">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 8816</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="2_pItrLqTdptfM" data-lightbox="roadtrip" data-title="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 810 Ftype 2">
+											<img class="card-img v-image ads-img " src="2_pItrLqTdptfM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGhagqDjQXIqk2tF3kcZ7xCOO-cNmsJyTkaQ';" alt="Https Www Va Gov Vapubs Viewpublication Asp Pub Id 810 Ftype 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vapubs Viewpublication Asp Pub Id 810 Ftype 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a9/c1/52/a9c152c2811c9c6fcd9b4f4b8740c54a.jpg" data-lightbox="roadtrip" data-title="The Compensation And Benefits Handbook Compensation Benefit United States Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a9/c1/52/a9c152c2811c9c6fcd9b4f4b8740c54a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDnLkXQdAr_dVGYGqXQ5gEW2WEfHtDibi19Q';" alt="The Compensation And Benefits Handbook Compensation Benefit United States Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Compensation And Benefits Handbook Compensation Benefit United States Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/36/d3/b036d3ec9487f3da90bb53a0d7818dc6.jpg" data-lightbox="roadtrip" data-title="Ready To Hire A Va But Not Sure How Well Here S How Virtual Assistant Virtual Jobs Virtual Assistant Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/36/d3/b036d3ec9487f3da90bb53a0d7818dc6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf9HZVypurdWBWldg6dc4wTjiEdKp_aMSrFA';" alt="Ready To Hire A Va But Not Sure How Well Here S How Virtual Assistant Virtual Jobs Virtual Assistant Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ready To Hire A Va But Not Sure How Well Here S How Virtual Assistant Virtual Jobs Virtual Assistant Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="zQu1_fYH0wdc9M" data-lightbox="roadtrip" data-title="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 3267">
+											<img class="card-img v-image ads-img " src="zQu1_fYH0wdc9M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtqX7uXPqMVOn8b2wnMTIRgPLZaIyA-dyi7A';" alt="Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 3267">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Vhapublications Viewpublication Asp Pub Id 3267</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/air-force-reserve-gi-bill-transfer.html">Air Force Reserve Gi Bill Transfer</a></li>
+													<li class="list-group-item"><a href="/911-gi-bill-bah-requirements.html">911 Gi Bill Bah Requirements</a></li>
+													<li class="list-group-item"><a href="/9-letter-easy-words.html">9 Letter Easy Words</a></li>
+													<li class="list-group-item"><a href="/acp-va-chapter-meeting.html">Acp Va Chapter Meeting</a></li>
+													<li class="list-group-item"><a href="/911-post-gi-bill-transfer.html">911 Post Gi Bill Transfer</a></li>
+													<li class="list-group-item"><a href="/9-gig.html">9 Gig</a></li>
+													<li class="list-group-item"><a href="/ac-nice-college-guy-de-maupassant.html">Ac Nice College Guy De Maupassant</a></li>
+													<li class="list-group-item"><a href="/age-limit-for-gi-bill-for-dependents.html">Age Limit For Gi Bill For Dependents</a></li>
+													<li class="list-group-item"><a href="/air-force-montgomery-gi-bill.html">Air Force Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/air-force-reserve-gi-bill-benefits.html">Air Force Reserve Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/9gi-shades.html">9gi Shades</a></li>
+													<li class="list-group-item"><a href="/9gi-redken.html">9gi Redken</a></li>
+													<li class="list-group-item"><a href="/9-words-letter.html">9 Words Letter</a></li>
+													<li class="list-group-item"><a href="/911-gi-bill-tuition-assistance.html">911 Gi Bill Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/911-gi-bill-forever.html">911 Gi Bill Forever</a></li>
+													<li class="list-group-item"><a href="/911-gi-bill-requirements.html">911 Gi Bill Requirements</a></li>
+													<li class="list-group-item"><a href="/911-gi-bill-login.html">911 Gi Bill Login</a></li>
+													<li class="list-group-item"><a href="/9-gins-of-celtic.html">9 Gins Of Celtic</a></li>
+													<li class="list-group-item"><a href="/9-gifts-of-the-holy-spirit-pdf.html">9 Gifts Of The Holy Spirit Pdf</a></li>
+													<li class="list-group-item"><a href="/911-gi-bill-qualifications.html">911 Gi Bill Qualifications</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

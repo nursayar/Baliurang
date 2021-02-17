@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Montgomery Bill Texas - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Montgomery Bill Texas",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/34/b7/5a/34b75a519d2e548c4d30d958c72995db.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=montgomery+bill+texas",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Montgomery Bill Texas</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Find Bill Montgomerys phone number address and email on Spokeo the leading people search directory for contact information and public records. Request are due by mid-August and failure to. The Montgomery GI Bill program MGIB provides up to 36 months of education benefits. <br>				
+			</p>
+										<a class="badge badge-success" href="/virginia-tuition-assistance-grant-eligibility.html">virginia tuition assistance grant eligibility</a>
+											<a class="badge badge-warning" href="/veterans-education-assistance-for-dependents.html">veterans education assistance for dependents</a>
+											<a class="badge badge-light" href="/veterans-disability-education-benefits-dependents.html">veterans disability education benefits dependents</a>
+											<a class="badge badge-warning" href="/virginia-education-benefits-for-veterans.html">virginia education benefits for veterans</a>
+											<a class="badge badge-success" href="/virginia-department-of-education-licensure-eligibility-requirements.html">virginia department of education licensure eligibility requirements</a>
+											<a class="badge badge-secondary" href="/virginia-department-of-education-organizational-chart.html">virginia department of education organizational chart</a>
+											<a class="badge badge-light" href="/veterans-gi-bill-login.html">veterans gi bill login</a>
+											<a class="badge badge-success" href="/veterans-gi-bill-housing-allowance.html">veterans gi bill housing allowance</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to visit the ideal blog.  Our website provides you with hints for seeing the highest quality video and image content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to view.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/7d/71/1a7d71d65a95c2b1711e7f29e2d69588.jpg" data-lightbox="roadtrip" data-title="Bill Montgomery Arkansas Razorbacks 1969 Arkansas Razorback Qb Bill Montgomery Throws Pass In Sugar Bowl Arkansas Razorbacks Arkansas Football Cotton Bowl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/7d/71/1a7d71d65a95c2b1711e7f29e2d69588.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_NB-_5KechUh4fcGJ-Sur4nS89mLrskV43g';" alt="Bill Montgomery Arkansas Razorbacks 1969 Arkansas Razorback Qb Bill Montgomery Throws Pass In Sugar Bowl Arkansas Razorbacks Arkansas Football Cotton Bowl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Montgomery Arkansas Razorbacks 1969 Arkansas Razorback Qb Bill Montgomery Throws Pass In Sugar Bowl Arkansas Razorbacks Arkansas Football Cotton Bowl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/3d/89/47/3d89478b6bf2596f3e1f1615072244ab.jpg" data-lightbox="roadtrip" data-title="Image Result For Arkansas Football Bill Montgomery Arkansas Razorbacks Football Arkansas Football Arkansas Razorbacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/3d/89/47/3d89478b6bf2596f3e1f1615072244ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXYlQmE6u2vAdvTYHTKXxZ2Q55iEGYZa-qOQ';" alt="Image Result For Arkansas Football Bill Montgomery Arkansas Razorbacks Football Arkansas Football Arkansas Razorbacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Arkansas Football Bill Montgomery Arkansas Razorbacks Football Arkansas Football Arkansas Razorbacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/4f/27/464f2754c725ceee1632ec49a0bd7bf9.jpg" data-lightbox="roadtrip" data-title="Bill Montgomery Arkansas Football Arkansas Razorbacks Football Arkansas Football Arkansas Razorbacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/4f/27/464f2754c725ceee1632ec49a0bd7bf9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuvILyJkbzLK0LZXmaGEtFLUaNa9tXWEVHWQ';" alt="Bill Montgomery Arkansas Football Arkansas Razorbacks Football Arkansas Football Arkansas Razorbacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Montgomery Arkansas Football Arkansas Razorbacks Football Arkansas Football Arkansas Razorbacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/65/ad/3265ad7fbe62b7baaa0152f0e8f7157c.jpg" data-lightbox="roadtrip" data-title="Bill Montgomery Arkansas Football Qb Bill Montgomery Of Arkansas Passes V Texas 1969 Jpg Arkansas Razorbacks Football Arkansas Football Cotton Bowl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/65/ad/3265ad7fbe62b7baaa0152f0e8f7157c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbGNcTaP1Jtg8HY4IU2aPQwCCIAADtvVyn7w';" alt="Bill Montgomery Arkansas Football Qb Bill Montgomery Of Arkansas Passes V Texas 1969 Jpg Arkansas Razorbacks Football Arkansas Football Cotton Bowl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Montgomery Arkansas Football Qb Bill Montgomery Of Arkansas Passes V Texas 1969 Jpg Arkansas Razorbacks Football Arkansas Football Cotton Bowl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/25/ee/c8/25eec8c53f1598167e5e5c0d0345ed64.jpg" data-lightbox="roadtrip" data-title="The Snakes Were Designed By Bill Montgomery A Texas Artist And A Herpetologist An Expert In Reptiles Sulli Garden Crafts Cob House Installation Architecture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/25/ee/c8/25eec8c53f1598167e5e5c0d0345ed64.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb3et8ifatytlh76PCgVCnu6u7GhV_Yvn8ag';" alt="The Snakes Were Designed By Bill Montgomery A Texas Artist And A Herpetologist An Expert In Reptiles Sulli Garden Crafts Cob House Installation Architecture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Snakes Were Designed By Bill Montgomery A Texas Artist And A Herpetologist An Expert In Reptiles Sulli Garden Crafts Cob House Installation Architecture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/41/79/0d41797e9f58450a977f23d1f2236da2.jpg" data-lightbox="roadtrip" data-title="The Texas Rangers Columbia 1951 One Sheet 27 Western Movie Western Film Texas Rangers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/41/79/0d41797e9f58450a977f23d1f2236da2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY5NnlI2NPEnuv1G3JY5BeWuPVeGjPH6hJSQ';" alt="The Texas Rangers Columbia 1951 One Sheet 27 Western Movie Western Film Texas Rangers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Texas Rangers Columbia 1951 One Sheet 27 Western Movie Western Film Texas Rangers</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/80/46/e7/8046e734a8dc25ecc738fbd5dba591dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY5NnlI2NPEnuv1G3JY5BeWuPVeGjPH6hJSQ';" alt="The Texas Rangers Columbia 1951 One Sheet 27 Western Movie Western Film Texas Rangers">
+										<div class="card-body">
+						<h3 class="h5"><b>See the Latest News tab below for up to date information on the Citys response to COVID-19.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Montgomery bill texas</strong>. 
+								
+																	His personality was that of someone who carried himself with confidence. 
+																	December 15 2020 Governor Abbott Lifts Temporary Waiver of Vehicle. 
+																	Alcoholic Beverage License And Permits. 
+																	Bill Montgomery in Texas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tax Statement and Online Payment Delinquent Tax P I Property Tax Information Property Tax FAQ Tax Rate Information Tax Sales Tax Trust Properties Taxpayer Rights and Remedies. 
+																	Shepperd had established the first. 
+																	Join Facebook to connect with Billy Montgomery and others you may know. 
+																	Click the image below to see a detailed PDF explaining the information on the tax statement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Texas Constitution requires the Tax Assessor-Collector office for counties with more than 10000 in population. 
+																	His choices for which college to play football came down Arkansas Texas or Alabama. 
+																	Montgomery GI Bill Active Duty MGIB-AD If you served at least 2 years on active duty find out if you qualify for benefits under the Montgomery GI Bill Active Duty program. 
+																	Select the best result to find their address phone number relatives and public records. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Conroe Texas 77301 936 539 - 7897. 
+																	Payments are made directly to the. 
+																	The Montgomery GI Bill MGIB is a benefit awarded to military members and veterans and is designed to assist with the financial needs associated with education and training costs. 
+																	Facebook gives people the power. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Advertisement for the sale of lots in the Town of Montgomery Texas from the July 8 1837 edition of the Telegraph and Texas Register newspaper published in Houston Texas. 
+																	It starts with you. 
+																	Bill Montgomery in Texas. 
+																	The City of Montgomery provides LargeHeavy Trash Days for its residents the first weekend of each March June September and December. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Tax Office its officers agents employees and representatives shall not be liable for the information posted on the Tax Office Website in connection with any actions losses damages claims or liability in any way related to use of. 
+																	Learn more about financial and wealth management services from Bill Montgomery a Merrill financial advisor in Kingwood TX 77339. 
+																	Below is also a link to Read More. 
+																	View the profiles of people named Billy Montgomery. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	COVID-19 update Please see the attached press releases for information on the City and Countys response to COVID-19 in Montgomery County. 
+																	Montgomery GI Bill Selected Reserve MGIB-SR. 
+																	Bank of America Coronavirus Resource Center See details. 
+																	This benefit may be used for degree and certificate programs flight training apprenticeshipon-the-job training and correspondence courses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Boat. 
+																	State of Texas Property Tax Code. 
+																	Click here for CDC Updates. 
+																	Jessica Shorten MONTGOMERY TX The City of Brady may be the Heart of Texas but the City of Montgomery lays claim to an equally important title Birthplace of the Texas flag Atop buildings homes and businesses the Texas flag is a common staple in the City. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Texas Parks Wildlife. 
+																	Remedial deficiency and refresher courses may be approved under certain circumstances. 
+																	Shepperd in July 1837 on 200 acres of land that had originally been part of the John Corner League. 
+																	The Montgomery County Tax Office requires mortgage companies request their clients tax statement each year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2020 Taxes Payment Deadline. 
+																	Vessel. 
+																	We found 28 records for Bill Montgomery in Phoenix San Antonio and 22 other cities in Texas. 
+																	The town of Montgomery was founded in the middle of the Lake Creek Settlement by W. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	State of Texas Property Tax Code. 
+																	View the profiles of people named Bill Montgomery. 
+																	The Montgomery County Tax Office makes no representations as to the accuracy or reliability of any information accessed from its computer data base. 
+																	The Montgomery GI Bills worth is based on the current maximum payment and is awarded monthly when school is in session for up to 36 months 9 months per year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Large dumpsters will be provided at City Hall to dispose of large unwanted items approved by Waste Management between the hours of 8 am - 5 pm. 
+																	You must bring a utility bill or ID as proof of residency. 
+																	Turner High School in Carrollton Texas where he participated in every sport and even became student body president. 
+																	Tax statements are then generated and mailed to property owners andor mortgage companies using a consolidated tax bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Facebook gives people the. 
+																	William Bill Clevenger candidate for Montgomery Mayor stands beside a God Bless Texas sign with the Texas Flag. 
+																	Bill Montgomery in Texas Find contact information public records and much more. 
+																	Join Facebook to connect with Bill Montgomery and others you may know. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lookup Bills current home address in Texas relatives mobile phone number and email address. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/46/e7/8046e734a8dc25ecc738fbd5dba591dd.jpg" data-lightbox="roadtrip" data-title="Pawnee 1957 Stars George Montgomery Bill Williams Lola Albright Francis Mcdonald Dabbs Greer Kathlee Republic Pictures Old Western Movies Western Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/46/e7/8046e734a8dc25ecc738fbd5dba591dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTib88hnQhJZ1OAI8G-3lKx680NDjwEBVw2rA';" alt="Pawnee 1957 Stars George Montgomery Bill Williams Lola Albright Francis Mcdonald Dabbs Greer Kathlee Republic Pictures Old Western Movies Western Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pawnee 1957 Stars George Montgomery Bill Williams Lola Albright Francis Mcdonald Dabbs Greer Kathlee Republic Pictures Old Western Movies Western Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/a1/95/d6a195f587c90b4441bdd3c07d2b953b.jpg" data-lightbox="roadtrip" data-title="1929 Montgomery Ward Co Beeville Only In Texas Texas Homes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/a1/95/d6a195f587c90b4441bdd3c07d2b953b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1AkW--T68gjoMzy2AiYhKbY-vTCX2x1dFJg';" alt="1929 Montgomery Ward Co Beeville Only In Texas Texas Homes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1929 Montgomery Ward Co Beeville Only In Texas Texas Homes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/85/e5/3185e55d9efe44140230699d8ee12585.png" data-lightbox="roadtrip" data-title="Frequently Asked Questions In Divorce Cases In Harris And Montgomery Counties Texas Divorce Case This Or That Questions Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/85/e5/3185e55d9efe44140230699d8ee12585.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj71u1GvLB36Iw_TH_ByyfJkYmW4XBaXAGDg';" alt="Frequently Asked Questions In Divorce Cases In Harris And Montgomery Counties Texas Divorce Case This Or That Questions Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Frequently Asked Questions In Divorce Cases In Harris And Montgomery Counties Texas Divorce Case This Or That Questions Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/6d/f4/8e6df4b7484fb399efd52c44b1d4a7fc.jpg" data-lightbox="roadtrip" data-title="Montgomery County Texas Courthouses Montgomery County Texas County Montgomery Texas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/6d/f4/8e6df4b7484fb399efd52c44b1d4a7fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv6lBjQ6F8MG3PA8BMHPaqzxBaOnvQCqLuSw';" alt="Montgomery County Texas Courthouses Montgomery County Texas County Montgomery Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Montgomery County Texas Courthouses Montgomery County Texas County Montgomery Texas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/4b/60/d24b602eff3ebba18413e337fcac2af0.jpg" data-lightbox="roadtrip" data-title="Pin By Biankii Maii On Back In 30th Birthday Ideas For Women Birthday Poster 30th Birthday Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/4b/60/d24b602eff3ebba18413e337fcac2af0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObGbNkdYjRgD0g2SqLzP2JQhh7Wjo0FsolQ';" alt="Pin By Biankii Maii On Back In 30th Birthday Ideas For Women Birthday Poster 30th Birthday Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Biankii Maii On Back In 30th Birthday Ideas For Women Birthday Poster 30th Birthday Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/53/df/3f53dfcf1a8e7d65366a9cda9e4041cd.jpg" data-lightbox="roadtrip" data-title="See Below Our Multiple Scholarships If You Join Active Duty At Least For 3 Years 9 11 Gi Bill 100 In Army Recruitment Tuition Assistance Education College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/53/df/3f53dfcf1a8e7d65366a9cda9e4041cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7mUlw7hKPcH_f06Ooomk0mtxn7vSAxgF_xQ';" alt="See Below Our Multiple Scholarships If You Join Active Duty At Least For 3 Years 9 11 Gi Bill 100 In Army Recruitment Tuition Assistance Education College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">See Below Our Multiple Scholarships If You Join Active Duty At Least For 3 Years 9 11 Gi Bill 100 In Army Recruitment Tuition Assistance Education College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/9d/55/159d5532e440efcdc74b9815efb5ec72.jpg" data-lightbox="roadtrip" data-title="Pin On Wps Arkansas Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/9d/55/159d5532e440efcdc74b9815efb5ec72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQueBWtSyYVNnaQwPTfLwG0NUZRA3qNg-RYg';" alt="Pin On Wps Arkansas Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wps Arkansas Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/87/17/be8717c76966258ca7fc3234d8d684cd.png" data-lightbox="roadtrip" data-title="The Montgomery In River Oaks Billclarkhomes House Styles New Home Builders House Plans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/87/17/be8717c76966258ca7fc3234d8d684cd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnRQe3Sugau6QcYsTJ6F2MPIxXRYe_UBMfXg';" alt="The Montgomery In River Oaks Billclarkhomes House Styles New Home Builders House Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Montgomery In River Oaks Billclarkhomes House Styles New Home Builders House Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/b7/5a/34b75a519d2e548c4d30d958c72995db.jpg" data-lightbox="roadtrip" data-title="Last Week Your Texas Guard Assisted Communities In Southern Texas In The Wake Of Hurricane Hanna By Distributing Water Tuition Assistance Gi Bill Home Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/b7/5a/34b75a519d2e548c4d30d958c72995db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlTMZCVXlzXti8gwcBauryIeNuCsosGpkxdQ';" alt="Last Week Your Texas Guard Assisted Communities In Southern Texas In The Wake Of Hurricane Hanna By Distributing Water Tuition Assistance Gi Bill Home Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Last Week Your Texas Guard Assisted Communities In Southern Texas In The Wake Of Hurricane Hanna By Distributing Water Tuition Assistance Gi Bill Home Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/5e/bd/4e5ebd7c56d171449fb77a9cdd41fd35.jpg" data-lightbox="roadtrip" data-title="Bill Wood Aerial Fort Worth Fort Worth Fort New Downtown">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/5e/bd/4e5ebd7c56d171449fb77a9cdd41fd35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ0S5VrAJxK-b5GCm0xHcC-9iSDE7S8f6JQA';" alt="Bill Wood Aerial Fort Worth Fort Worth Fort New Downtown">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Wood Aerial Fort Worth Fort Worth Fort New Downtown</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/66/c6/ae66c67e129d2f4dd7ff8353c3d7ec61.jpg" data-lightbox="roadtrip" data-title="Buildings Of Montgomery County Texas Texas History Conroe Texas Texas Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/66/c6/ae66c67e129d2f4dd7ff8353c3d7ec61.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPa0ETULXC6MCyTQfV88L5nRlMmIYezdOARQ';" alt="Buildings Of Montgomery County Texas Texas History Conroe Texas Texas Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buildings Of Montgomery County Texas Texas History Conroe Texas Texas Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/1b/22/131b229b89d90d40077ab8f5bcd65125.jpg" data-lightbox="roadtrip" data-title="Montgomery Wards At Big Town Mall Dallas Shopping Dallas Fort Worth Old Building">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/1b/22/131b229b89d90d40077ab8f5bcd65125.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnNAz3fgiPjkrLjQ3KIf4KubUDTXq-v2PLOA';" alt="Montgomery Wards At Big Town Mall Dallas Shopping Dallas Fort Worth Old Building">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Montgomery Wards At Big Town Mall Dallas Shopping Dallas Fort Worth Old Building</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/ba/d8/90bad80c42a27b41f0ac77e7e0850103.jpg" data-lightbox="roadtrip" data-title="Guyler Hamblen Retiring The Post Office Sign In Fostoria Texas Only In Texas Texas History Conroe Texas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/ba/d8/90bad80c42a27b41f0ac77e7e0850103.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIZkELzqhvRoLjoAIb6EQlM0LJF5H_0gJowA';" alt="Guyler Hamblen Retiring The Post Office Sign In Fostoria Texas Only In Texas Texas History Conroe Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guyler Hamblen Retiring The Post Office Sign In Fostoria Texas Only In Texas Texas History Conroe Texas</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-much-is-the-gi-bill-worth.html">How Much Is The Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/how-tall-are-womens-college-basketball-players.html">How Tall Are Womens College Basketball Players</a></li>
+													<li class="list-group-item"><a href="/how-to-be-eligible-for-the-gi-bill.html">How To Be Eligible For The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-post-911-gi-bill-cover-per-semester.html">How Much Does The Post 911 Gi Bill Cover Per Semester</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-gi-bill-pay-for-a-masters.html">How Much Does The Gi Bill Pay For A Masters</a></li>
+													<li class="list-group-item"><a href="/how-much-time-is-left-on-my-gi-bill.html">How Much Time Is Left On My Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-post-911-benefits.html">How To Apply For Post 911 Benefits</a></li>
+													<li class="list-group-item"><a href="/how-much-is-army-gi-bill.html">How Much Is Army Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-many-veterans-use-the-post-911-gi-bill.html">How Many Veterans Use The Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-many-quarters-does-womens-college-basketball-play.html">How Many Quarters Does Womens College Basketball Play</a></li>
+													<li class="list-group-item"><a href="/how-much-is-post-911-gi-bill-worth.html">How Much Is Post 911 Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/how-much-of-my-gi-bill-is-left.html">How Much Of My Gi Bill Is Left</a></li>
+													<li class="list-group-item"><a href="/how-many-womens-college-gymnastics-teams-are-there.html">How Many Womens College Gymnastics Teams Are There</a></li>
+													<li class="list-group-item"><a href="/how-much-does-post-911-gi-bill-pay.html">How Much Does Post 911 Gi Bill Pay</a></li>
+													<li class="list-group-item"><a href="/how-much-is-chapter-1606-gi-bill.html">How Much Is Chapter 1606 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-build-a-yugioh-deck-2020.html">How To Build A Yugioh Deck 2020</a></li>
+													<li class="list-group-item"><a href="/how-much-post-911-gi-bill-do-i-have-left.html">How Much Post 911 Gi Bill Do I Have Left</a></li>
+													<li class="list-group-item"><a href="/how-much-money-is-the-gi-bill-worth.html">How Much Money Is The Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/how-much-is-housing-allowance-for-gi-bill.html">How Much Is Housing Allowance For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-911-gi-bill.html">How To Apply For 911 Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

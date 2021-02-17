@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Womens Basketball Michigan State - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Womens Basketball Michigan State",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/af/bf/d9/afbfd9d53750efa6d3502700f09b009c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+womens+basketball+michigan+state",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Womens Basketball Michigan State</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">These will be quick and to-the-point top-10 lists. The Razorbacks shoot 71 percent from the stripe making 196 free throws per game. Another option in the backcourt will be available for Suzy Merchant and the Michigan State womens basketball program this season. <br>				
+			</p>
+										<a class="badge badge-warning" href="/gi-university-of-chicago.html">gi university of chicago</a>
+											<a class="badge badge-warning" href="/gifts-for-college-age-guys.html">gifts for college age guys</a>
+											<a class="badge badge-warning" href="/gift-basket-ideas-for-college-students.html">gift basket ideas for college students</a>
+											<a class="badge badge-success" href="/gi-postgi.html">gi postgi</a>
+											<a class="badge badge-light" href="/gift-college-address.html">gift college address</a>
+											<a class="badge badge-danger" href="/gifts-college-students-need.html">gifts college students need</a>
+											<a class="badge badge-dark" href="/gick-ner-30-kg-covid.html">gick ner 30 kg covid</a>
+											<a class="badge badge-light" href="/giampietros-collegeville.html">giampietros collegeville</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to visit the ideal site.  Our website gives you hints for seeing the highest quality video and image content, search and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to see.  It is also possible to bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/6f/53/f86f5334be28fe3e0223dcfa9abc34cc.jpg" data-lightbox="roadtrip" data-title="2012 13 Msu Spartans Women S Basketball Seniors Womens Basketball Msu Basketball Msu Spartans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/6f/53/f86f5334be28fe3e0223dcfa9abc34cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTQRThuvVs2wnhzECHZ5gh9bqPStiqSc2zww';" alt="2012 13 Msu Spartans Women S Basketball Seniors Womens Basketball Msu Basketball Msu Spartans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2012 13 Msu Spartans Women S Basketball Seniors Womens Basketball Msu Basketball Msu Spartans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/0c/95/a70c95a9265c71463cb66c06304c850b.jpg" data-lightbox="roadtrip" data-title="Michigan State Fans Turn Out For Women S Basketball Win Over Hampton Michigan State Fan Womens Basketball College Cheerleading">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/0c/95/a70c95a9265c71463cb66c06304c850b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9zNBLFSRnbUi2U1umfDBEElcBLjRJihg0og';" alt="Michigan State Fans Turn Out For Women S Basketball Win Over Hampton Michigan State Fan Womens Basketball College Cheerleading">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michigan State Fans Turn Out For Women S Basketball Win Over Hampton Michigan State Fan Womens Basketball College Cheerleading</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/0d/b5/6d0db5af1a62f10547cf7ce7e3713f0b.jpg" data-lightbox="roadtrip" data-title="11 14 13 Msu 102 Canisius 54 Womens Basketball Msu Michigan State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/0d/b5/6d0db5af1a62f10547cf7ce7e3713f0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8PCUL25abwxKMck_TgJ2fVEMekqu4bkAng';" alt="11 14 13 Msu 102 Canisius 54 Womens Basketball Msu Michigan State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 14 13 Msu 102 Canisius 54 Womens Basketball Msu Michigan State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/df/59/86/df5986ab30b152eeeada9d34b06f4bf2--the-spartans-ncaa-tournament.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Receives No 5 Seed In Ncaa Tournament Michigan State University Athletics Ncaa Tournament Womens Basketball Michigan State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/df/59/86/df5986ab30b152eeeada9d34b06f4bf2--the-spartans-ncaa-tournament.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvFMnMLzHEMTKv-0KFoSud6aVEKe4PLrQF6A';" alt="Women S Basketball Receives No 5 Seed In Ncaa Tournament Michigan State University Athletics Ncaa Tournament Womens Basketball Michigan State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Receives No 5 Seed In Ncaa Tournament Michigan State University Athletics Ncaa Tournament Womens Basketball Michigan State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/af/c7/67afc78148448db3b937e5bee9031bcd.jpg" data-lightbox="roadtrip" data-title="Embarrassing Defensive Effort Dooms Michigan State Women S Hoops In Loss To Michigan Womens Basketball Michigan State Michigan Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/af/c7/67afc78148448db3b937e5bee9031bcd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7k4KDFToKYUUG4T3z2JVMDDou2GPyGi6iQ';" alt="Embarrassing Defensive Effort Dooms Michigan State Women S Hoops In Loss To Michigan Womens Basketball Michigan State Michigan Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Embarrassing Defensive Effort Dooms Michigan State Women S Hoops In Loss To Michigan Womens Basketball Michigan State Michigan Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/7e/99/7e7e993ee103b6a2ba16b8ca0150e53b.jpg" data-lightbox="roadtrip" data-title="Michigan State S Shay Colley Right Moves To The Basket Past Indiana S Chanel Wilson During The First Quarter On M Womens Basketball Basketball Michigan State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/7e/99/7e7e993ee103b6a2ba16b8ca0150e53b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHtoWlxhMoaBxe87H9t7Qg48yh0wmXVmrAYA';" alt="Michigan State S Shay Colley Right Moves To The Basket Past Indiana S Chanel Wilson During The First Quarter On M Womens Basketball Basketball Michigan State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michigan State S Shay Colley Right Moves To The Basket Past Indiana S Chanel Wilson During The First Quarter On M Womens Basketball Basketball Michigan State</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/6d/0d/b5/6d0db5af1a62f10547cf7ce7e3713f0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHtoWlxhMoaBxe87H9t7Qg48yh0wmXVmrAYA';" alt="Michigan State S Shay Colley Right Moves To The Basket Past Indiana S Chanel Wilson During The First Quarter On M Womens Basketball Basketball Michigan State">
+										<div class="card-body">
+						<h3 class="h5"><b>Find out the latest on your favorite NCAAB players on.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa womens basketball michigan state</strong>. 
+								
+																	Their high-scoring 2019 Sweet 16 showdown. 
+																	Izzo refuses to accept a. 
+																	Transfer guard Janai Crooms will have a chance to contribute. 
+																	The university participates in the NCAAs Division I and in the Big Ten Conference in all varsity sports. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Missouri State ncaaW. 
+																	Basketball page for the Michigan State University Spartans. 
+																	6561 OT 7 Texas AM. 
+																	Michigan forward Naz Hillmons 50-point performance in a 81-77 loss at Ohio State on Thursday was the highest-scoring output -- men or women -- in program history. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DMitrik Trice led the way for Wisconsin with 29 points as they defeated Michigan State 85-76 for the first time in East Lansing since 2004. 
+																	Michigan State womens basketball has extended its pause through at least Monday after postponing its in-state rivalry game against No. 
+																	Its the first ranking for Michigan State in two years. 
+																	Heck it even led for nearly 18 minutes of the 40-minute fight. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	6355 15 Ohio State. 
+																	11 varsity sports for men and 12 for women. 
+																	NEW YORK AP A win over Oregon vaulted Michigan State into the womens AP Top 25. 
+																	Well do these every Monday during the season and Ill always lead with my pick for the team and player of the week. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Michigans Naz Hillmon on her 50 points and shoutout from LeBron. 
+																	Michigan State has 23 NCAA Division I-A varsity teams. 
+																	As Spartans extend pause. 
+																	23 on Monday a day after upsetting the then-third ranked Ducks 88-82. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This team does a great job attacking the basket and making their opponents pay at the free-throw line. 
+																	8177 OT 25 Washington State. 
+																	Profile New Featured Men Women Kids Sale Up to 0 Off Gift Cards Customize Shop By Sport All Shoes. 
+																	January 14 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Michigan State played top-10 Iowa on Wednesday down to the end. 
+																	Michigan State basketballs Tom Izzo cautious but thinks Big Ten NCAA tourneys will go on Chris Solari Detroit Free Press 1192021 These bugs have been underground for 17 years. 
+																	Team of the Week. 
+																	The Spartans enter the poll at No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Michigan Womens Basketball Yesterday at 903 AM A great conversation between Naz Hillmon Kim Barnes Arico and BTNs Christy Winters Scott about the Big Ten Equality Coalition. 
+																	North Carolina State 4. 
+																	They participate in the Big Ten Conference except fencing where until 1997 from the University founding MSU featured fencing as a varsity sport. 
+																	8678 14 Mississippi State. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Arkansas outscores its opponents by almost 22 points per game. 
+																	The universitys current interim athletic director is Bill Beekman following the resignation of Mark Hollis. 
+																	Michigan State 8-1 only had three votes from the 31-member national media panel last week. 
+																	Maybe it was a turning point maybe not. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mitchell LaytonGetty Images 19d. 
+																	1 OREGON STATE FALLS OUT OF WOMENS BASKETBALL AP TOP 25. 
+																	Womens Michigan State Spartans clothing is at the Official Online Store gear apparel collectibles and MSU merchandise for men women. 
+																	13 Michigan due. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Full Michigan State Spartans roster for the 2020-21 season including position height weight birthdate years of experience and college. 
+																	Michigan State Spartans Nike Womens 01 NCAA Mens Basketball Tournament Final Four. 
+																	Womens Michigan State Spartans clothing is at the Official Online Store of the. 
+																	DI Womens Basketball News. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 202021 NCAA Division I womens basketball season began in November 2020 and will end in April 2021. 
+																	2 NC State survive plus two major upsets to wrap up Week 9 of womens basketball. 
+																	Arkansas has a strong core in Chelsea Dungee Destiny. 
+																	Michigan State University has 29 varsity sports teams that compete under the Spartan nickname. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Spartans led by 12th-year head coach Suzy Merchant played their home games at the Breslin Center in East Lansing Michigan as members of the Big Ten Conference. 
+																	The 201819 Michigan State Spartans womens basketball team represented Michigan State University during the 201819 NCAA Division I womens basketball season. 
+																	Michigan State offers 14 varsity sports for men and 15 for women. 
+																	1 Louisville and No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Stanford falls in Week 10s Power 10. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/7b/71/997b7197934f316234938ddfbed4c7ce.jpg" data-lightbox="roadtrip" data-title="11 14 13 Msu 102 Canisius 54 Michigan State Womens Basketball Msu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/7b/71/997b7197934f316234938ddfbed4c7ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJzgbHwfz0bQVTJlFqx7ChmJeyg74PeVPgQ';" alt="11 14 13 Msu 102 Canisius 54 Michigan State Womens Basketball Msu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 14 13 Msu 102 Canisius 54 Michigan State Womens Basketball Msu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/9d/ec/5d9decdd321bd86620b1c635e2d1580e.jpg" data-lightbox="roadtrip" data-title="Msu 70 Nebraska 57 Womens Basketball Msu Spartans Spartans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/9d/ec/5d9decdd321bd86620b1c635e2d1580e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ENdN3-PRawRmDfxnr8V-aYnMYcn2hdwmjg';" alt="Msu 70 Nebraska 57 Womens Basketball Msu Spartans Spartans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msu 70 Nebraska 57 Womens Basketball Msu Spartans Spartans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/87/c9/0187c9c13bec713429f81da7edc71fc5.jpg" data-lightbox="roadtrip" data-title="Photos Michigan State Vs Michigan Women S Basketball Womens Basketball Michigan State Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/87/c9/0187c9c13bec713429f81da7edc71fc5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBCBzmUljDqSR_bJJrlTXF4spyuZU8ctjN5w';" alt="Photos Michigan State Vs Michigan Women S Basketball Womens Basketball Michigan State Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Michigan State Vs Michigan Women S Basketball Womens Basketball Michigan State Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/a6/5b/39a65b008d383a94e6d08d716fbadec4.jpg" data-lightbox="roadtrip" data-title="11 14 13 Msu 102 Canisius 54 Photo Womens Basketball Msu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/a6/5b/39a65b008d383a94e6d08d716fbadec4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPFDdVa4hkJuiy-KE9xD118qGh8Cx23UGFcw';" alt="11 14 13 Msu 102 Canisius 54 Photo Womens Basketball Msu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 14 13 Msu 102 Canisius 54 Photo Womens Basketball Msu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/21/d1/ce21d1226df126673e9a397a2d906dbb.jpg" data-lightbox="roadtrip" data-title="Branndais Agee Womens Basketball Nc State Basketball Usa Today Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/21/d1/ce21d1226df126673e9a397a2d906dbb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXvwlSKWLLA2p-X6vUJcP-7TaFd_eDUfL7-Q';" alt="Branndais Agee Womens Basketball Nc State Basketball Usa Today Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Branndais Agee Womens Basketball Nc State Basketball Usa Today Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/89/50/3c8950ae2d9462f3f5cd74184a379af4.jpg" data-lightbox="roadtrip" data-title="No 25 Women S Basketball To Make First Trip To Nebraska Michigan State University Athletics Womens Basketball Michigan State Michigan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/89/50/3c8950ae2d9462f3f5cd74184a379af4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZPH2BoptEb4RX4kU5tZi5RI1JM0YEbYfZbA';" alt="No 25 Women S Basketball To Make First Trip To Nebraska Michigan State University Athletics Womens Basketball Michigan State Michigan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No 25 Women S Basketball To Make First Trip To Nebraska Michigan State University Athletics Womens Basketball Michigan State Michigan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/35/cf/8935cff52232e0c6d2047e7474b7e729.jpg" data-lightbox="roadtrip" data-title="Michigan State S Madison Williams Works Way Back From Another Knee Injury The Detroit News Detroit News Madison Williams Knee Injury">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/35/cf/8935cff52232e0c6d2047e7474b7e729.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1tAPu9pzH8eg63VMPaxFTx_7t_5M2UW35ZQ';" alt="Michigan State S Madison Williams Works Way Back From Another Knee Injury The Detroit News Detroit News Madison Williams Knee Injury">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michigan State S Madison Williams Works Way Back From Another Knee Injury The Detroit News Detroit News Madison Williams Knee Injury</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/9a/bd/499abd1c96165932c6b00ca022af8527.jpg" data-lightbox="roadtrip" data-title="Branndais Agee Nc State Basketball Womens Basketball College Basketball Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/9a/bd/499abd1c96165932c6b00ca022af8527.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0IF51QhkgaEoNXCD7YQSWKA_B_Mud3J9XA';" alt="Branndais Agee Nc State Basketball Womens Basketball College Basketball Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Branndais Agee Nc State Basketball Womens Basketball College Basketball Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/df/0e/dddf0e9c0eca9a9a9e27a5d32aae7805.jpg" data-lightbox="roadtrip" data-title="Detroit News Womens Basketball Detroit News Team Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/df/0e/dddf0e9c0eca9a9a9e27a5d32aae7805.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgRnEfcJIyrwQCscMk2nWQ7uvx0x6NzwF-rw';" alt="Detroit News Womens Basketball Detroit News Team Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Detroit News Womens Basketball Detroit News Team Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/41/cb/5941cb4571def977e3f52e249eae4948.jpg" data-lightbox="roadtrip" data-title="Msu 70 Nebraska 57 Basketball Girls Basketball Goals Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/41/cb/5941cb4571def977e3f52e249eae4948.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEXHZwKQ9JBlmJcHIlL8R2XXVTAtBUuF9crw';" alt="Msu 70 Nebraska 57 Basketball Girls Basketball Goals Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msu 70 Nebraska 57 Basketball Girls Basketball Goals Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/11/0f/44110fe93954e5a8637dc8b5d6d2c5dc.jpg" data-lightbox="roadtrip" data-title="Photos Michigan State Vs Michigan Women S Basketball Womens Basketball Basketball Michigan State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/11/0f/44110fe93954e5a8637dc8b5d6d2c5dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLk9dSpOstpkuH-Af8zKrl4eJGRGq854LDvg';" alt="Photos Michigan State Vs Michigan Women S Basketball Womens Basketball Basketball Michigan State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Michigan State Vs Michigan Women S Basketball Womens Basketball Basketball Michigan State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/be/56/dabe5617e73d457ef991bb30aa913853.jpg" data-lightbox="roadtrip" data-title="Msu 70 Nebraska 57 Womens Basketball Madison Williams Msu Spartans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/be/56/dabe5617e73d457ef991bb30aa913853.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKlJGjt-n2JTJr5xUYuD7aus39867dAQK8Iw';" alt="Msu 70 Nebraska 57 Womens Basketball Madison Williams Msu Spartans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msu 70 Nebraska 57 Womens Basketball Madison Williams Msu Spartans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/bf/d9/afbfd9d53750efa6d3502700f09b009c.jpg" data-lightbox="roadtrip" data-title="Branndais Agee 11 14 13 Msu Wmns Bball Vs Canisius Michigan State Defeats Canisius 102 54 Photo Credit Matthew Mitc Womens Basketball Michigan State Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/bf/d9/afbfd9d53750efa6d3502700f09b009c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYeb9CB6wAk_P-M135knmGX2KoYxvDedrlVw';" alt="Branndais Agee 11 14 13 Msu Wmns Bball Vs Canisius Michigan State Defeats Canisius 102 54 Photo Credit Matthew Mitc Womens Basketball Michigan State Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Branndais Agee 11 14 13 Msu Wmns Bball Vs Canisius Michigan State Defeats Canisius 102 54 Photo Credit Matthew Mitc Womens Basketball Michigan State Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mississippi-state-womens-college-basketball-schedule.html">Mississippi State Womens College Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-army-reserve.html">Montgomery Gi Bill Army Reserve</a></li>
+													<li class="list-group-item"><a href="/military-onesource-gi-bill.html">Military Onesource Gi Bill</a></li>
+													<li class="list-group-item"><a href="/mens-college-gymnastics-rankings.html">Mens College Gymnastics Rankings</a></li>
+													<li class="list-group-item"><a href="/montgomery-bill-inmates.html">Montgomery Bill Inmates</a></li>
+													<li class="list-group-item"><a href="/mid-michigan-college-womens-basketball.html">Mid Michigan College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/military-gi-bill-bah.html">Military Gi Bill Bah</a></li>
+													<li class="list-group-item"><a href="/montgomery-bill-new-york.html">Montgomery Bill New York</a></li>
+													<li class="list-group-item"><a href="/mohawk-college-womens-basketball-live-stream.html">Mohawk College Womens Basketball Live Stream</a></li>
+													<li class="list-group-item"><a href="/milligan-college-womens-basketball-team.html">Milligan College Womens Basketball Team</a></li>
+													<li class="list-group-item"><a href="/military-gi-bill-for-college.html">Military Gi Bill For College</a></li>
+													<li class="list-group-item"><a href="/mid-michigan-community-college-womens-basketball.html">Mid Michigan Community College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/mercy-college-gi-bill.html">Mercy College Gi Bill</a></li>
+													<li class="list-group-item"><a href="/missouri-national-guard-agr-positions.html">Missouri National Guard Agr Positions</a></li>
+													<li class="list-group-item"><a href="/military-times-gi-bill.html">Military Times Gi Bill</a></li>
+													<li class="list-group-item"><a href="/mgib-chapter-1606-benefits.html">Mgib Chapter 1606 Benefits</a></li>
+													<li class="list-group-item"><a href="/miles-college-womens-basketball-coach.html">Miles College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/military-gi-bill-college.html">Military Gi Bill College</a></li>
+													<li class="list-group-item"><a href="/montgomery-gastroenterology-silver-spring.html">Montgomery Gastroenterology Silver Spring</a></li>
+													<li class="list-group-item"><a href="/merrimack-college-womens-basketball-schedule.html">Merrimack College Womens Basketball Schedule</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

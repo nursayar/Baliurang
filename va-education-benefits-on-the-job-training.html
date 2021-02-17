@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Education Benefits On The Job Training - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Education Benefits On The Job Training",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/b9/bc/db/b9bcdbf121f8915ddd968dfbca7cee9d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+education+benefits+on+the+job+training",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Education Benefits On The Job Training</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Learn how to apply for and manage the education and training benefits youve earned. Youll most likely need to enter into a training contract for a set amount of time with an employer or union. 30 days Average time to process education claims. <br>				
+			</p>
+										<a class="badge badge-info" href="/mohawk-college-womens-basketball-team.html">mohawk college womens basketball team</a>
+											<a class="badge badge-primary" href="/messiah-college-womens-basketball-schedule.html">messiah college womens basketball schedule</a>
+											<a class="badge badge-info" href="/montgomery-bill-refund.html">montgomery bill refund</a>
+											<a class="badge badge-light" href="/mi-9-twrp.html">mi 9 twrp</a>
+											<a class="badge badge-secondary" href="/mit-post-911-gi-bill.html">mit post 911 gi bill</a>
+											<a class="badge badge-danger" href="/montgomery-bill-education-benefits.html">montgomery bill education benefits</a>
+											<a class="badge badge-danger" href="/montgomery-bill-new-york.html">montgomery bill new york</a>
+											<a class="badge badge-warning" href="/montgomery-gi-bill-2019.html">montgomery gi bill 2019</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to pay a visit to the right site.  Our site provides you with hints for viewing the highest quality video and image content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you see.  You can also contribute to supporting this website by sharing videos and images that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/44/7c/ef447ca2d071fa6cc697604aeca9a6c5.png" data-lightbox="roadtrip" data-title="Education Training Benefits For Veterans The Department Of Veterans Affairs Provides Vari Veteran Jobs Education And Training Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/44/7c/ef447ca2d071fa6cc697604aeca9a6c5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTULdF6bGzoVas--9_ALkTKevQXGPesQo-8Tw';" alt="Education Training Benefits For Veterans The Department Of Veterans Affairs Provides Vari Veteran Jobs Education And Training Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Education Training Benefits For Veterans The Department Of Veterans Affairs Provides Vari Veteran Jobs Education And Training Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/24/37/0a243725f359b4b5cb7361bcc5085043.jpg" data-lightbox="roadtrip" data-title="Apply For And Manage The Va Benefits And Services You Ve Earned As A Veteran Servicemember Or Family Member Like He Job Training Home Health Care Company Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/24/37/0a243725f359b4b5cb7361bcc5085043.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdVHkWHLjKcAv6fS36q3SiV5OjRvc1-SepUQ';" alt="Apply For And Manage The Va Benefits And Services You Ve Earned As A Veteran Servicemember Or Family Member Like He Job Training Home Health Care Company Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apply For And Manage The Va Benefits And Services You Ve Earned As A Veteran Servicemember Or Family Member Like He Job Training Home Health Care Company Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/79/96/b0799697b37d508691497b8d405b4415.jpg" data-lightbox="roadtrip" data-title="Dept Of Veterans Affairs Gi Bill Web Site Loads Of Info Gi Bill Education Job Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/79/96/b0799697b37d508691497b8d405b4415.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFZ-hhEE3cUl7R_2MfmBarTKASx6usIy_ibw';" alt="Dept Of Veterans Affairs Gi Bill Web Site Loads Of Info Gi Bill Education Job Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dept Of Veterans Affairs Gi Bill Web Site Loads Of Info Gi Bill Education Job Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/0d/1e/d90d1efc5999c9606a9882b24b792ae8.jpg" data-lightbox="roadtrip" data-title="Did You Know That You Could Use Your Va Education Benefits At Palmetto School Give Us A Call For More Information 8 Education Did You Know Home Decor Decals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/0d/1e/d90d1efc5999c9606a9882b24b792ae8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPW53pdXui2OQpMSbZNsjFbEhAzs5858621Q';" alt="Did You Know That You Could Use Your Va Education Benefits At Palmetto School Give Us A Call For More Information 8 Education Did You Know Home Decor Decals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Did You Know That You Could Use Your Va Education Benefits At Palmetto School Give Us A Call For More Information 8 Education Did You Know Home Decor Decals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/f5/97/8df5973a3e632477a04b9479c3b9efa5.jpg" data-lightbox="roadtrip" data-title="How To Apply For The Veterans Aid And Attendance Benefit Veteranaid Org Veteran How To Apply Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/f5/97/8df5973a3e632477a04b9479c3b9efa5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNvAWGEwxKyuTxpaZ5Bv4OYmObFoaJsUnpfQ';" alt="How To Apply For The Veterans Aid And Attendance Benefit Veteranaid Org Veteran How To Apply Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Apply For The Veterans Aid And Attendance Benefit Veteranaid Org Veteran How To Apply Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/23/8e/c9238e8b559c493718550433e5b22c97.jpg" data-lightbox="roadtrip" data-title="Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/23/8e/c9238e8b559c493718550433e5b22c97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG1OosFAcjIRkv2Rahe9k3gMeMdn_F-027bw';" alt="Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ef/44/7c/ef447ca2d071fa6cc697604aeca9a6c5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG1OosFAcjIRkv2Rahe9k3gMeMdn_F-027bw';" alt="Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran">
+										<div class="card-body">
+						<h3 class="h5"><b>You cant get on-the-job training if youre an active-duty service member or a spouse using a transferred benefit.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va education benefits on the job training</strong>. 
+								
+																	Use the GI Bill Comparison Tool to find out if the program is approved. 
+																	These programs allow Veterans to learn a trade or skill through training on the job rather than attending formal classroom instruction. 
+																	Approval may be granted for programs offered at educational institutions as well as formal on the job training provided by employers private or public. 
+																	Money for books and supplies up to 83 per month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Can I get education benefits for co-op training. 
+																	Learn about types of VA education benefits including the GI Bill and review what happens after you apply for a COE. 
+																	Va Education Benefits On The Job Training Best Forex Training. 
+																	You can get additional benefits instead of your regular salary that is you can receive monthly training benefits from the department of veteran affairs when you are trained for new job. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How long does it take VA to make a decision. 
+																	Here is the brief of GI Bill benefits. 
+																	Form Number Form Title Link. 
+																	To file a supplemental claim and present new evidence that supports your case or request a higher-level review from a senior officer you can fill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Labor shows on-the-job training and apprenticeship opportunities by state and includes additional resources for further research. 
+																	Generally used to request a variety of forms and publications or forms in large quantity. 
+																	If you disagree with your claim decision you have the following three appeal options. 
+																	All VA benefits including those for veterans education benefits have a series of forms that may be accessed online and submitted online via regular mail in person and some allow submission over the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to Appeal Denials. 
+																	On-the-Job. 
+																	All of these must be true. 
+																	Post-911 GI Bill Chapter 33 The Post-911 GI Bill Chapter 33 helps you pay for school or job training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll need to make sure the program is approved for VA education benefits. 
+																	The law provides that VA may pay educational assistance to Veterans and othe r eligible individuals while they pursue approved training programs. 
+																	Money for housing if youre covered under the Post-911 GI Bill. 
+																	VA will pay you GI Bill benefits on a sliding scale depending on how long you are in training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On the Job Training Last year 2011 while I was enrolled in college through Chapter 31 my case manager asked me for a copy of my resume. 
+																	Youll need to make sure the program is approved for VA education benefits. 
+																	WEAMS Institution Search details on-the-job training and apprenticeship opportunities by state. 
+																	File a supplemental claim request a higher-level review or file a board appeal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA education and training benefits is a program set up to assist veterans who are either pursuing a degree or furthering training in order to improve their current skill levels while on the job. 
+																	Approval of On-the-Job Training Programs. 
+																	You will also receive a salary from your employer. 
+																	If youve served on active duty after September 10 2001 you may qualify for the Post-911 GI Bill Chapter 33. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Request for VA Forms and Publications. 
+																	Youre using VA educational assistance and. 
+																	VA education benefits help Veterans service members and their qualified family members with needs like paying college tuition finding the right school or training program and getting career counseling. 
+																	You may be able to get money for books tuition and housing if you meet all of the requirements listed below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both on-the-job OJT and apprenticeship training programs are available for Veterans using their VA education benefits including the Post -911 GI Bill. 
+																	Youll need to make sure the program is approved for VA education benefits. 
+																	The VA benefit usually decreases every 6 months and. 
+																	Beginners versus Experienced Investors In some instances there may be a large amount of education prior to any actual experience. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MGIB-SR also called Chapter 1606 offers up to 36 months of education and training benefits. 
+																	Use the GI Bill Comparison Tool to find out if the program is approved. 
+																	If youre a member of the Army Navy Air Force Marine Corps or Coast Guard Reserve Army National Guard or Air National Guard you may be eligible. 
+																	How do I get these benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What benefits can I get. 
+																	Getting a degree certificate or other professional license can help you make a successful transition from military to civilian life. 
+																	Request For Approval of School Attendance. 
+																	Here are a few other great resources to locate specific companies you might be interested in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll most likely need to enter into a training contract for a set amount of time with an employer or union. 
+																	Find VA Education and Training Benefits locations here. 
+																	Find out if you can get this education benefit. 
+																	Find out if youre eligible for MGIB-SR The National Call to Service program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For your zip code you can receive up to 100 of the housing stipend if you are using post-911 GI Bill. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/e2/b0/83e2b0c634fda8c64dc20a5c68f3f4bf.jpg" data-lightbox="roadtrip" data-title="A Snapshot Of The Governments Vrap Veterans Retraining Assistance Program How It Works Who Its For What It Veteran Jobs Support Veterans Hiring Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/e2/b0/83e2b0c634fda8c64dc20a5c68f3f4bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzUzdPDQdrBhbwC8wF3VsfAm6KcUelbhbmw';" alt="A Snapshot Of The Governments Vrap Veterans Retraining Assistance Program How It Works Who Its For What It Veteran Jobs Support Veterans Hiring Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Snapshot Of The Governments Vrap Veterans Retraining Assistance Program How It Works Who Its For What It Veteran Jobs Support Veterans Hiring Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2a/00/56/2a00567ca1e58cbd490178426d90a175.jpg" data-lightbox="roadtrip" data-title="Covered 6 Flyer Veteran Jobs Security Training Corporate Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2a/00/56/2a00567ca1e58cbd490178426d90a175.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMCLvDyUxRYpr83Vxk6K3wfscY6DC1k4jAwg';" alt="Covered 6 Flyer Veteran Jobs Security Training Corporate Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covered 6 Flyer Veteran Jobs Security Training Corporate Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/16/47/cb16471171b0d107d7c18ded99cddd7a.jpg" data-lightbox="roadtrip" data-title="Military Education Benefits Military Education Education Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/16/47/cb16471171b0d107d7c18ded99cddd7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDFeUPHabTWCYyjUvw4NEmq8KxpRPs5WIUzg';" alt="Military Education Benefits Military Education Education Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Education Benefits Military Education Education Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/46/e7/bb/46e7bbc027830574cd5c4df07401bf6c.jpg" data-lightbox="roadtrip" data-title="Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Families Military Education Military Careers Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/46/e7/bb/46e7bbc027830574cd5c4df07401bf6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFwP9mlF2vKjSf_Q1d7lj499WG1YwMB6ndEQ';" alt="Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Families Military Education Military Careers Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Families Military Education Military Careers Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1c/b0/6e/1cb06ed1f3e1fbbce7f20768bd128e8a.jpg" data-lightbox="roadtrip" data-title="Chapter 33 Benefits For Veterans Chapter 33 Of The Gi Bill Also Commonly Called The Post 9 11 Gi Bill Is The Most In 2020 Smart Money Chapter 33 Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1c/b0/6e/1cb06ed1f3e1fbbce7f20768bd128e8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAH2q22M1SZGUbm9kgsUt1yyIqR5kIQit8vw';" alt="Chapter 33 Benefits For Veterans Chapter 33 Of The Gi Bill Also Commonly Called The Post 9 11 Gi Bill Is The Most In 2020 Smart Money Chapter 33 Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chapter 33 Benefits For Veterans Chapter 33 Of The Gi Bill Also Commonly Called The Post 9 11 Gi Bill Is The Most In 2020 Smart Money Chapter 33 Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/b4/8c/4cb48c457b171a0210e156f05546b8f5.png" data-lightbox="roadtrip" data-title="10 Benefits To Hiring A Virtual Assistant Virtual Assistant Virtual Assistant Services Hiring">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/b4/8c/4cb48c457b171a0210e156f05546b8f5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwSAWukas2Yf8Ufw_P7r9bR9nMBn1KypScGg';" alt="10 Benefits To Hiring A Virtual Assistant Virtual Assistant Virtual Assistant Services Hiring">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Benefits To Hiring A Virtual Assistant Virtual Assistant Virtual Assistant Services Hiring</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e5/1d/55/e51d555a0034ce442ae229ebb278fb9e.jpg" data-lightbox="roadtrip" data-title="Tuition Benefits And Financial Assistance For Military Members Tuition Assistance Tuition Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e5/1d/55/e51d555a0034ce442ae229ebb278fb9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Hw0GxaTPloApJvD-Czf_lHOAjda3Qu-yqA';" alt="Tuition Benefits And Financial Assistance For Military Members Tuition Assistance Tuition Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tuition Benefits And Financial Assistance For Military Members Tuition Assistance Tuition Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/63/fe/dc63fe7d3c11cae6ed46a15ba1c0e23c.png" data-lightbox="roadtrip" data-title="Pin On Veteran Content">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/63/fe/dc63fe7d3c11cae6ed46a15ba1c0e23c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9mEaHdnaLvZ8IV4Ye34WzJ9mrT_f6VRdpFA';" alt="Pin On Veteran Content">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Content</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/f5/20/75f5205bfe3f4cb88735ff07b67a4529.jpg" data-lightbox="roadtrip" data-title="Pin On Books And Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/f5/20/75f5205bfe3f4cb88735ff07b67a4529.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqw3tjHdeoBJXfMnHlvBrc5Df-oWL9p3hxQ';" alt="Pin On Books And Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Books And Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/7b/a3/d07ba30d163d456d1c72ba3794bc7e0a.jpg" data-lightbox="roadtrip" data-title="Va Certified Course To Enter The It Industry El Paso Tx March 11 2013 Miami Fl February 28 2013 Http Military Ci Veteran Jobs Ccna Au University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/7b/a3/d07ba30d163d456d1c72ba3794bc7e0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsMeFBVkH8Y64DMBLd5_CksAD-6KDzOGK2jw';" alt="Va Certified Course To Enter The It Industry El Paso Tx March 11 2013 Miami Fl February 28 2013 Http Military Ci Veteran Jobs Ccna Au University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Certified Course To Enter The It Industry El Paso Tx March 11 2013 Miami Fl February 28 2013 Http Military Ci Veteran Jobs Ccna Au University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/bc/db/b9bcdbf121f8915ddd968dfbca7cee9d.jpg" data-lightbox="roadtrip" data-title="New Employee Orientation Training New Employee Orientation New Employee Employee Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/bc/db/b9bcdbf121f8915ddd968dfbca7cee9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQqy7Ypklq1PlS51ygZMo8OAineYWxzat3PQ';" alt="New Employee Orientation Training New Employee Orientation New Employee Employee Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Employee Orientation Training New Employee Orientation New Employee Employee Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/ee/ab/edeeab6c5b67324f967fe4e754941c5f.png" data-lightbox="roadtrip" data-title="Spouses Dependents Amp Survivors Explore Va Benefits Va Benefits Survivor Family Caregiver">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/ee/ab/edeeab6c5b67324f967fe4e754941c5f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5HDDNsDjCTxUsiytYKuqRR2hKKY0vkTXTWQ';" alt="Spouses Dependents Amp Survivors Explore Va Benefits Va Benefits Survivor Family Caregiver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spouses Dependents Amp Survivors Explore Va Benefits Va Benefits Survivor Family Caregiver</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/2d/b6/f92db640169fb25f8247c47c1cccf3c5.jpg" data-lightbox="roadtrip" data-title="Ssa Hiring Bilingual Spanish Veteran With Customer Service Experience Needed Veteran Jobs Customer Service Experience Campus Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/2d/b6/f92db640169fb25f8247c47c1cccf3c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_Zjdgx58NnfuA26wGyd-_tKQ1HHwKd5TYw';" alt="Ssa Hiring Bilingual Spanish Veteran With Customer Service Experience Needed Veteran Jobs Customer Service Experience Campus Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ssa Hiring Bilingual Spanish Veteran With Customer Service Experience Needed Veteran Jobs Customer Service Experience Campus Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-faq-post-911.html">Gi Bill Faq Post 911</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-national-guard.html">Gi Bill For National Guard</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-education.html">Gi Bill For Education</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-dependents-college.html">Gi Bill For Dependents College</a></li>
+													<li class="list-group-item"><a href="/gi-bill-extended-for-life.html">Gi Bill Extended For Life</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-enlisted.html">Gi Bill For Enlisted</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-phone-number.html">Gi Bill Eligibility Phone Number</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-dependents-of-100-disabled-veterans.html">Gi Bill For Dependents Of 100 Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-life-act-2017.html">Gi Bill For Life Act 2017</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-status.html">Gi Bill Eligibility Status</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-for-reservists.html">Gi Bill Eligibility For Reservists</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-emt.html">Gi Bill For Emt</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-essential-workers.html">Gi Bill For Essential Workers</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligible-flight-schools.html">Gi Bill Eligible Flight Schools</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-house.html">Gi Bill For House</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-requirements.html">Gi Bill Eligibility Requirements</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-first-responders.html">Gi Bill For First Responders</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-dependents.html">Gi Bill For Dependents</a></li>
+													<li class="list-group-item"><a href="/gi-bill-filing-taxes.html">Gi Bill Filing Taxes</a></li>
+													<li class="list-group-item"><a href="/gi-bill-expiration.html">Gi Bill Expiration</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

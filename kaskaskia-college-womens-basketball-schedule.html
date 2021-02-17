@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Kaskaskia College Womens Basketball Schedule - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Kaskaskia College Womens Basketball Schedule",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/b0/31/fb/b031fbe8a5574d2c3b26bf1f02ded221.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=kaskaskia+college+womens+basketball+schedule",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Kaskaskia College Womens Basketball Schedule</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">728 people like this. Louis Community College has been cancelled. Kaskaskia College Success Starts Here. <br>				
+			</p>
+										<a class="badge badge-dark" href="/womens-college-basketball-jobs.html">womens college basketball jobs</a>
+											<a class="badge badge-light" href="/womens-college-basketball-bracket-printable.html">womens college basketball bracket printable</a>
+											<a class="badge badge-primary" href="/womens-college-basketball-full-game-2019.html">womens college basketball full game 2019</a>
+											<a class="badge badge-danger" href="/womens-college-basketball-brawl.html">womens college basketball brawl</a>
+											<a class="badge badge-success" href="/womens-college-basketball-coaching-openings.html">womens college basketball coaching openings</a>
+											<a class="badge badge-secondary" href="/womens-college-basketball-coaching-jobs.html">womens college basketball coaching jobs</a>
+											<a class="badge badge-primary" href="/womens-college-basketball-final-4.html">womens college basketball final 4</a>
+											<a class="badge badge-dark" href="/womens-college-basketball-baylor-roster.html">womens college basketball baylor roster</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to pay a visit to the ideal site.  Our website provides you with suggestions for seeing the highest quality video and picture content, search and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/42/95/f64295bf8c1c1a208a59578d69378f84.jpg" data-lightbox="roadtrip" data-title="Mckendree West Apartments Residence Life Girls Dorm Room College Dorm Rooms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/42/95/f64295bf8c1c1a208a59578d69378f84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_tpFCaaXAD6iIkCtghcaOt-BCFQ1K2Id-A';" alt="Mckendree West Apartments Residence Life Girls Dorm Room College Dorm Rooms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mckendree West Apartments Residence Life Girls Dorm Room College Dorm Rooms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/b9/5f/4fb95f0c3b3e7762fb6b21367a50efd7.jpg" data-lightbox="roadtrip" data-title="New Residence Hall East Residence Life Mckendree University Residence Hall Residence Life Student House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/b9/5f/4fb95f0c3b3e7762fb6b21367a50efd7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRilV1JgAw41nzlzzXUKKb4em19-oYBO7rzkA';" alt="New Residence Hall East Residence Life Mckendree University Residence Hall Residence Life Student House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Residence Hall East Residence Life Mckendree University Residence Hall Residence Life Student House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/31/fb/b031fbe8a5574d2c3b26bf1f02ded221.jpg" data-lightbox="roadtrip" data-title="The New Residence Halls At Mckendree University Are Nicely Decorated For The Holidays University Dorms Graduate Program Campus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/31/fb/b031fbe8a5574d2c3b26bf1f02ded221.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgsot9sWrEqHjz2wiloeNRz5hHb4cJdYUQAQ';" alt="The New Residence Halls At Mckendree University Are Nicely Decorated For The Holidays University Dorms Graduate Program Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The New Residence Halls At Mckendree University Are Nicely Decorated For The Holidays University Dorms Graduate Program Campus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/90/f3/8f90f3ee6b2f95ed85ee1ff8bd6bede9.jpg" data-lightbox="roadtrip" data-title="Mckendree University Outdoor Outdoor Decor Colleges And Universities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/90/f3/8f90f3ee6b2f95ed85ee1ff8bd6bede9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNpe-mpVER7CytIHG8Guc8ZKtmUTb2pkp0ng';" alt="Mckendree University Outdoor Outdoor Decor Colleges And Universities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mckendree University Outdoor Outdoor Decor Colleges And Universities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/ae/2b/aaae2b6efefa4bede6546c89c0a72916.jpg" data-lightbox="roadtrip" data-title="Mckendree University Undergraduate Graduate Programs Mckendree University Dream College Campus College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/ae/2b/aaae2b6efefa4bede6546c89c0a72916.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq2rU4YxofdWQswzl-lXW2hqft_ZIcw4qipA';" alt="Mckendree University Undergraduate Graduate Programs Mckendree University Dream College Campus College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mckendree University Undergraduate Graduate Programs Mckendree University Dream College Campus College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/60/b9/3160b9b932b24f8e3df9b3aa7fe0e86a.png" data-lightbox="roadtrip" data-title="Image Result For Mckendree University Bearcats Dream College Sports Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/60/b9/3160b9b932b24f8e3df9b3aa7fe0e86a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVwYxlKVBpdd8HACFi76mfDZVD2XORl7Hhw';" alt="Image Result For Mckendree University Bearcats Dream College Sports Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Mckendree University Bearcats Dream College Sports Logo</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/77/ee/7f/77ee7ffd475ade548e62f98a6c36e44d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVwYxlKVBpdd8HACFi76mfDZVD2XORl7Hhw';" alt="Image Result For Mckendree University Bearcats Dream College Sports Logo">
+										<div class="card-body">
+						<h3 class="h5"><b>Asaya Bilgin with Impressive First Start Tallies 16 Points.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Kaskaskia college womens basketball schedule</strong>. 
+								
+																	Kaskaskia College 230 PM Sat. 
+																	Come cheer on the Womens Basketball Team in Joseph Deaton Gymnasium. 
+																	At Kaskaskia College 1200 PM at Kaskaskia College 230 PM Thu. 
+																	Three Rivers Classic Mineral Area Poplar Bluff MO. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At Murray State University Invitational 9 out of 12 Miller GC Murray Ky. 
+																	Frontier Community College 300 PM Thu. 
+																	Lewis Clark Community College. 
+																	Southwestern Illinois College 730 PM Wed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	May 16 2018 Region XXIV Champs head to Iowa for Northern District Championship. 
+																	The official Spring 2021 Womens Basketball schedule for the Lincoln Land Community College Loggers. 
+																	Frontier Community College 1200 PM vs. 
+																	Date Opponent Notes Result Status Links. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2021 Due to inclement weather the game tonight at St. 
+																	Kaskaskia College 1200 PM vs. 
+																	Having trouble logging in. 
+																	Pts per game 633. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wabash Valley College 2200 College Drive Mount Carmel IL 62863 Follow us on Twitter. 
+																	Filter events by selecting an event type from the list. 
+																	3PT 286. 
+																	Story Links DANVILLE ILLINOIS - The Lady Jaguars hosted their first and only scrimmage of the 2021 season against Olney Central College before they open up play regular season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At District IX Preview 2nd place out of 9 The Links at Kopelli. 
+																	2019-20 Team Name Mens Basketball Schedule. 
+																	Rend Lake home course. 
+																	Lady Jaguars Drop Contest Against Olney Central. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At Rend Lake College PreviewTournament 2nd place out of 6 Franklin County CC West Frankfort Il. 
+																	Womens Basketball 2018-2019 Schedule. 
+																	No events to show. 
+																	At Lincoln Land Community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reb per game 230. 
+																	749 people follow this. 
+																	At Frontier Community College 300 PM Sat. 
+																	Check out this Womens Basketball Schedule sortable by date and including information on game time network coverage and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Logan College 700 PM Sat. 
+																	2242020 530 pm. 
+																	At Mineral Area. 
+																	1062018 at 100 pm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	KC can save you on average 20000 on your first two years of school. 
+																	Womens Basketball Schedule Roster Statistics Archived Stories. 
+																	More 1142018 at 300 pm. 
+																	At Kaskaskia College 730 PM Wed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See actions taken by. 
+																	More 10212018 at 1000 am. 
+																	2020-21 Kaskaskia College Womens Basketball Schedule. 
+																	27210 College Rd 62801. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Date. 
+																	Page Transparency See More. 
+																	Three Rivers Classic 3 Rivers Poplar Bluff MO. 
+																	FT 700. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FG 332. 
+																	Shawnee Community College W 85-70 Final Recap. 
+																	Ast per game 93. 
+																	Accountability Accreditation Catalog EmergencySecurity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens Basketball 1142021 90400 PM. 
+																	Centralia IL 62801 Phone 618 545-3000 Fax 618 545-3393. 
+																	2020-21 Kaskaskia College Mens Basketball Schedule. 
+																	Contact Kaskaskia College Womens Basketball on Messenger. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Student to Faculty Ratio. 
+																	Earn a Degree or Certificate. 
+																	Carlie Barban joins the Kaskaskia College Blue Angels Tennis Program February 1. 
+																	2019-20 Kaskaskia Womens Basketball Schedule. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Deaton Gym SIC 3575 College R HARRISBURG IL 62946. 
+																	Take a class or two. 
+																	Take a class for fun. 
+																	Kaskaskia College Womens Basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	W 90 - 88 OT. 
+																	More 1132018 at 100 pm. 
+																	Girls Basketball Camp Held at Kaskaskia College June 26 2019 Girls Basketball Camp Held at Kaskaskia College June 26 2019 Upcoming Events. 
+																	L 39 - 61. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Facebook is showing information to help you better understand the purpose of a Page. 
+																	At Olney Central College 300 PM. 
+																	Centralia IL 62801 Phone 618 545-3000 Fax 618 545-3393 Facebook-fill. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/ee/7f/77ee7ffd475ade548e62f98a6c36e44d.jpg" data-lightbox="roadtrip" data-title="Let Your Education Bloom At Mckendree University Dream College Graduate Program Campus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/ee/7f/77ee7ffd475ade548e62f98a6c36e44d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Bl7rs9FwMH4Bc-Z7GfxN2YjkXrv1y4bu_g';" alt="Let Your Education Bloom At Mckendree University Dream College Graduate Program Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Let Your Education Bloom At Mckendree University Dream College Graduate Program Campus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fd/ff/47/fdff4775cc275bfb12955be4e03c7df1.jpg" data-lightbox="roadtrip" data-title="Mckendree University Athletics Mckendree Returns To Leemon Field To Host William Jewell For Homecoming Diy Prom Perfect Prom Dress Diy Dress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fd/ff/47/fdff4775cc275bfb12955be4e03c7df1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAO5q_p9F-GkunNqpdoeDQJTBAzJLTOBeX8Q';" alt="Mckendree University Athletics Mckendree Returns To Leemon Field To Host William Jewell For Homecoming Diy Prom Perfect Prom Dress Diy Dress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mckendree University Athletics Mckendree Returns To Leemon Field To Host William Jewell For Homecoming Diy Prom Perfect Prom Dress Diy Dress</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/68/40/1c68401aa1f07118fa4838822fc01a8c.jpg" data-lightbox="roadtrip" data-title="The Beauty Of Mckendree University S Bothwell Chapel Is The Perfect Venue For Your Wedding Graduate Program Campus Undergraduate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/68/40/1c68401aa1f07118fa4838822fc01a8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlFyvXQoe9HiPbVFE33iz4OQybkzTE8zKE3A';" alt="The Beauty Of Mckendree University S Bothwell Chapel Is The Perfect Venue For Your Wedding Graduate Program Campus Undergraduate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Beauty Of Mckendree University S Bothwell Chapel Is The Perfect Venue For Your Wedding Graduate Program Campus Undergraduate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/20/67/4520670a0eeed03ce530eebeadf5e2ca.jpg" data-lightbox="roadtrip" data-title="Set Up Your Next Spike With Women S Volleyball At Mckendree University Women Volleyball Athlete Girls Rules">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/20/67/4520670a0eeed03ce530eebeadf5e2ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPvJSb1z1XdBhM6CLreMYWSFRzuZIkKHubPA';" alt="Set Up Your Next Spike With Women S Volleyball At Mckendree University Women Volleyball Athlete Girls Rules">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Set Up Your Next Spike With Women S Volleyball At Mckendree University Women Volleyball Athlete Girls Rules</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/aa/55/c3aa553f0def321d5a6c4ec9b4a117ff.jpg" data-lightbox="roadtrip" data-title="The 2015 16 Mckendree University Lady Bearcats Pose With Director Of Bowling Bryan O Keefe And Head Women S Bowling Coac Student Athlete Ncaa Tournament Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/aa/55/c3aa553f0def321d5a6c4ec9b4a117ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjDLs0LWY7b2Bces5k-vYMwFbpeA8R7ptCug';" alt="The 2015 16 Mckendree University Lady Bearcats Pose With Director Of Bowling Bryan O Keefe And Head Women S Bowling Coac Student Athlete Ncaa Tournament Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 2015 16 Mckendree University Lady Bearcats Pose With Director Of Bowling Bryan O Keefe And Head Women S Bowling Coac Student Athlete Ncaa Tournament Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/7b/09/be7b093f723734909d751b9c398a8cc5.jpg" data-lightbox="roadtrip" data-title="Professional Bowler Shannon O Keefe Has Been Named As The Head Coach Of The Women S Bowling Program While Her Husband Bryan O Bowling Student Athlete Team Usa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/7b/09/be7b093f723734909d751b9c398a8cc5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLz5PlC2_d3CrJCL2xdHxOSISyGTwgrSOrVw';" alt="Professional Bowler Shannon O Keefe Has Been Named As The Head Coach Of The Women S Bowling Program While Her Husband Bryan O Bowling Student Athlete Team Usa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Professional Bowler Shannon O Keefe Has Been Named As The Head Coach Of The Women S Bowling Program While Her Husband Bryan O Bowling Student Athlete Team Usa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=logo+mckendree+university&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqy Fwgxd9iawkyoi0g7rokbhgb7h6dm5zcwlz6xfi Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=logo+mckendree+university&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=logo+mckendree+university&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqy Fwgxd9iawkyoi0g7rokbhgb7h6dm5zcwlz6xfi Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqy Fwgxd9iawkyoi0g7rokbhgb7h6dm5zcwlz6xfi Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=mckendree+logo+png&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcruipw L6jvr3aqtmgwaaz8a634fdiopgfgzuu0ks3kfctgsjcv Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=mckendree+logo+png&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=mckendree+logo+png&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcruipw L6jvr3aqtmgwaaz8a634fdiopgfgzuu0ks3kfctgsjcv Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcruipw L6jvr3aqtmgwaaz8a634fdiopgfgzuu0ks3kfctgsjcv Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=mckendree+university+soccer&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gct6hpi Dob2jojrf03fm2lbrovaf4vpxfpw51ei9fdf7pxwiuts Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=mckendree+university+soccer&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=mckendree+university+soccer&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gct6hpi Dob2jojrf03fm2lbrovaf4vpxfpw51ei9fdf7pxwiuts Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gct6hpi Dob2jojrf03fm2lbrovaf4vpxfpw51ei9fdf7pxwiuts Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=mckendree+bearcats+logo&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqq4udztj8wz Db1amdiookrzqlo7rs Dxl3nh6r Redtslhkh9 Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=mckendree+bearcats+logo&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=mckendree+bearcats+logo&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqq4udztj8wz Db1amdiookrzqlo7rs Dxl3nh6r Redtslhkh9 Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqq4udztj8wz Db1amdiookrzqlo7rs Dxl3nh6r Redtslhkh9 Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/bill-gibson.html">Bill Gibson</a></li>
+													<li class="list-group-item"><a href="/bilgi-sarmal-video-coezuem.html">Bilgi Sarmal Video Coezuem</a></li>
+													<li class="list-group-item"><a href="/bilecik.html">Bilecik</a></li>
+													<li class="list-group-item"><a href="/big-billy.html">Big Billy</a></li>
+													<li class="list-group-item"><a href="/big-bills-galena-il.html">Big Bills Galena Il</a></li>
+													<li class="list-group-item"><a href="/big-bill-kakadu.html">Big Bill Kakadu</a></li>
+													<li class="list-group-item"><a href="/bill-gipson.html">Bill Gipson</a></li>
+													<li class="list-group-item"><a href="/big-billz-back-from-the-dead.html">Big Billz Back From The Dead</a></li>
+													<li class="list-group-item"><a href="/bilgi-learn-sanal-sinif.html">Bilgi Learn Sanal Sinif</a></li>
+													<li class="list-group-item"><a href="/bill-government-example.html">Bill Government Example</a></li>
+													<li class="list-group-item"><a href="/big-bill-wool-hunting-pants.html">Big Bill Wool Hunting Pants</a></li>
+													<li class="list-group-item"><a href="/big-bill-fr-cargo-pants.html">Big Bill Fr Cargo Pants</a></li>
+													<li class="list-group-item"><a href="/big-bill-red-blend.html">Big Bill Red Blend</a></li>
+													<li class="list-group-item"><a href="/big-bill-morganfield.html">Big Bill Morganfield</a></li>
+													<li class="list-group-item"><a href="/big-bill-hells-script.html">Big Bill Hells Script</a></li>
+													<li class="list-group-item"><a href="/big-billy-cat.html">Big Billy Cat</a></li>
+													<li class="list-group-item"><a href="/bill-gifford-maine-principal.html">Bill Gifford Maine Principal</a></li>
+													<li class="list-group-item"><a href="/big-billy-vexcon.html">Big Billy Vexcon</a></li>
+													<li class="list-group-item"><a href="/big-bill-fr-bibs.html">Big Bill Fr Bibs</a></li>
+													<li class="list-group-item"><a href="/big-bill-wool-vest.html">Big Bill Wool Vest</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

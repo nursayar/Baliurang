@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Much Does The Va Pay For Online Classes - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Much Does The Va Pay For Online Classes",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/7f/63/db/7f63dbd4941bc717993217152cc7b1a2.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+much+does+the+va+pay+for+online+classes",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Much Does The Va Pay For Online Classes</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Online courses and VA-required training can be accessed directly from. Get the policies for training times and pay rates. Payments are based on the number of classes you attend. <br>				
+			</p>
+										<a class="badge badge-success" href="/rpi-for-womens-college-basketball.html">rpi for womens college basketball</a>
+											<a class="badge badge-warning" href="/reasons-why-not-go-to-college.html">reasons why not go to college</a>
+											<a class="badge badge-success" href="/retired-military-gi-bill-transfer.html">retired military gi bill transfer</a>
+											<a class="badge badge-dark" href="/reserve-gi-bill-kicker.html">reserve gi bill kicker</a>
+											<a class="badge badge-secondary" href="/reserve-gi-bill-benefits.html">reserve gi bill benefits</a>
+											<a class="badge badge-dark" href="/randolph-college-womens-basketball-schedule.html">randolph college womens basketball schedule</a>
+											<a class="badge badge-danger" href="/reasons-on-why-to-go-to-college.html">reasons on why to go to college</a>
+											<a class="badge badge-dark" href="/reasons-to-go-to-lafayette-college.html">reasons to go to lafayette college</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the ideal blog.  Our site gives you hints for seeing the maximum quality video and image content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video for you to see.  You can also contribute to supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ca/28/5f/ca285f118eecb40b6884b9774a23e5e3.jpg" data-lightbox="roadtrip" data-title="Do You Desperately Want To Work From Home Online As A Virtual Assistant Are You Frustrated Because The Course Costs Virtual Assistant Coding Jobs Online Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ca/28/5f/ca285f118eecb40b6884b9774a23e5e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR9XuvjS1e3zO4OPwfWI2Mbz8TFQrQOBsY4Q';" alt="Do You Desperately Want To Work From Home Online As A Virtual Assistant Are You Frustrated Because The Course Costs Virtual Assistant Coding Jobs Online Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do You Desperately Want To Work From Home Online As A Virtual Assistant Are You Frustrated Because The Course Costs Virtual Assistant Coding Jobs Online Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/36/d3/b036d3ec9487f3da90bb53a0d7818dc6.jpg" data-lightbox="roadtrip" data-title="Ready To Hire A Va But Not Sure How Well Here S How Virtual Assistant Virtual Jobs Virtual Assistant Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/36/d3/b036d3ec9487f3da90bb53a0d7818dc6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf9HZVypurdWBWldg6dc4wTjiEdKp_aMSrFA';" alt="Ready To Hire A Va But Not Sure How Well Here S How Virtual Assistant Virtual Jobs Virtual Assistant Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ready To Hire A Va But Not Sure How Well Here S How Virtual Assistant Virtual Jobs Virtual Assistant Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/63/db/7f63dbd4941bc717993217152cc7b1a2.png" data-lightbox="roadtrip" data-title="How To Become The Best Virtual Assistant In The Business With Complete Online Training Virtual Assistant Virtual Assistant Training Online Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/63/db/7f63dbd4941bc717993217152cc7b1a2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHrfK0Lyo_FVadNYiVv6hQ2rdGVVk71eLoNw';" alt="How To Become The Best Virtual Assistant In The Business With Complete Online Training Virtual Assistant Virtual Assistant Training Online Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become The Best Virtual Assistant In The Business With Complete Online Training Virtual Assistant Virtual Assistant Training Online Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/c8/4c/56c84cf67c80deffbaf99d9776736b5f.png" data-lightbox="roadtrip" data-title="Pinterest Va Group Interview Part Ii How Is Pinterest Management Different From Being A Va Pinterest Management Virtual Assistant Business Work From Home Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/c8/4c/56c84cf67c80deffbaf99d9776736b5f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6wvRcX4_ltEHDKeleBGM4Ad_h3Rd0SE89w';" alt="Pinterest Va Group Interview Part Ii How Is Pinterest Management Different From Being A Va Pinterest Management Virtual Assistant Business Work From Home Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pinterest Va Group Interview Part Ii How Is Pinterest Management Different From Being A Va Pinterest Management Virtual Assistant Business Work From Home Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bb/b1/86/bbb186fd8e31d1ef26e2920023675f94.jpg" data-lightbox="roadtrip" data-title="Don T Make This Major Mistake Your On Your Coaching Or Va Website If You Re Booking Work From Home Moms Virtual Assistant Business Start A Business From Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bb/b1/86/bbb186fd8e31d1ef26e2920023675f94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNH2EDsLS4DVkeEDi3XyVsUA34KXvy5_AKLA';" alt="Don T Make This Major Mistake Your On Your Coaching Or Va Website If You Re Booking Work From Home Moms Virtual Assistant Business Start A Business From Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Make This Major Mistake Your On Your Coaching Or Va Website If You Re Booking Work From Home Moms Virtual Assistant Business Start A Business From Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1c/68/34/1c68345e5cf6da303c946d647d7eacf6.jpg" data-lightbox="roadtrip" data-title="Become A Pinterest Va By Taking This Pinterest Marketing Course Virtual Assistant Pinterest Marketing Course Virtual Assistant Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1c/68/34/1c68345e5cf6da303c946d647d7eacf6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkG3eQC9ftL42xia6ySxcFXSOtbV2GVFkF-A';" alt="Become A Pinterest Va By Taking This Pinterest Marketing Course Virtual Assistant Pinterest Marketing Course Virtual Assistant Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Become A Pinterest Va By Taking This Pinterest Marketing Course Virtual Assistant Pinterest Marketing Course Virtual Assistant Services</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/83/cf/11/83cf113127cf5c6f0ff1af76f42214e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkG3eQC9ftL42xia6ySxcFXSOtbV2GVFkF-A';" alt="Become A Pinterest Va By Taking This Pinterest Marketing Course Virtual Assistant Pinterest Marketing Course Virtual Assistant Services">
+										<div class="card-body">
+						<h3 class="h5"><b>Click here for all BAH Rates for students.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How much does the va pay for online classes</strong>. 
+								
+																	68 hours half time. 
+																	The site offers direct convenient access to thousands of VAs learning activities including instructor-led satellite and web-based training books and other instructional products. 
+																	See the 2021. 
+																	Less than six hours as reimbursable at a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA will pay the net costs for in-state tuition and fees or 10000 whichever is less. 
+																	To correctly determine rate of benefit use start date of class. 
+																	The classes at both schools count toward your. 
+																	For example if a graduate program at your school considers a 2-hour class full time well pay you the full-time rate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Most VA education and training benefits may be used at institutions of higher learning including four-year universities community colleges and entities offering advanced degrees. 
+																	You can receive a maximum of 1398672 for that course and any other flight training programs leading to your dual-engine certification or other certificationthat begin before August 1 2020. 
+																	The amount of money youll get for things like books tuition and housing depends on which program you choose. 
+																	If the first business day occurs on a non-business day weekend or a holiday VA benefits will be paid on the last business day prior to the first of the month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	911 hours three-quarter time. 
+																	Get the steps to use your Dependents Education Assistance benefit. 
+																	Congress approves fix to protect GI Bill benefits due to schools shifting to online classes due to the coronavirus. 
+																	We pay the monthly amount directly to the student. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View current payment rates for online and distance learning courses you can get money for under the Post-911 GI Bill. 
+																	Check Post-911 GI Bill rates Montgomery GI Bill rates and other benefit amounts. 
+																	Learn about Veterans Affairs VA Ch. 
+																	If a class starts prior to date shown below class will be paid in full using previous rate ie class starting July 30 2018 will be paid per August 1 2017 rate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find the 2021 VA pay schedule for VA disability education compensation pension and survivors benefits that are paid on a monthly basis. 
+																	How payments are made Tuition and fee payment paid to the school. 
+																	For example a college considers. 
+																	You can take classes at more than one school under the GI Bill as long as. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How much does VA cover for graduate-level programs. 
+																	Learn about Veterans Affairs VA Monthly Pay Rates Training Times - Chapters 30 1606 and 35 funding. 
+																	Online College Payment Rates For 2019 Academic Year August 1 2020 July 31 2021 Exclusively Online Training No Classroom Instruction 91650 per month. 
+																	15 however all GI Bill recipients taking hybrid courses using the Post-911 GI Bill will be paid the MHA amount for the location where they take the majority of their classroom. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	35 Dependents Education Assistance funding. 
+																	Can I take classes at more than one school at a time. 
+																	VA payment benefits are are paid the first business day of the following month. 
+																	Also keep in mind you will not get a Post 911 GI Bill housing allowance if you take only online classes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We cover the full in-state tuition costs for training at public schools and up to 2516214 per year at private or foreign schools. 
+																	Given that many flight-training programs carry hefty fees you will need to carefully assess your schools charges. 
+																	And VA will pay for tests even if you fail them. 
+																	Additional flight training courses that begin on or after August 1 2020 are subject to a new annual limit see annual maximum amount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The way around this is to take one on-campus class at school near you. 
+																	The school decides how to rate each hour. 
+																	The current monthly payment for full-time training is 1224. 
+																	12 hours or more full time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Just ensure the class is related to your degree plan. 
+																	Find the most recent GI Bill BAH rates and compare benefits. 
+																	You may consider completing correspondence courses by mail if you live far from a school or want to take classes from home. 
+																	How much BAH does the VA pay for online college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA TMS is a web-based portal through which VA staff can manage their continuing education and maintain a single official training record. 
+																	Students going to school 100 percent online will NOT receive a housing allowance. 
+																	How much does the VA pay for online college. 
+																	Post-911 GI Bill and other VA education benefit rates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We provide education benefits to qualifying Veterans and their family members. 
+																	Find out how you can use your Post-911 Bill benefits to pay for up to half the cost of correspondence training classes at an in-state school. 
+																	You will get up to 1000 per year in a book stipend regardless if you attend online or on-campus. 
+																	If youre using GI Bill benefits to pay for online or distance learning courses you can also get a housing allowance based on 50 of the national average. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Assist a Veteran by Getting Your Test Approved Help serve our nations Veterans by getting your licensing or certification test officially approved which lets Veterans and other beneficiaries receive reimbursement for test-taking costs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d3/00/cd/d300cd1734243a430aef5ac5bb36d2b2.jpg" data-lightbox="roadtrip" data-title="Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d3/00/cd/d300cd1734243a430aef5ac5bb36d2b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2QeHpAwT7QjDVpM1AC1wF9dXRoVJZ837qMQ';" alt="Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Making The Most Of Your Gi Bill Benefits Gi Bill Department Of Veterans Affairs Best Online Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/83/cf/11/83cf113127cf5c6f0ff1af76f42214e0.jpg" data-lightbox="roadtrip" data-title="The Doors To Become A Pinterest Va Today Online Course Will Be Open Soon Read This Detailed Review To Decide Wh Online Education How To Become Online Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/83/cf/11/83cf113127cf5c6f0ff1af76f42214e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWbKcA9I7sWV14m0NE2uLTNsYUs5rnv9csOg';" alt="The Doors To Become A Pinterest Va Today Online Course Will Be Open Soon Read This Detailed Review To Decide Wh Online Education How To Become Online Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Doors To Become A Pinterest Va Today Online Course Will Be Open Soon Read This Detailed Review To Decide Wh Online Education How To Become Online Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ab/57/e9/ab57e9578cb8f29d3aedb60b690234ed.jpg" data-lightbox="roadtrip" data-title="How To Become A Fully Booked Pinterest Virtual Assistant Making 4 000 A Month Become A Virtual Assistant Virtual Assistant Jobs Virtual Assistant Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ab/57/e9/ab57e9578cb8f29d3aedb60b690234ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKEbHEisB0vOsDdF_dWovWN130noZU01Suog';" alt="How To Become A Fully Booked Pinterest Virtual Assistant Making 4 000 A Month Become A Virtual Assistant Virtual Assistant Jobs Virtual Assistant Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Fully Booked Pinterest Virtual Assistant Making 4 000 A Month Become A Virtual Assistant Virtual Assistant Jobs Virtual Assistant Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/52/a5/36/52a5366b1920d05ce0a8429ac77daf37.jpg" data-lightbox="roadtrip" data-title="Pin On Virtual Assistant Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/52/a5/36/52a5366b1920d05ce0a8429ac77daf37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKswmbbE2Tr0dfPUGwMeJqxJ544aTaftKoAA';" alt="Pin On Virtual Assistant Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Virtual Assistant Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/76/e5/98/76e598c250d12aee5996cb3e22d2e8f4.jpg" data-lightbox="roadtrip" data-title="Learn From The Best Pinterest Va Course How You Can Start Making Money On Pinterest Virtual Assistant How To Become Online Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/76/e5/98/76e598c250d12aee5996cb3e22d2e8f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM20baiawjnY1aLZtXXGaS_1C2XBhO3Zs6DQ';" alt="Learn From The Best Pinterest Va Course How You Can Start Making Money On Pinterest Virtual Assistant How To Become Online Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Learn From The Best Pinterest Va Course How You Can Start Making Money On Pinterest Virtual Assistant How To Become Online Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/3b/21/f13b2151d1a4bc05d9189254af807057.png" data-lightbox="roadtrip" data-title="Ready To Become A Virtual Assistant In 2020 Virtual Assistant Online Work Free Online Classes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/3b/21/f13b2151d1a4bc05d9189254af807057.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGOB67lG4YeVluRhJHta2lwB1uyxad2hb_Rg';" alt="Ready To Become A Virtual Assistant In 2020 Virtual Assistant Online Work Free Online Classes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ready To Become A Virtual Assistant In 2020 Virtual Assistant Online Work Free Online Classes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/59/a6/0059a621dfbf1fdbe533e992fdd9e391.png" data-lightbox="roadtrip" data-title="30 Templates Checklist Swipe Files For Your Va Business Full Pack The Va Finishing School Business Checklist Virtual Assistant Business Virtual Assistant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/59/a6/0059a621dfbf1fdbe533e992fdd9e391.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSEdMr89ARzIYAbHMWuQslv217yK0FoOweEQ';" alt="30 Templates Checklist Swipe Files For Your Va Business Full Pack The Va Finishing School Business Checklist Virtual Assistant Business Virtual Assistant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Templates Checklist Swipe Files For Your Va Business Full Pack The Va Finishing School Business Checklist Virtual Assistant Business Virtual Assistant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/51/6c/74516c48a8a6d546006ecf16d428535e.png" data-lightbox="roadtrip" data-title="4 Things To Consider Before Hiring A Va To Help You Launch A Course Online Courses Create Online Courses Online Course Creation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/51/6c/74516c48a8a6d546006ecf16d428535e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlrn5pi8uEE_-tfMqILkfG-G-Zh7G8lR9nZQ';" alt="4 Things To Consider Before Hiring A Va To Help You Launch A Course Online Courses Create Online Courses Online Course Creation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Things To Consider Before Hiring A Va To Help You Launch A Course Online Courses Create Online Courses Online Course Creation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ee/56/5b/ee565b34c4f0c25e8d855fea872c0f80.jpg" data-lightbox="roadtrip" data-title="Obm Services Leslie Auman Editing Service Editing Writing Online Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ee/56/5b/ee565b34c4f0c25e8d855fea872c0f80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYt233ZRlyBtzYwD7fyCO9O7m1mxLuCZB1Fw';" alt="Obm Services Leslie Auman Editing Service Editing Writing Online Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obm Services Leslie Auman Editing Service Editing Writing Online Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/48/f2/8e/48f28eaae067f3dcc8a84190857aa8d6.jpg" data-lightbox="roadtrip" data-title="Pin On Land Virtual Assistant Clients">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/48/f2/8e/48f28eaae067f3dcc8a84190857aa8d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuui3UtvhkyrFfKr6fKww-CuaRPZU6gWAHzA';" alt="Pin On Land Virtual Assistant Clients">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Land Virtual Assistant Clients</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/7a/93/2a7a9300bd2f6be150ba3a84a291727f.png" data-lightbox="roadtrip" data-title="Best Free Paid Virtual Assistant Training Courses In 2020 Virtual Assistant Training Virtual Assistant Virtual Assistant Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/7a/93/2a7a9300bd2f6be150ba3a84a291727f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7y8Csk3rF_rm9PT7-aP2HGbbOp0QrBEfkqw';" alt="Best Free Paid Virtual Assistant Training Courses In 2020 Virtual Assistant Training Virtual Assistant Virtual Assistant Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Free Paid Virtual Assistant Training Courses In 2020 Virtual Assistant Training Virtual Assistant Virtual Assistant Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d0/f4/68/d0f46852a9cb5e0a5f0d5a7c2752d835.jpg" data-lightbox="roadtrip" data-title="Become A Pinterest Va Today Review With Images Online Programs Online School Affiliate Marketing Course">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d0/f4/68/d0f46852a9cb5e0a5f0d5a7c2752d835.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2zTz4yuYv7ndhV1ZVOzWZ9WWZWImXNe_ktA';" alt="Become A Pinterest Va Today Review With Images Online Programs Online School Affiliate Marketing Course">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Become A Pinterest Va Today Review With Images Online Programs Online School Affiliate Marketing Course</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/16/db/1b16db8d2bee4a2ac60bb48b560c3c24.png" data-lightbox="roadtrip" data-title="Pin On Best Of Insane Freedom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/16/db/1b16db8d2bee4a2ac60bb48b560c3c24.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2zvY21L_n-vV8h3Hi7FVlO8syaO0TVizsaw';" alt="Pin On Best Of Insane Freedom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Of Insane Freedom</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/bill-guyton.html">Bill Guyton</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-linkedin.html">Bill Montgomery Linkedin</a></li>
+													<li class="list-group-item"><a href="/billie-hakenson-gender.html">Billie Hakenson Gender</a></li>
+													<li class="list-group-item"><a href="/billing-machine.html">Billing Machine</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-anniston-al.html">Bill Montgomery Anniston Al</a></li>
+													<li class="list-group-item"><a href="/billet-avion.html">Billet Avion</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-facebook.html">Bill Montgomery Facebook</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-esq.html">Bill Montgomery Esq</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-doylestown-pa.html">Bill Montgomery Doylestown Pa</a></li>
+													<li class="list-group-item"><a href="/billie-eilish.html">Billie Eilish</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-arizona-supreme-court.html">Bill Montgomery Arizona Supreme Court</a></li>
+													<li class="list-group-item"><a href="/bill-weasley-actor.html">Bill Weasley Actor</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-tp-usa.html">Bill Montgomery Tp Usa</a></li>
+													<li class="list-group-item"><a href="/bill-gunn.html">Bill Gunn</a></li>
+													<li class="list-group-item"><a href="/billie-eilish-songs.html">Billie Eilish Songs</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-age.html">Bill Montgomery Age</a></li>
+													<li class="list-group-item"><a href="/billig-tablet.html">Billig Tablet</a></li>
+													<li class="list-group-item"><a href="/billie-holiday.html">Billie Holiday</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-reddit.html">Bill Montgomery Reddit</a></li>
+													<li class="list-group-item"><a href="/billi-ka-cartoon.html">Billi Ka Cartoon</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

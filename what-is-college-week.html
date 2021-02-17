@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is College Week - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is College Week",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/b5/a2/af/b5a2afb7550b595d791feaa16aee3fc7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+college+week",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is College Week</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Regardless of the length of course session you can still earn the same amount of credits. Dates are usually referred to by day and week number for example. Berkeley College Lower Manhattan Campus. <br>				
+			</p>
+										<a class="badge badge-dark" href="/can-i-apply-for-gi-bill-while-on-active-duty.html">can i apply for gi bill while on active duty</a>
+											<a class="badge badge-light" href="/can-dependants-use-gi-bill.html">can dependants use gi bill</a>
+											<a class="badge badge-primary" href="/can-i-claim-tuition-on-my-taxes-if-i-use-the-gi-bill.html">can i claim tuition on my taxes if i use the gi bill</a>
+											<a class="badge badge-danger" href="/biology-place.html">biology place</a>
+											<a class="badge badge-warning" href="/can-american-students-go-to-college-in-europe.html">can american students go to college in europe</a>
+											<a class="badge badge-light" href="/boston-college-womens-basketball-coach.html">boston college womens basketball coach</a>
+											<a class="badge badge-secondary" href="/bizbilla-app.html">bizbilla app</a>
+											<a class="badge badge-dark" href="/calculate-my-gi-bill-benefits.html">calculate my gi bill benefits</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to pay a visit to the ideal site.  Our site gives you suggestions for seeing the maximum quality video and image content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to view.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/63/30/56633003156e72e64b0ae191171b433d.jpg" data-lightbox="roadtrip" data-title="College Awareness And A College Going Attitude Starts In Elementary School These Activities Less College Awareness College Activities College Week Elementary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/63/30/56633003156e72e64b0ae191171b433d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLB8iLurb_sW6mJbLGHmgiiTfaTRRDmHSKBw';" alt="College Awareness And A College Going Attitude Starts In Elementary School These Activities Less College Awareness College Activities College Week Elementary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Awareness And A College Going Attitude Starts In Elementary School These Activities Less College Awareness College Activities College Week Elementary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/2e/08/e32e084bc57654980f9a3e47388d752b.png" data-lightbox="roadtrip" data-title="Virtual College And Career Week Lisakingcounselor Com Career Exploration Middle School Career Readiness High School Career Readiness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/2e/08/e32e084bc57654980f9a3e47388d752b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUwtIYkEEq0aSRlU3Xa9MVosUp52yeoyBBhg';" alt="Virtual College And Career Week Lisakingcounselor Com Career Exploration Middle School Career Readiness High School Career Readiness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virtual College And Career Week Lisakingcounselor Com Career Exploration Middle School Career Readiness High School Career Readiness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/c8/db/2dc8db635f3102fc2df914b3e58c4ec3.jpg" data-lightbox="roadtrip" data-title="College Awareness Activities And Powerpoint This Set Is Perfect For Grades 5 8 I Created T College Awareness Activities College Awareness College Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/c8/db/2dc8db635f3102fc2df914b3e58c4ec3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQOBPr5Kepa9DbHQHjHBprRiTmdwwZKd6K9w';" alt="College Awareness Activities And Powerpoint This Set Is Perfect For Grades 5 8 I Created T College Awareness Activities College Awareness College Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Awareness Activities And Powerpoint This Set Is Perfect For Grades 5 8 I Created T College Awareness Activities College Awareness College Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/97/0f/4a970f7264935824dbeea162d69d41b4.jpg" data-lightbox="roadtrip" data-title="Getting College And Career Ready In Elementary School High School Counseling College Counseling School Counseling Week">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/97/0f/4a970f7264935824dbeea162d69d41b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnB5RAAZ2GLTXWWCllt-VqQ8LbLm2gpyfR-w';" alt="Getting College And Career Ready In Elementary School High School Counseling College Counseling School Counseling Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting College And Career Ready In Elementary School High School Counseling College Counseling School Counseling Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/94/00/7d9400553dc8adc94c6083f0ee141f3e.png" data-lightbox="roadtrip" data-title="The Abilene Regional P 16 Council Provides Free College Focused Activities And Financial Literacy Middle School Counselor College Awareness College Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/94/00/7d9400553dc8adc94c6083f0ee141f3e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsPjsnXLOkEtkN97HWbkbxNt5aRM2cB_tD4A';" alt="The Abilene Regional P 16 Council Provides Free College Focused Activities And Financial Literacy Middle School Counselor College Awareness College Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Abilene Regional P 16 Council Provides Free College Focused Activities And Financial Literacy Middle School Counselor College Awareness College Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/94/a8/b294a8c8adb1825550653626bb869f1e.jpg" data-lightbox="roadtrip" data-title="College Awareness Week College Awareness College Awareness Week Morning Announcements">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/94/a8/b294a8c8adb1825550653626bb869f1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR65GKBM6MgXmPg_z5V8aqPCfmiAcnx7WvRQg';" alt="College Awareness Week College Awareness College Awareness Week Morning Announcements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Awareness Week College Awareness College Awareness Week Morning Announcements</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b2/94/a8/b294a8c8adb1825550653626bb869f1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR65GKBM6MgXmPg_z5V8aqPCfmiAcnx7WvRQg';" alt="College Awareness Week College Awareness College Awareness Week Morning Announcements">
+										<div class="card-body">
+						<h3 class="h5"><b>When you take 5 week college courses online you can arrange your coursework around your normal everyday life.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is college week</strong>. 
+								
+																	During these weeks many NC colleges and universities waive their application fees. 
+																	Stay in full-time education for example at a college. 
+																	Student orientation or new student orientation often encapsulated into an Orientation week O-Week Frosh Week Welcome Week or Freshers Week is a period before the start of an academic year at a university or tertiary institutions. 
+																	Thats where youll make your first friends get involved with activities and events and start the adventure of university life. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	T-Levels is the name that has been given by the media to governments planned overhaul of technical education. 
+																	Washington and Lee University. 
+																	Breaking news features analysis and debate plus audio and video content from England Scotland Wales and Northern Ireland. 
+																	Technical qualifications expert Gemma Gathercole explains. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It sounds cheesy but the best college is the one that youre in. 
+																	Following the Treasurys announcement of additional budget funding for technical education T-levels have been touted as the new alternative to A-Levels but what exactly are they. 
+																	Taking an eight-week course may be more intense but you will be done much quicker than regular college quarters or semesters. 
+																	Your college or department will send you details of activities you are expected to attend during your first few weeks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many classes and lectures start on Monday of 1st Week You might see a play on Thursday of 7th or see the rowing on Saturday of 5th. 
+																	A variety of events are held to orient and welcome new students during this period. 
+																	Those courses can last somewhere between 12 to 18 weeks. 
+																	The flexibility of this format is a good option if you need to continue to work your day job take care of your family and pursue other interests while pursuing your online bachelor degree program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Filter Search state abbreviation or college name. 
+																	The national CAW campaign focuses on assisting students who are the first in their families to attend college from low-income families or may not have otherwise. 
+																	Feb 20 - Feb 27 2021. 
+																	What is traditionally called College Application Week has been extended to two weeks this year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This panel discussion will take place during College Awareness Week on Tuesday 24 November at 10am and will consist of a diverse student panel in terms of age gender and ethnicity with representatives from both further and higher education. 
+																	Chat with our Student Ambassadors on our new Unibuddy platform. 
+																	Oxford University terms are 8 weeks long. 
+																	Our compact campus means that all colleges are a short walk from departments and teaching buildings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Feb 20 - Feb 27. 
+																	The most important. 
+																	Freshers week Freshers week which takes place in Week 0 the week before term begins includes orientation activities for new students including the annual Freshers Fair registration tours and social events. 
+																	You can manage your preferences for Cookies at any time for more information please see our. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Feb 20 - Feb 27 2021. 
+																	An event every week that begins at 1200 am on Sunday Monday Tuesday Wednesday Thursday Friday and Saturday repeating until 1 July 2021. 
+																	October 19 - 30th 2020. 
+																	University of New Orleans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This week the Independent Commission on the College of the Future published their report for England and despite all the events and consultations since they launched 20 months ago one recommendation appears to have surprised every college leader I have spoken to. 
+																	Berkeley College Midtown Campus. 
+																	Feb 20 - Feb 27 2021. 
+																	This means that schools and counselors can schedule their application events any time thats convenient throughout the month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We use this information to enhance the content and other services available on the site. 
+																	Feb 20 - Feb 27 2021. 
+																	Want to know more about student life at Maynooth University or what it is like to study a subject from the students perspective. 
+																	Eights Week also known as Summer Eights is a four-day regatta of bumps races which constitutes the University of Oxfords main intercollegiate rowing event of the year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For everything student life and the student. 
+																	Start an apprenticeship or traineeship. 
+																	You dont need to apply for a particular college based on your course. 
+																	By continuing to use our site you are agreeing for us to set a small number of cookies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spend 20 hours or more a week working or volunteering while in part-time education or training. 
+																	College Application Week CAW for 2020 is nowCollege Application Month all during October. 
+																	The College of Policing uses cookies to collect and analyse information about the users of this website. 
+																	Mens College Basketball Rankings - Week 11 2020-21 2019-20 2018-19 2017-18 2016-17 2015-16 2014-15 2013-14 2012-13 2011-12 2010-11 2009-10 2008-09 2007-08 2006-07 2005-06 2004-05 2003-04 2002-03. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll find that learning environment for accelerated online classes is similar. 
+																	Get the latest BBC News. 
+																	Berkeley College White Plains. 
+																	Feb 20 - Feb 27 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The regatta takes place in May of each year from the Wednesday to the Saturday of the fifth week of Trinity TermMens and womens coxed eights compete in separate divisions for their colleges with some colleges entering as. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2b/e7/16/2be7163c1ebac87ef2f7fb40d74d231a.jpg" data-lightbox="roadtrip" data-title="College Awareness Spirit Week College Awareness College Awareness Week School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2b/e7/16/2be7163c1ebac87ef2f7fb40d74d231a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGvX2_7-FS_9HyOQgLMWDJQMyoS0G6rlPGgQ';" alt="College Awareness Spirit Week College Awareness College Awareness Week School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Awareness Spirit Week College Awareness College Awareness Week School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/aa/30/c3/aa30c314bb4d82daeae7ae6fa8c2e762.jpg" data-lightbox="roadtrip" data-title="College Week Activities With Morning Meeting Lesson Plans College Awareness College Awareness Week College Week Elementary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/aa/30/c3/aa30c314bb4d82daeae7ae6fa8c2e762.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT29l1zuiIsoqLa_xPCvVYzTS_SOQHEjo3I7w';" alt="College Week Activities With Morning Meeting Lesson Plans College Awareness College Awareness Week College Week Elementary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Week Activities With Morning Meeting Lesson Plans College Awareness College Awareness Week College Week Elementary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/a2/af/b5a2afb7550b595d791feaa16aee3fc7.jpg" data-lightbox="roadtrip" data-title="College Week College School Education Lessons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/a2/af/b5a2afb7550b595d791feaa16aee3fc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOoWlYkOQbW7xlpusXBW2W73UwwPLk-NO0_w';" alt="College Week College School Education Lessons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Week College School Education Lessons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b0/6b/e9/b06be96394b39d2a7bd70270c86d7be5.jpg" data-lightbox="roadtrip" data-title="College Week College Awareness Bulletin Board In 2020 College Awareness Elementary Elementary School Counseling Elementary Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b0/6b/e9/b06be96394b39d2a7bd70270c86d7be5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRya4tPBZyNpl4vXXJIQO7w450WDQy5e81uUg';" alt="College Week College Awareness Bulletin Board In 2020 College Awareness Elementary Elementary School Counseling Elementary Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Week College Awareness Bulletin Board In 2020 College Awareness Elementary Elementary School Counseling Elementary Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/0b/2f/070b2f6a9a8f82930aa02797c6044e59.jpg" data-lightbox="roadtrip" data-title="Spirit Week Ideas For High School School Spirit Week High School Activities Spirit Week">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/0b/2f/070b2f6a9a8f82930aa02797c6044e59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvcR4Mo3dPIA16z_-qtRlxt4aH82xHPN4rKA';" alt="Spirit Week Ideas For High School School Spirit Week High School Activities Spirit Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spirit Week Ideas For High School School Spirit Week High School Activities Spirit Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9d/94/0c/9d940c48ddd99a7c8d8145f0270c28f4.jpg" data-lightbox="roadtrip" data-title="College Week College Awareness Elementary Resources College Awareness Elementary College Awareness Elementary Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9d/94/0c/9d940c48ddd99a7c8d8145f0270c28f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShUV-inUavzz-QukEgkyoRR10Hr5RcZg05Ng';" alt="College Week College Awareness Elementary Resources College Awareness Elementary College Awareness Elementary Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Week College Awareness Elementary Resources College Awareness Elementary College Awareness Elementary Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/9d/1d/6c9d1d61ea51baae4f8f90e19888a01e.jpg" data-lightbox="roadtrip" data-title="College Awareness Week College Awareness College Awareness Week Middle School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/9d/1d/6c9d1d61ea51baae4f8f90e19888a01e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL9GATUzwdN_K0xQjYl5siAiaCddMgqHJkqg';" alt="College Awareness Week College Awareness College Awareness Week Middle School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Awareness Week College Awareness College Awareness Week Middle School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/06/2b/08062b50e4fe378eff10bb9aaac2f030.png" data-lightbox="roadtrip" data-title="College Colors Day Flyer Activities And Graduation Cap Template College Awareness College Colors College Awareness Week">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/06/2b/08062b50e4fe378eff10bb9aaac2f030.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBT4oqcUqvSd0NGLmRnMLMDHXjHj2yL57nvQ';" alt="College Colors Day Flyer Activities And Graduation Cap Template College Awareness College Colors College Awareness Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Colors Day Flyer Activities And Graduation Cap Template College Awareness College Colors College Awareness Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/fe/7f/f1fe7f5532aefc60697fd63e907f9cf8.jpg" data-lightbox="roadtrip" data-title="College Week Reboot Morning Meetings College Awareness Scholarships For College College Awareness Elementary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/fe/7f/f1fe7f5532aefc60697fd63e907f9cf8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTNwSsguBEAaBGvlWDOBMoRJPkgfvS0kuiBA';" alt="College Week Reboot Morning Meetings College Awareness Scholarships For College College Awareness Elementary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Week Reboot Morning Meetings College Awareness Scholarships For College College Awareness Elementary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/ba/50/b3ba504225f5fcf4b170ea5c52406d9c.jpg" data-lightbox="roadtrip" data-title="Welcome Week Events Are Designed To Help You Become Part Of The Campus And Meet Fellow Students Student Activities Board Fun College Events Welcome Week">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/ba/50/b3ba504225f5fcf4b170ea5c52406d9c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUSaq1bli9poqzQ8XpyH42WAu5zacJybugDQ';" alt="Welcome Week Events Are Designed To Help You Become Part Of The Campus And Meet Fellow Students Student Activities Board Fun College Events Welcome Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome Week Events Are Designed To Help You Become Part Of The Campus And Meet Fellow Students Student Activities Board Fun College Events Welcome Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/ff/15/e3ff1567d8c3178a36291bad2b9c6160.jpg" data-lightbox="roadtrip" data-title="Henry County Public Schools College Bulletin Boards High School Counseling College Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/ff/15/e3ff1567d8c3178a36291bad2b9c6160.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60T4VGbzerKrkLGC_m5fTXEmkZS4jlIINpQ';" alt="Henry County Public Schools College Bulletin Boards High School Counseling College Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Henry County Public Schools College Bulletin Boards High School Counseling College Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/30/76/8930760628a57b75a53c6647fa1da2e9.jpg" data-lightbox="roadtrip" data-title="Pin By Amanda Tucker On Creating A College Going Culture School Year Themes College Awareness College Banner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/30/76/8930760628a57b75a53c6647fa1da2e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Z-Us62MYWgCPH2ZXroIsj0tRM_vTnv9mSQ';" alt="Pin By Amanda Tucker On Creating A College Going Culture School Year Themes College Awareness College Banner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Amanda Tucker On Creating A College Going Culture School Year Themes College Awareness College Banner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/50/15/de501523d5db06258edda773da0b7c9b.jpg" data-lightbox="roadtrip" data-title="Welcome Week Poster Student Activities Board Campus Activities College Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/50/15/de501523d5db06258edda773da0b7c9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfAWdxLqqJLWBVAhbVscbUEsGIlcyt_hYSA';" alt="Welcome Week Poster Student Activities Board Campus Activities College Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome Week Poster Student Activities Board Campus Activities College Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-approved-schools-in-the-philippines.html">Va Approved Schools In The Philippines</a></li>
+													<li class="list-group-item"><a href="/va-approved-schools-in-japan.html">Va Approved Schools In Japan</a></li>
+													<li class="list-group-item"><a href="/va-chapter-10.html">Va Chapter 10</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-education-benefits-number.html">Va Chapter 35 Education Benefits Number</a></li>
+													<li class="list-group-item"><a href="/va-benefits-montgomery-gi-bill.html">Va Benefits Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-chapter-31-education-benefits.html">Va Chapter 31 Education Benefits</a></li>
+													<li class="list-group-item"><a href="/uw-veterans-education-benefits-office.html">Uw Veterans Education Benefits Office</a></li>
+													<li class="list-group-item"><a href="/va-benefits-chapter-37-title-38.html">Va Benefits Chapter 37 Title 38</a></li>
+													<li class="list-group-item"><a href="/va-certification-gi-bill.html">Va Certification Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-chapter-13-waiting-period.html">Va Chapter 13 Waiting Period</a></li>
+													<li class="list-group-item"><a href="/va-benefits-under-chapter-35.html">Va Benefits Under Chapter 35</a></li>
+													<li class="list-group-item"><a href="/utsa-va-chapter-35.html">Utsa Va Chapter 35</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-benefits-status.html">Va Chapter 35 Benefits Status</a></li>
+													<li class="list-group-item"><a href="/va-approved-gi-bill-schools.html">Va Approved Gi Bill Schools</a></li>
+													<li class="list-group-item"><a href="/va-benefits-gov-gi-bill.html">Va Benefits Gov Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-911-gi-bill-bah.html">Va 911 Gi Bill Bah</a></li>
+													<li class="list-group-item"><a href="/va-benefits-gi-bill.html">Va Benefits Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-benefits-gi-bill-status.html">Va Benefits Gi Bill Status</a></li>
+													<li class="list-group-item"><a href="/va-benefits-gi-bill-application.html">Va Benefits Gi Bill Application</a></li>
+													<li class="list-group-item"><a href="/va-approved-schools-in-san-diego.html">Va Approved Schools In San Diego</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Gym Fans Twitter - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Gym Fans Twitter",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/1d/7a/63/1d7a6300e61b57fb31ac30e169375551.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+gym+fans+twitter",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Gym Fans Twitter</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">398 Followers 1050 Following 142 Posts - See Instagram photos and videos from College Gymnastics Fans college_gymnastics_fans. The latest tweets from CollegeGymFan. 2021-22 Karsyn Foster to Long Island. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/post-911-transfer-benefits.html">post 911 transfer benefits</a>
+											<a class="badge badge-primary" href="/post-911-gi-bill-while-in-reserves.html">post 911 gi bill while in reserves</a>
+											<a class="badge badge-warning" href="/pretty-womens-college-basketball-players.html">pretty womens college basketball players</a>
+											<a class="badge badge-secondary" href="/post-covid-gi-issues.html">post covid gi issues</a>
+											<a class="badge badge-primary" href="/pronote-giberville-college-emile-zola.html">pronote giberville college emile zola</a>
+											<a class="badge badge-dark" href="/pre-vs-post-911-gi-bill.html">pre vs post 911 gi bill</a>
+											<a class="badge badge-success" href="/presentation-college-womens-basketball-roster.html">presentation college womens basketball roster</a>
+											<a class="badge badge-warning" href="/presentation-college-womens-basketball-schedule.html">presentation college womens basketball schedule</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the right blog.  Our site gives you suggestions for viewing the highest quality video and picture content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this video that you view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/b7/52/13b75205bee1a0cb48739d37c8dbd87a.jpg" data-lightbox="roadtrip" data-title="3 Twitter Women Gymnastics Athlete">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/b7/52/13b75205bee1a0cb48739d37c8dbd87a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8lj519Z8edLNeh8ineRz6XYcNw5FfvKHVPw';" alt="3 Twitter Women Gymnastics Athlete">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Twitter Women Gymnastics Athlete</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/91/02/ff9102eaece3e09a797abce1c442dbad.jpg" data-lightbox="roadtrip" data-title="Pin On Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/91/02/ff9102eaece3e09a797abce1c442dbad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT91y10LVaUELnRTomEYL1ifp5pxm9e5WZ2mA';" alt="Pin On Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/03/f6/0003f68427bb5d76d2fef7e101090aa2.jpg" data-lightbox="roadtrip" data-title="Laurie Hernandez On Twitter Laurie Hernandez Hernandez Norah Flatley">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/03/f6/0003f68427bb5d76d2fef7e101090aa2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTryjpo4WW9OD_5yeTkoajChlxR-sDKQOsPJw';" alt="Laurie Hernandez On Twitter Laurie Hernandez Hernandez Norah Flatley">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Laurie Hernandez On Twitter Laurie Hernandez Hernandez Norah Flatley</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/79/73/27797317410080015b798bf2e7e866a3.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/79/73/27797317410080015b798bf2e7e866a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZPoFn2fXMmsqUcJdqqg3skWJumpbgXv44Q';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/7a/63/1d7a6300e61b57fb31ac30e169375551.jpg" data-lightbox="roadtrip" data-title="13 Twitter Gymnastics Pictures Gymnastics Girls Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/7a/63/1d7a6300e61b57fb31ac30e169375551.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHK7k99f72x1I6EdJY2IR-bLqbpsiabrtZiQ';" alt="13 Twitter Gymnastics Pictures Gymnastics Girls Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">13 Twitter Gymnastics Pictures Gymnastics Girls Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/1f/c4/f31fc4ced5e4feb8b22ce778ed3502ac.jpg" data-lightbox="roadtrip" data-title="Pin By Scott Davis On College Gym Gymnastics Female Gymnast Gymnastics Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/1f/c4/f31fc4ced5e4feb8b22ce778ed3502ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy4eA2xKs5xUL1QxnjpwqI5E9GqpYdQEx2qA';" alt="Pin By Scott Davis On College Gym Gymnastics Female Gymnast Gymnastics Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Scott Davis On College Gym Gymnastics Female Gymnast Gymnastics Pictures</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/fc/62/bf/fc62bf814fd0e2fc2ac7ea7c77da6e7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy4eA2xKs5xUL1QxnjpwqI5E9GqpYdQEx2qA';" alt="Pin By Scott Davis On College Gym Gymnastics Female Gymnast Gymnastics Pictures">
+										<div class="card-body">
+						<h3 class="h5"><b>The Gymnasium fans include.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College gym fans twitter</strong>. 
+								
+																	UGA frosh Victoria Nguyen debuted in fine fashion winning the UB and the AA with an impressive first meet 394. 
+																	500 1000 2000 5000. 
+																	College Gym News was founded in 2015 by Editor-in-Chief Elizabeth Grimsley. 
+																	Forums Topics Posts Last post. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MIC September 29 2020 College Gym News Featured NCAA WAG Preview. 
+																	Teammate Mikayla Magee won VT with a stuck Yurchenko 1 12 while teammate Rachel Baumann took the FX. 
+																	Gymnasium fans listed below are designed for a general Gymnasium fan applications and are suitable for the majority of specific requirements for Gymnasium applications. 
+																	Since then the site has transformed into a one-stop-shop for college gymnastics news from recruiting analysis to meet coverage at the NCAA national championships thanks to the hard work of 10-plus contributors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The latest tweets from FantasyGym. 
+																	Per month One Time Only. 
+																	For final score updates while you are on the go you can also follow our Twitter posts via tablet or phone Todays News. 
+																	Mizzous Sienna Schreiber won the BB. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mens and Womens Links. 
+																	College Gym News was founded in 2015 by Editor-in-Chief Elizabeth Grimsley. 
+																	College football playoffs and hot college girls. 
+																	00 Fan and Booster Sites. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The latest tweets from GymBooty. 
+																	Jamie Lever Mimics Bebo Going To The Gym Fans Call Her better Than Original Jamie Lever who is known for her mimicking skills recently shared a mimic video of Kareena Kapoor Khan. 
+																	MIC September 29 2020 College Gym News Featured NCAA WAG Preview Facebook0Tweet0Pin0 There is perhaps no more closely knit conference in the NCAA than the MIC with connections and history between all five teams reinforced by the structure of the conference itself which is run. 
+																	College Gymnastics Board The main board open for all discussions about college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Donate to Us Support College Gymnastics Board by making a donation. 
+																	Since then the site has transformed into a one-stop-shop for college gymnastics news from recruiting analysis to meet coverage at the NCAA national championships thanks to the hard work of 10-plus contributors. 
+																	The latest tweets from collegegymnews_. 
+																	494k Followers 514 Following 659 Posts - See Instagram photos and videos from College Girls college_girls. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A place for fans of college gymnastics to discuss the sport their teams and individual gymnasts. 
+																	See our Twitter College Gymnastics list for real-time updates from 66 different teams all aggregated into one stream. 
+																	Recently the actor shared a. 
+																	All the college gymnastics news you want all in one place. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	00 College Gym Board 00 WWGym NCAA 00 Intl Gymnast College 00 Sites and Blogs. 
+																	The latest tweets from collegegymnews_. 
+																	Jamie Lever has often entertained her fans and followers with hilarious mimicry videos on social media. 
+																	In this video Jamie mimicked Bebo going to the gym. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ring Plate Series Vogue Series Minitube Plastic Series Mixvent Series Silent Series Minivent Series Profile Fan Series Tile Fan Series Ezifit Thru Roof Exhaust Fan JetStream Fan Series. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/a6/bc/f3a6bc2de1cd8d9e0ec670fd0332d898.jpg" data-lightbox="roadtrip" data-title="Pin On Fans Of Big Ass">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/a6/bc/f3a6bc2de1cd8d9e0ec670fd0332d898.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn2zQ4r2tt2QVhCED4N9VmyFJm8Z8pMhtwNg';" alt="Pin On Fans Of Big Ass">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fans Of Big Ass</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/a3/45/37a34532600cb7e5fc33e83564a05bb5.jpg" data-lightbox="roadtrip" data-title="Pin By Heidi Hartje On College Gym Artistic Gymnastics Female Gymnast Gymnastics Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/a3/45/37a34532600cb7e5fc33e83564a05bb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdA5G1w3YoLQAK5sxwcRDnmNVxjQ9Vgt2xA';" alt="Pin By Heidi Hartje On College Gym Artistic Gymnastics Female Gymnast Gymnastics Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Heidi Hartje On College Gym Artistic Gymnastics Female Gymnast Gymnastics Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/13/a5/2713a53ab69165316dd15f5f8979f8a9.jpg" data-lightbox="roadtrip" data-title="Oklahoma Women S Gym Ou Wgymnastics Twitter Gym Women Ncaa Champion National Champions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/13/a5/2713a53ab69165316dd15f5f8979f8a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQih_N3o1SbD8nD6AG3IyGcdDMyZH3ciS_0Kg';" alt="Oklahoma Women S Gym Ou Wgymnastics Twitter Gym Women Ncaa Champion National Champions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oklahoma Women S Gym Ou Wgymnastics Twitter Gym Women Ncaa Champion National Champions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/8b/fd/9d8bfd4df791f6f231ce83b36f3e09e5.png" data-lightbox="roadtrip" data-title="Stanford Gymnastics On Twitter In 2020 Student Athlete Athlete Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/8b/fd/9d8bfd4df791f6f231ce83b36f3e09e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4D5H7lnBxZIkMe0jtYeObTWDI-Aa6FmBNuw';" alt="Stanford Gymnastics On Twitter In 2020 Student Athlete Athlete Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stanford Gymnastics On Twitter In 2020 Student Athlete Athlete Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/62/30/68623097bcfa003d810b12364c446b12.jpg" data-lightbox="roadtrip" data-title="Tokyo Nike Run Club Omotesando Opening Superfuture Gym Interior Retail Design Gym Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/62/30/68623097bcfa003d810b12364c446b12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-N6MxVchYIb_et09epNAFs0BcZevZWSdeLg';" alt="Tokyo Nike Run Club Omotesando Opening Superfuture Gym Interior Retail Design Gym Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tokyo Nike Run Club Omotesando Opening Superfuture Gym Interior Retail Design Gym Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/d5/95/bcd595be6e856626a4e6bb05af772713.jpg" data-lightbox="roadtrip" data-title="Infocristiano On Twitter Cristiano Ronaldo S Celebration Against Barcelona Tonight Cristiano Ronaldo Body Ronaldo Juventus Cristiano Ronaldo Celebration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/d5/95/bcd595be6e856626a4e6bb05af772713.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyAC0TQ7bo7aFAqXHQw-sQkCJKbavoZyrNRQ';" alt="Infocristiano On Twitter Cristiano Ronaldo S Celebration Against Barcelona Tonight Cristiano Ronaldo Body Ronaldo Juventus Cristiano Ronaldo Celebration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infocristiano On Twitter Cristiano Ronaldo S Celebration Against Barcelona Tonight Cristiano Ronaldo Body Ronaldo Juventus Cristiano Ronaldo Celebration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b5/f3/ae/b5f3ae0854b1678d7a6f42aa77ca8122.jpg" data-lightbox="roadtrip" data-title="Cristiano Ronaldo Twitter Photos On Twiends In 2020 Ronaldo Cristiano Ronaldo Kids Cristiano Ronaldo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b5/f3/ae/b5f3ae0854b1678d7a6f42aa77ca8122.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKhFEbEa5FkQ4ynhfIoexPfgzqMJ59QzMlPA';" alt="Cristiano Ronaldo Twitter Photos On Twiends In 2020 Ronaldo Cristiano Ronaldo Kids Cristiano Ronaldo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cristiano Ronaldo Twitter Photos On Twiends In 2020 Ronaldo Cristiano Ronaldo Kids Cristiano Ronaldo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/62/bf/fc62bf814fd0e2fc2ac7ea7c77da6e7d.jpg" data-lightbox="roadtrip" data-title="Mcsmaria S Artistic Gymnastics Blog Ucla Oklahoma Live Blog Female Gymnast Gymnastics Girls Amazing Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/62/bf/fc62bf814fd0e2fc2ac7ea7c77da6e7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfGgCoQgqT8Rt2LjRqPSoI3YqJTvhM8FiMEw';" alt="Mcsmaria S Artistic Gymnastics Blog Ucla Oklahoma Live Blog Female Gymnast Gymnastics Girls Amazing Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mcsmaria S Artistic Gymnastics Blog Ucla Oklahoma Live Blog Female Gymnast Gymnastics Girls Amazing Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/99/d0/2b99d04aa7e9a58a868f48b43f144691.jpg" data-lightbox="roadtrip" data-title="Flex 2b Famous Follow For More Of The Hottest Physiques On The Planet Instagram Twitter Pinterest Tumblr Flex2 Ripped Workout Bodybuilding Muscle Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/99/d0/2b99d04aa7e9a58a868f48b43f144691.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSodn2BVLY1zyS7oZQ7xv89V1-zynR9Byu94A';" alt="Flex 2b Famous Follow For More Of The Hottest Physiques On The Planet Instagram Twitter Pinterest Tumblr Flex2 Ripped Workout Bodybuilding Muscle Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flex 2b Famous Follow For More Of The Hottest Physiques On The Planet Instagram Twitter Pinterest Tumblr Flex2 Ripped Workout Bodybuilding Muscle Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/29/b6/4829b650bb18346eaf0aae1118560ac8.jpg" data-lightbox="roadtrip" data-title="الوسم ريال مدريد باريس سان جيرمان على تويتر Ronaldo Real Madrid Ronaldo Cristiano Ronaldo 7">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/29/b6/4829b650bb18346eaf0aae1118560ac8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67I8LVIU0hMvQEDfOEikputfx-qsffEMj3A';" alt="الوسم ريال مدريد باريس سان جيرمان على تويتر Ronaldo Real Madrid Ronaldo Cristiano Ronaldo 7">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">الوسم ريال مدريد باريس سان جيرمان على تويتر Ronaldo Real Madrid Ronaldo Cristiano Ronaldo 7</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/9d/92/e19d92b91c7eff273b608d469fe39e3f.png" data-lightbox="roadtrip" data-title="Victor Santamaria M On Twitter Ceiling Fan Ceiling Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/9d/92/e19d92b91c7eff273b608d469fe39e3f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDup7K4WFSfs8kZoNGtA3nZwwPnF9HhT0u1A';" alt="Victor Santamaria M On Twitter Ceiling Fan Ceiling Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Victor Santamaria M On Twitter Ceiling Fan Ceiling Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/30/85/053085370ec94eee276f2928aae88a87.jpg" data-lightbox="roadtrip" data-title="Ucla Madison Kocian On Floor Madison Kocian Gymnastics Team Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/30/85/053085370ec94eee276f2928aae88a87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOO7yP9iIAO-3gtFBkKzShWErt447nGph_Uw';" alt="Ucla Madison Kocian On Floor Madison Kocian Gymnastics Team Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ucla Madison Kocian On Floor Madison Kocian Gymnastics Team Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/87/d0/0387d036b4a509177986ecd116c47803.png" data-lightbox="roadtrip" data-title="Throwback Leotard Rankings Lsu College Gym News Gymnastics Meet Hair Lsu Gymnastics Gymnastics Hair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/87/d0/0387d036b4a509177986ecd116c47803.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLejjw0KMJe5d9_BC6GxoCNqTr8qpM22_uAQ';" alt="Throwback Leotard Rankings Lsu College Gym News Gymnastics Meet Hair Lsu Gymnastics Gymnastics Hair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Throwback Leotard Rankings Lsu College Gym News Gymnastics Meet Hair Lsu Gymnastics Gymnastics Hair</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/state-of-wisconsin-gi-bill.html">State Of Wisconsin Gi Bill</a></li>
+													<li class="list-group-item"><a href="/the-montgomery-bill-for-inmates.html">The Montgomery Bill For Inmates</a></li>
+													<li class="list-group-item"><a href="/stonehill-college-womens-basketball-roster.html">Stonehill College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-ww2.html">The Gi Bill Ww2</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-provided-for-all-of-the-following-except.html">The Gi Bill Provided For All Of The Following Except</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-directed-that.html">The Gi Bill Directed That</a></li>
+													<li class="list-group-item"><a href="/texas-state-university-gi-bill.html">Texas State University Gi Bill</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-provided-veterans-with.html">The Gi Bill Provided Veterans With</a></li>
+													<li class="list-group-item"><a href="/texas-college-womens-basketball-roster.html">Texas College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-helped-veterans-returning-from-wwii.html">The Gi Bill Helped Veterans Returning From Wwii</a></li>
+													<li class="list-group-item"><a href="/state-steel-gi-ne.html">State Steel Gi Ne</a></li>
+													<li class="list-group-item"><a href="/texas-national-guard-gi-bill.html">Texas National Guard Gi Bill</a></li>
+													<li class="list-group-item"><a href="/togus-va-education-department.html">Togus Va Education Department</a></li>
+													<li class="list-group-item"><a href="/switch-to-post-911-gi-bill-online.html">Switch To Post 911 Gi Bill Online</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-provided-veterans-with-all-of-the-following-economic-benefits-except.html">The Gi Bill Provided Veterans With All Of The Following Economic Benefits Except</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-quizlet.html">The Gi Bill Quizlet</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-did-all-of-the-following-except.html">The Gi Bill Did All Of The Following Except</a></li>
+													<li class="list-group-item"><a href="/state-gymnastics-centre.html">State Gymnastics Centre</a></li>
+													<li class="list-group-item"><a href="/the-percentage-of-college-athletes-that-go-pro.html">The Percentage Of College Athletes That Go Pro</a></li>
+													<li class="list-group-item"><a href="/texas-veteran-spouse-education-benefits.html">Texas Veteran Spouse Education Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

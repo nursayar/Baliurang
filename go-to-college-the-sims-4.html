@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go To College The Sims 4 - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go To College The Sims 4",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/f7/aa/10/f7aa10fb4167e9b7383ef33485386b21.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+to+college+the+sims+4",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go To College The Sims 4</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Prolific Sims 4 modder Simmythesim who previously worked on the aforementioned hotels mod as well as a custom height-slider that let you adjust the physical make-up of your Sims in greater detail. Your Sim Can Now Go to College. After installing the game start. <br>				
+			</p>
+										<a class="badge badge-dark" href="/yu-gi-oh-9.html">yu gi oh 9</a>
+											<a class="badge badge-info" href="/yugioh-number-9.html">yugioh number 9</a>
+											<a class="badge badge-light" href="/york-college-womens-basketball.html">york college womens basketball</a>
+											<a class="badge badge-primary" href="/yu-gi-oh-35-boeluem.html">yu gi oh 35 boeluem</a>
+											<a class="badge badge-secondary" href="/your-gi-bill-benefits-everything-you-need-to-know.html">your gi bill benefits everything you need to know</a>
+											<a class="badge badge-light" href="/yu-gi-oh-build-pack.html">yu gi oh build pack</a>
+											<a class="badge badge-secondary" href="/yu-gi-oh-35-pl.html">yu gi oh 35 pl</a>
+											<a class="badge badge-secondary" href="/yu-gi-oh-35-resz.html">yu gi oh 35 resz</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the right blog.  Our site gives you suggestions for viewing the highest quality video and image content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/e1/05/3fe10504fe9251887fb37573fe74b15b.jpg" data-lightbox="roadtrip" data-title="Get To College Aka University Mod Free Sims 4 Sims 4 Expansions The Sims 4 Packs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/e1/05/3fe10504fe9251887fb37573fe74b15b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Qe4kfLHMyI_yoWaJ9t3-Drbrsn2UJ_LRHw';" alt="Get To College Aka University Mod Free Sims 4 Sims 4 Expansions The Sims 4 Packs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get To College Aka University Mod Free Sims 4 Sims 4 Expansions The Sims 4 Packs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/e0/53/a0e05387d586cc3ab336dd6fd19a49f1.jpg" data-lightbox="roadtrip" data-title="Let Your Sims Go To College Sims 4 Jobs The Sims 4 Pc Sims 4">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/e0/53/a0e05387d586cc3ab336dd6fd19a49f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ__hcgHh5KfVIF9_ba58gDbU15PXjTMucgTQ';" alt="Let Your Sims Go To College Sims 4 Jobs The Sims 4 Pc Sims 4">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Let Your Sims Go To College Sims 4 Jobs The Sims 4 Pc Sims 4</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/d8/0f/70d80f1d2a1dc9954a44600f574e0d4d.jpg" data-lightbox="roadtrip" data-title="Get To College Mod Sims 4 Seasons Update The Sims 4 Mods Youtube Sims 4 Seasons Sims 4 Expansions Sims 4 Challenges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/d8/0f/70d80f1d2a1dc9954a44600f574e0d4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPLyrSbCD3LAzveB54QCS9dWlk27yGoRFfg';" alt="Get To College Mod Sims 4 Seasons Update The Sims 4 Mods Youtube Sims 4 Seasons Sims 4 Expansions Sims 4 Challenges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get To College Mod Sims 4 Seasons Update The Sims 4 Mods Youtube Sims 4 Seasons Sims 4 Expansions Sims 4 Challenges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/98/57/2798573788a14f30d6769cc541bf015d.jpg" data-lightbox="roadtrip" data-title="Get To College Sims 4 Sims Best Sims">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/98/57/2798573788a14f30d6769cc541bf015d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNw2kXSLQnr818xBdp8bnpBh2-WGHz-0b9Vw';" alt="Get To College Sims 4 Sims Best Sims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get To College Sims 4 Sims Best Sims</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/aa/d2/e5aad23f534536cc45bab827d9cd3b33.jpg" data-lightbox="roadtrip" data-title="Mod The Sims Get To College Mod V3 Sims Sims 4 College Fun">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/aa/d2/e5aad23f534536cc45bab827d9cd3b33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT09-JFTgkgphm_aTlonEkicAxmTwBKf_Oj8A';" alt="Mod The Sims Get To College Mod V3 Sims Sims 4 College Fun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mod The Sims Get To College Mod V3 Sims Sims 4 College Fun</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/fd/3f/36fd3f9c12d486dfb85b66b09b1edd73.jpg" data-lightbox="roadtrip" data-title="Get To College Sims 4 Sims Sims 4 College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/fd/3f/36fd3f9c12d486dfb85b66b09b1edd73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrIo6EI-G5XQaVfuj5hcBA31_konjDUv5jNw';" alt="Get To College Sims 4 Sims Sims 4 College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get To College Sims 4 Sims Sims 4 College</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/be/07/c5/be07c5caf08e542449fca128b412b9bb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrIo6EI-G5XQaVfuj5hcBA31_konjDUv5jNw';" alt="Get To College Sims 4 Sims Sims 4 College">
+										<div class="card-body">
+						<h3 class="h5"><b>The Sims console games.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go to college the sims 4</strong>. 
+								
+																	Attend a different subject every day with the teacher NPC and demonstrate your knowledge through activity goals. 
+																	The Sims Mobile. 
+																	Get to Work expansion and version 1980 of the game and comes with the recommendation that players disable aging when they send their Sims to school. 
+																	In November Electronic Arts will add the University expansion and fans are thrilled. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Experience the creativity humor escape and the freedom to play with life in The Sims 4. 
+																	I remembered that we had a college mod for The Sims 4. 
+																	Level 4 will be your qualification level so that you have to clear it to complete graduation. 
+																	Go through the installation game process. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UNIVERSITY CAREER 15 DEGREES. 
+																	THE SIMS 4 MOD OVERVIEW - YouTube SEND YOUR SIMS TO COLLEGE. 
+																	Your Sims achievements up until that point will be judged and if worthy you can be accepted for scholarships and distinguished degree programs at either University of Britechester of Foxbury Institute. 
+																	Near the end of high school Teen Sims can now apply to two colleges that they will. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Get to College mod had a Sims 4 seasons update and its perfect for the new pack. 
+																	AFTER YOU COMPLETE YOUR COURSES YOU CAN GET APPROVED FOR AN INTERNSHIPBECOME A MEMBER OF THE SUGA. 
+																	Click on the button Download Game. 
+																	Then finally you will get your dream job. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hopefully we will. 
+																	They can take classes join organizations and even play college games. 
+																	The Sims 4 University Degrees is the focal point of Discover University the late 2019 expansion pack for the ever-popular life simulation game. 
+																	Caroline Washington October 24 2019 0 Comment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A variety of Sims are yours to personalize each with distinct appearances dynamic personalities and inspiring. 
+																	In The Sims 4 Discover University youll have to do the same. 
+																	I dont have the patience for it in RL which makes it all the more desirable. 
+																	Cats. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The long-awaited The Sims 4. 
+																	These new two institutes are free to visit for players when they send their Sim to school. 
+																	College may refer to. 
+																	Student life is very engaging and for the most part thats a plus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sims 4 Get To College Modsims 4 cc download free mods custom content resource the sims book Maxis Match Alpha Male Female. 
+																	Try the Create A Sim demo to create your own Sim. 
+																	It is available in Sims 4 Packs. 
+																	Discover University expansion pack is finally here and has been well received but not even the Sims game developers can please everyone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enroll your Sims in higher education with The Sims 4 Discover University Expansion Pack launching on November 15 2019 on PC and Mac and December 17 2019 on Xbox One and PlayStation4. 
+																	Follow your Sims to school and help them achieve their education. 
+																	Hopefully Sketching makes a return since it was a fun skill to use. 
+																	Hopefully we will get some kind of college pack in the Sims 4 Yeah Im pretty sure well be getting one since its such an obvious addition to the game. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get Ready to Go to School with The Sims 4 Discover University Hit the books and show your school spirit. 
+																	Tweet on Twitter Share on Facebook Google Pinterest. 
+																	Applying for school can be a real nail-biter as you wait on an acceptance letter. 
+																	The Sims Video 4 At college Download. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Sims 4s Discover University expansion inserts an all-new optional phase into a Young Adult Sims life. 
+																	The sims 4 At college Free. 
+																	Create A Sim Demo Create Unique Sims. 
+																	In Sims 4 College Mod you have to go through with many days celebrations such as Activity Day Lecture Day Presentation Day Graduation day etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College sub-neighborhood College rabbit hole. 
+																	They can also research universities on a computer which will present them with an information popup that details all the degrees offered by both universities the University of Britechester and Foxbury Institute. 
+																	The Sims 4 is the life simulation game that gives you the power to create and control people. 
+																	Sims can apply to university through the computer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Get to College mod requires the Sims 4. 
+																	Run the downloaded file. 
+																	Download the game on PC. 
+																	Having it installed means your Sims can finally. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It costs 75 to apply to university. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/0c/fe/1c0cfef66c70667f2dbbbc0806ddd28f.jpg" data-lightbox="roadtrip" data-title="Go To School Highschool Nocc Sims Building The Sims 4 Lots Sims 4">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/0c/fe/1c0cfef66c70667f2dbbbc0806ddd28f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd73XrrWHsvdR_B43RgQMZYOYCsetxJJ_t_g';" alt="Go To School Highschool Nocc Sims Building The Sims 4 Lots Sims 4">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go To School Highschool Nocc Sims Building The Sims 4 Lots Sims 4</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/07/c5/be07c5caf08e542449fca128b412b9bb.png" data-lightbox="roadtrip" data-title="Sims 4 High School Lot Information Size 64x64 Price 803 796 3 Floors Basement Fully Furnished You Need To Download Zerbu S Sims 4 The Sims 4 Lots Sims">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/07/c5/be07c5caf08e542449fca128b412b9bb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7FW8slkXEEEJU2QsPsV4MSlunrMdV-dNlkw';" alt="Sims 4 High School Lot Information Size 64x64 Price 803 796 3 Floors Basement Fully Furnished You Need To Download Zerbu S Sims 4 The Sims 4 Lots Sims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sims 4 High School Lot Information Size 64x64 Price 803 796 3 Floors Basement Fully Furnished You Need To Download Zerbu S Sims 4 The Sims 4 Lots Sims</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/b5/50/b4b5509c39e77e5f91b8490533bc0a0f.png" data-lightbox="roadtrip" data-title="High School For The Sims 4 The Sims 4 Lots Sims 4 House Design Sims 4">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/b5/50/b4b5509c39e77e5f91b8490533bc0a0f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk7Quwa8cdE7yMqIoSodai72AWc04mfvYuyw';" alt="High School For The Sims 4 The Sims 4 Lots Sims 4 House Design Sims 4">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">High School For The Sims 4 The Sims 4 Lots Sims 4 House Design Sims 4</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/ad/91/05ad91f6d6bfa87aaa3421aa7aba7f5b.png" data-lightbox="roadtrip" data-title="With The Windenburg University Fan Pack You Can Better Prepare Your Sims For Their Transition Into Adulthood I The Sims 4 Packs Sims 4 Mods Sims 4 Expansions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/ad/91/05ad91f6d6bfa87aaa3421aa7aba7f5b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWItXWipzL5urwsKzuJWIO7Dg0xa-tE_MjLw';" alt="With The Windenburg University Fan Pack You Can Better Prepare Your Sims For Their Transition Into Adulthood I The Sims 4 Packs Sims 4 Mods Sims 4 Expansions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">With The Windenburg University Fan Pack You Can Better Prepare Your Sims For Their Transition Into Adulthood I The Sims 4 Packs Sims 4 Mods Sims 4 Expansions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/95/85/d09585fa5b3c41fd78cc56a6f4c8735a.jpg" data-lightbox="roadtrip" data-title="The Sims 3 Custom Content Lots Downloads Sims 3 Custom Worlds Sims House Sims">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/95/85/d09585fa5b3c41fd78cc56a6f4c8735a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbg5-2xiC890xKWz7uKpkUekyq3tu2g1nF2A';" alt="The Sims 3 Custom Content Lots Downloads Sims 3 Custom Worlds Sims House Sims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sims 3 Custom Content Lots Downloads Sims 3 Custom Worlds Sims House Sims</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/75/a1/0c/75a10c4aa0aa99918989ddff982afda0.jpg" data-lightbox="roadtrip" data-title="Sims 4 Get To College Lets Play Karissa S Life Ep 1 Youtube Sims 4 Let It Be Sims">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/75/a1/0c/75a10c4aa0aa99918989ddff982afda0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSEUby8AsVgdH72RTP7EBISNSheu-YE3O34A';" alt="Sims 4 Get To College Lets Play Karissa S Life Ep 1 Youtube Sims 4 Let It Be Sims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sims 4 Get To College Lets Play Karissa S Life Ep 1 Youtube Sims 4 Let It Be Sims</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/00/84/ae0084776a6d17194d5af540434cc719.png" data-lightbox="roadtrip" data-title="Pin On Sianna Banana">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/00/84/ae0084776a6d17194d5af540434cc719.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzSgkmXYONZPTERgG4aEM5nn4xlRWb7x0D2g';" alt="Pin On Sianna Banana">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sianna Banana</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/4c/8d/3a4c8d6fc7e4cd3016bfc30f1a1f6bba.jpg" data-lightbox="roadtrip" data-title="Https Ift Tt 2w5oaaj The Sims 4 Uncover College Releases November 15 Appmarsh Apk Free Download It Is Legitimate The Sims 4 Is A Sims Sims 4 University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/4c/8d/3a4c8d6fc7e4cd3016bfc30f1a1f6bba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToqL6_clAqag-Woj6ohW6NoOPRv7va1iDQxQ';" alt="Https Ift Tt 2w5oaaj The Sims 4 Uncover College Releases November 15 Appmarsh Apk Free Download It Is Legitimate The Sims 4 Is A Sims Sims 4 University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Ift Tt 2w5oaaj The Sims 4 Uncover College Releases November 15 Appmarsh Apk Free Download It Is Legitimate The Sims 4 Is A Sims Sims 4 University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/e0/dc/19e0dcc6a1981e86e059cd728ce6fcd3.jpg" data-lightbox="roadtrip" data-title="The Sims 3 Generations Free Download Sims 4 Expansions Sims Get To Work Sims 4">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/e0/dc/19e0dcc6a1981e86e059cd728ce6fcd3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfp-D0f-pkEF2TGq5AEKwAmIK1vxlQyCNvtg';" alt="The Sims 3 Generations Free Download Sims 4 Expansions Sims Get To Work Sims 4">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sims 3 Generations Free Download Sims 4 Expansions Sims Get To Work Sims 4</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/34/2a/2b342a016343598c7e209ab528973f6d.jpg" data-lightbox="roadtrip" data-title="The Sims 4 Britechester Home Discover University Sims House Sims 4 Houses Sims Building">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/34/2a/2b342a016343598c7e209ab528973f6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP2dkjwoF1co7904yerlLjiY-S-FRZuxGTuw';" alt="The Sims 4 Britechester Home Discover University Sims House Sims 4 Houses Sims Building">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sims 4 Britechester Home Discover University Sims House Sims 4 Houses Sims Building</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/a1/48/c3a1484f0ef4ecc6505f86b1555061f3.jpg" data-lightbox="roadtrip" data-title="Image Result For College Town Sims 4 The Sims 4 Lots Sims Sims Building">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/a1/48/c3a1484f0ef4ecc6505f86b1555061f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrNkKgBtK7o-3_bwgtUiZwyJuBD9nPkMDdaA';" alt="Image Result For College Town Sims 4 The Sims 4 Lots Sims Sims Building">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For College Town Sims 4 The Sims 4 Lots Sims Sims Building</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/a2/5f/7aa25f6f07557e49736f5cf61dc5e992.jpg" data-lightbox="roadtrip" data-title="Britechester Sorority The Sims 4 Discover University Speed Build Sims 4 Houses Sims House Design Sorority House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/a2/5f/7aa25f6f07557e49736f5cf61dc5e992.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRGdsgb-CXtMguSfkcPO_39LsspO5fyCqKlw';" alt="Britechester Sorority The Sims 4 Discover University Speed Build Sims 4 Houses Sims House Design Sorority House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Britechester Sorority The Sims 4 Discover University Speed Build Sims 4 Houses Sims House Design Sorority House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/aa/10/f7aa10fb4167e9b7383ef33485386b21.png" data-lightbox="roadtrip" data-title="Part Time Jobs V2 Sims 4 Jobs Sims 4 Game Mods Sims 4">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/aa/10/f7aa10fb4167e9b7383ef33485386b21.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBEA15bsD6csl3jdhXndGMhYU_CEQxlGUnAw';" alt="Part Time Jobs V2 Sims 4 Jobs Sims 4 Game Mods Sims 4">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Part Time Jobs V2 Sims 4 Jobs Sims 4 Game Mods Sims 4</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/womens-college-basketball-teams-in-georgia.html">Womens College Basketball Teams In Georgia</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-basketball-live-stream.html">Womens Ncaa Basketball Live Stream</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-scoring-records.html">Womens College Basketball Scoring Records</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-way-too-early-rankings.html">Womens College Basketball Way Too Early Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-standings-pac-12.html">Womens College Basketball Standings Pac 12</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-sec-tournament-2020.html">Womens College Basketball Sec Tournament 2020</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-basketball-final-four-tickets.html">Womens Ncaa Basketball Final Four Tickets</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-streams.html">Womens College Basketball Streams</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-basketball-final-four-2020.html">Womens Ncaa Basketball Final Four 2020</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-three-point-line.html">Womens College Basketball Three Point Line</a></li>
+													<li class="list-group-item"><a href="/womens-college-ncaa-basketball-schedule.html">Womens College Ncaa Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-time-periods.html">Womens College Basketball Time Periods</a></li>
+													<li class="list-group-item"><a href="/yellow-ribbon-program-for-colleges.html">Yellow Ribbon Program For Colleges</a></li>
+													<li class="list-group-item"><a href="/wright-state-gi-fellowship.html">Wright State Gi Fellowship</a></li>
+													<li class="list-group-item"><a href="/yahoo-womens-college-basketball-scores.html">Yahoo Womens College Basketball Scores</a></li>
+													<li class="list-group-item"><a href="/www-espn-com-womens-college-basketball.html">Www Espn Com Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-youtube.html">Womens College Basketball Youtube</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-sec-standings.html">Womens College Basketball Sec Standings</a></li>
+													<li class="list-group-item"><a href="/york-college-womens-basketball-coach.html">York College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-tournament-predictions.html">Womens College Basketball Tournament Predictions</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

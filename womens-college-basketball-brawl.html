@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Brawl - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Brawl",
+  "datePublished": "2021-02-17",
+  "image": "https://cdn.vox-cdn.com/thumbor/Jb2mUIhO1L9ftff_6wWW7mz3yds=/0x0:3000x2000/1400x1400/filters:focal(941x36:1421x516):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/55449495/usa_today_8934109.0.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+brawl",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Brawl</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The melee broke out after UNLVs Katie Powell and Utah States Antoina. The coach Robyn Burton could not be reached for. Shocking video posted on Twitter show a brawl breaking out at womens college basketball game between Texas Southern and Alabama State. <br>				
+			</p>
+										<a class="badge badge-info" href="/utica-college-womens-basketball-schedule.html">utica college womens basketball schedule</a>
+											<a class="badge badge-secondary" href="/va-chapter-31-application.html">va chapter 31 application</a>
+											<a class="badge badge-light" href="/va-ch-34.html">va ch 34</a>
+											<a class="badge badge-warning" href="/va-chapter-31-contact-number.html">va chapter 31 contact number</a>
+											<a class="badge badge-light" href="/va-benefits-gi-bill-login.html">va benefits gi bill login</a>
+											<a class="badge badge-danger" href="/va-chapter-35-enrollment-verification.html">va chapter 35 enrollment verification</a>
+											<a class="badge badge-light" href="/va-benefits-chapter-30.html">va benefits chapter 30</a>
+											<a class="badge badge-dark" href="/va-chapter-31-rates.html">va chapter 31 rates</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the ideal site.  Our site gives you hints for viewing the maximum quality video and picture content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie that you view.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/aVaEMhCou48/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Brawl At Alabama Auburn Women S Basketball Game Leads To Suspensions Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/aVaEMhCou48/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJIpZWbOcaww1StvPvLNZY1NWFXbqVG9DMjw';" alt="Brawl At Alabama Auburn Women S Basketball Game Leads To Suspensions Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brawl At Alabama Auburn Women S Basketball Game Leads To Suspensions Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://collegebasketball.nbcsports.com/wp-content/uploads/sites/5/2015/01/cd0ymzcznguwzdbhnduynddiytjhm2yyzthlmtjjotqwyyznptc0nmuznjjmyte4yzk5ndfkotg4yzc5mzk0ztjlmjyy.jpeg" data-lightbox="roadtrip" data-title="Fight Erupts During First Half Of Auburn Alabama Women S Basketball Game Video College Basketball Nbc Sports">
+											<img class="card-img v-image ads-img " src="https://collegebasketball.nbcsports.com/wp-content/uploads/sites/5/2015/01/cd0ymzcznguwzdbhnduynddiytjhm2yyzthlmtjjotqwyyznptc0nmuznjjmyte4yzk5ndfkotg4yzc5mzk0ztjlmjyy.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYMe-DMNSfrhUCtnW0RTPn2kyULoIzEaYKlw';" alt="Fight Erupts During First Half Of Auburn Alabama Women S Basketball Game Video College Basketball Nbc Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fight Erupts During First Half Of Auburn Alabama Women S Basketball Game Video College Basketball Nbc Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/QiiLl4t9LOx0lj86eyTEEEYFqpc=/19x0:600x387/1400x1050/filters:focal(19x0:600x387):format(png)/cdn.vox-cdn.com/uploads/chorus_image/image/45854244/fight.0.0.png" data-lightbox="roadtrip" data-title="This Massive Women S College Basketball Brawl Led To 15 Suspensions Double Forfeit Sbnation Com">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/QiiLl4t9LOx0lj86eyTEEEYFqpc=/19x0:600x387/1400x1050/filters:focal(19x0:600x387):format(png)/cdn.vox-cdn.com/uploads/chorus_image/image/45854244/fight.0.0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyLp5eIGkDqOLkgOFPC8G1pUewzU1Fcn6KxQ';" alt="This Massive Women S College Basketball Brawl Led To 15 Suspensions Double Forfeit Sbnation Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Massive Women S College Basketball Brawl Led To 15 Suspensions Double Forfeit Sbnation Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/uBFNWdLuDO4/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Girl Fight Basketball Teams Brawl Seasons Canceled Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/uBFNWdLuDO4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcEPxnpO_yV0A7JV9-Q986ikOGpkJhJl3QvA';" alt="Girl Fight Basketball Teams Brawl Seasons Canceled Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Girl Fight Basketball Teams Brawl Seasons Canceled Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/presto/2020/02/04/PMOY/8d794bfc-8fd9-47be-96be-aafc4cf84955-Lee_TSU.jpg?width=660&amp;height=373&amp;fit=crop&amp;format=pjpg&amp;auto=webp" data-lightbox="roadtrip" data-title="Alabama State Texas Southern Fight Video Captures Women S Basketball Brawl">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/presto/2020/02/04/PMOY/8d794bfc-8fd9-47be-96be-aafc4cf84955-Lee_TSU.jpg?width=660&amp;height=373&amp;fit=crop&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZc4KdcjPVQKJ9S546hZqdLHQNAhRdmVuSQ';" alt="Alabama State Texas Southern Fight Video Captures Women S Basketball Brawl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama State Texas Southern Fight Video Captures Women S Basketball Brawl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/UJYaEyAHR-I/hqdefault.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Brawl Erupts Includes Cheerleaders And Results In 15 Suspensions Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/UJYaEyAHR-I/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-_bnue9flRhiyUfZngSiGX7dyPUPCM4pug';" alt="Women S Basketball Brawl Erupts Includes Cheerleaders And Results In 15 Suspensions Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Brawl Erupts Includes Cheerleaders And Results In 15 Suspensions Youtube</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.click2houston.com/resizer/tMpeyw-QV7FqSvkTFz0GHK3fOTw=/1600x900/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/arc-anglerfish-arc2-prod-gmg.s3.amazonaws.com/public/VQMGMSNMUFBHPPQ453KMBZZQZY.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-_bnue9flRhiyUfZngSiGX7dyPUPCM4pug';" alt="Women S Basketball Brawl Erupts Includes Cheerleaders And Results In 15 Suspensions Youtube">
+										<div class="card-body">
+						<h3 class="h5"><b>One York student suffered a concussion in the brawl amid reports that the New Jersey City coach attacked a York player and bit her finger.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball brawl</strong>. 
+								
+																	Texas Southern opted to end their season and Southern will have to go on with seven players suspended after. 
+																	Womens college basketball brawl. 
+																	Iowa Wesleyan College Womens Basketball vs. 
+																	Daha fazla videoya goezat. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A womens college basketball game turned ugly Saturday night and ultimately eight players were ejected after a brawl broke out late in the game where punches were thrown and the benches cleared. 
+																	The fight erupted Monday night during a game at the Dunn-Oliver. 
+																	MONTGOMERY Alabama The Southwest Athletic Conference handed out punishments Wednesday after a crazy basketball brawl between Texas Southern and Alabama State. 
+																	The fight started after the TSU. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	14 Baylors 69-60 win over the Lady. 
+																	Moments after Alabama States loss to Texas Southern players came to blows with hundreds of punches thrown and fights spilling into the crowd. 
+																	Ten student athletes and two managers have been suspended after a brawl broke out at a womens college basketball game in Alabama. 
+																	Breaking News Jayv2truu This is one of the most violent college basketball fights EVER -- courtesy of the women of Alabama St. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ten players and two managers have been suspended after a vicious brawl broke out on Monday during the womens college basketball game between Alabama State University and TexasSouthern University. 
+																	The fight erupted Monday night during a game at the Dunn. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+																	An ugly brawl broke out following a womens college basketball game between Texas Southern and Alabama State in which several punches were. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens college basketball brawl izleyin - Cavanoswald Dailymotionda. 
+																	A US womens college basketball game descended into chaos on Tuesday when a post-match handshake line turned into a massive brawl featuring dozens of players coaches and officials. 
+																	Ten student athletes and two managers have been suspended after a brawl broke out at a womens college basketball game in Alabama. 
+																	Huge brawl breaks out at womens college basketball game prompting officials to send three players to the locker rooms Players from Auburn and Alabama got started brawl during the 2nd period. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	5 yil oence 3 goeruentuelenme. 
+																	Westminster College - 1st Half. 
+																	Bench-clearing brawl between womens college basketball teams. 
+																	It all happened late in a game between UNLV and Utah State with just over a minute left in the third-quarter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Monday Night Raw found its way to the basketball court. 
+																	This massive womens college basketball brawl led to 15 suspensions double forfeit. 
+																	AAU 8th grade basketball brawl Rock Hill SC. 
+																	5 yil oence 3 goeruentuelenme. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Biden asks Americans to recommit to wearing masks during second wave. 
+																	Alabama State Texas Southern womens basketball brawl 2-3-20. 
+																	ASU was being blown out 81-54 on Monday night in. 
+																	Officials ejected Baylor University star Brittney Griner after the freshman punched Texas Techs Jordan Barncastle in No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eight players were ejected following a benches-clearing brawl between the UNLV and Utah State womens basketball teams. 
+																	HOUSTON -- Southern and Texas Southern were battling for the Southwest Conference womens basketball regular-season title Saturday night when a bench-clearing fight broke out midway through the. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/kbUvpSuvipY/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Womens Basketball Fight Yelena Leuchanka Hit In Eye Wcba 2016 Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/kbUvpSuvipY/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJyxXuCwadUEJOQ1yA2yntdYPH7ja8smbpA';" alt="Womens Basketball Fight Yelena Leuchanka Hit In Eye Wcba 2016 Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Womens Basketball Fight Yelena Leuchanka Hit In Eye Wcba 2016 Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.click2houston.com/resizer/tMpeyw-QV7FqSvkTFz0GHK3fOTw=/1600x900/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/arc-anglerfish-arc2-prod-gmg.s3.amazonaws.com/public/VQMGMSNMUFBHPPQ453KMBZZQZY.png" data-lightbox="roadtrip" data-title="Watch 10 Student Athletes Suspended After Brawl Between Tsu Alabama State Women S Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://www.click2houston.com/resizer/tMpeyw-QV7FqSvkTFz0GHK3fOTw=/1600x900/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/arc-anglerfish-arc2-prod-gmg.s3.amazonaws.com/public/VQMGMSNMUFBHPPQ453KMBZZQZY.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbb2_ZCg3uAL_8Vla6w8nC2wGMyai_Ij81lQ';" alt="Watch 10 Student Athletes Suspended After Brawl Between Tsu Alabama State Women S Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch 10 Student Athletes Suspended After Brawl Between Tsu Alabama State Women S Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/f8mVHICkzIA/hqdefault.jpg" data-lightbox="roadtrip" data-title="Alabama State Vs Texas Southern Women S Basketball Fight Dunn Oliver Acadome 2020 Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/f8mVHICkzIA/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4e-_HSImx52ZxGS6MiE0bWJE4CBPsnXDu-g';" alt="Alabama State Vs Texas Southern Women S Basketball Fight Dunn Oliver Acadome 2020 Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama State Vs Texas Southern Women S Basketball Fight Dunn Oliver Acadome 2020 Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.abcotvs.com/dip/images/5906497_020520-ktrk-tsu-fight-img.jpg?w=800&amp;r=16%3A9" data-lightbox="roadtrip" data-title="Tsu Brawl Massive Fight Breaks Out At Lady Tigers Game In Alabama Abc13 Houston">
+											<img class="card-img v-image ads-img " src="https://cdn.abcotvs.com/dip/images/5906497_020520-ktrk-tsu-fight-img.jpg?w=800&amp;r=16%3A9" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfulzzppwV3JEhNGRNuPRbbeJvnbFr50KBtg';" alt="Tsu Brawl Massive Fight Breaks Out At Lady Tigers Game In Alabama Abc13 Houston">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tsu Brawl Massive Fight Breaks Out At Lady Tigers Game In Alabama Abc13 Houston</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.khou.com/assets/KHOU/images/01dd30e7-1f85-4cd1-b752-76be00469356/01dd30e7-1f85-4cd1-b752-76be00469356_750x422.png" data-lightbox="roadtrip" data-title="Basketball Brawl Texas Southern Alabama State Women Fight Khou Com">
+											<img class="card-img v-image ads-img " src="https://media.khou.com/assets/KHOU/images/01dd30e7-1f85-4cd1-b752-76be00469356/01dd30e7-1f85-4cd1-b752-76be00469356_750x422.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wAsCfuh3wrOIOzNeFfJbUayvMEw4rqzZhQ';" alt="Basketball Brawl Texas Southern Alabama State Women Fight Khou Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Brawl Texas Southern Alabama State Women Fight Khou Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.abcnews.com/images/US/kansas-brawl_hpMain_20200122-073915_16x9_384.jpg" data-lightbox="roadtrip" data-title="Kansas Vs Kansas State Basketball Game Ends With Bench Clearing Brawl Abc News">
+											<img class="card-img v-image ads-img " src="https://s.abcnews.com/images/US/kansas-brawl_hpMain_20200122-073915_16x9_384.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWf97TPkC7eISbHAUChPZtfZ6_c2dwOZKMtA';" alt="Kansas Vs Kansas State Basketball Game Ends With Bench Clearing Brawl Abc News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kansas Vs Kansas State Basketball Game Ends With Bench Clearing Brawl Abc News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://heavy.com/wp-content/uploads/2020/01/gettyimages-1201069108-e1579660007866.jpg?quality=65&amp;strip=all&amp;w=780" data-lightbox="roadtrip" data-title="Kansas Kansas St Fight Had Player Swinging Chair Video Heavy Com">
+											<img class="card-img v-image ads-img " src="https://heavy.com/wp-content/uploads/2020/01/gettyimages-1201069108-e1579660007866.jpg?quality=65&amp;strip=all&amp;w=780" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXQt1BlVVRBOnxDUZmPRtPQ_BA5bFeIsc62w';" alt="Kansas Kansas St Fight Had Player Swinging Chair Video Heavy Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kansas Kansas St Fight Had Player Swinging Chair Video Heavy Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/ba6_yfxqKUFiUw5EeW4b2eS56Z4=/0x0:712x398/1200x800/filters:focal(266x171:378x283)/cdn.vox-cdn.com/uploads/chorus_image/image/57740843/Screen_Shot_2017_11_25_at_6.50.07_PM.1511654217.png" data-lightbox="roadtrip" data-title="Alabama Basketball Had To Play With Only 3 Players After A Huge Fight And An Injury Sbnation Com">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/ba6_yfxqKUFiUw5EeW4b2eS56Z4=/0x0:712x398/1200x800/filters:focal(266x171:378x283)/cdn.vox-cdn.com/uploads/chorus_image/image/57740843/Screen_Shot_2017_11_25_at_6.50.07_PM.1511654217.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9KMpgDwON7BRUFX4eAJ7-1x-hTyt2Fvo19w';" alt="Alabama Basketball Had To Play With Only 3 Players After A Huge Fight And An Injury Sbnation Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama Basketball Had To Play With Only 3 Players After A Huge Fight And An Injury Sbnation Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.vox-cdn.com/thumbor/Jb2mUIhO1L9ftff_6wWW7mz3yds=/0x0:3000x2000/1400x1400/filters:focal(941x36:1421x516):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/55449495/usa_today_8934109.0.jpg" data-lightbox="roadtrip" data-title="Te A Cooper S Fight With Teammate Led To Transfer From Tennessee Swish Appeal">
+											<img class="card-img v-image ads-img " src="https://cdn.vox-cdn.com/thumbor/Jb2mUIhO1L9ftff_6wWW7mz3yds=/0x0:3000x2000/1400x1400/filters:focal(941x36:1421x516):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/55449495/usa_today_8934109.0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ2ypjnHAJzTt8BgpRRz-zSdfmFp1aXEvwtA';" alt="Te A Cooper S Fight With Teammate Led To Transfer From Tennessee Swish Appeal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Te A Cooper S Fight With Teammate Led To Transfer From Tennessee Swish Appeal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/akV2HZiJW50/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Fight At Conclusion Of Njcu Women S Basketball Game Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/akV2HZiJW50/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ObbQpIox46u2LTmXs_O14U82aik8EkX8GA';" alt="Fight At Conclusion Of Njcu Women S Basketball Game Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fight At Conclusion Of Njcu Women S Basketball Game Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/DlDGhFGvCxY/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Brawl Erupts Between Unlv Utah State Women S Basketball Teams Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/DlDGhFGvCxY/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN4FpRSeO3-u2ifDQSieHfdm-LjrOUZrKwHQ';" alt="Brawl Erupts Between Unlv Utah State Women S Basketball Teams Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brawl Erupts Between Unlv Utah State Women S Basketball Teams Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/ba/59/b7ba595a40306de4e941822bb7de37c4.jpg" data-lightbox="roadtrip" data-title="Go Lady Huskies Go Uconn Uconn Womens Basketball Uconn Uconn Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/ba/59/b7ba595a40306de4e941822bb7de37c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTlfB0Q6cGhHpdlsDPZnXjA-WlK2-7kZ2kJQ';" alt="Go Lady Huskies Go Uconn Uconn Womens Basketball Uconn Uconn Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go Lady Huskies Go Uconn Uconn Womens Basketball Uconn Uconn Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wpcdn.us-east-1.vip.tn-cloud.net/www.alabamanews.net/content/uploads/2020/01/Capture3.jpg" data-lightbox="roadtrip" data-title="Tuskegee University Releases Statement On Lemoyne Owen College Post Game Fight Between Players Fans Alabama News">
+											<img class="card-img v-image ads-img " src="https://wpcdn.us-east-1.vip.tn-cloud.net/www.alabamanews.net/content/uploads/2020/01/Capture3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzAeOoXcofnn7FGL4PkJFx3MJ0Ok0G7waglw';" alt="Tuskegee University Releases Statement On Lemoyne Owen College Post Game Fight Between Players Fans Alabama News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tuskegee University Releases Statement On Lemoyne Owen College Post Game Fight Between Players Fans Alabama News</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/did-gi.html">Did Gi</a></li>
+													<li class="list-group-item"><a href="/department-of-military-veterans-education-support-2018.html">Department Of Military Veterans Education Support 2018</a></li>
+													<li class="list-group-item"><a href="/davidson-college-womens-basketball-coach.html">Davidson College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/davidson-college-gi-bill.html">Davidson College Gi Bill</a></li>
+													<li class="list-group-item"><a href="/department-of-veterans-affairs-application-for-education-benefits.html">Department Of Veterans Affairs Application For Education Benefits</a></li>
+													<li class="list-group-item"><a href="/designs-for-health-gi-microb-x.html">Designs For Health Gi Microb X</a></li>
+													<li class="list-group-item"><a href="/did-jeff-bezos-go-to-college.html">Did Jeff Bezos Go To College</a></li>
+													<li class="list-group-item"><a href="/did-monsta-x-go-to-college.html">Did Monsta X Go To College</a></li>
+													<li class="list-group-item"><a href="/daemen-college-womens-basketball-schedule.html">Daemen College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/department-of-the-va-education.html">Department Of The Va Education</a></li>
+													<li class="list-group-item"><a href="/dean-college-womens-basketball-roster.html">Dean College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/department-of-education-richmond-va.html">Department Of Education Richmond Va</a></li>
+													<li class="list-group-item"><a href="/did-gi-joe-ever-kill-anyone.html">Did Gi Joe Ever Kill Anyone</a></li>
+													<li class="list-group-item"><a href="/dean-college-womens-basketball-schedule.html">Dean College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/denman-college-gift-vouchers.html">Denman College Gift Vouchers</a></li>
+													<li class="list-group-item"><a href="/department-of-education-richmond-virginia.html">Department Of Education Richmond Virginia</a></li>
+													<li class="list-group-item"><a href="/dea-vs-gi-bill.html">Dea Vs Gi Bill</a></li>
+													<li class="list-group-item"><a href="/did-gif.html">Did Gif</a></li>
+													<li class="list-group-item"><a href="/delta-college-womens-basketball-coach.html">Delta College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/department-of-education-va-jobs.html">Department Of Education Va Jobs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

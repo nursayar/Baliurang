@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Bill Guy The Science Guy Song - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Bill Guy The Science Guy Song",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/a3/92/52/a3925268a265b8aa0f1f15f707ca0a83.gif",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=bill+guy+the+science+guy+song",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Bill Guy The Science Guy Song</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Play songs-bill nye the science guy Sound. It was substantially financed by the National Science Foundation. Bill Nye the Science Guy S05E19 Science of Music. <br>				
+			</p>
+										<a class="badge badge-success" href="/how-to-use-my-gi-bill-reserve.html">how to use my gi bill reserve</a>
+											<a class="badge badge-success" href="/how-to-use-your-gi-bill-for-online-classes.html">how to use your gi bill for online classes</a>
+											<a class="badge badge-secondary" href="/how-to-use-eq-shades-redken.html">how to use eq shades redken</a>
+											<a class="badge badge-dark" href="/is-gi-bill-retroactive.html">is gi bill retroactive</a>
+											<a class="badge badge-success" href="/how-to-lose-gi-bill-benefits.html">how to lose gi bill benefits</a>
+											<a class="badge badge-primary" href="/how-to-pay-igl-bill-online.html">how to pay igl bill online</a>
+											<a class="badge badge-primary" href="/hunter-college-womens-basketball-schedule.html">hunter college womens basketball schedule</a>
+											<a class="badge badge-dark" href="/igl-bill-payment.html">igl bill payment</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the ideal site.  Our site gives you suggestions for viewing the highest quality video and image content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/06/34/880634830c9a99d96b62b2d69778e5a8.jpg" data-lightbox="roadtrip" data-title="Bill Nye The Science Guy Theme Song But Im Screaming The Lyrics Youtube Roblox Death Sound Bill Nye Memes Science Guy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/06/34/880634830c9a99d96b62b2d69778e5a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqvq5oF9kBXEX_-uZk4Hn-n2uSKG1289e6sw';" alt="Bill Nye The Science Guy Theme Song But Im Screaming The Lyrics Youtube Roblox Death Sound Bill Nye Memes Science Guy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Nye The Science Guy Theme Song But Im Screaming The Lyrics Youtube Roblox Death Sound Bill Nye Memes Science Guy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/d8/4f/e6d84fefe1d4b523e93840bc2ca0a199.gif" data-lightbox="roadtrip" data-title="Yesssssss Bill Nye Science Guy Shows On Netflix">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/d8/4f/e6d84fefe1d4b523e93840bc2ca0a199.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQelky-2LeJuV2AccmuB-RK1339NP75qwVxYw';" alt="Yesssssss Bill Nye Science Guy Shows On Netflix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yesssssss Bill Nye Science Guy Shows On Netflix</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/5e/57/985e57ffb0432d044dda1d59533cc39f.png" data-lightbox="roadtrip" data-title="Bill Nye The Science Guy 1920x1080 Science Guy Bill Nye Guys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/5e/57/985e57ffb0432d044dda1d59533cc39f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjLr0MDWZSaLP7lqS4IAhGxSKeZ1960voD4Q';" alt="Bill Nye The Science Guy 1920x1080 Science Guy Bill Nye Guys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Nye The Science Guy 1920x1080 Science Guy Bill Nye Guys</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/2a/6b/ff2a6b2382c08bc7003054c0e069b07a.jpg" data-lightbox="roadtrip" data-title="Bill Nye The Science Guy Theme Song Vocal Cover The Kids Would Love This Science Guy A Cappella Theme Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/2a/6b/ff2a6b2382c08bc7003054c0e069b07a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSreQyZBKo0tlkQuJhxMDXc2G8ZIQa8RIMLCQ';" alt="Bill Nye The Science Guy Theme Song Vocal Cover The Kids Would Love This Science Guy A Cappella Theme Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Nye The Science Guy Theme Song Vocal Cover The Kids Would Love This Science Guy A Cappella Theme Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/49/7a/49/497a493baad1e42e5fb71773575947c9.jpg" data-lightbox="roadtrip" data-title="Pin By Kristian On Roblox Musica Science Guy Bill Nye Intro">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/49/7a/49/497a493baad1e42e5fb71773575947c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNRGw4cfTgRLVHU97i3TRG9b9mtZc-0GB3_w';" alt="Pin By Kristian On Roblox Musica Science Guy Bill Nye Intro">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kristian On Roblox Musica Science Guy Bill Nye Intro</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/06/bb/9406bb8c7e2275f0df79c9eeef3e76f8.png" data-lightbox="roadtrip" data-title="Bill Nye Theme Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/06/bb/9406bb8c7e2275f0df79c9eeef3e76f8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5jXcwv2BKqei3y9aAW7vI3BkHw1HSblJmA';" alt="Bill Nye Theme Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Nye Theme Song</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/6c/45/79/6c4579c900187a0c339f959fb7ba258c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5jXcwv2BKqei3y9aAW7vI3BkHw1HSblJmA';" alt="Bill Nye Theme Song">
+										<div class="card-body">
+						<h3 class="h5"><b>21 Tracks 141177 Views.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Bill guy the science guy song</strong>. 
+								
+																	Bill Nye the Science Guy Light and Color. 
+																	The official website of Bill Nye The Science Guy featuring books shows appearances episode guides and home demos. 
+																	Bill Nye the Science Guy Encore Trap Remix Click that to turn on notifications. 
+																	Download songs-bill nye the science guy Sound. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The intro from the 1990s childhood TV show Bill Nye The Science Guy. 
+																	Turns out Bill Nye isnt just a science guy -- the popular engineer and science commentator had some moves we didnt know we needed to see while appreciating the sounds of Lizzo. 
+																	DownloadStream this Song d_b na Art. 
+																	Bill Nye the FAKE Science Guy On Climate Change - Cant Answer Basic Settled Science Question UPDATED. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Listen to Bill Nye the Science Guy on Spotify. 
+																	TV Theme Songs Bill Nye The Science Guy lyrics. 
+																	Deutsch English Espanol Francais Hungarian Italiano Nederlands Polski Portugues Brasil Romana Svenska Tuerkce Ellinika Blgarski Russkiy Srpski العربية فارسی 日本語 한국어. 
+																	Top Lyrics of 2011. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	14 Tracks 185020 Views. 
+																	Bill Nye the Science Guy S05 - Ep19 Science of Music HD Watch. 
+																	Bill Nye the Science Guy icon of every millennials fifth grade science class is now a runway model. 
+																	Share songs-bill nye the science guy Sound. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill Bill Bill Bill Bill Bill Nye the Science Guy. 
+																	14 Tracks 144562 Views. 
+																	Bill Nye the Science Guy Bill Nye the Science Guy Bill Bill Bill. 
+																	14 Tracks 114738 Views. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At the Blue Jacket Fashion Show at Pier 59 Studios in New York City on Friday Nye walked the. 
+																	Bill Nye on the Future of Science Communication Being Known as The Science Guy and more. 
+																	Top Lyrics of 2009. 
+																	DO NOT MISS AN UPLOAD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Top Lyrics of 2010. 
+																	Back to THE ULTIMATE TYP SOUNDBOARD. 
+																	Bill Nye the Science Guy is an American half-hour live action science program produced by KCTS Seattle and McKennaGottlieb Producers. 
+																	Bill Nye the Science Guy Theme was composed with Note Block Studio using the note block sounds with a select few other in-game sounds. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mr Dooves Song 2016. 
+																	Inertia is a property of matter Scien. 
+																	After the producers entered a distribution agreement with Buena Vista Television the show aired in syndication from September 10 1993 to December 21 1994 and on PBS from January 5 1995 to. 
+																	Bill Nye the Science Guy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill Nye the Science Guy Science rules Bill Nye the Science Guy Inertia is a property of matter Bill Bill Bill Bill Bill Bill Bill Nye the Science Guy Bill Bill Bill T-minus seven. 
+																	Bill Nye the Science Guy. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/74/ea/6674ea33df74b80404ff04e595eafb82.jpg" data-lightbox="roadtrip" data-title="Bill Nye The Science Guy Science Guy Bill Nye Happy Birthday Bill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/74/ea/6674ea33df74b80404ff04e595eafb82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSaRga8g16inEnQtY5BkeqBaOCTTcPj_FkqQ';" alt="Bill Nye The Science Guy Science Guy Bill Nye Happy Birthday Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Nye The Science Guy Science Guy Bill Nye Happy Birthday Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/46/a2/d6/46a2d6e7e89e64eb37a02cbaf311a6ef.jpg" data-lightbox="roadtrip" data-title="Bill Nye The Science Guy Intro Roblox Id Roblox Music Codes Roblox Science Guy Roblox Codes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/46/a2/d6/46a2d6e7e89e64eb37a02cbaf311a6ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUzexS8tOnYEPOIXCaJnqyke-Q5pidujvOg';" alt="Bill Nye The Science Guy Intro Roblox Id Roblox Music Codes Roblox Science Guy Roblox Codes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Nye The Science Guy Intro Roblox Id Roblox Music Codes Roblox Science Guy Roblox Codes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/cb/5f/d0cb5ff57ea7f5f86da383b1337d5f97.gif" data-lightbox="roadtrip" data-title="23 Songs That Have Been Stuck In Your Head Since Childhood Songs Science Guy Childhood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/cb/5f/d0cb5ff57ea7f5f86da383b1337d5f97.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEws-2soomHEBT5vW-caK2sx9_FeVje5_G5A';" alt="23 Songs That Have Been Stuck In Your Head Since Childhood Songs Science Guy Childhood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">23 Songs That Have Been Stuck In Your Head Since Childhood Songs Science Guy Childhood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/64/d7/4664d72f57583e46e2fa20ba0871f993.gif" data-lightbox="roadtrip" data-title="22 Unfassbar Schlaue Tricks Fur Lehrer Clever School Teacher Hacks Teacher Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/64/d7/4664d72f57583e46e2fa20ba0871f993.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCqXb5FiHsDvlyWwVa59hnu3t3mWi1_HUNHg';" alt="22 Unfassbar Schlaue Tricks Fur Lehrer Clever School Teacher Hacks Teacher Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">22 Unfassbar Schlaue Tricks Fur Lehrer Clever School Teacher Hacks Teacher Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/92/52/a3925268a265b8aa0f1f15f707ca0a83.gif" data-lightbox="roadtrip" data-title="Not A Valid Community Science Guy Bill Nye Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/92/52/a3925268a265b8aa0f1f15f707ca0a83.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNgETxVGg9WRqKcYAoxS3j3W79D-e4ygkFew';" alt="Not A Valid Community Science Guy Bill Nye Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Not A Valid Community Science Guy Bill Nye Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/4b/ee/ff4bee4485b17a5250070221cd00a2f0.jpg" data-lightbox="roadtrip" data-title="Watch Amp Listen Psychostick Cover Bill Nye The Science Guy Theme Song Science Guy Theme Song Music For Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/4b/ee/ff4bee4485b17a5250070221cd00a2f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4pdwR9kJl_C_-aFgNqhTO-bVwtGsxs422Rg';" alt="Watch Amp Listen Psychostick Cover Bill Nye The Science Guy Theme Song Science Guy Theme Song Music For Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch Amp Listen Psychostick Cover Bill Nye The Science Guy Theme Song Science Guy Theme Song Music For Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/a5/e2/20a5e2f2a963c3982674687e30664bb5.jpg" data-lightbox="roadtrip" data-title="Pin By Alannah Jade On Geek Pride Science Guy Propaganda Posters Bill Nye">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/a5/e2/20a5e2f2a963c3982674687e30664bb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Dits3qnCG70BSl3mBN6dA6sRoO-QU-yRfg';" alt="Pin By Alannah Jade On Geek Pride Science Guy Propaganda Posters Bill Nye">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Alannah Jade On Geek Pride Science Guy Propaganda Posters Bill Nye</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/45/79/6c4579c900187a0c339f959fb7ba258c.jpg" data-lightbox="roadtrip" data-title="Bill Nye The Science Guy S03e04 Rocks Amp Soil Youtube Science Guy Bill Nye Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/45/79/6c4579c900187a0c339f959fb7ba258c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbTltmDy_RsZodc4sCkKOtJZ9xC0ZxsM69XQ';" alt="Bill Nye The Science Guy S03e04 Rocks Amp Soil Youtube Science Guy Bill Nye Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Nye The Science Guy S03e04 Rocks Amp Soil Youtube Science Guy Bill Nye Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/37/87/7637878dfe6f66041479bb877d61699c.png" data-lightbox="roadtrip" data-title="Bill Nye The Science Guy Quotes From Bill Nye The Science Guy Science Guy Science Men Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/37/87/7637878dfe6f66041479bb877d61699c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQvIhAyZHsjdTavBlxl2YbqLauka3ybjZUbg';" alt="Bill Nye The Science Guy Quotes From Bill Nye The Science Guy Science Guy Science Men Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Nye The Science Guy Quotes From Bill Nye The Science Guy Science Guy Science Men Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/16/fb/8d16fb9d7e3c21561bf105b514fed3a8.jpg" data-lightbox="roadtrip" data-title="Google Image Result For Http 28 Media Tumblr Com Tumblr Lfk25wquad1qeho4oo1 4 Childhood Memories Childhood 90s Childhood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/16/fb/8d16fb9d7e3c21561bf105b514fed3a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt9gnlu7NM5M5aqk_S6OCgf05-pXvTN8WStQ';" alt="Google Image Result For Http 28 Media Tumblr Com Tumblr Lfk25wquad1qeho4oo1 4 Childhood Memories Childhood 90s Childhood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Google Image Result For Http 28 Media Tumblr Com Tumblr Lfk25wquad1qeho4oo1 4 Childhood Memories Childhood 90s Childhood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/19/49/82194904081660b3c2d8c8757f335f61.jpg" data-lightbox="roadtrip" data-title="Bill Nye The Science Guy Bill Bill Bill Bill Bill Funny Charts Funny P Really Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/19/49/82194904081660b3c2d8c8757f335f61.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFtU2im5lfKs9fOMCfvTtAXhOz5T6swAvwUA';" alt="Bill Nye The Science Guy Bill Bill Bill Bill Bill Funny Charts Funny P Really Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Nye The Science Guy Bill Bill Bill Bill Bill Funny Charts Funny P Really Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/32/37/223237c5c6d164d122715f625b9d9bd9.jpg" data-lightbox="roadtrip" data-title="Bill Nye The Science Guy Is Getting A New Netflix Show This Is Not A Drill Bill Nye Science Guy Science Rules">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/32/37/223237c5c6d164d122715f625b9d9bd9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSStlLwlOjLGQrFvhD8nJRXx_-dojZ2E3S0hQ';" alt="Bill Nye The Science Guy Is Getting A New Netflix Show This Is Not A Drill Bill Nye Science Guy Science Rules">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Nye The Science Guy Is Getting A New Netflix Show This Is Not A Drill Bill Nye Science Guy Science Rules</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/04/cb/28/04cb28e451782485de3791231944cab3.jpg" data-lightbox="roadtrip" data-title="Light And Color Bill Nye The Science Guy Science Guy Bill Nye Word Boxes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/04/cb/28/04cb28e451782485de3791231944cab3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAGPI7R25OdxN1RMzWGnU9Do6ak23fkYm1PQ';" alt="Light And Color Bill Nye The Science Guy Science Guy Bill Nye Word Boxes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Light And Color Bill Nye The Science Guy Science Guy Bill Nye Word Boxes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/starting-a-gofundme-for-college.html">Starting A Gofundme For College</a></li>
+													<li class="list-group-item"><a href="/state-grid-ev-service.html">State Grid Ev Service</a></li>
+													<li class="list-group-item"><a href="/spouse-using-montgomery-gi-bill.html">Spouse Using Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/state-government-jobs.html">State Government Jobs</a></li>
+													<li class="list-group-item"><a href="/state-government-powers.html">State Government Powers</a></li>
+													<li class="list-group-item"><a href="/smith-college-womens-basketball-schedule.html">Smith College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/state-gibbs-helmholtz-equation.html">State Gibbs Helmholtz Equation</a></li>
+													<li class="list-group-item"><a href="/springfield-college-gymnastics-home-show.html">Springfield College Gymnastics Home Show</a></li>
+													<li class="list-group-item"><a href="/st-francis-college-womens-basketball-roster.html">St Francis College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/state-grid.html">State Grid</a></li>
+													<li class="list-group-item"><a href="/southwestern-oregon-community-college-womens-basketball.html">Southwestern Oregon Community College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/starting-college-gift-box.html">Starting College Gift Box</a></li>
+													<li class="list-group-item"><a href="/should-i-go-to-college-right-now.html">Should I Go To College Right Now</a></li>
+													<li class="list-group-item"><a href="/state-giving-valid-reasons.html">State Giving Valid Reasons</a></li>
+													<li class="list-group-item"><a href="/state-git.html">State Git</a></li>
+													<li class="list-group-item"><a href="/state-grid-brazil.html">State Grid Brazil</a></li>
+													<li class="list-group-item"><a href="/snhu-post-911-gi-bill.html">Snhu Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/should-you-go-to-college.html">Should You Go To College</a></li>
+													<li class="list-group-item"><a href="/springfield-college-womens-basketball-roster.html">Springfield College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/st-lawrence-college-womens-basketball-live-stream.html">St Lawrence College Womens Basketball Live Stream</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

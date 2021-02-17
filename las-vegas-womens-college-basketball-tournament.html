@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Las Vegas Womens College Basketball Tournament - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Las Vegas Womens College Basketball Tournament",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/30/f2/a0/30f2a00949d4cddf90a7befb88a010ae.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=las+vegas+womens+college+basketball+tournament",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Las Vegas Womens College Basketball Tournament</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">When it comes to the first round of the NCAA Tournament however theres no better place to be than Vegas. From 2006 to 2013 the sponsor of the. The Tournament was originally held in the gymnasium of Valley High School until moving to the new Orleans Arena in 2006. <br>				
+			</p>
+										<a class="badge badge-success" href="/things-to-go-to-college-for-quiz.html">things to go to college for quiz</a>
+											<a class="badge badge-primary" href="/the-american-college-of-gastroenterology-guidelines.html">the american college of gastroenterology guidelines</a>
+											<a class="badge badge-warning" href="/the-gi-bill-provided.html">the gi bill provided</a>
+											<a class="badge badge-danger" href="/the-new-deal-and-gi-bill.html">the new deal and gi bill</a>
+											<a class="badge badge-info" href="/the-gi-bill-provided-veterans-with.html">the gi bill provided veterans with</a>
+											<a class="badge badge-light" href="/the-gi-bill-was-written-as-a-result-of.html">the gi bill was written as a result of</a>
+											<a class="badge badge-light" href="/the-va-gi-bill-number.html">the va gi bill number</a>
+											<a class="badge badge-dark" href="/the-gi-bill-boost-the-postwar-economy-by.html">the gi bill boost the postwar economy by</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the ideal site.  Our website provides you with suggestions for seeing the maximum quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/8c/ce/9b8cce61534764fb6dfb6020fe7e437f.jpg" data-lightbox="roadtrip" data-title="Pin On Las Vegas Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/8c/ce/9b8cce61534764fb6dfb6020fe7e437f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6MPSlL_U7TUrcU8pWlujfQwHeGgKTKB5kpg';" alt="Pin On Las Vegas Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Las Vegas Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/5a/ed/925aed9a4d96656f5a1f8949980cceb9.jpg" data-lightbox="roadtrip" data-title="Pin On C And R S Stanford Women S Basketball Blog Posts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/5a/ed/925aed9a4d96656f5a1f8949980cceb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWTUT7u47cAHeSJriwP0Xzh6wz1gNJqbKUyQ';" alt="Pin On C And R S Stanford Women S Basketball Blog Posts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On C And R S Stanford Women S Basketball Blog Posts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/67/c1/3067c1bca69d9018abde442e3d660a4d.jpg" data-lightbox="roadtrip" data-title="Las Vegas Aces On Twitter Basketball Girls Female Athletes Love And Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/67/c1/3067c1bca69d9018abde442e3d660a4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchOH6KCH5oW-NAKlOqr7c88Af-UJhmLdD8w';" alt="Las Vegas Aces On Twitter Basketball Girls Female Athletes Love And Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Las Vegas Aces On Twitter Basketball Girls Female Athletes Love And Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f2/32/8b/f2328b17bb385caf8d96b62718da48e5.jpg" data-lightbox="roadtrip" data-title="A Ja Wilson Las Vegas Aces Signed Autographed 8x10 Basketball Photo Coa With The Proof Photo Of Aja Signing Wil Basketball Workouts Basketball Photos Workout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f2/32/8b/f2328b17bb385caf8d96b62718da48e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC7f5bFDUDUYGlmty9wCIvQMV93fXuUCoKxw';" alt="A Ja Wilson Las Vegas Aces Signed Autographed 8x10 Basketball Photo Coa With The Proof Photo Of Aja Signing Wil Basketball Workouts Basketball Photos Workout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Ja Wilson Las Vegas Aces Signed Autographed 8x10 Basketball Photo Coa With The Proof Photo Of Aja Signing Wil Basketball Workouts Basketball Photos Workout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/6c/fe/a26cfebef111b8906301d1333d2f7050.png" data-lightbox="roadtrip" data-title="Pin On Basketball Tipoff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/6c/fe/a26cfebef111b8906301d1333d2f7050.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPKAj1LiUfHYU5QgxDQFH4KGrX5zLfWxDJw';" alt="Pin On Basketball Tipoff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Basketball Tipoff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/57/3a/96573a2b53e58133a8d5fce254b89e92.jpg" data-lightbox="roadtrip" data-title="Pin On Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/57/3a/96573a2b53e58133a8d5fce254b89e92.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTpiZbhrT1_DCF1HrxPkvUIfoXj-SymSmBA';" alt="Pin On Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sports</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/62/6f/b5/626fb551bda8bd70d489b20f8fa5d3c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTpiZbhrT1_DCF1HrxPkvUIfoXj-SymSmBA';" alt="Pin On Sports">
+										<div class="card-body">
+						<h3 class="h5"><b>AP - The San Antonio region will host the entire NCAA womens basketball tournament.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Las vegas womens college basketball tournament</strong>. 
+								
+																	Following the excitement at the MGM Grand Garden Arena for its first year this seasons event. 
+																	Vegas has long been considered taboo for the NCAA but in the spring of 2019 the NCAA agreed to allow championships to be held in Sin City culminating with the announcement Wednesday. 
+																	For the first time last season the Pac-12 womens basketball tournament was held in Las Vegas. 
+																	Las Vegas has hosted NCAA championships five times 1991 womens basketball regional 1996-98 mens tennis regionals and 1998 womens tennis regional. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA mens DI basketball tournament will have a bigger presence on the West Coast in coming years as Las Vegas San Francisco and Seattle have been chosen as host sites. 
+																	The WAC has held a postseason tournament to crown a womens basketball champion every year since 1991. 
+																	Odds on the NCAA Womens College Basketball Games according to Bovada Sportsbooks. 
+																	Las Vegas Sports Betting provide live daily NCAA Basketball Odds located below those lines are constantly updated throughout the day all best Basketball Odds Betting Lines for College Basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The West Coast Conference is actively exploring the creation of a bubblepod in Las Vegas for the upcoming college basketball season per source. 
+																	Las Vegas will host an NCAA tournament mens basketball regional for the first time in 2023 after the NCAA changed its policy that prevented states with sports wagering from hosting championships. 
+																	Need a Sportsbook to place your NCAA March Madness Basketball Bet. 
+																	The NCAA announced Wednesday that a 2023 mens regional will be held in Las Vegas the first time Nevada will host an NCAA championship event since a womens basketball regional was held at the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The move Friday was made to help mitigate the risks of COVID-19 and matches that of the mens tournament. 
+																	Its often been said that. 
+																	John Canzano johncanzanobft October 23 2020 According to Canzano one scenario is that both the mens and womens teams from the WCC teams would be in Las Vegas and play games on alternate days. 
+																	The tourney launched with local car dealer Findlay Toyota as its sponsor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA today announced roughly 450 future sites for tournaments across all sports and divisions from 2023 through 2026. 
+																	For the first time last season the Pac-12 womens basketball tournament was held in Las Vegas. 
+																	Wisconsin W Maryland W Moneyline Wisconsin W - 1H -4000 Maryland W - 1H 1100. 
+																	Wisconsin W Maryland W Point Spread Wisconsin W - 1H -125 -130 Maryland W - 1H 125 EVEN Wisconsin W Maryland W Total. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Opening Line on the College Basketball Las Vegas Odds is a must-stop resources for the 2020 NCAA Tournament which begins on Tuesday March 17. 
+																	Unlike the Super Bowl or Kentucky Derby the first round of the NCAA Tournament isnt one. 
+																	The WAC Womens Basketball Tournament is the conference championship tournament in basketball for the Western Athletic Conference WAC. 
+																	The NCAA also announced the mens basketball tournament will host a regional in Las Vegas in 2023. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Last week the NCAA announced that the 2021 mens college basketball tournament would be played at a single site because of the challenges associated with the COVID-19 pandemic. 
+																	Prior to the First Four action in the tournament Selection Sunday takes place two days earlier and after the field of 68 is announced the oddsmakers start populating betting odds on the opening matchups. 
+																	UNLV will serve as host to eight of the nine. 
+																	The Big West Conference mens and womens basketball tournaments played in Anaheim every year since 2001 and at Honda Center since 2011 will be played in Las Vegas this March. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Updated on February 4 2021. 
+																	The Big West Conference is moving its 2021 mens and womens basketball championships to the Mandalay Bay Events Center in Las Vegas March 9-13 2021 the conference announced Wednesday. 
+																	The first time an NCAA basketball championship has been held in the city since a womens regional in 1991 at Thomas Mack Center. 
+																	The Las Vegas Invitational is an 8 team college basketball tournament held during Thanksgiving of NCAA Division I mens basketball season annually since 2003. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Following the excitement at the MGM Grand Garden Arena for its first year this seasons event transitions to the Mandalay Bay Events Center where it will remain through 2022. 
+																	At first the regular season champion hosted it but at its height the tournament was held at larger urban venues. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/87/f0/f487f058e12bdd17ba36256069ec9099.jpg" data-lightbox="roadtrip" data-title="Las Vegas Aces On Twitter Basketball Girls Wnba Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/87/f0/f487f058e12bdd17ba36256069ec9099.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLvgadNpyh6-CiOIwjE34MYCYstBHazG1VYg';" alt="Las Vegas Aces On Twitter Basketball Girls Wnba Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Las Vegas Aces On Twitter Basketball Girls Wnba Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/9f/dc/a99fdc66a6c0b29f2afda7ba8cd53078.jpg" data-lightbox="roadtrip" data-title="Las Vegas Ap Sabrina Ionescu Had 20 Points 12 Assists And Eight Rebounds To Lead No 3 Orego In 2020 Oregon Ducks Basketball Basketball History Basketball Players">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/9f/dc/a99fdc66a6c0b29f2afda7ba8cd53078.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_QDWMQv4BsclMg8Jhq6XbyP0dIp1YTP_FyA';" alt="Las Vegas Ap Sabrina Ionescu Had 20 Points 12 Assists And Eight Rebounds To Lead No 3 Orego In 2020 Oregon Ducks Basketball Basketball History Basketball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Las Vegas Ap Sabrina Ionescu Had 20 Points 12 Assists And Eight Rebounds To Lead No 3 Orego In 2020 Oregon Ducks Basketball Basketball History Basketball Players</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/01/e6/1601e66f5b30ba3915281cc1403073ec.jpg" data-lightbox="roadtrip" data-title="Best 9 Women Basketball Photos Super Nintendo Nintendo Basketbol Oyunlari">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/01/e6/1601e66f5b30ba3915281cc1403073ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdM8_HkV0g6lneDYTBlPfd1MOL6avB8wA8Sg';" alt="Best 9 Women Basketball Photos Super Nintendo Nintendo Basketbol Oyunlari">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best 9 Women Basketball Photos Super Nintendo Nintendo Basketbol Oyunlari</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9f/cc/4b/9fcc4bbecfb1d041e5ca01ecd40b565f.jpg" data-lightbox="roadtrip" data-title="Liz Cambage Las Vegas Aces Aces Cambage Las Liz Vegas Upcoming Matches Basketball Leagues Ace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9f/cc/4b/9fcc4bbecfb1d041e5ca01ecd40b565f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq068AIncbBDf0qtCgt-XRT7SCEhLtEoOhdQ';" alt="Liz Cambage Las Vegas Aces Aces Cambage Las Liz Vegas Upcoming Matches Basketball Leagues Ace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Liz Cambage Las Vegas Aces Aces Cambage Las Liz Vegas Upcoming Matches Basketball Leagues Ace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/ea/be/90eabed6a70e09019d40be6d1a940888.jpg" data-lightbox="roadtrip" data-title="Aces Prepare For Grueling Stretch Of 7 Games In 12 Days Wnba Love And Basketball Basketball Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/ea/be/90eabed6a70e09019d40be6d1a940888.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUzWKhPR6-H0ZWjIAFaeNPDui50z3mvY9QSg';" alt="Aces Prepare For Grueling Stretch Of 7 Games In 12 Days Wnba Love And Basketball Basketball Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aces Prepare For Grueling Stretch Of 7 Games In 12 Days Wnba Love And Basketball Basketball Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://x2.pac-12.com/cdn/ff/SuSiNfNVEcPLX0uNhVa7B_t2bnwuBM1p97R78kK4v6A/1594603779/public/styles/crop_16_9_large_1x/public/wbb_weekly_030320__1583299037.jpg?itok=J8HQ9Y0T" data-lightbox="roadtrip" data-title="Stage Set For Pac 12 Tournament In Las Vegas Pac 12">
+											<img class="card-img v-image ads-img " src="https://x2.pac-12.com/cdn/ff/SuSiNfNVEcPLX0uNhVa7B_t2bnwuBM1p97R78kK4v6A/1594603779/public/styles/crop_16_9_large_1x/public/wbb_weekly_030320__1583299037.jpg?itok=J8HQ9Y0T" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcNkzCTmPvx5FMiqV3fIiLAk6_5-Q-e4FmA';" alt="Stage Set For Pac 12 Tournament In Las Vegas Pac 12">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stage Set For Pac 12 Tournament In Las Vegas Pac 12</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/6f/b5/626fb551bda8bd70d489b20f8fa5d3c9.jpg" data-lightbox="roadtrip" data-title="Https Ticketoriginal Com Las Vegas Aces Tickets Las Vegas Aces Tickets Cheap Wnba Tickets And Schedule Lasve Las Vegas Cheap Las Vegas Basketball Tickets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/6f/b5/626fb551bda8bd70d489b20f8fa5d3c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRON-HwJS9SwqSkaLA8iN7O9XLF-eAhplJ96Q';" alt="Https Ticketoriginal Com Las Vegas Aces Tickets Las Vegas Aces Tickets Cheap Wnba Tickets And Schedule Lasve Las Vegas Cheap Las Vegas Basketball Tickets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Ticketoriginal Com Las Vegas Aces Tickets Las Vegas Aces Tickets Cheap Wnba Tickets And Schedule Lasve Las Vegas Cheap Las Vegas Basketball Tickets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/62/8e/0b628e6aae343172fa34bab21aa3fdc4.jpg" data-lightbox="roadtrip" data-title="Brittney Griner Photostream Brittney Griner Basketball Girls Wnba">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/62/8e/0b628e6aae343172fa34bab21aa3fdc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHnCb3fRLrvbfV3eBl7Y8nsDiHz8__HNlXxQ';" alt="Brittney Griner Photostream Brittney Griner Basketball Girls Wnba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brittney Griner Photostream Brittney Griner Basketball Girls Wnba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/f2/a0/30f2a00949d4cddf90a7befb88a010ae.jpg" data-lightbox="roadtrip" data-title="Pin On Vod">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/f2/a0/30f2a00949d4cddf90a7befb88a010ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnH5PWku1XxniQJ_l3mLJyUjhh9sPNHh9AxQ';" alt="Pin On Vod">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vod</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/0f/1a/bc0f1aea056e0d8a2e6d4b363b69ef0a.jpg" data-lightbox="roadtrip" data-title="Aces Center Carolyn Swords Retires To Join Team S Business Staff In 2020 Sports News Team S Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/0f/1a/bc0f1aea056e0d8a2e6d4b363b69ef0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIEvqaOlG7ePZ_hjvb51i2kYEa35PFBeUR4Q';" alt="Aces Center Carolyn Swords Retires To Join Team S Business Staff In 2020 Sports News Team S Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aces Center Carolyn Swords Retires To Join Team S Business Staff In 2020 Sports News Team S Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/fb/59/1afb59698621e6b8eeb260cec07ec9ad.jpg" data-lightbox="roadtrip" data-title="Ncaa Women S Tournament Stanford Washington Photos Basketball Girls Womens Basketball Stanford Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/fb/59/1afb59698621e6b8eeb260cec07ec9ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIha3hkzSEuheWkEWRL02M-LwLpQuIUZ3ICg';" alt="Ncaa Women S Tournament Stanford Washington Photos Basketball Girls Womens Basketball Stanford Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Women S Tournament Stanford Washington Photos Basketball Girls Womens Basketball Stanford Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/fb/43/bbfb43000979ecc9752be67a2033d83f.jpg" data-lightbox="roadtrip" data-title="Nevada Las Vegas Runnin Rebels Framed Panoramic Poster Print Thomas And Mack Center Sport Poster Sports Prints Nevada">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/fb/43/bbfb43000979ecc9752be67a2033d83f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPepLc7cagv0Al2J_hVMljpa0RoCZEbWIXpQ';" alt="Nevada Las Vegas Runnin Rebels Framed Panoramic Poster Print Thomas And Mack Center Sport Poster Sports Prints Nevada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nevada Las Vegas Runnin Rebels Framed Panoramic Poster Print Thomas And Mack Center Sport Poster Sports Prints Nevada</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/c3/69/ccc36926b98c19b7a50a7628d3772ade.jpg" data-lightbox="roadtrip" data-title="Nobody Does Sports Like Las Vegas And During The March Madness Tournament You Can Watch The Big Games Ncaa March Madness March Madness March Madness Tournament">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/c3/69/ccc36926b98c19b7a50a7628d3772ade.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-BYobHzD9oSIr_eaSDJaBSXy3BuC3Wo0D7Q';" alt="Nobody Does Sports Like Las Vegas And During The March Madness Tournament You Can Watch The Big Games Ncaa March Madness March Madness March Madness Tournament">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nobody Does Sports Like Las Vegas And During The March Madness Tournament You Can Watch The Big Games Ncaa March Madness March Madness March Madness Tournament</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/can-you-use-your-gi-bill-while-in-the-military.html">Can You Use Your Gi Bill While In The Military</a></li>
+													<li class="list-group-item"><a href="/can-veteran-spouses-use-gi-bill.html">Can Veteran Spouses Use Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-you-get-the-gi-bill-in-the-national-guard.html">Can You Get The Gi Bill In The National Guard</a></li>
+													<li class="list-group-item"><a href="/carroll-college-womens-basketball-youtube.html">Carroll College Womens Basketball Youtube</a></li>
+													<li class="list-group-item"><a href="/can-you-extend-gi-bill-benefits.html">Can You Extend Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/can-us-citizens-go-to-college-in-europe.html">Can Us Citizens Go To College In Europe</a></li>
+													<li class="list-group-item"><a href="/can-you-use-gi-bill-while-active-duty.html">Can You Use Gi Bill While Active Duty</a></li>
+													<li class="list-group-item"><a href="/can-you-go-to-college-at-any-age.html">Can You Go To College At Any Age</a></li>
+													<li class="list-group-item"><a href="/can-you-go-to-college-while-in-the-military.html">Can You Go To College While In The Military</a></li>
+													<li class="list-group-item"><a href="/can-you-go-to-college-with-ged.html">Can You Go To College With Ged</a></li>
+													<li class="list-group-item"><a href="/carte-numero-30-yu-gi-oh.html">Carte Numero 30 Yu Gi Oh</a></li>
+													<li class="list-group-item"><a href="/can-you-transfer-gi-bill-after-separation.html">Can You Transfer Gi Bill After Separation</a></li>
+													<li class="list-group-item"><a href="/can-you-extend-your-gi-bill.html">Can You Extend Your Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-you-stay-at-college-during-the-summer.html">Can You Stay At College During The Summer</a></li>
+													<li class="list-group-item"><a href="/can-you-lose-va-education-benefits.html">Can You Lose Va Education Benefits</a></li>
+													<li class="list-group-item"><a href="/can-you-use-your-gi-bill-at-2-different-schools.html">Can You Use Your Gi Bill At 2 Different Schools</a></li>
+													<li class="list-group-item"><a href="/canisius-college-womens-basketball-coach.html">Canisius College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/can-you-use-your-gi-bill-and-get-financial-aid.html">Can You Use Your Gi Bill And Get Financial Aid</a></li>
+													<li class="list-group-item"><a href="/can-you-use-gi-bill-twice.html">Can You Use Gi Bill Twice</a></li>
+													<li class="list-group-item"><a href="/can-you-use-your-gi-bill-while-in-the-national-guard.html">Can You Use Your Gi Bill While In The National Guard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

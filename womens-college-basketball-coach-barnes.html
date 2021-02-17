@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Coach Barnes - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Coach Barnes",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/474x/a2/1f/c7/a21fc7b451237a3507a14bfd959150e2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+coach+barnes",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Coach Barnes</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Barnes played California Community College basketball at Riverside City College under PCC Court of Champions legend and Naismith Basketball Hall of Famer Jerry Tarkanian who later encouraged PCC to hire Barnes a standout student-athlete from Detroit Michigan once Barnes finished his undergraduate and then masters degrees at Whittier College. VanDerveer surpassed the late Pat Summit. Kim Barnes Arico led St. <br>				
+			</p>
+										<a class="badge badge-danger" href="/womens-college-basketball-media-timeouts.html">womens college basketball media timeouts</a>
+											<a class="badge badge-primary" href="/womens-college-basketball-quarter-time.html">womens college basketball quarter time</a>
+											<a class="badge badge-danger" href="/womens-college-basketball-scores-cbs.html">womens college basketball scores cbs</a>
+											<a class="badge badge-danger" href="/womens-college-basketball-march-madness-2020.html">womens college basketball march madness 2020</a>
+											<a class="badge badge-warning" href="/womens-college-basketball-recruiting-news.html">womens college basketball recruiting news</a>
+											<a class="badge badge-light" href="/womens-college-basketball-march-madness.html">womens college basketball march madness</a>
+											<a class="badge badge-dark" href="/womens-college-basketball-rankings-2019.html">womens college basketball rankings 2019</a>
+											<a class="badge badge-light" href="/womens-college-basketball-playoff-bracket.html">womens college basketball playoff bracket</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the ideal site.  Our site gives you suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this video that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/29/a9/ef29a9c1d11fdd778a9a3b71d2ce0294.jpg" data-lightbox="roadtrip" data-title="Kim Barnes Arico Um Women S Basketball Coach Womens Basketball Basketball Coach Maize And Blue">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/29/a9/ef29a9c1d11fdd778a9a3b71d2ce0294.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHlSO6W02Bo7zF8RduLQHpUm4hjDUV4CoYpg';" alt="Kim Barnes Arico Um Women S Basketball Coach Womens Basketball Basketball Coach Maize And Blue">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kim Barnes Arico Um Women S Basketball Coach Womens Basketball Basketball Coach Maize And Blue</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/68/6e/1f686ec54d06e3dafe14762d1e2300ad.jpg" data-lightbox="roadtrip" data-title="Kim Barnes Arico Um Women S Basketball Coach Womens Basketball Maize And Blue Basketball Coach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/68/6e/1f686ec54d06e3dafe14762d1e2300ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_xwtxSzZbRWeZOwg40jCh1oFWAGPtcX83AQ';" alt="Kim Barnes Arico Um Women S Basketball Coach Womens Basketball Maize And Blue Basketball Coach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kim Barnes Arico Um Women S Basketball Coach Womens Basketball Maize And Blue Basketball Coach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/fb/1f/d8fb1f8a069e68f7063eb0dee05ad337.jpg" data-lightbox="roadtrip" data-title="Pin On All Sports News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/fb/1f/d8fb1f8a069e68f7063eb0dee05ad337.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWvGVZFHg4AV7Ya1yxEtZz9HAQeC4fpVh5pQ';" alt="Pin On All Sports News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On All Sports News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/60/a6/6060a6a8f77b112ed1a9dc04bf0bcc2d.jpg" data-lightbox="roadtrip" data-title="Arizona Adia Barnes Named Head Coach Arizona Coach Barnes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/60/a6/6060a6a8f77b112ed1a9dc04bf0bcc2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2lMnlOvpTSXtPISfB7jwlfGL7zqE1vGE67A';" alt="Arizona Adia Barnes Named Head Coach Arizona Coach Barnes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arizona Adia Barnes Named Head Coach Arizona Coach Barnes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/05/4a/68054a2d2f60c7166cad9856bfb047a9.jpg" data-lightbox="roadtrip" data-title="Michigan Head Coach Kim Barnes Arico Right Talks With Guard Madison Ristovski 5 During The Fi College Basketball Game Love And Basketball I Love Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/05/4a/68054a2d2f60c7166cad9856bfb047a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7vWmeIQyt9CUyRBJRKolkOAN6fEOL4CReTw';" alt="Michigan Head Coach Kim Barnes Arico Right Talks With Guard Madison Ristovski 5 During The Fi College Basketball Game Love And Basketball I Love Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michigan Head Coach Kim Barnes Arico Right Talks With Guard Madison Ristovski 5 During The Fi College Basketball Game Love And Basketball I Love Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/e3/52/56e3522d94950874aea6c85b3f61590b.jpg" data-lightbox="roadtrip" data-title="Kim Barnes Arico Um Women S Basketball Coach Basketball Coach Womens Basketball Maize And Blue">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/e3/52/56e3522d94950874aea6c85b3f61590b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9mtXIYecdFsRi-BiE8bQhBfAjs3ONI1mFAA';" alt="Kim Barnes Arico Um Women S Basketball Coach Basketball Coach Womens Basketball Maize And Blue">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kim Barnes Arico Um Women S Basketball Coach Basketball Coach Womens Basketball Maize And Blue</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/60/60/a6/6060a6a8f77b112ed1a9dc04bf0bcc2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9mtXIYecdFsRi-BiE8bQhBfAjs3ONI1mFAA';" alt="Kim Barnes Arico Um Women S Basketball Coach Basketball Coach Womens Basketball Maize And Blue">
+										<div class="card-body">
+						<h3 class="h5"><b>Barnes WNIT winning basketball coach NYT Crossword Clue Answers are listed below and every time we find a new solution for this clue we add it on the answers list.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball coach barnes</strong>. 
+								
+																	Richard Dale Barnes born July 17 1954 is a mens college basketball head coach for the Tennessee Volunteers of the Southeastern Conference SEC. 
+																	In four seasons with the WNBAs Sun he is 79-57 with three playoff appearances. 
+																	Stanfords Tara VanDerveer became the winningest coach in Division I womens basketball on Tuesday Dec. 
+																	Assistant Womens Basketball Coach. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He was formerly a college head coach at Bowling Green 11 years and Indiana two years going a combined 290-124. 
+																	-- Arizona has hired former player Adia Barnes as its next womens basketball coach the school announced Monday. 
+																	This crossword clue might have a different answer every time it appears on a new New York Times Crossword Puzzle. 
+																	Arizona has hired former player Adia Barnes as its next womens basketball coach. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hes the only coach in mens college basketball history to win 1000 games with a single team a feat he accomplished en route to winning the most games of any college basketball coach in NCAA. 
+																	Adia Barnes was introduced as Arizonas head womens basketball coach on April 4 2016 and signed a contract extension to lead the program through 2024 in June of 2019. 
+																	Barnes led the Wildcats to a 24-7. 
+																	National coach of the year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Assistant Womens Basketball Coach. 
+																	While many elderly people are isolating at home college basketball coaches are required to travel work indoors and be around crowds all among the most risky behaviors amid a pandemic. 
+																	ATLANTA March 19 2020 The 2020 Werner Ladder Naismith Womens College Coach of the Year Award finalists were announced today by the Atlanta Tipoff Club and include Adia Barnes Arizona Kelly. 
+																	However the Ivy League is not playing that season due to COVID-19 concerns. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Barnes Izzo and Syracuses Jim Boeheim are among the coaches 65 and up who have contracted COVID-19 which can be a greater threat the older one is. 
+																	Assistant Womens Basketball Coach. 
+																	Head Womens Basketball Coach. 
+																	As of the next college basketball season in 202021 354 womens college basketball programs will compete in NCAA Division I. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you encounter two or more answers look at the most recent one ie the last item on the answers box. 
+																	Barnes coached the Texas Longhorns from 1998 to 2015 taking the team to the NCAA Division I Mens Basketball Tournament in 16 of his 17 seasons including 14 straight from 1999 to 2012 as well as a Final Four appearance led by T. 
+																	The official 2020-21 Womens Basketball Roster for the. 
+																	She replaces Niya Butts who was not retained after eight years as. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So its a perfect time to offer our take on. 
+																	UA womens basketball coach Adia Barnes said Lute Olson and former UA football coach Dick Tomey two great men I respected and could learn from reached out to her when she was hired. 
+																	Johns to four NCAA. 
+																	Tournament appearances during a 10-year transformation of a womens basketball program that was winless the Big East season before she took over. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	15 when her Cardinal defeated Pacific 104-61. 
+																	Another college basketball season is upon us and for some of the great mens and womens coaches in the game the victories will continue to pile up. 
+																	This analysis of the role of women coaches in college basketball provides a detailed history of womens involvement in college sports as well as insights into the work of the great women coaches of the past and present all highlighted through interviews with some of the most important women coaches of today. 
+																	1000 College DrivePO Box 8 Wye Mills MD 21679. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each program employs a head coachAs of the 202021 season the longest-tenured head coach at his or her current school is Kathy Delaney-Smith who started at Harvard in 1982. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4d/36/62/4d366265fe25f3b049ec3eb8ede7c14d.jpg" data-lightbox="roadtrip" data-title="Begnoche And Barnes Join 1 000 Career Point Club Basketball Banners Basketball Signs School Spirit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4d/36/62/4d366265fe25f3b049ec3eb8ede7c14d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO6mtRiJLDEJdWbhxH67mRmFwqpWMGUjcQZg';" alt="Begnoche And Barnes Join 1 000 Career Point Club Basketball Banners Basketball Signs School Spirit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Begnoche And Barnes Join 1 000 Career Point Club Basketball Banners Basketball Signs School Spirit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/b8/92/07b8925c7429791724fb8ed4b5727247.webp" data-lightbox="roadtrip" data-title="College Basketball Nov 13 Women S Loyola Marymount At Arizona Womens Basketball Basketball Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/b8/92/07b8925c7429791724fb8ed4b5727247.webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-cKZ71enuonqRcIBr_Ot51STi6i4d5vYJPg';" alt="College Basketball Nov 13 Women S Loyola Marymount At Arizona Womens Basketball Basketball Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Basketball Nov 13 Women S Loyola Marymount At Arizona Womens Basketball Basketball Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/54/31/e75431c059b7245e4bfe9b783892e561.jpg" data-lightbox="roadtrip" data-title="Ysu Football Coach Eric Wolford With Women S Basketball Coach John Barnes And Men S Coach Jerry Sloc College Football Coaches Basketball Coach Football Tactics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/54/31/e75431c059b7245e4bfe9b783892e561.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmBpfXQHQQLXs6H6MVGQhplIV4ZIxx2CqrMA';" alt="Ysu Football Coach Eric Wolford With Women S Basketball Coach John Barnes And Men S Coach Jerry Sloc College Football Coaches Basketball Coach Football Tactics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ysu Football Coach Eric Wolford With Women S Basketball Coach John Barnes And Men S Coach Jerry Sloc College Football Coaches Basketball Coach Football Tactics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/8d/32/ae8d329d765061ae1d2e8bc8364eaab8.jpg" data-lightbox="roadtrip" data-title="Defensive Pressure Drill Basketball Training Drills Basketball Drills Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/8d/32/ae8d329d765061ae1d2e8bc8364eaab8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdzN1ziBYSHc9LSHWmmdRFluq1X1RL6PHfBQ';" alt="Defensive Pressure Drill Basketball Training Drills Basketball Drills Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defensive Pressure Drill Basketball Training Drills Basketball Drills Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/35/28/ce352830e06eae41e0a51469fc1ba3ed.jpg" data-lightbox="roadtrip" data-title="Pin By Marilyn Barnes On Softball And Basketball Photography Team Photography Team Picture Poses Basketball Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/35/28/ce352830e06eae41e0a51469fc1ba3ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYoHHSLahUsgCf3YLt-NfudJg2sCAktdPysw';" alt="Pin By Marilyn Barnes On Softball And Basketball Photography Team Photography Team Picture Poses Basketball Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Marilyn Barnes On Softball And Basketball Photography Team Photography Team Picture Poses Basketball Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/ed/50/99ed5012062f9a6059f149a01b274650.jpg" data-lightbox="roadtrip" data-title="Ut Basketball Coach Rick Barnes At Copper Cellar Rick Barnes Famous Faces Basketball Coach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/ed/50/99ed5012062f9a6059f149a01b274650.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgkj4NyAT0M_XzQs-tWF-QbyHUxdDmXac-Kw';" alt="Ut Basketball Coach Rick Barnes At Copper Cellar Rick Barnes Famous Faces Basketball Coach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ut Basketball Coach Rick Barnes At Copper Cellar Rick Barnes Famous Faces Basketball Coach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/a9/5d/7ca95dedff7974813eee5ce04d3378d1.jpg" data-lightbox="roadtrip" data-title="Moravian College Women S Basketball Coach Mary Beth Spirk Going For 500th Win Wednesday Womens Basketball Basketball Coach Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/a9/5d/7ca95dedff7974813eee5ce04d3378d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi_GzGkpwJQsGvz_xHzMVsOiJ6eZrKc8fIXg';" alt="Moravian College Women S Basketball Coach Mary Beth Spirk Going For 500th Win Wednesday Womens Basketball Basketball Coach Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moravian College Women S Basketball Coach Mary Beth Spirk Going For 500th Win Wednesday Womens Basketball Basketball Coach Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/40/d9/84/40d9845af19473ccff04b0a264679e92.jpg" data-lightbox="roadtrip" data-title="Anndddddd We Found A Winner Youngstown State Chooses Coach John Barnes To Lead Women S Basketball Goguins P Youngstown State Womens Basketball John Barnes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/40/d9/84/40d9845af19473ccff04b0a264679e92.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemraNztds9na5XwleFnn8eKj5o--Dx4iFbg';" alt="Anndddddd We Found A Winner Youngstown State Chooses Coach John Barnes To Lead Women S Basketball Goguins P Youngstown State Womens Basketball John Barnes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anndddddd We Found A Winner Youngstown State Chooses Coach John Barnes To Lead Women S Basketball Goguins P Youngstown State Womens Basketball John Barnes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/75/7a/a9/757aa96105a3e7750a1548b6c303c7c3.jpg" data-lightbox="roadtrip" data-title="Ross Barnes Summitt Yahoo Search Results Barnes Ross Coach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/75/7a/a9/757aa96105a3e7750a1548b6c303c7c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv708MOY13IYfU1f2DvgMZSXT9swZN1FgfpQ';" alt="Ross Barnes Summitt Yahoo Search Results Barnes Ross Coach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ross Barnes Summitt Yahoo Search Results Barnes Ross Coach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/0e/e7/e60ee7109e445fbb59a7d1d7a9e154e2.jpg" data-lightbox="roadtrip" data-title="Michigan Competitive Rebounding Drills Basketball Information Rebounding Basketball Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/0e/e7/e60ee7109e445fbb59a7d1d7a9e154e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYAQx4x14bVnkSeQi4ExugGCfuu6VbtrTpoA';" alt="Michigan Competitive Rebounding Drills Basketball Information Rebounding Basketball Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michigan Competitive Rebounding Drills Basketball Information Rebounding Basketball Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/7e/51/3d7e5152dae51348d8c910706479656f.jpg" data-lightbox="roadtrip" data-title="John Barnes Introduced As Youngstown State S Head Women S Basketball Coach Youngstown State John Barnes Basketball Coach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/7e/51/3d7e5152dae51348d8c910706479656f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRciCzKUXtRoZmUezGwVhAbgZNRotH5sK_7Dg';" alt="John Barnes Introduced As Youngstown State S Head Women S Basketball Coach Youngstown State John Barnes Basketball Coach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">John Barnes Introduced As Youngstown State S Head Women S Basketball Coach Youngstown State John Barnes Basketball Coach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a2/1f/c7/a21fc7b451237a3507a14bfd959150e2.jpg" data-lightbox="roadtrip" data-title="A Blog Of Great Carolina Sports Photos From Our Archives Unc Tarheels Basketball North Carolina Basketball Tarheels Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a2/1f/c7/a21fc7b451237a3507a14bfd959150e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpGXDJ5TbzJIorRBnQgQeIyBBVluQJmeu2jw';" alt="A Blog Of Great Carolina Sports Photos From Our Archives Unc Tarheels Basketball North Carolina Basketball Tarheels Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Blog Of Great Carolina Sports Photos From Our Archives Unc Tarheels Basketball North Carolina Basketball Tarheels Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5b/23/50/5b2350ad6db1e44a173daf718e2b6b0f.jpg" data-lightbox="roadtrip" data-title="Romance Roundup Detectives College Basketball Coaches And Oil Tycoons Basketball Coach College Basketball Coaching">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5b/23/50/5b2350ad6db1e44a173daf718e2b6b0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWjHgR61kc9K-cxzisAcsXe9VjozAYEgmRsw';" alt="Romance Roundup Detectives College Basketball Coaches And Oil Tycoons Basketball Coach College Basketball Coaching">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Romance Roundup Detectives College Basketball Coaches And Oil Tycoons Basketball Coach College Basketball Coaching</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/fun-christmas-gifts-for-college-guys.html">Fun Christmas Gifts For College Guys</a></li>
+													<li class="list-group-item"><a href="/gastrointestinal-laboratory-college-station-tx.html">Gastrointestinal Laboratory College Station Tx</a></li>
+													<li class="list-group-item"><a href="/free-college-giveaways.html">Free College Giveaways</a></li>
+													<li class="list-group-item"><a href="/gastrointestinal-flora-benefits.html">Gastrointestinal Flora Benefits</a></li>
+													<li class="list-group-item"><a href="/forever-gi-bill-legislation.html">Forever Gi Bill Legislation</a></li>
+													<li class="list-group-item"><a href="/forever-la-gi.html">Forever La Gi</a></li>
+													<li class="list-group-item"><a href="/forever-gi-bill-reddit.html">Forever Gi Bill Reddit</a></li>
+													<li class="list-group-item"><a href="/funny-college-birthday-gifts.html">Funny College Birthday Gifts</a></li>
+													<li class="list-group-item"><a href="/gastroenterology-royal-college.html">Gastroenterology Royal College</a></li>
+													<li class="list-group-item"><a href="/forever-gi-bill-reserves.html">Forever Gi Bill Reserves</a></li>
+													<li class="list-group-item"><a href="/forever-gi-bill-transfer-benefits.html">Forever Gi Bill Transfer Benefits</a></li>
+													<li class="list-group-item"><a href="/fundraiser-ideas-for-college-students.html">Fundraiser Ideas For College Students</a></li>
+													<li class="list-group-item"><a href="/forever-gi-bill-signed-into-law.html">Forever Gi Bill Signed Into Law</a></li>
+													<li class="list-group-item"><a href="/gastroenterology-womens-college-hospital.html">Gastroenterology Womens College Hospital</a></li>
+													<li class="list-group-item"><a href="/forever-gi-bill-percentages.html">Forever Gi Bill Percentages</a></li>
+													<li class="list-group-item"><a href="/gastroenterology-associates-college-heights.html">Gastroenterology Associates College Heights</a></li>
+													<li class="list-group-item"><a href="/gastroenterology-nursing-education.html">Gastroenterology Nursing Education</a></li>
+													<li class="list-group-item"><a href="/forever-gin-chia-benefits-in-hindi.html">Forever Gin Chia Benefits In Hindi</a></li>
+													<li class="list-group-item"><a href="/franklin-college-womens-basketball-roster.html">Franklin College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/forever-gi-bill-yellow-ribbon.html">Forever Gi Bill Yellow Ribbon</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

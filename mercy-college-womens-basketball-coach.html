@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mercy College Womens Basketball Coach - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mercy College Womens Basketball Coach",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/10/6b/4f/106b4f9233207b6e66ea377c7c4aec42.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mercy+college+womens+basketball+coach",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mercy College Womens Basketball Coach</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Has announced the hiring of Jim Harter as the new head Mercy College womens basketball coach. Detroit Mercy announced it has suspended the rest of its womens basketball season amid allegations of abuse by first-year head coach AnnMarie Gilbert. Detailing allegations of player. <br>				
+			</p>
+										<a class="badge badge-info" href="/espn-top-25-womens-college-basketball-players.html">espn top 25 womens college basketball players</a>
+											<a class="badge badge-warning" href="/flagler-college-womens-basketball-coach.html">flagler college womens basketball coach</a>
+											<a class="badge badge-danger" href="/espncom-womens-college-basketball.html">espncom womens college basketball</a>
+											<a class="badge badge-light" href="/flight-schools-in-colorado-that-accept-gi-bill.html">flight schools in colorado that accept gi bill</a>
+											<a class="badge badge-info" href="/extension-of-post-911-gi-bill.html">extension of post 911 gi bill</a>
+											<a class="badge badge-secondary" href="/female-college-basketball-coach-dies.html">female college basketball coach dies</a>
+											<a class="badge badge-success" href="/extend-my-gi-bill-benefits.html">extend my gi bill benefits</a>
+											<a class="badge badge-warning" href="/espn-womens-college-basketball-news.html">espn womens college basketball news</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal blog.  Our site provides you with hints for viewing the highest quality video and image content, search and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/5a/34/62/5a3462dd3ed36a28d4d000f952a5f784.jpg" data-lightbox="roadtrip" data-title="Pin By Leslee Wencley On Mercy College Of Detroit In 2020 Basketball Teams Detroit Wayne State University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/5a/34/62/5a3462dd3ed36a28d4d000f952a5f784.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLHsOPXzE8Acg-fIokJh0ptPdzVp8_hGeNhA';" alt="Pin By Leslee Wencley On Mercy College Of Detroit In 2020 Basketball Teams Detroit Wayne State University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Leslee Wencley On Mercy College Of Detroit In 2020 Basketball Teams Detroit Wayne State University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/e0/a5/e7e0a5f1bdd4dc86980ff28fe73168b5.jpg" data-lightbox="roadtrip" data-title="Detroit Mercy Women S Basketball Coach Bernard Scott Fired Womens Basketball Basketball Coach Coach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/e0/a5/e7e0a5f1bdd4dc86980ff28fe73168b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4t09kCfdmsGPrprW-hxxYL7JOdbeaURxMw';" alt="Detroit Mercy Women S Basketball Coach Bernard Scott Fired Womens Basketball Basketball Coach Coach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Detroit Mercy Women S Basketball Coach Bernard Scott Fired Womens Basketball Basketball Coach Coach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0f/8a/5b/0f8a5ba88f1b47ef0cacaaac522e2200.jpg" data-lightbox="roadtrip" data-title="Pin On Sport Team Competition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0f/8a/5b/0f8a5ba88f1b47ef0cacaaac522e2200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZIISoEvBfHS5sN4SAIb9poNPh8IleV0GNiQ';" alt="Pin On Sport Team Competition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sport Team Competition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/2a/3e/f92a3efa5d1cc88328c15b1463e4a9b1.jpg" data-lightbox="roadtrip" data-title="Season Stats Goldey Beacom S Sarah Round Collegesports Sports Goldeybeacom Gbc College Basketball Teams Basketball Game Outfit College Basketball Players">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/2a/3e/f92a3efa5d1cc88328c15b1463e4a9b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUbbLMoVJL1DLvJDhUY9KmrrmIiFm7gRusCg';" alt="Season Stats Goldey Beacom S Sarah Round Collegesports Sports Goldeybeacom Gbc College Basketball Teams Basketball Game Outfit College Basketball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Season Stats Goldey Beacom S Sarah Round Collegesports Sports Goldeybeacom Gbc College Basketball Teams Basketball Game Outfit College Basketball Players</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/79/b0/8379b0424da7e58c3fa582c058058338.png" data-lightbox="roadtrip" data-title="Up 50 Or Up 10 Or Up 2 Play The Same Way The Minute You Change The Way You Play The Minute You Ge Basketball Quotes Basketball Motivation Basketball Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/79/b0/8379b0424da7e58c3fa582c058058338.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJRD7_tmGYDPFHnBDWg85w4vr4uMebBdlyxw';" alt="Up 50 Or Up 10 Or Up 2 Play The Same Way The Minute You Change The Way You Play The Minute You Ge Basketball Quotes Basketball Motivation Basketball Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Up 50 Or Up 10 Or Up 2 Play The Same Way The Minute You Change The Way You Play The Minute You Ge Basketball Quotes Basketball Motivation Basketball Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/42/c1/d742c1d83037ff38bb530322c7f5cd2c.jpg" data-lightbox="roadtrip" data-title="Kyra Elzy Named Kentucky Women S Basketball Coach Kentucky Athletics Basketball Coach Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/42/c1/d742c1d83037ff38bb530322c7f5cd2c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2Rqu6j1dS6hiDuC-wpYoloF-gKK-vJE7_A';" alt="Kyra Elzy Named Kentucky Women S Basketball Coach Kentucky Athletics Basketball Coach Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kyra Elzy Named Kentucky Women S Basketball Coach Kentucky Athletics Basketball Coach Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/52/8d/03/528d03c73cfc78147922333b762e8e25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2Rqu6j1dS6hiDuC-wpYoloF-gKK-vJE7_A';" alt="Kyra Elzy Named Kentucky Women S Basketball Coach Kentucky Athletics Basketball Coach Womens Basketball">
+										<div class="card-body">
+						<h3 class="h5"><b>The parents of the entire Detroit Mercy womens basketball roster have signed a letter to the university administration claiming new head coach AnnMarie Gilbert ran a program that inflicted.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mercy college womens basketball coach</strong>. 
+								
+																	Coach Scott Lagas welcomes Gerald Davis as an assistant coach. 
+																	The accusations against Gilbert at Detroit Mercy come shortly after similar allegations were made this week about Horizon League womens program Purdue Fort Wayne and coach Niecee Nelson. 
+																	UConn womens basketball coach Geno Auriemma said Tuesday he wouldnt mind if the Big East chose to not have a conference tournament. 
+																	The official Womens Basketball page for the University of Detroit Mercy Titans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jim Harter brings a wealth of knowledge and experience to our womens basketball program commented Athletic Director Matt Kilcullen Jr. 
+																	The players on the NCAA Division I Detroit Mercy womens basketball team canceled the remainder of. 
+																	Recruitment of student-athletes in compliance with NCAA legislation East Coast Conference and Mercy. 
+																	Youngstown State Penguins vs Purdue Fort Wayne Mastodons. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a former head mens basketball coach at Pace University Jim has shown thatContinue Reading. 
+																	University of Detroit Mercy womens basketball team accuses coach of abuse The teams season was cancelled amid complaints officials say DETROIT The University of Detroit Mercy has pulled the. 
+																	During his second season at Mercy Lagas led the Mavericks to eight wins doubling their win total over the previous season. 
+																	Fox News - Detroit Mercy womens basketball canceled the remainder of their 2020-21 season after coach AnnMarie Gilbert was accused of emotional mental and physical abuse according to reports. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Matos brings a wealth of basketball experience to the coaching staff after a successful collegiate playing career and high school coaching stint. 
+																	One college basketball team is canceling their season and it has nothing to do with COVID-19. 
+																	Scott Lagas enters his third season as Head Coach in 2020-21. 
+																	Athletic Director Matt Kilcullen Jr. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Name Title Phone Email Address Office Location. 
+																	Fourteen players signed a letter to Athletic Director Robert Vowels Jr. 
+																	Mercy won eight or more games in a season for just the fourth time since 2000-01. 
+																	Prior to joining the Mercy College Mavericks coach Davis most recently coached three years at The College of New Rochelle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Supervise and instruct student-athletes participating in womens intercollegiate Development and implementation of practice plans. 
+																	Coach Lagas is familiar with coach Davis during their days as assistant coaches at C. 
+																	Detroit Mercy hired AnnMarie Gilbert as its new womens basketball coach. 
+																	Head Coach 914-674-7297 914-674-7297. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Detroit Mercy announced on Thursday that it has suspended the womens basketball program for the remainder of the 2020-21 season citing the health and well-being of its student-athletes but. 
+																	Announced Thursday that Scotts contract would not be renewed. 
+																	Rafael Matos joins the Mercy College womens basketball coaching staff during the 2015-16 season. 
+																	DETROIT -- Detroit Mercy has fired womens basketball coach Bernard Scott. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Detroit Mercy womens basketball team canceled the rest of its season on Thursday after players and their parents accused coach AnnMarie Gilbert of abuse and mistreatment according to The. 
+																	The official Womens Basketball page for the Mercy College Mavericks. 
+																	Detroit Mercy womens basketball canceled the remainder of their 2020-21 season after coach AnnMarie Gilbert was accused of emotional mental and physical abuse according to reports. 
+																	Gilbert went 135-18 at Virginia Union in five seasons including a Division II national title game appearance in 2017. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Athletic director Robert C. 
+																	Staff Directory Members By CategoryDepartment. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/6b/4f/106b4f9233207b6e66ea377c7c4aec42.jpg" data-lightbox="roadtrip" data-title="Mercy College Of Detroit Nursing Students 1955 Nursing Students Nursing Pictures Nurse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/6b/4f/106b4f9233207b6e66ea377c7c4aec42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNtGwphbY_kl4U9SGRZ4FXNYmMM8mTMomVGQ';" alt="Mercy College Of Detroit Nursing Students 1955 Nursing Students Nursing Pictures Nurse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mercy College Of Detroit Nursing Students 1955 Nursing Students Nursing Pictures Nurse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/f7/26/2bf72623a081c45d28e9063339cfe5e6.jpg" data-lightbox="roadtrip" data-title="Pin On B A S K E T B A L L">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/f7/26/2bf72623a081c45d28e9063339cfe5e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg6nvl3CbCbIQvgE_XOTeoDhSZMpMT0Yz7KA';" alt="Pin On B A S K E T B A L L">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On B A S K E T B A L L</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/88/d9/3a88d9c5f766a9a68030dd5531933035.jpg" data-lightbox="roadtrip" data-title="Don T Make Excuses Make Your Free Throws Sports Quotes Basketball Basketball Motivation Basketball Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/88/d9/3a88d9c5f766a9a68030dd5531933035.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7xfvNqJwzYlCLWSD4bmMH3mpa1dc4ECHozA';" alt="Don T Make Excuses Make Your Free Throws Sports Quotes Basketball Basketball Motivation Basketball Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Make Excuses Make Your Free Throws Sports Quotes Basketball Basketball Motivation Basketball Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/d6/a6/24d6a6abdfb62a92f4f0227b8e48e985.jpg" data-lightbox="roadtrip" data-title="Pin On D1sportsnet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/d6/a6/24d6a6abdfb62a92f4f0227b8e48e985.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAX9-jd0DTC1wQsdchAiV_UqU83g-WBtEuhg';" alt="Pin On D1sportsnet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On D1sportsnet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/a7/9e/4da79e2a9fa73ee227fa7fa9b9de05eb.jpg" data-lightbox="roadtrip" data-title="Pin On Women S Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/a7/9e/4da79e2a9fa73ee227fa7fa9b9de05eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBsacViJd3WA1qRBiw_N9n3R1fVzQH54Ww_g';" alt="Pin On Women S Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Women S Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/0c/e9/cc0ce9be087c0d60c840a9e64e0d6f1b.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Summer Homework Ball Control Basketball Drills Basketball Coach Basketball Moves">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/0c/e9/cc0ce9be087c0d60c840a9e64e0d6f1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGqzvKSIMXs6MXMVZvCA2yhpwejLqqABnb7Q';" alt="Women S Basketball Summer Homework Ball Control Basketball Drills Basketball Coach Basketball Moves">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Summer Homework Ball Control Basketball Drills Basketball Coach Basketball Moves</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/ee/70/b2ee705c175f4f71f445afe5cebff9b9.jpg" data-lightbox="roadtrip" data-title="When My Body Gets Tired My Mind Says This Is Where Winners Are Made When My Basketball Quotes Inspirational Basketball Quotes Sports Quotes Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/ee/70/b2ee705c175f4f71f445afe5cebff9b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT19PgpM6avhJrRJnnoqw8qxwr6t52ymmBT6g';" alt="When My Body Gets Tired My Mind Says This Is Where Winners Are Made When My Basketball Quotes Inspirational Basketball Quotes Sports Quotes Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When My Body Gets Tired My Mind Says This Is Where Winners Are Made When My Basketball Quotes Inspirational Basketball Quotes Sports Quotes Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/77/5b/47/775b479dbe301adbdb42791b5b10c8e2.jpg" data-lightbox="roadtrip" data-title="Hornets Earn First Win Of The Season With 67 41 Win Dsuwbb Dsuhornets Collegesports Sports Ncaabasketball Basket Womens Basketball College Sports Hornet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/77/5b/47/775b479dbe301adbdb42791b5b10c8e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYL-TbSeWJO1whm7PND_1UKaHdn-KesSD15Q';" alt="Hornets Earn First Win Of The Season With 67 41 Win Dsuwbb Dsuhornets Collegesports Sports Ncaabasketball Basket Womens Basketball College Sports Hornet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hornets Earn First Win Of The Season With 67 41 Win Dsuwbb Dsuhornets Collegesports Sports Ncaabasketball Basket Womens Basketball College Sports Hornet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/34/41/fe3441a77d1930029b7e563a8cbc38b1.jpg" data-lightbox="roadtrip" data-title="Basketball Motivation Sue Bird Seattle Storm Uconn Basketball Photo Quote Poster Wall Art Prnt 5x7 Basketball Motivation Basketball Quotes Basketball Workouts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/34/41/fe3441a77d1930029b7e563a8cbc38b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzQAIXB_4dZb6kuZVpMdQSUA8WMuyF_P-jkQ';" alt="Basketball Motivation Sue Bird Seattle Storm Uconn Basketball Photo Quote Poster Wall Art Prnt 5x7 Basketball Motivation Basketball Quotes Basketball Workouts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Motivation Sue Bird Seattle Storm Uconn Basketball Photo Quote Poster Wall Art Prnt 5x7 Basketball Motivation Basketball Quotes Basketball Workouts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/4f/70/884f70039a3d75736c8e92815f4ebeca.jpg" data-lightbox="roadtrip" data-title="Women S Soccer Runs Winning Streak To Seven With Hard Fought 2 1 Ecc Home Win Over Previously Undefeated Mercy College Womens Soccer Running Undefeated">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/4f/70/884f70039a3d75736c8e92815f4ebeca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5YYMr4d8IpcQ8WmuKUMZtk9hQa_mSZk28VQ';" alt="Women S Soccer Runs Winning Streak To Seven With Hard Fought 2 1 Ecc Home Win Over Previously Undefeated Mercy College Womens Soccer Running Undefeated">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Soccer Runs Winning Streak To Seven With Hard Fought 2 1 Ecc Home Win Over Previously Undefeated Mercy College Womens Soccer Running Undefeated</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/1a/01/d21a0145001f283c950bf77770715b77.jpg" data-lightbox="roadtrip" data-title="Six Players From Uconn Women S Basketball Are Among 50 Players On The Watch List For The Naismith Tr American Athletic Conference Uconn Uconn Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/1a/01/d21a0145001f283c950bf77770715b77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZdeY7zLVpIHhnAIzpr1rMbtItJyqPTsA0NA';" alt="Six Players From Uconn Women S Basketball Are Among 50 Players On The Watch List For The Naismith Tr American Athletic Conference Uconn Uconn Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Six Players From Uconn Women S Basketball Are Among 50 Players On The Watch List For The Naismith Tr American Athletic Conference Uconn Uconn Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/df/09/17df097cea682ff3d8759928f1cb0e5e.jpg" data-lightbox="roadtrip" data-title="Practice And Play With All Of Your Heart Basketball Quotes Basketball Workouts Basketball Quotes Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/df/09/17df097cea682ff3d8759928f1cb0e5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp92kwJUAyw9gXiqqhavWWZn6WpWty82BtWQ';" alt="Practice And Play With All Of Your Heart Basketball Quotes Basketball Workouts Basketball Quotes Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Practice And Play With All Of Your Heart Basketball Quotes Basketball Workouts Basketball Quotes Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/8d/03/528d03c73cfc78147922333b762e8e25.jpg" data-lightbox="roadtrip" data-title="Help Someone Go For Gold With These 32 Inspirational Sports Quotes Sports Quotes Basketball Basketball Quotes Sports Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/8d/03/528d03c73cfc78147922333b762e8e25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNwFTBfIplui8mbWuVRp7pSiIx2wvnQJeJbg';" alt="Help Someone Go For Gold With These 32 Inspirational Sports Quotes Sports Quotes Basketball Basketball Quotes Sports Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Help Someone Go For Gold With These 32 Inspirational Sports Quotes Sports Quotes Basketball Basketball Quotes Sports Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-benefits-divorced-spouse.html">Gi Bill Benefits Divorced Spouse</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-remaining.html">Gi Bill Benefits Remaining</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-breakdown.html">Gi Bill Benefits Breakdown</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-part-time-student.html">Gi Bill Benefits Part Time Student</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-reservists.html">Gi Bill Benefits Reservists</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-under-general-discharge.html">Gi Bill Benefits Under General Discharge</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-delayed.html">Gi Bill Benefits Delayed</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-payment-date.html">Gi Bill Benefits Payment Date</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-certificate-of-eligibility.html">Gi Bill Benefits Certificate Of Eligibility</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-for-disabled-veterans.html">Gi Bill Benefits For Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-after-discharge.html">Gi Bill Benefits After Discharge</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-list.html">Gi Bill Benefits List</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-comparison.html">Gi Bill Benefits Comparison</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-wave.html">Gi Bill Benefits Wave</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-dependents.html">Gi Bill Benefits Dependents</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-vietnam-era-veterans.html">Gi Bill Benefits Vietnam Era Veterans</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-in-1956.html">Gi Bill Benefits In 1956</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-qualifications.html">Gi Bill Benefits Qualifications</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-limits.html">Gi Bill Benefits Limits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-benefits-how-much.html">Gi Bill Benefits How Much</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

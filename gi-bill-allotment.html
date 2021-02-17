@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gi Bill Allotment - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gi Bill Allotment",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/ce/67/b1/ce67b129fbc6a628b3824fb00dbc8f84.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gi+bill+allotment",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gi Bill Allotment</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Post-911 GI Bill includes payment of tuition and fees a monthly housing allowance and a stipend for textbooks and supplies. This GI Bill stipend will be paid out by terms. When you get out you may be eligible for the new post 911 GI Bill anyway. <br>				
+			</p>
+										<a class="badge badge-success" href="/will-gi-bill-pay-for-online-classes.html">will gi bill pay for online classes</a>
+											<a class="badge badge-danger" href="/wisconsin-gi-bill-education-benefits.html">wisconsin gi bill education benefits</a>
+											<a class="badge badge-dark" href="/why-didnt-xander-go-to-college.html">why didnt xander go to college</a>
+											<a class="badge badge-light" href="/who-is-1-in-college-gymnastics.html">who is 1 in college gymnastics</a>
+											<a class="badge badge-info" href="/will-there-be-a-gopro-hero-9.html">will there be a gopro hero 9</a>
+											<a class="badge badge-dark" href="/winningest-womens-college-basketball-teams.html">winningest womens college basketball teams</a>
+											<a class="badge badge-info" href="/womens-basketball-university-of-michigan.html">womens basketball university of michigan</a>
+											<a class="badge badge-warning" href="/wisconsin-gi-bill-requirements.html">wisconsin gi bill requirements</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the right site.  Our site gives you suggestions for seeing the maximum quality video and picture content, search and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie that you view.  You can also bring about supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.kastatic.org/ka-perseus-images/28d2406337e818168839517d43336faa18147c50.jpg" data-lightbox="roadtrip" data-title="The Gi Bill Article Khan Academy">
+											<img class="card-img v-image ads-img " src="https://cdn.kastatic.org/ka-perseus-images/28d2406337e818168839517d43336faa18147c50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1aPKbYXEHwIZNyeWR8ZvKbmw4hNjBqGC04A';" alt="The Gi Bill Article Khan Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Gi Bill Article Khan Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/6f/47/a76f4720b4c58cd3c3629f8bfb4a8388.png" data-lightbox="roadtrip" data-title="Bill Book Design And Printing Service Provider Bangladesh Discover Creative Bill Book Design Printing Book Printing Services Book Design Packaging Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/6f/47/a76f4720b4c58cd3c3629f8bfb4a8388.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGWLbdn5zbOOVT4XKM3T6T77OE_nuw-48axQ';" alt="Bill Book Design And Printing Service Provider Bangladesh Discover Creative Bill Book Design Printing Book Printing Services Book Design Packaging Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Book Design And Printing Service Provider Bangladesh Discover Creative Bill Book Design Printing Book Printing Services Book Design Packaging Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/14/85/c7148576a3cd7c50e1756d3b4b5eff11.jpg" data-lightbox="roadtrip" data-title="Diy Strawberry Planter Garden Diy Gardening Crafts Small Garden Ideas Diy Gardening Garden Ideas Diy Strawberry Planters Creative Gardening Allotment Gardening">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/14/85/c7148576a3cd7c50e1756d3b4b5eff11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_scvKTn0EI-pWlZdEFn0IjCuLAfsadZTWiA';" alt="Diy Strawberry Planter Garden Diy Gardening Crafts Small Garden Ideas Diy Gardening Garden Ideas Diy Strawberry Planters Creative Gardening Allotment Gardening">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diy Strawberry Planter Garden Diy Gardening Crafts Small Garden Ideas Diy Gardening Garden Ideas Diy Strawberry Planters Creative Gardening Allotment Gardening</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/post-911-gi-bill-mha.jpg" data-lightbox="roadtrip" data-title="Monthly Housing Allowance Mha Gi Bill Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/post-911-gi-bill-mha.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrmyJDTrZVJsLl2H7dKPJ8_ARlleM_X-U-sQ';" alt="Monthly Housing Allowance Mha Gi Bill Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Monthly Housing Allowance Mha Gi Bill Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/10/mgib-montgomery-gi-bill-rates.jpg" data-lightbox="roadtrip" data-title="2020 2021 Montgomery Gi Bill Mgib Rates Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/10/mgib-montgomery-gi-bill-rates.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRwNPbiq0DZeyiT83RZ3xSe263QiTuS6cw8g';" alt="2020 2021 Montgomery Gi Bill Mgib Rates Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 2021 Montgomery Gi Bill Mgib Rates Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mk0grantham84johqkap.kinstacdn.com/wp-content/uploads/2019/04/GI_Bill_-Benefits.png" data-lightbox="roadtrip" data-title="How To Transfer Gi Bill Benefits To Dependents Grantham University">
+											<img class="card-img v-image ads-img " src="https://mk0grantham84johqkap.kinstacdn.com/wp-content/uploads/2019/04/GI_Bill_-Benefits.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiAs43-0_Ys1Chbo05NSqNM8CvMh7bDQQGmg';" alt="How To Transfer Gi Bill Benefits To Dependents Grantham University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Transfer Gi Bill Benefits To Dependents Grantham University</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/26/63/7e/26637e9c3b4f436c4edcb17d764eb307.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiAs43-0_Ys1Chbo05NSqNM8CvMh7bDQQGmg';" alt="How To Transfer Gi Bill Benefits To Dependents Grantham University">
+										<div class="card-body">
+						<h3 class="h5"><b>Montgomery GI Bill deduction.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gi bill allotment</strong>. 
+								
+																	Work Study applications and contracts are currently being accepted for STEM Scholarship recipients. 
+																	See how VA is responding to COVID-19 and supporting GI Bill beneficiaries. 
+																	Verify STEM Attendance. 
+																	By that time nearly 8 million World War II veterans had received education or training and 43 million home loans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	First GI Bill allotment how long is it taking from certification day. 
+																	This was increased to 12 months by the Allotments Act 1950. 
+																	4106 PERIODS OF ALLOTMENTS Allotments are made for indefinite periods except those. 
+																	Find out when and how to request changes to your GI Bill school program or other VA education benefits so you can keep getting funding to help pay for your education or training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It had three key provisions. 
+																	Veterans attending KSU on a year-round basis under the GI Bill will now receive a full allotment for each month. 
+																	Veterans counselor James Trenkelbach said under the old policy veterans did not receive a check in September even if enrolled during both summer sessions and fall winter and spring quarters. 
+																	The GI Bill and the Racial Wealth Gap The original GI Bill ended in July 1956. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In my opinion its much better than the MGIB. 
+																	If Basic Allowance for Housing rates decrease whether due to the incorporation of an out-of-pocket the removal of renters insurance declining rentalutility prices in the area or any combination. 
+																	The landlord may end. 
+																	You might as well just continue since youll get the money you paid back. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If a veteran attends a two-term school the GI Bill books and supplies allotment will be 500 per semester whereas the veteran receives 333 per term at a three-semester school. 
+																	To the United States for. 
+																	The GI Bill website says that they are experiencing processing delays related to an internal audit but give no detailed information on the scope of the audit or offer no solution to those. 
+																	5 posts First GI Bill allotment how long is it taking from certification day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To Military Service relief organizations. 
+																	Commanders may restrict further the total amount a member may allot when necessary to help the member meet essential personal needs. 
+																	First GI Bill allotment how long is it taking from certification day. 
+																	11 2001 and individuals honorably. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll need to request changes to your benefits if any of the. 
+																	Learn about ways you can make GI Bill changes. 
+																	The GI Bill of Rights originally passed in 1944 as the Servicemens Readjustment Act to support veterans after World War II. 
+																	Bill Tuition assistance is limited. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	December 2 2020 1045 AM. 
+																	The GI Bill is an allotment paid monthly to a student in school and is usually considered a resource rather than income according to the Veterans Benefits GI Bill website. 
+																	The Allotments Act 1922 provided allotment holders with some security of tenure by setting out specific periods of notice for ending a tenancy. 
+																	The bill was a resounding success. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The payment and maximum amounts listed will be prorated based on your eligibility percentage if you are not eligible for the full benefit. 
+																	Bill information for each school youre considering because each schools coverage varies. 
+																	In what situations do I need to request changes to my GI Bill or other VA education benefits. 
+																	The Post-911 GI Bill program is comprised of multiple payments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Allotments come in two varieties discretionary or by voluntary or non discretionary or involuntary. 
+																	Eligibility requirements include but are not limited to service members who meet all Post-911 GI Bill eligibility requirements have completed six years of service can commit to serving an. 
+																	All payments and maximum amounts listed below are applicable to individuals eligible for the full benefit 100 eligibility tier. 
+																	Veterans Typically Attend Massachusetts Institute of Technology for no More Than 26997. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Be sure to check out the GI. 
+																	Landlords could only end an allotment garden tenancy by giving the allotment holder a minimum of six months notice. 
+																	For students attending public colleges and universities the GI. 
+																	The Montgomery GI Bill and Dependents For example the Basic Allowance for Housing given to those who live outside of a military base or a government-provided housing will be higher in 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Effective 11520 STEM Scholarship Beneficiaries are Eligible for Work Study Benefits. 
+																	Rogers STEM Scholarship beneficiaries interested in Work Study may apply at VAgov. 
+																	GI BILL FOR TUTORING. 
+																	Education and training programs to help veterans get jobs and loan guaranty for homes businesses and farms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Post-911 GI Bill provides financial support for education and housing to individuals with at least 90 days of aggregate service on or after Sept. 
+																	To the American Red Cross. 
+																	Check out below if Massachusetts Institute of Technologys tuition is covered. 
+																	The Post-911 GI Bills transfer-to-dependent option is designed to help improve military retention and recruiting and is only available to eligible active-duty service members and selected Reservists. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An allotment is made so it is a single payment per allotment you cannot pay two or more people with the same allotment each will need their own. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2016/03/pay-childrens-college-gi-bill-550x387.jpg" data-lightbox="roadtrip" data-title="Use Gi Bill Benefits To Pay For Children S College Education">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2016/03/pay-childrens-college-gi-bill-550x387.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhAPevBXUxSNYgAhY99gpxVUFa8sohOv1JTA';" alt="Use Gi Bill Benefits To Pay For Children S College Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use Gi Bill Benefits To Pay For Children S College Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/08/post-9-11-gi-bill-online-colleges.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Bah Rate Aka Mha For Online Colleges Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/08/post-9-11-gi-bill-online-colleges.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvWn2v-Tz4Qy3uVW13sGkztcZQFSarrcSA6w';" alt="Post 9 11 Gi Bill Bah Rate Aka Mha For Online Colleges Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Bah Rate Aka Mha For Online Colleges Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="jnEMX_rzj9b2CM" data-lightbox="roadtrip" data-title="Https Www Tamiu Edu Veterans Transfer 911 Shtml">
+											<img class="card-img v-image ads-img " src="jnEMX_rzj9b2CM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpHl6qFY9kFSRnGwQNo4j_nZ3qxjWFyvW9NA';" alt="Https Www Tamiu Edu Veterans Transfer 911 Shtml">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Tamiu Edu Veterans Transfer 911 Shtml</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nvf.org/wp-content/uploads/2015/03/gi-bill-post-911-2.jpg" data-lightbox="roadtrip" data-title="Gi Bill Post 9 11 Tuition Housing Stipends And Other Benefits">
+											<img class="card-img v-image ads-img " src="https://nvf.org/wp-content/uploads/2015/03/gi-bill-post-911-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsqIMxmOG9RCc8a-DiYzqmwJqwDRFplqpj7A';" alt="Gi Bill Post 9 11 Tuition Housing Stipends And Other Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Post 9 11 Tuition Housing Stipends And Other Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/dd/4b/abdd4b3d5d070c2ac79890930d0e1dd4.jpg" data-lightbox="roadtrip" data-title="Missouri Bill Sdried95 Dayssemi Runner Benefits From Supports In 2020 Bean Seeds Seeds Beans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/dd/4b/abdd4b3d5d070c2ac79890930d0e1dd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuU_VGlvdG-8TY7DmOeB5WC8LAVZ_xyCBlVQ';" alt="Missouri Bill Sdried95 Dayssemi Runner Benefits From Supports In 2020 Bean Seeds Seeds Beans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Missouri Bill Sdried95 Dayssemi Runner Benefits From Supports In 2020 Bean Seeds Seeds Beans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/63/7e/26637e9c3b4f436c4edcb17d764eb307.jpg" data-lightbox="roadtrip" data-title="Kings Wood Challock Bluebells 2015 Bluebells Whitstable Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/63/7e/26637e9c3b4f436c4edcb17d764eb307.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDMugkXrxiqB_PbMbIUPYPKBJpivqaxAI9Qg';" alt="Kings Wood Challock Bluebells 2015 Bluebells Whitstable Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kings Wood Challock Bluebells 2015 Bluebells Whitstable Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="UiT6fca2xWKqjM" data-lightbox="roadtrip" data-title="Https Benefits Va Gov Benefits Factsheets Education Post 911 General Info Pdf">
+											<img class="card-img v-image ads-img " src="UiT6fca2xWKqjM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtgUMUoCHvvU_nBnJuzIN_gsomeoyGNgnIjg';" alt="Https Benefits Va Gov Benefits Factsheets Education Post 911 General Info Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Benefits Va Gov Benefits Factsheets Education Post 911 General Info Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/67/b1/ce67b129fbc6a628b3824fb00dbc8f84.jpg" data-lightbox="roadtrip" data-title="70 S Search On Indulgy Com Retro Color Palette Retro Color 70s Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/67/b1/ce67b129fbc6a628b3824fb00dbc8f84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTieex3ZXRKbZa3D09vpxmmRvR6NQPPIzP3qg';" alt="70 S Search On Indulgy Com Retro Color Palette Retro Color 70s Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">70 S Search On Indulgy Com Retro Color Palette Retro Color 70s Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images05.military.com/sites/default/files/styles/full/public/media/benefits/2017/04/af3.jpg?itok=EHCUSLvM" data-lightbox="roadtrip" data-title="Vocational Training With Your Gi Bill Military Com">
+											<img class="card-img v-image ads-img " src="https://images05.military.com/sites/default/files/styles/full/public/media/benefits/2017/04/af3.jpg?itok=EHCUSLvM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqlE_feHo8fuUmhTvWbPIHAdqJ9LnVMbzMpQ';" alt="Vocational Training With Your Gi Bill Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vocational Training With Your Gi Bill Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/23/da/2c23daaf9e1115f6be2ed802864736a2.png" data-lightbox="roadtrip" data-title="Printable Business Form Templates Spreadsheet Template Weekly Budget Template Accounting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/23/da/2c23daaf9e1115f6be2ed802864736a2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTODt9uOZLIX-GzmYCbdY1dFMEm4-PUxXCLWQ';" alt="Printable Business Form Templates Spreadsheet Template Weekly Budget Template Accounting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Printable Business Form Templates Spreadsheet Template Weekly Budget Template Accounting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/85/28/5f85281e75e72a10cf22ac5ac10cbefd.png" data-lightbox="roadtrip" data-title="302 Logo Vimeo Logo Company Logo Logos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/85/28/5f85281e75e72a10cf22ac5ac10cbefd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo59A4W6TvUxTzESw_fPdgrc0s7GtW28JNuA';" alt="302 Logo Vimeo Logo Company Logo Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">302 Logo Vimeo Logo Company Logo Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/03/covid-19-allowance-benefits-policy.jpg" data-lightbox="roadtrip" data-title="Covid 19 Allowance Benefits Policy Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/03/covid-19-allowance-benefits-policy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAfySJslu9SmQx4xM6ttamXHHRjd0oHAw-g';" alt="Covid 19 Allowance Benefits Policy Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Allowance Benefits Policy Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/9f/c5/189fc5b208ecb0c4d3cc64d382c73090.jpg" data-lightbox="roadtrip" data-title="Currant Black Objects On White Background Acai Berry Currants Acai Berry Health Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/9f/c5/189fc5b208ecb0c4d3cc64d382c73090.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm8KZMT2um4_LbQJ1zVROFW6XdhX56DJQGxw';" alt="Currant Black Objects On White Background Acai Berry Currants Acai Berry Health Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Currant Black Objects On White Background Acai Berry Currants Acai Berry Health Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/bill-montgomery-turning-point.html">Bill Montgomery Turning Point</a></li>
+													<li class="list-group-item"><a href="/billig-tv.html">Billig Tv</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-dallas-texas.html">Bill Montgomery Dallas Texas</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-east-liverpool.html">Bill Montgomery East Liverpool</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-lemont-il.html">Bill Montgomery Lemont Il</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-tp-usa.html">Bill Montgomery Tp Usa</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-arizona.html">Bill Montgomery Arizona</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-maricopa-county-attorney.html">Bill Montgomery Maricopa County Attorney</a></li>
+													<li class="list-group-item"><a href="/billgi.html">Billgi</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-orange-is-the-new-black.html">Bill Montgomery Orange Is The New Black</a></li>
+													<li class="list-group-item"><a href="/billdip-lemon.html">Billdip Lemon</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-delaware.html">Bill Montgomery Delaware</a></li>
+													<li class="list-group-item"><a href="/bill-gunn.html">Bill Gunn</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-caliber-home-loans.html">Bill Montgomery Caliber Home Loans</a></li>
+													<li class="list-group-item"><a href="/billini-sandals.html">Billini Sandals</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-east-liverpool-ohio.html">Bill Montgomery East Liverpool Ohio</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-arizona-supreme-court.html">Bill Montgomery Arizona Supreme Court</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-twitter.html">Bill Montgomery Twitter</a></li>
+													<li class="list-group-item"><a href="/billing-software.html">Billing Software</a></li>
+													<li class="list-group-item"><a href="/billie-jean-lyrics.html">Billie Jean Lyrics</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

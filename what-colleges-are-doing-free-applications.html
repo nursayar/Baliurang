@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Colleges Are Doing Free Applications - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Colleges Are Doing Free Applications",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/d8/3e/f1/d83ef1b3abd31b0b4b81b6b425a34f37.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+colleges+are+doing+free+applications",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Colleges Are Doing Free Applications</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Some popular schools with early action deadlines of November 1 are CalTech Georgetown Harvard MIT Notre Dame Stanford University of Virginia and Yale. Posted Oct 19 2020 More than 50 colleges in Alabama and surrounding areas are waiving application. College education has many prospective students looking at other countries that offer free college or low-cost programs including Norway Finland Sweden Germany France. <br>				
+			</p>
+										<a class="badge badge-primary" href="/gi-bill-housing-allowance-rules.html">gi bill housing allowance rules</a>
+											<a class="badge badge-secondary" href="/gi-bill-housing-pay.html">gi bill housing pay</a>
+											<a class="badge badge-light" href="/gi-bill-for-tattoo-apprenticeship.html">gi bill for tattoo apprenticeship</a>
+											<a class="badge badge-light" href="/gi-bill-for-technical-schools.html">gi bill for technical schools</a>
+											<a class="badge badge-primary" href="/gi-bill-for-vietnam-veterans.html">gi bill for vietnam veterans</a>
+											<a class="badge badge-dark" href="/gi-bill-for-sans-training.html">gi bill for sans training</a>
+											<a class="badge badge-warning" href="/gi-bill-housing-allowance-online-classes.html">gi bill housing allowance online classes</a>
+											<a class="badge badge-dark" href="/gi-bill-housing-payment.html">gi bill housing payment</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the right site.  Our website gives you hints for viewing the maximum quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie for you to view.  You can also bring about supporting this site by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/d3/40/04d3400639d459b664ecef84dc8c2bc1.jpg" data-lightbox="roadtrip" data-title="Best And Free Apps For College University College Hacks College Apps School Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/d3/40/04d3400639d459b664ecef84dc8c2bc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRX5Ox93NYD1Ze2gk9Jg7qUrXVCXI4l_3DTg';" alt="Best And Free Apps For College University College Hacks College Apps School Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best And Free Apps For College University College Hacks College Apps School Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/15/77/76/1577769b299cae3e03869de0352141af.jpg" data-lightbox="roadtrip" data-title="Best And Free Apps For College Students Career Educatieve Websites Schooltips Studiemotivatie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/15/77/76/1577769b299cae3e03869de0352141af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTly5Jueff5TrVI5LVeyn6SDQqIfo4G2KPy9Q';" alt="Best And Free Apps For College Students Career Educatieve Websites Schooltips Studiemotivatie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best And Free Apps For College Students Career Educatieve Websites Schooltips Studiemotivatie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/1b/5d/1f1b5d5efa0f29d15a836a30684de0ed.jpg" data-lightbox="roadtrip" data-title="The 100 Best Free Software For Students Welcome To The Internet S Biggest List Of Free Software For Students D College Hacks Educational Websites School Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/1b/5d/1f1b5d5efa0f29d15a836a30684de0ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrMBQhEHPViCOlf_tz5MPTGOkA4h4I7TQGbQ';" alt="The 100 Best Free Software For Students Welcome To The Internet S Biggest List Of Free Software For Students D College Hacks Educational Websites School Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 100 Best Free Software For Students Welcome To The Internet S Biggest List Of Free Software For Students D College Hacks Educational Websites School Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f7/c6/01/f7c60118584c8ff72e4752961cd1722b.jpg" data-lightbox="roadtrip" data-title="Free College Application Checklist College Application Scholarships For College College Application Checklist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f7/c6/01/f7c60118584c8ff72e4752961cd1722b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFYTlmhBsjbvDpCvjTXu1mHT65fBHbnZsdaw';" alt="Free College Application Checklist College Application Scholarships For College College Application Checklist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free College Application Checklist College Application Scholarships For College College Application Checklist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/12/02/53/1202539a592e3e2612ced69e617660b3.jpg" data-lightbox="roadtrip" data-title="543 Colleges With No Application Fees For 2020 Scholarships For College College Counseling Nursing School Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/12/02/53/1202539a592e3e2612ced69e617660b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT87xq1yRBewkcIWUcx6RI6NtXgdXTSSiyOwQ';" alt="543 Colleges With No Application Fees For 2020 Scholarships For College College Counseling Nursing School Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">543 Colleges With No Application Fees For 2020 Scholarships For College College Counseling Nursing School Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/3e/f1/d83ef1b3abd31b0b4b81b6b425a34f37.jpg" data-lightbox="roadtrip" data-title="College Application Tracking List Pdf Form And Organizer College Checklist Wedding Planning Checklist Planning Checklist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/3e/f1/d83ef1b3abd31b0b4b81b6b425a34f37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Mp3EOQC6Bg8BuBuJudVXjtuNJXaUlrSPMA';" alt="College Application Tracking List Pdf Form And Organizer College Checklist Wedding Planning Checklist Planning Checklist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Application Tracking List Pdf Form And Organizer College Checklist Wedding Planning Checklist Planning Checklist</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/09/7c/91/097c9109215f4b1ec13bd7473487eb2a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Mp3EOQC6Bg8BuBuJudVXjtuNJXaUlrSPMA';" alt="College Application Tracking List Pdf Form And Organizer College Checklist Wedding Planning Checklist Planning Checklist">
+										<div class="card-body">
+						<h3 class="h5"><b>Updated list of free schools and UTCs in the.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What colleges are doing free applications</strong>. 
+								
+																	You want to show admissions officers what makes you stand out from the crowd. 
+																	Doing Insufficient Research on Your Colleges of Choice. 
+																	In the process of. 
+																	Read on to learn about what mistakes you should try to avoid making on your college applications. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Avoid These Big College Application Mistakes Admissions staffers from across the US. 
+																	Most colleges charge application fees in the 50-60 range but they can sometimes be as high as 90 looking at you Stanford. 
+																	There are several common factors that most colleges consider when looking at potential applicants. 
+																	By Courtney Rubin and Josh Moody Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Applying to college can be an overwhelming process especially if youre trying to get into schools where competition is stiff. 
+																	Use College Raptors free match tool to discover individualized college matches personalized college price estimates your acceptance odds and potential financial aid from schools around the. 
+																	Princeton University offers a variety of free online college courses. 
+																	They may also have four terms each year and a rolling admission. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Be sure to do a sufficient amount of research on your colleges of choice before you apply or complete an interview. 
+																	FREE 11 Sample College Application Forms in PDF MS Word. 
+																	Alcorn State Loyola University Chicago Ohio Valley and Jackson State also offer free application fees so have a look and see what you can find. 
+																	The 2021 Best Colleges with No Application Fee ranking filters the 2021 Best Colleges ranking to only include colleges with free applications. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Added details of successful applications for free schools and university technical colleges in the pre-opening stage for September 2019. 
+																	Of those colleges and universities that require the SAT or ACT as part of your application -- and a small but growing number of schools do not -- admissions counselors seek scores that match of exceed the scores of their current students. 
+																	Education is an exciting experience that all individuals should obtain. 
+																	To start their way in achieving this particular goal they fill out Application Forms and comply with other. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Granite State is another college which may have free applications and takes a few minutes to complete. 
+																	Read more on how this ranking was calculated. 
+																	The high cost of a US. 
+																	Educational achievement is a dream that a lot of people share. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Application Fees at a Glance. 
+																	50 Alabama area colleges waive application fees this week Updated Oct 19 2020. 
+																	There are 49 Forbes Top colleges with no application fee in 2020-2021 including their ranking verified from Forbes Top American Colleges list. 
+																	Added Letters to successful free school applicants and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get answers to common questions about deadlines essays applications and more. 
+																	They tend to offer 19 majors and all are fully online. 
+																	Note that additional colleges waive application fees for low-income minority veteran and other student types so be sure to check each schools website. 
+																	The college application process can be intimidating and complex leaving you wondering where to start. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These courses can be audited for free or for a small fee students can earn a certificate of completion. 
+																	And even if its yes its unlikely to be used to reject an application. 
+																	But these are good things to keep in mind while applying for colleges. 
+																	Here are 33 of Niches top colleges with no application fees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To put this in context suppose you are applying to five different schools. 
+																	Popular early decision schools with a November 1 deadline include Boston University Brown Columbia Cornell Dartmouth Northwestern NYU University of Pennsylvania and Vanderbilt. 
+																	So you may apply for an associate or bachelors degree anytime. 
+																	If three have 50 application fees and two have 75. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can easily look up information like the size and location of a school or what types of majors and classes they offer. 
+																	Added special free schools information applications and letters. 
+																	Added application forms and letters for waves 11 and 12. 
+																	For better or worse standardized college entrance exam scores are seen as the most objective measure of your college potential. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It can help one open doors to opportunities that can get a person further in life. 
+																	However the key to acceptance isnt just doing well. 
+																	Offer advice on what not to do when applying to college. 
+																	University of Louisiana Tulane Louisiana university ranking in Forbes Top Colleges 15. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many top schools charge application fees of 75 or more. 
+																	United States Military Academy West Point New York 3. 
+																	Colby College Waterville Maine 4. 
+																	To apply you may need a high school diploma or GED. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Carleton College Northfield Minnesota 2. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/e0/76/6fe076001d603dc5e756ee25dba48c37.jpg" data-lightbox="roadtrip" data-title="Download The Pdf College Application Checklist To Keep Track Of Each Task That Needs Compl College Application College Application Checklist Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/e0/76/6fe076001d603dc5e756ee25dba48c37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjxhkAR-POy-UXc96SmX7Xyr-O7LXRG2tSpg';" alt="Download The Pdf College Application Checklist To Keep Track Of Each Task That Needs Compl College Application College Application Checklist Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download The Pdf College Application Checklist To Keep Track Of Each Task That Needs Compl College Application College Application Checklist Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/ab/cb/dbabcb2d161e9f8e9869812ba5c934e8.jpg" data-lightbox="roadtrip" data-title="College Application Tracking List Pdf Form And Organizer College Application College Application Checklist Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/ab/cb/dbabcb2d161e9f8e9869812ba5c934e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnOJnkcxXIWsGvJxkRMxrouSWWo1FDD-izGg';" alt="College Application Tracking List Pdf Form And Organizer College Application College Application Checklist Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Application Tracking List Pdf Form And Organizer College Application College Application Checklist Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/fd/ae/a7fdaefed498296fa4822683256d7a0e.png" data-lightbox="roadtrip" data-title="The Ultimate College Application Planning Essay Guide For Seniors Free Worksheets Brooke Yara College Writing College Application College Essay Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/fd/ae/a7fdaefed498296fa4822683256d7a0e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJS_FJQYfm1YHikGR3nms1cf62dFIm55LuPA';" alt="The Ultimate College Application Planning Essay Guide For Seniors Free Worksheets Brooke Yara College Writing College Application College Essay Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ultimate College Application Planning Essay Guide For Seniors Free Worksheets Brooke Yara College Writing College Application College Essay Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/e5/0d/e5e50d9e9f4453868aa87f6c7767f256.jpg" data-lightbox="roadtrip" data-title="Top 20 Free Apps For High School Students Discover Explore Learn High School Apps School Apps High School Students">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/e5/0d/e5e50d9e9f4453868aa87f6c7767f256.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5H6s2DjTZSpDPP2ck-nFzIF3yVgsh43b-Q';" alt="Top 20 Free Apps For High School Students Discover Explore Learn High School Apps School Apps High School Students">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 20 Free Apps For High School Students Discover Explore Learn High School Apps School Apps High School Students</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/81/78/42817848609a859bdb882a4443307dc1.jpg" data-lightbox="roadtrip" data-title="Free Printable Scholarship Application Tracker Worksheets Scholarships Application Student Scholarships Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/81/78/42817848609a859bdb882a4443307dc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoy3zhQM2SZxi0tqXEvYGsjK0GpAJeQo_rGQ';" alt="Free Printable Scholarship Application Tracker Worksheets Scholarships Application Student Scholarships Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Printable Scholarship Application Tracker Worksheets Scholarships Application Student Scholarships Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/71/13/bf71139c3febcd6e2091f66a2ad7760e.jpg" data-lightbox="roadtrip" data-title="11 Sample College Application Letters Pdf Doc Scholarships For College Application Letters Financial Aid For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/71/13/bf71139c3febcd6e2091f66a2ad7760e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI12BL1_P_4RfTftuoXoos_K2Dw-EWDxO1Ug';" alt="11 Sample College Application Letters Pdf Doc Scholarships For College Application Letters Financial Aid For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Sample College Application Letters Pdf Doc Scholarships For College Application Letters Financial Aid For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/83/f2/7583f2968b30676c35b42484dba4720b.jpg" data-lightbox="roadtrip" data-title="College Application Checklist Spreadsheet Google Search College Application Checklist Scholarships For College College Application">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/83/f2/7583f2968b30676c35b42484dba4720b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4CNFLo3FPVThz0c8AEw5RRy1LurlShPdyrw';" alt="College Application Checklist Spreadsheet Google Search College Application Checklist Scholarships For College College Application">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Application Checklist Spreadsheet Google Search College Application Checklist Scholarships For College College Application</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/6b/e5/366be550033fd633ab37d7b5c4696178.png" data-lightbox="roadtrip" data-title="Federal Student Aid On Twitter Fafsa Financial Aid Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/6b/e5/366be550033fd633ab37d7b5c4696178.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT04cTzFiHdOi7uggYs8cQaHBMDEQPcz3Idag';" alt="Federal Student Aid On Twitter Fafsa Financial Aid Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Federal Student Aid On Twitter Fafsa Financial Aid Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/3e/07/bf3e0784cf222ef27c3412016fea5237.jpg" data-lightbox="roadtrip" data-title="100 Successful College Application Essays By The Harvard Independent 9780451417619 Penguinrandomhouse Com Books College Counseling College Essay College Application Essay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/3e/07/bf3e0784cf222ef27c3412016fea5237.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfyFoQgfiT7Wnh6I5VxlF5PJRWzrkjLblcig';" alt="100 Successful College Application Essays By The Harvard Independent 9780451417619 Penguinrandomhouse Com Books College Counseling College Essay College Application Essay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Successful College Application Essays By The Harvard Independent 9780451417619 Penguinrandomhouse Com Books College Counseling College Essay College Application Essay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/09/7c/91/097c9109215f4b1ec13bd7473487eb2a.jpg" data-lightbox="roadtrip" data-title="Contact Support Study Tips College College Info College Survival">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/09/7c/91/097c9109215f4b1ec13bd7473487eb2a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxH6LokH195dAJ7czXaMaCjEUkCOLLdQTJhw';" alt="Contact Support Study Tips College College Info College Survival">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Contact Support Study Tips College College Info College Survival</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/ba/b8/37bab84bf4c8e27cba19570adc1f1dbe.jpg" data-lightbox="roadtrip" data-title="The 70 Best Apps For Teachers And Students Edudemic Best Apps For Teachers Teaching Technology Apps For Teachers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/ba/b8/37bab84bf4c8e27cba19570adc1f1dbe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwykk8iiV8fdIRwbjLB2Cp1qpbykSf_5oHPw';" alt="The 70 Best Apps For Teachers And Students Edudemic Best Apps For Teachers Teaching Technology Apps For Teachers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 70 Best Apps For Teachers And Students Edudemic Best Apps For Teachers Teaching Technology Apps For Teachers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a7/c1/43/a7c14377ed4882239657bddd6cb9280a.jpg" data-lightbox="roadtrip" data-title="Senior Year Of High School Checklist School Organization College Scholarships For College College Preparation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a7/c1/43/a7c14377ed4882239657bddd6cb9280a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1YQ5Nfw8IPNpSCfZ00h8tSGR6dMFSInFo0Q';" alt="Senior Year Of High School Checklist School Organization College Scholarships For College College Preparation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Senior Year Of High School Checklist School Organization College Scholarships For College College Preparation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/5a/dc/db5adca0e306b50bcc80c8edcb291c8a.jpg" data-lightbox="roadtrip" data-title="College Admissions Resume Sample College Resume College Resume Template College Application Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/5a/dc/db5adca0e306b50bcc80c8edcb291c8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe7EXZdXwQ1nRCdReuSn_1uQ7xXs6QOTWTrw';" alt="College Admissions Resume Sample College Resume College Resume Template College Application Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Admissions Resume Sample College Resume College Resume Template College Application Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/yuku-college-gymnastics-board.html">Yuku College Gymnastics Board</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh-9-resz.html">Yu Gi Oh 9 Resz</a></li>
+													<li class="list-group-item"><a href="/york-college-womens-basketball-schedule.html">York College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh-9-bg.html">Yu Gi Oh 9 Bg</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh-capitulo-35.html">Yu Gi Oh Capitulo 35</a></li>
+													<li class="list-group-item"><a href="/york-college-womens-basketball-division.html">York College Womens Basketball Division</a></li>
+													<li class="list-group-item"><a href="/young-harris-college-womens-basketball-roster.html">Young Harris College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh.html">Yu Gi Oh</a></li>
+													<li class="list-group-item"><a href="/youngest-to-go-to-college.html">Youngest To Go To College</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh-9.html">Yu Gi Oh 9</a></li>
+													<li class="list-group-item"><a href="/young-harris-college-womens-basketball-schedule.html">Young Harris College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/yugioh-number-9.html">Yugioh Number 9</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh-35-pl.html">Yu Gi Oh 35 Pl</a></li>
+													<li class="list-group-item"><a href="/yu-gi-oh-35-resz.html">Yu Gi Oh 35 Resz</a></li>
+													<li class="list-group-item"><a href="/zalando-levis-hi-ball.html">Zalando Levis Hi Ball</a></li>
+													<li class="list-group-item"><a href="/york-college-womens-basketball.html">York College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/youtube-college-gymnastics-2019.html">Youtube College Gymnastics 2019</a></li>
+													<li class="list-group-item"><a href="/youngest-kid-to-go-to-college.html">Youngest Kid To Go To College</a></li>
+													<li class="list-group-item"><a href="/youtube-college-gymnastics-2020.html">Youtube College Gymnastics 2020</a></li>
+													<li class="list-group-item"><a href="/york-college-womens-basketball-nebraska.html">York College Womens Basketball Nebraska</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Bill Gillies - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Bill Gillies",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/474x/ea/b7/02/eab7025673ca1757dfb992da5931db66.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=bill+gillies",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Bill Gillies</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Bill Gillis had a celebrated and eminently distinguished Police career. Founder and CEO Bill Gillies has been providing ingredients to the organic and natural food markets since the 1990s. View Bill Gillies professional profile on LinkedIn. <br>				
+			</p>
+										<a class="badge badge-primary" href="/benefits-of-the-gi-bill-quizlet.html">benefits of the gi bill quizlet</a>
+											<a class="badge badge-success" href="/best-christmas-gifts-2020-for-college-boy.html">best christmas gifts 2020 for college boy</a>
+											<a class="badge badge-primary" href="/benefits-of-gi-tag-upsc.html">benefits of gi tag upsc</a>
+											<a class="badge badge-info" href="/benefits-gi-bill-post-911.html">benefits gi bill post 911</a>
+											<a class="badge badge-info" href="/benefits-of-gift-city.html">benefits of gift city</a>
+											<a class="badge badge-danger" href="/benefits-of-gi-revive.html">benefits of gi revive</a>
+											<a class="badge badge-info" href="/best-college-christmas-gifts.html">best college christmas gifts</a>
+											<a class="badge badge-success" href="/benefits-of-montgomery-gi-bill.html">benefits of montgomery gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the right site.  Our site provides you with suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to see.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/8f/e8/088fe8534dcb378bd9c89af4c2210325.jpg" data-lightbox="roadtrip" data-title="Nancy Drew Mystery Stories Nancy Drew Books Nancy Drew Mystery Stories Nancy Drew Mysteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/8f/e8/088fe8534dcb378bd9c89af4c2210325.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz3VQ7ePvRSNsGpo-YLeqC0XCDbFz34yMRIdBNdm6HYBm_d08m3-TEMVoQrirWBpoQkRIGpQ&amp;ec=45771803';" alt="Nancy Drew Mystery Stories Nancy Drew Books Nancy Drew Mystery Stories Nancy Drew Mysteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nancy Drew Mystery Stories Nancy Drew Books Nancy Drew Mystery Stories Nancy Drew Mysteries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c7/af/74/c7af744010555b037ee4bbccfd10d949.jpg" data-lightbox="roadtrip" data-title="Illustrated By Bill Gillies In Print 1950 1961 In 2020 Nancy Drew Mystery Stories Nancy Drew Books Nancy Drew">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c7/af/74/c7af744010555b037ee4bbccfd10d949.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7vU4E5oTOON0UacYhePOQ7kACKksrQzwx3Fb5_NI9CN_nJm4X384f5YrzBASEX-X_0fgR8g&amp;ec=45771803';" alt="Illustrated By Bill Gillies In Print 1950 1961 In 2020 Nancy Drew Mystery Stories Nancy Drew Books Nancy Drew">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Illustrated By Bill Gillies In Print 1950 1961 In 2020 Nancy Drew Mystery Stories Nancy Drew Books Nancy Drew</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ea/b7/02/eab7025673ca1757dfb992da5931db66.jpg" data-lightbox="roadtrip" data-title="Illustrated By Bill Gillies In Print 1950 1961 Nancy Drew Mystery Stories Mystery Stories Nancy Drew Mysteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ea/b7/02/eab7025673ca1757dfb992da5931db66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBT3lE4wMVLaqjVFsLNdXOw_1HGDYpoAjPhj14Y2_sqyvnc24V7kHOVqhwYqLcXmqjRC70Q&amp;ec=45771803';" alt="Illustrated By Bill Gillies In Print 1950 1961 Nancy Drew Mystery Stories Mystery Stories Nancy Drew Mysteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Illustrated By Bill Gillies In Print 1950 1961 Nancy Drew Mystery Stories Mystery Stories Nancy Drew Mysteries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/b5/84/6bb5843caab699d7a546f70e07af1539.png" data-lightbox="roadtrip" data-title="Amazon Com Bill Gillies Art Collier In 2020 Magazine Cover Cover Art Collier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/b5/84/6bb5843caab699d7a546f70e07af1539.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIT1GzZvVrOw9HVZ3n-EePAn8r1ywn8BTEGer1xd4nrh26-iOVtbgGeYVPwOEvKNQyZZq3LA&amp;ec=45771803';" alt="Amazon Com Bill Gillies Art Collier In 2020 Magazine Cover Cover Art Collier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amazon Com Bill Gillies Art Collier In 2020 Magazine Cover Cover Art Collier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/b4/6e/eab46efb6764815ff2663713458a3348.jpg" data-lightbox="roadtrip" data-title="Bill Gillies American 1911 2000 Now Where S The Duck 24 X 32 In 60 8 X 81 2 Cm Dogs Cat Art Art Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/b4/6e/eab46efb6764815ff2663713458a3348.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKB_r5n8QrkhkYJvRYNdnvknnPJPhtBtTR34KcikfP6One9LHT7ah1XqRno9m555stJhfEEA&amp;ec=45771803';" alt="Bill Gillies American 1911 2000 Now Where S The Duck 24 X 32 In 60 8 X 81 2 Cm Dogs Cat Art Art Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Gillies American 1911 2000 Now Where S The Duck 24 X 32 In 60 8 X 81 2 Cm Dogs Cat Art Art Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/79/73/4c7973a1689d1117588325189aaedcb6.jpg" data-lightbox="roadtrip" data-title="Nancy Drew Mystery Stories Nancy Drew Books Nancy Drew Mystery Stories Nancy Drew Mysteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/79/73/4c7973a1689d1117588325189aaedcb6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShU65gvwVOe0J0_myB3ws_L3KOqSxcKEO6zOxUzPTDWFnLKORnA1SG7TunFzlLhqxHW2e8vw&amp;ec=45771803';" alt="Nancy Drew Mystery Stories Nancy Drew Books Nancy Drew Mystery Stories Nancy Drew Mysteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nancy Drew Mystery Stories Nancy Drew Books Nancy Drew Mystery Stories Nancy Drew Mysteries</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/5f/41/27/5f4127586bc5aed13be0a6f4b515977e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShU65gvwVOe0J0_myB3ws_L3KOqSxcKEO6zOxUzPTDWFnLKORnA1SG7TunFzlLhqxHW2e8vw&amp;ec=45771803';" alt="Nancy Drew Mystery Stories Nancy Drew Books Nancy Drew Mystery Stories Nancy Drew Mysteries">
+										<div class="card-body">
+						<h3 class="h5"><b>Mike Montgomery formerly Executive Vice President of Business Development has been named President of Gillco Ingredients.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Bill gillies</strong>. 
+								
+																	He is also admitted to practice in the ACT NSW Tasmania and Papua New Guinea. 
+																	He was a natural detective and his committed and unrelenting pursuit of the truth leading to the subsequent identity of the perpetrator particularly in Murder investigations was an. 
+																	First Signed Bar Roll. 
+																	At one point Giles said Monday he owned 20 percent of the club and called all the shots. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get current address cell phone number email address relatives friends and a lot more. 
+																	View the profiles of professionals named Bill Gillies on LinkedIn. 
+																	William F Gillies is a member of the Medico-Legal. 
+																	View the profiles of people named Bill Gillies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Skye and Lochalsh Lochaber Inverness Badenoch and Strathspey Nairn Frank Finlayson Phone. 
+																	When Bill moved from Queensland to. 
+																	01463 703301 Assistant Assessor and E. 
+																	Facebook gives people the power to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Caithness Sutherland Ross and Cromarty Robert Shepherd Phone. 
+																	Please note that authors do not have to have a PVG to be listed. 
+																	William Gillies is known for Illustration-genre portrait dog horse and landscape painting. 
+																	San Marcos CA Owner of Gillco Ingredients Bill Gillies has announced key changes to the companys executive team. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are 40 professionals named Bill Gillies who use LinkedIn to exchange information ideas and opportunities. 
+																	However it was in the variable and challenging sphere of criminal investigation and related responsibilities that he singularly excelled. 
+																	William F Gillies is a member of the Medico-Legal Society the Maritime Law Association of Australia New Zealand and the Institute of Arbitrators and has written Practical Medicine for Lawyers. 
+																	All of the information on this page has been provided by the author. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gillies was born in Haddington East LothianHe had just enrolled at the Edinburgh College of Art when he was called up for service in World War I with the Royal Engineers. 
+																	View the profiles of people named Bill Gillis. 
+																	Mike joined Gillco Ingredients in 1994 as the companys first Sales Representative. 
+																	William J Gillies Phone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dr William Bill Gillies first arrived at the Royal Victorian Eye and Ear Hospital in 1952 as a young ophthalmology trainee. 
+																	Bill Gillies is an actor known for Carvers Gate 1996. 
+																	Stream Tracks and Playlists from BILL GILLIES on your desktop or mobile device. 
+																	01463 703301 Office and Support Manager Mandy Thomson Phone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Print Print whole profile. 
+																	He is often referred to simply as W. 
+																	Were 100 free for everything. 
+																	Find Bill Gillies for free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After the War he returned to the College and after graduation. 
+																	Division of Bar Roll. 
+																	Bill Giles career path took him through Nashville and Houston and eventually on to Philadelphia before the 1970 season. 
+																	Giles brought Harry Kalas to the town where he grew into a legend and a decade later formed and led the group that bought the Phillies from the Carpenter Family. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But it seems the party leadership is determined to make matters even worse. 
+																	Room 3008 Aickin Chambers 200 Queen Street. 
+																	01349 865942 Assistant Assessor and E. 
+																	Gillies 1911 - 2000 was activelived in New York California Connecticut South Carolina. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sir William George Gillies RA 18981973 was a renowned Scottish landscape and still life painter. 
+																	The SNPs hate crime bill has done plenty of damage to the partys credibility. 
+																	He was pushed out. 
+																	He continuously looked towards going one step further to the source of raw materials. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dumfries and Galloway. 
+																	Over the next fifty years he was to become a renowned ophthalmologist and researcher and through his teaching and board membership he was also to have a lasting effect on the development of Australian ophthalmology. 
+																	Listen to BILL GILLIES SoundCloud is an audio platform that lets you listen to what you love and share the sounds you create. 
+																	Join Facebook to connect with Bill Gillies and others you may know. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LinkedIn is the worlds largest business network helping professionals like Bill Gillies discover inside connections to recommended job. 
+																	Facebook gives people the power to. 
+																	The Scottish government has. 
+																	Join Facebook to connect with Bill Gillis and others you may know. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you need an author to have specialist skills experience or knowledge beyond their creative work please ask for more information about this ahead of booking them for an event. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/73/5d/c9735dc4f22738ba6c30dc6475f52aff.jpg" data-lightbox="roadtrip" data-title="1942 Vintage Bike Cover Art For Collier S Magazine October Bicycle Illustration Illustration Bill Gillies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/73/5d/c9735dc4f22738ba6c30dc6475f52aff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgAdeMASbK2rKOp-aFD2rKK-KBMiZm3qyI4guhLDQNxSNwphcBYG33IEWRJhhNmxVDO0S9Q&amp;ec=45771803';" alt="1942 Vintage Bike Cover Art For Collier S Magazine October Bicycle Illustration Illustration Bill Gillies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1942 Vintage Bike Cover Art For Collier S Magazine October Bicycle Illustration Illustration Bill Gillies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/b2/70/1fb270c02c04715cf2ecb9e717e9add3.jpg" data-lightbox="roadtrip" data-title="Nancy Drew Red Gate Farm In Dj Signed By Artist Bill Gillies In 2020 Nancy Drew Nancy Drew Mysteries Nancy Drew Mystery Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/b2/70/1fb270c02c04715cf2ecb9e717e9add3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDI5WRFhkRLyqXdNrWl3a3K9i3BbQywWxw75mMPizHhwv79hW8yzs0LUMD3RVj_Jx3HM3yg&amp;ec=45771803';" alt="Nancy Drew Red Gate Farm In Dj Signed By Artist Bill Gillies In 2020 Nancy Drew Nancy Drew Mysteries Nancy Drew Mystery Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nancy Drew Red Gate Farm In Dj Signed By Artist Bill Gillies In 2020 Nancy Drew Nancy Drew Mysteries Nancy Drew Mystery Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/37/d1/1537d15424179804ff4b26c0c0f9561f.jpg" data-lightbox="roadtrip" data-title="Nancy Drew Mystery Stories Nancy Drew Mystery Stories Nancy Drew Books Book Parody">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/37/d1/1537d15424179804ff4b26c0c0f9561f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmmGD12uI_No3recdMAbqwcaKGUlmQBH5Xlg5WlLwWpKQmJbCgjtXuvpfP_Sklm2Ex75oIaQ&amp;ec=45771803';" alt="Nancy Drew Mystery Stories Nancy Drew Mystery Stories Nancy Drew Books Book Parody">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nancy Drew Mystery Stories Nancy Drew Mystery Stories Nancy Drew Books Book Parody</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/93/96/8a93960df923decfc5a4a8a837843c1b.jpg" data-lightbox="roadtrip" data-title="The Secret Of The Old Clock Nancy Drew Mystery Story Etsy Nancy Drew Mystery Stories Old Clocks Nancy Drew Mysteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/93/96/8a93960df923decfc5a4a8a837843c1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbsHZajwQxLzXIzoe-_FfTiPjZ3_UsZE9ldQXGIKDrYs7JCxrkhXsIomBHiFXB6a4L9SOm5A&amp;ec=45771803';" alt="The Secret Of The Old Clock Nancy Drew Mystery Story Etsy Nancy Drew Mystery Stories Old Clocks Nancy Drew Mysteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Secret Of The Old Clock Nancy Drew Mystery Story Etsy Nancy Drew Mystery Stories Old Clocks Nancy Drew Mysteries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/3a/b0/ba3ab035c7c39ad345f88e71a8d2bd2b.jpg" data-lightbox="roadtrip" data-title="Hardy Boys Book Interior Illustration The Wailing Siren Mystery It Is Possible That William Gillies Also Did The Illustra Illustration Hardy Boys Art Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/3a/b0/ba3ab035c7c39ad345f88e71a8d2bd2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD3gWFolNGdmqtAwey6hJrw4S36b130ZFFknSS58iTUK832dIhoEOWVBBDokPQlqjX8jHt2A&amp;ec=45771803';" alt="Hardy Boys Book Interior Illustration The Wailing Siren Mystery It Is Possible That William Gillies Also Did The Illustra Illustration Hardy Boys Art Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hardy Boys Book Interior Illustration The Wailing Siren Mystery It Is Possible That William Gillies Also Did The Illustra Illustration Hardy Boys Art Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/68/3b/1c683b30e5f1ea2085fa8d1460adc536.jpg" data-lightbox="roadtrip" data-title="Murdoch Mysteries Does Anyone Have A Pic Of Gillies Kissing William I Want It My Favourite Part Murdoch Mysteries Murdock Mysteries Detective Shows">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/68/3b/1c683b30e5f1ea2085fa8d1460adc536.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCPCGLXzVKySslLRtRjwBVTrA5Zp3CzMvOP1wNFG3w5CBNbY6HNuRVgDXEFbTLNNr4zIFazg&amp;ec=45771803';" alt="Murdoch Mysteries Does Anyone Have A Pic Of Gillies Kissing William I Want It My Favourite Part Murdoch Mysteries Murdock Mysteries Detective Shows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Murdoch Mysteries Does Anyone Have A Pic Of Gillies Kissing William I Want It My Favourite Part Murdoch Mysteries Murdock Mysteries Detective Shows</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/b0/14/80b0146b167bf8d94ad2b0e5351993df.jpg" data-lightbox="roadtrip" data-title="6 1931 Cover By B Gillies 1950 Nancy Drew Books Nancy Drew Mystery Stories Nancy Drew Mysteries">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/b0/14/80b0146b167bf8d94ad2b0e5351993df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCszErGEO6uT6PStBXzNglIsSA-Ke3d9JeJzJtkAloal1FO4N_NWWrM2MA7ZaTxjuvyoChWw&amp;ec=45771803';" alt="6 1931 Cover By B Gillies 1950 Nancy Drew Books Nancy Drew Mystery Stories Nancy Drew Mysteries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 1931 Cover By B Gillies 1950 Nancy Drew Books Nancy Drew Mystery Stories Nancy Drew Mysteries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/63/e2/7e63e283206f0d04a86d0878d6a13b8c.jpg" data-lightbox="roadtrip" data-title="Emma 1921 William George Gillies More Works By Portrait Painting Artist Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/63/e2/7e63e283206f0d04a86d0878d6a13b8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaurBcR1C1kks4z0YZYWXuWYtElTJDcn8b7iMhQGUadnCh-p6w9gMTpffJZaZnZXfpIMRrSQ&amp;ec=45771803';" alt="Emma 1921 William George Gillies More Works By Portrait Painting Artist Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emma 1921 William George Gillies More Works By Portrait Painting Artist Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e1/55/c3/e155c358be3180bdc2975e21414cf410.jpg" data-lightbox="roadtrip" data-title="Fishinkblog 3947 William George Gillies 1 Aberdeen Art Gallery Scottish Painting Exhibition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e1/55/c3/e155c358be3180bdc2975e21414cf410.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq4n9_c-MQY5DAn69U88Fq0QElPVRjuMUsFP9S90t2PAypfy9sN1AiSvcFigaBw6INLOuiTQ&amp;ec=45771803';" alt="Fishinkblog 3947 William George Gillies 1 Aberdeen Art Gallery Scottish Painting Exhibition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fishinkblog 3947 William George Gillies 1 Aberdeen Art Gallery Scottish Painting Exhibition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/08/2e/01082e9639ca539769d6771905ac2cae.jpg" data-lightbox="roadtrip" data-title="Bbc Your Paintings Fields And River Art Painting Painting Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/08/2e/01082e9639ca539769d6771905ac2cae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAySw-cTdaIx_cfIYrx-Salv0e9tpCwx0ly-PP3pMk3SFMoJ0QhHf3uxFv0QydYFVeikodkQ&amp;ec=45771803';" alt="Bbc Your Paintings Fields And River Art Painting Painting Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bbc Your Paintings Fields And River Art Painting Painting Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/a2/55/c6a255c481f2a16f3b4166926ffcabd2.jpg" data-lightbox="roadtrip" data-title="William Gillies Crofts Near Feamham Watercolour On Paper The Fleming Wyfold Art Foundation S Izobrazheniyami">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/a2/55/c6a255c481f2a16f3b4166926ffcabd2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMlX9HruuB83ucrgBNg1_bqJPBx7xTKPaoh15h2s2JyepbIpMZyyeHXWHTsW1Ur1r9vPlfaw&amp;ec=45771803';" alt="William Gillies Crofts Near Feamham Watercolour On Paper The Fleming Wyfold Art Foundation S Izobrazheniyami">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">William Gillies Crofts Near Feamham Watercolour On Paper The Fleming Wyfold Art Foundation S Izobrazheniyami</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/41/27/5f4127586bc5aed13be0a6f4b515977e.jpg" data-lightbox="roadtrip" data-title="Golden Girl And Softstyle Look Like Nancy Drew Hairstyle From The Book Covers By Artists Russe Vintage Curls Vintage Hairstyles Vintage Hairstyles Tutorial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/41/27/5f4127586bc5aed13be0a6f4b515977e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlt7ltPfnAqf6MVv3HgjEAtmhJ8wZxZthwaQfn09KvsxNCeR-NHuid1zXO-RdFKZQChfUZxw&amp;ec=45771803';" alt="Golden Girl And Softstyle Look Like Nancy Drew Hairstyle From The Book Covers By Artists Russe Vintage Curls Vintage Hairstyles Vintage Hairstyles Tutorial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Golden Girl And Softstyle Look Like Nancy Drew Hairstyle From The Book Covers By Artists Russe Vintage Curls Vintage Hairstyles Vintage Hairstyles Tutorial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5f/a4/b1/5fa4b154353901e4e3b45bac1f94ee97.jpg" data-lightbox="roadtrip" data-title="Nancy Drew Mystery Stories The Clue Of The Tapping Heels By Carolyn Keene Book Cover 1974 Rudy Na Nancy Drew Books Nancy Drew Nancy Drew Mystery Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5f/a4/b1/5fa4b154353901e4e3b45bac1f94ee97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4abWLY3SwOCwf2SfF3lVTqbzeA-E-YdxKnTCTW-TgN6MC_Mso1ozZSXm5W9-lHW39uTz5Sg&amp;ec=45771803';" alt="Nancy Drew Mystery Stories The Clue Of The Tapping Heels By Carolyn Keene Book Cover 1974 Rudy Na Nancy Drew Books Nancy Drew Nancy Drew Mystery Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nancy Drew Mystery Stories The Clue Of The Tapping Heels By Carolyn Keene Book Cover 1974 Rudy Na Nancy Drew Books Nancy Drew Nancy Drew Mystery Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/will-gi-bill-cover-certificate-programs.html">Will Gi Bill Cover Certificate Programs</a></li>
+													<li class="list-group-item"><a href="/who-is-eligible-for-post-911-gi-bill.html">Who Is Eligible For Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/wi-va-gi-bill.html">Wi Va Gi Bill</a></li>
+													<li class="list-group-item"><a href="/will-my-gi-bill-pay-for-harvard.html">Will My Gi Bill Pay For Harvard</a></li>
+													<li class="list-group-item"><a href="/wisconsin-gi-bill-requirements.html">Wisconsin Gi Bill Requirements</a></li>
+													<li class="list-group-item"><a href="/why-did-gi-automotive-group-close.html">Why Did Gi Automotive Group Close</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-acc-tournament.html">Womens College Basketball Acc Tournament</a></li>
+													<li class="list-group-item"><a href="/will-universities-open-in-2021.html">Will Universities Open In 2021</a></li>
+													<li class="list-group-item"><a href="/will-spf-30-give-you-tan.html">Will Spf 30 Give You Tan</a></li>
+													<li class="list-group-item"><a href="/why-are-womens-college-basketball-teams-wearing-pink.html">Why Are Womens College Basketball Teams Wearing Pink</a></li>
+													<li class="list-group-item"><a href="/wilderness-first-responder-gi-bill.html">Wilderness First Responder Gi Bill</a></li>
+													<li class="list-group-item"><a href="/why-go-to-college-uk.html">Why Go To College Uk</a></li>
+													<li class="list-group-item"><a href="/who-do-i-call-about-my-gi-bill.html">Who Do I Call About My Gi Bill</a></li>
+													<li class="list-group-item"><a href="/who-qualifies-for-gi-bill.html">Who Qualifies For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/why-is-my-gi-bill-bah-low.html">Why Is My Gi Bill Bah Low</a></li>
+													<li class="list-group-item"><a href="/who-is-1-in-womens-college-basketball.html">Who Is 1 In Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/william-jewell-college-womens-basketball-schedule.html">William Jewell College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/wi-gi-bill-disabled-veterans.html">Wi Gi Bill Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/whole30-gastrointestinal-issues.html">Whole30 Gastrointestinal Issues</a></li>
+													<li class="list-group-item"><a href="/will-the-gi-bill-pay-for-asq-certifications.html">Will The Gi Bill Pay For Asq Certifications</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

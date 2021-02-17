@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Air Force Transfer Gi Bill - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Air Force Transfer Gi Bill",
+  "datePublished": "2021-02-17",
+  "image": "https://themilitarywallet.com/wp-content/uploads/2009/05/gi-bill-transfer-rules.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=air+force+transfer+gi+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Air Force Transfer Gi Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">RANDOLPH AIR FORCE BASE Texas -- The Department of Defense began accepting applications from Airmen to transfer Post-911 GI Bill benefits to dependents June 29. If you are approved for. Individuals transferring from the Montgomery GI Bill chapter 30 will receive a refund of a proportional amount based on the number of months remaining under MGIB at the time of Post-911 election of their basic 1200 contribution. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/national-guard-gi-bill-calculator.html">national guard gi bill calculator</a>
+											<a class="badge badge-light" href="/navy-gi-bill-instruction.html">navy gi bill instruction</a>
+											<a class="badge badge-dark" href="/national-guard-gi-bill-eligibility.html">national guard gi bill eligibility</a>
+											<a class="badge badge-primary" href="/my-gi-bill-money-is-late.html">my gi bill money is late</a>
+											<a class="badge badge-primary" href="/montgomery-gi-doctors.html">montgomery gi doctors</a>
+											<a class="badge badge-warning" href="/my-montgomery-gi-bill-account.html">my montgomery gi bill account</a>
+											<a class="badge badge-primary" href="/montgomery-ward-bill-pay.html">montgomery ward bill pay</a>
+											<a class="badge badge-primary" href="/my-post-911-gi-bill-benefits.html">my post 911 gi bill benefits</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the right site.  Our site gives you suggestions for seeing the maximum quality video and image content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you view.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/May/13/2002130924/-1/-1/0/190513-F-F3495-0001.PNG" data-lightbox="roadtrip" data-title="Changes To Post 9 11 Gi Bill Transfers Effective July 2019 Air Force Materiel Command Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/May/13/2002130924/-1/-1/0/190513-F-F3495-0001.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnfZCjGL2GtRInpCtB5jIwFLnDPOCuBx2k3mNGoAXM5LBVE5U81y6ux8eOYitN7aJ3_Ocqg&amp;ec=45771803';" alt="Changes To Post 9 11 Gi Bill Transfers Effective July 2019 Air Force Materiel Command Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Changes To Post 9 11 Gi Bill Transfers Effective July 2019 Air Force Materiel Command Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Jan/09/2002231987/780/780/0/200108-F-EP111-0002.PNG" data-lightbox="roadtrip" data-title="Reservist How To Guide For Transferring Post 9 11 G I Bill Benefits Air Reserve Personnel Center Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Jan/09/2002231987/780/780/0/200108-F-EP111-0002.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_wDmgPBmwQYkmBjhZpKvQJdYkareHc-5YMmfTyUR6U10Tjr45ETLjVLCG0tdTpEg66ll7Qw&amp;ec=45771803';" alt="Reservist How To Guide For Transferring Post 9 11 G I Bill Benefits Air Reserve Personnel Center Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reservist How To Guide For Transferring Post 9 11 G I Bill Benefits Air Reserve Personnel Center Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Jul/30/2001948234/780/780/0/180725-F-MP604-1001.JPG" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Changes Arrive Schriever Air Force Base Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Jul/30/2001948234/780/780/0/180725-F-MP604-1001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgdiMd8nDC6-upQ7eHEMq96CRLZhmh28KgzmUFE942J5TTaAs575B5gVXJIoCZhaftyFMaYg&amp;ec=45771803';" alt="Post 9 11 Gi Bill Changes Arrive Schriever Air Force Base Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Changes Arrive Schriever Air Force Base Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="s3ZgF2InQ7zz-M" data-lightbox="roadtrip" data-title="Https Www Arpc Afrc Af Mil Portals 4 Drio Training Iro 2019 Rio Iro Education Gi Bill Pdf Ver 2019 03 19 164628 177">
+											<img class="card-img v-image ads-img " src="s3ZgF2InQ7zz-M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuKkCkoKbCpAtB414vlz29EyIaaMQZVGo5FAxsQIDkkJN3Ld8WpQXT4ega32eO-_Lvt3jfXw&amp;ec=45771803';" alt="Https Www Arpc Afrc Af Mil Portals 4 Drio Training Iro 2019 Rio Iro Education Gi Bill Pdf Ver 2019 03 19 164628 177">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Arpc Afrc Af Mil Portals 4 Drio Training Iro 2019 Rio Iro Education Gi Bill Pdf Ver 2019 03 19 164628 177</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2015/Jan/08/2001004331/780/780/0/150108-F-IL660-001.JPG" data-lightbox="roadtrip" data-title="9w5tmy4jy Pgbm">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2015/Jan/08/2001004331/780/780/0/150108-F-IL660-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1t4waopqIUJNsLbZqGL_mHAiVcNQjCsWXscZvkqO8nGHKtL33HEy-Hvbrr0IJTermq6P2BQ&amp;ec=45771803';" alt="9w5tmy4jy Pgbm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9w5tmy4jy Pgbm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2011/Jan/24/2000291254/780/780/0/110121-F-2220K-001.JPG" data-lightbox="roadtrip" data-title="Dod Delays Post 9 11 Gi Bill Changes U S Air Force Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2011/Jan/24/2000291254/780/780/0/110121-F-2220K-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkR7r5bL8J8kvH43V1AGGtARL81Ho3TMXx04Xsqx8fGeiuCchEltl_ImciHbXtadqZeIenAg&amp;ec=45771803';" alt="Dod Delays Post 9 11 Gi Bill Changes U S Air Force Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Delays Post 9 11 Gi Bill Changes U S Air Force Article Display</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="EuApmT9tlcCQ1M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkR7r5bL8J8kvH43V1AGGtARL81Ho3TMXx04Xsqx8fGeiuCchEltl_ImciHbXtadqZeIenAg&amp;ec=45771803';" alt="Dod Delays Post 9 11 Gi Bill Changes U S Air Force Article Display">
+										<div class="card-body">
+						<h3 class="h5"><b>You must meet all eligibility requirements outlined in DoDI 134113 Change 1 Post-911 GI Bill and AFI 36-2649 Voluntary Education Program Attachment 13 prior to applying for the Transfer of Education Benefits or TEBNOTE.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Air force transfer gi bill</strong>. 
+								
+																	All approvals for transferability of Post-911 GI bill continue to require an additional four year commitment in the Armed Forces. 
+																	Select the Post-911 GI Bill Chapter 33 radio button in the Select the educational program from which to transfer benefits section. 
+																	To finish your request for approval. 
+																	The Post 911 GI Bill is a great benefit for Reservists to utilize when they or a family member wish to pursue higher education or training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Am I eligible to transfer benefits. 
+																	The VA may be able to help pay your tuition pick out a school choose a career and more. 
+																	You must meet all eligibility requirements outlined in DoDI 134113 Change 1 Post-911 GI Bill and AFI 36-2649 Voluntary Education Program Attachment 13 prior to applying for the Transfer of Education Benefits or TEB. 
+																	JOINT BASE SAN ANTONIO-RANDOLPH Texas -- When initially implemented the Post-911 GI Bill education transfer program was phased in to enable Airmen nearing retirement to accept a 1- 2- or 3-year active duty service commitment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Members of the Air National Guard should refer to their retention office for information on how they can apply transfer benefits. 
+																	Department of Veterans Affairs education benefits through the GI Bill program and other educational assistance programs. 
+																	You must meet all eligibility requirements outlined in DoDI 134113 Change 1 Post-911 GI Bill and AFI 36-2649 Voluntary Education Program Attachment 13 prior to applying for the Transfer of Education Benefits or TEB. 
+																	The Department of Defense DoD decides whether you can transfer GI Bill benefits to your family. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For each eligible family member that you want to receive benefits enter the number of months to transfer. 
+																	AFNS -- Last year new guidance was announced on transferring GI Bill benefits. 
+																	The Department of Defense DoD decides whether you can transfer GI Bill benefits to your family. 
+																	Airmen must have at least six years in service active duty andor selected Reserve and effective 12 July 2019 no more than 16 years in Service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eligibility to transfer those benefits will be limited to service members with less than 16 years of total service active duty service andor selected reserves as applicable. 
+																	The Post-911 GI Bill transfer of benefits option is a landmark benefit to eligible Airmen said Lt. 
+																	Purple Heart Recipients see TEB Purple Heart Recipients. 
+																	The military determines whether or not you can transfer benefits to your. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Am I eligible to transfer benefits. 
+																	Transfer your Post-911 GI Bill benefits Find out if you can transfer any of your unused Post-911 GI Bill benefits to your spouse or dependent children. 
+																	Transfer your Post-911 GI Bill benefits Find out if you can transfer any of your unused Post-911 GI Bill benefits to your spouse or dependent children. 
+																	However the process of applying is often shrouded in mystery. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre an active-duty Guard or Reserve Airman Air Force veteran or qualified survivor or dependent you may qualify for US. 
+																	You must meet all eligibility requirements outlined in DoDI 134113 Change 1 Post-911 GI Bill and AFI 36-2649 Voluntary Education Program Attachment 13 prior to applying for the Transfer of Education Benefits or TEB. 
+																	The ability to transfer ones GI Bill benefits to their dependents is controlled by the individual service branches and is generally used as a retention tool. 
+																	The determination of Service members total years of creditable service will be based on the date of the members TEB application not the date the request is approved. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The changes go into effect July 12th. 
+																	The Post-911 GI Bill allows you to transfer all or some of your unused benefits to your spouse or dependent children. 
+																	You must meet all eligibility requirements outlined in DoDI 134113 Change 1 Post-911 GI Bill and AFI 36-2670 Total Force Development Chapter 6 prior to applying for the Transfer of Education Benefits TEB. 
+																	Eligibility to transfer Post-911 GI Bill education benefits will be limited to service members with at least six years but not more than 16 years of total creditable service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Access virtual MPF vMPF via AFPC Secure. 
+																	Richard Newton III Air Force Personnel and Manpower deputy chief of staff. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Dec/16/2002225383/780/780/0/191216-F-XX000-001.PNG" data-lightbox="roadtrip" data-title="Transfer Of Post 9 11 Gi Bill Benefits Deadline Upcoming Team Mcchord Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Dec/16/2002225383/780/780/0/191216-F-XX000-001.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb5oJyCDqVdziCZNI8Q33WTU7PFlG25SARnhh6XYyOszmRZRH5Be1ISITpsLZhjpnkmxUFjA&amp;ec=45771803';" alt="Transfer Of Post 9 11 Gi Bill Benefits Deadline Upcoming Team Mcchord Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Transfer Of Post 9 11 Gi Bill Benefits Deadline Upcoming Team Mcchord Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2016/Apr/19/2001517412/780/780/0/160419-F-MJ568-002.JPG" data-lightbox="roadtrip" data-title="Which Is Right For You Post 9 11 Or Montgomery Gi Bill Pacific Air Forces Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2016/Apr/19/2001517412/780/780/0/160419-F-MJ568-002.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNpMtmaz0XqIChjYK8zuvGqDsek9kGpvV6fI_g97k1N1GwBFuN4q5X2PvYutke0eWovQvJhw&amp;ec=45771803';" alt="Which Is Right For You Post 9 11 Or Montgomery Gi Bill Pacific Air Forces Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Which Is Right For You Post 9 11 Or Montgomery Gi Bill Pacific Air Forces Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Mar/21/2002104032/780/780/0/120814-Z-SE263-023.JPG" data-lightbox="roadtrip" data-title="Changes In Gi Bill Transfer Benefits For National Guard Members Coming July 12 U S Air Force Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Mar/21/2002104032/780/780/0/120814-Z-SE263-023.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN_v5qpDEDx5ff2Jq5WGSGTY0--1ErlQOXe1ELKqWu6eF-GCZyE3LQGlPibsLR7aya2ck3BA&amp;ec=45771803';" alt="Changes In Gi Bill Transfer Benefits For National Guard Members Coming July 12 U S Air Force Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Changes In Gi Bill Transfer Benefits For National Guard Members Coming July 12 U S Air Force Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Jul/10/2002155652/1280/1280/0/190710-F-EP111-0001.JPG" data-lightbox="roadtrip" data-title="Update Changes Coming To G I Bill Transfer Of Education Benefits For Guard Reserve Washington Headquarters Services News Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Jul/10/2002155652/1280/1280/0/190710-F-EP111-0001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb0h27P2CjeOddKO2J_6yIDikTmTXqRpRaS70h2df4hEJB7bBW4ig6qcfUtE7JXjD0A6ClHA&amp;ec=45771803';" alt="Update Changes Coming To G I Bill Transfer Of Education Benefits For Guard Reserve Washington Headquarters Services News Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Update Changes Coming To G I Bill Transfer Of Education Benefits For Guard Reserve Washington Headquarters Services News Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://data.templateroller.com/pdf_docs_html/1900/19005/1900559/af-form-4406-post-9-11-gi-bill-transfer-educational-benefits-statement-understanding_big.png" data-lightbox="roadtrip" data-title="Af Form 4406 Download Fillable Pdf Or Fill Online Post 9 11 Gi Bill Transfer Of Educational Benefits Statement Of Understanding Templateroller">
+											<img class="card-img v-image ads-img " src="https://data.templateroller.com/pdf_docs_html/1900/19005/1900559/af-form-4406-post-9-11-gi-bill-transfer-educational-benefits-statement-understanding_big.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFBjFtC8c9djvDYwKHRAg1n1K0kE8EiuNT7N7S8KQodcYbkNoIlS41UNLEWIsKgnW6lWIrtQ&amp;ec=45771803';" alt="Af Form 4406 Download Fillable Pdf Or Fill Online Post 9 11 Gi Bill Transfer Of Educational Benefits Statement Of Understanding Templateroller">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Af Form 4406 Download Fillable Pdf Or Fill Online Post 9 11 Gi Bill Transfer Of Educational Benefits Statement Of Understanding Templateroller</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="EuApmT9tlcCQ1M" data-lightbox="roadtrip" data-title="Http Static E Publishing Af Mil Production 1 Afrc Publication Afrci36 2301 Afrci36 2301 Pdf">
+											<img class="card-img v-image ads-img " src="EuApmT9tlcCQ1M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd_oa3UaIxJajjvJNmHMHBoRtwUBr1bSdcmpQaoMDvWcUnA0PZA0DGTb0IEBbf1Xp0zf3NPg&amp;ec=45771803';" alt="Http Static E Publishing Af Mil Production 1 Afrc Publication Afrci36 2301 Afrci36 2301 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Static E Publishing Af Mil Production 1 Afrc Publication Afrci36 2301 Afrci36 2301 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Jul/13/2001942094/-1/-1/0/180713-D-ZZ999-001.JPG" data-lightbox="roadtrip" data-title="Dod Announces Policy Change On Transfer Of Post 9 11 Gi Bill Benefits Defense Contract Management Agency Article View">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Jul/13/2001942094/-1/-1/0/180713-D-ZZ999-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVQofxpZeJPki-oTPNSfHEW42jBQxnwXOu0WBcSQyg0zT74MwVAfCUX3Un4GO9F5VrmwTVHw&amp;ec=45771803';" alt="Dod Announces Policy Change On Transfer Of Post 9 11 Gi Bill Benefits Defense Contract Management Agency Article View">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Announces Policy Change On Transfer Of Post 9 11 Gi Bill Benefits Defense Contract Management Agency Article View</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://the-military-guide.com/wp-content/uploads/2015/06/USAF-Reserve-organization-640x400.png" data-lightbox="roadtrip" data-title="Ask The Readers Transferring Gi Bill Benefits In The Individual Ready Reserve Military Guide">
+											<img class="card-img v-image ads-img " src="https://the-military-guide.com/wp-content/uploads/2015/06/USAF-Reserve-organization-640x400.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbjSrmakZR5XoFmQnIFWqJJL7Zs2LtZJ482NB_anr17xDvaOHtFEjUhtRxo-ebml91XFb4QA&amp;ec=45771803';" alt="Ask The Readers Transferring Gi Bill Benefits In The Individual Ready Reserve Military Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ask The Readers Transferring Gi Bill Benefits In The Individual Ready Reserve Military Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2009/05/gi-bill-transfer-rules.jpg" data-lightbox="roadtrip" data-title="Gi Bill Transfer Rules Transfer Gi Bill To Family Members">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2009/05/gi-bill-transfer-rules.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlvHm_Aa7Rui46ETAWDCVRHjIxYamtAbgdclSzHUVvNpAD7vRUzwhhURBbm7t8FRF46eDu8A&amp;ec=45771803';" alt="Gi Bill Transfer Rules Transfer Gi Bill To Family Members">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Transfer Rules Transfer Gi Bill To Family Members</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2017/12/palace-chase.png" data-lightbox="roadtrip" data-title="The Palace Chase Program Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2017/12/palace-chase.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMaq7uCoESZ80Uu4seHrJ77DyWMEcjdjTzoQDrSK-Qv1wOX7DQFiCdKUKibujx77ZQyNpjnA&amp;ec=45771803';" alt="The Palace Chase Program Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Palace Chase Program Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2017/Nov/15/2001843773/-1/-1/0/171115-A-YG824-001.JPG" data-lightbox="roadtrip" data-title="Guard Members To See Changes In Gi Bill Benefits National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2017/Nov/15/2001843773/-1/-1/0/171115-A-YG824-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPAnhbsR8bF7nPTZNal1K6CSShWJf-FMzp3SVnMQSz-XXll_OISqlA0dXB3JDERcKj-aLcSw&amp;ec=45771803';" alt="Guard Members To See Changes In Gi Bill Benefits National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guard Members To See Changes In Gi Bill Benefits National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2013/Aug/12/2000705250/-1/-1/0/180413-A-YG824-003.JPG" data-lightbox="roadtrip" data-title="Requirements To Change For Transfer Of Gi Bill Benefits National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2013/Aug/12/2000705250/-1/-1/0/180413-A-YG824-003.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVrhI8uxZmjWQSHP0V0R9cDpOPjGhI6Fz_4x7XazxSxJuNo6g0rSMp3uRJWEWcI6XFSbOdFA&amp;ec=45771803';" alt="Requirements To Change For Transfer Of Gi Bill Benefits National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Requirements To Change For Transfer Of Gi Bill Benefits National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/56/02/45/5602455d24cc4de2ef0b5f16f4529940.jpg" data-lightbox="roadtrip" data-title="Gi Bill Transfer Parameters Are Different Gi Bill Military Spouse Career Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/56/02/45/5602455d24cc4de2ef0b5f16f4529940.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3RFryjbDKBwXNER3NbBgpQC-ThicAmDjH-1W75MtrPqSIOX6ucq9EDTrXPq4PdTx084PlCw&amp;ec=45771803';" alt="Gi Bill Transfer Parameters Are Different Gi Bill Military Spouse Career Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Transfer Parameters Are Different Gi Bill Military Spouse Career Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/montgomery-gi-bill-monthly-housing-allowance.html">Montgomery Gi Bill Monthly Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-on-active-duty.html">Montgomery Gi Bill On Active Duty</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-benefits-for-spouse.html">Montgomery Gi Bill Benefits For Spouse</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-monthly-benefits.html">Montgomery Gi Bill Monthly Benefits</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-refund-form.html">Montgomery Gi Bill Refund Form</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-calculator.html">Montgomery Gi Bill Calculator</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-passed-to-dependents.html">Montgomery Gi Bill Passed To Dependents</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-meaning.html">Montgomery Gi Bill Meaning</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-benefits-national-guard.html">Montgomery Gi Bill Benefits National Guard</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-educational-assistance-program.html">Montgomery Gi Bill Educational Assistance Program</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-dependent-transfer.html">Montgomery Gi Bill Dependent Transfer</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-eligibility-status.html">Montgomery Gi Bill Eligibility Status</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-full-time-credit-hours.html">Montgomery Gi Bill Full Time Credit Hours</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-for-dependents.html">Montgomery Gi Bill For Dependents</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-chapter-30-rates.html">Montgomery Gi Bill Chapter 30 Rates</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-enrollment.html">Montgomery Gi Bill Enrollment</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-contact-number.html">Montgomery Gi Bill Contact Number</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-rates-2021.html">Montgomery Gi Bill Rates 2021</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-rates-2020.html">Montgomery Gi Bill Rates 2020</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-calculator-2020.html">Montgomery Gi Bill Calculator 2020</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

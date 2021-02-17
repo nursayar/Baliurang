@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Offseason Workout Program - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Offseason Workout Program",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/67/f4/c8/67f4c8589d16f6070e6294071dc3184e.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+offseason+workout+program",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Offseason Workout Program</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Wednesday strength workouts include medicine ball throws bench presses split squats and glute bridges. And development of the Spartan Womens Basketball Strength and Conditioning Manual and for their dedication to the development of Spartan basketball players. The training will not be super-complex because we need a lot of cardio and plyometric days. <br>				
+			</p>
+										<a class="badge badge-info" href="/vagov-chapter-35-benefits.html">vagov chapter 35 benefits</a>
+											<a class="badge badge-warning" href="/veterans-administration-gi-bill-education-benefits.html">veterans administration gi bill education benefits</a>
+											<a class="badge badge-secondary" href="/vagov-gi-bill-status.html">vagov gi bill status</a>
+											<a class="badge badge-light" href="/vagov-gi-bill-comparison-tool.html">vagov gi bill comparison tool</a>
+											<a class="badge badge-secondary" href="/veterans-affairs-gi-bill-status.html">veterans affairs gi bill status</a>
+											<a class="badge badge-warning" href="/veterans-affairs-education-department.html">veterans affairs education department</a>
+											<a class="badge badge-light" href="/va-yellow-ribbon-schools-2020.html">va yellow ribbon schools 2020</a>
+											<a class="badge badge-secondary" href="/vagov-gi-bill.html">vagov gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the right blog.  Our website gives you suggestions for viewing the maximum quality video and picture content, hunt and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/d2/0c/d7d20c4fb5332a9ac1098c2b1a4f1dfe.jpg" data-lightbox="roadtrip" data-title="Offseason Workouts Basketball Conditioning Program Exercise Young Athlete Youth Sports Girls Basketball Drills Basketball Conditioning Basketball Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/d2/0c/d7d20c4fb5332a9ac1098c2b1a4f1dfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhuH_QtfkZAvfWX1V8MhrLgHdP_aoG49wkg';" alt="Offseason Workouts Basketball Conditioning Program Exercise Young Athlete Youth Sports Girls Basketball Drills Basketball Conditioning Basketball Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Offseason Workouts Basketball Conditioning Program Exercise Young Athlete Youth Sports Girls Basketball Drills Basketball Conditioning Basketball Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/f4/c8/67f4c8589d16f6070e6294071dc3184e.png" data-lightbox="roadtrip" data-title="Basketball Court Workout From Grit By Brit Oh Reading This Brings Back So Many Memories Of Basketball Drills Basketball Workouts Basketball Workouts Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/f4/c8/67f4c8589d16f6070e6294071dc3184e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnpaJ-aTBWMQMjFRyLIVVjR6DL75SyNSdftQ';" alt="Basketball Court Workout From Grit By Brit Oh Reading This Brings Back So Many Memories Of Basketball Drills Basketball Workouts Basketball Workouts Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Court Workout From Grit By Brit Oh Reading This Brings Back So Many Memories Of Basketball Drills Basketball Workouts Basketball Workouts Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9c/ae/0b/9cae0b9239f183212373a23afb78bfb6.jpg" data-lightbox="roadtrip" data-title="Offseason Workouts Basketball Conditioning Program Exercise Etsy Basketball Practice Plans Basketball Conditioning Basketball Practice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9c/ae/0b/9cae0b9239f183212373a23afb78bfb6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Q8j5017E_FmuRsL3gxGllZBypJ4ZjBNrWQ';" alt="Offseason Workouts Basketball Conditioning Program Exercise Etsy Basketball Practice Plans Basketball Conditioning Basketball Practice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Offseason Workouts Basketball Conditioning Program Exercise Etsy Basketball Practice Plans Basketball Conditioning Basketball Practice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/c1/bb/e4c1bb5ba81ff0a8f4b1507256dd7556.png" data-lightbox="roadtrip" data-title="Metabolic Running Stack Incredible 2 3x Per Week Offseason Workout Conditioning Workouts Football Workouts Training Basketball Workouts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/c1/bb/e4c1bb5ba81ff0a8f4b1507256dd7556.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQilx3UfY5PeNmYYG08ZIEYXK13OScpT7PbXA';" alt="Metabolic Running Stack Incredible 2 3x Per Week Offseason Workout Conditioning Workouts Football Workouts Training Basketball Workouts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Metabolic Running Stack Incredible 2 3x Per Week Offseason Workout Conditioning Workouts Football Workouts Training Basketball Workouts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/d7/8e/dcd78e11e240b8d815c84346ad46855f.jpg" data-lightbox="roadtrip" data-title="Pin On Coaching Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/d7/8e/dcd78e11e240b8d815c84346ad46855f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4jPFHc6cMlXY_lu0gy79ft7964oSMocG7mQ';" alt="Pin On Coaching Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coaching Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/88/c3/bd/88c3bd12f31eb302f23e602dff20a74d.jpg" data-lightbox="roadtrip" data-title="Offseason Workouts Football Conditioning Program Training Plan Youth Sports Summer Workouts Football Mom Football Coach Nfl Improve In 2021 Football Workouts Football Workouts Training Football Coaching Drills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/88/c3/bd/88c3bd12f31eb302f23e602dff20a74d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBzveC52oTdCtAfNsLSPK5aRUeA6CAO7SUuw';" alt="Offseason Workouts Football Conditioning Program Training Plan Youth Sports Summer Workouts Football Mom Football Coach Nfl Improve In 2021 Football Workouts Football Workouts Training Football Coaching Drills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Offseason Workouts Football Conditioning Program Training Plan Youth Sports Summer Workouts Football Mom Football Coach Nfl Improve In 2021 Football Workouts Football Workouts Training Football Coaching Drills</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/a3/0f/c1/a30fc1c14478c8268a0e33c8860b1f15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBzveC52oTdCtAfNsLSPK5aRUeA6CAO7SUuw';" alt="Offseason Workouts Football Conditioning Program Training Plan Youth Sports Summer Workouts Football Mom Football Coach Nfl Improve In 2021 Football Workouts Football Workouts Training Football Coaching Drills">
+										<div class="card-body">
+						<h3 class="h5"><b>Womens Basketball Pre-Season Workout A good basketball pre-season workout for women should include a healthy mix of cardio training strength and conditioning training and skill development.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball offseason workout program</strong>. 
+								
+																	Basketball players need to be big enough absorb contact strong explosive able to change directions on a dime. 
+																	For the basketball program well focus more on leg strength speedagility and your vertical leap. 
+																	Six weeks is the length of time between the start of the classes in the fall and the first preseason exhibition games for a college team the end of the live period and the beginning of the school year or the first open tryouts and a training camp for a national or provincial time. 
+																	They will be able to perform their basketball skills at a higher level with more efficiency and perform them for longer without the onset of fatigue. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A proper conditioning program establishes a solid fitness foundation and will reduce your mental and. 
+																	To the basketball staff thank-you for your utmost support and guidance. 
+																	If your conditioning program only incorporates straight-ahead sprinting a typical track workout you will not sufficiently prepare the hip groin and ankle areas all of which are high-risk areas for basketball players. 
+																	This particular workout focuses on the anklesfeet core and on the deadlift bench. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both male and female players ages 13 and. 
+																	Our 1 objective in the off-season is to improve our full body strength. 
+																	Home Player Workouts Sample Basketball Workout. 
+																	The offseason is the perfect time to work on your skills and basketball fundamentals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its a prime opportunity to restore the imbalances that basketball places on the musculoskeletal system. 
+																	Of course its also a time when you rest and recuperate. 
+																	Implement a 45min workout that includes a cardio. 
+																	Strength Training Off-Season Womens Basketball TIMING. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens Basketball - Strength Conditioning. 
+																	Anybody is capable of improving their physical conditioning for basketball even over a short period of time. 
+																	Women basketball players are at a greater risk of knee and thigh injuries than men so ensure your legs are properly warmed up before starting the drills. 
+																	But resting does NOT mean doing nothing It takes just a few weeks of sedentary lifestyle to undo the majority of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Shooting lay ups ball-handling defense rebounding passing and etc. 
+																	Mail Code 1-2 Pasadena CA 91125 626 395-3253. 
+																	Create a game paced workout that is designed to push players to a high level of intensity through the use of competition and goal times. 
+																	Suzy Merchant - Head Basketball Coach Rick Albro Shane Clipfell and Evelyn Thompson -- Assistant Basketball Coaches LouAnne Jefferson - Athletic Trainer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Basketball also requires a high level of conditioning so well do plenty of endurance work as well. 
+																	The second reason you need to condition is for performance enhancement. 
+																	The training year will then go into the pre-season which will encompass approximately six weeks of training from the beginning of the school year until the start of formal practices. 
+																	Basketball strength and conditioning program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	April May No organized conditioning open gym skill work with sport coaches and strength training re teaching fundamentals and going through repair- rebuild and retrain 2. 
+																	On Monday the weight-training routine includes back squats chinups inverted rows and hanging leg raises. 
+																	The basketball off-season is a time to lay the foundation for in-season success. 
+																	Remember to do. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is a sample built off the template from the article How To Develop Workouts Like A Pro -- Using 8 Key Building Blocks. 
+																	The reps and sets for each exercise should be adjusted for an individual players skill level age level strengths and weaknesses. 
+																	9 on 2 off for example weeks of. 
+																	I define our training year beginning in the summer as the off season component to the year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Training for basketball is a year long commitment. 
+																	Canisius College Womens Basketball Guard Off Season Workouts An inside look into our off -season guard workout program that focuses on skill development competitive toughness and player accountability. 
+																	Certified strength and conditioning specialist. 
+																	Off-Season Basketball Training Program 8-12 weeks Dont underestimate the importance of the closed season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	March 2 May 11 For maximum benefit this program would be repeated 3 times in the off-season RECORDS. 
+																	Summer of 2014 Workouts PDF Documents. 
+																	The in-season takes. 
+																	Conditioning on a track helps develop the energy systems that fuel your body during intense activities like basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1200 East California Blvd. 
+																	A 2-day split will be. 
+																	Note that the repetitions and sets for this workout is just a sample. 
+																	Take a look behind the scenes at the womens basketball teams summer workouts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dedicate 75 of your time on improving your basketball skills and 25 of your time to playing. 
+																	Ensure that you work on your fundamentals such as. 
+																	The goal of this program is to provide a day-by-day safe efficient and productive pre-season training program for players and teams of all levels. 
+																	Prior to the season the University of Wisconsin at La Crosse womens basketball team strength trains three days per week. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Keep a journal record everything you think is important- start time partner how much did you actually lift howd you feel end time etc. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/74/b9/c2/74b9c21049144a431dad16dd852f2ad7.jpg" data-lightbox="roadtrip" data-title="At Home Basketball Offseason Workout Try This Month Long Workout Plan For High School Basketba Basketball Workouts Training Basketball Drills At Home Workouts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/74/b9/c2/74b9c21049144a431dad16dd852f2ad7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLk1kU8D1snAt60ggoKHbFOKI9zd6PSQJhQ';" alt="At Home Basketball Offseason Workout Try This Month Long Workout Plan For High School Basketba Basketball Workouts Training Basketball Drills At Home Workouts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">At Home Basketball Offseason Workout Try This Month Long Workout Plan For High School Basketba Basketball Workouts Training Basketball Drills At Home Workouts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/75/c6/0175c6c995b3b41632b0aa1fc5b94f1a.png" data-lightbox="roadtrip" data-title="Basketball Training Program Offseason Conditioning Workout Plan Basketball Drills Basketball Conditioning Basketball Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/75/c6/0175c6c995b3b41632b0aa1fc5b94f1a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDusT0VQ_cDp7bn6WtbMavJmYSTvy8EPUfA';" alt="Basketball Training Program Offseason Conditioning Workout Plan Basketball Drills Basketball Conditioning Basketball Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Training Program Offseason Conditioning Workout Plan Basketball Drills Basketball Conditioning Basketball Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/d7/37/7cd737bef2b224e7ff44059a9a4213fc.jpg" data-lightbox="roadtrip" data-title="Get Fit And Feel Great With This Take A Look Http Fitness W9rqkvx5 Mydependablereviews C Basketball Workouts Basketball Practice Plans Basketball Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/d7/37/7cd737bef2b224e7ff44059a9a4213fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerWILQ3yuyiBi2WPbIL-XvIXks6oDOf9PCA';" alt="Get Fit And Feel Great With This Take A Look Http Fitness W9rqkvx5 Mydependablereviews C Basketball Workouts Basketball Practice Plans Basketball Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Fit And Feel Great With This Take A Look Http Fitness W9rqkvx5 Mydependablereviews C Basketball Workouts Basketball Practice Plans Basketball Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/36/d5/e4/36d5e4ee547449d358c9c4ee352bf246.jpg" data-lightbox="roadtrip" data-title="Best Jump Training Program Volleyball Workouts Basketball Workouts Basketball Drills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/36/d5/e4/36d5e4ee547449d358c9c4ee352bf246.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9vbUMVQkU8tMSKWGRRB7Fp3hEAR5SUVw5w';" alt="Best Jump Training Program Volleyball Workouts Basketball Workouts Basketball Drills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Jump Training Program Volleyball Workouts Basketball Workouts Basketball Drills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/a9/bf/ff/a9bffff08c09404f3ffb7a733658ef51.jpg" data-lightbox="roadtrip" data-title="High School Basketball Practice Plan Template Google Search Basketball Practice Plans Basketball Practice High School Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/a9/bf/ff/a9bffff08c09404f3ffb7a733658ef51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQShOMO1jpn6nerCOwqrkq1A83VFnvgkPMjWw';" alt="High School Basketball Practice Plan Template Google Search Basketball Practice Plans Basketball Practice High School Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">High School Basketball Practice Plan Template Google Search Basketball Practice Plans Basketball Practice High School Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/b0/53/abb0535bbde6c13e189df3a43fde36f2.jpg" data-lightbox="roadtrip" data-title="Pin On Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/b0/53/abb0535bbde6c13e189df3a43fde36f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7128H4ofgUksaO4b74_anSu6EURpLnm0JbA';" alt="Pin On Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/dc/8e/ffdc8e4f6b40836d1326a749bae9f93b.jpg" data-lightbox="roadtrip" data-title="Soccer Strength Training Program Pdf Strength Training Program Soccer Training Program Strength Workout Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/dc/8e/ffdc8e4f6b40836d1326a749bae9f93b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzWnRRBz2fH9fz3G5qX7bInnHnjggVDsT_DQ';" alt="Soccer Strength Training Program Pdf Strength Training Program Soccer Training Program Strength Workout Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soccer Strength Training Program Pdf Strength Training Program Soccer Training Program Strength Workout Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a3/0f/c1/a30fc1c14478c8268a0e33c8860b1f15.jpg" data-lightbox="roadtrip" data-title="High School Football Practice Schedule Template New Basketball Practice Plan Template Basketball Practice Plans Basketball Practice Soccer Practice Plans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a3/0f/c1/a30fc1c14478c8268a0e33c8860b1f15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEdCN426bg-TSYw5mDA7-6cZdxzeDX-iPQ8Q';" alt="High School Football Practice Schedule Template New Basketball Practice Plan Template Basketball Practice Plans Basketball Practice Soccer Practice Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">High School Football Practice Schedule Template New Basketball Practice Plan Template Basketball Practice Plans Basketball Practice Soccer Practice Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d4/c3/05/d4c3051c4cf10c6e64582d049b65cf1a.jpg" data-lightbox="roadtrip" data-title="Basketball Drills Basketball Practice Plans Basketball Workouts Training Basketball Drills For Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d4/c3/05/d4c3051c4cf10c6e64582d049b65cf1a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_j6tgLMkpRl_LajjnPa5OhAXrDE57Jxn-Qg';" alt="Basketball Drills Basketball Practice Plans Basketball Workouts Training Basketball Drills For Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Drills Basketball Practice Plans Basketball Workouts Training Basketball Drills For Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5e/73/cc/5e73cc7384b076155d0f22e02c29ae9a.jpg" data-lightbox="roadtrip" data-title="Pin On Workout Routine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5e/73/cc/5e73cc7384b076155d0f22e02c29ae9a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnI4_fQoiGQbmXEFopA2oT-NR7oOzz117Kw';" alt="Pin On Workout Routine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Workout Routine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d7/bd/0b/d7bd0bd607e98a46024087a02f6c8cee--kid-exercise-kids-workout.jpg" data-lightbox="roadtrip" data-title="Soccer Football Field Workouts Looks Like A Good One To Do While The Kids Are At Soccer Practice Football Workouts Soccer Workouts Soccer Drills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d7/bd/0b/d7bd0bd607e98a46024087a02f6c8cee--kid-exercise-kids-workout.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqEqi9eHtAoUt3KfmpJBW9SsciNZjo2gSpmw';" alt="Soccer Football Field Workouts Looks Like A Good One To Do While The Kids Are At Soccer Practice Football Workouts Soccer Workouts Soccer Drills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soccer Football Field Workouts Looks Like A Good One To Do While The Kids Are At Soccer Practice Football Workouts Soccer Workouts Soccer Drills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/ac/cb/82accb18da0a2accb2b3b63975475355.jpg" data-lightbox="roadtrip" data-title="Basketball Exercises Basketball Drills Basketball Conditioning Basketball Workouts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/ac/cb/82accb18da0a2accb2b3b63975475355.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTw7c2UuDVDA4eF6yZdSY4XcbaDt26LLG6mQ';" alt="Basketball Exercises Basketball Drills Basketball Conditioning Basketball Workouts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Exercises Basketball Drills Basketball Conditioning Basketball Workouts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/d6/93/1ad693cce611f18da202eb3b07a03cf3.gif" data-lightbox="roadtrip" data-title="Soccer Fitness And Conditioning Program Strength Training Program Strength Training Football Tactics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/d6/93/1ad693cce611f18da202eb3b07a03cf3.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkN4yWW0T410zDYDd3PVvLWsy5Z5eTXXgXw';" alt="Soccer Fitness And Conditioning Program Strength Training Program Strength Training Football Tactics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soccer Fitness And Conditioning Program Strength Training Program Strength Training Football Tactics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-eligible-flight-schools.html">Gi Bill Eligible Flight Schools</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-reserve-air-force.html">Gi Bill For Reserve Air Force</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-dependents-how-does-it-work.html">Gi Bill For Dependents How Does It Work</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-reserve.html">Gi Bill Eligibility Reserve</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-online-schools.html">Gi Bill For Online Schools</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-tool.html">Gi Bill Eligibility Tool</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-part-time-students.html">Gi Bill For Part Time Students</a></li>
+													<li class="list-group-item"><a href="/gi-bill-fall-2020.html">Gi Bill Fall 2020</a></li>
+													<li class="list-group-item"><a href="/gi-bill-education-rates.html">Gi Bill Education Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-grandchildren-of-veterans.html">Gi Bill For Grandchildren Of Veterans</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-non-degree-programs.html">Gi Bill For Non Degree Programs</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-check.html">Gi Bill Eligibility Check</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-nurses.html">Gi Bill For Nurses</a></li>
+													<li class="list-group-item"><a href="/gi-bill-enrollment-certification.html">Gi Bill Enrollment Certification</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-officers-army.html">Gi Bill For Officers Army</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-requirements.html">Gi Bill Eligibility Requirements</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-percentage.html">Gi Bill Eligibility Percentage</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-house-payment.html">Gi Bill For House Payment</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-army-national-guard.html">Gi Bill For Army National Guard</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-army-reserves.html">Gi Bill For Army Reserves</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

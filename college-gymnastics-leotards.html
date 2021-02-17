@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>College Gymnastics Leotards - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "College Gymnastics Leotards",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/e8/fb/09/e8fb09b5a41e07796bf492af7c9d5db4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=college+gymnastics+leotards",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>College Gymnastics Leotards</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Choose either short sleeve long sleeve or sleeveless styles to find a look that best suits you. See more ideas about gymnastics female gymnast gymnastics girls. Discover our wide selection of the latest trending premium designer gymnastics dance leotards. <br>				
+			</p>
+										<a class="badge badge-primary" href="/va-education-department-number.html">va education department number</a>
+											<a class="badge badge-success" href="/va-education-counselor.html">va education counselor</a>
+											<a class="badge badge-danger" href="/va-education-benefits-texas.html">va education benefits texas</a>
+											<a class="badge badge-danger" href="/va-education-for-spouse.html">va education for spouse</a>
+											<a class="badge badge-light" href="/va-education-benefits-toll-free-number.html">va education benefits toll free number</a>
+											<a class="badge badge-danger" href="/va-education-contact-us.html">va education contact us</a>
+											<a class="badge badge-warning" href="/va-education-payment.html">va education payment</a>
+											<a class="badge badge-info" href="/va-education-post-911-gi-bill.html">va education post 911 gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the ideal blog.  Our site gives you hints for viewing the maximum quality video and image content, search and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/3a/f3/a73af32c9011b76ee8f73aa3a288c4ac.jpg" data-lightbox="roadtrip" data-title="College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/3a/f3/a73af32c9011b76ee8f73aa3a288c4ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUbRparf81Gmpz3iQtzXxR2nX_T7dW1u56yA';" alt="College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5f/bb/a9/5fbba9c692f9db31a0c829e2f6f4ace3.jpg" data-lightbox="roadtrip" data-title="College Women S Gymnastics Female Gymnast Gymnastics Leotards Gymnastics Costumes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5f/bb/a9/5fbba9c692f9db31a0c829e2f6f4ace3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8vi0Q6Sb2Sco0ldDj_FlRMHzQvWfBpz1G5w';" alt="College Women S Gymnastics Female Gymnast Gymnastics Leotards Gymnastics Costumes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Women S Gymnastics Female Gymnast Gymnastics Leotards Gymnastics Costumes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/07/3d/31/073d31f5387cf5380f624d7b6dd059cd.jpg" data-lightbox="roadtrip" data-title="Pin On Leotards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/07/3d/31/073d31f5387cf5380f624d7b6dd059cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMGT73QLv9fFVz6hAl5F-jRvsVkwF1QEHRwQ';" alt="Pin On Leotards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Leotards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/87/d0/0387d036b4a509177986ecd116c47803.png" data-lightbox="roadtrip" data-title="Throwback Leotard Rankings Lsu College Gym News Gymnastics Meet Hair Lsu Gymnastics Gymnastics Hair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/87/d0/0387d036b4a509177986ecd116c47803.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLejjw0KMJe5d9_BC6GxoCNqTr8qpM22_uAQ';" alt="Throwback Leotard Rankings Lsu College Gym News Gymnastics Meet Hair Lsu Gymnastics Gymnastics Hair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Throwback Leotard Rankings Lsu College Gym News Gymnastics Meet Hair Lsu Gymnastics Gymnastics Hair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2b/c3/ac/2bc3ac94e29f57e488ef865df33a4490.jpg" data-lightbox="roadtrip" data-title="Cute Leotards Leotards Leotards Ballet Leotards Black Leotards Bodysuit Leotards Costume Leotard Female Gymnast Gymnastics Leotards Gymnastics Costumes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2b/c3/ac/2bc3ac94e29f57e488ef865df33a4490.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCz6EzMcsGLtPUdYdwqKPTwrqtV5Ru1RXVBw';" alt="Cute Leotards Leotards Leotards Ballet Leotards Black Leotards Bodysuit Leotards Costume Leotard Female Gymnast Gymnastics Leotards Gymnastics Costumes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cute Leotards Leotards Leotards Ballet Leotards Black Leotards Bodysuit Leotards Costume Leotard Female Gymnast Gymnastics Leotards Gymnastics Costumes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/07/85/d407855da10dbeddf1fee31439196a8a.png" data-lightbox="roadtrip" data-title="Throwback Leotard Rankings Lsu College Gym News Female Gymnast Lsu Gymnastics Gymnastics Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/07/85/d407855da10dbeddf1fee31439196a8a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoEFdREJy-7W84WAEc-1Z6Qi9gz-YHN-OU-Q';" alt="Throwback Leotard Rankings Lsu College Gym News Female Gymnast Lsu Gymnastics Gymnastics Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Throwback Leotard Rankings Lsu College Gym News Female Gymnast Lsu Gymnastics Gymnastics Pictures</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/6d/26/7a/6d267a90d725da98b0571594d3994b55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoEFdREJy-7W84WAEc-1Z6Qi9gz-YHN-OU-Q';" alt="Throwback Leotard Rankings Lsu College Gym News Female Gymnast Lsu Gymnastics Gymnastics Pictures">
+										<div class="card-body">
+						<h3 class="h5"><b>Our fabulous gymnastics leotards incorporate everything you could wish for in a quality gymnastics performance outfit.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>College gymnastics leotards</strong>. 
+								
+																	Students have the opportunity to purchase gymnastics kit for their training and competitions. 
+																	Gymnastics Leotards for Girls Gradient Color Sparkle Dance Leotard Long SleeveSleeveless Dancewear Girls Leotards Athletic Ballet Dance Dress Kids 3-12 Years. 
+																	42 out of 5 stars 121. 
+																	College Gym News was founded in 2015 by Editor-in-Chief Elizabeth Grimsley. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Obersee offers a collection of gymnastics leotards featuring beautiful designs in competition quality materials. 
+																	Tumbling Gymnastics Sport Gymnastics Olympic Gymnastics Gymnastics Leotards Amazing Gymnastics Sport Gymnastics Olympic Gymnastics Gymnastics Leotards Amazing Gymnastics. 
+																	350 Pins 355 Followers. 
+																	A completed clothing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Back in the 30s and 40s during the earliest years of womens gymnastics leotards looked like something your grandmother might wear to the beach. 
+																	Leotards didnt always look this way. 
+																	Leotards Long Sleeved Leotards Sleeveless Leotards Personalised Leotards Sale Leotards Activewear Jazz Pants Crop Tops. 
+																	FREE Delivery on your first order shipped by Amazon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	British Designed Quality Gymnastics Dancewear. 
+																	High quality girls gymnastics leotards UK. 
+																	Abdul Hadi wrote on the page. 
+																	Saved by Ayla Miller. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	47 out of 5 stars 256. 
+																	Elite Gymnastics began with a father wishing to provide his son with good quality gymnastics gear. 
+																	A wide variety of college gymnastics leotards options are available to you. 
+																	Look for UCLA coming soon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Last week some critics in the majority Muslim country slammed the 21-year-old saying they could see the shape of her aurat genitalia in her leotard. 
+																	XFGIRLS Gymnastics Leotards for Girls Long Sleeve Leortards for Girls Gradient Athletic Leotard 3-12 Years. 
+																	Two kits are available. 
+																	O3GL007 Obersee Girls Gymnastics Leotards One-Piece Athletic Activewear Girls Dance Outfit Girls Womens Sizes - Rainbow 5399. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Arkansas fans cheer during the NCAA gymnastics Regional Saturday April 5 2014 in Barnhill Arena in Fayetteville. 
+																	Kids Girls Ballet Dance Gymnastics Leotard Lace Turtle Neck Lace Back Sleeveless. 
+																	47 out of 5 stars 219. 
+																	College Gymnastics Leotards Sport Equipment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Officially licensed college leotards and more for gymnasts and dancers to help express your school spirit. 
+																	Feb 8 2020 - Explore Matt Sullivans board college gymnastics followed by 178 people on Pinterest. 
+																	Since then the site has transformed into a one-stop-shop for college gymnastics news from recruiting analysis to meet coverage at the NCAA national championships thanks to the hard work of 10-plus contributors. 
+																	Foxys Leotards offers 13 of your favorite colleges and we are growing our collection. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Foxys Leotards offers 13 of your favorite colleges and we are growing our collection. 
+																	The Kent College Gymnastics Academy is a thriving award winning Gymnastics Club established in 2009. 
+																	Competition Attire Black and Green ONeils and Blue Leotards A Star Ivybridge Community College Academy Attire Blue Nike Kit Students are not to wear the competition attire into PE lessons but the blue Nike kit is allowed to be worn in PE lessons. 
+																	FREE Delivery on your first order shipped by Amazon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	April 30 2019 College Gym News Featured Leotards NCAA WAG It was an outstanding season when it came to leotards. 
+																	Officially licensed college leotards and more for gymnasts and dancers to help express your school spirit. 
+																	Sinoeem Gymnastics Leotards for Girls Gradient Color Sparkle Dance Leotard Long SleeveSleeveless Dancewear Girls Leotards Athletic Ballet Dance Dress Kids 3-12 Years. 
+																	Here at The Zone our specialist fabric technologists and designers are constantly striving to make sure that our customers are the smartest coolest and most comfortable performers out there on the floor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College Gymnastics Collection by Joshua Galka. 
+																	Order Gymnastic Leotards and Dance wear from Velocity Dancewear designed in the UK plus we supply British and Worldwide Gymnastics Clubs. 
+																	Order girls Leotards and boys Leotards. 
+																	Classes are open to KC and non KC pupils aged between 4 and 18 and are held on Saturdays from 830am with recreational sessions lasting from between 45 mins to 1. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gymnastics Leotards Our girls gymnastics leotards collection offers over 150 different styles from the leading gymnastics brands. 
+																	Founder Darryn Clarke began the brand with help from leading coaches after discovering just how difficult it was to find great gymnastics wear in the UK. 
+																	Over 100 girls and boys regularly train with the Academy developing their gymnastic talents and competing in regional competitions. 
+																	We got some of the most stunning designs weve ever seen before and some teams really stepped up their game from the past. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Shop all leotards below or narrow by style by selecting an icon. 
+																	Discover our wide selection of the latest trending premium designer gymnastics dance leotards. 
+																	Look for UCLA coming soon. 
+																	This mission of finding and providing quality is something we uphold to this day which is why our. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Looking for a sporty gym leotard. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/f3/c9/abf3c99e5bb65952489cb0af3968fd8d.jpg" data-lightbox="roadtrip" data-title="2011 College Women S Gymnastics Stanford Vs Cal Female Gymnast Gymnastics Gk Leotards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/f3/c9/abf3c99e5bb65952489cb0af3968fd8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSL5nY15tdqZCpY0Tu7HH3o7J5NoOOMHrOg';" alt="2011 College Women S Gymnastics Stanford Vs Cal Female Gymnast Gymnastics Gk Leotards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2011 College Women S Gymnastics Stanford Vs Cal Female Gymnast Gymnastics Gk Leotards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/07/d9/37/07d937350e5ae74a6206ce35862c71ee.jpg" data-lightbox="roadtrip" data-title="College Gymnastics Oops 21 Undeniable Gymnastics Female Gymnast Usa Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/07/d9/37/07d937350e5ae74a6206ce35862c71ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDQwQ7VxiRF03Xh370MxbucONwry2bRp55hQ';" alt="College Gymnastics Oops 21 Undeniable Gymnastics Female Gymnast Usa Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gymnastics Oops 21 Undeniable Gymnastics Female Gymnast Usa Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6d/26/7a/6d267a90d725da98b0571594d3994b55.jpg" data-lightbox="roadtrip" data-title="Pin On Ucla Leos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6d/26/7a/6d267a90d725da98b0571594d3994b55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmwLlNUwgJ_qZ17Z58fLYjg1IvZ9hGYLi6Yw';" alt="Pin On Ucla Leos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ucla Leos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/16/8b/cc168b2fcd368cfefc35c9203e66eecc.jpg" data-lightbox="roadtrip" data-title="Florida 15 College Gym News Gymnastics Photography Gymnastics Pictures Gymnastics Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/16/8b/cc168b2fcd368cfefc35c9203e66eecc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4ztEhIyGJ_Q_RVxQz9pWWOFSS0qEDYGaXA';" alt="Florida 15 College Gym News Gymnastics Photography Gymnastics Pictures Gymnastics Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida 15 College Gym News Gymnastics Photography Gymnastics Pictures Gymnastics Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/af/99/28af99d7c156b5ba8eadc965a3736935.jpg" data-lightbox="roadtrip" data-title="Pin On Gymnastics Routines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/af/99/28af99d7c156b5ba8eadc965a3736935.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV38oHbT6gCu38nF4x6FzOOXLnEDWut4IB3w';" alt="Pin On Gymnastics Routines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gymnastics Routines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/59/67/0959671a764d0d15ec0843258d7e68b8.jpg" data-lightbox="roadtrip" data-title="Pin By Rhythmic Gymnastics On College Gymnastics Leotards Gymnastics Girls Gymnastics Championships Gymnastics Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/59/67/0959671a764d0d15ec0843258d7e68b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-OObz3LZxMBOgaHphHjnfcPzrhidgkRBWnA';" alt="Pin By Rhythmic Gymnastics On College Gymnastics Leotards Gymnastics Girls Gymnastics Championships Gymnastics Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Rhythmic Gymnastics On College Gymnastics Leotards Gymnastics Girls Gymnastics Championships Gymnastics Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/36/2d/68362d895fa72c8b6e896c58b4b32f7a.jpg" data-lightbox="roadtrip" data-title="Results From Search By College Program Gymnastics Photography Gymnastics Photos Artistic Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/36/2d/68362d895fa72c8b6e896c58b4b32f7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlXULVBnAOvU2ydKT9U9xDCOdX1N2Jd1c53Q';" alt="Results From Search By College Program Gymnastics Photography Gymnastics Photos Artistic Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Results From Search By College Program Gymnastics Photography Gymnastics Photos Artistic Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/c9/85/11c98558f57e626265efcef195a62ab6.jpg" data-lightbox="roadtrip" data-title="Sarah Edwards Lsu Gymnastics Female Gymnast Lsu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/c9/85/11c98558f57e626265efcef195a62ab6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYoCAcK7SUa021qg6V0hETS9f3qKCjJzgMAA';" alt="Sarah Edwards Lsu Gymnastics Female Gymnast Lsu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sarah Edwards Lsu Gymnastics Female Gymnast Lsu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/07/64/a7/0764a76135441f458342336439fc1cd5.jpg" data-lightbox="roadtrip" data-title="Pin On Mujeres Atletas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/07/64/a7/0764a76135441f458342336439fc1cd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ41y9PgGs2O_bpkOMbsme--mmgLMaSwdqx_g';" alt="Pin On Mujeres Atletas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mujeres Atletas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/83/14/80831447df29b1e6829796578889ba0a.jpg" data-lightbox="roadtrip" data-title="Pin On Gymnastics Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/83/14/80831447df29b1e6829796578889ba0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjW-1fST8g3EI_KkQLWqOoxnfgArEyJ8uojg';" alt="Pin On Gymnastics Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gymnastics Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/47/2c/6c/472c6ce6b29a39a21d90908aa9e86447.jpg" data-lightbox="roadtrip" data-title="Erica Brewer Gymnastics Girls Gymnastics Pictures Female Gymnast">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/47/2c/6c/472c6ce6b29a39a21d90908aa9e86447.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtrsuZ2Gvs2DlTKbT01F7r567FoaPvLHxiGQ';" alt="Erica Brewer Gymnastics Girls Gymnastics Pictures Female Gymnast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Erica Brewer Gymnastics Girls Gymnastics Pictures Female Gymnast</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e8/fb/09/e8fb09b5a41e07796bf492af7c9d5db4.jpg" data-lightbox="roadtrip" data-title="Pin On Gimnasia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e8/fb/09/e8fb09b5a41e07796bf492af7c9d5db4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8WwI272PE18vK3ghuIAQ2ZmFfpEbbXqx1yA';" alt="Pin On Gimnasia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gimnasia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/89/73/218973ccb794fb92c344fd492b2b425d.jpg" data-lightbox="roadtrip" data-title="Pin On Leotards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/89/73/218973ccb794fb92c344fd492b2b425d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4IaxA2QuIUK3aEytLcIQxkfgl07tVDGY0Qw';" alt="Pin On Leotards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Leotards</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/does-the-gi-bill-pay-out-of-state-tuition.html">Does The Gi Bill Pay Out Of State Tuition</a></li>
+													<li class="list-group-item"><a href="/does-it-matter-where-you-go-to-college-for-engineering-reddit.html">Does It Matter Where You Go To College For Engineering Reddit</a></li>
+													<li class="list-group-item"><a href="/does-it-matter-what-college-you-go-to-for-pre-med.html">Does It Matter What College You Go To For Pre Med</a></li>
+													<li class="list-group-item"><a href="/does-the-air-force-give-you-citizenship.html">Does The Air Force Give You Citizenship</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-cover-housing.html">Does The Gi Bill Cover Housing</a></li>
+													<li class="list-group-item"><a href="/does-in-and-out-pay-for-college.html">Does In And Out Pay For College</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-apply-to-officers.html">Does The Gi Bill Apply To Officers</a></li>
+													<li class="list-group-item"><a href="/does-coast-guard-get-gi-bill.html">Does Coast Guard Get Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-capella-university-accept-gi-bill.html">Does Capella University Accept Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-mit-accept-gi-bill.html">Does Mit Accept Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-general-assembly-accept-gi-bill.html">Does General Assembly Accept Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-post-9-11-gi-bill-cover-certificate-programs.html">Does Post 9 11 Gi Bill Cover Certificate Programs</a></li>
+													<li class="list-group-item"><a href="/does-the-gi-bill-cover-housing-for-dependents.html">Does The Gi Bill Cover Housing For Dependents</a></li>
+													<li class="list-group-item"><a href="/does-it-matter-what-college-you-go-to-for-engineering.html">Does It Matter What College You Go To For Engineering</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-cover-continuing-education.html">Does Gi Bill Cover Continuing Education</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-cover-apprenticeships.html">Does Gi Bill Cover Apprenticeships</a></li>
+													<li class="list-group-item"><a href="/does-pensacola-christian-college-accept-gi-bill.html">Does Pensacola Christian College Accept Gi Bill</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-pay-for-prerequisites.html">Does Gi Bill Pay For Prerequisites</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-cover-living-expenses.html">Does Gi Bill Cover Living Expenses</a></li>
+													<li class="list-group-item"><a href="/does-gi-bill-pay-during-summer.html">Does Gi Bill Pay During Summer</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

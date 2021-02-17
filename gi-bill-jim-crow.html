@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gi Bill Jim Crow - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gi Bill Jim Crow",
+  "datePublished": "2021-02-17",
+  "image": "https://i.ytimg.com/vi/7_vv7GwVkAU/hqdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gi+bill+jim+crow",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gi Bill Jim Crow</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It created the middle class with its subsidies which went overwhelmingly to whites. The race riot of one night in June 1943 June 22 2018 456am EDT Alan Rice University of Central Lancashire. Historian Ira Katznelson has documented how and why black Americans have received far less assistance from social programs than white Americans and argues that the GI bill was deliberately designed to accommodate Jim Crow laws. <br>				
+			</p>
+										<a class="badge badge-info" href="/how-to-qualify-for-gi-bill.html">how to qualify for gi bill</a>
+											<a class="badge badge-danger" href="/how-to-sell-books-door-to-door.html">how to sell books door to door</a>
+											<a class="badge badge-primary" href="/is-college-harder-to-get-into-now.html">is college harder to get into now</a>
+											<a class="badge badge-primary" href="/if-i-transfer-my-gi-bill-can-i-still-use-it.html">if i transfer my gi bill can i still use it</a>
+											<a class="badge badge-secondary" href="/how-to-use-go-to-college-mod-sims-4.html">how to use go to college mod sims 4</a>
+											<a class="badge badge-primary" href="/how-to-use-my-gi-bill-on-active-duty.html">how to use my gi bill on active duty</a>
+											<a class="badge badge-danger" href="/icd-9-upper-gi-bleeding.html">icd 9 upper gi bleeding</a>
+											<a class="badge badge-secondary" href="/how-to-transfer-post-911-gi-bill-to-dependents.html">how to transfer post 911 gi bill to dependents</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the ideal blog.  Our website gives you suggestions for seeing the highest quality video and picture content, search and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, so we recommend this video for you to view.  You can also bring about supporting this site by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.history.com/.image/t_share/MTY0OTQ0NDA4ODMwMDI3NDc2/gi-bill-gettyimages-515579398.jpg" data-lightbox="roadtrip" data-title="How The Gi Bill S Promise Was Denied To A Million Black Wwii Veterans History">
+											<img class="card-img v-image ads-img " src="https://www.history.com/.image/t_share/MTY0OTQ0NDA4ODMwMDI3NDc2/gi-bill-gettyimages-515579398.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfI9Dr-yTwepI2CTcyaF4WlE4gHBVi3RmQDQ';" alt="How The Gi Bill S Promise Was Denied To A Million Black Wwii Veterans History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How The Gi Bill S Promise Was Denied To A Million Black Wwii Veterans History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.tchabitat.org/hs-fs/hubfs/GI%20Bill%205.png?width=300&amp;name=GI%20Bill%205.png" data-lightbox="roadtrip" data-title="Mepsxqy2aovy5m">
+											<img class="card-img v-image ads-img " src="https://www.tchabitat.org/hs-fs/hubfs/GI%20Bill%205.png?width=300&amp;name=GI%20Bill%205.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT85hphiR2NRiQZFrSgjr1o7zxHuV-Zvaqejw';" alt="Mepsxqy2aovy5m">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mepsxqy2aovy5m</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bri-wp-images.s3.amazonaws.com/wp-content/uploads/BRI_APUSH_13_03_SignGIBill-780x527.jpg" data-lightbox="roadtrip" data-title="The G I Bill Bill Of Rights Institute">
+											<img class="card-img v-image ads-img " src="https://bri-wp-images.s3.amazonaws.com/wp-content/uploads/BRI_APUSH_13_03_SignGIBill-780x527.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS38V4KkadsvtmYlbauFlLp_IWspCpP7b-UgA';" alt="The G I Bill Bill Of Rights Institute">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The G I Bill Bill Of Rights Institute</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://progressive.org/downloads/9261/download/Bundesarchiv_Bild_146-2005-0076_Ardennenoffensive_US-Gefangene.jpg?cb=4a1d6a3a5fd37a646cb496986c8222f1&amp;w=640" data-lightbox="roadtrip" data-title="How African American Wwii Veterans Were Scorned By The G I Bill Progressive Org">
+											<img class="card-img v-image ads-img " src="https://progressive.org/downloads/9261/download/Bundesarchiv_Bild_146-2005-0076_Ardennenoffensive_US-Gefangene.jpg?cb=4a1d6a3a5fd37a646cb496986c8222f1&amp;w=640" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL661ZJAYWubl-qspWsDpb9FA_Kj5qP0L_cA';" alt="How African American Wwii Veterans Were Scorned By The G I Bill Progressive Org">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How African American Wwii Veterans Were Scorned By The G I Bill Progressive Org</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://inside.sfuhs.org/dept/history/US_History_reader/Chapter13/gibill4.jpg" data-lightbox="roadtrip" data-title="Race And The Gi Bill">
+											<img class="card-img v-image ads-img " src="http://inside.sfuhs.org/dept/history/US_History_reader/Chapter13/gibill4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStDlHftQb6Tv16waagN_38kj4xcXMqhDMXQw';" alt="Race And The Gi Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Race And The Gi Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://aaregistry.org/wp-content/uploads/2017/12/G.I.-bill-and-racism-300x225.jpg" data-lightbox="roadtrip" data-title="The G I Bill A Brief History African American Registry">
+											<img class="card-img v-image ads-img " src="https://aaregistry.org/wp-content/uploads/2017/12/G.I.-bill-and-racism-300x225.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiLvXLiGg8BRav4RaDxpK-k1UQXJJsUXwUIQ';" alt="The G I Bill A Brief History African American Registry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The G I Bill A Brief History African American Registry</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://aaregistry.org/wp-content/uploads/2017/12/G.I.-bill-and-racism-300x225.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiLvXLiGg8BRav4RaDxpK-k1UQXJJsUXwUIQ';" alt="The G I Bill A Brief History African American Registry">
+										<div class="card-body">
+						<h3 class="h5"><b>The Civil Rights Movement put an end to Jim Crow - the system of laws and customs that enforced racial segregation and discrimination throughout the United States.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gi bill jim crow</strong>. 
+								
+																	Rankin knew that at least in the South the GI Bills education benefits would be filtered through state agencies that were governed by both the formal and informal rules of Jim Crow. 
+																	The GI Bill and the Making of the Greatest Generation Oxford University Press 2005. 
+																	Even when black people were freed from slavery additional forms of oppression continued such as lack of reparations to help reduce the impact of generations of slavery. 
+																	Board of Education and the Civil Rights Movement local and federal governmental policies still marginalized people of color. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jim Crow codified a system of racial apartheid that affected almost every aspect of daily life for African Americans greatly or even completely restricting their access to economic and civil rights. 
+																	Rankin knew that at least in the South the GI Bills education benefits would be filtered through state agencies that were governed by both the formal and informal rules of Jim Crow. 
+																	In 1944 President Roosevelt signed into law the Servicemens Readjustment Actcommonly referred to as the GI Billwhich provided a range of benefits such as guaranteed mortgages to. 
+																	THE LAWS THAT MADE THE SOUTH SEPARATE AND UNEQUAL Black Codes Failure of Reconstruction Lincoln the Colonizationist Part 2 with Phil Magness Lincoln the Colonizationist Part 1 with Phil Magness Fabrice Monteiros Amazing Images of Brown. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And for a Black man from Jim Crow North Carolina the consequences likely wouldnt stop there. 
+																	In this image from video Majority Whip Rep. 
+																	But a dishonorable discharge would make the GI Bill a non-starter. 
+																	He could rely on the banks and the Federal Housing Administration to help ensure that the home loans would also be restricted. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Written under Southern auspices the GI Bill was deliberately designed to accommodate Jim Crow Generally enrolment at traditionally black colleges increased exponentially after the second world war because of the GI Bill. 
+																	The GI Bill gave financial aid to veterans for education and low-interest mortgage loans. 
+																	Lynchings jim crow laws redlining which deepened segregation unequal access to GI bill for returning military. 
+																	Black troops were welcome in Britain but Jim Crow wasnt. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Even after Brown vs. 
+																	History any of the laws that enforced racial segregation in the South between the end of Reconstruction in 1877 and the beginning of the civil rights movement in the 1950s. 
+																	When lawmakers began drafting the GI Bill in 1944 some Southern Democrats feared that returning Black veterans would use public sympathy for veterans to advocate against Jim Crow laws. 
+																	However all of these historians only analyze the effects of the GI Bill immediately after World War II and fail to include evaluation of the time when Jim Crow did not play a major role in the South. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In assessing the impact of the Bills education and training provisions on African Americans and racial equality we come to different conclusions. 
+																	Failed to benefit African Americans as it did with white Americans. 
+																	Due to the discrimination by local and state governments as well as by private actors in housing and education the GI. 
+																	How the GI Bills Promise Was Denied to a Million Black WWII Veterans How white Americans used lynchings to terrorize and control black people JIM CROW. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As an aspiring professor Withers hoped the GI Bill would help him get a PhD and maybe just maybe escape the fate that America had written for him. 
+																	Jim Crow law in US. 
+																	Jim Clyburn D-SC speaks from Charleston during the first night of the Democratic National Convention on Aug. 
+																	He cites a study declaring it was as though the GI Bill had been earmarked For White Veterans Only. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But a dishonorable discharge would make. 
+																	As an aspiring professor Withers hoped the GI Bill would help him get a PhD and maybe just maybe escape the fate that America had written for him. 
+																	Laws that accompanied New Deal relief and the GI. 
+																	Clyburn has introduced a bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill was racially discriminatory as it was intended to accommodate Jim Crow laws. 
+																	Katznelson argues that the administration of these benefits widened the gap between whites and blacks in the postwar era often. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blog.newspapers.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-28-at-8.08.45-AM-1024x702.png" data-lightbox="roadtrip" data-title="G I Bill Gives Back To Soldiers Returning From Wwii Fishwrap The Official Blog Of Newspapers Com">
+											<img class="card-img v-image ads-img " src="https://blog.newspapers.com/wp-content/uploads/2020/09/Screen-Shot-2020-09-28-at-8.08.45-AM-1024x702.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgt0H7_q8d4PDStq6SbKp4EM8Pef5Vt4G2Qg';" alt="G I Bill Gives Back To Soldiers Returning From Wwii Fishwrap The Official Blog Of Newspapers Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">G I Bill Gives Back To Soldiers Returning From Wwii Fishwrap The Official Blog Of Newspapers Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/_98_27a6N2o/hqdefault.jpg" data-lightbox="roadtrip" data-title="The Gi Bill And The Racial Divide Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/_98_27a6N2o/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQshlTuS8YAna315w-10NolywVXKSQ0hqs5yQ';" alt="The Gi Bill And The Racial Divide Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Gi Bill And The Racial Divide Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://whereistheoutrage.net/wp-content/uploads/2012/03/gi-bill.jpg" data-lightbox="roadtrip" data-title="The Gi Bill And Race">
+											<img class="card-img v-image ads-img " src="http://whereistheoutrage.net/wp-content/uploads/2012/03/gi-bill.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJDc68J0AuN6DNK1PHhpfQjtfgyX9h0GlH_g';" alt="The Gi Bill And Race">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Gi Bill And Race</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.thegedsection.com/112634/uploads/8d459e40-98c5-11e9-ae49-df120227e226_800_420.jpeg" data-lightbox="roadtrip" data-title="How A Million Black Wwii Veterans Were Denied The Benefits Of Gi Bill A Generation Betrayed">
+											<img class="card-img v-image ads-img " src="https://cdn.thegedsection.com/112634/uploads/8d459e40-98c5-11e9-ae49-df120227e226_800_420.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDAnT844J8Cf6CJJO43PBIgfsdbr0bQ0WObg';" alt="How A Million Black Wwii Veterans Were Denied The Benefits Of Gi Bill A Generation Betrayed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How A Million Black Wwii Veterans Were Denied The Benefits Of Gi Bill A Generation Betrayed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/GIBill.jpg/440px-GIBill.jpg" data-lightbox="roadtrip" data-title="G I Bill Wikiwand">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/GIBill.jpg/440px-GIBill.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxaQtFWkF8eL0uK285undo1UQRZa1xLrRZCw';" alt="G I Bill Wikiwand">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">G I Bill Wikiwand</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.aaihs.org/2019/10/Blood-Sweat-and-Tears-675x1024.jpg" data-lightbox="roadtrip" data-title="The History Of Black College Football Aaihs">
+											<img class="card-img v-image ads-img " src="https://cdn.aaihs.org/2019/10/Blood-Sweat-and-Tears-675x1024.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXSyo53TfXDmGQCCWJ79VyYRrBHSHx8Yb_Tw';" alt="The History Of Black College Football Aaihs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The History Of Black College Football Aaihs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://chronicle.brightspotcdn.com/dims4/default/81bad11/2147483647/strip/true/crop/1000x667+0+28/resize/840x560!/quality/90/?url=http%3A%2F%2Fchronicle-brightspot.s3.amazonaws.com%2F8c%2Ff1%2F23ad22d06fa472b3c396011ceb31%2F15privategood-gettyimages-515354154-ipad-image.jpg" data-lightbox="roadtrip" data-title="When College Was A Public Good">
+											<img class="card-img v-image ads-img " src="https://chronicle.brightspotcdn.com/dims4/default/81bad11/2147483647/strip/true/crop/1000x667+0+28/resize/840x560!/quality/90/?url=http%3A%2F%2Fchronicle-brightspot.s3.amazonaws.com%2F8c%2Ff1%2F23ad22d06fa472b3c396011ceb31%2F15privategood-gettyimages-515354154-ipad-image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQquqGBIxrs27gaKZVEt4qXPA2VThD11iFLQg';" alt="When College Was A Public Good">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When College Was A Public Good</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/7_vv7GwVkAU/hqdefault.jpg" data-lightbox="roadtrip" data-title="Looking Back At The Impact Of The Gi Bill Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/7_vv7GwVkAU/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-g2q-dfrz3NWT4ORsTIh2WPh1jdm_OdCF7g';" alt="Looking Back At The Impact Of The Gi Bill Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Looking Back At The Impact Of The Gi Bill Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/83/5e/06835e5f80840e58123dd5183c63ef37.jpg" data-lightbox="roadtrip" data-title="How The Gi Bill S Promise Was Denied To A Million Black Wwii Veterans History Wwii Veterans Gi Bill Black American">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/83/5e/06835e5f80840e58123dd5183c63ef37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5cP2xQTN7tnITVoBJvr-tHZpJhTvSFKZ4Xw';" alt="How The Gi Bill S Promise Was Denied To A Million Black Wwii Veterans History Wwii Veterans Gi Bill Black American">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How The Gi Bill S Promise Was Denied To A Million Black Wwii Veterans History Wwii Veterans Gi Bill Black American</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.archives.gov/files/research/african-americans/ww2-pictures/images/african-americans-wwii-202.jpg" data-lightbox="roadtrip" data-title="Black Veterans Return From World War Ii Sncc Digital Gateway Sncc Digital Gateway">
+											<img class="card-img v-image ads-img " src="https://www.archives.gov/files/research/african-americans/ww2-pictures/images/african-americans-wwii-202.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREn4ALWIlUApSJ-W7i_VBtAZ5XyHihq5sfHQ';" alt="Black Veterans Return From World War Ii Sncc Digital Gateway Sncc Digital Gateway">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Black Veterans Return From World War Ii Sncc Digital Gateway Sncc Digital Gateway</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images-na.ssl-images-amazon.com/images/I/511V0h-Cv5L._SX345_BO1,204,203,200_.jpg" data-lightbox="roadtrip" data-title="The Jim Crow Encyclopedia 2 Volumes Greenwood Milestones In African American History Milestones In Business History Brown Nikki Stentiford Barry M 9780313341816 Amazon Com Books">
+											<img class="card-img v-image ads-img " src="https://images-na.ssl-images-amazon.com/images/I/511V0h-Cv5L._SX345_BO1,204,203,200_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFfCGXCt94bRL0Izb1lOZEyRqjhO958lenjQ';" alt="The Jim Crow Encyclopedia 2 Volumes Greenwood Milestones In African American History Milestones In Business History Brown Nikki Stentiford Barry M 9780313341816 Amazon Com Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Jim Crow Encyclopedia 2 Volumes Greenwood Milestones In African American History Milestones In Business History Brown Nikki Stentiford Barry M 9780313341816 Amazon Com Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/24/f6/5c24f6dfed2463b4f24301ae2218914c.jpg" data-lightbox="roadtrip" data-title="Pin On Black History That Wasn T Taught In School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/24/f6/5c24f6dfed2463b4f24301ae2218914c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8DzzPB9ot5hMPNvWYB6HhBBNLKzspIx3cQg';" alt="Pin On Black History That Wasn T Taught In School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Black History That Wasn T Taught In School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://journeys.dartmouth.edu/censushistory/files/2016/10/White-Percentages.png" data-lightbox="roadtrip" data-title="Black And White Veterans And The Gi Bill History 90 01 Topics In Digital History">
+											<img class="card-img v-image ads-img " src="https://journeys.dartmouth.edu/censushistory/files/2016/10/White-Percentages.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Ol3zT4priOegGHNOTsLX8odCRUVucsQSlA';" alt="Black And White Veterans And The Gi Bill History 90 01 Topics In Digital History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Black And White Veterans And The Gi Bill History 90 01 Topics In Digital History</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/womens-college-basketball-uconn.html">Womens College Basketball Uconn</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-uconn-schedule.html">Womens College Basketball Uconn Schedule</a></li>
+													<li class="list-group-item"><a href="/yellow-ribbon-for-va.html">Yellow Ribbon For Va</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-stats.html">Womens College Basketball Stats</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-team-rosters.html">Womens College Basketball Team Rosters</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-usa.html">Womens College Basketball Usa</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-scoring-records.html">Womens College Basketball Scoring Records</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-teams-near-me.html">Womens College Basketball Teams Near Me</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-top-25-rankings.html">Womens College Basketball Top 25 Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-strength-of-schedule.html">Womens College Basketball Strength Of Schedule</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-team-recruiting.html">Womens College Basketball Team Recruiting</a></li>
+													<li class="list-group-item"><a href="/womens-college-gymnastics-schedule-2021.html">Womens College Gymnastics Schedule 2021</a></li>
+													<li class="list-group-item"><a href="/yellow-ribbon-flight-training.html">Yellow Ribbon Flight Training</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-vs-mens.html">Womens College Basketball Vs Mens</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-south-carolina.html">Womens College Basketball South Carolina</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-undefeated-teams.html">Womens College Basketball Undefeated Teams</a></li>
+													<li class="list-group-item"><a href="/womens-ncaa-basketball-march-madness.html">Womens Ncaa Basketball March Madness</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-three-point-line.html">Womens College Basketball Three Point Line</a></li>
+													<li class="list-group-item"><a href="/yellow-ribbon-montgomery-gi-bill.html">Yellow Ribbon Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/world-war-ii-gi-bill-restoration-act.html">World War Ii Gi Bill Restoration Act</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

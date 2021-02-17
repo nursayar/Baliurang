@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Womens Basketball Maryland - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Womens Basketball Maryland",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/f0/53/37/f053372c3875c603ca1ca16c2fbbafeb.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+womens+basketball+maryland",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Womens Basketball Maryland</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Terps are a member of the Atlantic Coast Conference and won the NCAA championship. The NCAA tournament was preceded by the AIAW Womens Basketball Tournament which was held annually from 1972 to 1982. Maryland a founding member of the Atlantic Coast Conference ACC left the ACC in 2014 to join the Big Ten Conference. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/does-jschlatt-go-to-college.html">does jschlatt go to college</a>
+											<a class="badge badge-danger" href="/does-gi-bill-pay-for-private-college.html">does gi bill pay for private college</a>
+											<a class="badge badge-danger" href="/does-going-to-college-make-you-more-successful.html">does going to college make you more successful</a>
+											<a class="badge badge-warning" href="/does-the-air-force-offer-the-gi-bill.html">does the air force offer the gi bill</a>
+											<a class="badge badge-light" href="/does-in-and-out-pay-for-college.html">does in and out pay for college</a>
+											<a class="badge badge-secondary" href="/does-the-air-force-have-the-gi-bill.html">does the air force have the gi bill</a>
+											<a class="badge badge-success" href="/does-the-gi-bill-pay-for-housing.html">does the gi bill pay for housing</a>
+											<a class="badge badge-light" href="/does-post-911-gi-bill-cover-out-of-state-tuition.html">does post 911 gi bill cover out of state tuition</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the ideal blog.  Our website gives you suggestions for viewing the highest quality video and picture content, search and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/25/e7/8d25e712a2ebefd579398f024ab835fd.jpg" data-lightbox="roadtrip" data-title="Maryland Wbb Basketball Team Pictures Basketball Senior Pictures Sports Team Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/25/e7/8d25e712a2ebefd579398f024ab835fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu_GeY_i_6-S5e0jMyetw4t4BC0TAkLKuhkw&amp;ec=45771800';" alt="Maryland Wbb Basketball Team Pictures Basketball Senior Pictures Sports Team Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maryland Wbb Basketball Team Pictures Basketball Senior Pictures Sports Team Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/b4/06/e4b406f650b964fff33084e5529ae69b.jpg" data-lightbox="roadtrip" data-title="Ncaa Womens Basketball Maryland At Clemson Womens Basketball Sports Women Sports Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/b4/06/e4b406f650b964fff33084e5529ae69b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPU14kcqs5373rZyupxO6ECcSbScjubN_CxA&amp;ec=45771800';" alt="Ncaa Womens Basketball Maryland At Clemson Womens Basketball Sports Women Sports Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Womens Basketball Maryland At Clemson Womens Basketball Sports Women Sports Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/17/98/3d17982dfcc3b212963bf9b90e2a31c9.jpg" data-lightbox="roadtrip" data-title="2014 Ncaa Women S Final Four Maryland Stanford Will Join Notre Dame Uconn In Nashville Uconn Stanford Womens Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/17/98/3d17982dfcc3b212963bf9b90e2a31c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJFEcypFIscZ6R_IGucsL_EJ26nzxrVISUzA&amp;ec=45771800';" alt="2014 Ncaa Women S Final Four Maryland Stanford Will Join Notre Dame Uconn In Nashville Uconn Stanford Womens Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2014 Ncaa Women S Final Four Maryland Stanford Will Join Notre Dame Uconn In Nashville Uconn Stanford Womens Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/ad/d4/a1add4b56f51341e08de614543945d9a.jpg" data-lightbox="roadtrip" data-title="Maryland Women S Basketball Lands Transfer From Florida S Eleanna Christinaki Per Report She Ll Be Eligible Hal Womens Basketball Ncaa Basketball Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/ad/d4/a1add4b56f51341e08de614543945d9a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQusyMp0HIp2CWzQjz7KEbll5ECJFLMvy3wrw&amp;ec=45771800';" alt="Maryland Women S Basketball Lands Transfer From Florida S Eleanna Christinaki Per Report She Ll Be Eligible Hal Womens Basketball Ncaa Basketball Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maryland Women S Basketball Lands Transfer From Florida S Eleanna Christinaki Per Report She Ll Be Eligible Hal Womens Basketball Ncaa Basketball Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/44/b7/ab44b7a89fcd9e23d3dc5f0d8ca10ecf.jpg" data-lightbox="roadtrip" data-title="Iowa And Maryland Earn Weekly Women S Basketball Awards Basketball Awards Womens Basketball Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/44/b7/ab44b7a89fcd9e23d3dc5f0d8ca10ecf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sBqt2eOrPg47aRCl4MYdhlGdgxCLzOvZvw&amp;ec=45771800';" alt="Iowa And Maryland Earn Weekly Women S Basketball Awards Basketball Awards Womens Basketball Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iowa And Maryland Earn Weekly Women S Basketball Awards Basketball Awards Womens Basketball Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/2e/aa/4a2eaa649080bc16d0b15326bc6bc319.jpg" data-lightbox="roadtrip" data-title="Uconn Vs Maryland Ncaa Final Four Uconn Womens Basketball Uconn Uconn Huskies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/2e/aa/4a2eaa649080bc16d0b15326bc6bc319.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrRxh9u6uHnsZCMWOmus0gPiMTPkx7syZBug&amp;ec=45771800';" alt="Uconn Vs Maryland Ncaa Final Four Uconn Womens Basketball Uconn Uconn Huskies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn Vs Maryland Ncaa Final Four Uconn Womens Basketball Uconn Uconn Huskies</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e9/22/a0/e922a0bf8147cafbe1cf7e52710e071f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrRxh9u6uHnsZCMWOmus0gPiMTPkx7syZBug&amp;ec=45771800';" alt="Uconn Vs Maryland Ncaa Final Four Uconn Womens Basketball Uconn Uconn Huskies">
+										<div class="card-body">
+						<h3 class="h5"><b>The NCAA announced Monday that this seasons Division I womens basketball tournament will be held in one geographic area and that it has begun preliminary talks with San Antonio and the.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa womens basketball maryland</strong>. 
+								
+																	Some of the most underrated players on top-10 contenders could be the difference leading into the NCAA tournament. 
+																	Womens College Basketball Rankings - Week 11 2020-21 2019-20 2018-19 2017-18 2016-17 2015-16 2014-15 2013-14 2012-13 2011-12 2010-11 2009-10 2008-09 2007-08 2006-07 2005-06 2004-05 2003-04 2002. 
+																	The 200506 Maryland Terrapins womens basketball team represented the University of Maryland College Park in the 20052006 NCAA Division I basketball season. 
+																	The Maryland Terrapins coached by Brenda Frese won their first National Championship beating the Duke Blue Devils coached by Gail Goestenkors 7875 in overtime. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 1989 NCAA Division I Womens Basketball Tournament began on March 15 and ended on April 2. 
+																	The Terps were coached by Brenda Frese. 
+																	Five womens college basketball players who could be X factors in March Some of the most underrated players on top-10 contenders could be the difference leading into the NCAA tournament. 
+																	November 28th 2020 - Alico Arena Fort Myers FL Maryland vs Missouri St. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Maryland Terrapins womens basketball team represents the University of Maryland in National Collegiate Athletic Association Division I competition. 
+																	The tournament expanded from 40 to 48 teams. 
+																	The official 2020-21 Womens Basketball schedule for the University of Maryland Terrapins. 
+																	The official Womens Basketball page for the University of Maryland Terrapins. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Maryland and UCLA break into the womens basketball rankings for Week 8 while Kentucky and Arizona drop out. 
+																	The 2006 NCAA Division I Womens Basketball Tournament was held from March 18 to April 4 2006 at several sites with the championship game held in Boston. 
+																	Held each March the Womens Championship was inaugurated in the 198182 season. 
+																	The Final Four consisted of Auburn Louisiana Tech Tennessee and Maryland with Tennessee winning its second title with a 76-60 victory over Auburn. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The official 2020-21 Womens Basketball Roster for the University of Maryland Terrapins. 
+																	The womens NCAA tournament will be held on six courts at five venues in the San Antonio region from March 21-April 4 because of the COVID-19 pandemic the NCAA announced Friday. 
+																	Maryland Pac-12 the big winners in womens NCAA selection committees first reveal Kaila Charles and the Terps 17-4 have lost to South Carolina NC State Northwestern and Iowa this season. 
+																	January 28th 2021 - Xfinity Center College Park MD Michigan St. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Five womens college basketball players who could be X factors in March. 
+																	The NCAA Division I Womens Basketball Tournamentis an annual college basketballtournament for women. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/ca/15/47ca15b96146932471c15c39cb306998.jpg" data-lightbox="roadtrip" data-title="Maryland Routs Miami Fla Guard Chloe Pavlech Had A Game High 20 Points With Three Other Terps Scoring In Dou Womens Basketball Sports Lover Ncaa Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/ca/15/47ca15b96146932471c15c39cb306998.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBrJtPQZaUy49HzANUvyJRsoAFm2Ms9g9NQ&amp;ec=45771800';" alt="Maryland Routs Miami Fla Guard Chloe Pavlech Had A Game High 20 Points With Three Other Terps Scoring In Dou Womens Basketball Sports Lover Ncaa Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maryland Routs Miami Fla Guard Chloe Pavlech Had A Game High 20 Points With Three Other Terps Scoring In Dou Womens Basketball Sports Lover Ncaa Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/09/dd/dc/09dddca6e8cfc1899a04be5f385ece23.jpg" data-lightbox="roadtrip" data-title="Maryland Women S Basketball Will Ask Standout Kaila Charles To Do More While Scoring Less Basketball News Basketball Season Ncaa Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/09/dd/dc/09dddca6e8cfc1899a04be5f385ece23.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Rxwf31T--BljG9EnTUgnRl04n3Qx6vbxqw&amp;ec=45771800';" alt="Maryland Women S Basketball Will Ask Standout Kaila Charles To Do More While Scoring Less Basketball News Basketball Season Ncaa Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maryland Women S Basketball Will Ask Standout Kaila Charles To Do More While Scoring Less Basketball News Basketball Season Ncaa Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/53/37/f053372c3875c603ca1ca16c2fbbafeb.png" data-lightbox="roadtrip" data-title="Chloe Tierney Malina And Coach Langley Womens Basketball Coaching Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/53/37/f053372c3875c603ca1ca16c2fbbafeb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39kbAGgtqqlUAvDLY8raavxAj8juO1NefAw&amp;ec=45771800';" alt="Chloe Tierney Malina And Coach Langley Womens Basketball Coaching Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chloe Tierney Malina And Coach Langley Womens Basketball Coaching Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/79/c8/5d79c87aa502251efb5bb2baeb3fbdbc.jpg" data-lightbox="roadtrip" data-title="Hays Terps Hawkins Turns Into Top Player Basketball Uniforms Design College Basketball Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/79/c8/5d79c87aa502251efb5bb2baeb3fbdbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5vbQKCdcN7XduPwWrOCObFeqX7DNHPgYcQ&amp;ec=45771800';" alt="Hays Terps Hawkins Turns Into Top Player Basketball Uniforms Design College Basketball Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hays Terps Hawkins Turns Into Top Player Basketball Uniforms Design College Basketball Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/23/f7/9623f7150fff0a50669de7aa473ef44e.jpg" data-lightbox="roadtrip" data-title="Uconn Vs Maryland Ncaa Final Four Uconn Womens Basketball Uconn Uconn Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/23/f7/9623f7150fff0a50669de7aa473ef44e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHK--p7v39N0jw0bphOV1gTNgxjCVzF9Wv4Q&amp;ec=45771800';" alt="Uconn Vs Maryland Ncaa Final Four Uconn Womens Basketball Uconn Uconn Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn Vs Maryland Ncaa Final Four Uconn Womens Basketball Uconn Uconn Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/a7/83/9aa7836b279f8f8c8b7d67b8f432b5cc.jpg" data-lightbox="roadtrip" data-title="Willingboro Native Crystal Langhorne Was A Member Of The Ncaa Champion Maryland Women S Basketball Team Who Went On Ncaa Champion Womens Basketball Jersey Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/a7/83/9aa7836b279f8f8c8b7d67b8f432b5cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH0tW4LSjzMc35XvxLpcpGfg670KiEtIPgxQ&amp;ec=45771800';" alt="Willingboro Native Crystal Langhorne Was A Member Of The Ncaa Champion Maryland Women S Basketball Team Who Went On Ncaa Champion Womens Basketball Jersey Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Willingboro Native Crystal Langhorne Was A Member Of The Ncaa Champion Maryland Women S Basketball Team Who Went On Ncaa Champion Womens Basketball Jersey Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/47/d3/f447d37a6330eabec2bae72097659307.jpg" data-lightbox="roadtrip" data-title="Pin On Maryland University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/47/d3/f447d37a6330eabec2bae72097659307.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv0CdSmLlNqyL4lpwDrh52xHMgrLbnH7EhrA&amp;ec=45771800';" alt="Pin On Maryland University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Maryland University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/3c/0f/1b3c0f6ca2baec9f89b9363ea9d5db8c.jpg" data-lightbox="roadtrip" data-title="Maryland Wbb Umdwbb Twitter Ncaa Champion Wnba Candace Parker">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/3c/0f/1b3c0f6ca2baec9f89b9363ea9d5db8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqW-tSo2LA5nJnfcqjN--Vs7yFQ9wW4t_4Cw&amp;ec=45771800';" alt="Maryland Wbb Umdwbb Twitter Ncaa Champion Wnba Candace Parker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maryland Wbb Umdwbb Twitter Ncaa Champion Wnba Candace Parker</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/d2/81/16d28186a2f154e7c5d8efdf451b834f.jpg" data-lightbox="roadtrip" data-title="Ncaa Women S Lacrosse Final Previewing No 1 Seed Maryland Vs No 2 North Carolina Lacrosse Girls Womens Lacrosse Lacrosse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/d2/81/16d28186a2f154e7c5d8efdf451b834f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchIoWvo6NsC9nkPsdyxptbAEd2COk5p9u-w&amp;ec=45771800';" alt="Ncaa Women S Lacrosse Final Previewing No 1 Seed Maryland Vs No 2 North Carolina Lacrosse Girls Womens Lacrosse Lacrosse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Women S Lacrosse Final Previewing No 1 Seed Maryland Vs No 2 North Carolina Lacrosse Girls Womens Lacrosse Lacrosse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/22/a0/e922a0bf8147cafbe1cf7e52710e071f.jpg" data-lightbox="roadtrip" data-title="Uconn Vs Maryland Ncaa Final Four Uconn Womens Basketball Uconn Uconn Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/22/a0/e922a0bf8147cafbe1cf7e52710e071f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNlPcJBncLO4hoZXB9VF0rQuqIsxfDzQHhCA&amp;ec=45771800';" alt="Uconn Vs Maryland Ncaa Final Four Uconn Womens Basketball Uconn Uconn Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn Vs Maryland Ncaa Final Four Uconn Womens Basketball Uconn Uconn Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/3a/83/573a8314aae2eeac500cf54e82a5c79a.jpg" data-lightbox="roadtrip" data-title="Photo Oregon S Sabrina Ionescu Right And Maryland S Shatori Walker Kimbrough In The Second Half Female Athletes Sabrina Love And Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/3a/83/573a8314aae2eeac500cf54e82a5c79a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYLyj2sGaUMz4jHLwKn-21H2qNJZtDnv8qSg&amp;ec=45771800';" alt="Photo Oregon S Sabrina Ionescu Right And Maryland S Shatori Walker Kimbrough In The Second Half Female Athletes Sabrina Love And Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo Oregon S Sabrina Ionescu Right And Maryland S Shatori Walker Kimbrough In The Second Half Female Athletes Sabrina Love And Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/e8/05/04e805c5ac194d097b6618020bf97fe4.jpg" data-lightbox="roadtrip" data-title="Maryland Women S Basketball Offices Design Sports Design Office Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/e8/05/04e805c5ac194d097b6618020bf97fe4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyquFVk3kShUw6u12Silb984fkK366wsTd4g&amp;ec=45771800';" alt="Maryland Women S Basketball Offices Design Sports Design Office Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maryland Women S Basketball Offices Design Sports Design Office Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/75/db/78/75db7865290698fea90ed99b0ea1873b.jpg" data-lightbox="roadtrip" data-title="Pin On 2018 2019 Ncaa Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/75/db/78/75db7865290698fea90ed99b0ea1873b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSkrDTgwTS-HGMn7EGHhjCkAZk6Pl038xcdA&amp;ec=45771800';" alt="Pin On 2018 2019 Ncaa Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 2018 2019 Ncaa Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/college-womens-basketball-odds.html">College Womens Basketball Odds</a></li>
+													<li class="list-group-item"><a href="/college-womens-basketball-espn.html">College Womens Basketball Espn</a></li>
+													<li class="list-group-item"><a href="/college-want-to-go-home.html">College Want To Go Home</a></li>
+													<li class="list-group-item"><a href="/college-visit-to-texas-am.html">College Visit To Texas Am</a></li>
+													<li class="list-group-item"><a href="/college-womens-basketball-stream-reddit.html">College Womens Basketball Stream Reddit</a></li>
+													<li class="list-group-item"><a href="/college-themed-gift-baskets.html">College Themed Gift Baskets</a></li>
+													<li class="list-group-item"><a href="/college-womens-basketball-hype-video.html">College Womens Basketball Hype Video</a></li>
+													<li class="list-group-item"><a href="/college-womens-basketball-rankings-2020.html">College Womens Basketball Rankings 2020</a></li>
+													<li class="list-group-item"><a href="/college-womens-basketball-ratings.html">College Womens Basketball Ratings</a></li>
+													<li class="list-group-item"><a href="/college-with-gymnastics-teams.html">College With Gymnastics Teams</a></li>
+													<li class="list-group-item"><a href="/college-womens-basketball-playoffs.html">College Womens Basketball Playoffs</a></li>
+													<li class="list-group-item"><a href="/college-town-gifts.html">College Town Gifts</a></li>
+													<li class="list-group-item"><a href="/college-student-monthly-gift-box.html">College Student Monthly Gift Box</a></li>
+													<li class="list-group-item"><a href="/college-student-giveaways.html">College Student Giveaways</a></li>
+													<li class="list-group-item"><a href="/college-students-christmas-gift-ideas.html">College Students Christmas Gift Ideas</a></li>
+													<li class="list-group-item"><a href="/college-womens-basketball-games-on-tv-today.html">College Womens Basketball Games On Tv Today</a></li>
+													<li class="list-group-item"><a href="/college-womens-basketball-teams.html">College Womens Basketball Teams</a></li>
+													<li class="list-group-item"><a href="/college-womens-basketball-tonight.html">College Womens Basketball Tonight</a></li>
+													<li class="list-group-item"><a href="/college-womens-basketball-mid-major-rankings.html">College Womens Basketball Mid Major Rankings</a></li>
+													<li class="list-group-item"><a href="/college-womens-basketball-on-tv-today.html">College Womens Basketball On Tv Today</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Gymnastics Teams - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Gymnastics Teams",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/ff/0e/6e/ff0e6e328a361f16b59e8ce912aa3b8d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+gymnastics+teams",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Gymnastics Teams</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The GymDogs have won more NCAA championships than any other collegiate womens gymnastics team with 10 titles to their name. While some of the same concepts can be applied like the fact that the BSU womens basketball team had a phenomenal season last year which might account for the increase in spectators the size of the city and the school does not change. She earned a perfect score on four occasions twice on. <br>				
+			</p>
+										<a class="badge badge-danger" href="/college-essay-guy-verbs.html">college essay guy verbs</a>
+											<a class="badge badge-dark" href="/college-football-bowl-gifts-2019.html">college football bowl gifts 2019</a>
+											<a class="badge badge-info" href="/college-fund-gift-certificate-template.html">college fund gift certificate template</a>
+											<a class="badge badge-danger" href="/college-gift-baskets-for-sale.html">college gift baskets for sale</a>
+											<a class="badge badge-warning" href="/college-gift-baskets-online.html">college gift baskets online</a>
+											<a class="badge badge-info" href="/college-gift-basket-ideas-for-guys.html">college gift basket ideas for guys</a>
+											<a class="badge badge-dark" href="/college-gave-me-social-anxiety.html">college gave me social anxiety</a>
+											<a class="badge badge-info" href="/college-gifts-near-me.html">college gifts near me</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to pay a visit to the right site.  Our website gives you suggestions for viewing the highest quality video and picture content, search and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/85/a5/6885a53e31c8bdb2f1c55c84ad4e2a22.jpg" data-lightbox="roadtrip" data-title="Women S Ncaa Team Photos Yale Team Photos Female Gymnast Yale">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/85/a5/6885a53e31c8bdb2f1c55c84ad4e2a22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXXLDZOvcCMdh4kTQ-NH9Ep0RElOcL0u70XA';" alt="Women S Ncaa Team Photos Yale Team Photos Female Gymnast Yale">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Ncaa Team Photos Yale Team Photos Female Gymnast Yale</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/e4/f3/12e4f3fba8b23c188e2af7635a12070a.jpg" data-lightbox="roadtrip" data-title="Women S Ncaa Team Photos Nebraska Gymnastics Girls Team Photos Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/e4/f3/12e4f3fba8b23c188e2af7635a12070a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsmAYsaO6ldAz-JRW7V6wvNyYqWuUCiAw15Q';" alt="Women S Ncaa Team Photos Nebraska Gymnastics Girls Team Photos Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Ncaa Team Photos Nebraska Gymnastics Girls Team Photos Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/34/2b/7f342bc58dc071002abd315afff0e663.jpg" data-lightbox="roadtrip" data-title="Recruiting 101 Making The Lineup On A College Gymnastics Team Gymnastics Team Gymnastics Gymnastics Leotards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/34/2b/7f342bc58dc071002abd315afff0e663.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxosC0ciMFhQeQtHmu0XgBqDvi7a-1aD5aDQ';" alt="Recruiting 101 Making The Lineup On A College Gymnastics Team Gymnastics Team Gymnastics Gymnastics Leotards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Recruiting 101 Making The Lineup On A College Gymnastics Team Gymnastics Team Gymnastics Gymnastics Leotards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/d7/55/05d755afaf2a7770ffae8c1fda62cbcb.jpg" data-lightbox="roadtrip" data-title="Love Gymnastics Female Gymnast Leotards Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/d7/55/05d755afaf2a7770ffae8c1fda62cbcb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnqh6LDT6qdzXmcohpsjDxINqWgTmEILRyOw';" alt="Love Gymnastics Female Gymnast Leotards Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Love Gymnastics Female Gymnast Leotards Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/42/41/20/424120cc4d2e811469cc7862114e1738.jpg" data-lightbox="roadtrip" data-title="Bildergebnis Fur College Gymnastics Female Gymnast Gymnastics Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/42/41/20/424120cc4d2e811469cc7862114e1738.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvE3naVcC1-ZL_7X8B9GbZx11jdI9m7CZOjA';" alt="Bildergebnis Fur College Gymnastics Female Gymnast Gymnastics Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bildergebnis Fur College Gymnastics Female Gymnast Gymnastics Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/af/b8/7eafb863f51bd8abd0b4bd4a3c2e1d25.jpg" data-lightbox="roadtrip" data-title="April 15 Super Six Team Final Lsu Gymnastics Gymnastics Girls Gymnastics Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/af/b8/7eafb863f51bd8abd0b4bd4a3c2e1d25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR71IQmkV4FjGrwj_DoR0PqznWd8SMPr9ljQ';" alt="April 15 Super Six Team Final Lsu Gymnastics Gymnastics Girls Gymnastics Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">April 15 Super Six Team Final Lsu Gymnastics Gymnastics Girls Gymnastics Pictures</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/05/d7/55/05d755afaf2a7770ffae8c1fda62cbcb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR71IQmkV4FjGrwj_DoR0PqznWd8SMPr9ljQ';" alt="April 15 Super Six Team Final Lsu Gymnastics Gymnastics Girls Gymnastics Pictures">
+										<div class="card-body">
+						<h3 class="h5"><b>Some Olympic gymnasts have even competed in NCAA championships on their college teams after completing their Olympic career.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college gymnastics teams</strong>. 
+								
+																	Click on the date to see the. 
+																	College gymnasts compete in the National Collegiate Athletic Association while pursuing a college degree while elite gymnasts are national and international-level competitors who focus only on their gymnastics. 
+																	The freshman gymnast won the all-around and floor exercise and tied for first in the vault. 
+																	Read More about 2018 Womens Gymnastics Championships Results and Records Womens gymnastics to modify championship model The National Collegiate Womens Gymnastics Championships will move to a four-team regionalsuper regional bracket model for the 2018-19 academic year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Temple University has been declared ECAC champions by virtue of their National Qualifying Score NQS after the cancellation of the championship due to COVID-19. 
+																	They do more than just practice all day though. 
+																	All 82 programs support approximately 3500. 
+																	For students going through the recruitment process make sure the college you choose has a lot to offer you both academically and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The AIAW continued to conduct its established championship program in. 
+																	March 18 2017 - Stanford California US - Led by MyKayla Skinner of Gilbert Arizona pictured the University of Utah won the Pac-12 Championship in college womens gymnastics for the third time in four years Stanford California March 18 2017. 
+																	Subscribe To Email Updates. 
+																	- The Eastern College Athletic Conference ECAC announces its Division I Womens Gymnastics Post Season Awards. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get Womens Gymnastics rankings news schedules and championship brackets. 
+																	The NCAA Womens Gymnastics NC official home. 
+																	The team focuses heavily on their academics as well utilizing a tutoring center near their training facility for studying. 
+																	The season encompasses the 62 NCAA Division I womens gymnastics team across the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 2019 NCAA Division I womens gymnastics season will begin in January 2019 and run until the 2019 NCAA Womens Gymnastics Championship during April 1920 2019 at the Fort Worth Convention Center in Fort Worth Texas. 
+																	The typical elite gymnast competes during their teen years. 
+																	National team and she left little doubt as to why during her remarkable 2020 campaign. 
+																	College Gymnastics Menu 2020 Collegiate Gymnastics Rankings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thomas is the only NCAA gymnast currently on the US. 
+																	Safe Sport Home Page Athlete Assistance Fund. 
+																	News Athletes Health Wellness Events College Photos Stores Education Results About Find Careers. 
+																	The NCAA introduced womens gymnastics as a championship sport in 1982Gymnastics was one of twelve womens sports added to the NCAA championship program for the 198182 school year as the NCAA engaged in battle with the Association for Intercollegiate Athletics for Women for sole governance of womens collegiate sports. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The official 2021 Womens Gymnastics schedule for the University of Oklahoma. 
+																	The NCAA is the next step for some elite-level gymnasts since they are often offered full college scholarships thus the. 
+																	Women Men Rhythmic Acrobatic TT GfA Parkour Member Services. 
+																	USA Gymnastics is the National Governing Body NGB for the sport of gymnastics in the United States consistent with the Ted Stevens Olympic Amateur Sports Act the Bylaws of the United States Olympic Committee and the International Gymnastics Federation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The official Womens Gymnastics page for the University of Kentucky Wildcats. 
+																	Jumping on mid air - cheerleaders team with pon-pon - womens college gymnastics stock pictures royalty-free photos images Athletes compete during the Division I Womens Gymnastics Championship held at the Wolstein Center of the Cleveland State University campus in. 
+																	Womens gymnastics programs are available at some large universities and Division I championships have been part of the NCAA since 1981. 
+																	10 BEAUTIFUL MOMENTS IN WOMENS GYMNASTICS 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens volleyball and basketball for example draws many more spectators than does gymnastics. 
+																	There are 82 NCAA member institutions that sponsor National Collegiate Womens Gymnastics teams and are eligible to compete in the National Championship. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/ef/ff/53efff25541906477b0c04c0bcc93577.jpg" data-lightbox="roadtrip" data-title="Springfield College Athletics Gymnastics Photography Gymnastics Team Olympic Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/ef/ff/53efff25541906477b0c04c0bcc93577.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzPqHeA5j_ytmxKmtBvqd8hdpetHYp8D-rGA';" alt="Springfield College Athletics Gymnastics Photography Gymnastics Team Olympic Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Springfield College Athletics Gymnastics Photography Gymnastics Team Olympic Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/ca/19/d8ca1989a4887e96e8979082155ff087.jpg" data-lightbox="roadtrip" data-title="Lsu Georgia Gymnastics Gymnastics Pictures Female Gymnast Gymnastics Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/ca/19/d8ca1989a4887e96e8979082155ff087.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBvV1cQE-ms1ZuqDEOQ98vY_TdHai8tiXQsg';" alt="Lsu Georgia Gymnastics Gymnastics Pictures Female Gymnast Gymnastics Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lsu Georgia Gymnastics Gymnastics Pictures Female Gymnast Gymnastics Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/37/56/5e3756039467281c1ef08d7d230f104f.jpg" data-lightbox="roadtrip" data-title="Pin On Picture Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/37/56/5e3756039467281c1ef08d7d230f104f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgNX5jKJzuSw97x_tfu1Ct-GdsfnABbJNiRQ';" alt="Pin On Picture Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Picture Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/93/d7/c493d71bf3796956a54acf3ebd6a071a.jpg" data-lightbox="roadtrip" data-title="Katelyn Ohashi Female Gymnast Gymnastics Girls Sport Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/93/d7/c493d71bf3796956a54acf3ebd6a071a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyTV8XxypUqV79ataVEcJN45Rsu6X8EMFTQ';" alt="Katelyn Ohashi Female Gymnast Gymnastics Girls Sport Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Katelyn Ohashi Female Gymnast Gymnastics Girls Sport Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ff/0e/6e/ff0e6e328a361f16b59e8ce912aa3b8d.jpg" data-lightbox="roadtrip" data-title="Pin On Ucla Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ff/0e/6e/ff0e6e328a361f16b59e8ce912aa3b8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWSPCJ-YJG7IsMrb2MQ65ZfZtKMFbM4L79SQ';" alt="Pin On Ucla Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ucla Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/fe/07/06fe07518833dc7201ca8b1cc94fe5e7.png" data-lightbox="roadtrip" data-title="Gymnast Lays On The Mat Delivers Dark Scary Routine Making Everyone Scream Gymnastics Latest Workout Floor Workouts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/fe/07/06fe07518833dc7201ca8b1cc94fe5e7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIUdH-rMMV0mrj7n_-YygJNg3SYKUFTGsDSQ';" alt="Gymnast Lays On The Mat Delivers Dark Scary Routine Making Everyone Scream Gymnastics Latest Workout Floor Workouts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gymnast Lays On The Mat Delivers Dark Scary Routine Making Everyone Scream Gymnastics Latest Workout Floor Workouts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/50/9d/25/509d25526e85151557aa9fe629613643.jpg" data-lightbox="roadtrip" data-title="Gymnastique Au Sol Gymnastics Championships Female Gymnast Gymnastics Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/50/9d/25/509d25526e85151557aa9fe629613643.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ihyaSAl4p-6SVdanCPdnaVlrr4J1oJW0mA';" alt="Gymnastique Au Sol Gymnastics Championships Female Gymnast Gymnastics Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gymnastique Au Sol Gymnastics Championships Female Gymnast Gymnastics Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3f/6f/70/3f6f70d7d3d0639a669c056755398f87.jpg" data-lightbox="roadtrip" data-title="Hot Female Gymnasts Photo List Female Gymnast Gymnastics Poses Gymnastics Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3f/6f/70/3f6f70d7d3d0639a669c056755398f87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREyM9G6dhDrH-0h_nW51_OceCKM-8jNtODIA';" alt="Hot Female Gymnasts Photo List Female Gymnast Gymnastics Poses Gymnastics Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hot Female Gymnasts Photo List Female Gymnast Gymnastics Poses Gymnastics Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/be/61/debe61f3f0d51ebbc4f9f5b6786bedd4.png" data-lightbox="roadtrip" data-title="Ariana Berlin Ucla Sport Feminin Feminin Sport">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/be/61/debe61f3f0d51ebbc4f9f5b6786bedd4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-MS4DYrhVOFJ2DIxJLsM8gfmwFbu939vEQ';" alt="Ariana Berlin Ucla Sport Feminin Feminin Sport">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ariana Berlin Ucla Sport Feminin Feminin Sport</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/3b/5c/693b5c1183fee0baab4493e5ebee441c.jpg" data-lightbox="roadtrip" data-title="University Of Florida Chantelle Tousek Olympic Gymnastics Leotards Gymnastics Poses Gymnastics Beam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/3b/5c/693b5c1183fee0baab4493e5ebee441c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS648DdAx_SYmKc5Oo8-9xwVgHSL93RAbqb0w';" alt="University Of Florida Chantelle Tousek Olympic Gymnastics Leotards Gymnastics Poses Gymnastics Beam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Florida Chantelle Tousek Olympic Gymnastics Leotards Gymnastics Poses Gymnastics Beam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/fb/19/40fb1936c2598bddf54d53a06afe3cf9.jpg" data-lightbox="roadtrip" data-title="Analyzing The Women S Ncaa Preseason Rankings Female Gymnast Gymnastics Videos Lsu Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/fb/19/40fb1936c2598bddf54d53a06afe3cf9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJd7ouNPjVf1QJ5t34tnRUl8jbZ3lQoGuPQ';" alt="Analyzing The Women S Ncaa Preseason Rankings Female Gymnast Gymnastics Videos Lsu Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Analyzing The Women S Ncaa Preseason Rankings Female Gymnast Gymnastics Videos Lsu Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/f5/26/e7f5263405a7646b308eccc1d7960ff1.jpg" data-lightbox="roadtrip" data-title="Mckenna Kelley At The Ncaa Women S National Collegiate Gymnastics Championship Mary Lou Retton Lsu Gymnastics Gymnastics Championships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/f5/26/e7f5263405a7646b308eccc1d7960ff1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFeEukMy0aY8WbT8395DKbxUsl1N_qkC0NA';" alt="Mckenna Kelley At The Ncaa Women S National Collegiate Gymnastics Championship Mary Lou Retton Lsu Gymnastics Gymnastics Championships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mckenna Kelley At The Ncaa Women S National Collegiate Gymnastics Championship Mary Lou Retton Lsu Gymnastics Gymnastics Championships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0c/5f/9d/0c5f9d2c63efb91cd2faa86c31721642.jpg" data-lightbox="roadtrip" data-title="Pin On Dd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0c/5f/9d/0c5f9d2c63efb91cd2faa86c31721642.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l7YQ-vEnfMHjNG2vtxC6aZildgNKkHwRuw';" alt="Pin On Dd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dd</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/billig-tanken.html">Billig Tanken</a></li>
+													<li class="list-group-item"><a href="/billie-holiday.html">Billie Holiday</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-real-estate.html">Bill Montgomery Real Estate</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-northern-ireland.html">Bill Montgomery Northern Ireland</a></li>
+													<li class="list-group-item"><a href="/billie-holiday-songs.html">Billie Holiday Songs</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-doylestown-pa.html">Bill Montgomery Doylestown Pa</a></li>
+													<li class="list-group-item"><a href="/billie-hoodie.html">Billie Hoodie</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-realty.html">Bill Montgomery Realty</a></li>
+													<li class="list-group-item"><a href="/bill-guyton.html">Bill Guyton</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-dallas.html">Bill Montgomery Dallas</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-roofing.html">Bill Montgomery Roofing</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-holman-webb.html">Bill Montgomery Holman Webb</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-charlie-kirk.html">Bill Montgomery Charlie Kirk</a></li>
+													<li class="list-group-item"><a href="/billdip-lemon.html">Billdip Lemon</a></li>
+													<li class="list-group-item"><a href="/billie-holiday-death.html">Billie Holiday Death</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-linkedin.html">Bill Montgomery Linkedin</a></li>
+													<li class="list-group-item"><a href="/bill-gowen.html">Bill Gowen</a></li>
+													<li class="list-group-item"><a href="/billgi.html">Billgi</a></li>
+													<li class="list-group-item"><a href="/bill-montgomery-turning-point-usa.html">Bill Montgomery Turning Point Usa</a></li>
+													<li class="list-group-item"><a href="/billet-avion.html">Billet Avion</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

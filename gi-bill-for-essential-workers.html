@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gi Bill For Essential Workers - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gi Bill For Essential Workers",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/d0/a8/25/d0a82560695edd0e29bf4019fe88e6df.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gi+bill+for+essential+workers",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gi Bill For Essential Workers</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Governor Gretchen Whitmer today announced a series of initiatives to help Michigan workers and their families during the ongoing COVID-19 pandemic including the Futures for. Bill that would grant the states essential employees free college tuition because of their work during the coronavirus pandemic the governor announced this week. Front-line workers in Michigan are being thanked for their efforts fighting the coronavirus pandemic with what the governor is touting as a modern-day GI. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/gi-bill-for-commissioned-officers.html">gi bill for commissioned officers</a>
+											<a class="badge badge-warning" href="/gi-bill-for-other-than-honorable-discharge.html">gi bill for other than honorable discharge</a>
+											<a class="badge badge-dark" href="/gi-bill-for-a-house.html">gi bill for a house</a>
+											<a class="badge badge-primary" href="/gi-bill-fall-2020.html">gi bill fall 2020</a>
+											<a class="badge badge-dark" href="/gi-bill-for-first-responders.html">gi bill for first responders</a>
+											<a class="badge badge-primary" href="/gi-bill-first-bah-payment.html">gi bill first bah payment</a>
+											<a class="badge badge-dark" href="/gi-bill-extension.html">gi bill extension</a>
+											<a class="badge badge-warning" href="/gi-bill-for-apprenticeships.html">gi bill for apprenticeships</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to visit the ideal site.  Our site provides you with suggestions for viewing the maximum quality video and image content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.kastatic.org/ka-perseus-images/28d2406337e818168839517d43336faa18147c50.jpg" data-lightbox="roadtrip" data-title="The Gi Bill Article Khan Academy">
+											<img class="card-img v-image ads-img " src="https://cdn.kastatic.org/ka-perseus-images/28d2406337e818168839517d43336faa18147c50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1aPKbYXEHwIZNyeWR8ZvKbmw4hNjBqGC04A';" alt="The Gi Bill Article Khan Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Gi Bill Article Khan Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/b7/9a/d0b79a2686a8c48c721ffde44cecb3c9.jpg" data-lightbox="roadtrip" data-title="The Gi Bill Does Not Provide Free Education To Our Military My God They Have Paid A Much Higher Price Than Anyone Else But I Free Education Gi Bill Omar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/b7/9a/d0b79a2686a8c48c721ffde44cecb3c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqlGZvXsWg8TmMu_REcQZz-Lpvk7YjNsbtyg';" alt="The Gi Bill Does Not Provide Free Education To Our Military My God They Have Paid A Much Higher Price Than Anyone Else But I Free Education Gi Bill Omar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Gi Bill Does Not Provide Free Education To Our Military My God They Have Paid A Much Higher Price Than Anyone Else But I Free Education Gi Bill Omar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.semca.org/wp-content/uploads/elementor/thumbs/futures_for_frontliners-oosrquso2sh0xztchf3s3l4tr0i9jlv6jc97zj8hag.png" data-lightbox="roadtrip" data-title="Governor Whitmer Announces Futures For Frontliners A G I Bill Program For Essential Workers Semca">
+											<img class="card-img v-image ads-img " src="https://www.semca.org/wp-content/uploads/elementor/thumbs/futures_for_frontliners-oosrquso2sh0xztchf3s3l4tr0i9jlv6jc97zj8hag.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU_q3IC7-hhfDyLWjYeAGJO9uryYh_hh9bTQ';" alt="Governor Whitmer Announces Futures For Frontliners A G I Bill Program For Essential Workers Semca">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Governor Whitmer Announces Futures For Frontliners A G I Bill Program For Essential Workers Semca</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/presto/2020/09/28/NCOD/6d7fcb3f-e57c-4766-a8fd-a54d90800128-letter-to-the-editor-image.jpg?width=660&amp;height=447&amp;fit=crop&amp;format=pjpg&amp;auto=webp" data-lightbox="roadtrip" data-title="Letters Fair Election Essential Workers And A New Gi Bill">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/presto/2020/09/28/NCOD/6d7fcb3f-e57c-4766-a8fd-a54d90800128-letter-to-the-editor-image.jpg?width=660&amp;height=447&amp;fit=crop&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOjlSC3tvLb598Z33Pr3hkIG0Tr-pWV_1HQ';" alt="Letters Fair Election Essential Workers And A New Gi Bill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letters Fair Election Essential Workers And A New Gi Bill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media1.fdncms.com/metrotimes/imager/u/original/24434762/shutterstock_1712842222.jpg" data-lightbox="roadtrip" data-title="Whitmer Proposes Free College For Essential Workers In Program Modeled After The G I Bill News Hits">
+											<img class="card-img v-image ads-img " src="https://media1.fdncms.com/metrotimes/imager/u/original/24434762/shutterstock_1712842222.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2HChnppQb_b7utF9b5MwVr1HU-6trUctxHQ';" alt="Whitmer Proposes Free College For Essential Workers In Program Modeled After The G I Bill News Hits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whitmer Proposes Free College For Essential Workers In Program Modeled After The G I Bill News Hits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/db/6e/82/db6e824c0c1f826bed8527fc4514c8b5.jpg" data-lightbox="roadtrip" data-title="Medical Ppe Supplier In 2020 Health And Safety Online Safety Training Safety Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/db/6e/82/db6e824c0c1f826bed8527fc4514c8b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQdQa6XcLN0USRe30-hCmdEeRFDbwbVocpIQ';" alt="Medical Ppe Supplier In 2020 Health And Safety Online Safety Training Safety Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medical Ppe Supplier In 2020 Health And Safety Online Safety Training Safety Training</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="eKGyrHt2fYbN_M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQdQa6XcLN0USRe30-hCmdEeRFDbwbVocpIQ';" alt="Medical Ppe Supplier In 2020 Health And Safety Online Safety Training Safety Training">
+										<div class="card-body">
+						<h3 class="h5"><b>Time for a GI Bill for Essential Workers July 25 2020 brucecorrie Policy Comments Off on Time for a GI Bill for Essential Workers We call this the Covid War and so lets invest in the front-line soldiers in this war both during their tour of duty and after the war just like we did with the GI Bill for soldiers who served in our wars.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gi bill for essential workers</strong>. 
+								
+																	Launched in September the program was inspired by the federal GI Bill which provides educational assistance to servicemembers veterans and their dependents nationwide. 
+																	Stabenow and Peters the Heroes Fund proposal would provide these workers with an additional 13 per hour up to 25000 with an additional potential recruitment incentive of up. 
+																	The essential workers during this pandemic should have their own GI Bill type of federal legislation. 
+																	From nurses to medical technicians from slaughterhouse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Essential workers deserve their own version of the GI Bill The essential workers during this pandemic should have their own GI Bill. 
+																	An Essential Worker Bill akin to the GI Bill would go a long way toward forcing accountability from Amazon and from Big Tech more broadlyand keeping essential labor from becoming invisible again. 
+																	Michigan is launching an initiative touted as a modern-day GI Bill that would grant the states essential employees free college tuition because of their work during the coronavirus pandemic the. 
+																	Its local implementation gave lawmakers bankers and college administrators ample opportunity to prevent African American veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We subsequently renewed and made permanent these well earned benefits for. 
+																	April 19 2020 Author. 
+																	The GI Bill is perhaps less a precise model than an inspiration. 
+																	Futures for Frontliners a GI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill Program for Essential Workers. 
+																	Bruce P Corrie 0 Comments We call this the Covid War and so lets invest in the front-line soldiers in this war both during their tour of duty and after the war just like we did with the GI Bill for soldiers who served in our wars. 
+																	The new initiative called Futures for Frontliners was announced Wednesday by Gov. 
+																	MIT Sloan Professor Paul Osterman In a new column for Newsweek MIT Sloan Professor Paul Osterman is calling for the equivalent of a GI Bill to support further education and training for essential workers serving during the COVID-19 crisis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill that would grant them tuition-free college. 
+																	Bill program has been created for essential workers. 
+																	One proposal to meaningfully recognize the role played by essential workers is a new iteration of the GI Bill which was originally introduced in the aftermath of World War II to support veterans. 
+																	The program provides a tuition-free pathway. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The program titled Futures for Frontliners will be available to essential workers without a college degree Gov. 
+																	After World War Two America expressed its gratitude to returning veterans by supporting their education. 
+																	Bill program Wednesday that would offer free college to essential workers who held jobs on the front lines during the coronavirus crisis. 
+																	From nurses to medical technicians from slaughterhouse employees to semi-drivers to grocery. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Futures for Frontliners which Whitmer first put forth in April and is inspired by the GI Bill that funded the education of those who served during World War II is aimed at helping workers who. 
+																	Gretchen Whitmer D on Wednesday unveiled what shes calling Futures for Frontliners Itll provide a tuition-free college education or technical certification to essential workers. 
+																	The program will be offered not only to those working in. 
+																	Congress Pass a GI Bill for Essential Workers on the Frontline Wage Premium Free College Housing Date. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After World War Two America expressed its gratitude to returning veterans by supporting their education. 
+																	Michigan to launch modern-day GI bill for essential workers on front lines Michigan is launching an initiative touted as a modern-day GI. 
+																	In a new column for Newsweek MIT Sloan Professor Paul Osterman is calling for the equivalent of a GI Bill to support further education and training for essential workers serving during the COVID-19 crisis. 
+																	Gretchen Whitmer announced the Futures for Frontliners program on Wednesday April 29. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	4292020 1 Comment We will never forget those of you who stepped up and sacrificed their own health during this crisis LANSING Mich. 
+																	Gretchen Whitmer proposed a GI. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/88/0c/7c/880c7ce7c6a82ea2e8a5659f0fa34940.jpg" data-lightbox="roadtrip" data-title="Michigan Governor Announces Tuition Free Educational Program For Essential Workers In 2020 Michigan Gov Educational Programs Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/88/0c/7c/880c7ce7c6a82ea2e8a5659f0fa34940.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOHKSnDJQS1ops9Bpxn5m9OlDOybyuviCOJQ';" alt="Michigan Governor Announces Tuition Free Educational Program For Essential Workers In 2020 Michigan Gov Educational Programs Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michigan Governor Announces Tuition Free Educational Program For Essential Workers In 2020 Michigan Gov Educational Programs Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/31/fd/da31fd018f53c05ebf8b095cb343580c.png" data-lightbox="roadtrip" data-title="For World Poetry Day Give Writing Some A Shot Or Read Some Favorites Who Is Your Favorite Poet Or What Is Your Favorit World Poetry Day Mixed Feelings Poetry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/31/fd/da31fd018f53c05ebf8b095cb343580c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIPNtl677s1VzPWdpUhv9yvpN8nlsx0-gEPw';" alt="For World Poetry Day Give Writing Some A Shot Or Read Some Favorites Who Is Your Favorite Poet Or What Is Your Favorit World Poetry Day Mixed Feelings Poetry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For World Poetry Day Give Writing Some A Shot Or Read Some Favorites Who Is Your Favorite Poet Or What Is Your Favorit World Poetry Day Mixed Feelings Poetry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="1yOzjhzzi0vyFM" data-lightbox="roadtrip" data-title="Https Sites Ed Gov Naciqi Files 2018 05 Complete History Series Pdf">
+											<img class="card-img v-image ads-img " src="1yOzjhzzi0vyFM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw34n2BbmxeBFGdu4it765d6rWbO1yD0sT1g';" alt="Https Sites Ed Gov Naciqi Files 2018 05 Complete History Series Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Sites Ed Gov Naciqi Files 2018 05 Complete History Series Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/80/4b/6c804baaa362128d800b2ad2162f4132.jpg" data-lightbox="roadtrip" data-title="Why Is Food Safety Training Important Food Safety Training Safety Training Food Safety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/80/4b/6c804baaa362128d800b2ad2162f4132.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1MRAI8NeoVcizyJ9hJQTznmvlqUwMR3TwSw';" alt="Why Is Food Safety Training Important Food Safety Training Safety Training Food Safety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Is Food Safety Training Important Food Safety Training Safety Training Food Safety</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/02/65/a9/0265a9f93193630c6436b237b0335bcb.jpg" data-lightbox="roadtrip" data-title="Buy Surgical Gloves Surgical Gloves Emergency Response Plan Medical Safety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/02/65/a9/0265a9f93193630c6436b237b0335bcb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0IsN9c9SdpL_dlN1b15fECRY9ep4ihUwKNg';" alt="Buy Surgical Gloves Surgical Gloves Emergency Response Plan Medical Safety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy Surgical Gloves Surgical Gloves Emergency Response Plan Medical Safety</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ff/b8/d1/ffb8d100d20ac3f1363a7774234e00c9.jpg" data-lightbox="roadtrip" data-title="Check Out This Item In My Etsy Shop Https Www Etsy Com Listing 794537298 I Stand With That Woman From Michigan T Shirt Michigan Pride Shirts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ff/b8/d1/ffb8d100d20ac3f1363a7774234e00c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_Hi0MbamZ7I4LllTYTGiyKuQpb0s95LbUQ';" alt="Check Out This Item In My Etsy Shop Https Www Etsy Com Listing 794537298 I Stand With That Woman From Michigan T Shirt Michigan Pride Shirts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out This Item In My Etsy Shop Https Www Etsy Com Listing 794537298 I Stand With That Woman From Michigan T Shirt Michigan Pride Shirts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://external-preview.redd.it/Fm2OYItwms1k9yVrDHFaZySqcFgLhMq6Qtqwp7RAXC8.jpg?auto=webp&amp;s=e7e6dc5507405300541de7a97aa2f5378bde8de5" data-lightbox="roadtrip" data-title="Congress Says No Unemployment For You If You Are On Gi Bill Veterans">
+											<img class="card-img v-image ads-img " src="https://external-preview.redd.it/Fm2OYItwms1k9yVrDHFaZySqcFgLhMq6Qtqwp7RAXC8.jpg?auto=webp&amp;s=e7e6dc5507405300541de7a97aa2f5378bde8de5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwpd1prmT2wGxmiDO0QHskIrJL6TR9taeikw';" alt="Congress Says No Unemployment For You If You Are On Gi Bill Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Congress Says No Unemployment For You If You Are On Gi Bill Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/54/c3/7654c363acdc4fd4710b29221084102e.jpg" data-lightbox="roadtrip" data-title="Relaxation Gift Basket For Nurses Healthcare Workers Etsy Relaxation Gift Basket Relaxation Gifts Luxury Gift Basket">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/54/c3/7654c363acdc4fd4710b29221084102e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYCgRJOk24ed0wEKUeaYFlkzxQ-DUrTsbs_Q';" alt="Relaxation Gift Basket For Nurses Healthcare Workers Etsy Relaxation Gift Basket Relaxation Gifts Luxury Gift Basket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Relaxation Gift Basket For Nurses Healthcare Workers Etsy Relaxation Gift Basket Relaxation Gifts Luxury Gift Basket</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2020/12/p-1-the-role-and-future-of-essential-workers.jpg" data-lightbox="roadtrip" data-title="Essential Workers Are Risking Their Lives For Us What Do We Owe Them">
+											<img class="card-img v-image ads-img " src="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2020/12/p-1-the-role-and-future-of-essential-workers.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjmYwX3ZYb_kuzv5bj0w1wEM7DVocA6si1yQ';" alt="Essential Workers Are Risking Their Lives For Us What Do We Owe Them">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Essential Workers Are Risking Their Lives For Us What Do We Owe Them</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/a8/25/d0a82560695edd0e29bf4019fe88e6df.jpg" data-lightbox="roadtrip" data-title="Schones Wort Suction Point Nice Word Point Saugstelle Suction In 2020 Cool Words World Cultures Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/a8/25/d0a82560695edd0e29bf4019fe88e6df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCNr4mo-z6Sc3SPE5Oi_mIyIyfy5aox-zp9A';" alt="Schones Wort Suction Point Nice Word Point Saugstelle Suction In 2020 Cool Words World Cultures Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Schones Wort Suction Point Nice Word Point Saugstelle Suction In 2020 Cool Words World Cultures Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="eKGyrHt2fYbN_M" data-lightbox="roadtrip" data-title="Https Www Luminafoundation Org Files Resources Veteran Success Tracker Pdf">
+											<img class="card-img v-image ads-img " src="eKGyrHt2fYbN_M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Bv4ORH8GDztrJiX8m2dEgeobelpytajwXA';" alt="Https Www Luminafoundation Org Files Resources Veteran Success Tracker Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Luminafoundation Org Files Resources Veteran Success Tracker Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/b5/72/0bb57257e98daef54952c2a6ed159c79.jpg" data-lightbox="roadtrip" data-title="How The G I Bill Changed The Face Of Higher Education In America Doing Laundry Cleaning Clothes Clothes Line">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/b5/72/0bb57257e98daef54952c2a6ed159c79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPfIpxK3qD4a5Vi8FYNtraOEjXDoUWVAEH1g';" alt="How The G I Bill Changed The Face Of Higher Education In America Doing Laundry Cleaning Clothes Clothes Line">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How The G I Bill Changed The Face Of Higher Education In America Doing Laundry Cleaning Clothes Clothes Line</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8e/22/89/8e2289038b64c044689e3de108e99ab5--info-graphics-united-states.jpg" data-lightbox="roadtrip" data-title="Five Things The Government Has Done Right Infografia Disenos De Unas Miscelanea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8e/22/89/8e2289038b64c044689e3de108e99ab5--info-graphics-united-states.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUAqF8qoLx0ISIhmESD8pk6MuPfK2HJjZl1w';" alt="Five Things The Government Has Done Right Infografia Disenos De Unas Miscelanea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Five Things The Government Has Done Right Infografia Disenos De Unas Miscelanea</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-much-montgomery-gi-bill-do-i-have-left.html">How Much Montgomery Gi Bill Do I Have Left</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-montgomery-gi-bill-worth.html">How Much Is The Montgomery Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/how-much-gi-bill-left.html">How Much Gi Bill Left</a></li>
+													<li class="list-group-item"><a href="/how-many-quarters-in-womens-college-basketball.html">How Many Quarters In Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/how-to-be-a-vegan-college-student.html">How To Be A Vegan College Student</a></li>
+													<li class="list-group-item"><a href="/how-much-does-post-911-gi-bill-pay-per-month.html">How Much Does Post 911 Gi Bill Pay Per Month</a></li>
+													<li class="list-group-item"><a href="/how-much-does-it-cost-to-go-to-college-in-europe-as-an-american.html">How Much Does It Cost To Go To College In Europe As An American</a></li>
+													<li class="list-group-item"><a href="/how-much-is-post-911-gi-bill-worth.html">How Much Is Post 911 Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/how-much-is-military-gi-bill.html">How Much Is Military Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-does-chapter-33-gi-bill-pay.html">How Much Does Chapter 33 Gi Bill Pay</a></li>
+													<li class="list-group-item"><a href="/how-much-does-chapter-1606-pay.html">How Much Does Chapter 1606 Pay</a></li>
+													<li class="list-group-item"><a href="/how-much-do-i-get-paid-for-post-911-gi-bill.html">How Much Do I Get Paid For Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-chapter-33-benefits.html">How To Apply For Chapter 33 Benefits</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-st-xavier-college-mumbai.html">How To Apply For St Xavier College Mumbai</a></li>
+													<li class="list-group-item"><a href="/how-much-post-911-gi-bill.html">How Much Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-gi-bill-2020.html">How Much Is The Gi Bill 2020</a></li>
+													<li class="list-group-item"><a href="/how-much-do-apprentice-lineman-make.html">How Much Do Apprentice Lineman Make</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-college-you-go-to-matter.html">How Much Does The College You Go To Matter</a></li>
+													<li class="list-group-item"><a href="/how-much-does-it-cost-to-go-to-college-in-europe.html">How Much Does It Cost To Go To College In Europe</a></li>
+													<li class="list-group-item"><a href="/how-much-tuition-will-the-gi-bill-cover.html">How Much Tuition Will The Gi Bill Cover</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

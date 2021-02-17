@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Recruiting Team Rankings 2019 - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Recruiting Team Rankings 2019",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/564x/fa/1a/d8/fa1ad84e5fd72468fed23f1bd94cbca2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+recruiting+team+rankings+2019",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Recruiting Team Rankings 2019</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Nationally Ranked Hoosier Programs. Of course college basketball recruiting rankings are an inexact science so. 2019 Big-Ten Basketball Team Rankings Last updated on 011521 at 1210 PM CST The Formula where c is a specific teams total number of commits and R n is the 247Sports Composite Rating of the nth. <br>				
+			</p>
+										<a class="badge badge-success" href="/is-it-better-to-go-to-community-college-first.html">is it better to go to community college first</a>
+											<a class="badge badge-warning" href="/is-low-gi-bread-better-for-you.html">is low gi bread better for you</a>
+											<a class="badge badge-primary" href="/kentucky-wesleyan-college-womens-basketball-roster.html">kentucky wesleyan college womens basketball roster</a>
+											<a class="badge badge-secondary" href="/is-the-gi-bill-the-same-for-all-branches.html">is the gi bill the same for all branches</a>
+											<a class="badge badge-primary" href="/jobs-to-go-to-college-for.html">jobs to go to college for</a>
+											<a class="badge badge-info" href="/kilgore-college-womens-basketball-roster.html">kilgore college womens basketball roster</a>
+											<a class="badge badge-light" href="/is-it-at-college-or-in-college.html">is it at college or in college</a>
+											<a class="badge badge-warning" href="/junior-college-womens-basketball-recruiting.html">junior college womens basketball recruiting</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the ideal blog.  Our site gives you hints for seeing the maximum quality video and picture content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/8e/64/908e64e3bbb6a2a0850f4d001cf271da.jpg" data-lightbox="roadtrip" data-title="Paige Bueckers 1 Recruit For Class Of 2020 Basketball Girls Paige Basketball Players">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/8e/64/908e64e3bbb6a2a0850f4d001cf271da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLrliHrrBsBa_rUtcsuEPExj43i3FKgnQwzg';" alt="Paige Bueckers 1 Recruit For Class Of 2020 Basketball Girls Paige Basketball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paige Bueckers 1 Recruit For Class Of 2020 Basketball Girls Paige Basketball Players</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/54/a3/4654a32072a4a49d62366c0e48a9c974.jpg" data-lightbox="roadtrip" data-title="Pin On Wcbb 19 20">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/54/a3/4654a32072a4a49d62366c0e48a9c974.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfY9YZRfT7V5srmoNBAMUwhm-fDY0qmZ77Q';" alt="Pin On Wcbb 19 20">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wcbb 19 20</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cb/6c/d7/cb6cd7caf03d8479ff4aeb200b979fc8.jpg" data-lightbox="roadtrip" data-title="College Basketball Girls Basketball Game Outfit Women College Basketball Players Basketball Game Outfit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cb/6c/d7/cb6cd7caf03d8479ff4aeb200b979fc8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl6FBmnkdeR_PLjqKocHkirG3W3a5MHvnWSA';" alt="College Basketball Girls Basketball Game Outfit Women College Basketball Players Basketball Game Outfit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Basketball Girls Basketball Game Outfit Women College Basketball Players Basketball Game Outfit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/cb/20/c6cb20a508461081e28c9356ff1250f9.jpg" data-lightbox="roadtrip" data-title="Mizzou Women S Basketball On Instagram Check Your Mail Season Tickets Are On The Way There S Still Time To P Womens Basketball Season Ticket Mizzou">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/cb/20/c6cb20a508461081e28c9356ff1250f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbca5nbh4leYN-ZRZzlCtUkUcJtXVuDmeOkQ';" alt="Mizzou Women S Basketball On Instagram Check Your Mail Season Tickets Are On The Way There S Still Time To P Womens Basketball Season Ticket Mizzou">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mizzou Women S Basketball On Instagram Check Your Mail Season Tickets Are On The Way There S Still Time To P Womens Basketball Season Ticket Mizzou</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fa/1a/d8/fa1ad84e5fd72468fed23f1bd94cbca2.jpg" data-lightbox="roadtrip" data-title="Top 10 Juniors Class Of 2019 Basketball Rankings And Why Full Court Press In High School Basketbal High School Basketball Basketball Womens Basketball Shoes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fa/1a/d8/fa1ad84e5fd72468fed23f1bd94cbca2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGVmTPGozpD7segy3aXGU_pVBp8cvEljzusw';" alt="Top 10 Juniors Class Of 2019 Basketball Rankings And Why Full Court Press In High School Basketbal High School Basketball Basketball Womens Basketball Shoes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Juniors Class Of 2019 Basketball Rankings And Why Full Court Press In High School Basketbal High School Basketball Basketball Womens Basketball Shoes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/98/ef/6e98ef05e3857832daa44cae0a85ff26.jpg" data-lightbox="roadtrip" data-title="Preseason Mid Major Top 10 Drake South Dakota And Rice Lead Way Eric Evans College Basketball Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/98/ef/6e98ef05e3857832daa44cae0a85ff26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcEx1AVKrTiTUlGRiJudDYtM0vcpJy1T26mQ';" alt="Preseason Mid Major Top 10 Drake South Dakota And Rice Lead Way Eric Evans College Basketball Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Preseason Mid Major Top 10 Drake South Dakota And Rice Lead Way Eric Evans College Basketball Women</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/22/75/f2/2275f24c64b1c7ab9f4c093cb04ecf38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcEx1AVKrTiTUlGRiJudDYtM0vcpJy1T26mQ';" alt="Preseason Mid Major Top 10 Drake South Dakota And Rice Lead Way Eric Evans College Basketball Women">
+										<div class="card-body">
+						<h3 class="h5"><b>2019 Team Rankings share.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball recruiting team rankings 2019</strong>. 
+								
+																	NEW YORK Kim Mulkey and Baylor returned to No. 
+																	Program History Worth the Wait Documentary. 
+																	Louisville leads UConn drops in 1st Power 10 of February Basketball Hall of Fame and WBCA. 
+																	Basketball recruiting rankings consist of ratings of high school players overall by position and by state as well as basketball team rankings of which colleges nationally and by conference have the best overall classes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get the inside scoop on the top ranked high school girls basketball players. 
+																	Fudd the 2019 Gatorade National Girls Basketball Player of the Year and a two-time USA Basketball gold medalist for the U16 and U17 teams joins a recruiting class that also features fifth. 
+																	Totals vs Top 25 Rank. 
+																	2 Baylor Rallies Past No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens College Basketball Rankings - Week 11 2020-21 2019-20 2018-19 2017-18 2016-17 2015-16 2014-15 2013-14 2012-13 2011-12 2010-11 2009-10 2008-09 2007-08 2006-07 2005-06 2004-05 2003-04 2002. 
+																	The Lady Bears 17-1 ascended to the top. 
+																	2019 Basketball Team Rankings Last updated on 011521 at 1210 PM CST The Formula where c is a specific teams total number of commits and R n is the 247Sports Composite Rating of the nth-best. 
+																	6 Texas to Stay Undefeated With a win over Texas Baylor is the first team to go 10-1 vs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2019 Womens Basketball Class Rankings. 
+																	Get expert analysis on who has boosted their programs at espnW HoopGurlz. 
+																	Get expert analysis on who has boosted their programs at espnW HoopGurlz. 
+																	In order to create the most comprehensive Team Recruiting Ranking without any notion of bias 247Sports Team Recruiting Ranking is solely based on the 247Sports Composite Rating. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ranked opponents in an 11-game span in 45 years. 
+																	Louisville leads UConn drops in 1st Power 10 of February Basketball Hall of Fame and WBCA. 
+																	2019 NCAA Tournament Official Bracket. 
+																	DI Womens Soccer News NCAA student-athletes celebrate reflect on NGWSD 2021 Hear from Sarah Fuller the first female to play in a major conference football game. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The latest womens basketball rankings for the 2019 class are out. 
+																	2021 Top 25 WOMEN - NCAA - DI. 
+																	The latest womens basketball rankings for the 2020 class are out. 
+																	The latter set of rankings helps fans learn which teams may be the best ones in the years to come. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2019 National and Big Ten Team Rankings. 
+																	1 in The Associated Press womens college basketball poll on Monday for the first time nearly six years. 
+																	Your account has an invalid email address. 
+																	2 in the way-too-early rankings due to the departure of Final Four hero Chloe Jackson and Kalani Brown and the return of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	IU Swim. 
+																	College Basketball National Team Recruiting Class Rankings. 
+																	The 247Sports Composite is a proprietary algorithm that compiles rankings and ratings listed in the public domain by the major media recruiting services creating the industry. 
+																	Please update it here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your defending champion Baylor Lady Bears narrowly come in No. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/98/26/e79826956c25256a9b2906ee9bdddafc.png" data-lightbox="roadtrip" data-title="Basketball Resume Design School College Resume Design Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/98/26/e79826956c25256a9b2906ee9bdddafc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNG4YeWdUKbkS_6Tkuu3vet4b1DdXclszqBg';" alt="Basketball Resume Design School College Resume Design Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Resume Design School College Resume Design Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/75/f2/2275f24c64b1c7ab9f4c093cb04ecf38.jpg" data-lightbox="roadtrip" data-title="Paige Bueckers Highlight Fiba U19 Women S Basketball World Cup 2019 Uconn Womens Basketball Womens Basketball Basketball Players">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/75/f2/2275f24c64b1c7ab9f4c093cb04ecf38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfed1R4nd9J8Mofv8-nOnkIDWEXNzOcGXvJQ';" alt="Paige Bueckers Highlight Fiba U19 Women S Basketball World Cup 2019 Uconn Womens Basketball Womens Basketball Basketball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paige Bueckers Highlight Fiba U19 Women S Basketball World Cup 2019 Uconn Womens Basketball Womens Basketball Basketball Players</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/86/c1/0a/86c10a0461c6a22f777501951c35f976.jpg" data-lightbox="roadtrip" data-title="Basketball Resume High School Shooting Guard Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/86/c1/0a/86c10a0461c6a22f777501951c35f976.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpKOif4CZRtDoFp9XMePNUp6iZAqQ63DrulA';" alt="Basketball Resume High School Shooting Guard Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Resume High School Shooting Guard Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/00/1b/96001b929f82e4e3c6da2bbd17124dca.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/00/1b/96001b929f82e4e3c6da2bbd17124dca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYKjVd-PD34IKmEH4bSVYyLyKtHRzHrmVyDg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/c0/df/bcc0dfe670c6181f89e6af535a7cb3d4.jpg" data-lightbox="roadtrip" data-title="Napheesa Collier And 2020 Uconn Commit Paige Bueckers Will Represent The United States At The World Bea Uconn Womens Basketball Basketball Girls Usa Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/c0/df/bcc0dfe670c6181f89e6af535a7cb3d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYOXY8_meAdM6oXHSP8Z1sPo0F8W-TPIEw3w';" alt="Napheesa Collier And 2020 Uconn Commit Paige Bueckers Will Represent The United States At The World Bea Uconn Womens Basketball Basketball Girls Usa Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Napheesa Collier And 2020 Uconn Commit Paige Bueckers Will Represent The United States At The World Bea Uconn Womens Basketball Basketball Girls Usa Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/24/61/a0246188ab2027f96d2925bc704b69c2.jpg" data-lightbox="roadtrip" data-title="Change Of Heart For Benet Graduate Clara Prasse Leads To Playing Basketball At Nova Ncaa Basketball In 2020 Basketball Ncaa Basketball Basketball News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/24/61/a0246188ab2027f96d2925bc704b69c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlJcFkrVeqA7YCjw5eUEpFa35zt6FhLZdSew';" alt="Change Of Heart For Benet Graduate Clara Prasse Leads To Playing Basketball At Nova Ncaa Basketball In 2020 Basketball Ncaa Basketball Basketball News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Change Of Heart For Benet Graduate Clara Prasse Leads To Playing Basketball At Nova Ncaa Basketball In 2020 Basketball Ncaa Basketball Basketball News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/20/a6/2b20a66e379f8d36ebd8ce0a22105712.jpg" data-lightbox="roadtrip" data-title="Cole Anthony Nba Draft Tape Unc Guard Ncaa Basketball Unc Tarheels Basketball Ncaa Basketball Basketball News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/20/a6/2b20a66e379f8d36ebd8ce0a22105712.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2oi3ICWMhc1iyrzutWHtlEOdvBu6vh18CnQ';" alt="Cole Anthony Nba Draft Tape Unc Guard Ncaa Basketball Unc Tarheels Basketball Ncaa Basketball Basketball News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cole Anthony Nba Draft Tape Unc Guard Ncaa Basketball Unc Tarheels Basketball Ncaa Basketball Basketball News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/fd/95/39fd953c47040f1c9f6f4995a5ff8e98.jpg" data-lightbox="roadtrip" data-title="Top Ranked 2020 Paige Bueckers Absolutely Balled Out In The Road Win For Uconn Womens Basketball Womens Lacrosse Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/fd/95/39fd953c47040f1c9f6f4995a5ff8e98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVguqzz-f_BRGX5cZj6pX9u7XUf-L5IKFlWA';" alt="Top Ranked 2020 Paige Bueckers Absolutely Balled Out In The Road Win For Uconn Womens Basketball Womens Lacrosse Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top Ranked 2020 Paige Bueckers Absolutely Balled Out In The Road Win For Uconn Womens Basketball Womens Lacrosse Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/6f/11/f96f1105b08cf066da34150c95863fd0.jpg" data-lightbox="roadtrip" data-title="Civil War Women S Basketball Oregon Ducks Oregon State Beavers Loaded With 5 Star Talent Oregon Ducks Oregon Ducks Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/6f/11/f96f1105b08cf066da34150c95863fd0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQpNmdF51ZWET7JjHrblsPhL4uVOwdNIFNcA';" alt="Civil War Women S Basketball Oregon Ducks Oregon State Beavers Loaded With 5 Star Talent Oregon Ducks Oregon Ducks Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil War Women S Basketball Oregon Ducks Oregon State Beavers Loaded With 5 Star Talent Oregon Ducks Oregon Ducks Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/72/88/147288352bcb3308d3f130d91e9ea6db.jpg" data-lightbox="roadtrip" data-title="Anna Wilson I M More Than Basketball And More Than Russell Wilson S Sister Anna Wilson Russell Wilson Wilson Sisters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/72/88/147288352bcb3308d3f130d91e9ea6db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd8m1WlWnhCqGDSet1_d8SQ70Q0G4nAGvN5w';" alt="Anna Wilson I M More Than Basketball And More Than Russell Wilson S Sister Anna Wilson Russell Wilson Wilson Sisters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anna Wilson I M More Than Basketball And More Than Russell Wilson S Sister Anna Wilson Russell Wilson Wilson Sisters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/3c/b3/1f3cb383aef3652a52d9c22424458396.jpg" data-lightbox="roadtrip" data-title="Providence S Brianna Edwards Right Looks To Pass In Front Of Connecticut S Kiah Stokes Feb 12 2013 To Michael D Big Ten Womens Basketball Ncaa Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/3c/b3/1f3cb383aef3652a52d9c22424458396.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkFH7WmtXuU-j3HFYPTmBDxDV8_Hh-CSs2w';" alt="Providence S Brianna Edwards Right Looks To Pass In Front Of Connecticut S Kiah Stokes Feb 12 2013 To Michael D Big Ten Womens Basketball Ncaa Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Providence S Brianna Edwards Right Looks To Pass In Front Of Connecticut S Kiah Stokes Feb 12 2013 To Michael D Big Ten Womens Basketball Ncaa Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/ec/7d/bfec7ded7391278b1c397f3c12a943a2.jpg" data-lightbox="roadtrip" data-title="Lindy S Sports College Basketball Preview 2020 2021 Shopping Onlineboutique Style Magazinesonsale Shopping College Basketball Georgia College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/ec/7d/bfec7ded7391278b1c397f3c12a943a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDWTmfY8pAPlPn7K091tsdCGoVZZxjTNpQQA';" alt="Lindy S Sports College Basketball Preview 2020 2021 Shopping Onlineboutique Style Magazinesonsale Shopping College Basketball Georgia College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lindy S Sports College Basketball Preview 2020 2021 Shopping Onlineboutique Style Magazinesonsale Shopping College Basketball Georgia College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/1c/87/1a1c87ebbcfa0a81897558081bc2d28b.jpg" data-lightbox="roadtrip" data-title="Big Ten Basketball Power Rankings 2 4 20 In 2020 Big Ten Indiana Hoosiers Illinois Fighting Illini">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/1c/87/1a1c87ebbcfa0a81897558081bc2d28b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8j6k0OwZLifLUtTQ2QlRlMkSioYYzaj3Wag';" alt="Big Ten Basketball Power Rankings 2 4 20 In 2020 Big Ten Indiana Hoosiers Illinois Fighting Illini">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Big Ten Basketball Power Rankings 2 4 20 In 2020 Big Ten Indiana Hoosiers Illinois Fighting Illini</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-many-credit-hours-is-considered-full-time-for-gi-bill.html">How Many Credit Hours Is Considered Full Time For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-many-mens-college-gymnastics-teams-are-there.html">How Many Mens College Gymnastics Teams Are There</a></li>
+													<li class="list-group-item"><a href="/how-do-i-use-my-va-education-benefits.html">How Do I Use My Va Education Benefits</a></li>
+													<li class="list-group-item"><a href="/how-does-the-yellow-ribbon-program-work.html">How Does The Yellow Ribbon Program Work</a></li>
+													<li class="list-group-item"><a href="/how-does-the-va-yellow-ribbon-program-work.html">How Does The Va Yellow Ribbon Program Work</a></li>
+													<li class="list-group-item"><a href="/how-does-the-montgomery-gi-bill-work.html">How Does The Montgomery Gi Bill Work</a></li>
+													<li class="list-group-item"><a href="/how-does-the-post-911-gi-bill-work.html">How Does The Post 911 Gi Bill Work</a></li>
+													<li class="list-group-item"><a href="/how-does-navy-gi-bill-work.html">How Does Navy Gi Bill Work</a></li>
+													<li class="list-group-item"><a href="/how-does-post-911-gi-bill-work.html">How Does Post 911 Gi Bill Work</a></li>
+													<li class="list-group-item"><a href="/how-do-you-go-to-college-with-no-money.html">How Do You Go To College With No Money</a></li>
+													<li class="list-group-item"><a href="/how-does-the-navy-gi-bill-work.html">How Does The Navy Gi Bill Work</a></li>
+													<li class="list-group-item"><a href="/how-do-i-view-my-gi-bill-benefits.html">How Do I View My Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/how-long-do-gi-bill-benefits-last.html">How Long Do Gi Bill Benefits Last</a></li>
+													<li class="list-group-item"><a href="/how-many-months-of-gi-bill-do-you-get.html">How Many Months Of Gi Bill Do You Get</a></li>
+													<li class="list-group-item"><a href="/how-many-months-is-a-semester-gi-bill.html">How Many Months Is A Semester Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-does-the-montgomery-gi-bill-work-reddit.html">How Does The Montgomery Gi Bill Work Reddit</a></li>
+													<li class="list-group-item"><a href="/how-do-i-transfer-my-post-911-gi-bill-to-my-dependents.html">How Do I Transfer My Post 911 Gi Bill To My Dependents</a></li>
+													<li class="list-group-item"><a href="/how-many-months-do-i-have-left-on-my-gi-bill.html">How Many Months Do I Have Left On My Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-long-can-i-use-my-gi-bill-benefits.html">How Long Can I Use My Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/how-long-does-it-take-for-gi-bill-benefits-to-kick-in.html">How Long Does It Take For Gi Bill Benefits To Kick In</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

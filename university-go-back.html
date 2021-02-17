@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>University Go Back - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "University Go Back",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/2b/53/78/2b5378fd6ac0d3024409814228da5f71.gif",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=university+go+back",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>University Go Back</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">However human rights barrister. Online learning is more likely to continue until the end of March says the University of Manchester although the government will review restrictions in mid-February. The government wants them to stagger their journeys back over a five-week period beginning on 4 January 2021 with everyone expected to be back at university by 7 February. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/gi-bill-housing-allowance-texas.html">gi bill housing allowance texas</a>
+											<a class="badge badge-warning" href="/gi-bill-housing-allowance.html">gi bill housing allowance</a>
+											<a class="badge badge-secondary" href="/gi-bill-housing-allowance-los-angeles.html">gi bill housing allowance los angeles</a>
+											<a class="badge badge-primary" href="/gi-bill-for-vocational-training.html">gi bill for vocational training</a>
+											<a class="badge badge-info" href="/gi-bill-housing-down-payment.html">gi bill housing down payment</a>
+											<a class="badge badge-info" href="/gi-bill-housing-allowance-2019.html">gi bill housing allowance 2019</a>
+											<a class="badge badge-secondary" href="/gi-bill-how-many-months-left.html">gi bill how many months left</a>
+											<a class="badge badge-light" href="/gi-bill-for-retirees.html">gi bill for retirees</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the ideal site.  Our site gives you suggestions for viewing the highest quality video and image content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/7e/38/dd7e3853382b0ad845946ce0c531d1b8.png" data-lightbox="roadtrip" data-title="Monster University Art I Can T Go Back To Jail Monsters University Quotes Monster University Disney Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/7e/38/dd7e3853382b0ad845946ce0c531d1b8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4APel4mLflEjHHbrged39geRYFO99Z1QEbg';" alt="Monster University Art I Can T Go Back To Jail Monsters University Quotes Monster University Disney Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Monster University Art I Can T Go Back To Jail Monsters University Quotes Monster University Disney Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/53/78/2b5378fd6ac0d3024409814228da5f71.gif" data-lightbox="roadtrip" data-title="I Can T Go Back To Jail Monsters University Monster University Mike And Sulley Disney Monsters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/53/78/2b5378fd6ac0d3024409814228da5f71.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKgbjtTYukiRKXa2ZBRGHfQsjvSPKRnRtB_g';" alt="I Can T Go Back To Jail Monsters University Monster University Mike And Sulley Disney Monsters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Can T Go Back To Jail Monsters University Monster University Mike And Sulley Disney Monsters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/71/26/a771266e043b6b0e5766ff865c11e9c7.jpg" data-lightbox="roadtrip" data-title="Ex Post Facto Post University Blog School Quotes School Back To School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/71/26/a771266e043b6b0e5766ff865c11e9c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCFUzUrHY59ZW9HojRETqdqHGeJbXfY9TEpQ';" alt="Ex Post Facto Post University Blog School Quotes School Back To School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ex Post Facto Post University Blog School Quotes School Back To School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/98/28/80982824bde0356d2ae35583809daa8b.jpg" data-lightbox="roadtrip" data-title="I Can T Go Back To Jail Monster University Art Monsters University Monsters Inc University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/98/28/80982824bde0356d2ae35583809daa8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLZ7YiGqdHXzlMnKNchdPGIMeeddoR89Q7nA';" alt="I Can T Go Back To Jail Monster University Art Monsters University Monsters Inc University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Can T Go Back To Jail Monster University Art Monsters University Monsters Inc University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/f5/a0/8af5a0e880aa970502a0eb679eb47a20.jpg" data-lightbox="roadtrip" data-title="Important Things To Do Before Going Back To College The University Network Going Back To College College Survival Back To College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/f5/a0/8af5a0e880aa970502a0eb679eb47a20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHwSiZN-6ecJDohJxWKow9Eo7cR8AiQgCHA';" alt="Important Things To Do Before Going Back To College The University Network Going Back To College College Survival Back To College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Important Things To Do Before Going Back To College The University Network Going Back To College College Survival Back To College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/6a/92/dc6a924d0e7dbdceff0a4aa36f4f2f94.jpg" data-lightbox="roadtrip" data-title="I Can T Go Back To Jail Art From Monsters University Monster University Mike And Sulley Disney Monsters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/6a/92/dc6a924d0e7dbdceff0a4aa36f4f2f94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFnfGB2adG1dFIgpxC1kynp5bv1lKU_ooJXQ';" alt="I Can T Go Back To Jail Art From Monsters University Monster University Mike And Sulley Disney Monsters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Can T Go Back To Jail Art From Monsters University Monster University Mike And Sulley Disney Monsters</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ae/19/a4/ae19a4d7db75ca7384746c4566db638f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFnfGB2adG1dFIgpxC1kynp5bv1lKU_ooJXQ';" alt="I Can T Go Back To Jail Art From Monsters University Monster University Mike And Sulley Disney Monsters">
+										<div class="card-body">
+						<h3 class="h5"><b>THE Oxford-AstraZeneca jab is less effective against the highly infectious South African variant early data showed.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>University go back</strong>. 
+								
+																	Why I Chose to go Back to University to do a Masters. 
+																	But for the spring term there will be a five-week. 
+																	Students will have staggered starting dates for returning to universities in England after Christmas - with some not back until 7 February. 
+																	University of Glasgow Library. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However it turned out to be the best decision I have ever made. 
+																	I undertook a Media Communication and Cultural Studies degree at Newcastle University in 2016 and graduated in 2019. 
+																	Going back to university might not mean changing your degree subject completely. 
+																	For example some industries will require PhD or MSc qualifications in order for you to advance or earn a higher salary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There may be costs to the provider associated in carrying. 
+																	The plan to get post-secondary students back in class was. 
+																	A similar student travel window was introduced earlier this month which allowed students to return home for Christmas between 3 and 9 December. 
+																	University students have had next to no face-to-face teaching so far this academic year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are not able to collect your possessions either because you are self-isolating or are otherwise unable to travel accommodation providers should store your items for collection at a future date. 
+																	By Ian McConnell ianmcconnellHT Group Business Editor. 
+																	A Universities Wales spokeswoman said. 
+																	Lockdown will strain the UKs education sector this year as primary and secondary schools have had to close. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A small trial of just 2026 people found the vaccine had limited efficacy. 
+																	The governments plan will mean students taking hands-on. 
+																	Even before the new lockdown. 
+																	Vital exams such as A-levels and GCSEs will. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If I dont go back to my student accommodation what will happen to my belongings. 
+																	Barclays and University of Glasgow go back for the future in naming campus buildings. 
+																	Thats not set to change in the next few weeks either as Englands third national lockdown - which has. 
+																	He told Breakfast that right now it is as safe as it ever has been to go back to campuses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But police say reasonable force was used to return him safely back inside because they claim he had been directed to self-isolate amid the Covid-19 pandemic. 
+																	Can you go back to university in lockdown. 
+																	After months of online learning CEGEP and University students are going to slowly be able to begin reintegrating the classroom. 
+																	Universities in Wales are implementing a staggered approach to the start of term bringing students back over a phased period enabling universities to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Deciding to undertake a Masters degree after three years of hard work as an undergraduate student can be an intimidating decision. 
+																	The government wants students to stagger their journeys back to campus over a five-week period beginning on 4 January 2021 with everyone expected to be back at university by 7 February and. 
+																	But he suggested universities could put back face-to-face teaching until the end of the academic year in. 
+																	Instead you could enhance your career opportunities within your preferred field by studying for a post-graduate qualification. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Oh the things that we would do if we could go back to university in midlife like James Cracknell Olympic rower James Cracknell has discovered the key to happiness in midlife. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/65/51/6e6551173e254b6d977a5f3e52f9a7ae.png" data-lightbox="roadtrip" data-title="Pin On Wellness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/65/51/6e6551173e254b6d977a5f3e52f9a7ae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1US5d_3iGK-UXaRSN6Hlcdl6PFO8EE51Sg';" alt="Pin On Wellness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wellness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/b0/7c/b1b07c0007f1978232adc7f8e45f2d20.png" data-lightbox="roadtrip" data-title="Otenticnaija Reopening Of Universities When Will Students Go B In 2020 Going Back To School Student University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/b0/7c/b1b07c0007f1978232adc7f8e45f2d20.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLa1cB_MQeUoPB3kftuft97y1ghd7LGizHJA';" alt="Otenticnaija Reopening Of Universities When Will Students Go B In 2020 Going Back To School Student University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otenticnaija Reopening Of Universities When Will Students Go B In 2020 Going Back To School Student University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/19/a4/ae19a4d7db75ca7384746c4566db638f.jpg" data-lightbox="roadtrip" data-title="Get A Job With Your College To Reduce Tuition Or Go Back To School University Of Oregon University Architecture University Of Colorado">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/19/a4/ae19a4d7db75ca7384746c4566db638f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqoWYYfghWa_MDlVb7VEazUSSQCWyGRbNi_w';" alt="Get A Job With Your College To Reduce Tuition Or Go Back To School University Of Oregon University Architecture University Of Colorado">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get A Job With Your College To Reduce Tuition Or Go Back To School University Of Oregon University Architecture University Of Colorado</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d2/63/1f/d2631fce27b2808a566599262f8f92c5.jpg" data-lightbox="roadtrip" data-title="Important Things To Do Before Going Back To College The University Network Education College Going Back To College College Survival">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d2/63/1f/d2631fce27b2808a566599262f8f92c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1omC-GLW-d5Sv75sOHbZq8XtKFxp-IMruiA';" alt="Important Things To Do Before Going Back To College The University Network Education College Going Back To College College Survival">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Important Things To Do Before Going Back To College The University Network Education College Going Back To College College Survival</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/66/43/fa6643e26bf9e9f76c85e7609684e29e.jpg" data-lightbox="roadtrip" data-title="12 Items You Must Have For A New Semester In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/66/43/fa6643e26bf9e9f76c85e7609684e29e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe7nLXYnkvuzWO0muNkeuSVJtgbI9_mBKb2Q';" alt="12 Items You Must Have For A New Semester In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Items You Must Have For A New Semester In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/74/9a/c4749a05009d4b195b79d25af920f477.png" data-lightbox="roadtrip" data-title="Going Back To School As Adults Wise Investment Or Waste Of Time Going Back To School Education College Going Back To College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/74/9a/c4749a05009d4b195b79d25af920f477.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHEAOfS8jpeQ2j_vOaZt5Meq61Th0YwKJUlw';" alt="Going Back To School As Adults Wise Investment Or Waste Of Time Going Back To School Education College Going Back To College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Going Back To School As Adults Wise Investment Or Waste Of Time Going Back To School Education College Going Back To College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/36/82/0e36824d1657049a6ef6b7bd0f681df1.jpg" data-lightbox="roadtrip" data-title="12 Reasons Why College Students Are Excited To Go Back To School College Visit College Students University Of Maryland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/36/82/0e36824d1657049a6ef6b7bd0f681df1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYA-ZhU_1M-28Hy1PaN2eWFWyuWwwp3bsFVQ';" alt="12 Reasons Why College Students Are Excited To Go Back To School College Visit College Students University Of Maryland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Reasons Why College Students Are Excited To Go Back To School College Visit College Students University Of Maryland</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/bd/01/7abd01da36e9994a8cc9d9c01eacc5ca.jpg" data-lightbox="roadtrip" data-title="Pin On Edu Cartoons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/bd/01/7abd01da36e9994a8cc9d9c01eacc5ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNAd09azxVmNst2lcWcl6j1dXpX4MnBnuV9Q';" alt="Pin On Edu Cartoons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Edu Cartoons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/24/f8/6024f84f123519a9a28c16fb3eaba8e7.jpg" data-lightbox="roadtrip" data-title="Never Thought I D Want To Go Back So Badly University Of Sussex University Of Sussex British University Sussex">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/24/f8/6024f84f123519a9a28c16fb3eaba8e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCcOh-lhFOQskMqEE4mPYuCKOuez4lZ3PMqg';" alt="Never Thought I D Want To Go Back So Badly University Of Sussex University Of Sussex British University Sussex">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Never Thought I D Want To Go Back So Badly University Of Sussex University Of Sussex British University Sussex</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/f3/4b/def34b49284f47fe1510fd3bf9db50f9.jpg" data-lightbox="roadtrip" data-title="Art Monsters University I Can T Go Back To Jail Monster University Disney Pixar Pixar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/f3/4b/def34b49284f47fe1510fd3bf9db50f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP81a3Kchfk0DZon56ZlgCzQWXB5m1rG95BA';" alt="Art Monsters University I Can T Go Back To Jail Monster University Disney Pixar Pixar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Art Monsters University I Can T Go Back To Jail Monster University Disney Pixar Pixar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/7b/d0/667bd0b377419bd6e1caa2b644f820e9.jpg" data-lightbox="roadtrip" data-title="Dorms So Beautiful They Ll Make You Want To Go Back To School Ranked 17th On The Best College Dorms List Elonu O Elon University Campus University Campus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/7b/d0/667bd0b377419bd6e1caa2b644f820e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW-vi9gZS2nwZL1Kd6pW_4gZp4zVUUSG4lAg';" alt="Dorms So Beautiful They Ll Make You Want To Go Back To School Ranked 17th On The Best College Dorms List Elonu O Elon University Campus University Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dorms So Beautiful They Ll Make You Want To Go Back To School Ranked 17th On The Best College Dorms List Elonu O Elon University Campus University Campus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/79/33/7b7933f027ac4229a39242d28fb99bd7.jpg" data-lightbox="roadtrip" data-title="Pin On Quaternary Education Higher Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/79/33/7b7933f027ac4229a39242d28fb99bd7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXCOZ5cVxjgbt1gGZQoN-nAa02DFwtwGa-A';" alt="Pin On Quaternary Education Higher Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Quaternary Education Higher Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/37/43/093743862ff41da04da5174486c1aebf.jpg" data-lightbox="roadtrip" data-title="For Most International Students The Time Has Come To Go Back To Their Home University Or To Pick Up Their Di International Students Exchange Student Amsterdam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/37/43/093743862ff41da04da5174486c1aebf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5rzA73WAiBuujFa7ne1KX3VtC_k4MIU1rkQ';" alt="For Most International Students The Time Has Come To Go Back To Their Home University Or To Pick Up Their Di International Students Exchange Student Amsterdam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Most International Students The Time Has Come To Go Back To Their Home University Or To Pick Up Their Di International Students Exchange Student Amsterdam</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/milligan-college-womens-basketball-team.html">Milligan College Womens Basketball Team</a></li>
+													<li class="list-group-item"><a href="/montgomery-bill-clark-homes.html">Montgomery Bill Clark Homes</a></li>
+													<li class="list-group-item"><a href="/montgomery-bill-chapter-30.html">Montgomery Bill Chapter 30</a></li>
+													<li class="list-group-item"><a href="/military-gi-bill-bah-calculator.html">Military Gi Bill Bah Calculator</a></li>
+													<li class="list-group-item"><a href="/montgomery-bill-calculator.html">Montgomery Bill Calculator</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-amount.html">Montgomery Gi Amount</a></li>
+													<li class="list-group-item"><a href="/milconnect-gi-bill-transfer.html">Milconnect Gi Bill Transfer</a></li>
+													<li class="list-group-item"><a href="/military-montgomery-gi-bill.html">Military Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/montgomery-bill-law.html">Montgomery Bill Law</a></li>
+													<li class="list-group-item"><a href="/mississippi-state-womens-college-basketball-schedule.html">Mississippi State Womens College Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/military-education-benefits-gi-bill.html">Military Education Benefits Gi Bill</a></li>
+													<li class="list-group-item"><a href="/molloy-college-womens-basketball-roster.html">Molloy College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/montgomery-bill-s808.html">Montgomery Bill S808</a></li>
+													<li class="list-group-item"><a href="/michigan-national-guard-gi-bill.html">Michigan National Guard Gi Bill</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-air-national-guard.html">Montgomery Gi Bill Air National Guard</a></li>
+													<li class="list-group-item"><a href="/michigan-state-gi-lab.html">Michigan State Gi Lab</a></li>
+													<li class="list-group-item"><a href="/memphis-va-education-department.html">Memphis Va Education Department</a></li>
+													<li class="list-group-item"><a href="/military-spouse-gi-bill-bah.html">Military Spouse Gi Bill Bah</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-2019-rates.html">Montgomery Gi Bill 2019 Rates</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-active-duty-educational-assistance-program.html">Montgomery Gi Bill Active Duty Educational Assistance Program</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

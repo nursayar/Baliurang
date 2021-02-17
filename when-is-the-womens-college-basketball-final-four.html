@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>When Is The Womens College Basketball Final Four - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "When Is The Womens College Basketball Final Four",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/56/0b/14/560b14d8b540cbefcffe1519f5fc4c34.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=when+is+the+womens+college+basketball+final+four",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>When Is The Womens College Basketball Final Four</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Previous Month February 2021 Next Month. From 1982 to 1990 1996 to 2002 and since 2017 the Womens Final Four is usually played on the Friday before the Mens Final Four or the hours before the men played on the final Saturday of the tournament. Bracket Rankings Standings Stats Womens Final Four History Video. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/womens-college-basketball-full-game-2019.html">womens college basketball full game 2019</a>
+											<a class="badge badge-light" href="/womens-college-basketball-coaching-rumors.html">womens college basketball coaching rumors</a>
+											<a class="badge badge-warning" href="/womens-college-basketball-games-today-on-tv.html">womens college basketball games today on tv</a>
+											<a class="badge badge-info" href="/womens-college-basketball-finals-2020.html">womens college basketball finals 2020</a>
+											<a class="badge badge-success" href="/womens-college-basketball-baylor-roster.html">womens college basketball baylor roster</a>
+											<a class="badge badge-danger" href="/womens-college-basketball-individual-stats.html">womens college basketball individual stats</a>
+											<a class="badge badge-danger" href="/womens-college-basketball-ball-size.html">womens college basketball ball size</a>
+											<a class="badge badge-warning" href="/womens-college-basketball-full-games.html">womens college basketball full games</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the ideal blog.  Our website provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.  It is also possible to bring about supporting this website by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/bf/25/45bf25142248618b1cbc7ef81120bd1b.gif" data-lightbox="roadtrip" data-title="2019 Ncaa Women S Basketball Tournament Bracket Schedule Scores Ncaa Com Basketball Tournament National Championship Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/bf/25/45bf25142248618b1cbc7ef81120bd1b.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYFUtU-dhd2oVViNSxBUg9NXSbfPFjcjDwHA';" alt="2019 Ncaa Women S Basketball Tournament Bracket Schedule Scores Ncaa Com Basketball Tournament National Championship Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Ncaa Women S Basketball Tournament Bracket Schedule Scores Ncaa Com Basketball Tournament National Championship Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/31/5f/31315fa0d7ff8938ea24c10d0a9aa421.jpg" data-lightbox="roadtrip" data-title="The 10 Best Women S College Basketball Players For 2020 21 In 2020 College Basketball Players Basketball Players Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/31/5f/31315fa0d7ff8938ea24c10d0a9aa421.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRVifzUnbpahdm5CjZxc_hadnwqo8Zwf6AQQ';" alt="The 10 Best Women S College Basketball Players For 2020 21 In 2020 College Basketball Players Basketball Players Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 10 Best Women S College Basketball Players For 2020 21 In 2020 College Basketball Players Basketball Players Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/54/a3/4654a32072a4a49d62366c0e48a9c974.jpg" data-lightbox="roadtrip" data-title="The 4 Best Rebounders Back In Women S College Basketball For 2019 20 College Basketball Rebounding Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/54/a3/4654a32072a4a49d62366c0e48a9c974.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfY9YZRfT7V5srmoNBAMUwhm-fDY0qmZ77Q';" alt="The 4 Best Rebounders Back In Women S College Basketball For 2019 20 College Basketball Rebounding Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 4 Best Rebounders Back In Women S College Basketball For 2019 20 College Basketball Rebounding Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/ff/51/00ff510cf9559a0c32b88fbd291d7554.png" data-lightbox="roadtrip" data-title="Pin On Ncaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/ff/51/00ff510cf9559a0c32b88fbd291d7554.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI6dB7iDcQUJRAee5IgQocwUjAR_hRx01Agg';" alt="Pin On Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/48/fb/1148fbfe1dfb0130235281f190b14fc4.jpg" data-lightbox="roadtrip" data-title="Candace Parker Candice Wiggins Photos Photos Ncaa Women S Basketball Tournament Championship Game Stanford V Te Candace Parker Womens Basketball Championship Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/48/fb/1148fbfe1dfb0130235281f190b14fc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGhi1gOZZVA6XW7c5u0rGb0mcDXBt90AjaxA';" alt="Candace Parker Candice Wiggins Photos Photos Ncaa Women S Basketball Tournament Championship Game Stanford V Te Candace Parker Womens Basketball Championship Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Candace Parker Candice Wiggins Photos Photos Ncaa Women S Basketball Tournament Championship Game Stanford V Te Candace Parker Womens Basketball Championship Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/8f/72/e28f728dc05005a8d5c3b3dd93d4e115.jpg" data-lightbox="roadtrip" data-title="Connecticut Center Stefanie Dolson 31 Celebrates A Basket Against Notre Dame During The First Half Of The Cha Uconn Womens Basketball Uconn Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/8f/72/e28f728dc05005a8d5c3b3dd93d4e115.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGedZwfvHJpMXFCg-V_9ilA9UjxqDCfHF3Q';" alt="Connecticut Center Stefanie Dolson 31 Celebrates A Basket Against Notre Dame During The First Half Of The Cha Uconn Womens Basketball Uconn Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Connecticut Center Stefanie Dolson 31 Celebrates A Basket Against Notre Dame During The First Half Of The Cha Uconn Womens Basketball Uconn Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/67/42/8b/67428be800ae9e8f5462a8a54c11e800.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGedZwfvHJpMXFCg-V_9ilA9UjxqDCfHF3Q';" alt="Connecticut Center Stefanie Dolson 31 Celebrates A Basket Against Notre Dame During The First Half Of The Cha Uconn Womens Basketball Uconn Womens Basketball">
+										<div class="card-body">
+						<h3 class="h5"><b>Womens Final Four preview -- why each team could win in Tampa.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>When is the womens college basketball final four</strong>. 
+								
+																	The final was usually played the Sunday afternoon following the Mens Final Four. 
+																	Womens College Basketball News Saint Francis PA Red Flash vs Merrimack Warriors February 5 Preview Game Time Matchup Statistics VCU Rams vs Davidson Wildcats February 5 Preview Game Time. 
+																	The 2016 NCAA Womens Division I Basketball Tournament was played between March and April 2016 with the Final Four played April 3 5. 
+																	The South Carolina Gamecocks started the 2020-21 season as the countrys No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1-ranked team and continues to be a top seed in Bracketology. 
+																	The Final Four was played at Bankers Life Fieldhouse in Indianapolis. 
+																	The 1996 NCAA Division I Womens Basketball Tournament took place from March 1531 1996. 
+																	Louisville leads UConn drops in 1st Power 10 of February Basketball Hall of Fame and WBCA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The complete official guide to the NCAA womens Final Four including how to buy tickets the Super Saturday Concert and full dates and times for all events. 
+																	But the Gamecocks arent the only Final Four-caliber team. 
+																	How to make womens college basketball even better in 2021 A competitive UConn-Tennessee game some competition for Baylor in the Big 12 and a race for player of the year would be good for the. 
+																	First and Second Rounds Friday March 18 and Sunday March 20 and Saturday March 19 and Monday March 21 at top-16 seeds Beginning in 2023 regional play will be held at two sites per year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We break down why each team could hoist the trophy what might trip them up and make our. 
+																	Each regional winner advanced to the Final Four held March 29 and March 31 in Charlotte North Carolina at the Charlotte Coliseum co-hosted by Davidson College and UNC Charlotte. 
+																	Bridgeport Connecticut Dallas Lexington Kentucky and Sioux Falls South Dakota. 
+																	Bids by state The sixty-four teams came from thirty-two states plus Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 2021 Womens Final Four is being played on April 2nd and 4th in San Antonio Texas at the AlamodomeThe Final Four are the final games of the Womens NCAA Tournament that will crown this seasons National Champion in Womens NCAA basketballDemand for Womens Final Four tickets has been on the rise in recent years as fans really turn up to support their. 
+																	The 2008 NCAA Division I Womens Basketball Tournament involved 64 teams playing in a single-elimination tournament to determine the 200708 national champion of womens NCAA Division I college basketballIt commenced on March 22 2008 and concluded when the University of Tennessee Lady Volunteers defeated the Stanford University Cardinal 6448 on April 8 2008 at the St. 
+																	Louisville leads UConn drops in 1st Power 10 of February. 
+																	Pete Times Forum. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The decision reflects similar move for the men. 
+																	Womens college basketball predictions for NCAA Tournament champion Final Four coach and player of the year The womens college basketball season has started and it could end with UConn winning. 
+																	DI Womens Basketball NCAA student-athletes celebrate reflect on NGWSD 2021 Womens basketball rankings. 
+																	As in all years the dates for the Final Four will change slightly ranging from late March in some years to early to mid-April in others but always staggered so that sports fans can catch every moment of action at the Mens Final Four Womens Final Four and the other big event of the season The Masters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Regional winners advanced to the Final Four held April 3 and 5 at Conseco Fieldhouse now Bankers Life Fieldhouse in Indianapolis hosted by Butler University and the Horizon League as per the NCAAs policy of hosting one of each of the mens and womens Final Four every five years in the home city of the NCAA offices. 
+																	The regional locations were four neutral sites. 
+																	Texas and Tennessee had the most. 
+																	The Womens Final Four will head to the Alamodome in San Antonio Texas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA moved the womens tournament to five sites in Texas leading to the Final Four in San Antonio. 
+																	The NCAA announced that the national championships for Divisions I II and III mens and womens basketball will be celebrated as combined championship events in Atlanta during the 2020 NCAA Mens Final Four and in Dallas as part of the 2023 NCAA Womens Final Four. 
+																	2021 Womens Final Four Tickets. 
+																	Since 2017 Sunday evening. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NCAA College Womens Basketball Scores Schedule. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/0b/14/560b14d8b540cbefcffe1519f5fc4c34.jpg" data-lightbox="roadtrip" data-title="Sydney Colson Photos Photos Ncaa Women S Basketball Tournament Final Four Championship Womens Basketball Basketball Tournament Basketball Court Size">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/0b/14/560b14d8b540cbefcffe1519f5fc4c34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSef5GkMFHm1AVOYS2dA4dK_AD0Cp1UjP1TqQ';" alt="Sydney Colson Photos Photos Ncaa Women S Basketball Tournament Final Four Championship Womens Basketball Basketball Tournament Basketball Court Size">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sydney Colson Photos Photos Ncaa Women S Basketball Tournament Final Four Championship Womens Basketball Basketball Tournament Basketball Court Size</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/66/8c/ff668c847810486f16a37dd581af62f7.jpg" data-lightbox="roadtrip" data-title="Washington Battled Its Way Into History And The Huskies First Women S Final Four Appearance Follow Along Ncaa March Madness March Madness Washington Huskies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/66/8c/ff668c847810486f16a37dd581af62f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeaOiW9KxYUrgxASdy9dsSbHaZjqRBNfvQ9A';" alt="Washington Battled Its Way Into History And The Huskies First Women S Final Four Appearance Follow Along Ncaa March Madness March Madness Washington Huskies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Washington Battled Its Way Into History And The Huskies First Women S Final Four Appearance Follow Along Ncaa March Madness March Madness Washington Huskies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/52/9a/c6529ab483835281c08af6fbe06746dd.jpg" data-lightbox="roadtrip" data-title="U Conn Vs Notre Dame In Their 50th Meeting And Eighth In Women S Final Four History Matters Final Four Uconn Notre Dame">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/52/9a/c6529ab483835281c08af6fbe06746dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeTZWyGzQrhWKJsCA4Vl8c6PIg4VMou0neUQ';" alt="U Conn Vs Notre Dame In Their 50th Meeting And Eighth In Women S Final Four History Matters Final Four Uconn Notre Dame">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U Conn Vs Notre Dame In Their 50th Meeting And Eighth In Women S Final Four History Matters Final Four Uconn Notre Dame</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/bf/60/fabf605df5a0b6869e8b77f264e26dff.jpg" data-lightbox="roadtrip" data-title="Uconn Huskies Rout Syracuse To Win 4th Consecutive Ncaa Women S Basketball Championship Uconn Uconn Womens Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/bf/60/fabf605df5a0b6869e8b77f264e26dff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAngfx86wsHuEwJIyVWMM_Sc4y15fLPmRynw';" alt="Uconn Huskies Rout Syracuse To Win 4th Consecutive Ncaa Women S Basketball Championship Uconn Uconn Womens Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn Huskies Rout Syracuse To Win 4th Consecutive Ncaa Women S Basketball Championship Uconn Uconn Womens Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/e6/52/e9e6526ce3527d41c6a56bb09bd80e08.jpg" data-lightbox="roadtrip" data-title="9 Women S College Basketball Teams That Could Be The Next First Time National Champion Ncaa Com College Basketball Teams College Basketball Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/e6/52/e9e6526ce3527d41c6a56bb09bd80e08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR5eZvXe6OQJaSNnJWkgG255kCEZ3HkB0pLQ';" alt="9 Women S College Basketball Teams That Could Be The Next First Time National Champion Ncaa Com College Basketball Teams College Basketball Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Women S College Basketball Teams That Could Be The Next First Time National Champion Ncaa Com College Basketball Teams College Basketball Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/cc/58/efcc5884b3aa0ffc2233b48e5f3557b8.jpg" data-lightbox="roadtrip" data-title="Saniya Chong And Breanna Stewart Of The Connecticut Huskies Celebrate Uconn Womens Basketball College Basketball Teams Connecticut Huskies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/cc/58/efcc5884b3aa0ffc2233b48e5f3557b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxv6C9IqfcCacRWEWuCGct9wB3srYxOLjtnA';" alt="Saniya Chong And Breanna Stewart Of The Connecticut Huskies Celebrate Uconn Womens Basketball College Basketball Teams Connecticut Huskies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Saniya Chong And Breanna Stewart Of The Connecticut Huskies Celebrate Uconn Womens Basketball College Basketball Teams Connecticut Huskies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/6b/6b/fa6b6bc421c0f9d41abf25b84dcb5a34.jpg" data-lightbox="roadtrip" data-title="Shoni Schimmel Womens Basketball Louisville Basketball Best Basketball Shoes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/6b/6b/fa6b6bc421c0f9d41abf25b84dcb5a34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmS6NHc1x-QQFzayeBb-UAsudMBF1Wf2iIPQ';" alt="Shoni Schimmel Womens Basketball Louisville Basketball Best Basketball Shoes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shoni Schimmel Womens Basketball Louisville Basketball Best Basketball Shoes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/e2/a0/b8e2a0a36324bebc515799f1af2706df.jpg" data-lightbox="roadtrip" data-title="The Field Is Set Baylor Notre Dame Uconn And Oregon Two No 1 Seeds And Two No 2 Seeds On Sunday In Tampa Florida One Final Four Uconn Ncaa Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/e2/a0/b8e2a0a36324bebc515799f1af2706df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNEYwmsgQK7H-_j9E6titrE_1a9QthwdaQxg';" alt="The Field Is Set Baylor Notre Dame Uconn And Oregon Two No 1 Seeds And Two No 2 Seeds On Sunday In Tampa Florida One Final Four Uconn Ncaa Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Field Is Set Baylor Notre Dame Uconn And Oregon Two No 1 Seeds And Two No 2 Seeds On Sunday In Tampa Florida One Final Four Uconn Ncaa Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/bb/23/5cbb23c727ccc8cd1dbacef51805b7ef.jpg" data-lightbox="roadtrip" data-title="Espn The Worldwide Leader In Sports Espn College Basketball Teams Basketball Finals Final Four">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/bb/23/5cbb23c727ccc8cd1dbacef51805b7ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzkOdYlxFI8AAj2QqiLjfrQCCDMQMiTm8KHA';" alt="Espn The Worldwide Leader In Sports Espn College Basketball Teams Basketball Finals Final Four">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Espn The Worldwide Leader In Sports Espn College Basketball Teams Basketball Finals Final Four</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/99/8c/f8998c37b740370cf4c2be8e94c2e755.jpg" data-lightbox="roadtrip" data-title="Photos Women S Ncaa Tournament Louisville Beats Tennessee 86 78 Louisville Womens Basketball Ncaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/99/8c/f8998c37b740370cf4c2be8e94c2e755.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ869NPYAkQ-uFXRTdggZdgqY8TDZblllCUOA';" alt="Photos Women S Ncaa Tournament Louisville Beats Tennessee 86 78 Louisville Womens Basketball Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Women S Ncaa Tournament Louisville Beats Tennessee 86 78 Louisville Womens Basketball Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/ab/f5/42abf54f541868c63982226924a74d26.jpg" data-lightbox="roadtrip" data-title="Pin By Joshua Foxworth On Mississippi State Women S Basketball College Basketball Teams Mississippi State Mississippi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/ab/f5/42abf54f541868c63982226924a74d26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw_0ppZjUXI7yqMMrL2BFdGcqD1SQS6oJaTw';" alt="Pin By Joshua Foxworth On Mississippi State Women S Basketball College Basketball Teams Mississippi State Mississippi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Joshua Foxworth On Mississippi State Women S Basketball College Basketball Teams Mississippi State Mississippi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/a0/c7/8fa0c71c7ce94b2085a8be1707b74e11.jpg" data-lightbox="roadtrip" data-title="Louisville Women S College Basketball Cardinals Photos Espn College Basketball Basketball Mom Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/a0/c7/8fa0c71c7ce94b2085a8be1707b74e11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTFwqIvLpB17-pk33xgSwP1W5BVF9j6QL1dg';" alt="Louisville Women S College Basketball Cardinals Photos Espn College Basketball Basketball Mom Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Louisville Women S College Basketball Cardinals Photos Espn College Basketball Basketball Mom Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/67/42/8b/67428be800ae9e8f5462a8a54c11e800.jpg" data-lightbox="roadtrip" data-title="Pin By Women S Basketball Daily On Ncaa Wbb 18 19 Ncaa Champion Who Will Win Final Four">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/67/42/8b/67428be800ae9e8f5462a8a54c11e800.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfnGEnL-hVPt6p3LyzNffxy-ChklZu_4FRaw';" alt="Pin By Women S Basketball Daily On Ncaa Wbb 18 19 Ncaa Champion Who Will Win Final Four">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Women S Basketball Daily On Ncaa Wbb 18 19 Ncaa Champion Who Will Win Final Four</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/college-bound-gifts.html">College Bound Gifts</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-johns-hopkins.html">College Essay Guy Johns Hopkins</a></li>
+													<li class="list-group-item"><a href="/college-drinking-gifts.html">College Drinking Gifts</a></li>
+													<li class="list-group-item"><a href="/college-dorm-gift-basket-ideas.html">College Dorm Gift Basket Ideas</a></li>
+													<li class="list-group-item"><a href="/college-emile-zola-de-giberville.html">College Emile Zola De Giberville</a></li>
+													<li class="list-group-item"><a href="/college-dorm-giveaways.html">College Dorm Giveaways</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-blog.html">College Essay Guy Blog</a></li>
+													<li class="list-group-item"><a href="/college-dorm-gift-box.html">College Dorm Gift Box</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-login.html">College Essay Guy Login</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-26-outstanding.html">College Essay Guy 26 Outstanding</a></li>
+													<li class="list-group-item"><a href="/college-board-amazon-gift-card-survey.html">College Board Amazon Gift Card Survey</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-brainstorming.html">College Essay Guy Brainstorming</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-letter-of-continued-interest.html">College Essay Guy Letter Of Continued Interest</a></li>
+													<li class="list-group-item"><a href="/college-drop-off-gifts.html">College Drop Off Gifts</a></li>
+													<li class="list-group-item"><a href="/college-dorm-graduation-gifts.html">College Dorm Graduation Gifts</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-essays-that-worked.html">College Essay Guy Essays That Worked</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-interview-podcast.html">College Essay Guy Interview Podcast</a></li>
+													<li class="list-group-item"><a href="/college-bound-gift-basket-ideas.html">College Bound Gift Basket Ideas</a></li>
+													<li class="list-group-item"><a href="/college-boyfriend-christmas-gifts.html">College Boyfriend Christmas Gifts</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-essence-objects.html">College Essay Guy Essence Objects</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

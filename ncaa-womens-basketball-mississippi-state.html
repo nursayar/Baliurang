@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Womens Basketball Mississippi State - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Womens Basketball Mississippi State",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/6d/e7/d3/6de7d3413263f80758791014a8c3dbfb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+womens+basketball+mississippi+state",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Womens Basketball Mississippi State</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">18 Tennessee Maroon and White Nation Weblog 1657 27-Jan-21. 2021 Mississippi State University Womens Basketball Roster. Which Bulldog must come up big off the bench. <br>				
+			</p>
+										<a class="badge badge-danger" href="/york-college-womens-basketball-schedule.html">york college womens basketball schedule</a>
+											<a class="badge badge-success" href="/york-college-womens-basketball-division.html">york college womens basketball division</a>
+											<a class="badge badge-success" href="/youtube-college-gymnastics-2019.html">youtube college gymnastics 2019</a>
+											<a class="badge badge-info" href="/yu-gi-oh-35-resz.html">yu gi oh 35 resz</a>
+											<a class="badge badge-info" href="/yu-gi-oh-9-resz.html">yu gi oh 9 resz</a>
+											<a class="badge badge-warning" href="/yuba-college-womens-basketball-schedule.html">yuba college womens basketball schedule</a>
+											<a class="badge badge-secondary" href="/youngest-to-go-to-college.html">youngest to go to college</a>
+											<a class="badge badge-danger" href="/yu-gi-oh-35.html">yu gi oh 35</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the right blog.  Our website provides you with hints for seeing the highest quality video and image content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this movie for you to view.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/e6/c3/d7e6c37cf1092ef311e4c47a398631fd.jpg" data-lightbox="roadtrip" data-title="Ncaa Women S Tournament Washington Vs Miss St Mississippi State Womens Basketball Basketball Games For Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/e6/c3/d7e6c37cf1092ef311e4c47a398631fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6HOy8v1LqRVAMyXxhxbnJGzDaEfgHCxjqxUTO9-5X5_10_V8ya2ZmOnNtb4q78rjpk1fJ4Q&amp;ec=45771803';" alt="Ncaa Women S Tournament Washington Vs Miss St Mississippi State Womens Basketball Basketball Games For Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Women S Tournament Washington Vs Miss St Mississippi State Womens Basketball Basketball Games For Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/ab/f5/42abf54f541868c63982226924a74d26.jpg" data-lightbox="roadtrip" data-title="Pin By Joshua Foxworth On Mississippi State Women S Basketball College Basketball Teams Mississippi State Mississippi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/ab/f5/42abf54f541868c63982226924a74d26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqIX1NgG0DYTuj1VTBF3cd5v_Aw7zuY5qcsMtMaxixrCZRJYkaFGY9Hwk8H46z5e1HsLaM8Q&amp;ec=45771803';" alt="Pin By Joshua Foxworth On Mississippi State Women S Basketball College Basketball Teams Mississippi State Mississippi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Joshua Foxworth On Mississippi State Women S Basketball College Basketball Teams Mississippi State Mississippi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/70/6a/b2/706ab2dab195d522bec894b3b916ff19.jpg" data-lightbox="roadtrip" data-title="Ncaa Womens Basketball Women S Final Four Mississippi State Vs Connecticut Basketbal Cleveland Cavaliers Basketball Football And Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/70/6a/b2/706ab2dab195d522bec894b3b916ff19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX-t1vMaomb4Hlgq7KuUzj6TK69wmtsTmnB3kFf2PQb-q3E_ChD7DhZP1cwyjheyDFeQx-OA&amp;ec=45771803';" alt="Ncaa Womens Basketball Women S Final Four Mississippi State Vs Connecticut Basketbal Cleveland Cavaliers Basketball Football And Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Womens Basketball Women S Final Four Mississippi State Vs Connecticut Basketbal Cleveland Cavaliers Basketball Football And Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/11/c1/73/11c173e4edb1b8e9d7accb70dd7e3d40.jpg" data-lightbox="roadtrip" data-title="Embedded Mississippi State Bulldogs Mississippi State Mississippi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/11/c1/73/11c173e4edb1b8e9d7accb70dd7e3d40.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe30XO44Me11cu2w5foLrirtEOpt0kIIGKFG2X6i8QJKGRyQTLcAoBAKXH0PYeEHwvQ6PLoA&amp;ec=45771803';" alt="Embedded Mississippi State Bulldogs Mississippi State Mississippi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Embedded Mississippi State Bulldogs Mississippi State Mississippi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/bc/73/99bc73e267a68bbe91378d94c9753f28.jpg" data-lightbox="roadtrip" data-title="Victoria Vivians Mississippi State Bulldogs Female Athletes Mississippi State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/bc/73/99bc73e267a68bbe91378d94c9753f28.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolitW3rgUzrwMGYjUMd5a-gnoe_qdJHoKBnLlxbqDozt_g9_TaLV5s75YFPv0TjvnyTWrlw&amp;ec=45771803';" alt="Victoria Vivians Mississippi State Bulldogs Female Athletes Mississippi State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Victoria Vivians Mississippi State Bulldogs Female Athletes Mississippi State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/9b/e9/219be99ec27d197c8b484fcfd481fb68.jpg" data-lightbox="roadtrip" data-title="Mississippi State Womens Basketball Mississippi State College Hoops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/9b/e9/219be99ec27d197c8b484fcfd481fb68.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3yafavUmyhmvDJvJfOLT63CPxTaxO09J9B9hk2rQ46c-3dUOLlxc7L80WfXMOHkxwfOk-Aw&amp;ec=45771803';" alt="Mississippi State Womens Basketball Mississippi State College Hoops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mississippi State Womens Basketball Mississippi State College Hoops</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/21/f8/8c/21f88c33d654f82a101d1cdb9d3f00b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3yafavUmyhmvDJvJfOLT63CPxTaxO09J9B9hk2rQ46c-3dUOLlxc7L80WfXMOHkxwfOk-Aw&amp;ec=45771803';" alt="Mississippi State Womens Basketball Mississippi State College Hoops">
+										<div class="card-body">
+						<h3 class="h5"><b>The official 2020-21 Womens Basketball schedule for the Mississippi State University Bulldogs.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa womens basketball mississippi state</strong>. 
+								
+																	East American Big 12 Big East Big Sky Big South Big Ten Big West C-USA CAA Horizon Ivy MAAC MAC MEAC MVC Mountain West NEC OVC Pac. 
+																	Kelly USA TODAY Sports Early Sunday afternoon the No. 
+																	14 Mississippi State at Reed Arena. 
+																	The Bulldogs have lost three of their last five suffering losses in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 201819 Mississippi State Bulldogs womens basketball team represented Mississippi State University during the 201819 NCAA Division I womens basketball season. 
+																	NCAAW Basketball Scoreboard Top 25 Division I A 10 ACC ASUN Am. 
+																	2020 season schedule scores stats and highlights. 
+																	The official Womens Basketball page for the Mississippi State University Bulldogs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Baylor players and Head Coach talk about their matchup against Mississippi State set for Sunday at Chesapeake Energy Arena. 
+																	Bounces calls go against Bulldogs on Rocky Top Bulldawgs247. 
+																	The next day one of his former players took. 
+																	21 Mississippi State Bulldogs on Thursday at 7 pm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mississippi State-68 Florida-56 Ole Miss-62 Auburn-58. 
+																	State drops third-straight in loss at No. 
+																	Mississippi State Womens basketball 14th ranked Lady Bulldogs on the road tonight taking on Florida. 
+																	Ole Miss Arkansas Arkansas Fight Weblog 1727 27-Jan-21. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Bulldogs led by seventh-year head coach Vic Schaefer played their home games at Humphrey Coliseum as members of the Southeastern Conference SEC. 
+																	The Bulldogs play in the Southeastern Conference. 
+																	The schedule will consist of nine non-conference. 
+																	Mississippi State University sports news and features including conference nickname location and official social media handles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For Whom The Cowbell Tolls Weblog 1807 27-Jan-21. 
+																	Ex-UT teammates to go at it from opposing benches 824 83d. 
+																	Ahead of the Mississippi State basketball season beginning at the end of the month the Bulldogs SEC womens hoops schedule has been released. 
+																	Get Womens Basketball rankings news schedules and championship brackets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mississippi State will have 25 seating capacity for mens and womens basketball games at Humphrey Coliseum this season. 
+																	Get the latest news and information for the Mississippi State Bulldogs. 
+																	Mississippi State womens basketball player enters the NCAA transfer portal The Mississippi State womens basketball program lost its coach on Sunday. 
+																	The Aggies had lost the past seven. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Mississippi State Bulldogs womens basketball program represents Mississippi State University in Starkville Mississippi in womens NCAA Division I basketball. 
+																	The NCAA Womens Basketball DI official home. 
+																	4 South Carolina Gamecocks hit the road to play the No. 
+																	7 Texas AM womens basketball team hosted No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mississippi State hires Nikki McCray as its new head coach The Bulldogs get a coach with a rich pedigree in hoops Mississippi State has hired Old Dominion coach Nikki McCray as its new head coach replacing Vic Schaefer at the helm of a talented Bulldog program according to Ben Portnoy of The Dispatch. 
+																	Mississippi State Womens basketball 14th ranked Lady Bulldogs on the road tonight taking on Florida. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/7b/02/ae7b02bbc1904a3c6abee22468afc9be.jpg" data-lightbox="roadtrip" data-title="Pin By Joshua Foxworth On Mississippi State Women S Basketball Mississippi State Mississippi State University Mississippi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/7b/02/ae7b02bbc1904a3c6abee22468afc9be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcA9yG4PrQcD-3Gluwt4j9IBv5aCqsbm6UyoHFZsvzvo6k-5BLtXmCFJatFZrC0-ytgE5mdg&amp;ec=45771803';" alt="Pin By Joshua Foxworth On Mississippi State Women S Basketball Mississippi State Mississippi State University Mississippi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Joshua Foxworth On Mississippi State Women S Basketball Mississippi State Mississippi State University Mississippi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/23/52/f52352ee5d6dfa02ee5ce0454bb1fdd1.jpg" data-lightbox="roadtrip" data-title="Pin By Joshua Foxworth On Mississippi State Women S Basketball Mississippi State Mississippi Hail State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/23/52/f52352ee5d6dfa02ee5ce0454bb1fdd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn8Jk2AAPsC66H1YsLUPcWWYgzQAZhMZDscAiBZwBnL2XPqCDB8zRBNItT3ox66T6nkCZ6A&amp;ec=45771803';" alt="Pin By Joshua Foxworth On Mississippi State Women S Basketball Mississippi State Mississippi Hail State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Joshua Foxworth On Mississippi State Women S Basketball Mississippi State Mississippi Hail State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/b3/50/cdb3505ab48bc86470caeca44eca63f9.jpg" data-lightbox="roadtrip" data-title="Pin By Joshua Foxworth On Mississippi State Women S Basketball Ncaa Mississippi State Tournaments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/b3/50/cdb3505ab48bc86470caeca44eca63f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz9H_PLAbwIFCwziM35poWhi4xAG15A3VDo21IkymN4x-kb7rS3pTsYJ8uFeGazQPG3VHLDg&amp;ec=45771803';" alt="Pin By Joshua Foxworth On Mississippi State Women S Basketball Ncaa Mississippi State Tournaments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Joshua Foxworth On Mississippi State Women S Basketball Ncaa Mississippi State Tournaments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/4b/77/784b7749c6006d5ba5edd88ee6d74d2c.jpg" data-lightbox="roadtrip" data-title="Uconn Vs Mississippi State 3 26 16 Women S Ncaa Tournament Pick Odds And Prediction Uconn Ncaa Tournament Mississippi State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/4b/77/784b7749c6006d5ba5edd88ee6d74d2c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgBdq4DwLDoibKQb0mccDcEJ0qUI8cG_6kRX4FKUjhPUusP7GPzXhIyhCwtmsM4u-RCFUYzA&amp;ec=45771803';" alt="Uconn Vs Mississippi State 3 26 16 Women S Ncaa Tournament Pick Odds And Prediction Uconn Ncaa Tournament Mississippi State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn Vs Mississippi State 3 26 16 Women S Ncaa Tournament Pick Odds And Prediction Uconn Ncaa Tournament Mississippi State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/fd/11/a1fd115bf10622402bf6889acff262bc.jpg" data-lightbox="roadtrip" data-title="Notre Dame Tops Mississippi State With Buzzer Beater To Win Ncaa Women S Basketball Title Fox News Mississippi Mississippi State Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/fd/11/a1fd115bf10622402bf6889acff262bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGnRkeiLB7uXbsjILzF0xr0yLaHy5fRab0NOIcdMUpp4-QlaMY85Kij4YRl-enYZxT9x3pGg&amp;ec=45771803';" alt="Notre Dame Tops Mississippi State With Buzzer Beater To Win Ncaa Women S Basketball Title Fox News Mississippi Mississippi State Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Notre Dame Tops Mississippi State With Buzzer Beater To Win Ncaa Women S Basketball Title Fox News Mississippi Mississippi State Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/58/57/a058575e71725b7bf3e6744231381002.jpg" data-lightbox="roadtrip" data-title="Here S What Rickea Jackson Has Meant To Mississippi State Women S Basketball This Season Mississippi State Mississippi State Basketball Mississippi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/58/57/a058575e71725b7bf3e6744231381002.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUlNkPo4BCCm14uLhtKG8Hcx4M63hjGyUL22C87mEBrMLTktBeQVd0_lQEGn3mm2IQ9Z-OBQ&amp;ec=45771803';" alt="Here S What Rickea Jackson Has Meant To Mississippi State Women S Basketball This Season Mississippi State Mississippi State Basketball Mississippi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S What Rickea Jackson Has Meant To Mississippi State Women S Basketball This Season Mississippi State Mississippi State Basketball Mississippi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/ad/4f/3aad4fe2a8600e0b8544f7445bde252e.jpg" data-lightbox="roadtrip" data-title="Ring That Cowbell Mississippi St Shocks Uconn In Final Four Mississippi State Bulldogs Mississippi State Mississippi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/ad/4f/3aad4fe2a8600e0b8544f7445bde252e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM2Qcvm6QvfJrnjGhZTCJVet481dZuUnxXacsqRd3Izt_DRoXLzzyw-TgUJoQOv9QhhDFJGA&amp;ec=45771803';" alt="Ring That Cowbell Mississippi St Shocks Uconn In Final Four Mississippi State Bulldogs Mississippi State Mississippi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ring That Cowbell Mississippi St Shocks Uconn In Final Four Mississippi State Bulldogs Mississippi State Mississippi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/e7/d3/6de7d3413263f80758791014a8c3dbfb.jpg" data-lightbox="roadtrip" data-title="Pin On Bull Dawg State Of Mind">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/e7/d3/6de7d3413263f80758791014a8c3dbfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTN5iLUNaK7GBKDgABhPGbA8H8YuI98DNz3zBMKjAtT-FAeFO8aUna0Pi0RIBIr9IcILoyxw&amp;ec=45771803';" alt="Pin On Bull Dawg State Of Mind">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bull Dawg State Of Mind</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/d0/83/cad083c46f940a208386ea5f08d0ff9d.jpg" data-lightbox="roadtrip" data-title="E3rjxn91dyoy Jpg Jpeg Image 700 1464 Pixels Mississippi State Football Mississippi State Mississippi State Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/d0/83/cad083c46f940a208386ea5f08d0ff9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWc0QYCaTyrIlA3j5--jThpcpCTFoHLKS8HxX07OfsLxjo1FOG-f08QJ3IczQM28XcBiKVPQ&amp;ec=45771803';" alt="E3rjxn91dyoy Jpg Jpeg Image 700 1464 Pixels Mississippi State Football Mississippi State Mississippi State Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">E3rjxn91dyoy Jpg Jpeg Image 700 1464 Pixels Mississippi State Football Mississippi State Mississippi State Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/21/f8/8c/21f88c33d654f82a101d1cdb9d3f00b5.jpg" data-lightbox="roadtrip" data-title="Morgan William Blair Schaefer Mississippi State Bulldogs Msu Bulldogs Mississippi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/21/f8/8c/21f88c33d654f82a101d1cdb9d3f00b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsatdoz4giYLKjLad4vvNfrIIJbgR8iZBYj0FXDoP2RpGp1z60eJYz0bvpBkpDikUKuSMPgQ&amp;ec=45771803';" alt="Morgan William Blair Schaefer Mississippi State Bulldogs Msu Bulldogs Mississippi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Morgan William Blair Schaefer Mississippi State Bulldogs Msu Bulldogs Mississippi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/90/0f/43900f92c02a8491b98b0e1ea178dfe5.jpg" data-lightbox="roadtrip" data-title="Mccowan S Huge Fourth Quarter Leads Bulldogs To Elite Eight Mississippi State Bulldogs Mississippi State Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/90/0f/43900f92c02a8491b98b0e1ea178dfe5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNRCS5j9KnKE2XsoJHakIqjc1N1CZ6y27bhlpWjrNlG-U9lS8tZiLkFn_ZwbRbuge71pHOWQ&amp;ec=45771803';" alt="Mccowan S Huge Fourth Quarter Leads Bulldogs To Elite Eight Mississippi State Bulldogs Mississippi State Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mccowan S Huge Fourth Quarter Leads Bulldogs To Elite Eight Mississippi State Bulldogs Mississippi State Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/0d/f8/330df8816faa7969c384ee33547b6809.png" data-lightbox="roadtrip" data-title="March Madness Why Did Mississippi State Bench Its Star Morgan William In Championship Game Championship Game Mississippi State Morgan Williams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/0d/f8/330df8816faa7969c384ee33547b6809.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9L4MuxwvXrZK6_oIsU7DbmX8wSuyy8QaM0vBqIXQxP6d40da7zvJxKF1gPJRtm8RgKtnlOA&amp;ec=45771803';" alt="March Madness Why Did Mississippi State Bench Its Star Morgan William In Championship Game Championship Game Mississippi State Morgan Williams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">March Madness Why Did Mississippi State Bench Its Star Morgan William In Championship Game Championship Game Mississippi State Morgan Williams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/d8/4d/77d84d364f52139061cb90fb69431ed1.jpg" data-lightbox="roadtrip" data-title="Uconn S Collier Named To Wooden All America Team Uconn Uconn Womens Basketball Uconn Huskies Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/d8/4d/77d84d364f52139061cb90fb69431ed1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIBAxhovQ860TxcdrmoFTDNMoYisk_D5JDRentCzPGT_Tc9xCMijsKLQJEJoBQE2T9CftZg&amp;ec=45771803';" alt="Uconn S Collier Named To Wooden All America Team Uconn Uconn Womens Basketball Uconn Huskies Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn S Collier Named To Wooden All America Team Uconn Uconn Womens Basketball Uconn Huskies Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/state-wise-gi-tag-list.html">State Wise Gi Tag List</a></li>
+													<li class="list-group-item"><a href="/surface-go-good-for-college.html">Surface Go Good For College</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-history.html">The Gi Bill History</a></li>
+													<li class="list-group-item"><a href="/tabor-college-womens-basketball-live-stream.html">Tabor College Womens Basketball Live Stream</a></li>
+													<li class="list-group-item"><a href="/sterling-college-womens-basketball-schedule.html">Sterling College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-after-ww2.html">The Gi Bill After Ww2</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-did-all-of-the-following-except.html">The Gi Bill Did All Of The Following Except</a></li>
+													<li class="list-group-item"><a href="/taking-online-classes-with-gi-bill.html">Taking Online Classes With Gi Bill</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-affected-american-society-after-world-war-2-by.html">The Gi Bill Affected American Society After World War 2 By</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-did-not.html">The Gi Bill Did Not</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-provided-for-all-of-the-following-except.html">The Gi Bill Provided For All Of The Following Except</a></li>
+													<li class="list-group-item"><a href="/tech-schools-that-accept-gi-bill.html">Tech Schools That Accept Gi Bill</a></li>
+													<li class="list-group-item"><a href="/things-to-go-to-college-for-online.html">Things To Go To College For Online</a></li>
+													<li class="list-group-item"><a href="/state-illinois-veterans-education-benefits.html">State Illinois Veterans Education Benefits</a></li>
+													<li class="list-group-item"><a href="/temple-college-womens-basketball-schedule.html">Temple College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/stonehill-college-womens-basketball-schedule.html">Stonehill College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-was-meant-to.html">The Gi Bill Was Meant To</a></li>
+													<li class="list-group-item"><a href="/the-gi-bill-did-all-of-the-following-except-quizlet.html">The Gi Bill Did All Of The Following Except Quizlet</a></li>
+													<li class="list-group-item"><a href="/to-go-to-college-or-university.html">To Go To College Or University</a></li>
+													<li class="list-group-item"><a href="/texas-state-university-gi-bill.html">Texas State University Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

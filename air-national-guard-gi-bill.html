@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Air National Guard Gi Bill - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Air National Guard Gi Bill",
+  "datePublished": "2021-02-17",
+  "image": "https://www.iowanationalguard.com/Recruiting/Recruiting%20Banner/images/slide7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=air+national+guard+gi+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Air National Guard Gi Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Montgomery GI Bill Selected Reserve MGIB-SR You can get benefits through MGIB-SR if youre a member of the Army Navy Air Force Marine Corps or Coast Guard Reserves Army National Guard or Air National Guard and you meet all of the requirements listed below. Department of Veterans Affairs education benefits through the GI Bill program and other educational assistance programs. Entered full-time National Guard duty under title 32 USC between July 1 1985 and November 28 1989 and chose MGIB between October 9 1996 and July 9 1997 The ability to use MGIB benefits usually expires 10 years after the date the Service member was discharged from the Air Force or released from active duty but the time limit can be fewer or more years depending on the situation. <br>				
+			</p>
+										<a class="badge badge-primary" href="/montgomery-gi-bill-withdraw-from-class.html">montgomery gi bill withdraw from class</a>
+											<a class="badge badge-info" href="/moorpark-college-womens-basketball-roster.html">moorpark college womens basketball roster</a>
+											<a class="badge badge-secondary" href="/my-gi-bill-payment-is-late.html">my gi bill payment is late</a>
+											<a class="badge badge-info" href="/montgomery-gi-bill-veterans-education-benefits.html">montgomery gi bill veterans education benefits</a>
+											<a class="badge badge-danger" href="/my-va-benefits-gi-bill.html">my va benefits gi bill</a>
+											<a class="badge badge-info" href="/montgomery-gi-bill-worth.html">montgomery gi bill worth</a>
+											<a class="badge badge-success" href="/montgomery-gi-bill-wave.html">montgomery gi bill wave</a>
+											<a class="badge badge-light" href="/montgomery-gi-bill-usmc.html">montgomery gi bill usmc</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the right site.  Our website gives you hints for seeing the highest quality video and image content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie that you see.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.125fw.ang.af.mil/LinkClick.aspx?fileticket=5vEXLqnyhko%253d&amp;portalid=16" data-lightbox="roadtrip" data-title="Recruiting And Retention">
+											<img class="card-img v-image ads-img " src="https://www.125fw.ang.af.mil/LinkClick.aspx?fileticket=5vEXLqnyhko%253d&amp;portalid=16" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5XtGVRVo1Go885JA6Llp0to4vMxk_eZ2CQw';" alt="Recruiting And Retention">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Recruiting And Retention</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.iowanationalguard.com/Recruiting/SitePages/images/benefit_comparison.jpg" data-lightbox="roadtrip" data-title="National Guard Overview Of Benefits">
+											<img class="card-img v-image ads-img " src="https://www.iowanationalguard.com/Recruiting/SitePages/images/benefit_comparison.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1eU5IxTfvoHFQ3BB8CEoGr44iaDrsDywYew';" alt="National Guard Overview Of Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Overview Of Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Feb/07/2002245566/-1/-1/0/200205-F-VQ832-1001.JPG" data-lightbox="roadtrip" data-title="Part Time Air Force Ramstein Air Base Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Feb/07/2002245566/-1/-1/0/200205-F-VQ832-1001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_EZVYozzV4ICX9KCZRw_W0dX0TvrvU8UjNQ';" alt="Part Time Air Force Ramstein Air Base Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Part Time Air Force Ramstein Air Base Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images05.military.com/sites/default/files/styles/full/public/media/veteran-jobs/content-images/2013/07/graduatediplomasmile.jpg?itok=crEVlITx" data-lightbox="roadtrip" data-title="National Guard Gi Bill User S Guide Military Com">
+											<img class="card-img v-image ads-img " src="https://images05.military.com/sites/default/files/styles/full/public/media/veteran-jobs/content-images/2013/07/graduatediplomasmile.jpg?itok=crEVlITx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAKkPbHtx6BdJoBTXSAkIhkOQwrvZnxEt8tQ';" alt="National Guard Gi Bill User S Guide Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Gi Bill User S Guide Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images02.military.com/sites/default/files/styles/full/public/2020-08/mil-ang.jpg?itok=_EUjzSUH" data-lightbox="roadtrip" data-title="Gi Bill Rates For Reserve And National Guard Military Com">
+											<img class="card-img v-image ads-img " src="https://images02.military.com/sites/default/files/styles/full/public/2020-08/mil-ang.jpg?itok=_EUjzSUH" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLXOkMRlN3BXnvDNl30sc5RHHfTwZBfI6I3w';" alt="Gi Bill Rates For Reserve And National Guard Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill Rates For Reserve And National Guard Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Mar/21/2002104032/780/780/0/120814-Z-SE263-023.JPG" data-lightbox="roadtrip" data-title="Guard Members To See Changes In Gi Bill Transfer Benefits Air National Guard Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Mar/21/2002104032/780/780/0/120814-Z-SE263-023.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd68wREyklTGSIMq_n2I9ab96HB08Dd1EHhw';" alt="Guard Members To See Changes In Gi Bill Transfer Benefits Air National Guard Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guard Members To See Changes In Gi Bill Transfer Benefits Air National Guard Article Display</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.152aw.ang.af.mil/portals/48/Updated%20wordmarks_Page_5.png?ver=2017-04-06-184830-850" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd68wREyklTGSIMq_n2I9ab96HB08Dd1EHhw';" alt="Guard Members To See Changes In Gi Bill Transfer Benefits Air National Guard Article Display">
+										<div class="card-body">
+						<h3 class="h5"><b>Provisions allowing Guard members to transfer some or all of their Post- 911 GI Bill benefits to their spouse or children are set to change limiting the timeframe Soldiers and Airmen can transfer those benefits.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Air national guard gi bill</strong>. 
+								
+																	National Guard and Reserve members may be eligible for the following benefits. 
+																	I recently switched over from active duty to an AGR position so Im still learning a lot about the differences. 
+																	I know active duty requires a 4 year service. 
+																	For the thousands of Guard troops deployed to Washington last year over civil unrest there was no special national emergency declaration so those members did not earn time toward their GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Effective October 1 2011 Active Service performed by National Guard members under title 32 USC. 
+																	Post-911 GI Bill - at least 90 aggregate days of active service after September 10 2001 or were discharged with a service-connected disability after serving at least 30 consecutive days after that date. 
+																	The monthly rates for the reserve GI Bill change each October based on government calculations of higher education costs. 
+																	Answer ID 1441 Published 10172011 0937 AM Updated 11142018 0850 AM. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre an active-duty Guard or Reserve Airman Air Force veteran or qualified survivor or dependent you may qualify for US. 
+																	National Guard GI Bill Kicker The ARNG GI Bill Kicker is not an entitlement but an additional benefit to the Montgomery GI Bill Selected Reserve MGIBSR Chapter 1606 or Montgomery GI Bill Active. 
+																	This State Grant can pay for up to 100 of the tuition and fees at a University of California California State University or a California Community College. 
+																	You receive different amounts depending on what your training time is. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ANG Currently Serving Member Question. 
+																	Service under section 502f for the purpose of responding to a national. 
+																	Orders for the purpose of. 
+																	It can also be used for eligible California proprietary and private. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out if you qualify. 
+																	ANG Currently Serving Member Question. 
+																	Posted by 1 month ago. 
+																	GI Bill benefits are available for Selected Reserve servicemembers to help with education and training costs this guide will help to explain the Montgomery GI Bill - Selected Reserve MGIB-SR. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre a member of the Army Navy Air Force Marine Corps or Coast Guard Reserve Army National Guard or Air National Guard you may be eligible for this benefit. 
+																	The CMD GI Bill issues educational awards to qualifying members of the California Army or Air National Guard California State Guard and the California Naval Militia. 
+																	2021 United States National Guard ELIGIBILITY. 
+																	All approvals for transferability of Post-911 GI Bill continue to require a four-year commitment in the armed forces and more importantly the member must be eligible to be retained for four years from the date of election officials said. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All of these must be true. 
+																	National Guard Service and the Post-911 GI Bill. 
+																	One of the questions I havent been able to get an answer to is transferring my GI bill to my child. 
+																	Eric Little director of manpower and personnel for the National Guard Bureau wrote to lawmakers saying the mission counted toward troops eligibility for Post-911 GI Bill benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While I am pleased that the National Guard members protecting our Capitol will be able to earn GI Bill benefits for their service this confusion was another poignant reminder that too often. 
+																	The Post-911 GI Bill chapter 33 benefits is an education benefit program specifically for military members who served on active duty on or after September 11 2001. 
+																	The Montgomery GI Bill Selected Reserve MGIB-SR program offers up to 36 months of education and training benefits. 
+																	It provides activated Reserve and Guard members up to 80 of the GI Bill for Active Duty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA may be able to help pay your tuition pick out a school choose a career and more. 
+																	GI Bill benefits for Reserve or National Guard servicemembers include an option called the GI Bill On-The-Job Training and Apprentice Program OJT plus The Reserve Education Assistance Program REAP. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://al.ng.mil/Portals/52/070622-F-1234Z-341.jpeg" data-lightbox="roadtrip" data-title="Air National Guard Faqs Frequently Asked Questions">
+											<img class="card-img v-image ads-img " src="https://al.ng.mil/Portals/52/070622-F-1234Z-341.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJscxfioujUD678SR692z7pDBp3VpXtg1iLA';" alt="Air National Guard Faqs Frequently Asked Questions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air National Guard Faqs Frequently Asked Questions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.moaa.org/uploadedfiles/capitol-guard-h.png" data-lightbox="roadtrip" data-title="H2deoufenhcjlm">
+											<img class="card-img v-image ads-img " src="https://www.moaa.org/uploadedfiles/capitol-guard-h.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqKQG924GG_xyzo_UepU-Cre1AaU9vORlWAA';" alt="H2deoufenhcjlm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">H2deoufenhcjlm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2014/08/Air-National-Guard-Emblem.jpg" data-lightbox="roadtrip" data-title="I Joined The Air National Guard The Military Wallet">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2014/08/Air-National-Guard-Emblem.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkonYdGh_HuW9_TXzJDfa1COJO7_i1XcXCvw';" alt="I Joined The Air National Guard The Military Wallet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Joined The Air National Guard The Military Wallet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="afKgw3g5MbOBuM" data-lightbox="roadtrip" data-title="Https Www Mstc Edu Sites Default Files 2019 03 Airandarmynationalguardbenefits Pdf">
+											<img class="card-img v-image ads-img " src="afKgw3g5MbOBuM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUg-NVZQd956IeNg-f0wmWjmhFsKrjyehUVQ';" alt="Https Www Mstc Edu Sites Default Files 2019 03 Airandarmynationalguardbenefits Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Mstc Edu Sites Default Files 2019 03 Airandarmynationalguardbenefits Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.623092.1585051269!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Nearly 1 5 Billion For National Guard Funding In Coronavirus Relief Bill U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.623092.1585051269!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJrTJtE-g_EV-Tdl4MVUcJskB5pDrwBqzLeQ';" alt="Nearly 1 5 Billion For National Guard Funding In Coronavirus Relief Bill U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nearly 1 5 Billion For National Guard Funding In Coronavirus Relief Bill U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/08/national-guard-tuition-assistance-program-ta.jpg" data-lightbox="roadtrip" data-title="National Guard Tuition Assistance Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/08/national-guard-tuition-assistance-program-ta.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7FM-z4NoaR5iwjT1oFO3yCv9H7KkKFO8QOg';" alt="National Guard Tuition Assistance Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Tuition Assistance Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sd.ng.mil/Resources/EducationServices/PublishingImages/Pages/default/service_members-your_benefits-air_national_guard.jpg" data-lightbox="roadtrip" data-title="South Dakota National Guard Education Services">
+											<img class="card-img v-image ads-img " src="https://sd.ng.mil/Resources/EducationServices/PublishingImages/Pages/default/service_members-your_benefits-air_national_guard.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ZcdGS8mE4BwEACl3uTGs58N_X3k1D3GqZA';" alt="South Dakota National Guard Education Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">South Dakota National Guard Education Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="GRmRWt_7aKk-EM" data-lightbox="roadtrip" data-title="Https Www Ang Af Mil Portals 77 Documents Resources Ang 20squadron 20superintendent 20handbook 20 Jul20 Pdf Ver 2020 07 12 182502 447">
+											<img class="card-img v-image ads-img " src="GRmRWt_7aKk-EM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpPntO9nMhXhWxzR493XK2xwN1e8LxdafcqQ';" alt="Https Www Ang Af Mil Portals 77 Documents Resources Ang 20squadron 20superintendent 20handbook 20 Jul20 Pdf Ver 2020 07 12 182502 447">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Ang Af Mil Portals 77 Documents Resources Ang 20squadron 20superintendent 20handbook 20 Jul20 Pdf Ver 2020 07 12 182502 447</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.iowanationalguard.com/Recruiting/Recruiting%20Banner/images/slide7.jpg" data-lightbox="roadtrip" data-title="Iowa National Guard Recruiting Home">
+											<img class="card-img v-image ads-img " src="https://www.iowanationalguard.com/Recruiting/Recruiting%20Banner/images/slide7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRblL8JQsi1vp47CJThO_lKrfg26K6QDDSkvg';" alt="Iowa National Guard Recruiting Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iowa National Guard Recruiting Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.152aw.ang.af.mil/portals/48/Updated%20wordmarks_Page_5.png?ver=2017-04-06-184830-850" data-lightbox="roadtrip" data-title="Recruiting Retention">
+											<img class="card-img v-image ads-img " src="https://www.152aw.ang.af.mil/portals/48/Updated%20wordmarks_Page_5.png?ver=2017-04-06-184830-850" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYt6nKVxuzipHtfhR1L1NGq6PRcW-Kj8ww4w';" alt="Recruiting Retention">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Recruiting Retention</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/08/whats-the-difference-between-active-duty-national-guard-and-reserve.jpg" data-lightbox="roadtrip" data-title="Active Duty Vs Reserve Or National Guard What S The Difference Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/08/whats-the-difference-between-active-duty-national-guard-and-reserve.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl9qzAgC2PFQs0MBfJsp60o7dKo4CukTpSg';" alt="Active Duty Vs Reserve Or National Guard What S The Difference Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Active Duty Vs Reserve Or National Guard What S The Difference Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dod.hawaii.gov/hiang/files/2016/08/HANG_Hookanaka_Logo-from-Graphics.jpg" data-lightbox="roadtrip" data-title="Hawaii Air National Guard Join">
+											<img class="card-img v-image ads-img " src="https://dod.hawaii.gov/hiang/files/2016/08/HANG_Hookanaka_Logo-from-Graphics.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiALpjtQy53plZ9FAxajxKrLMeXnUFVj750A';" alt="Hawaii Air National Guard Join">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hawaii Air National Guard Join</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.northwestmilitary.com/news/news-front/2019/07/Washington-Air-National-Guard-steps-up-recruiting/uploads/articles/30367-banner-Washington-Air-National-Guard-steps-up-recruiting.jpg" data-lightbox="roadtrip" data-title="Washington Air National Guard Steps Up Recruiting News Front Northwest Military Home Of The Ranger Nw Airlifter Weekly Volcano">
+											<img class="card-img v-image ads-img " src="http://www.northwestmilitary.com/news/news-front/2019/07/Washington-Air-National-Guard-steps-up-recruiting/uploads/articles/30367-banner-Washington-Air-National-Guard-steps-up-recruiting.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbKPRSl7vBfy7Ukwu-Zhmxy_ax4FaTUpvxUw';" alt="Washington Air National Guard Steps Up Recruiting News Front Northwest Military Home Of The Ranger Nw Airlifter Weekly Volcano">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Washington Air National Guard Steps Up Recruiting News Front Northwest Military Home Of The Ranger Nw Airlifter Weekly Volcano</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/when-did-gi-joe-cartoon-come-out.html">When Did Gi Joe Cartoon Come Out</a></li>
+													<li class="list-group-item"><a href="/where-does-elle-go-to-college-kissing-booth.html">Where Does Elle Go To College Kissing Booth</a></li>
+													<li class="list-group-item"><a href="/when-is-womens-college-basketball.html">When Is Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/where-is-my-va-education-benefits-check.html">Where Is My Va Education Benefits Check</a></li>
+													<li class="list-group-item"><a href="/when-was-the-gi-bill-enacted.html">When Was The Gi Bill Enacted</a></li>
+													<li class="list-group-item"><a href="/when-can-i-expect-my-gi-bill-payment.html">When Can I Expect My Gi Bill Payment</a></li>
+													<li class="list-group-item"><a href="/when-did-montgomery-gi-bill-end.html">When Did Montgomery Gi Bill End</a></li>
+													<li class="list-group-item"><a href="/where-did-you-went-or-go.html">Where Did You Went Or Go</a></li>
+													<li class="list-group-item"><a href="/when-was-the-gi-bill-established.html">When Was The Gi Bill Established</a></li>
+													<li class="list-group-item"><a href="/when-do-i-get-my-va-education-benefits.html">When Do I Get My Va Education Benefits</a></li>
+													<li class="list-group-item"><a href="/when-does-my-gi-bill-payment-get-deposited.html">When Does My Gi Bill Payment Get Deposited</a></li>
+													<li class="list-group-item"><a href="/when-are-post-911-benefits-paid.html">When Are Post 911 Benefits Paid</a></li>
+													<li class="list-group-item"><a href="/where-did-u-come-from-where-did-u-go.html">Where Did U Come From Where Did U Go</a></li>
+													<li class="list-group-item"><a href="/when-did-gi-joes-go-out-of-business.html">When Did Gi Joes Go Out Of Business</a></li>
+													<li class="list-group-item"><a href="/when-does-the-post-911-gi-bill-pay-bah.html">When Does The Post 911 Gi Bill Pay Bah</a></li>
+													<li class="list-group-item"><a href="/when-do-gi-bill-benefits-get-paid.html">When Do Gi Bill Benefits Get Paid</a></li>
+													<li class="list-group-item"><a href="/when-is-the-womens-college-basketball-final-four.html">When Is The Womens College Basketball Final Four</a></li>
+													<li class="list-group-item"><a href="/which-is-better-post-911-or-mgib.html">Which Is Better Post 911 Or Mgib</a></li>
+													<li class="list-group-item"><a href="/which-gi-bill-do-you-pay-for.html">Which Gi Bill Do You Pay For</a></li>
+													<li class="list-group-item"><a href="/who-benefits-from-the-gi-bill.html">Who Benefits From The Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

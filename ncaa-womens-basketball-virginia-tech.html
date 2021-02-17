@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Womens Basketball Virginia Tech - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Womens Basketball Virginia Tech",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/4c/a8/0d/4ca80db4dcfb4def01b5254e3636c15e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+womens+basketball+virginia+tech",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Womens Basketball Virginia Tech</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Louisiana Tech led early with as much as a 13-point lead in the first half and a ten-point lead at halftime. The school competes in the Atlantic Coast Conference in Division I of the National Collegiate Athletic Association NCAA. Is always good so Im very proud of our kids Virginia Tech womens basketball coach Kenny. <br>				
+			</p>
+										<a class="badge badge-light" href="/gastroenterology-nursing-education.html">gastroenterology nursing education</a>
+											<a class="badge badge-primary" href="/forever-gi-bill-start-date.html">forever gi bill start date</a>
+											<a class="badge badge-secondary" href="/forever-gi-bill-stem-extension.html">forever gi bill stem extension</a>
+											<a class="badge badge-dark" href="/garra-gi-35.html">garra gi 35</a>
+											<a class="badge badge-primary" href="/gastroenterologist-in-state-college-pa.html">gastroenterologist in state college pa</a>
+											<a class="badge badge-light" href="/forever-gi-bill.html">forever gi bill</a>
+											<a class="badge badge-dark" href="/gastroenterology-medical-college-of-wisconsin.html">gastroenterology medical college of wisconsin</a>
+											<a class="badge badge-dark" href="/gastroenterology-college-station-tx.html">gastroenterology college station tx</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the right site.  Our website provides you with suggestions for viewing the maximum quality video and image content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie that you see.  You can also contribute to supporting this website by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/c4/15/c0c415a1ae10a9e81e89bf4a5ebcae8e.png" data-lightbox="roadtrip" data-title="Va Tech Wbb Basketball Posters Sport Poster Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/c4/15/c0c415a1ae10a9e81e89bf4a5ebcae8e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaekQ6DSdva2EnzugdG4TAQxaJpTyGCOzBNA';" alt="Va Tech Wbb Basketball Posters Sport Poster Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Tech Wbb Basketball Posters Sport Poster Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2c/c8/4e/2cc84ef4d07268c364524b235ee1a370.jpg" data-lightbox="roadtrip" data-title="2 Louisville Vs Virginia Tech Ncaa Women Basketball Jan 7 2021 Youtube In 2021 Virginia Tech Womens Basketball Louisville">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2c/c8/4e/2cc84ef4d07268c364524b235ee1a370.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrWoE658a-JTx97RAULEXEk685AmDFHf0TGw';" alt="2 Louisville Vs Virginia Tech Ncaa Women Basketball Jan 7 2021 Youtube In 2021 Virginia Tech Womens Basketball Louisville">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2 Louisville Vs Virginia Tech Ncaa Women Basketball Jan 7 2021 Youtube In 2021 Virginia Tech Womens Basketball Louisville</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/de/37/14de37f4d7d0b4cdbe7a44988ffca4a1.jpg" data-lightbox="roadtrip" data-title="Durr Fuehring Lead No 2 Louisville Past Va Tech 72 63 Basketball Clothes Basketball Girls Girls Basketball Shoes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/de/37/14de37f4d7d0b4cdbe7a44988ffca4a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0hrZdBVHIFfE02hruTPGn_BYTkEBUz9trAA';" alt="Durr Fuehring Lead No 2 Louisville Past Va Tech 72 63 Basketball Clothes Basketball Girls Girls Basketball Shoes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Durr Fuehring Lead No 2 Louisville Past Va Tech 72 63 Basketball Clothes Basketball Girls Girls Basketball Shoes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/0b/bf/fe0bbf7a7bb7ff967884c191cae30536.jpg" data-lightbox="roadtrip" data-title="Virginia Tech S Taylor Emery Signs With Minnesota Lynx Women S Basketball Roanoke Com Virginia Tech Hokies Womens Lacrosse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/0b/bf/fe0bbf7a7bb7ff967884c191cae30536.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBD02Zmm8WF_rJF2DgrWQjTVaaj4aMckXkXQ';" alt="Virginia Tech S Taylor Emery Signs With Minnesota Lynx Women S Basketball Roanoke Com Virginia Tech Hokies Womens Lacrosse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Tech S Taylor Emery Signs With Minnesota Lynx Women S Basketball Roanoke Com Virginia Tech Hokies Womens Lacrosse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/83/29/2f83291524b608b8640820b80f734bee.jpg" data-lightbox="roadtrip" data-title="108 Virginia Tech Hokies College Basketball Season Preview Virginia Tech Hokies Cheerleading Virginia Tech">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/83/29/2f83291524b608b8640820b80f734bee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRaQnQa1XYoHr_a5_OeiV-vMc-gCxKFLS-Gg';" alt="108 Virginia Tech Hokies College Basketball Season Preview Virginia Tech Hokies Cheerleading Virginia Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">108 Virginia Tech Hokies College Basketball Season Preview Virginia Tech Hokies Cheerleading Virginia Tech</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/76/9d/75/769d75d53647307d92d3a16ff8880dc7.jpg" data-lightbox="roadtrip" data-title="Here S The Record Crowd That Helped Iu Women S Basketball Win The Wnit Championship Womens Basketball Indiana Indiana Hoosiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/76/9d/75/769d75d53647307d92d3a16ff8880dc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW4Yj7bAAWKG_cMKoS83QyMKfDqSIlD_wMmQ';" alt="Here S The Record Crowd That Helped Iu Women S Basketball Win The Wnit Championship Womens Basketball Indiana Indiana Hoosiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S The Record Crowd That Helped Iu Women S Basketball Win The Wnit Championship Womens Basketball Indiana Indiana Hoosiers</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e7/f5/f5/e7f5f58c5b6da20d4429bde39a7b4bd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW4Yj7bAAWKG_cMKoS83QyMKfDqSIlD_wMmQ';" alt="Here S The Record Crowd That Helped Iu Women S Basketball Win The Wnit Championship Womens Basketball Indiana Indiana Hoosiers">
+										<div class="card-body">
+						<h3 class="h5"><b>Get Womens Basketball rankings news schedules and championship brackets.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa womens basketball virginia tech</strong>. 
+								
+																	But no victory was sweeter. 
+																	7 2021 in. 
+																	The official 2020-21 Womens Basketball Roster for the Virginia Tech Hokies. 
+																	Virginia Tech Hokies Schedule 2020-21. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They are currently coached by Kenny Brooks. 
+																	Wildcat Womens Basketball return from COVID KGUN Tucson AZ. 
+																	Virginia Techs Elizabeth Kitley drives on Louisvilles Hailey Van Lith 10 during the first half of an NCAA college basketball game Thursday Jan. 
+																	In the east regional semi-final involving Louisiana tech and Virginia confusion reigned momentarily with both teams celebrating at the end of regulation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Notre Dame Womens Basketball Highlight 2020-21 ACC Digital Network. 
+																	Year Bracket Seed Opponent Score Date Location Coach 1994 East 8 64 Teams 9 Auburn L 51-60 March. 
+																	Visit ESPN to view the Virginia Tech Hokies womens basketball team schedule. 
+																	The official Womens Basketball page for the Virginia Tech Hokies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Womens Basketball DI official home. 
+																	Matt GentryThe Roanoke Times via AP Pool 1 of 5. 
+																	Virginia Techs Elizabeth Kitley drives on Louisvilles Hailey Van Lith 10 during the first half of an NCAA college basketball game Thursday Jan. 
+																	7 2021 in Blacksburg Va. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Hokies play home basketball games at Cassell Coliseum in Blacksburg Virginia. 
+																	Visit ESPN to view the Virginia Tech Hokies Womens Basketball Team Roster. 
+																	Visit ESPN to view the Virginia Tech Hokies womens basketball team schedule. 
+																	Virginia Tech Hokies Schedule 2020-21 2020-21 2019-20 2018-19 2017-18 2016-17 2015-16 2014-15 2013-14 2012-13 2011-12 2010-11 2009-10 2008-09 2007-08 2006-07 2005-06 2004-05 2003-04 2002-03 hidden. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Irish drop to 2-seed but ACC dominates top 16. 
+																	28 2021 timer 4 min. 
+																	The loss is the Wolfpacks first of the season. 
+																	- Kenny Brooks has won nearly 63 of his games since becoming the Virginia Tech womens basketball coach in 2016. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Virginia Tech Hokies Womens Basketball team represents Virginia Tech in womens basketball. 
+																	Texas and Tennessee are back in the 64-team field but the ACC leads the way with five teams in the top 16 including Virginia Tech. 
+																	Virginia Tech Hokies North Carolina Tar Heels NCAA Womens Basketball ACC womens. 
+																	Virginia Tech sports news and features including conference nickname location and official social media handles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NCAA BK Virginia Tech vs. 
+																	Live scores from the Virginia Tech and Notre Dame DI Womens Basketball game including box scores individual and team statistics and play-by-play. 
+																	At the time it was called the best womens basketball game in history. 
+																	The Virginia Tech Hokies upset the North Carolina State Wolfpack 83-71 in an overtime thriller of an ACC Womens Basketball game. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The official 2020-21 Womens Basketball cumulative statistics for the Virginia Tech Hokies. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/8a/25/fc8a25a150933bc82776ae5af76cbb03.jpg" data-lightbox="roadtrip" data-title="Iowa Forward Megan Gustafson 10 Attempts A Basket During A Ncaa Women S Basketball Game On Saturday Dec 8 2018 At Iowa Hawkeye Basketball Iowa Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/8a/25/fc8a25a150933bc82776ae5af76cbb03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyxsS3wWphPUHJ1mjcTjthOxpR73zuBqJk7A';" alt="Iowa Forward Megan Gustafson 10 Attempts A Basket During A Ncaa Women S Basketball Game On Saturday Dec 8 2018 At Iowa Hawkeye Basketball Iowa Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iowa Forward Megan Gustafson 10 Attempts A Basket During A Ncaa Women S Basketball Game On Saturday Dec 8 2018 At Iowa Hawkeye Basketball Iowa Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/c8/a1/43c8a1e63af34b560d629cc70599ebaa.jpg" data-lightbox="roadtrip" data-title="Pin By Jess On Kimmy Lloyd Btr In 2020 Ncaa Basketball Jersey Ncaa Basketball Virginia Tech">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/c8/a1/43c8a1e63af34b560d629cc70599ebaa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw59KfCF3riCLbX0T7JCxqaHPLOwgJ52fM1g';" alt="Pin By Jess On Kimmy Lloyd Btr In 2020 Ncaa Basketball Jersey Ncaa Basketball Virginia Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jess On Kimmy Lloyd Btr In 2020 Ncaa Basketball Jersey Ncaa Basketball Virginia Tech</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/cb/dd/77cbdd76f249751e6e4b7db2b28be096.jpg" data-lightbox="roadtrip" data-title="Louisville Is No 2 Behind Uconn In Women S Basketball Poll Uconn Womens Basketball Houston Basketball Uconn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/cb/dd/77cbdd76f249751e6e4b7db2b28be096.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkB8HBDgRzOWEnwyDKS5rP4FtOEmnykt-2bQ';" alt="Louisville Is No 2 Behind Uconn In Women S Basketball Poll Uconn Womens Basketball Houston Basketball Uconn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Louisville Is No 2 Behind Uconn In Women S Basketball Poll Uconn Womens Basketball Houston Basketball Uconn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/1e/3c/611e3c7fe58335d6dc1e8c6aa62ef774.jpg" data-lightbox="roadtrip" data-title="Durr Fuehring Lead No 2 Louisville Past Va Tech 72 63 Louisville Streetwear Fashion Hokies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/1e/3c/611e3c7fe58335d6dc1e8c6aa62ef774.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsydqUr8-DV9UWe07J0iM686Bn9JzHTdCnKg';" alt="Durr Fuehring Lead No 2 Louisville Past Va Tech 72 63 Louisville Streetwear Fashion Hokies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Durr Fuehring Lead No 2 Louisville Past Va Tech 72 63 Louisville Streetwear Fashion Hokies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/c5/d0/e8c5d017ceb53df40ce98dfcef263686.jpg" data-lightbox="roadtrip" data-title="Ncaa Tournament Alabama Vs Virginia Tech Ncaa Basketball Tournament Ncaa Alabama Vs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/c5/d0/e8c5d017ceb53df40ce98dfcef263686.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-uFSjnITOv3Nkmd1Ner4EOh7ddDcJduVkFw';" alt="Ncaa Tournament Alabama Vs Virginia Tech Ncaa Basketball Tournament Ncaa Alabama Vs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Tournament Alabama Vs Virginia Tech Ncaa Basketball Tournament Ncaa Alabama Vs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6a/ac/22/6aac2263ec752b76da5c4e1e9bad3fae.jpg" data-lightbox="roadtrip" data-title="Ncaa Basketball Tournament Game Between Alabama And Virginia Tech In Pittsburgh On March 15 2018 College Basketball Players Basketball Alabama Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6a/ac/22/6aac2263ec752b76da5c4e1e9bad3fae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhWTXIgjNXD_xDlahQ_dieKm24VZb0wRdGIA';" alt="Ncaa Basketball Tournament Game Between Alabama And Virginia Tech In Pittsburgh On March 15 2018 College Basketball Players Basketball Alabama Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Basketball Tournament Game Between Alabama And Virginia Tech In Pittsburgh On March 15 2018 College Basketball Players Basketball Alabama Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/5d/d2/e95dd245f4245c09fd004c1cf14baac7.jpg" data-lightbox="roadtrip" data-title="The Hottest College Athletes Virginia Basketball University Of Virginia Basketball Basketball Players Hot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/5d/d2/e95dd245f4245c09fd004c1cf14baac7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5lKF2zW-PrSx1Z9zx3Gqvl2Yk-ODJuEVVg';" alt="The Hottest College Athletes Virginia Basketball University Of Virginia Basketball Basketball Players Hot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Hottest College Athletes Virginia Basketball University Of Virginia Basketball Basketball Players Hot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d9/94/14/d994147daa3c4d39ee01485c7e256fd7.jpg" data-lightbox="roadtrip" data-title="Kyle Guy Of The Virginia Cavaliers Attempts A Shot Against Norense Virginia Cavaliers Texas Tech Basketball Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d9/94/14/d994147daa3c4d39ee01485c7e256fd7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BTEZ6suVd_nKHUG4ZbVvinJ_Os2iKDJx2Q';" alt="Kyle Guy Of The Virginia Cavaliers Attempts A Shot Against Norense Virginia Cavaliers Texas Tech Basketball Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kyle Guy Of The Virginia Cavaliers Attempts A Shot Against Norense Virginia Cavaliers Texas Tech Basketball Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/28/a1/0b28a1412fa8a5bd32938dde67b522c8.jpg" data-lightbox="roadtrip" data-title="Mu Guard Amber Smith Goes For A Layup Womens Basketball Athletic Women Texas A M">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/28/a1/0b28a1412fa8a5bd32938dde67b522c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu-9Z5TrPooD2EjH0KMKa6XBnz4d1_ejIbPQ';" alt="Mu Guard Amber Smith Goes For A Layup Womens Basketball Athletic Women Texas A M">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mu Guard Amber Smith Goes For A Layup Womens Basketball Athletic Women Texas A M</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f8/6f/82/f86f82e4092a79a2e61152c9b1d13e1f.jpg" data-lightbox="roadtrip" data-title="Pin On Ncaa Wbb 18 19">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f8/6f/82/f86f82e4092a79a2e61152c9b1d13e1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCILygMTYk3wDfuSXqXng9Q4ePr3htNwqeJw';" alt="Pin On Ncaa Wbb 18 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ncaa Wbb 18 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/a8/0d/4ca80db4dcfb4def01b5254e3636c15e.jpg" data-lightbox="roadtrip" data-title="Which Bubble Teams Were The Biggest Bracketology Winners And Losers Thursday In 2020 Winners And Losers Conference Usa Winner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/a8/0d/4ca80db4dcfb4def01b5254e3636c15e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLQ9TZ6_IVb-hKf1JzHRg09zW4ZkR4J-0h6g';" alt="Which Bubble Teams Were The Biggest Bracketology Winners And Losers Thursday In 2020 Winners And Losers Conference Usa Winner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Which Bubble Teams Were The Biggest Bracketology Winners And Losers Thursday In 2020 Winners And Losers Conference Usa Winner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/f5/f5/e7f5f58c5b6da20d4429bde39a7b4bd4.jpg" data-lightbox="roadtrip" data-title="Diana Taurasi Named To Third U S Olympic Women S Basketball Team Uconn Womens Basketball Uconn Basketball Basketball Jones">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/f5/f5/e7f5f58c5b6da20d4429bde39a7b4bd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1R4PmRNzrMYD_WuIXvvDvE34RonzuE0Ang';" alt="Diana Taurasi Named To Third U S Olympic Women S Basketball Team Uconn Womens Basketball Uconn Basketball Basketball Jones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diana Taurasi Named To Third U S Olympic Women S Basketball Team Uconn Womens Basketball Uconn Basketball Basketball Jones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/ab/f5/42abf54f541868c63982226924a74d26.jpg" data-lightbox="roadtrip" data-title="Pin By Darnell Poindexter On Dman College Basketball Teams Mississippi State Mississippi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/ab/f5/42abf54f541868c63982226924a74d26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw_0ppZjUXI7yqMMrL2BFdGcqD1SQS6oJaTw';" alt="Pin By Darnell Poindexter On Dman College Basketball Teams Mississippi State Mississippi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Darnell Poindexter On Dman College Basketball Teams Mississippi State Mississippi</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/usmc-gi-bill-requirements.html">Usmc Gi Bill Requirements</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-for-emt.html">Using Gi Bill For Emt</a></li>
+													<li class="list-group-item"><a href="/using-post-911-gi-bill-for-flight-training.html">Using Post 911 Gi Bill For Flight Training</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-while-in-national-guard.html">Using Gi Bill While In National Guard</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-in-korea.html">Using Gi Bill In Korea</a></li>
+													<li class="list-group-item"><a href="/using-post-911-gi-bill-for-apprenticeship.html">Using Post 911 Gi Bill For Apprenticeship</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-for-sans-courses.html">Using Gi Bill For Sans Courses</a></li>
+													<li class="list-group-item"><a href="/using-your-gi-bill-for-apprenticeship.html">Using Your Gi Bill For Apprenticeship</a></li>
+													<li class="list-group-item"><a href="/use-gi-bill-to-start-a-business.html">Use Gi Bill To Start A Business</a></li>
+													<li class="list-group-item"><a href="/using-both-montgomery-gi-bill-and-post-911.html">Using Both Montgomery Gi Bill And Post 911</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-for-language-training.html">Using Gi Bill For Language Training</a></li>
+													<li class="list-group-item"><a href="/use-gi-bill-to-buy-house.html">Use Gi Bill To Buy House</a></li>
+													<li class="list-group-item"><a href="/using-post-911-gi-bill-while-active-duty.html">Using Post 911 Gi Bill While Active Duty</a></li>
+													<li class="list-group-item"><a href="/use-gi-bill-for-private-pilot-license.html">Use Gi Bill For Private Pilot License</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-overseas.html">Using Gi Bill Overseas</a></li>
+													<li class="list-group-item"><a href="/use-gi-bill-overseas.html">Use Gi Bill Overseas</a></li>
+													<li class="list-group-item"><a href="/using-gofundme-for-college.html">Using Gofundme For College</a></li>
+													<li class="list-group-item"><a href="/use-gi-bill-to-open-business.html">Use Gi Bill To Open Business</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-overseas-reddit.html">Using Gi Bill Overseas Reddit</a></li>
+													<li class="list-group-item"><a href="/usmc-post-911-gi-bill-transfer.html">Usmc Post 911 Gi Bill Transfer</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

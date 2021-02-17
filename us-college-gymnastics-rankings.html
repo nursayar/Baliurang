@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us College Gymnastics Rankings - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us College Gymnastics Rankings",
+  "datePublished": "2021-02-17",
+  "image": "https://usagym.org/images/post_images/9220.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+college+gymnastics+rankings",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us College Gymnastics Rankings</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Some Olympic gymnasts have even competed in NCAA championships on their college teams after completing their Olympic career. Therefore gymnastics programs tend to. Utah 1073 points 5. <br>				
+			</p>
+										<a class="badge badge-warning" href="/does-gi-bill-pay-for-summer-classes.html">does gi bill pay for summer classes</a>
+											<a class="badge badge-secondary" href="/does-coast-guard-get-post-911-gi-bill.html">does coast guard get post 911 gi bill</a>
+											<a class="badge badge-danger" href="/does-it-matter-what-college-you-go-to-for-undergraduate-reddit.html">does it matter what college you go to for undergraduate reddit</a>
+											<a class="badge badge-warning" href="/does-the-college-you-go-to-matter-for-engineering.html">does the college you go to matter for engineering</a>
+											<a class="badge badge-dark" href="/does-it-matter-what-college-you-go-to-for-undergraduate-in-india.html">does it matter what college you go to for undergraduate in india</a>
+											<a class="badge badge-danger" href="/does-the-military-still-offer-the-gi-bill.html">does the military still offer the gi bill</a>
+											<a class="badge badge-warning" href="/does-penn-state-give-merit-scholarships.html">does penn state give merit scholarships</a>
+											<a class="badge badge-success" href="/does-gi-bill-pay-for-dependents.html">does gi bill pay for dependents</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the right site.  Our website provides you with hints for seeing the highest quality video and picture content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.com/_flysystem/public-s3/images/2020-02/Oklahoma-women%27s-gymnastics.jpeg" data-lightbox="roadtrip" data-title="Nc Women S Gymnastics Rankings College Gymnastics Association Ncaa Com">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.com/_flysystem/public-s3/images/2020-02/Oklahoma-women%27s-gymnastics.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlflsBf8dMwG-q2E0PDAS_s112nznYaS_5w';" alt="Nc Women S Gymnastics Rankings College Gymnastics Association Ncaa Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nc Women S Gymnastics Rankings College Gymnastics Association Ncaa Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://athletics.ithaca.edu/images/2019/1/15/Rankings_Week_1.jpg" data-lightbox="roadtrip" data-title="Gymnastics Ranks No 1 In Ncga Division Iii Through Opening Week Of Competition Ithaca College Athletics">
+											<img class="card-img v-image ads-img " src="https://athletics.ithaca.edu/images/2019/1/15/Rankings_Week_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0NKrXUD7jR8Iujk-pu1w3vM7Uhyu-cxe-Xg';" alt="Gymnastics Ranks No 1 In Ncga Division Iii Through Opening Week Of Competition Ithaca College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gymnastics Ranks No 1 In Ncga Division Iii Through Opening Week Of Competition Ithaca College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usagym.org/images/post_images/10805.jpg" data-lightbox="roadtrip" data-title="Usa Gymnastics U S Women Qualify For Team Finals With First Place Team Qualification Ranking At 2018 World Championships">
+											<img class="card-img v-image ads-img " src="https://usagym.org/images/post_images/10805.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfZznhE6fhJs7Wg6d355vaEJYY4l2d82PFUA';" alt="Usa Gymnastics U S Women Qualify For Team Finals With First Place Team Qualification Ranking At 2018 World Championships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Gymnastics U S Women Qualify For Team Finals With First Place Team Qualification Ranking At 2018 World Championships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://collegegymnews.com/wp-content/uploads/2020/02/9-3-750x450.jpg" data-lightbox="roadtrip" data-title="Power Rankings February 13 2020 College Gym News">
+											<img class="card-img v-image ads-img " src="http://collegegymnews.com/wp-content/uploads/2020/02/9-3-750x450.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI2Z2F8_9rzkExzc7zPQNzsxyTa_DZkQA0YQ';" alt="Power Rankings February 13 2020 College Gym News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Power Rankings February 13 2020 College Gym News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://collegegymnews.com/wp-content/uploads/2018/08/US-Champs-Featured.png" data-lightbox="roadtrip" data-title="Ncaa Men S Gymnasts To Watch At U S Gymnastics Championships College Gym News">
+											<img class="card-img v-image ads-img " src="http://collegegymnews.com/wp-content/uploads/2018/08/US-Champs-Featured.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2qDxQSdBRmWcUXc01slem9lfJpT7LYScATw';" alt="Ncaa Men S Gymnasts To Watch At U S Gymnastics Championships College Gym News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Men S Gymnasts To Watch At U S Gymnastics Championships College Gym News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usagym.org/images/post_images/11693.jpg" data-lightbox="roadtrip" data-title="Usa Gymnastics Usa Gymnastics Announces Team Line Up For Women S Team Final At 2019 World Championships">
+											<img class="card-img v-image ads-img " src="https://usagym.org/images/post_images/11693.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7h-DSeWjGbZ06Zy67iiAPBXnecp4gfWvk1w';" alt="Usa Gymnastics Usa Gymnastics Announces Team Line Up For Women S Team Final At 2019 World Championships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Gymnastics Usa Gymnastics Announces Team Line Up For Women S Team Final At 2019 World Championships</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="http://collegegymnews.com/wp-content/uploads/2020/02/9-3-750x450.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7h-DSeWjGbZ06Zy67iiAPBXnecp4gfWvk1w';" alt="Usa Gymnastics Usa Gymnastics Announces Team Line Up For Women S Team Final At 2019 World Championships">
+										<div class="card-body">
+						<h3 class="h5"><b>8 months ago.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us college gymnastics rankings</strong>. 
+								
+																	National team and she left little doubt as to why during her remarkable 2020 campaign. 
+																	Get Mens Gymnastics rankings news schedules and championship brackets. 
+																	Play for a college from one of these states. 
+																	Keep reading for the CGA and WCGAs Preseason Coaches Polls as well as the NCAA Week 1 schedule links to watch live blogs and womens preview articles ahead of the ladies kicking things off tonight. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NGB for the sport of gymnastics in the United States consistent with the Ted Stevens Olympic Amateur Sports Act the Bylaws of the United States Olympic Committee and the International Gymnastics Federation. 
+																	The NCAA Womens Gymnastics NC official home. 
+																	LSU 1076 points 4. 
+																	If gymnastics is your sport if youre really good at it and if you want to play it competitively at the college or university level then you need to go to a top-ranked Division 1 NCAA school with the best athletes and coaches in gymnastics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	16 first-place votes 3. 
+																	On the womens side No. 
+																	Richard QuintonUCLA Athletics Illinois Athletics. 
+																	Subscribe To Email Updates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Week 10 of the 2020 NCAA Gymnastics season was emotional exciting and ultimately reminded us that in a little over a month the college season will be over. 
+																	College Gymnastics Menu 2021 Collegiate Gymnastics Rankings - Preseason. 
+																	California 919 points 8t. 
+																	College - Men College - Women NCAA Gymnastics Rankings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether you hope to become the next Nadia Comaneci or just enjoy watching the craft itself collegiate gymnastics offers a unique college experience. 
+																	Access available rankings data at College Gymnastics Association. 
+																	Michigan 1060 points 6. 
+																	16 first-place votes 2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NCAA Gymnastics results statistics schedules teams and gymnasts. 
+																	Look for a college to get recruited by to play Gymnastics from the list of states below. 
+																	Week 10 3 min read. 
+																	NCAA gymnastics teams all compete in one division as nearly every school that offers gymnastics is DI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	8 Arkansas gave No. 
+																	National Collegiate Gymnastics Association The governing body for Division III Womens Gymnastics. 
+																	She earned a perfect score on four occasions twice on. 
+																	Get Womens Gymnastics rankings news schedules and championship brackets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College Gymnastics Menu 2020 Collegiate Gymnastics Rankings - March 2. 
+																	Iowa State Women - Division II. 
+																	Most teams will start their seasons later than usual this season due to the pandemic with most teams kicking off. 
+																	NCGA Hall of Fame. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The College at Brockport. 
+																	Gymnastics is a rigorous sport that may take up to 20 hours of your week in-season between practicing and meets. 
+																	Alabama 944 points 7. 
+																	The NCAA Mens Gymnastics NC official home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	USA Gymnastics is the National Governing Body NGB for the sport of gymnastics in the United States consistent with the Ted Stevens Olympic Amateur Sports Act the Bylaws of the United States Olympic Committee and the International Gymnastics Federation. 
+																	Home College College - Women NCAA Gymnastics Rankings. 
+																	Thomas is the only NCAA gymnast currently on the US. 
+																	Women - Division I. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This compensation does not influence our school rankings resource guides or other editorially-independent information published on this site. 
+																	Building the most comprehensive source on the web. 
+																	Collegiate gymnasts have less likelihood of launching a professional athletic career. 
+																	After all the teams coaches team spirit training facility and academic standing make a gymnastics program shine even more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We are not ready. 
+																	USA Gymnastics is the National Governing Body NGB for the sport of gymnastics in the United States consistent with the Ted Stevens Olympic Amateur Sports Act the Bylaws of the United States Olympic Committee and the International Gymnastics Federation. 
+																	1 Florida a run for its money with the Razorbacks posting the third-highest team score in program history in its 197425-197250 loss to the Gators. 
+																	Read on for CMs top 10 collegiate gymnastics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UCLA 943 points 8t. 
+																	College Gymnastics Menu 2021 Collegiate Gymnastics Rankings. 
+																	Remember that stats and scores dont account for everything. 
+																	Womens gymnastics programs are available at some large universities and Division I championships have been part of the NCAA since 1981. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Week 3 of the 2021 NCAA Gymnastics season is in the books and what a week it was with more mens teams and Pac-12 schools joining the mix. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gymnastics-now.com/wp-content/uploads/2021/01/210108_ThomasTrinity_VaultCelebration4287.jpg" data-lightbox="roadtrip" data-title="Ncaa Gymnastics Week 1 Rankings Recap January 8 10 2021 Gymnastics Now">
+											<img class="card-img v-image ads-img " src="https://www.gymnastics-now.com/wp-content/uploads/2021/01/210108_ThomasTrinity_VaultCelebration4287.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMG4tzjybEuTokbQLbW8xcHz8I4ZSiPIlqw';" alt="Ncaa Gymnastics Week 1 Rankings Recap January 8 10 2021 Gymnastics Now">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Gymnastics Week 1 Rankings Recap January 8 10 2021 Gymnastics Now</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usagym.org/images/post_images/10245.jpg" data-lightbox="roadtrip" data-title="Usa Gymnastics Usa Gymnastics Names Women S 2018 Pac Rim Junior Pan Am Championships Teams">
+											<img class="card-img v-image ads-img " src="https://usagym.org/images/post_images/10245.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpt-UsiwjOwl_6BD90WnD7EXPQxsQA50nLUg';" alt="Usa Gymnastics Usa Gymnastics Names Women S 2018 Pac Rim Junior Pan Am Championships Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Gymnastics Usa Gymnastics Names Women S 2018 Pac Rim Junior Pan Am Championships Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usagym.org/images/post_images/3235.jpg" data-lightbox="roadtrip" data-title="Usa Gymnastics Botterman Wins All Around At The 2011 Ncaa Women S Gymnastics Championships">
+											<img class="card-img v-image ads-img " src="https://usagym.org/images/post_images/3235.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDciCBntI9ZYJhxhT8mjN6oeLbRgbUnon5RA';" alt="Usa Gymnastics Botterman Wins All Around At The 2011 Ncaa Women S Gymnastics Championships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Gymnastics Botterman Wins All Around At The 2011 Ncaa Women S Gymnastics Championships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://floridagators.com/images/2019/4/9/ThomasTrinity_FX_190323_49_MichaelErdelyi.jpg?width=1024&amp;height=576&amp;mode=crop" data-lightbox="roadtrip" data-title="Florida S Trinity Thomas At U S Championships Florida Gators">
+											<img class="card-img v-image ads-img " src="https://floridagators.com/images/2019/4/9/ThomasTrinity_FX_190323_49_MichaelErdelyi.jpg?width=1024&amp;height=576&amp;mode=crop" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJ2_5nX1M1JPjp-32KQ8BdROkob-jOhN4Gg';" alt="Florida S Trinity Thomas At U S Championships Florida Gators">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida S Trinity Thomas At U S Championships Florida Gators</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usagym.org/images/post_images/11457.jpg" data-lightbox="roadtrip" data-title="Usa Gymnastics Zeng Griskenas Mine Gold At 2019 Usa Gymnastics Championships">
+											<img class="card-img v-image ads-img " src="https://usagym.org/images/post_images/11457.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgvcI_CjDK_S_RhJvobyW269O2cM-r8Xk_Bg';" alt="Usa Gymnastics Zeng Griskenas Mine Gold At 2019 Usa Gymnastics Championships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Gymnastics Zeng Griskenas Mine Gold At 2019 Usa Gymnastics Championships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://collegegymnews.com/wp-content/uploads/2020/11/Wordpress-Featured-Image-750x450-1.png" data-lightbox="roadtrip" data-title="Tracking The Class Of 2021 Signings College Gym News">
+											<img class="card-img v-image ads-img " src="http://collegegymnews.com/wp-content/uploads/2020/11/Wordpress-Featured-Image-750x450-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3ypmYWLuhhzOylonWIHmlgA1rcfp_xf-cig';" alt="Tracking The Class Of 2021 Signings College Gym News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tracking The Class Of 2021 Signings College Gym News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usagym.org/images/post_images/10696.jpg" data-lightbox="roadtrip" data-title="Usa Gymnastics Mccallum Thomas Go One Two In Women S All Around At 2018 Senior Pan Am Championships">
+											<img class="card-img v-image ads-img " src="https://usagym.org/images/post_images/10696.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIFrfdt5IhQC46u2Td4b2mcwUL9S3tYZ3aoQ';" alt="Usa Gymnastics Mccallum Thomas Go One Two In Women S All Around At 2018 Senior Pan Am Championships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Gymnastics Mccallum Thomas Go One Two In Women S All Around At 2018 Senior Pan Am Championships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d2779tscntxxsw.cloudfront.net/566f4657159eb.jpeg?width=1200&amp;quality=80" data-lightbox="roadtrip" data-title="Power Rankings Ncaa Preseason Top 15 Teams">
+											<img class="card-img v-image ads-img " src="https://d2779tscntxxsw.cloudfront.net/566f4657159eb.jpeg?width=1200&amp;quality=80" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhpU_JJAYJK0TbV_sPY9UphymWnvwvRRnELQ';" alt="Power Rankings Ncaa Preseason Top 15 Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Power Rankings Ncaa Preseason Top 15 Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d2779tscntxxsw.cloudfront.net/59419578c0dc1.jpeg?width=1200&amp;quality=80" data-lightbox="roadtrip" data-title="Rankings Club Gyms With J O Qualifiers Committed To Top 25 Ncaa Teams">
+											<img class="card-img v-image ads-img " src="https://d2779tscntxxsw.cloudfront.net/59419578c0dc1.jpeg?width=1200&amp;quality=80" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTujgMJohz1zMjiHcBjmk6naJS9xqcJ2KRWJw';" alt="Rankings Club Gyms With J O Qualifiers Committed To Top 25 Ncaa Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rankings Club Gyms With J O Qualifiers Committed To Top 25 Ncaa Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usagym.org/images/post_images/9220.jpg" data-lightbox="roadtrip" data-title="Usa Gymnastics Collegiate Gymnastics Weekly Recap Jan 16 22">
+											<img class="card-img v-image ads-img " src="https://usagym.org/images/post_images/9220.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIDAgLAucUQJJYwyuXf8J6yywhhDoKkODnzw';" alt="Usa Gymnastics Collegiate Gymnastics Weekly Recap Jan 16 22">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Gymnastics Collegiate Gymnastics Weekly Recap Jan 16 22</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usagym.org/images/post_images/10683.jpg" data-lightbox="roadtrip" data-title="Usa Gymnastics Usa Leads At Mid Point Of All Around Team At 2018 Pan American Rhythmic Gymnastics Championships">
+											<img class="card-img v-image ads-img " src="https://usagym.org/images/post_images/10683.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr_urRXhZeTkV_1eyEITY_mAiejuSCCSzIcw';" alt="Usa Gymnastics Usa Leads At Mid Point Of All Around Team At 2018 Pan American Rhythmic Gymnastics Championships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Gymnastics Usa Leads At Mid Point Of All Around Team At 2018 Pan American Rhythmic Gymnastics Championships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/fb/19/40fb1936c2598bddf54d53a06afe3cf9.jpg" data-lightbox="roadtrip" data-title="Analyzing The Women S Ncaa Preseason Rankings Female Gymnast Gymnastics Videos Lsu Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/fb/19/40fb1936c2598bddf54d53a06afe3cf9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJd7ouNPjVf1QJ5t34tnRUl8jbZ3lQoGuPQ';" alt="Analyzing The Women S Ncaa Preseason Rankings Female Gymnast Gymnastics Videos Lsu Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Analyzing The Women S Ncaa Preseason Rankings Female Gymnast Gymnastics Videos Lsu Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.usgymchampionships.com/wp-content/uploads/hpGraphic-mobile002.jpg" data-lightbox="roadtrip" data-title="U S Gymnastics Championships">
+											<img class="card-img v-image ads-img " src="https://www.usgymchampionships.com/wp-content/uploads/hpGraphic-mobile002.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVAkMGsjRkFFgx5zN1D8YxwvhWez5EmKWuZw';" alt="U S Gymnastics Championships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Gymnastics Championships</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-much-does-the-gi-bill-pay-for.html">How Much Does The Gi Bill Pay For</a></li>
+													<li class="list-group-item"><a href="/how-many-percent-of-college-athletes-go-pro.html">How Many Percent Of College Athletes Go Pro</a></li>
+													<li class="list-group-item"><a href="/how-much-will-the-gi-bill-pay-for-out-of-state-tuition.html">How Much Will The Gi Bill Pay For Out Of State Tuition</a></li>
+													<li class="list-group-item"><a href="/how-many-players-on-a-womens-college-basketball-team.html">How Many Players On A Womens College Basketball Team</a></li>
+													<li class="list-group-item"><a href="/how-much-is-bah-for-online-classes.html">How Much Is Bah For Online Classes</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-montgomery-gi-bill-kicker.html">How To Apply For Montgomery Gi Bill Kicker</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-gi-bill-benefits-while-on-active-duty.html">How To Apply For Gi Bill Benefits While On Active Duty</a></li>
+													<li class="list-group-item"><a href="/how-much-does-1606-gi-bill-pay.html">How Much Does 1606 Gi Bill Pay</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-monthly-housing-allowance-for-gi-bill.html">How Much Is The Monthly Housing Allowance For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-do-apprentice-lineman-make.html">How Much Do Apprentice Lineman Make</a></li>
+													<li class="list-group-item"><a href="/how-much-is-it-to-go-to-college-in-europe.html">How Much Is It To Go To College In Europe</a></li>
+													<li class="list-group-item"><a href="/how-much-gi-bill-do-i-have-left.html">How Much Gi Bill Do I Have Left</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-army-gi-bill-worth.html">How Much Is The Army Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-gi-bill-2020.html">How Much Is The Gi Bill 2020</a></li>
+													<li class="list-group-item"><a href="/how-much-is-post-911-gi-bill-worth.html">How Much Is Post 911 Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/how-much-is-my-montgomery-gi-bill-worth.html">How Much Is My Montgomery Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/how-the-gi-bill-affect-american-society.html">How The Gi Bill Affect American Society</a></li>
+													<li class="list-group-item"><a href="/how-much-money-is-the-gi-bill-worth.html">How Much Money Is The Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/how-much-is-the-selected-reserve-montgomery-gi-bill.html">How Much Is The Selected Reserve Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-much-does-the-college-you-go-to-matter.html">How Much Does The College You Go To Matter</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

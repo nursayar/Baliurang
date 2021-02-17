@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Bill Montgomery Covid - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Bill Montgomery Covid",
+  "datePublished": "2021-02-17",
+  "image": "https://heavy.com/wp-content/uploads/2020/07/pjimage-2020-07-29T215712.972.jpg?quality=65&amp;strip=all",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=bill+montgomery+covid",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Bill Montgomery Covid</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The bill would shield businesses schools health care providers churches and others from lawsuits over COVID-19 exposure unless the person could prove the entity was acting with reckless or. The legislative session starts Tuesday February 2nd. The goal is to have COVID-19 relief approved by March when extra unemployment assistance and other pandemic aid expires. <br>				
+			</p>
+										<a class="badge badge-success" href="/college-christmas-gifts-2019.html">college christmas gifts 2019</a>
+											<a class="badge badge-secondary" href="/college-covid-to-go-bag.html">college covid to go bag</a>
+											<a class="badge badge-primary" href="/college-essay-guy-georgetown.html">college essay guy georgetown</a>
+											<a class="badge badge-primary" href="/college-essay-guy-columbia.html">college essay guy columbia</a>
+											<a class="badge badge-success" href="/college-essay-guy-common-app-activities.html">college essay guy common app activities</a>
+											<a class="badge badge-secondary" href="/college-essay-guy-free-workshop.html">college essay guy free workshop</a>
+											<a class="badge badge-warning" href="/college-bowl-game-gifts-2020.html">college bowl game gifts 2020</a>
+											<a class="badge badge-secondary" href="/college-essay-guy-harvard-supplemental-essays.html">college essay guy harvard supplemental essays</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the ideal site.  Our site provides you with suggestions for viewing the highest quality video and image content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to see.  You can also bring about supporting this site by sharing videos and graphics that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.insider.com/5f22991fa6f0e15f64293467?width=1200&amp;format=jpeg" data-lightbox="roadtrip" data-title="Tpusa Deletes Tweet Mocking Masks After Cofounder Died Of Covid 19 Business Insider">
+											<img class="card-img v-image ads-img " src="https://i.insider.com/5f22991fa6f0e15f64293467?width=1200&amp;format=jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX4k0S_rCRx-A-IQqC47x6V8Vu8ijFaAINig';" alt="Tpusa Deletes Tweet Mocking Masks After Cofounder Died Of Covid 19 Business Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tpusa Deletes Tweet Mocking Masks After Cofounder Died Of Covid 19 Business Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.azmirror.com/wp-content/uploads/2019/02/montgomery-bill.jpg" data-lightbox="roadtrip" data-title="Bill Montgomery Shouldn T Be On The Supreme Court">
+											<img class="card-img v-image ads-img " src="https://www.azmirror.com/wp-content/uploads/2019/02/montgomery-bill.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC7HZ209OYgSSm3FrdvIXPTelJ2TFX9nsWcw';" alt="Bill Montgomery Shouldn T Be On The Supreme Court">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Montgomery Shouldn T Be On The Supreme Court</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://heavy.com/wp-content/uploads/2020/07/pjimage-2020-07-29T215712.972.jpg?quality=65&amp;strip=all" data-lightbox="roadtrip" data-title="Bill Montgomery Dead 5 Fast Facts You Need To Know Heavy Com">
+											<img class="card-img v-image ads-img " src="https://heavy.com/wp-content/uploads/2020/07/pjimage-2020-07-29T215712.972.jpg?quality=65&amp;strip=all" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEzOCl117o_GMoX_vMwQsgf5r2hfwWKQ9rMQ';" alt="Bill Montgomery Dead 5 Fast Facts You Need To Know Heavy Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Montgomery Dead 5 Fast Facts You Need To Know Heavy Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/SbGJV1Q1LKk/hqdefault.jpg" data-lightbox="roadtrip" data-title="Turning Point Usa Founder Bill Montgomery Passed Away Rip Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/SbGJV1Q1LKk/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtxP2_LRuf8ZoGYIcSJrbzCB3VIhwCY4V5g';" alt="Turning Point Usa Founder Bill Montgomery Passed Away Rip Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Turning Point Usa Founder Bill Montgomery Passed Away Rip Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.kjzz.org/s3fs-public/styles/special_story_images_aspect_switcher/public/Bill%20Montgomery.JPG.JPG.JPG.JPG?itok=CLdueKB7" data-lightbox="roadtrip" data-title="How Maricopa County Attorney Hoarded 400k In Guns Kjzz">
+											<img class="card-img v-image ads-img " src="https://media.kjzz.org/s3fs-public/styles/special_story_images_aspect_switcher/public/Bill%20Montgomery.JPG.JPG.JPG.JPG?itok=CLdueKB7" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWhupx88lPbAL6iJeHuFj29K8obLap8UvShQ';" alt="How Maricopa County Attorney Hoarded 400k In Guns Kjzz">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Maricopa County Attorney Hoarded 400k In Guns Kjzz</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/QWUX3aiu5II/maxresdefault.jpg" data-lightbox="roadtrip" data-title="The 21 Year Old Becoming A Major Player In Conservative Politics The Atlantic">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/QWUX3aiu5II/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlBGOS3fzbru1ctMnYkBnmq6Gpmf8xy6i-LQ';" alt="The 21 Year Old Becoming A Major Player In Conservative Politics The Atlantic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 21 Year Old Becoming A Major Player In Conservative Politics The Atlantic</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://dcist.com/wp-content/uploads/sites/3/2020/04/Screen-Shot-2020-04-07-at-10.39.17-AM-1500x801.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlBGOS3fzbru1ctMnYkBnmq6Gpmf8xy6i-LQ';" alt="The 21 Year Old Becoming A Major Player In Conservative Politics The Atlantic">
+										<div class="card-body">
+						<h3 class="h5"><b>3 was entitled COVID-19 bill will send millions overseas The letter writer confused the COVID-19 bill with the government funding plan which.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Bill montgomery covid</strong>. 
+								
+																	He believed in me. 
+																	The others would exempt COVID-19 relief funds from state income tax and extend state industrial incentives. 
+																	Bill Montgomery the co-founder of pro-Donald Trump group Turning Point USA alongside Charlie Kirk has died at age 80 following a battle with coronavirus. 
+																	WAFF - Alabama lawmakers are getting ready to go to work in Montgomery. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The bill passed. 
+																	The founder of the pro-Trump conservative student organization Turning Point USA has died from the new coronavirus. 
+																	WSFA - Usually the wait time at an urgent care in Montgomery can be as short as five minutes but as COVID-19 infections continue to increase the wait time for some can be as. 
+																	MONTGOMERY AP The Alabama Senate committee on Thursday swiftly approved legislation that would provide businesses and others protection from liability in coronavirus-related lawsuits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3 6054 COVID-19 cases were active in the county according to the Montgomery County Public Health District. 
+																	He established the group alongside current leader Charlie. 
+																	Reed said three pieces of legislation will take priority for the first weeks of the session. 
+																	Jan 06 2021 at 212 PM A letter printed on Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He poured his heart soul time into me. 
+																	If you are having difficulty paying your utility bills andor are behind on payments this page was created to help make paying those bills easier. 
+																	The number of active cases has fluctuated between 6000 and just over 6400. 
+																	Caleb Hull a Republican strategist announced his death on Twitter and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The measure sponsored by Sen. 
+																	Like Garretts bill Pooles goes to the Senate. 
+																	One of the bills up for debate involves COVID-19. 
+																	The bill would provide civil. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Senate passed a bill Thursday morning that will limit lawsuits related to COVID-19. 
+																	The conservative youth group Turning Point USA deleted a tweet mocking protective masks after its cofounder Bill Montgomery died at 80 of complications related to COVID-19. 
+																	Montgomery who started it in 2012 with young conservative star Charlie Kirk died at the age of 80 on Tuesday from Covid-19 according to pro-Trump conservative strategist Caleb Hull who posted. 
+																	Montgomery is survived by his wife Edie. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Biden told the 10 Republican senators Monday that hes unwilling to settle. 
+																	Arthur Orr R-Decatur says. 
+																	Bill Montgomery the co-founder of Turning Point USA a conservative student organization died Tuesday from coronavirus. 
+																	The Council approved the Covid-19 Economic Relief Act Expedited Bill 16-20 Economic Development Fund - Public Health Emergency Grant Program - Established and the accompanying special appropriations on an emergency basis and authorized the County Executive to begin providing this assistance as quickly as possible. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill Montgomery was 80. 
+																	The Alabama Senate this morning moved quickly to pass a bill to protect businesses and other organizations from lawsuits that blame them for sickness from COVID-19. 
+																	Turning Point USA the conservative student organization announced the death of its co-founder Bill Montgomery who was 80. 
+																	If you have immediate questions call the MC311 Customer Service Center at 311 or 240-777-0311 Monday to Friday 7 am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	AP - The Alabama Senate has swiftly approved legislation that would provide businesses and others protection from liability in coronavirus-related lawsuits. 
+																	Those include a bill to shield companies and others from civil lawsuit liability during the COVID-19 pandemic. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://azcapitoltimes.com/files/2019/07/montgomery03-300x160.jpg" data-lightbox="roadtrip" data-title="Bill Montgomery Arizona Capitol Times">
+											<img class="card-img v-image ads-img " src="https://azcapitoltimes.com/files/2019/07/montgomery03-300x160.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXAy9NUMErxa53KS0g7-iqt2eYOxaebAfrQ';" alt="Bill Montgomery Arizona Capitol Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Montgomery Arizona Capitol Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/full/public/2017/11/27/charlie-kirk-tomi-lahren.jpg" data-lightbox="roadtrip" data-title="Co Founder Of Pro Trump Organization Turning Point Usa Dies Of Covid 19">
+											<img class="card-img v-image ads-img " src="https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/full/public/2017/11/27/charlie-kirk-tomi-lahren.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbYVfyJ-MkFjdVDmp0TK5ViYhU--1oo3A75A';" alt="Co Founder Of Pro Trump Organization Turning Point Usa Dies Of Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Co Founder Of Pro Trump Organization Turning Point Usa Dies Of Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images1.phoenixnewtimes.com/imager/u/745xauto/11282108/35034078781_ab08f9f110_k.jpg" data-lightbox="roadtrip" data-title="Arizona Prosecutor Admits Office Threatened Pot Patient With Felony Phoenix New Times">
+											<img class="card-img v-image ads-img " src="https://images1.phoenixnewtimes.com/imager/u/745xauto/11282108/35034078781_ab08f9f110_k.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4YTLAb8UX7CYb6ofXThBGyC6GL5ahLNz1lg';" alt="Arizona Prosecutor Admits Office Threatened Pot Patient With Felony Phoenix New Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arizona Prosecutor Admits Office Threatened Pot Patient With Felony Phoenix New Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mccombs.utexas.edu/~/media/Images/MSB/Alumni-Responsive/Advisory%20Council/Executive%20Committee%20and%20Active%20Members/Bill%20Montgomery--Photo_Web_2017.jpg?h=286&amp;w=267" data-lightbox="roadtrip" data-title="Advisory Council Mccombs School Of Business">
+											<img class="card-img v-image ads-img " src="https://www.mccombs.utexas.edu/~/media/Images/MSB/Alumni-Responsive/Advisory%20Council/Executive%20Committee%20and%20Active%20Members/Bill%20Montgomery--Photo_Web_2017.jpg?h=286&amp;w=267" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB59X94y98POWAFpifGn2CO7D1LhcgMC3yyw';" alt="Advisory Council Mccombs School Of Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advisory Council Mccombs School Of Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://uploads.dailydot.com/2020/07/charlie-kirk-bill-montgomery.jpg?fit=scale&amp;fm=pjpg&amp;h=512&amp;ixlib=php-3.3.0&amp;w=1024&amp;wpsize=large" data-lightbox="roadtrip" data-title="Tp Usa Deletes Anti Mask Tweet After Co Founder Dies Of Covid 19">
+											<img class="card-img v-image ads-img " src="https://uploads.dailydot.com/2020/07/charlie-kirk-bill-montgomery.jpg?fit=scale&amp;fm=pjpg&amp;h=512&amp;ixlib=php-3.3.0&amp;w=1024&amp;wpsize=large" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfK8KFGiZ-p6W7oY6MN6o3-UA95ReBeFplgQ';" alt="Tp Usa Deletes Anti Mask Tweet After Co Founder Dies Of Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tp Usa Deletes Anti Mask Tweet After Co Founder Dies Of Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.baylorschool.org/uploaded/faculty/William_Montgomery_veritcal.jpg" data-lightbox="roadtrip" data-title="Profile Baylor School">
+											<img class="card-img v-image ads-img " src="https://www.baylorschool.org/uploaded/faculty/William_Montgomery_veritcal.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8bwkiiElbWzzBWr51lILpAQZym00_GD6uIQ';" alt="Profile Baylor School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Profile Baylor School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.foxtv.com/static.fox10phoenix.com/www.fox10phoenix.com/content/uploads/2019/08/764/432/juan-martinez.jpg?ve=1&amp;tl=1" data-lightbox="roadtrip" data-title="Law Firm Representing Jodi Arias Files Ethics Complaints Against Juan Martinez County Attorney Bill Montgomery">
+											<img class="card-img v-image ads-img " src="https://images.foxtv.com/static.fox10phoenix.com/www.fox10phoenix.com/content/uploads/2019/08/764/432/juan-martinez.jpg?ve=1&amp;tl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToTsKpZxHWwBTC_afaWikVEscwBmNE88vekA';" alt="Law Firm Representing Jodi Arias Files Ethics Complaints Against Juan Martinez County Attorney Bill Montgomery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Law Firm Representing Jodi Arias Files Ethics Complaints Against Juan Martinez County Attorney Bill Montgomery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.tucsonsentinel.com/files/entryimages/billmontgomery.jpg" data-lightbox="roadtrip" data-title="Turning Point Usa Co Founder Dies Of Coronavirus Related Complications Lipstick Alley">
+											<img class="card-img v-image ads-img " src="https://www.tucsonsentinel.com/files/entryimages/billmontgomery.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmQUOPgdP_CtGe5Q_5uPP0ecyknBeU_iqs_w';" alt="Turning Point Usa Co Founder Dies Of Coronavirus Related Complications Lipstick Alley">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Turning Point Usa Co Founder Dies Of Coronavirus Related Complications Lipstick Alley</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.politico.com/96/87/3e922ab640e582e33cb51c5557e3/img-7912.png?utm_source=mp-fotoscapes" data-lightbox="roadtrip" data-title="Bill Montgomery Turning Point Usa Co Founder Dies At 80 After Battle With Coronavirus Fotoscapes">
+											<img class="card-img v-image ads-img " src="https://static.politico.com/96/87/3e922ab640e582e33cb51c5557e3/img-7912.png?utm_source=mp-fotoscapes" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXfiLYh0IWoAhHL6e9jZqd_bujl-iL5vT4wQ';" alt="Bill Montgomery Turning Point Usa Co Founder Dies At 80 After Battle With Coronavirus Fotoscapes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Montgomery Turning Point Usa Co Founder Dies At 80 After Battle With Coronavirus Fotoscapes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media4.s-nbcnews.com/j/newscms/2020_47/3428429/201114-lisa-montgomery-ac-1008a_62875b168cb9103cf58d8de4feffa1a5.fit-760w.jpg" data-lightbox="roadtrip" data-title="Lisa Montgomery 1st Woman To Face Federal Execution In Decades Lawyers Have Covid Seek Delay">
+											<img class="card-img v-image ads-img " src="https://media4.s-nbcnews.com/j/newscms/2020_47/3428429/201114-lisa-montgomery-ac-1008a_62875b168cb9103cf58d8de4feffa1a5.fit-760w.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDlX_k96Kw6RbALWkOqITWyj2-s823ztjcw';" alt="Lisa Montgomery 1st Woman To Face Federal Execution In Decades Lawyers Have Covid Seek Delay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lisa Montgomery 1st Woman To Face Federal Execution In Decades Lawyers Have Covid Seek Delay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dcist.com/wp-content/uploads/sites/3/2020/04/Screen-Shot-2020-04-07-at-10.39.17-AM-1500x801.png" data-lightbox="roadtrip" data-title="The D C Council Just Passed A Coronavirus Relief Bill Here S What S In It Dcist">
+											<img class="card-img v-image ads-img " src="https://dcist.com/wp-content/uploads/sites/3/2020/04/Screen-Shot-2020-04-07-at-10.39.17-AM-1500x801.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKJ01qHLoTECvnR5cObh_c02qX24JtIq7_A';" alt="The D C Council Just Passed A Coronavirus Relief Bill Here S What S In It Dcist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The D C Council Just Passed A Coronavirus Relief Bill Here S What S In It Dcist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/therandolphleader.com/content/tncms/assets/v3/editorial/f/8b/f8b9b122-495c-11eb-b892-872615b57576/5fea5dbcdeaed.image.jpg" data-lightbox="roadtrip" data-title="William Elbert Montgomery Iii Obituaries Therandolphleader Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/therandolphleader.com/content/tncms/assets/v3/editorial/f/8b/f8b9b122-495c-11eb-b892-872615b57576/5fea5dbcdeaed.image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFdNYgdgPqaD9OdgpQLWbm-M6EbJ-dvu4tA';" alt="William Elbert Montgomery Iii Obituaries Therandolphleader Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">William Elbert Montgomery Iii Obituaries Therandolphleader Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.alabamanews.net/content/uploads/2021/02/alabamasenate.jpg" data-lightbox="roadtrip" data-title="Stzeajwvi 8gpm">
+											<img class="card-img v-image ads-img " src="https://www.alabamanews.net/content/uploads/2021/02/alabamasenate.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_coFGss9GQgDa3FKb9G35Shcwga7Af0_4Kg';" alt="Stzeajwvi 8gpm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stzeajwvi 8gpm</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/chapter-33-gi-bill-bah-rates.html">Chapter 33 Gi Bill Bah Rates</a></li>
+													<li class="list-group-item"><a href="/chapter-31-gi-bill-benefits.html">Chapter 31 Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/chapter-33-gi-bill-law.html">Chapter 33 Gi Bill Law</a></li>
+													<li class="list-group-item"><a href="/ch33-eg-valnod.html">Ch33 Eg Valnod</a></li>
+													<li class="list-group-item"><a href="/certificate-of-eligibility-gi-bill-for-dependents.html">Certificate Of Eligibility Gi Bill For Dependents</a></li>
+													<li class="list-group-item"><a href="/chapter-33-gi-bill-requirements.html">Chapter 33 Gi Bill Requirements</a></li>
+													<li class="list-group-item"><a href="/chapter-33-spouse-benefits.html">Chapter 33 Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/chapter-33-gi-bill-qualifications.html">Chapter 33 Gi Bill Qualifications</a></li>
+													<li class="list-group-item"><a href="/chapter-35-benefits-va-gi-bill.html">Chapter 35 Benefits Va Gi Bill</a></li>
+													<li class="list-group-item"><a href="/ch-30-pay-rates.html">Ch 30 Pay Rates</a></li>
+													<li class="list-group-item"><a href="/chapter-1606-wave.html">Chapter 1606 Wave</a></li>
+													<li class="list-group-item"><a href="/ch-33-gi-bill-extension.html">Ch 33 Gi Bill Extension</a></li>
+													<li class="list-group-item"><a href="/chapter-1606-rate-table.html">Chapter 1606 Rate Table</a></li>
+													<li class="list-group-item"><a href="/chapter-1606-application.html">Chapter 1606 Application</a></li>
+													<li class="list-group-item"><a href="/chapter-33-gi-bill-application-form.html">Chapter 33 Gi Bill Application Form</a></li>
+													<li class="list-group-item"><a href="/change-my-gi-bill-bank-account.html">Change My Gi Bill Bank Account</a></li>
+													<li class="list-group-item"><a href="/chapter-33-gi-bill-full-time.html">Chapter 33 Gi Bill Full Time</a></li>
+													<li class="list-group-item"><a href="/chapter-30-and-33-benefits.html">Chapter 30 And 33 Benefits</a></li>
+													<li class="list-group-item"><a href="/chances-of-college-going-online-in-the-fall.html">Chances Of College Going Online In The Fall</a></li>
+													<li class="list-group-item"><a href="/central-college-womens-basketball-schedule.html">Central College Womens Basketball Schedule</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

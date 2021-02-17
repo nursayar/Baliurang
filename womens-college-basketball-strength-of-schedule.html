@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Strength Of Schedule - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Strength Of Schedule",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/3e/2f/59/3e2f591a1117fe21651952b0fdae37b7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+strength+of+schedule",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Strength Of Schedule</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">BPI represents how many points above or below average a. INDIANAPOLIS INDIANA - RATINGS WON-LOST records and SCHEDULE strengths are based SOLEY on games between Division I teams -- ie. The rating percentage index commonly known as the RPI is a quantity used to rank sports teams based upon a teams wins and losses and its strength of scheduleIt is one of the sports rating systems by which NCAA basketball baseball softball hockey soccer lacrosse and volleyball teams are ranked. <br>				
+			</p>
+										<a class="badge badge-info" href="/forever-gi-bill-summary.html">forever gi bill summary</a>
+											<a class="badge badge-info" href="/forever-gi-bill-national-guard.html">forever gi bill national guard</a>
+											<a class="badge badge-dark" href="/forever-gi-bill-va.html">forever gi bill va</a>
+											<a class="badge badge-info" href="/gastroenterology-college-requirements.html">gastroenterology college requirements</a>
+											<a class="badge badge-success" href="/forever-gi-bill-rules.html">forever gi bill rules</a>
+											<a class="badge badge-info" href="/fuji-9.html">fuji 9</a>
+											<a class="badge badge-warning" href="/forever-gi-bill-start-date.html">forever gi bill start date</a>
+											<a class="badge badge-secondary" href="/gastroenterologist-bryan-college-station-tx.html">gastroenterologist bryan college station tx</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the right site.  Our site provides you with suggestions for seeing the highest quality video and picture content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/a8/72/f7a872a408fd52567648354a12c44bab.jpg" data-lightbox="roadtrip" data-title="Ucla Wbb Announces 2016 17 Non Conference Schedule Uclabruins Com Ucla Athletics Basketball Schedule Ucla Ucla Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/a8/72/f7a872a408fd52567648354a12c44bab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIqjNypH5WixJXfOTpr9fDzpFjazWuiaUyCA';" alt="Ucla Wbb Announces 2016 17 Non Conference Schedule Uclabruins Com Ucla Athletics Basketball Schedule Ucla Ucla Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ucla Wbb Announces 2016 17 Non Conference Schedule Uclabruins Com Ucla Athletics Basketball Schedule Ucla Ucla Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/19/80/20/1980205fd53cd1ab1637b6d1b30b00dd.jpg" data-lightbox="roadtrip" data-title="Indiana Basketball Weekly Season Preview Strength Of Schedule Secret Scrimmage The Importance Of Recruit Dawson Indiana Basketball Indiana Indiana Hoosiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/19/80/20/1980205fd53cd1ab1637b6d1b30b00dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnW6s-D_iNsDTZF8N-1qLHVLxdEXTiUHfwjg';" alt="Indiana Basketball Weekly Season Preview Strength Of Schedule Secret Scrimmage The Importance Of Recruit Dawson Indiana Basketball Indiana Indiana Hoosiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indiana Basketball Weekly Season Preview Strength Of Schedule Secret Scrimmage The Importance Of Recruit Dawson Indiana Basketball Indiana Indiana Hoosiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/89/83/878983fc47046b5f7abb8d1d957f2fd6.jpg" data-lightbox="roadtrip" data-title="The Ncaa Is Scapegoating Women S Basketball For North Carolina S Academic Fraud Scandal Womens Basketball Ncaa Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/89/83/878983fc47046b5f7abb8d1d957f2fd6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ95183gaBNUx-VP-quXVwiScke9C5b0N0TA';" alt="The Ncaa Is Scapegoating Women S Basketball For North Carolina S Academic Fraud Scandal Womens Basketball Ncaa Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ncaa Is Scapegoating Women S Basketball For North Carolina S Academic Fraud Scandal Womens Basketball Ncaa Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/0b/f8/940bf8832e93b5c958ef484af898d425.jpg" data-lightbox="roadtrip" data-title="Ncaa Women S Basketball Tournament Bracket Schedule And Scores Basketball Tournament Basketball Games For Kids Basketball Bracket">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/0b/f8/940bf8832e93b5c958ef484af898d425.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfAWDCqyBqeCO_uRJDrHSZkc-T3ghNhkO2cw';" alt="Ncaa Women S Basketball Tournament Bracket Schedule And Scores Basketball Tournament Basketball Games For Kids Basketball Bracket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Women S Basketball Tournament Bracket Schedule And Scores Basketball Tournament Basketball Games For Kids Basketball Bracket</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/74/f9/7574f9280e8a845cb6cdaf202927847e.jpg" data-lightbox="roadtrip" data-title="Basketball Strength Conditioning Workouts Basketball Strength Training Workouts Strength And Conditioning Workouts Basketball Workouts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/74/f9/7574f9280e8a845cb6cdaf202927847e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmB_lDxgsqHWFGvel-7TextdCz8UZGdc8Mw';" alt="Basketball Strength Conditioning Workouts Basketball Strength Training Workouts Strength And Conditioning Workouts Basketball Workouts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Strength Conditioning Workouts Basketball Strength Training Workouts Strength And Conditioning Workouts Basketball Workouts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/c0/d5/30c0d550c43784c686c3f1448ffe833f.jpg" data-lightbox="roadtrip" data-title="Pin On Wcbb 2016 17">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/c0/d5/30c0d550c43784c686c3f1448ffe833f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xbnSE3hkR-02v91t2IbadFaf1szetUjYng';" alt="Pin On Wcbb 2016 17">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wcbb 2016 17</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/87/89/83/878983fc47046b5f7abb8d1d957f2fd6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xbnSE3hkR-02v91t2IbadFaf1szetUjYng';" alt="Pin On Wcbb 2016 17">
+										<div class="card-body">
+						<h3 class="h5"><b>Baseball Basketball Cross Country Football Golf Soccer Swimming Diving Tennis Track Field Sport Clubs Intramural Sports Basketball Cross Country Golf Soccer Softball Swimming Diving Tennis Track Field Volleyball Staff Directory Sports Medicine Strength and Conditioning Sports Information SAAC Athletics Calendar MIAC NCAA Division III Current Student-Athletes Carleton Athletic.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball strength of schedule</strong>. 
+								
+																	Program Patriot League on ESPN On the Radio Bison Nation App Live Stats Composite Schedule Social Media Directory Bucknell University Admissions What it Means to Be a Bison Mission Statement Recruit Contacts NCAA Eligibility Center About Lewisburg Bison Club Website About the Bison Club Make a Gift Ways to Give Bison Athletics Fund for Excellence Compliance Checklist 35-Year Donors. 
+																	The Jeff SagarinCBN Womens College Basketball Ratings game results compiled by Jim Sukup Unfortunately these womens ratings will not be available this season. 
+																	Opponents wins losses and winning percentage are also included. 
+																	2020 Womens College Basketball Strength of Schedule SOS Updated in REAL-TIME for Every Team at the Completion of Every Game. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Through games of Monday April 2 2018. 
+																	Five of eight 625 percent lost on the opening weekend. 
+																	The official 2020-21 Womens Basketball Roster for the Knox College Prairie Fire. 
+																	This system was in use in Division I mens college basketball from 1981 through 2018 to aid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A measure of a teams strength of schedule or schedule strength compare to other teams schedules. 
+																	The SCHEDULE ratings represent what the rating would have to be. 
+																	Bold - teams made the. 
+																	Womens Top 25 Power Rankings 1. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Collegiate Basketball News Womens RPI College Basketball Ratings. 
+																	NCAA Basketball strength of schedule rpi rating page. 
+																	INDIANAPOLIS INDIANA - The Rating Percentage Index RPI is used by the NCAA womens basketball committee to supplement the selection of at-large teams and the seeding of all teams for the NCAA basketball tournament. 
+																	South Carolina is back at No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 349 teams in this listing. 
+																	Louisville leads UConn drops in 1st Power 10 of February 2021 NCAA womens basketball. 
+																	2019 Womens College Basketball Strength of Schedule SOS. 
+																	1999-2021 The Forecast Factory LLC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Terms of Use Privacy Policy Stats provided by STATS LLCTerms of Use Privacy Policy Stats. 
+																	The College Basketball Power Index BPI is a measure of team strength that is meant to be the best predictor of performance going forward. 
+																	About The RPI Ratings. 
+																	This list is an independent duplication of the RPI without input. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Strength of schedule appears to hurt Maryland Stanford in reveal but gives Kentucky boost Depending on which rankings the strength of schedule for Brenda Freses Terps ranges from mid-80s to. 
+																	RPI RPI Rankings college basketball rpi Real Time NCAA College Basketball and Sports Ratings - the most accurate independent analysis of the NCAA college basketball Rating Percentage Index RPI Womens Basketball - Team RPIs 2020-2021 Join Discussion now in Womens Basketball Message Board. 
+																	Only games against Division I opponents are counted. 
+																	Below is our updated top 25 power rankings as we get set for another great weekend of college basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	No team that finished the regular season with the hardest of strength of schedule in the past eight years has made it to the Final Four. 
+																	The official 2020-21 Womens Basketball schedule for the Wheaton College Thunder. 
+																	1 after Louisville loses to NC State. 
+																	The RPI ratings were created by the NCAA and used to be considered by the NCAA tournament selection committee during the selection and seeding process. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sports Womens college basketball power rankings. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/f8/63/7ff8631da320ceb62e9421d3114556d7.jpg" data-lightbox="roadtrip" data-title="In Season Strength Training For Basketball Strength Training Strength And Conditioning Coach Strength">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/f8/63/7ff8631da320ceb62e9421d3114556d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQePqfhW_BGziWwwqruiERns24rAsmSE9uPug';" alt="In Season Strength Training For Basketball Strength Training Strength And Conditioning Coach Strength">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In Season Strength Training For Basketball Strength Training Strength And Conditioning Coach Strength</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/2f/59/3e2f591a1117fe21651952b0fdae37b7.jpg" data-lightbox="roadtrip" data-title="Dynamic Warm Up For Basketball Strength Athleticism And Injury Prevention Basketball Workouts Basketball Warmup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/2f/59/3e2f591a1117fe21651952b0fdae37b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjoEyxzjXzCp8DWRXH8otYHaQJCewwfc24oQ';" alt="Dynamic Warm Up For Basketball Strength Athleticism And Injury Prevention Basketball Workouts Basketball Warmup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dynamic Warm Up For Basketball Strength Athleticism And Injury Prevention Basketball Workouts Basketball Warmup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncaa.com/_flysystem/public-s3/images/2019-01-16/College-basketball-strength-of-schedule-auburn.jpg" data-lightbox="roadtrip" data-title="Wqru8 3pmo P M">
+											<img class="card-img v-image ads-img " src="https://www.ncaa.com/_flysystem/public-s3/images/2019-01-16/College-basketball-strength-of-schedule-auburn.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTxipvfg5TL6kBz1P3T3osVdhSe9ISdBDZGA';" alt="Wqru8 3pmo P M">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wqru8 3pmo P M</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/7f/3d/c47f3da86e1e4becf17de452e6dbc623.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Overpowers Lipscomb To Win Battle Of The Boulevard Womens Basketball Basketball Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/7f/3d/c47f3da86e1e4becf17de452e6dbc623.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmCxOIo73DxsDyuC0Chi7-dE3rsyvO0xEqtQ';" alt="Women S Basketball Overpowers Lipscomb To Win Battle Of The Boulevard Womens Basketball Basketball Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Overpowers Lipscomb To Win Battle Of The Boulevard Womens Basketball Basketball Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/c9/de/8fc9de488389fec6da37b93ccb4a6b8d.jpg" data-lightbox="roadtrip" data-title="Wnba Finals Minnesota Lynx Fuerza El Quinto Y Definitivo Encuentro Frente A Los Angeles Sparks Wnba Womens Basketball Nba">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/c9/de/8fc9de488389fec6da37b93ccb4a6b8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMoq2n40lvmi5fbq8Z4iJc90RjI1K1Eq_TJQ';" alt="Wnba Finals Minnesota Lynx Fuerza El Quinto Y Definitivo Encuentro Frente A Los Angeles Sparks Wnba Womens Basketball Nba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wnba Finals Minnesota Lynx Fuerza El Quinto Y Definitivo Encuentro Frente A Los Angeles Sparks Wnba Womens Basketball Nba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/55/ca/4755ca0e21226292a6470aaec1a869ba.jpg" data-lightbox="roadtrip" data-title="University Of Tennessee Athletics Women S Basketball Basketball Players Womens Basketball Lady Vols Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/55/ca/4755ca0e21226292a6470aaec1a869ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs_ThLNDAjRS3EMCvL2x_fYOO9xrg6cDrtwg';" alt="University Of Tennessee Athletics Women S Basketball Basketball Players Womens Basketball Lady Vols Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Tennessee Athletics Women S Basketball Basketball Players Womens Basketball Lady Vols Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/43/02/f643021dd3c7677bcf4473d761c65ee6.jpg" data-lightbox="roadtrip" data-title="Wmba Hosting Acceleration Performance Youth Basketball Training Program Dec 27 30 For Ages Basketball Training Basketball Drills Basketball Training Equipment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/43/02/f643021dd3c7677bcf4473d761c65ee6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBssRPhvN2xiaVwIYRCWXaAZuIseP9quw2hw';" alt="Wmba Hosting Acceleration Performance Youth Basketball Training Program Dec 27 30 For Ages Basketball Training Basketball Drills Basketball Training Equipment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wmba Hosting Acceleration Performance Youth Basketball Training Program Dec 27 30 For Ages Basketball Training Basketball Drills Basketball Training Equipment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/49/96/fa49964d2c0a065867ab668c44aee82f.jpg" data-lightbox="roadtrip" data-title="Drummond Joins Orange Women S Basketball Womens Basketball Basketball Coach Athlete">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/49/96/fa49964d2c0a065867ab668c44aee82f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9RdXFxxI5CxKfYmFBg_-MefJhUbr6dqeDhw';" alt="Drummond Joins Orange Women S Basketball Womens Basketball Basketball Coach Athlete">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drummond Joins Orange Women S Basketball Womens Basketball Basketball Coach Athlete</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/24/c0/2a24c0d471b349ccd4733f211b01681c.png" data-lightbox="roadtrip" data-title="Nc State Wbb Basketball Posters Womens Basketball Basketball Team Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/24/c0/2a24c0d471b349ccd4733f211b01681c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAm3-IHKcph_qWkZYY9u0sR-aoS7Lpg-jAWg';" alt="Nc State Wbb Basketball Posters Womens Basketball Basketball Team Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nc State Wbb Basketball Posters Womens Basketball Basketball Team Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b3/f8/89/b3f889266e2ad855570e73b95a7405a6.jpg" data-lightbox="roadtrip" data-title="Basketball Shooting Drills For Individuals As Basketball Drills Before A Game Following Basketball Wive Basketball Drills Basketball Workouts Basketball Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b3/f8/89/b3f889266e2ad855570e73b95a7405a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlGovGdehfK55MTHof81f03B5oRiuw3CNTA';" alt="Basketball Shooting Drills For Individuals As Basketball Drills Before A Game Following Basketball Wive Basketball Drills Basketball Workouts Basketball Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Shooting Drills For Individuals As Basketball Drills Before A Game Following Basketball Wive Basketball Drills Basketball Workouts Basketball Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/31/12/2231124ef71956de962fd436f66836c9.jpg" data-lightbox="roadtrip" data-title="Pin On I M Every Woman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/31/12/2231124ef71956de962fd436f66836c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOzReG-aZiWGMwPFk4IM1vrS0oCUHS7YCdQ';" alt="Pin On I M Every Woman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On I M Every Woman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/d2/70/a9d270c23a79b8aac9ddca66c66f7418.jpg" data-lightbox="roadtrip" data-title="5 Boss Gym Moves From Skylar Diggins Skylar Diggins Sports Performance Training Skylar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/d2/70/a9d270c23a79b8aac9ddca66c66f7418.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWfqY-K5VouhE3IQEtoiQ60K8-NJWEdcQBiw';" alt="5 Boss Gym Moves From Skylar Diggins Skylar Diggins Sports Performance Training Skylar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Boss Gym Moves From Skylar Diggins Skylar Diggins Sports Performance Training Skylar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/39/10/7a39107e85cc92ab4ce393022a36911b.jpg" data-lightbox="roadtrip" data-title="Basketball Classes Near Me Post 9212976298 Baylor College Basketball Game College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/39/10/7a39107e85cc92ab4ce393022a36911b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMGy8j83aqRzg1uveicEoiRir_traqYZINqA';" alt="Basketball Classes Near Me Post 9212976298 Baylor College Basketball Game College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Classes Near Me Post 9212976298 Baylor College Basketball Game College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-surgery-post-op-complications.html">Gi Surgery Post Op Complications</a></li>
+													<li class="list-group-item"><a href="/ginos-collegeville-pa.html">Ginos Collegeville Pa</a></li>
+													<li class="list-group-item"><a href="/git-stage-files.html">Git Stage Files</a></li>
+													<li class="list-group-item"><a href="/gi-tag-benefits-upsc.html">Gi Tag Benefits Upsc</a></li>
+													<li class="list-group-item"><a href="/gi-of-30.html">Gi Of 30</a></li>
+													<li class="list-group-item"><a href="/gifts-for-college-age-brother.html">Gifts For College Age Brother</a></li>
+													<li class="list-group-item"><a href="/gi-state-park-south-lighthouse.html">Gi State Park South Lighthouse</a></li>
+													<li class="list-group-item"><a href="/gift-box-college-station-tx-hours.html">Gift Box College Station Tx Hours</a></li>
+													<li class="list-group-item"><a href="/gil-billy-willy.html">Gil Billy Willy</a></li>
+													<li class="list-group-item"><a href="/gift-cards-for-college-graduates.html">Gift Cards For College Graduates</a></li>
+													<li class="list-group-item"><a href="/gift-box-for-college-student.html">Gift Box For College Student</a></li>
+													<li class="list-group-item"><a href="/gi-vs-cloud-9.html">Gi Vs Cloud 9</a></li>
+													<li class="list-group-item"><a href="/gift-baskets-for-college-students-ideas.html">Gift Baskets For College Students Ideas</a></li>
+													<li class="list-group-item"><a href="/gl-350-cdi-price.html">Gl 350 Cdi Price</a></li>
+													<li class="list-group-item"><a href="/gi-university-of-iowa.html">Gi University Of Iowa</a></li>
+													<li class="list-group-item"><a href="/gift-baskets-state-college-pa.html">Gift Baskets State College Pa</a></li>
+													<li class="list-group-item"><a href="/giampietros-collegeville-pa.html">Giampietros Collegeville Pa</a></li>
+													<li class="list-group-item"><a href="/gic-housing-finance.html">Gic Housing Finance</a></li>
+													<li class="list-group-item"><a href="/gift-college-login.html">Gift College Login</a></li>
+													<li class="list-group-item"><a href="/gi-pipe-30-mm.html">Gi Pipe 30 Mm</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

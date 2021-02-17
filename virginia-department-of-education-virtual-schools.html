@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Department Of Education Virtual Schools - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Department Of Education Virtual Schools",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/e3/8a/84/e38a8461fbbb142a4cc1b164fb78e92b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+department+of+education+virtual+schools",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Department Of Education Virtual Schools</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Virtual Schools Information West Virginia school systems are diligently making adjustments to create safe school environments where students can learn while physically present at school but we understand families may not feel comfortable sending their child back into his or her school building quite yet. West Virginia School Counselors. The VDOE Office of Student Services has partnered with the Center for Implementation and Evaluation of Education Systems at Old Dominion University to develop the Student Services Learning Resource Center. <br>				
+			</p>
+										<a class="badge badge-dark" href="/post-911-gi-bill-technical-schools.html">post 911 gi bill technical schools</a>
+											<a class="badge badge-dark" href="/post-911-gi-bill-title-32.html">post 911 gi bill title 32</a>
+											<a class="badge badge-primary" href="/post-911-gi-bill-remaining.html">post 911 gi bill remaining</a>
+											<a class="badge badge-light" href="/post-911-gi-bill-statement-of-benefits.html">post 911 gi bill statement of benefits</a>
+											<a class="badge badge-warning" href="/post-911-gi-bill-online-housing-allowance.html">post 911 gi bill online housing allowance</a>
+											<a class="badge badge-dark" href="/post-911-gi-bill-time-limit.html">post 911 gi bill time limit</a>
+											<a class="badge badge-dark" href="/post-911-gi-bill-out-of-state-tuition.html">post 911 gi bill out of state tuition</a>
+											<a class="badge badge-secondary" href="/post-911-gi-bill-spouse.html">post 911 gi bill spouse</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the ideal site.  Our site gives you hints for seeing the maximum quality video and picture content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/8a/84/e38a8461fbbb142a4cc1b164fb78e92b.jpg" data-lightbox="roadtrip" data-title="Free Educational Apps Developed By The Virginia Department Of Education Teaching Technology Educational Apps Teaching Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/8a/84/e38a8461fbbb142a4cc1b164fb78e92b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxA1Npaqn6DqeaJw63tDou2W97-3cMTMYnYA';" alt="Free Educational Apps Developed By The Virginia Department Of Education Teaching Technology Educational Apps Teaching Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Educational Apps Developed By The Virginia Department Of Education Teaching Technology Educational Apps Teaching Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/8f/cb/9a8fcb34fb300b4d45474b5d4d3bf2f5.jpg" data-lightbox="roadtrip" data-title="Infinite Learning Lab From The Virginia Department Of Education Middle School Language Arts Internet Safety Lessons Technology Lessons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/8f/cb/9a8fcb34fb300b4d45474b5d4d3bf2f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmlKakm0k0jYSaikzbO9Wcd24ZoSLBmOv4vQ';" alt="Infinite Learning Lab From The Virginia Department Of Education Middle School Language Arts Internet Safety Lessons Technology Lessons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infinite Learning Lab From The Virginia Department Of Education Middle School Language Arts Internet Safety Lessons Technology Lessons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/86/cd/5986cde27c794cb5fe7cecd750cf4bfc.jpg" data-lightbox="roadtrip" data-title="Wvde West Virginia Department Of Education Enables Its Employees To Access Their Account Via A User Friendly Online Port Education Paying Bills West Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/86/cd/5986cde27c794cb5fe7cecd750cf4bfc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQygyevdWUpbBaYkJPvh8MjnyWb6IogOPwzNA';" alt="Wvde West Virginia Department Of Education Enables Its Employees To Access Their Account Via A User Friendly Online Port Education Paying Bills West Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wvde West Virginia Department Of Education Enables Its Employees To Access Their Account Via A User Friendly Online Port Education Paying Bills West Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/c6/ba/c7c6ba92e43a35216dde70283deeafb8.jpg" data-lightbox="roadtrip" data-title="Virginia Department Of Education Instruction Gifted Education Project Promise The Project Pro Student Teaching Gifts Gifted Teaching Kids Critical Thinking">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/c6/ba/c7c6ba92e43a35216dde70283deeafb8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7ne23SEpO6hDish-vSLXZMqXyICzom2ZKg';" alt="Virginia Department Of Education Instruction Gifted Education Project Promise The Project Pro Student Teaching Gifts Gifted Teaching Kids Critical Thinking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Department Of Education Instruction Gifted Education Project Promise The Project Pro Student Teaching Gifts Gifted Teaching Kids Critical Thinking</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/c3/de/24c3def762a280213cb7abf468c9f021.jpg" data-lightbox="roadtrip" data-title="Vdoe Virginia Public Schools School Division Menu By Region Public School School List School Info">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/c3/de/24c3def762a280213cb7abf468c9f021.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7j3sTbISwu8cRNwbzzoX-KaCO-yZSjCfqQ';" alt="Vdoe Virginia Public Schools School Division Menu By Region Public School School List School Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vdoe Virginia Public Schools School Division Menu By Region Public School School List School Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/84/c6/ce84c6e531619431d0815f4f85562680.jpg" data-lightbox="roadtrip" data-title="Pin On School Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/84/c6/ce84c6e531619431d0815f4f85562680.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXY9cuMTcOKIl6sK8pyjf1dpmRWQxiWpImQ';" alt="Pin On School Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On School Stuff</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ce/84/c6/ce84c6e531619431d0815f4f85562680.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXY9cuMTcOKIl6sK8pyjf1dpmRWQxiWpImQ';" alt="Pin On School Stuff">
+										<div class="card-body">
+						<h3 class="h5"><b>Join us and be inspired by the potential of our students.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia department of education virtual schools</strong>. 
+								
+																	West Virginia Virtual School Sameer Shaik 2020-11-04T103647-0500. 
+																	Pulaski County school staff will start getting the vaccine this week With COVID-19 cases surging Virginia Education Association President James J. 
+																	Clayton Burch State. 
+																	Virtual Virginias professional learning opportunities are available to all Virginia public school educators at no cost. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Virtual Academy VAVA is a rapidly-growing organization that offers our teachers and staff members the excitement of exploring an emerging concept in education. 
+																	The health and safety of our children and staff are our top priorities. 
+																	Virginia Department of Education - VDOE 19 hrs Paper submission for the 2021 Virtual VJAS Virginia Junior Academy of Science competition for middle and high school students has been extended to March 10. 
+																	Clayton Burch State Superintendent of Schools Miller L. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Department of Education COVID-19 Virginia Schools The Virginia Department of Education VDOE has been working closely with the Governors Office the Virginia Department of Health and other state agencies to ensure our schools and communities have the most up-to-date information and resources. 
+																	West Virginia Schools of Diversion. 
+																	CONTACT INFO West Virginia Department of Education 1900 Kanawha Boulevard East Charleston West Virginia 25305 Phone. 
+																	West Virginia Schools for the Deaf and the Blind. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please be aware that VCPE does NOT recognize or accredit supplemental service schools or individual classes. 
+																	Virtual Schools Login Info. 
+																	WWBT - The Virginia Department of Education says that every teacher in public schools across the commonwealth will be able to host virtual classes through its online learning. 
+																	Virtual schools throughout the state are operated by each county board of education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virtual Virginia offers online Advanced Placement world language elective and core academic courses to students across the Commonwealth the nation and throughout the world. 
+																	West Virginia School Counselors. 
+																	Virtual Virginias Professional Learning Program empowers educators to explore new instructional practices and the flexibility to achieve moreall at their own pace. 
+																	Daily our talented teachers and staff experience the impact they make on the lives of children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hall President West Virginia Board of Education. 
+																	WRIC The president of the Virginia Education Association is calling all public schools who have not already done so to move to all virtual instruction until staff members have. 
+																	Virtual Virginia As a program of the Virginia Department of Education Virtual Virginia VVA offers online Advanced Placement AP world language core academic and elective courses to students throughout the Commonwealth. 
+																	Virtual Schools E-learning Materials Spoorthi Raghunandan 2020-10-07T125345-0400. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Fedderman called for public schools that have. 
+																	West Virginia Schools for the Deaf and the Blind. 
+																	The Virginia Department of Educations Virtual Virginia program offers online courses digital content and professional development opportunities to schools students and educators across the Commonwealth. 
+																	Virginia Education Association VEA president James Fedderman wants public schools in the Commonwealth to go to fully virtual learning until teachers and school staff receive vaccinations to stop the spread of coronavirus in schools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	West Virginia Schools of Diversion. 
+																	For more information about local virtual school options please contact your local county board of education. 
+																	VIRGINIA ACCREDITED VIRTUAL SCHOOLS. 
+																	As provided in 221-21223 et seq the Code of Virginia allows school divisions to offer online instruction to students using a private organization educational institution or nonprofit virtual school organization that meets Board of Education approval criteria to operate as a MOP. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Virginia Department of Education VDOE has been working closely with the Governors Office the Virginia Department of Health and other state agencies to ensure our schools and communities have the most up-to-date information and resources. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/20/96/06209647fbddca42b18862108bb1fc90.png" data-lightbox="roadtrip" data-title="Template Math Math Questions Fifth Grade Math">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/20/96/06209647fbddca42b18862108bb1fc90.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRK6W1TmTirEpRvTPMELWDACThJYO9oyz8Q';" alt="Template Math Math Questions Fifth Grade Math">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Template Math Math Questions Fifth Grade Math</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/64/23/0664232b0424c15d0b5c53d1c130865f.png" data-lightbox="roadtrip" data-title="Vdoe Dyslexia Frequently Asked Questions Document Cover Shows A Head With Gears As The Mind And Symbols Representi Education Innovation Educational Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/64/23/0664232b0424c15d0b5c53d1c130865f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuHzm-VSkOcrBNIoUWgaLL7V59bZT_SKgP8A';" alt="Vdoe Dyslexia Frequently Asked Questions Document Cover Shows A Head With Gears As The Mind And Symbols Representi Education Innovation Educational Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vdoe Dyslexia Frequently Asked Questions Document Cover Shows A Head With Gears As The Mind And Symbols Representi Education Innovation Educational Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/91/5c/60915cc4a7da94c9dce9953ed06746d6.jpg" data-lightbox="roadtrip" data-title="Virginia Regions Unit Virginia Studies Homeschool Social Studies Word Wall Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/91/5c/60915cc4a7da94c9dce9953ed06746d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlRxqPU7qNxeFKJT271_TuXezFIlpqxRZDag';" alt="Virginia Regions Unit Virginia Studies Homeschool Social Studies Word Wall Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Regions Unit Virginia Studies Homeschool Social Studies Word Wall Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/b7/dc/8ab7dcdd274fb35951a0300d53371c79.png" data-lightbox="roadtrip" data-title="Pin On Back To Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/b7/dc/8ab7dcdd274fb35951a0300d53371c79.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS16kc2cWCurmjGxZkDhf4SA5zCeWwa4LIQUA';" alt="Pin On Back To Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Back To Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/57/8a/3b/578a3b87e8660d0943069c57383a337f.jpg" data-lightbox="roadtrip" data-title="Virtual Gymnasium Templates Digital Learning Classroom Virtual Classrooms Virtual School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/57/8a/3b/578a3b87e8660d0943069c57383a337f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdI0cDDgKaJIqW0XVLFvpDahkF3ZsvY65JSw';" alt="Virtual Gymnasium Templates Digital Learning Classroom Virtual Classrooms Virtual School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virtual Gymnasium Templates Digital Learning Classroom Virtual Classrooms Virtual School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/87/d4/2587d4d9da8b5edd6f6ca3abc5c4d61f.png" data-lightbox="roadtrip" data-title="Pin On My Classroom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/87/d4/2587d4d9da8b5edd6f6ca3abc5c4d61f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc3coCPTZyuM8jL2YqIka1AGvGs1orXWLntA';" alt="Pin On My Classroom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Classroom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/6e/7a/da6e7aac410573b718bee261fd154835.jpg" data-lightbox="roadtrip" data-title="Pin On Distance Teaching">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/6e/7a/da6e7aac410573b718bee261fd154835.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ3IK-aMhGSDJe-1nlNvFssWmcHU8JLnqd_g';" alt="Pin On Distance Teaching">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Distance Teaching</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/d4/b2/add4b29f70f188d56a2c6d7ea4ccfae5.png" data-lightbox="roadtrip" data-title="Resources For At Home And Distance Learning In 2020 Distance Learning Reading Response Sheets Elementary Physical Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/d4/b2/add4b29f70f188d56a2c6d7ea4ccfae5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAky-Zc-08UYtnIVpJOhtVbdGWhpV-sN7tCw';" alt="Resources For At Home And Distance Learning In 2020 Distance Learning Reading Response Sheets Elementary Physical Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Resources For At Home And Distance Learning In 2020 Distance Learning Reading Response Sheets Elementary Physical Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/e2/6a/00e26a9bc63c2be874d81bc6846a6ced.jpg" data-lightbox="roadtrip" data-title="Pin On Blended Online Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/e2/6a/00e26a9bc63c2be874d81bc6846a6ced.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7o50rTaRw0LCnVuLpyRzTRsrOJoEXkC_5lg';" alt="Pin On Blended Online Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Blended Online Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/6c/8a/10/6c8a10bf11c56b7d81b3b9e58b05fcc7.jpg" data-lightbox="roadtrip" data-title="Vdoe Mathematics Vocabulary Word Wall Cards Math Word Walls Math Vocabulary Vocabulary Word Walls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/6c/8a/10/6c8a10bf11c56b7d81b3b9e58b05fcc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiqsQa2L4fpCAtN1NyokBUvRNTY1fGSRQsmA';" alt="Vdoe Mathematics Vocabulary Word Wall Cards Math Word Walls Math Vocabulary Vocabulary Word Walls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vdoe Mathematics Vocabulary Word Wall Cards Math Word Walls Math Vocabulary Vocabulary Word Walls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/bf/96/aebf9604caf631d494315d8d325b2071.png" data-lightbox="roadtrip" data-title="Distance Learning Animal Movement Brain Break Signs Perfect For Zoom In 2020 Distance Learning Animal Movement Learning Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/bf/96/aebf9604caf631d494315d8d325b2071.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzhaLbHREjATf-sz9Xw8zqpJqWCbF4lP0-Gg';" alt="Distance Learning Animal Movement Brain Break Signs Perfect For Zoom In 2020 Distance Learning Animal Movement Learning Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Distance Learning Animal Movement Brain Break Signs Perfect For Zoom In 2020 Distance Learning Animal Movement Learning Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/fb/48/82fb48b839eda9a68da7adb44a6aa85b.png" data-lightbox="roadtrip" data-title="National Arts Standards Online Tool Education Quotes Teachers Curriculum Art Lessons For Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/fb/48/82fb48b839eda9a68da7adb44a6aa85b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiK8c9A-augIy9lbJuiaw_QpcyuxnjsJWog';" alt="National Arts Standards Online Tool Education Quotes Teachers Curriculum Art Lessons For Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Arts Standards Online Tool Education Quotes Teachers Curriculum Art Lessons For Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/df/d1/b6dfd1fb698b8d458c71e8b0edcc134b.jpg" data-lightbox="roadtrip" data-title="Higher Education Online Learning Statistics Infographic Online Learning Educational Infographic Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/df/d1/b6dfd1fb698b8d458c71e8b0edcc134b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCVdRJU6pKgKerJX-Pti0tQzcQXqnKELSVfw';" alt="Higher Education Online Learning Statistics Infographic Online Learning Educational Infographic Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Higher Education Online Learning Statistics Infographic Online Learning Educational Infographic Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-payment-schedule.html">Gi Bill Payment Schedule</a></li>
+													<li class="list-group-item"><a href="/gi-bill-stands-for.html">Gi Bill Stands For</a></li>
+													<li class="list-group-item"><a href="/gi-bill-retro-housing.html">Gi Bill Retro Housing</a></li>
+													<li class="list-group-item"><a href="/gi-bill-request-certificate-of-eligibility.html">Gi Bill Request Certificate Of Eligibility</a></li>
+													<li class="list-group-item"><a href="/gi-bill-spouse-benefits.html">Gi Bill Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-payment-eligibility.html">Gi Bill Payment Eligibility</a></li>
+													<li class="list-group-item"><a href="/gi-bill-payment-for-online-classes.html">Gi Bill Payment For Online Classes</a></li>
+													<li class="list-group-item"><a href="/gi-bill-phone-number-verification.html">Gi Bill Phone Number Verification</a></li>
+													<li class="list-group-item"><a href="/gi-bill-sr-rates.html">Gi Bill Sr Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-post-911-phone-number.html">Gi Bill Post 911 Phone Number</a></li>
+													<li class="list-group-item"><a href="/gi-bill-remaining-months.html">Gi Bill Remaining Months</a></li>
+													<li class="list-group-item"><a href="/gi-bill-payment-now.html">Gi Bill Payment Now</a></li>
+													<li class="list-group-item"><a href="/gi-bill-pay-rates.html">Gi Bill Pay Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-spouse.html">Gi Bill Spouse</a></li>
+													<li class="list-group-item"><a href="/gi-bill-payment-not-received.html">Gi Bill Payment Not Received</a></li>
+													<li class="list-group-item"><a href="/gi-bill-should-be-for-everyone.html">Gi Bill Should Be For Everyone</a></li>
+													<li class="list-group-item"><a href="/gi-bill-spouse-book-stipend.html">Gi Bill Spouse Book Stipend</a></li>
+													<li class="list-group-item"><a href="/gi-bill-processing-time-2019.html">Gi Bill Processing Time 2019</a></li>
+													<li class="list-group-item"><a href="/gi-bill-phone-number-not-working.html">Gi Bill Phone Number Not Working</a></li>
+													<li class="list-group-item"><a href="/gi-bill-post-911-bah.html">Gi Bill Post 911 Bah</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

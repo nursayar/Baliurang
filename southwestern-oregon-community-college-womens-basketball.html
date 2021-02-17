@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Southwestern Oregon Community College Womens Basketball - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Southwestern Oregon Community College Womens Basketball",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/46/00/09/460009e850c5015bfd431c1b407cb037.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=southwestern+oregon+community+college+womens+basketball",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Southwestern Oregon Community College Womens Basketball</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Posted Dec 09 2020 Benson alum Makenzy Porter is now running. 1988 Newmark Ave Coos Bay OR 97420. Southwestern Oregon Community College Coos Bay OR. <br>				
+			</p>
+										<a class="badge badge-info" href="/va-fees-under-chapter-37.html">va fees under chapter 37</a>
+											<a class="badge badge-dark" href="/va-educational-benefits-survey.html">va educational benefits survey</a>
+											<a class="badge badge-light" href="/va-education-website.html">va education website</a>
+											<a class="badge badge-warning" href="/va-educational-benefits-for-veterans.html">va educational benefits for veterans</a>
+											<a class="badge badge-info" href="/va-form-post-911-gi-bill.html">va form post 911 gi bill</a>
+											<a class="badge badge-primary" href="/va-education-withdrawal.html">va education withdrawal</a>
+											<a class="badge badge-info" href="/va-educational-benefits-program.html">va educational benefits program</a>
+											<a class="badge badge-warning" href="/va-gi-bill-calculator-2019.html">va gi bill calculator 2019</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the right blog.  Our website gives you hints for viewing the maximum quality video and picture content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this video that you view.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/e5/5e/25e55efe4af302115d650af766c25efe.jpg" data-lightbox="roadtrip" data-title="Southwestern Oregon Community College Swocc Women Soccer Vs Clark Cc Coos Bay Soccer Epuerto Sports Womens Soccer Soccer Community College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/e5/5e/25e55efe4af302115d650af766c25efe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvibq15TcIGA07xxNf530PcswSDtKkEVaNpg';" alt="Southwestern Oregon Community College Swocc Women Soccer Vs Clark Cc Coos Bay Soccer Epuerto Sports Womens Soccer Soccer Community College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Southwestern Oregon Community College Swocc Women Soccer Vs Clark Cc Coos Bay Soccer Epuerto Sports Womens Soccer Soccer Community College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/56/14/be5614b5dbe3bae1e29f3b56251130f3.jpg" data-lightbox="roadtrip" data-title="Southwestern Oregon Community College Volleyball Vs Chemeketa Cc Community College Volleyball College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/56/14/be5614b5dbe3bae1e29f3b56251130f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStt1MHNC1BZ7WsS92NyDHuPjRZtQO48bsHBw';" alt="Southwestern Oregon Community College Volleyball Vs Chemeketa Cc Community College Volleyball College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Southwestern Oregon Community College Volleyball Vs Chemeketa Cc Community College Volleyball College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/db/ba/e3dbba283a4c7ff466079193c7850702.jpg" data-lightbox="roadtrip" data-title="Southwestern Oregon Community College Swocc Men Soccer Vs Clark Cc Coos Bay Basketball Epuerto Sports Community College Soccer Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/db/ba/e3dbba283a4c7ff466079193c7850702.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEoPWOmCysjQfdcYi9-abGIDRZR0h8AWoLDg';" alt="Southwestern Oregon Community College Swocc Men Soccer Vs Clark Cc Coos Bay Basketball Epuerto Sports Community College Soccer Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Southwestern Oregon Community College Swocc Men Soccer Vs Clark Cc Coos Bay Basketball Epuerto Sports Community College Soccer Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/59/5c/7b595c739afb4e812007fc38c557bb33.jpg" data-lightbox="roadtrip" data-title="Bandon Hs Girls Basketball Vs Gold Beach Hs Basketball Girls Basketball Gold Beach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/59/5c/7b595c739afb4e812007fc38c557bb33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIz5J8UZY5z0zxcflzEV15rAL56jLcX6sWiQ';" alt="Bandon Hs Girls Basketball Vs Gold Beach Hs Basketball Girls Basketball Gold Beach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bandon Hs Girls Basketball Vs Gold Beach Hs Basketball Girls Basketball Gold Beach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/c4/5c/cdc45c992cbd5d5a9f33024a30d16747.jpg" data-lightbox="roadtrip" data-title="Swocc Softball Vs Chemeketa Cc Softball Athlete Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/c4/5c/cdc45c992cbd5d5a9f33024a30d16747.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvlu2Ai357wk8PZywC4mjqs1UM5gocFggqw';" alt="Swocc Softball Vs Chemeketa Cc Softball Athlete Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Swocc Softball Vs Chemeketa Cc Softball Athlete Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/f1/c2/02f1c2949812996c79f2970a7b94bbc1.jpg" data-lightbox="roadtrip" data-title="Bandon High School Basketball Vs Myrtle Point High School High School Basketball Myrtle Point High School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/f1/c2/02f1c2949812996c79f2970a7b94bbc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST8W_3gFkqXcTI4Je5ib8HO-cZCr_-AAv1FQ';" alt="Bandon High School Basketball Vs Myrtle Point High School High School Basketball Myrtle Point High School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bandon High School Basketball Vs Myrtle Point High School High School Basketball Myrtle Point High School</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/13/87/de/1387de57ec07c6e995ee5d431ef3013c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST8W_3gFkqXcTI4Je5ib8HO-cZCr_-AAv1FQ';" alt="Bandon High School Basketball Vs Myrtle Point High School High School Basketball Myrtle Point High School">
+										<div class="card-body">
+						<h3 class="h5"><b>Hood North Idaho Olympic Peninsula Pierce Portland S.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Southwestern oregon community college womens basketball</strong>. 
+								
+																	View the Southwestern Oregon Community College Womens Basketball FieldLevel page to see what athletes have played for the program. 
+																	NWAC Womens Basketball Coos Bay OR Joined. 
+																	The official 2020-21 Womens Basketball Roster for the Southwestern Oregon Community College Lakers. 
+																	Southwestern Oregon Community College. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Southwestern Oregon Community College Womens Basketball History vs Chemeketa CC. 
+																	Games - Pts per game - FG - 3PT - FT - Reb per game - Ast per game - Filter events by selecting a venue from the list. 
+																	The official Womens Basketball news stories archives for the Southwestern Oregon Community College Lakers. 
+																	Southwestern Oregon Community College is located in Coos Bay OR and the Basketball program competes in the Northwest Athletic Conference conference. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2020-21 Womens Basketball Teams Select a Team Bellevue Big Bend Blue Mountain Centralia Chemeketa Clackamas Clark Columbia Basin Edmonds Everett Grays Harbor Green River Highline Lane Linn-Benton Lower Columbia Mt. 
+																	The official box score of Womens Basketball vs Southwestern Oregon Community College on 1282019. 
+																	Deadmond Madison Dimond Mackenzie Ethington Evy Galindo Ilyssa Hannemann Tepora House Jessica Newton Skyla Osborne Natalie Skurk Karina Williams Rakel Go. 
+																	Here you will get information regarding the school and information on their Womens Basketball program like who to make contact with about recruitment names of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The official Womens Basketball Coach List for the Southwestern Oregon Community College Lakers. 
+																	2020-21 Womens Basketball Schedule. 
+																	The official 2020-21 Womens Basketball schedule for the Southwestern Oregon Community College Lakers. 
+																	Womens Basketball History vs Southwestern Oregon Community College from Jan 20 2018 - Feb 22 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Garrett Stout 4 Connections. 
+																	Southwestern announces changes in coaching positions Anne Matthews May 5 2020 News Coos Bay OR Southwestern Oregon Community College announced Monday that Coach Trevor Hoppe will become the colleges Head Coach for the mens and womens cross country program and Coach Riley Grandinetti will replace Coach Hoppe on the sidelines as the new Head Coach of the mens basketball team. 
+																	Longest Win Streak. 
+																	Southwestern Oregon Community College Coos Bay OR. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ashlee De Santos 83 Connections. 
+																	Welcome to the Southwestern Oregon Community College Womens Basketball scholarship and program info page. 
+																	Change the season by selecting an option from the list. 
+																	The Southwestern Oregon Community College womens basketball team has advanced to the NWAC semifinals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens Basketball History vs Chemeketa CC from Jan 25 2020 - Jan 25 2020. 
+																	Womens Basketball Schedule Roster Statistics Archived Stories 2020-21 Womens Basketball Roster Choose a Player. 
+																	22 2019 at CSI in Twin Falls. 
+																	Where former Oregon high school stars are playing in-state at any level in 2020-21 Updated Dec 09 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Southwestern Oregon Community College. 
+																	Puget Sound Shoreline Skagit Valley Spokane SW Oregon Tacoma Treasure Valley Umpqua Walla Walla Wenatchee Valley Whatcom. 
+																	CSI takes on Southwestern Oregon Community College during the Hilex Poly Invitational Friday evening Nov. 
+																	NWAC Womens Basketball Coos Bay OR Joined. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens Basketball History vs Southwestern Oregon Community College from Nov 27 2016 - Dec 8 2018. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/a9/11/a5a911d34ee559eb52a7bafff2ced17d.jpg" data-lightbox="roadtrip" data-title="Pin On Coos Bay North Bend Bandon Coquille Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/a9/11/a5a911d34ee559eb52a7bafff2ced17d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_euz6O0EiJof0Q9nScJH71RDHr7WoLEH-qA';" alt="Pin On Coos Bay North Bend Bandon Coquille Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coos Bay North Bend Bandon Coquille Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/cf/45/dbcf455af5ee599132d306c08709a570.jpg" data-lightbox="roadtrip" data-title="Pin On Coos Bay North Bend Bandon Coquille Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/cf/45/dbcf455af5ee599132d306c08709a570.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTy2tGAgBiPBY1BS5rXpwk-NsZxbY3aI_Ow';" alt="Pin On Coos Bay North Bend Bandon Coquille Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coos Bay North Bend Bandon Coquille Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d0/3e/6f/d03e6fad9e63b586d945d1d88e122ab9.jpg" data-lightbox="roadtrip" data-title="Bandon High School Basketball Vs Waldport High School Bandon Basketball High Highschool High School Basketball School Calendar High School Calendar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d0/3e/6f/d03e6fad9e63b586d945d1d88e122ab9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7apllerNruSE3kWY7ioq_pf93FoB7jP_kMA';" alt="Bandon High School Basketball Vs Waldport High School Bandon Basketball High Highschool High School Basketball School Calendar High School Calendar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bandon High School Basketball Vs Waldport High School Bandon Basketball High Highschool High School Basketball School Calendar High School Calendar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/00/09/460009e850c5015bfd431c1b407cb037.jpg" data-lightbox="roadtrip" data-title="Bandon Hs And Harbor Lights Ms Cross Country At Myrtle Point Hs Myrtle Point Harbor Lights Bandon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/00/09/460009e850c5015bfd431c1b407cb037.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ooeaIDZbpc9PM9HWuigEgKWkoEKq0BeaBg';" alt="Bandon Hs And Harbor Lights Ms Cross Country At Myrtle Point Hs Myrtle Point Harbor Lights Bandon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bandon Hs And Harbor Lights Ms Cross Country At Myrtle Point Hs Myrtle Point Harbor Lights Bandon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/5d/a3/515da34f7b87050eb1abeadc63349f11.jpg" data-lightbox="roadtrip" data-title="Swocc Swim Team At Scat Invitational Swim Team Swimming Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/5d/a3/515da34f7b87050eb1abeadc63349f11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL3p2w0FJDGbt4vhaAyxQRKE_SV4sHx0ixzA';" alt="Swocc Swim Team At Scat Invitational Swim Team Swimming Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Swocc Swim Team At Scat Invitational Swim Team Swimming Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/d9/3a/76d93a3d240fa5581f07cc68655287e4.jpg" data-lightbox="roadtrip" data-title="Marshfield Girls Soccer Vs Brookings Harbor 2013 Girls Soccer Coos Bay Soccer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/d9/3a/76d93a3d240fa5581f07cc68655287e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRXtn6Clo37HeckwF0occEyZqtTsIlHtzm2A';" alt="Marshfield Girls Soccer Vs Brookings Harbor 2013 Girls Soccer Coos Bay Soccer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marshfield Girls Soccer Vs Brookings Harbor 2013 Girls Soccer Coos Bay Soccer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/49/c3/1849c31239444a6c09f7a0093839c79a.jpg" data-lightbox="roadtrip" data-title="Marshfield Boys Basketball Vs North Eugene Hs Boys Basketball Coos Bay North">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/49/c3/1849c31239444a6c09f7a0093839c79a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhY1AIXiZQ_3Bxz3E7HV0yMZP2CaRnk6SzsQ';" alt="Marshfield Boys Basketball Vs North Eugene Hs Boys Basketball Coos Bay North">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marshfield Boys Basketball Vs North Eugene Hs Boys Basketball Coos Bay North</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/4b/f7/fa4bf703e6e976d6e7d3202e89c25443.jpg" data-lightbox="roadtrip" data-title="Swocc Baseball Vs Linn Benton Cc Linn Athlete Community College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/4b/f7/fa4bf703e6e976d6e7d3202e89c25443.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgu-_dglrkkxLIMqmQrA7eaC1WBaL_p1ypQ';" alt="Swocc Baseball Vs Linn Benton Cc Linn Athlete Community College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Swocc Baseball Vs Linn Benton Cc Linn Athlete Community College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/72/46/637246a7dcbde07332c352a8ecd39599.jpg" data-lightbox="roadtrip" data-title="Middle School Cross Country District At Tugman Middle School Cross Country School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/72/46/637246a7dcbde07332c352a8ecd39599.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmMzbUf4ttAA14kIksZRXGcOWGfNvn9n098g';" alt="Middle School Cross Country District At Tugman Middle School Cross Country School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Middle School Cross Country District At Tugman Middle School Cross Country School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/8b/14/9b8b14248352016aa519e697594ecd95.jpg" data-lightbox="roadtrip" data-title="2012 Nwaacc All Stars Women Cassidy Crandall All Star Winter Jackets Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/8b/14/9b8b14248352016aa519e697594ecd95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_9DHexnh2k2fbexWVz4ti_eRbg6DRosZizA';" alt="2012 Nwaacc All Stars Women Cassidy Crandall All Star Winter Jackets Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2012 Nwaacc All Stars Women Cassidy Crandall All Star Winter Jackets Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/4a/f0/7c4af0f33cc0effcafea02ae5c70f666.jpg" data-lightbox="roadtrip" data-title="Bandon High School Track Marshfield Coquille Brookings And Field At Grants Pass Coos Bay Events Calendar News North Bend Bando Field Coos Bay Grants Pass">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/4a/f0/7c4af0f33cc0effcafea02ae5c70f666.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR58c_xTdk8Echnk5CrMJ0BCHfMUcZlajUjhQ';" alt="Bandon High School Track Marshfield Coquille Brookings And Field At Grants Pass Coos Bay Events Calendar News North Bend Bando Field Coos Bay Grants Pass">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bandon High School Track Marshfield Coquille Brookings And Field At Grants Pass Coos Bay Events Calendar News North Bend Bando Field Coos Bay Grants Pass</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/87/de/1387de57ec07c6e995ee5d431ef3013c.jpg" data-lightbox="roadtrip" data-title="North Bend Middle School Boys Basketball 8th Grade Vs Marshfield And 7th Grade Vs Millicoma Middle School Boys Boys Basketball Middle School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/87/de/1387de57ec07c6e995ee5d431ef3013c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2K7AMAmKKsLs4MZs3BkL0Fu45AJ1Xc6HZ3A';" alt="North Bend Middle School Boys Basketball 8th Grade Vs Marshfield And 7th Grade Vs Millicoma Middle School Boys Boys Basketball Middle School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">North Bend Middle School Boys Basketball 8th Grade Vs Marshfield And 7th Grade Vs Millicoma Middle School Boys Boys Basketball Middle School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/3d/31/c03d3146cd7aaf51343c1ecd4324e9fe.jpg" data-lightbox="roadtrip" data-title="Orange City Iowa In An Era Of More And More Sports Specialization Anna Kiel Chose Not To Take That Path And It Has Orange City Christian High School Unity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/3d/31/c03d3146cd7aaf51343c1ecd4324e9fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXAPXAENz1PtSV0R4LqmFdCwKuC8n7_9ylQ';" alt="Orange City Iowa In An Era Of More And More Sports Specialization Anna Kiel Chose Not To Take That Path And It Has Orange City Christian High School Unity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Orange City Iowa In An Era Of More And More Sports Specialization Anna Kiel Chose Not To Take That Path And It Has Orange City Christian High School Unity</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/south-georgia-state-college-womens-basketball.html">South Georgia State College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/st-lawrence-college-womens-basketball-live-stream.html">St Lawrence College Womens Basketball Live Stream</a></li>
+													<li class="list-group-item"><a href="/shawnee-college-womens-basketball-roster.html">Shawnee College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/size-9-karate-gi.html">Size 9 Karate Gi</a></li>
+													<li class="list-group-item"><a href="/should-i-go-to-college-quiz.html">Should I Go To College Quiz</a></li>
+													<li class="list-group-item"><a href="/state-grid-ev-service.html">State Grid Ev Service</a></li>
+													<li class="list-group-item"><a href="/state-gibbs-phase-rule.html">State Gibbs Phase Rule</a></li>
+													<li class="list-group-item"><a href="/snhu-post-911-gi-bill.html">Snhu Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/size-9-judo-gi.html">Size 9 Judo Gi</a></li>
+													<li class="list-group-item"><a href="/state-grid-corporation-of-china-annual-report-2019.html">State Grid Corporation Of China Annual Report 2019</a></li>
+													<li class="list-group-item"><a href="/state-gif.html">State Gif</a></li>
+													<li class="list-group-item"><a href="/short-womens-college-basketball-players.html">Short Womens College Basketball Players</a></li>
+													<li class="list-group-item"><a href="/state-government-powers.html">State Government Powers</a></li>
+													<li class="list-group-item"><a href="/shot-clock-in-womens-college-basketball.html">Shot Clock In Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/state-gifts.html">State Gifts</a></li>
+													<li class="list-group-item"><a href="/state-gi-loan.html">State Gi Loan</a></li>
+													<li class="list-group-item"><a href="/schoolgirl-bow.html">Schoolgirl Bow</a></li>
+													<li class="list-group-item"><a href="/spartan-college-gi-bill.html">Spartan College Gi Bill</a></li>
+													<li class="list-group-item"><a href="/state-gifts-usa.html">State Gifts Usa</a></li>
+													<li class="list-group-item"><a href="/south-georgia-technical-college-womens-basketball.html">South Georgia Technical College Womens Basketball</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

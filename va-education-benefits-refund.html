@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Education Benefits Refund - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Education Benefits Refund",
+  "datePublished": "2021-02-17",
+  "image": "https://militarybenefits.info/wp-content/uploads/2019/09/VET-TEC.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+education+benefits+refund",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Education Benefits Refund</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Hit enter to expand a main menu option Health Benefits etc. If weve asked you for documents please upload them through the GI Bill website. You can contact our call center at 1-888-442-4451 or ask a question pertaining to benefits or your claim. <br>				
+			</p>
+										<a class="badge badge-danger" href="/va-gi-bill-monthly-housing-allowance.html">va gi bill monthly housing allowance</a>
+											<a class="badge badge-dark" href="/va-gi-bill-transfer.html">va gi bill transfer</a>
+											<a class="badge badge-danger" href="/va-gi-bill-gpa-requirements.html">va gi bill gpa requirements</a>
+											<a class="badge badge-light" href="/va-gi-bill-overseas-schools.html">va gi bill overseas schools</a>
+											<a class="badge badge-success" href="/va-gi-bill-payment-history.html">va gi bill payment history</a>
+											<a class="badge badge-secondary" href="/va-gi-bill-updates.html">va gi bill updates</a>
+											<a class="badge badge-danger" href="/va-gi-bill-regional-office.html">va gi bill regional office</a>
+											<a class="badge badge-primary" href="/va-gi-bill-eligible-schools.html">va gi bill eligible schools</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the ideal site.  Our site provides you with suggestions for viewing the highest quality video and image content, hunt and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://rhodes.edu/sites/default/files/2018-10/Seal_of_the_U.S._Department_of_Veterans_Affairs.png" data-lightbox="roadtrip" data-title="Va Education Benefits Rhodes College">
+											<img class="card-img v-image ads-img " src="https://rhodes.edu/sites/default/files/2018-10/Seal_of_the_U.S._Department_of_Veterans_Affairs.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTws7Y5p8CBnAyfB4b5Ub1uHeEzmET6ybrrYw';" alt="Va Education Benefits Rhodes College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Education Benefits Rhodes College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.thecollegeinvestor.com/wp-content/uploads/2019/02/TWFB_VA.jpg" data-lightbox="roadtrip" data-title="The Guide To Military And Va Education Benefits To Pay For College">
+											<img class="card-img v-image ads-img " src="https://cdn.thecollegeinvestor.com/wp-content/uploads/2019/02/TWFB_VA.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlyMp2PwYjujQZF2BlBeg9cuIWGz4vy1YeWQ';" alt="The Guide To Military And Va Education Benefits To Pay For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Guide To Military And Va Education Benefits To Pay For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://ece.emory.edu/_includes/images/payment/military.jpg" data-lightbox="roadtrip" data-title="Va Education And Training Benefits Emory University Atlanta Ga">
+											<img class="card-img v-image ads-img " src="http://ece.emory.edu/_includes/images/payment/military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsiBiFGNO4xG75GuOdAagnDiljQlb1bfepxw';" alt="Va Education And Training Benefits Emory University Atlanta Ga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Education And Training Benefits Emory University Atlanta Ga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vetsedsuccess.org/wp-content/uploads/2014/01/why-for-profit-institutions-target-veterans-education-benefits.jpg" data-lightbox="roadtrip" data-title="Why For Profit Schools Are Targeting Veterans Education Benefits Veterans Education Success">
+											<img class="card-img v-image ads-img " src="https://vetsedsuccess.org/wp-content/uploads/2014/01/why-for-profit-institutions-target-veterans-education-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNdGlIO2l6A2-uTJusdmdsTGCpdDeuJHE2g';" alt="Why For Profit Schools Are Targeting Veterans Education Benefits Veterans Education Success">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why For Profit Schools Are Targeting Veterans Education Benefits Veterans Education Success</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="PcRqil_ZMMU5UM" data-lightbox="roadtrip" data-title="Http Www Vba Va Gov Pubs Forms 24 5281 Pdf">
+											<img class="card-img v-image ads-img " src="PcRqil_ZMMU5UM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQztkVKsOVHqVE5fstgltY9zAcIBhlw3XHWLw';" alt="Http Www Vba Va Gov Pubs Forms 24 5281 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Vba Va Gov Pubs Forms 24 5281 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Cvmb02B02CMofM" data-lightbox="roadtrip" data-title="Https Www Benefits Va Gov Transition Docs Va Benefits Participant Guide National Guard Reserve Pdf">
+											<img class="card-img v-image ads-img " src="Cvmb02B02CMofM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFLibv3zvChOHroTco9IgwECjZCwfgrCLqAg';" alt="Https Www Benefits Va Gov Transition Docs Va Benefits Participant Guide National Guard Reserve Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Benefits Va Gov Transition Docs Va Benefits Participant Guide National Guard Reserve Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.disabledveterans.org/wp-content/uploads/2019/09/GI-Bill-Court-Decision.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFLibv3zvChOHroTco9IgwECjZCwfgrCLqAg';" alt="Https Www Benefits Va Gov Transition Docs Va Benefits Participant Guide National Guard Reserve Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>New Data on Veteran Student Loan Debt and GI Bill Expenditures Student Outcomes at Trade Schools and the History and Efficacy of Letters of Credit at the Education Department and the 85-15 Rule at VA Washington DC.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va education benefits refund</strong>. 
+								
+																	Publication 970 Tax Benefits for Education the authoritative source for all education tax matters covers this tax exclusion. 
+																	If you never used your VEAP benefits or feel you are otherwise entitled to a refund of VEAP contributions you made to the account you will be required to submit VA Form 22-5281 Application for Refund of Educational Contributions to the nearest VA regional office. 
+																	Tax Exclusion for Veterans Education Benefits If you serve or served in the military and are receiving Department of Veterans Affairs VA education benefits the IRS excludes this income from taxation. 
+																	The GI Bill provides education benefits to veterans and their dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Look at all your options and see what helps you the most. 
+																	PART II - NOTICE OF DISENROLLMENT AND APPLICATION FOR REFUND. 
+																	Attention A T users. 
+																	Currently VA is processing the majority of original enrollments within 24 days and the majority of re-enrollments within 12 days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use this form to apply for educational assistance under the following benefit programs. 
+																	Get paid back for test fees The GI Bill covers more than just tuition. 
+																	Partial refunds cannot be made from your fund balance. 
+																	One of these must be true. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You have returned to college and are receiving two education benefits under the latest GI Bill. 
+																	VA education benefits help Veterans service members and their qualified family members with needs like paying college tuition finding the right school or training program and getting career counseling. 
+																	Neither of these benefits is taxable and you do not report them on your tax return. 
+																	Veterans Education Success Releases New Reports on the Use Return-on-Investment and Administration of VA Education Benefit Programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans Educational Assistance Program VEAP You may be able to continue your education by using part of your military pay to help cover the cost of school. 
+																	Is missing in action or was captured in the line of duty by a hostile force or. 
+																	Its easy to forget that the GI Bill isnt your only college payment option. 
+																	Post- 911 GI Bill chapter 33 of title 38 US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans Educational Assistance Program VEAP You may be able to continue your education by using part of your military pay to help cover the cost of school. 
+																	You may be eligible for VA education benefits Chapter 35 benefits if youre the child or spouse of a service member and one of the descriptions listed below is true of the service member. 
+																	Learn how to apply for and manage the education and training benefits youve earned. 
+																	VAFORM SEP 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FOR COMPLETING THE APPLICATION FOR VA EDUCATION BENEFITS. 
+																	This refund is not available to Montgomery GI Bill 903 and Chapter 32 participants. 
+																	Colmery Veterans Educational Assistance Act of 2017 allows VA to restore entitlement to beneficiaries affected by school closure or disappoval if the disapproval was due to a change in law or VA interpretation of statute. 
+																	Finding the Best Education Benefit for You We want you to take the education benefit that helps you the most. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The calculation is 205 divided by 36 multiplied by 1200. 
+																	To access the menus on this page please perform the following steps. 
+																	Information About GI Bill Overpayments and Debts - Education and Training Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	SUPERSEDES VA FORM 22-1990 FEB 2020 WHICH WILL NOT BE USED. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Code Montgomery GI Bill MGIB chapter 30. 
+																	Was detained held. 
+																	Some veterans have a long-term plan for their education that isnt fully covered by the GI. 
+																	For example if an individual has 20 months and 15 days of entitlement remaining under Chapter 30 prior to relinquishing the benefit in lieu of Chapter 33 then the individual would receive 68333 as a refund. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Skip to page content. 
+																	Find out if you can get benefits through the Veterans Educational Assistance Program VEAPa 2-to-1 government-match program for educational assistance. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Generally a credit that reduces your tax or increases your refund is the best. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please switch auto forms mode to off. 
+																	Restoration of Benefits After School Closure or if a School is Disapproved for GI Bill Benefits The Harry W. 
+																	You can use part of your entitlement to cover the cost of certain tests you need to take to become a licensed or certified professionalor to apply for college or a training course. 
+																	Veterans Education Success. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You cant make changes to your application but if you have questions about VA education benefits please call 888-442-4551 Monday through Friday 800 am. 
+																	If you need additional information click on Submit a Question at wwwbenefitsvagovgibill or call toll-free to 1-888-442-4551. 
+																	Find out if you can get benefits through the Veterans Educational Assistance Program VEAPa 2-to-1 government-match program for educational assistance. 
+																	A 1534 monthly basic housing allowance BAH that is directly deposited to your checking account and 3840 paid directly to your college for tuition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some types of financial aid for veterans via FAFSA is need-based while other forms require no financial qualification. 
+																	Died in the line of duty after September 10 2001 or. 
+																	See how VA is responding to COVID-19 and supporting GI Bill beneficiaries. 
+																	FAFSA veteran education benefits are available in addition to what is offered via GI Bill Benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	APPLICATION FOR VA EDUCATION BENEFITS VA FORM 22-1990 22-1990. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="7aVhqi9T1tp0hM" data-lightbox="roadtrip" data-title="Https Www Tungsten Network Com Media 16605637 Faqs For E Auth And E Invoicing Service Providers 2020 01 Pdf">
+											<img class="card-img v-image ads-img " src="7aVhqi9T1tp0hM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrnGvW73_5tLzvLydW2Kq6vB69myxqSv2RIQ';" alt="Https Www Tungsten Network Com Media 16605637 Faqs For E Auth And E Invoicing Service Providers 2020 01 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Tungsten Network Com Media 16605637 Faqs For E Auth And E Invoicing Service Providers 2020 01 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Provider.jpg" data-lightbox="roadtrip" data-title="Veteran Employment Through Technology Education Courses For Training Providers Vet Tec Education And Training">
+											<img class="card-img v-image ads-img " src="https://www.benefits.va.gov/GIBILL/images/FGIB/VetTec_Provider.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ZnPxgF8XJv-EoXlRsv_jm5k5sNJvi8VamQ';" alt="Veteran Employment Through Technology Education Courses For Training Providers Vet Tec Education And Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Employment Through Technology Education Courses For Training Providers Vet Tec Education And Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="ZvGtLeM4QGNphM" data-lightbox="roadtrip" data-title="Http Equity Psu Edu Veterans Pdf Student Veterans And Irs Form 1098t">
+											<img class="card-img v-image ads-img " src="ZvGtLeM4QGNphM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQygCxA-NKIikYL-aP7klGYuyQoT_48Hfd-Q';" alt="Http Equity Psu Edu Veterans Pdf Student Veterans And Irs Form 1098t">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Equity Psu Edu Veterans Pdf Student Veterans And Irs Form 1098t</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="sBaTlQjvHss0pM" data-lightbox="roadtrip" data-title="Https Secure Ssa Gov Apps10 Public Pomsimages Nsf Gfx Num G Di 11005 007c 1 File G Di 11005 007c 1 Pdf">
+											<img class="card-img v-image ads-img " src="sBaTlQjvHss0pM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZOidRmIrqW9R7_Zd11azWrGH22FHVT-Lyg';" alt="Https Secure Ssa Gov Apps10 Public Pomsimages Nsf Gfx Num G Di 11005 007c 1 File G Di 11005 007c 1 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Secure Ssa Gov Apps10 Public Pomsimages Nsf Gfx Num G Di 11005 007c 1 File G Di 11005 007c 1 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="XMDAArfGoS2LKM" data-lightbox="roadtrip" data-title="Https Fasfaa Memberclicks Net Assets Clockhour 1819 Va 20clock 20hour 20programs Pdf">
+											<img class="card-img v-image ads-img " src="XMDAArfGoS2LKM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MAqEjZ5U1FBPK942PXeRU6M6B_KTKhElTQ';" alt="Https Fasfaa Memberclicks Net Assets Clockhour 1819 Va 20clock 20hour 20programs Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Fasfaa Memberclicks Net Assets Clockhour 1819 Va 20clock 20hour 20programs Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/10/veteran-education-benefits-fafsa.jpg" data-lightbox="roadtrip" data-title="Fafsa Veteran Education Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/10/veteran-education-benefits-fafsa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3k4DS7zck7zJ6cT8ADDNBeWOQ_f3QWbEpdw';" alt="Fafsa Veteran Education Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fafsa Veteran Education Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.disabledveterans.org/wp-content/uploads/2019/09/GI-Bill-Court-Decision.jpg" data-lightbox="roadtrip" data-title="Thousands Of Veterans Wrongly Denied Gi Bill Benefits Court Says Disabled Veterans Org">
+											<img class="card-img v-image ads-img " src="https://www.disabledveterans.org/wp-content/uploads/2019/09/GI-Bill-Court-Decision.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTua-2UQcT8NP90ltAsHtMW2SGtvf7mKJc-6A';" alt="Thousands Of Veterans Wrongly Denied Gi Bill Benefits Court Says Disabled Veterans Org">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thousands Of Veterans Wrongly Denied Gi Bill Benefits Court Says Disabled Veterans Org</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/09/VET-TEC.jpg" data-lightbox="roadtrip" data-title="Vet Tec Program Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/09/VET-TEC.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHh-_OUvt8RzO1tEk4tH1gehswVTQ7mYtmw';" alt="Vet Tec Program Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vet Tec Program Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/arizona-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="Arizona Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/arizona-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0MR1zrnNtZHAcyKAgIamQwE8sbR1gz9g8A';" alt="Arizona Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arizona Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://data.templateroller.com/pdf_docs_html/2060/20608/2060883/va-form-22-1990-application-for-va-education-benefits_print_big.png" data-lightbox="roadtrip" data-title="Va Form 22 1990 Download Fillable Pdf Or Fill Online Application For Va Education Benefits Templateroller">
+											<img class="card-img v-image ads-img " src="https://data.templateroller.com/pdf_docs_html/2060/20608/2060883/va-form-22-1990-application-for-va-education-benefits_print_big.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyjrJlulUylFFl6_yYO1Rbu52Auqi3RhFpIw';" alt="Va Form 22 1990 Download Fillable Pdf Or Fill Online Application For Va Education Benefits Templateroller">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Form 22 1990 Download Fillable Pdf Or Fill Online Application For Va Education Benefits Templateroller</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="z7FEculcQw8gkM" data-lightbox="roadtrip" data-title="Http Www Auburn Edu Finaid Pdf Va Post911 Gibill Au Pdf">
+											<img class="card-img v-image ads-img " src="z7FEculcQw8gkM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrkJRpcSve0QyJCrIPn7FtPtm6K_lYU6D7GQ';" alt="Http Www Auburn Edu Finaid Pdf Va Post911 Gibill Au Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Auburn Edu Finaid Pdf Va Post911 Gibill Au Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://deanofstudents.utexas.edu/images/DoS_RGB_formal_Student_Veterans_Services.png" data-lightbox="roadtrip" data-title="Office Of The Dean Of Students Student Veteran Services Military Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://deanofstudents.utexas.edu/images/DoS_RGB_formal_Student_Veterans_Services.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV9E_iSjnsWrRNlMy7VwIhHIJ-IsZXi--7sg';" alt="Office Of The Dean Of Students Student Veteran Services Military Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Office Of The Dean Of Students Student Veteran Services Military Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://studentaffairs.vancouver.wsu.edu/files/inserted-images/cougar-statue-01-1760x640.jpg" data-lightbox="roadtrip" data-title="Veterans Affairs Frequently Asked Questions Veterans Affairs Wsu Vancouver">
+											<img class="card-img v-image ads-img " src="https://studentaffairs.vancouver.wsu.edu/files/inserted-images/cougar-statue-01-1760x640.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTHBBCHcauyf8dNlpg5oUOgELKJRkuh3Y_Q';" alt="Veterans Affairs Frequently Asked Questions Veterans Affairs Wsu Vancouver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Affairs Frequently Asked Questions Veterans Affairs Wsu Vancouver</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-handbook-chapter-12.html">Va Handbook Chapter 12</a></li>
+													<li class="list-group-item"><a href="/va-governor-covid-update.html">Va Governor Covid Update</a></li>
+													<li class="list-group-item"><a href="/va-montgomery-gi-bill-status.html">Va Montgomery Gi Bill Status</a></li>
+													<li class="list-group-item"><a href="/va-irrrl-chapter-13.html">Va Irrrl Chapter 13</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-covid.html">Va Post 911 Gi Bill Covid</a></li>
+													<li class="list-group-item"><a href="/va-post-911-processing-time.html">Va Post 911 Processing Time</a></li>
+													<li class="list-group-item"><a href="/va-post-911-housing-allowance.html">Va Post 911 Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/va-post-911-benefits.html">Va Post 911 Benefits</a></li>
+													<li class="list-group-item"><a href="/va-post-911-payment-schedule.html">Va Post 911 Payment Schedule</a></li>
+													<li class="list-group-item"><a href="/va-gi-payments.html">Va Gi Payments</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-apprenticeship.html">Va Post 911 Gi Bill Apprenticeship</a></li>
+													<li class="list-group-item"><a href="/va-office-gi-bill.html">Va Office Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-post-911-book-stipend.html">Va Post 911 Book Stipend</a></li>
+													<li class="list-group-item"><a href="/va-long-beach-education-department.html">Va Long Beach Education Department</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-housing-allowance.html">Va Post 911 Gi Bill Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-rates.html">Va Post 911 Gi Bill Rates</a></li>
+													<li class="list-group-item"><a href="/va-post-911-certificate-of-eligibility.html">Va Post 911 Certificate Of Eligibility</a></li>
+													<li class="list-group-item"><a href="/va-online-gi-bill.html">Va Online Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-processing-time.html">Va Post 911 Gi Bill Processing Time</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-login.html">Va Post 911 Gi Bill Login</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

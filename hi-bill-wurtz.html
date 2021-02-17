@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Hi Bill Wurtz - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Hi Bill Wurtz",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/c9/fa/1a/c9fa1aaf6d3b07b368b5b7c745845335.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=hi+bill+wurtz",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Hi Bill Wurtz</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Im Still a Piece of Garbage Sticker. Bill Wurtz Bill Wurtz is a YouTuber who is famous after making a video named history of the entire world i guess. Jan 26 2021 1 please i need a playlist to watch during this virus outbreak. <br>				
+			</p>
+										<a class="badge badge-dark" href="/army-2-year-contract-gi-bill.html">army 2 year contract gi bill</a>
+											<a class="badge badge-light" href="/army-gi-bill-application.html">army gi bill application</a>
+											<a class="badge badge-success" href="/army-tuition-assistance-vs-gi-bill.html">army tuition assistance vs gi bill</a>
+											<a class="badge badge-secondary" href="/apply-for-chapter-33-benefits.html">apply for chapter 33 benefits</a>
+											<a class="badge badge-secondary" href="/army-gi-bill-verification.html">army gi bill verification</a>
+											<a class="badge badge-success" href="/bah-calculator-usmc-gi-bill.html">bah calculator usmc gi bill</a>
+											<a class="badge badge-warning" href="/average-salary-for-womens-college-basketball-coach.html">average salary for womens college basketball coach</a>
+											<a class="badge badge-success" href="/army-reserve-gi-bill.html">army reserve gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal blog.  Our site gives you hints for seeing the maximum quality video and picture content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video for you to view.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/d1/51/ced15102659488ef6f3e06dc166b9518.jpg" data-lightbox="roadtrip" data-title="History Of Japan Bill Wurtz On Youtube Japan China Quote Hi Dipshit Hetalia Fanart Hetalia Funny Japan History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/d1/51/ced15102659488ef6f3e06dc166b9518.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQpPZ9mc6vWljxutAotpIfVkiya6U1dvd8dYnHfckqJ6g99TBRy4fuh3bgf2beY_-rlqB8QA&amp;ec=45771803';" alt="History Of Japan Bill Wurtz On Youtube Japan China Quote Hi Dipshit Hetalia Fanart Hetalia Funny Japan History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">History Of Japan Bill Wurtz On Youtube Japan China Quote Hi Dipshit Hetalia Fanart Hetalia Funny Japan History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/9f/36/2b9f36ad27429464bb08634ddbe320f7.gif" data-lightbox="roadtrip" data-title="I Just Made Sixteen Gifs Of Bill Wurtz Stuff I Have No Life Hilarious Mood Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/9f/36/2b9f36ad27429464bb08634ddbe320f7.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnLBmfsuCIgto_Nncfh7aaPNIUbHnqhVRpt1jg6gl3tgWNWFUVKmcJ4SlWE0Jnu1oRvAGixA&amp;ec=45771803';" alt="I Just Made Sixteen Gifs Of Bill Wurtz Stuff I Have No Life Hilarious Mood Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Just Made Sixteen Gifs Of Bill Wurtz Stuff I Have No Life Hilarious Mood Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/05/20/6b052029de8346de7c27e3b09fc16cc1.jpg" data-lightbox="roadtrip" data-title="I M Still A Piece Of Garbage Bill Wurtz Unisex T Shirt T Shirt Shirts Tshirt Colors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/05/20/6b052029de8346de7c27e3b09fc16cc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLutkcU2Ak1NXR-LxKnoWA67grDDaiuP9ffMUzbGmL3AEp_FAosnbOLx8sbTalTbArtTqsag&amp;ec=45771803';" alt="I M Still A Piece Of Garbage Bill Wurtz Unisex T Shirt T Shirt Shirts Tshirt Colors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I M Still A Piece Of Garbage Bill Wurtz Unisex T Shirt T Shirt Shirts Tshirt Colors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/de/87/d6/de87d6c620d5957f6a0b4f8de976df54.jpg" data-lightbox="roadtrip" data-title="Pin On Vine Party Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/de/87/d6/de87d6c620d5957f6a0b4f8de976df54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0s_70aKZVV82ZYRQf-cFRgsgKL1CEnOAWKPvqIJJCx6IUuKKFKFs7AcleSqgzlXP4t-J1lw&amp;ec=45771803';" alt="Pin On Vine Party Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vine Party Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/81/f4/8881f468c2277a77fb6328f4d0a643c5.png" data-lightbox="roadtrip" data-title="ˏˋpinterest Strawberrymurlk ˎˊ Picture Book Im A Loser Park Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/81/f4/8881f468c2277a77fb6328f4d0a643c5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRVNXhkvGomtKF0r9xkkDLBNi29v9RZjlJXiLgRHs6Bw3uEl3bAJ6QLyDR0H_gNGgGaPJIfA&amp;ec=45771803';" alt="ˏˋpinterest Strawberrymurlk ˎˊ Picture Book Im A Loser Park Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">ˏˋpinterest Strawberrymurlk ˎˊ Picture Book Im A Loser Park Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/de/ff/53deff1c520f4da90855e7c3d1904b91.jpg" data-lightbox="roadtrip" data-title="Pin On Funny Ig">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/de/ff/53deff1c520f4da90855e7c3d1904b91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHSF1OUEVmCTJDJnlR0UU7JgLVNMNssvMEAnq-zduzFl939br_bhWkPIX4nlVxy2DTueqn6w&amp;ec=45771803';" alt="Pin On Funny Ig">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Funny Ig</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c9/fa/1a/c9fa1aaf6d3b07b368b5b7c745845335.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHSF1OUEVmCTJDJnlR0UU7JgLVNMNssvMEAnq-zduzFl939br_bhWkPIX4nlVxy2DTueqn6w&amp;ec=45771803';" alt="Pin On Funny Ig">
+										<div class="card-body">
+						<h3 class="h5"><b>Fuck it actually most of its water.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Hi bill wurtz</strong>. 
+								
+																	Joined Jul 5 2020 Messages 1821 Reactions 506. 
+																	Some of its water. 
+																	Hi im steve Bill Wurtz is an American musician and video creator. 
+																	Hi im steve is a short video made by Bill Wurtz and released on YouTube on July 6 2017. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Post your favorite bill wurtz videos. 
+																	He initially focused on Vine videos with songs intermingled and had some success there but eventually expressed a desire to create longer unrestricted videos on his YouTube channel. 
+																	Hi im making anagrams and the anagrams for it are imagining karma mash imagining karma sham and imagining shark mama. 
+																	In this epic sequel to his viral hit history of japan Bill Wurtz teaches us the entire history of the universe in relation to human existence. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill Wurtz is an American musician and video blogger well-known for his short and memorable one-line jingles set to 80s-inspired animation videos. 
+																	Most of the criticism of this revolves around tongue in cheek assessments of its educational value and not the fact that in 20 minutes it manages to condense world history into a post-ironic internet meme about the complexity of life with unlimited information access which is I think more worthy of praise. 
+																	Due to the absurdist nature and comedic value of the videos Wurtz has garnered a sizable online following on various social media platforms most notably on Vine and YouTube. 
+																	Here Comes The Sun Just Did a Bad Thing La de Da de Da de Da de Day Oh Might Quit And the Day Goes On Biography. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He is known for his distinctive musical comedic and narrative style which includes deadpan delivery and singing paired with colorful surrealist psychedelic and non-sequitur graphics. 
+																	Oh hi thanks for checking in im still a piece of garbage piece of garbage bill wurtz the history of the entire world humorous billwurtz youtube humor funny lazer laser funny meme the history of the entire world i guess wurtz memes gnershknersh dank memes meme god meme life still a piece of garbage. 
+																	Still a piece of garbage history of the world bill wurtz wurtz bill funny mood vine vine text bubbles newwage history of japan history of the entire world i guess history of the entire world history of the. 
+																	Among the best OST Ive ever heard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I drive a car. 
+																	Chicago Sydney Dallas Atlanta Los Angeles. 
+																	What Urban Dictionary thinks of me. 
+																	The most wacky copypasta in history. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not actually bill wurtz ya silly. 
+																	He is known for making short videos sometimes long musical videos and jingles about funny and random topics. 
+																	History of the entire world i guess is a video made by bill wurtz a follow up to his 2016 video history of japanThe video condenses the entire history of Earth from the universes formation to the very near future summing up nearly every major event usually taught in standard Western World History classes and some which arent into a 20 minute crash course with the aid of catchy. 
+																	Literally the entire script to Bill Wurtzs the history of the world i guess hi. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was a joke and the name stuck. 
+																	196377 Where People Listen. 
+																	Wurtz first published material on YouTube in 2013. 
+																	Super Ability bill wurtz is in your extended network. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The page has the name of. 
+																	I cant even get from here to there without buying a boat. 
+																	A list of Jazz covers Bill has made. 
+																	Bill Wurtz Hi im steve Lyrics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youre on a rock floating in space. 
+																	Its in a tree Just kidding my names not Steve Im filing for an extension for my taxes. 
+																	A link to his iTunes. 
+																	His works are distinct in their use of musical jingles and surreal colorful visuals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Music profile for Bill Wurtz. 
+																	Bill Wurtz discography and songs. 
+																	Bill Wurtz stylized in lower case as bill wurtz is an American singer-songwriter multi-instrumentalist and online video creator based in New York City. 
+																	The oldest anagram is. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Posted by 3 months ago. 
+																	Bill wurtz s blurbs. 
+																	Sophisti-Pop Jazz Pop Indie Pop. 
+																	Garbage vine vine trash bill bill wurtz hi self deprecation self deprecating insult. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Here Comes The Sun Might Quit At the Airport Terminal Just Did a Bad Thing Christmas Isnt Real Top Tracks. 
+																	Have you seen Bill Wurtzs new video. 
+																	Literally the entire script to Bill Wurtzs the history of the world i guess Close. 
+																	A unique page where you can submit a phrase or word and Bill Wurtz will make an anagram of it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Neutralchaotic good Computerhero3201 on. 
+																	Albums include La De Da De Da De Da De Day Oh Here Comes the Sun and Mount St. 
+																	Start date Jan 26 2021. 
+																	Helens Is About to Blow Up. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill wurtzs Latest Blog Entry. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ad/e2/c8/ade2c857db886d299b778f7e4fe10acd.jpg" data-lightbox="roadtrip" data-title="Bill Wurtz Gifts Merchandise Bills Easter History World Geography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ad/e2/c8/ade2c857db886d299b778f7e4fe10acd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROWYr7PMFQF-O_XSTZ3Fg1N6kgLgQw2qqYYLGB3C3Lpjy3JjsLOziDnX0iRuoW8oePugTWSg&amp;ec=45771803';" alt="Bill Wurtz Gifts Merchandise Bills Easter History World Geography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Wurtz Gifts Merchandise Bills Easter History World Geography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/e6/a2/7be6a2430a9a3022d4468d565e62dc5d.jpg" data-lightbox="roadtrip" data-title="This Image Is Actually From An Amazing Youtube Video Called History Of The Entire World I Guess By Bill Wurtz And It S Co Tumblr Funny Really Funny Funny Me">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/e6/a2/7be6a2430a9a3022d4468d565e62dc5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_FqxijYuk971_hoEUieFjyWS8Z3phYBCuI31XDr15R254wX55eRef52264ceI-9yK6Sa8w&amp;ec=45771803';" alt="This Image Is Actually From An Amazing Youtube Video Called History Of The Entire World I Guess By Bill Wurtz And It S Co Tumblr Funny Really Funny Funny Me">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Image Is Actually From An Amazing Youtube Video Called History Of The Entire World I Guess By Bill Wurtz And It S Co Tumblr Funny Really Funny Funny Me</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/6a/fd/d26afdb13799034c0db6250427dd8431.png" data-lightbox="roadtrip" data-title="Alive Screenshot From Bill Wurtz Video Color Quotes Bills Eye Medicine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/6a/fd/d26afdb13799034c0db6250427dd8431.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL37Xnf3S6qBlfS5ZhKTLVzluvFkcPiS1jpD9wHl71HIJgglDGvJhkA427taqA64NhmiMZXA&amp;ec=45771803';" alt="Alive Screenshot From Bill Wurtz Video Color Quotes Bills Eye Medicine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alive Screenshot From Bill Wurtz Video Color Quotes Bills Eye Medicine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/6f/af/d36faf4270367f667ef23b675e8e8908.jpg" data-lightbox="roadtrip" data-title="Still A Piece Of Garbage Bill Wurtz Know Your Meme Garbage Stupid Funny Memes Know Your Meme">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/6f/af/d36faf4270367f667ef23b675e8e8908.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzZ2hrWpOrs7Yr7FEMK-gf9CtNnbfpetA_VhAMeLAfWB2eNzXSZbFLjfFgaKoJSP40W_0wWw&amp;ec=45771803';" alt="Still A Piece Of Garbage Bill Wurtz Know Your Meme Garbage Stupid Funny Memes Know Your Meme">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Still A Piece Of Garbage Bill Wurtz Know Your Meme Garbage Stupid Funny Memes Know Your Meme</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/e1/26/01e12693cdf816cc813845c2c25cb61f.jpg" data-lightbox="roadtrip" data-title="When You See The Kardashians Swimming In The Sea And The Ocean Is Full Of Plastic Ifunny Funny Funny Pictures Funny Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/e1/26/01e12693cdf816cc813845c2c25cb61f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyRI3yUkRkncOyWhO9VUnyLSmNKClxnj1Sv44y88rh0hfQQwjfiZdw3y7T5c_7QkMh-F6cTw&amp;ec=45771803';" alt="When You See The Kardashians Swimming In The Sea And The Ocean Is Full Of Plastic Ifunny Funny Funny Pictures Funny Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When You See The Kardashians Swimming In The Sea And The Ocean Is Full Of Plastic Ifunny Funny Funny Pictures Funny Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/85/a5/4b85a560e582bb8d630b50dc6919b5b0.png" data-lightbox="roadtrip" data-title="Me Irl The Sun Is A Deadly Lazer Stupid Memes Funny Memes Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/85/a5/4b85a560e582bb8d630b50dc6919b5b0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1XDG0ZFKJg0zZ06qUMZQtSz2WTtnf3FQpa4TWmdCVJP1W9085yoASCkdlNUrBsETgmW0nvQ&amp;ec=45771803';" alt="Me Irl The Sun Is A Deadly Lazer Stupid Memes Funny Memes Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Me Irl The Sun Is A Deadly Lazer Stupid Memes Funny Memes Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/16/19/9e16198eb0ee30a6358e542f276c0bb8.jpg" data-lightbox="roadtrip" data-title="Oh Hi Thanks For Checking In I M Still A Piece Of Garbage Video In 2020 Really Funny Memes Stupid Funny Memes Really Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/16/19/9e16198eb0ee30a6358e542f276c0bb8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1gcO1d4FMl84OIgYuMmXzC3P_yJEp81Ja3NwctWdpNvHt8t6D3rZgM8UVkvuwdtG6UxNxMA&amp;ec=45771803';" alt="Oh Hi Thanks For Checking In I M Still A Piece Of Garbage Video In 2020 Really Funny Memes Stupid Funny Memes Really Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oh Hi Thanks For Checking In I M Still A Piece Of Garbage Video In 2020 Really Funny Memes Stupid Funny Memes Really Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f4/c7/fd/f4c7fd926dfd1d57a6457af12216f7c3.jpg" data-lightbox="roadtrip" data-title="Theatrekidproblems Theatrekidmemes Musicals Theatre Broadway Musical Theatre Humor Musicals Theatre Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f4/c7/fd/f4c7fd926dfd1d57a6457af12216f7c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhni2APFDUJi8cPEpo5YBhNKjU9RgBOjjpux1u689oLVLDPyuDmVSOn2VcsISLUYQfbGuujA&amp;ec=45771803';" alt="Theatrekidproblems Theatrekidmemes Musicals Theatre Broadway Musical Theatre Humor Musicals Theatre Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Theatrekidproblems Theatrekidmemes Musicals Theatre Broadway Musical Theatre Humor Musicals Theatre Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/24/85/4e2485607680987e2e772e29ed6fcd5e.jpg" data-lightbox="roadtrip" data-title="The Sun Is A Deadly Lazer The Sun Is A Deadly Lazer Funny Memes Humor Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/24/85/4e2485607680987e2e772e29ed6fcd5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPAu8N5XApO-Dw5sFcJ_4-NekcFosICQD2c2cjhm1CJjlQOLX-MzaBwYWVZlmVeMqGv9oAcg&amp;ec=45771803';" alt="The Sun Is A Deadly Lazer The Sun Is A Deadly Lazer Funny Memes Humor Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sun Is A Deadly Lazer The Sun Is A Deadly Lazer Funny Memes Humor Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/videos/thumbnails/originals/99/88/83/9988835057422de19f466a23823d28b9.0000001.jpg" data-lightbox="roadtrip" data-title="Oh Hi Thanks For Checking In I M Still A Piece Of Garbage Video In 2020 Really Funny Memes Stupid Funny Memes Really Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/videos/thumbnails/originals/99/88/83/9988835057422de19f466a23823d28b9.0000001.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJpLSjP32un1H5nUZx7l_XHfGi2A0XNojHOgwT3GFdnK56WrRmeRSfcU9Ksv2FEnvo66P6g&amp;ec=45771803';" alt="Oh Hi Thanks For Checking In I M Still A Piece Of Garbage Video In 2020 Really Funny Memes Stupid Funny Memes Really Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oh Hi Thanks For Checking In I M Still A Piece Of Garbage Video In 2020 Really Funny Memes Stupid Funny Memes Really Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/fa/1a/c9fa1aaf6d3b07b368b5b7c745845335.jpg" data-lightbox="roadtrip" data-title="Hire A Samurai Memes Samurai Japan History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/fa/1a/c9fa1aaf6d3b07b368b5b7c745845335.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRep0tgc3sZzV4bnI5An90vVt_2M6BcZaE6n6bPepU05NrBgGdTOHDol5-UovTDASsRq6PaGw&amp;ec=45771803';" alt="Hire A Samurai Memes Samurai Japan History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hire A Samurai Memes Samurai Japan History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/Dfyswlszyhg/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Youtube Bill Wurtz I M Crazy It S Raining Im Crazy Songs Funny Pictures">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/Dfyswlszyhg/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnRjCjdgLsB1MJUny_cUkUJWQeSg7tZUEuYD7mVxgxmZha1gm7yixlXphiiNud8YXqnM46-Q&amp;ec=45771803';" alt="Youtube Bill Wurtz I M Crazy It S Raining Im Crazy Songs Funny Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube Bill Wurtz I M Crazy It S Raining Im Crazy Songs Funny Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f0/96/18/f096180899722b3752e3ce657ccc4c1f.jpg" data-lightbox="roadtrip" data-title="Oh Hi Thanks For Checking In Im Still A Peice Of Garbage In 2020 Youtube Peices Thankful">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f0/96/18/f096180899722b3752e3ce657ccc4c1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-l3OfwYu9bUkEhNyqHkeGFLJvdhMw_Vo4gxz-xycemNm_HGx56Xpl64U2SilBk5LIwCd5vA&amp;ec=45771803';" alt="Oh Hi Thanks For Checking In Im Still A Peice Of Garbage In 2020 Youtube Peices Thankful">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oh Hi Thanks For Checking In Im Still A Peice Of Garbage In 2020 Youtube Peices Thankful</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/montgomery-gi-bill-wave.html">Montgomery Gi Bill Wave</a></li>
+													<li class="list-group-item"><a href="/my-post-911-gi-bill-status.html">My Post 911 Gi Bill Status</a></li>
+													<li class="list-group-item"><a href="/national-guard-gi-bill-percentage.html">National Guard Gi Bill Percentage</a></li>
+													<li class="list-group-item"><a href="/movie-tavern-collegeville-gift-card.html">Movie Tavern Collegeville Gift Card</a></li>
+													<li class="list-group-item"><a href="/montgomery-gift-shops.html">Montgomery Gift Shops</a></li>
+													<li class="list-group-item"><a href="/my-post-911-benefits.html">My Post 911 Benefits</a></li>
+													<li class="list-group-item"><a href="/morehouse-college-gi-bill.html">Morehouse College Gi Bill</a></li>
+													<li class="list-group-item"><a href="/navy-gi-bill-kicker.html">Navy Gi Bill Kicker</a></li>
+													<li class="list-group-item"><a href="/montgomery-sewer-bill.html">Montgomery Sewer Bill</a></li>
+													<li class="list-group-item"><a href="/national-guard-montgomery-gi-bill-eligibility.html">National Guard Montgomery Gi Bill Eligibility</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-vs-post-911-bill.html">Montgomery Gi Vs Post 911 Bill</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-while-active-duty.html">Montgomery Gi Bill While Active Duty</a></li>
+													<li class="list-group-item"><a href="/national-guard-gi-bill-application.html">National Guard Gi Bill Application</a></li>
+													<li class="list-group-item"><a href="/national-guard-reserve-gi-bill.html">National Guard Reserve Gi Bill</a></li>
+													<li class="list-group-item"><a href="/navy-gi-bill-transfer-instruction.html">Navy Gi Bill Transfer Instruction</a></li>
+													<li class="list-group-item"><a href="/montgomery-gi-bill-transfer-to-post-911.html">Montgomery Gi Bill Transfer To Post 911</a></li>
+													<li class="list-group-item"><a href="/national-rankings-for-womens-college-basketball.html">National Rankings For Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/most-championships-in-womens-college-basketball.html">Most Championships In Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/montgomerys-gifts-and-home-interiors.html">Montgomerys Gifts And Home Interiors</a></li>
+													<li class="list-group-item"><a href="/national-guard-gi-bill-benefits.html">National Guard Gi Bill Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

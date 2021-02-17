@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Dependent Education Assistance Program - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Dependent Education Assistance Program",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/474x/fc/a5/ca/fca5ca1da4ba7195b25d8882cd4a081f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+dependent+education+assistance+program",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Dependent Education Assistance Program</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Learn about the Survivors and Dependents Educational Assistance DEA program. Related to the passage the VA recently updated their websites to clarify some of the benefits and qualifications of the Survivor Dependents Education Assistance Program for child or spouse survivors. VA education benefits for dependents and survivors. <br>				
+			</p>
+										<a class="badge badge-info" href="/how-much-is-the-selected-reserve-montgomery-gi-bill.html">how much is the selected reserve montgomery gi bill</a>
+											<a class="badge badge-info" href="/how-to-activate-gi-bill-for-dependents.html">how to activate gi bill for dependents</a>
+											<a class="badge badge-dark" href="/how-to-apply-for-va-educational-benefits.html">how to apply for va educational benefits</a>
+											<a class="badge badge-primary" href="/how-much-money-for-gi-bill.html">how much money for gi bill</a>
+											<a class="badge badge-success" href="/how-much-do-apprentice-lineman-make.html">how much do apprentice lineman make</a>
+											<a class="badge badge-info" href="/how-to-apply-for-gi-bill-benefits-while-on-active-duty.html">how to apply for gi bill benefits while on active duty</a>
+											<a class="badge badge-light" href="/how-many-post-911-veterans-are-there.html">how many post 911 veterans are there</a>
+											<a class="badge badge-light" href="/how-much-gi-bill-benefits-do-i-have-left.html">how much gi bill benefits do i have left</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to pay a visit to the ideal blog.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/13/6e/83136ea6824ab17c6ad1e7ddaf3a7ffd.png" data-lightbox="roadtrip" data-title="Changes To Survivors And Dependents Education Assistance Program Military Dependent Scholarships Education Military Retirement Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/13/6e/83136ea6824ab17c6ad1e7ddaf3a7ffd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5BVb-bBTk_TI7zpa79Ku1j4CI_Eyujs7B8YYx-8_hUuLfG0mt9cdjRXu0jyLl3IY9Orf3mQ&amp;ec=45771803';" alt="Changes To Survivors And Dependents Education Assistance Program Military Dependent Scholarships Education Military Retirement Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Changes To Survivors And Dependents Education Assistance Program Military Dependent Scholarships Education Military Retirement Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/1f/6a/431f6a332bed9dde97d2733d09d89f3c.png" data-lightbox="roadtrip" data-title="Survivors And Dependents Educational Assistance Program Home Buying Down Payment Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/1f/6a/431f6a332bed9dde97d2733d09d89f3c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaKDF-Gn-QNa4BrP9m-3WJqVFS3QpK5fJGVb3tdSuBNp3ujZmthO6xrnry4Xzy08YYosfs2g&amp;ec=45771803';" alt="Survivors And Dependents Educational Assistance Program Home Buying Down Payment Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Survivors And Dependents Educational Assistance Program Home Buying Down Payment Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b1/b1/e9/b1b1e9e09ba14e81b0fcefc79ddd3478.jpg" data-lightbox="roadtrip" data-title="Spouse Tuition Assistance Program Stap Tuition Assistance Military Spouse Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b1/b1/e9/b1b1e9e09ba14e81b0fcefc79ddd3478.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_4heICwhe9QD4DwQaHcVwbrRnnfej1oK0fquGPnA6mfXulIZVQEHIXI1LnWqVdno5PrpOOQ&amp;ec=45771803';" alt="Spouse Tuition Assistance Program Stap Tuition Assistance Military Spouse Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spouse Tuition Assistance Program Stap Tuition Assistance Military Spouse Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/71/f6/bb/71f6bb9dd645d5725a4e4ba81279a320.jpg" data-lightbox="roadtrip" data-title="Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/71/f6/bb/71f6bb9dd645d5725a4e4ba81279a320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz6Dtj6iduzM46XpBZdUu3wJtNJ8Im9Iz-QSYqBJxUN7E96GYvraI-hy8kHycR1Y53QN8Fsw&amp;ec=45771803';" alt="Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Aid 25 Scholarships For Veterans Scholarships Financial Aid Veteran Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/e2/80/87e280c7bc86d29980ee4c8bd93d4e83.jpg" data-lightbox="roadtrip" data-title="Http Acot Edu Pages Veterans Retraining Assistance Program Who S Eligible For Vrap Gi Bill Education And Training American Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/e2/80/87e280c7bc86d29980ee4c8bd93d4e83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNvKcnyBnzKX2Fu5eR9FAwU71AFcHKhrovVXyI_fs12z6kj5_2py_WqMNp7fHoYSYVMkAuEA&amp;ec=45771803';" alt="Http Acot Edu Pages Veterans Retraining Assistance Program Who S Eligible For Vrap Gi Bill Education And Training American Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Acot Edu Pages Veterans Retraining Assistance Program Who S Eligible For Vrap Gi Bill Education And Training American Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fc/a5/ca/fca5ca1da4ba7195b25d8882cd4a081f.jpg" data-lightbox="roadtrip" data-title="A Variety Of Scholarships Are Available To Veterans And Their Spouses And Families Please Visit Th Military Scholarships Military Education Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fc/a5/ca/fca5ca1da4ba7195b25d8882cd4a081f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5K7HX4y3Nj9Mtqrik9utzzhvjMU54fbMXo6HeOZfy8Y2Pd98De-1yTQwAWaG5IdvhA6LJLA&amp;ec=45771803';" alt="A Variety Of Scholarships Are Available To Veterans And Their Spouses And Families Please Visit Th Military Scholarships Military Education Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Variety Of Scholarships Are Available To Veterans And Their Spouses And Families Please Visit Th Military Scholarships Military Education Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a0/68/b1/a068b1188467e6c7e6cecd166e774bdc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5K7HX4y3Nj9Mtqrik9utzzhvjMU54fbMXo6HeOZfy8Y2Pd98De-1yTQwAWaG5IdvhA6LJLA&amp;ec=45771803';" alt="A Variety Of Scholarships Are Available To Veterans And Their Spouses And Families Please Visit Th Military Scholarships Military Education Tuition Assistance">
+										<div class="card-body">
+						<h3 class="h5"><b>Veterans Educational Assistance Program VEAP You may be able to continue your education by using part of your military pay to help cover the cost of school.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va dependent education assistance program</strong>. 
+								
+																	INTRODUCTION This pamphlet provides a general description of the Dependents Educational Assistance program or DEA chapter 35 of title 38 U. 
+																	Other educational assistance programs. 
+																	The Survivors and Dependents Educational Assistance DEA program is a part of the GI Bill aimed at offering education and training to eligible survivors and dependents of veterans and servicemembers who. 
+																	If youre the child or spouse of a Veteran or service member who has died is captured or missing or has disabilities you may be able to get help paying for school or job training through the DEA programalso called Chapter 35. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The program offers up to 36 months of. 
+																	College Business Technical or Vocational Courses High School Diploma or GED. 
+																	The Survivors and Dependents Educational Assistance DEA program offers education and training to qualified dependents of Veterans who are permanently and totally disabled because of a service-related condition or who died while on active duty or as a result of a service-related condition. 
+																	DEA may apply even if the death was not viewed as line of duty or even active duty just so long as service connection was determined by the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out if youre eligible for programs that provide added GI Bill benefits. 
+																	Died while on active duty or passed away as a result of a service-connected disability or. 
+																	The program offers up to 36 months of education. 
+																	Get more information about the DEA program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Virginia Military Survivors and Dependents Education Program VMSDEP provides education benefits to spouses and children of military service members killed missing in action taken prisoner or who have been rated by the United States Department of Veterans Affairs as totally and permanently disabled or at least 90 percent permanently disabled as a result of military service. 
+																	The DEA program provides education and training opportunities to eligible dependents and survivors of certain veterans. 
+																	Find out if you can get benefits through the Veterans Educational Assistance Program VEAPa 2-to-1 government-match program for educational assistance. 
+																	The Survivors and Dependents Educational Assistance DEA program provides education and training opportunities to eligible dependents of certain veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get more information about the DEA program. 
+																	VA Survivors and Dependents Educational Assistance Chapter 35 is an education benefit for eligible spouses and children of certain veterans. 
+																	The one I like to cover for todays blog entry is the Dependents Educational Assistance DEA Program otherwise known as Chapter 35. 
+																	Find out if youre eligible for Veteran dependent or survivor education benefits through a GI Bill program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Careers and employment Apply for vocational rehabilitation services get support for your Veteran-owned small business and access other career resources. 
+																	The Survivors and Dependents Educational Assistance DEA program offers education and training to qualified dependents of Veterans who are permanently and totally disabled because of a service-related condition or who died while on active duty or as a result of a service-related condition. 
+																	Get help planning a burial in a VA national cemetery order a headstone or other memorial item to honor a Veterans service and apply for survivor and dependent benefits. 
+																	The Dependents Educational Assistance DEA program provides education and training opportunities to eligible dependents of certain veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Survivors and Dependents Educational Assistance DEA Program This VA program provides education and on-the-job training for eligible dependents of veterans with VA-rated medical issues deemed permanently and totally disabled due to a service-related condition. 
+																	Survivors and Dependents Educational Assistance Learn about the Survivors and Dependents Educational Assistance DEA program. 
+																	Dependents Educational Assistance Program As stated in previous blogs there are a wide array of additional benefits that come with having a VA disability rating of 100 PT permanent and total. 
+																	Under this Dependents Educational Assistance program during the time when you attend school you are entitled to receive the benefits such as the pay for tuition and the fees books and other school supplies in addition to a stipend every month as allowance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre not eligible for the Post-911 GI Bill learn about other VA education benefit programs for Veterans and. 
+																	If youre eligible you may be able to get help paying for school or job training through the DEA program also called Chapter 35. 
+																	If DIC was awarded that is a great. 
+																	Survivors and Dependents Educational Assistance Chapter 35 VAs Survivors and Dependents Educational Assistance Chapter 35 program provides education and training opportunities to eligible dependents and survivors of certain Veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eligible persons can receive up to 45 months of full-time or equivalent benefits for. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fb/e8/5b/fbe85bbbacdc328d3ee9011fd0d1de86.jpg" data-lightbox="roadtrip" data-title="Usmc Tuition Assistance Also Known As The Marine Corps Lifelong Learning Program Is Separate From The Gi In 2020 Tuition Assistance Tuition Financial Aid For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fb/e8/5b/fbe85bbbacdc328d3ee9011fd0d1de86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKc7nBmAXJxwmwHRxYY6gpsWepuW9aIpNc3z177XIZDdtNS1QitnMHolmjRiJcWIclGS1ljA&amp;ec=45771803';" alt="Usmc Tuition Assistance Also Known As The Marine Corps Lifelong Learning Program Is Separate From The Gi In 2020 Tuition Assistance Tuition Financial Aid For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usmc Tuition Assistance Also Known As The Marine Corps Lifelong Learning Program Is Separate From The Gi In 2020 Tuition Assistance Tuition Financial Aid For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/8b/2b/ed8b2bc110570398bc8930fe653ecd3a.png" data-lightbox="roadtrip" data-title="Scholarships Financial Aid For College Veteran Scholarships Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/8b/2b/ed8b2bc110570398bc8930fe653ecd3a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-p-mpdLoPOeiD1BIUthaGqmiZ_2OKalqBrp9HikBWZRc-1ebqYpDN-28MxxbhSYVY2KzTgw&amp;ec=45771803';" alt="Scholarships Financial Aid For College Veteran Scholarships Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scholarships Financial Aid For College Veteran Scholarships Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/ea/03/e0ea03aae049b5401c19ff9eef52cb3b.jpg" data-lightbox="roadtrip" data-title="Thanks To The College Tuition Fee Waiver Program Ctfw Disabled Veterans In California Can Get Some Assi College Tuition Military Benefits Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/ea/03/e0ea03aae049b5401c19ff9eef52cb3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk-bpT0csg1TOm4EUu5OaFl03VcDfk8MYAeeGjXC6ZtZcH_ypXmD1VsrZSQcCitpryVvP6tQ&amp;ec=45771803';" alt="Thanks To The College Tuition Fee Waiver Program Ctfw Disabled Veterans In California Can Get Some Assi College Tuition Military Benefits Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thanks To The College Tuition Fee Waiver Program Ctfw Disabled Veterans In California Can Get Some Assi College Tuition Military Benefits Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/00/5b/02/005b02a52b1df5520f85addbc7a9e057.jpg" data-lightbox="roadtrip" data-title="Military Scholarships Weird Scholarships Tuition Assistance Scholarships For College Financial Aid For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/00/5b/02/005b02a52b1df5520f85addbc7a9e057.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4t6GOo3wxbBxkkRoRdkMZIEEkNWHlF1ZtZlbWWep0hsODRWoM1nzwLq-jN_YTXRpTRuzUmQ&amp;ec=45771803';" alt="Military Scholarships Weird Scholarships Tuition Assistance Scholarships For College Financial Aid For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Scholarships Weird Scholarships Tuition Assistance Scholarships For College Financial Aid For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/4b/c3/ea4bc3c2bebdbcb489b1e9125ae9c45e.jpg" data-lightbox="roadtrip" data-title="Repin To Share Information About Va Benefits For Spouses Dependents And Survivors And How To Apply Va Benefits Department Of Veterans Affairs How To Apply">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/4b/c3/ea4bc3c2bebdbcb489b1e9125ae9c45e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQknpwJLDkvk-4YjFN32rYRW44M2dLx9KqHXierdpw9Z-lV2pZpuAjgHKT8go2EFjah9GdxwA&amp;ec=45771803';" alt="Repin To Share Information About Va Benefits For Spouses Dependents And Survivors And How To Apply Va Benefits Department Of Veterans Affairs How To Apply">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Repin To Share Information About Va Benefits For Spouses Dependents And Survivors And How To Apply Va Benefits Department Of Veterans Affairs How To Apply</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/8e/b6/5a8eb6f6fca93714a3cd099284727d93.jpg" data-lightbox="roadtrip" data-title="Comprehensive List Of Veteran Military Scholarships For Service Members Spouses And Dependents Education Grants Veteran Scholarships Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/8e/b6/5a8eb6f6fca93714a3cd099284727d93.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPt8rUgBjC3NctHaQgvk0eNEy2T_YTlqhkIMoF4_0CbP5bEVWMNI5V0eDg8UK5siep6_4c&amp;ec=45771803';" alt="Comprehensive List Of Veteran Military Scholarships For Service Members Spouses And Dependents Education Grants Veteran Scholarships Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comprehensive List Of Veteran Military Scholarships For Service Members Spouses And Dependents Education Grants Veteran Scholarships Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/6f/84/7e6f84dee98885742cdfe6fbcc95a53c.png" data-lightbox="roadtrip" data-title="Pin On Business Partnerships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/6f/84/7e6f84dee98885742cdfe6fbcc95a53c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpzDae33ehwzwbMM2nNxXcF_0T24WMKTSsPrbYQxCzc3Mi_D1ddxsF8ct3Sxki1Zmzsj-MA&amp;ec=45771803';" alt="Pin On Business Partnerships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Business Partnerships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/68/b1/a068b1188467e6c7e6cecd166e774bdc.png" data-lightbox="roadtrip" data-title="Veteran Benefits Office Of Scholarships And Financial Aid Veterans Benefits Northern Arizona University Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/68/b1/a068b1188467e6c7e6cecd166e774bdc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dd1fyCIad2QeBzwNS0BiuUE-JzvrquPtAssi2FkksAJe3LNAk6JFbP0bGfjS_PXhFKqYSQ&amp;ec=45771803';" alt="Veteran Benefits Office Of Scholarships And Financial Aid Veterans Benefits Northern Arizona University Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Benefits Office Of Scholarships And Financial Aid Veterans Benefits Northern Arizona University Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/db/80/cddb80d2a6618d64b05421674d0a8ee8.jpg" data-lightbox="roadtrip" data-title="G I Jobs Home Jobs For Veterans Tulsa Welding School Welding Schools Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/db/80/cddb80d2a6618d64b05421674d0a8ee8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_wT_6rH3n_WD7tuGbqBIwbKghCshXHYNl13cIvzBzeQJeYx4aTHwMMTrdIqOjfbITe5J3w&amp;ec=45771803';" alt="G I Jobs Home Jobs For Veterans Tulsa Welding School Welding Schools Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">G I Jobs Home Jobs For Veterans Tulsa Welding School Welding Schools Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/04/e5/8904e57c891ab04690ad084a7278e7a8.png" data-lightbox="roadtrip" data-title="Military Capella University Scholarships Scholarships Military Benefits University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/04/e5/8904e57c891ab04690ad084a7278e7a8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaY4pwDjKk07nnXZJ-RVYdD7mgAPJqYo2XK8_Gm12_wEThRIoSM5dmQiFcfQh60aeZngcmrw&amp;ec=45771803';" alt="Military Capella University Scholarships Scholarships Military Benefits University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Capella University Scholarships Scholarships Military Benefits University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/64/6e/11646ef4aed055b6f5f3c8eb818143fa.png" data-lightbox="roadtrip" data-title="Free Resources Usmc Life Military Dependent Scholarships Military Resources Legal Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/64/6e/11646ef4aed055b6f5f3c8eb818143fa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk4MkRtXg837eU6rCQRfYT3MSLGMif0QOgBaZ1mEPPh6FYKiwH1Xmeqh2n4WyGXLUfFZ8UvA&amp;ec=45771803';" alt="Free Resources Usmc Life Military Dependent Scholarships Military Resources Legal Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Resources Usmc Life Military Dependent Scholarships Military Resources Legal Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/75/04/57750453a87c5a47fee29297c70dd73e.png" data-lightbox="roadtrip" data-title="Complementary And Alternative Medicine Yoga Acupuncture And More Vantage Point Alternative Medicine Acupuncture Benefits Acupuncture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/75/04/57750453a87c5a47fee29297c70dd73e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoJZvlD0hHRKmW2V-1sx_28F45SHGoWi3RFiJMKbGZAR78TeVWc1r0-w5YLa67PqfdetXfZA&amp;ec=45771803';" alt="Complementary And Alternative Medicine Yoga Acupuncture And More Vantage Point Alternative Medicine Acupuncture Benefits Acupuncture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Complementary And Alternative Medicine Yoga Acupuncture And More Vantage Point Alternative Medicine Acupuncture Benefits Acupuncture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ab/1b/0d/ab1b0d56716fd1d0fbf2fa284c9746e1--veteran-scholarships-military-spouse.jpg" data-lightbox="roadtrip" data-title="Military Spouse News Stories And Advice Military Spouse Central Military Spouse Scholarships Military Scholarships Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ab/1b/0d/ab1b0d56716fd1d0fbf2fa284c9746e1--veteran-scholarships-military-spouse.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgA6EF6GywODD49SvK1E0eW8ukXPuD_ihuNF8LWT8B6mreF6ArXOG4GQ7CrXWPVZ6B9TNaFw&amp;ec=45771803';" alt="Military Spouse News Stories And Advice Military Spouse Central Military Spouse Scholarships Military Scholarships Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse News Stories And Advice Military Spouse Central Military Spouse Scholarships Military Scholarships Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-chapter-13-waiting-period.html">Va Chapter 13 Waiting Period</a></li>
+													<li class="list-group-item"><a href="/va-chapter-31-tungsten.html">Va Chapter 31 Tungsten</a></li>
+													<li class="list-group-item"><a href="/va-benefits-chapter-31-voc-rehab.html">Va Benefits Chapter 31 Voc Rehab</a></li>
+													<li class="list-group-item"><a href="/va-chapter-1606-rates.html">Va Chapter 1606 Rates</a></li>
+													<li class="list-group-item"><a href="/va-benefits-gi-bill-hotline.html">Va Benefits Gi Bill Hotline</a></li>
+													<li class="list-group-item"><a href="/va-appeal-form-for-education-benefits.html">Va Appeal Form For Education Benefits</a></li>
+													<li class="list-group-item"><a href="/va-benefits-gi-bill-status.html">Va Benefits Gi Bill Status</a></li>
+													<li class="list-group-item"><a href="/va-approved-teacher-education-programs.html">Va Approved Teacher Education Programs</a></li>
+													<li class="list-group-item"><a href="/va-benefits-gi-bill-certificate-of-eligibility.html">Va Benefits Gi Bill Certificate Of Eligibility</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-benefits-fact-sheet.html">Va Chapter 35 Benefits Fact Sheet</a></li>
+													<li class="list-group-item"><a href="/va-chapter-31-reimbursement-form.html">Va Chapter 31 Reimbursement Form</a></li>
+													<li class="list-group-item"><a href="/va-benefits-gi-bill-md.html">Va Benefits Gi Bill Md</a></li>
+													<li class="list-group-item"><a href="/va-911-gi-bill-status.html">Va 911 Gi Bill Status</a></li>
+													<li class="list-group-item"><a href="/va-chapter-33-payment.html">Va Chapter 33 Payment</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-benefits-explained.html">Va Chapter 35 Benefits Explained</a></li>
+													<li class="list-group-item"><a href="/va-chapter-1606-application.html">Va Chapter 1606 Application</a></li>
+													<li class="list-group-item"><a href="/va-benefits-post-911-gi-bill.html">Va Benefits Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-benefits-phone-number.html">Va Chapter 35 Benefits Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-chapter-35-benefits-pay.html">Va Chapter 35 Benefits Pay</a></li>
+													<li class="list-group-item"><a href="/va-chapter-31-benefits.html">Va Chapter 31 Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

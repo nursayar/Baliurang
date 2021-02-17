@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Department Of Higher Education - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Department Of Higher Education",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/51/a1/b0/51a1b0de5e0c55c78d5349263dc8e7f2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+department+of+higher+education",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Department Of Higher Education</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Virginia Center for School and Campus Safety supports institutions of higher education through training with resources and technical assistance and by guiding best practices. The Minister of Higher Education Science and Innovation Dr Blade Nzimande address on the occasion of the Higher Health COVID 19 webinar Before we proceed with my remarks I would like to take this moment to pay tribute to my comrade fellow colleague Minister Jackson Mthembu who is among South Africans whose lives has been lost due COVID-19 related complications. The mission of the Department of Policy Equity and Communications is to assist the Virginia Board of Education the governor and the General Assembly in the development of legislation regulations and policies that promote student learning and achievement and to provide timely and accurate information about public education in the commonwealth. <br>				
+			</p>
+										<a class="badge badge-info" href="/chapter-35-va-benefits-login.html">chapter 35 va benefits login</a>
+											<a class="badge badge-warning" href="/coast-guard-gi-bill-transfer.html">coast guard gi bill transfer</a>
+											<a class="badge badge-success" href="/college-acceptance-gifts.html">college acceptance gifts</a>
+											<a class="badge badge-info" href="/chapter-35-gi-bill-pay-scale.html">chapter 35 gi bill pay scale</a>
+											<a class="badge badge-primary" href="/college-basketball-womens-top-25-poll.html">college basketball womens top 25 poll</a>
+											<a class="badge badge-dark" href="/cheap-college-gift-baskets.html">cheap college gift baskets</a>
+											<a class="badge badge-success" href="/coast-guard-post-911-gi-bill.html">coast guard post 911 gi bill</a>
+											<a class="badge badge-primary" href="/coach-with-most-wins-in-womens-college-basketball.html">coach with most wins in womens college basketball</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the right blog.  Our website gives you hints for seeing the maximum quality video and image content, search and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this video for you to see.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/2b/a2/532ba2c5a2cb08cd481fff0f05cae31d.png" data-lightbox="roadtrip" data-title="Pin On Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/2b/a2/532ba2c5a2cb08cd481fff0f05cae31d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZCCpKtcKA00A9AzVMiBnyvQ-XwPg8LwvyfeFjHTWI-YVyyBNeFZrXcHlFl-oupQ1DvtG-A&amp;ec=45771803';" alt="Pin On Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/ef/71/83ef7120f7dad78782072940aaaf31e7.jpg" data-lightbox="roadtrip" data-title="University Of Virginia Charlottesville Va Us Education Desk United S Education System In Usa Us Education System University Of Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/ef/71/83ef7120f7dad78782072940aaaf31e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB4cW742OBi-XZv-rVIu1sShqcwNhOPdAr2AHiFlLHZbMGbmBghRoWJVBrN4WifGs5rcacnQ&amp;ec=45771803';" alt="University Of Virginia Charlottesville Va Us Education Desk United S Education System In Usa Us Education System University Of Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Virginia Charlottesville Va Us Education Desk United S Education System In Usa Us Education System University Of Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3f/9f/4f/3f9f4fb6e39a6af7f1be3012a4d2cc14.jpg" data-lightbox="roadtrip" data-title="Barriers To Higher Education The Location Problem Higher Education College Fun School Counselor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3f/9f/4f/3f9f4fb6e39a6af7f1be3012a4d2cc14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyf439e1rs0TdeM2NGS1j-woELUGzO6WguCs4phGmp-HIRjbfuvDh3eecwlWfnIgTNP7Dz6w&amp;ec=45771803';" alt="Barriers To Higher Education The Location Problem Higher Education College Fun School Counselor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barriers To Higher Education The Location Problem Higher Education College Fun School Counselor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/6d/79/dc6d79fe5c8985e02a421a4db2021780.jpg" data-lightbox="roadtrip" data-title="Ched Logo Commission On Higher Education Higher Education Education Private School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/6d/79/dc6d79fe5c8985e02a421a4db2021780.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUoj3yyGh7Bv06UVPcVVvpDfjD4psGG7wNklF-hngJsC25ZB5wMYrH4ZkAPdnbA5EZVoDW-g&amp;ec=45771803';" alt="Ched Logo Commission On Higher Education Higher Education Education Private School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ched Logo Commission On Higher Education Higher Education Education Private School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/7d/da/d37dda7092685e51d283ccb8df363298.png" data-lightbox="roadtrip" data-title="Application For Tertiary Education Subsidy Now Open Ay 2020 2021 Tertiary Education Education School Fees">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/7d/da/d37dda7092685e51d283ccb8df363298.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb0TKKMa579aAJNq_osHIbfneoeLMA_odSNcy-UFSwwX9DmAI-x6p28MGu6PPQRWS7R0Tylw&amp;ec=45771803';" alt="Application For Tertiary Education Subsidy Now Open Ay 2020 2021 Tertiary Education Education School Fees">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Application For Tertiary Education Subsidy Now Open Ay 2020 2021 Tertiary Education Education School Fees</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" data-lightbox="roadtrip" data-title="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUsVjBzgOCa1oLhtD60jwOI8jMXaYFOHxDTSyR575RK5fULJ1SoAEdcjbyo3yIoIJWu1WxYw&amp;ec=45771803';" alt="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/58/7d/bd/587dbdea4c387e181e23c0c00ab36e8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUsVjBzgOCa1oLhtD60jwOI8jMXaYFOHxDTSyR575RK5fULJ1SoAEdcjbyo3yIoIJWu1WxYw&amp;ec=45771803';" alt="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+										<div class="card-body">
+						<h3 class="h5"><b>Letter from the VA Under Secretary of Benefits to Higher Education Executives for Summer 2014 8 Keys to Veterans Success - A voluntary initiative through the Departments of Veterans Affairs Education.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va department of higher education</strong>. 
+								
+																	S henandoah University established in 1875 is a private nationally recognized university that blends. 
+																	Higher Education Persons wishing to pursue educational opportunities beyond high schools have numerous available options. 
+																	SCHEV was established by the Governor and General Assembly in 1956. 
+																	Each institution faces unique challenges and hot button. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Box 2120 Richmond VA 23218-2120. 
+																	No fee is required. 
+																	They highlight specific ways that colleges and universities can support Veterans as they pursue education employment goals. 
+																	14th Street 10th Floor James Monroe Building Richmond VA 23219 804-225-2600 If you wish to receive this content in an accessible format per Section 508 of the federal Rehabilitation Act 29 USC 794 d please call 804-225-2600. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The School of Education and Human Developments PhD. 
+																	Read the news release MacKenzie Scott gives millions to Virginia HBCUs. 
+																	The GI Bill provides education benefits to veterans and their dependents. 
+																	The Department for Education is responsible for childrens services and education including early years schools higher and further education policy apprenticeships and wider skills in England. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Individual institutions must create reopening plans to align with guidance developed by the Office of the Secretary of Education the State Council of Higher Education for Virginia and the Virginia Department of Health. 
+																	Virginia houses an array of higher education institutions including public and private 4-year universities 2 year colleges community colleges and others. 
+																	Please do not send other documents with the request. 
+																	State Council for Higher Education in Virginia SCHEV. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About the Agency The State Council of Higher Education for Virginia SCHEV is the Commonwealths coordinating body for higher education. 
+																	Please mail this form to the Office of Licensure Department of Education P. 
+																	As institutes of higher education IHEs across the Commonwealth transition to online classes many IHEs are advising students to move out of residential on-campus housing early in order to reduce the risk of spreading COVID-19 in campus housing. 
+																	In EducationHigher Education is the highest scholarly degree offered by the University of Virginia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In Virginia public institutions include 15 four-year colleges and universities one two-year college and 23 community colleges as well as dozens of private institutions. 
+																	Plans must address the following considerations. 
+																	VA education and training benefits can help you pay for college tuition find the right school or training program get career counseling and more. 
+																	This plan has been reviewed by the State Council of Higher Education and has been found to be compliant in containing the required components of the Higher Education Reopening Guidance which was developed in consultation with the Virginia Department of Health. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Virginia Department of Education VDOE has been working closely with the Governors Office the Virginia Department of Health and other state agencies to ensure our schools and communities have the most up-to-date information and resources. 
+																	Contact Us - Education and Training Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	As students plan their return to IHEs to retrieve their belongings and complete the move-out process for the 2019-2020 academic year IHE leadership. 
+																	Visit COVID-19 Virginia Public Schools for access to the latest information. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The mission of the Virginia Department of Education VDOE is to lead and facilitate the development and implementation of a quality public education system that meets the needs of students and assists them in becoming educated productive and responsible citizens. 
+																	Only this form is required. 
+																	RICHMOND At its regularly scheduled meeting on January 11 2021 the State Council for Higher Education of Virginia SCHEV approved the following higher education guidelines related to domicile and the development of transfer-related pathway maps. 
+																	Updated for Spring 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find out if youre eligible and how to apply for VA education benefits for Veterans service members and their qualified family members. 
+																	Repopulation of the campus. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/ab/77/3aab77faa4941e0a0f316adf6d8945fd.png" data-lightbox="roadtrip" data-title="Kishinchand Chellaram College Wikipedia In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/ab/77/3aab77faa4941e0a0f316adf6d8945fd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLwy5i_Q2ryAJBCCBz61qLUqJyrWq_ppK-VC-mT7FrXhT1zmU_Cgy8GwR_IXnCGvTdNWihw&amp;ec=45771803';" alt="Kishinchand Chellaram College Wikipedia In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kishinchand Chellaram College Wikipedia In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/89/e6/7189e68f9609f7c64a7bd4ba11eb0000.jpg" data-lightbox="roadtrip" data-title="William And Mary College Founded 1693 Colleges In Virginia Servicing Elizabeth City Nc And All Of Hampton Roa William And Mary William Mary Dream College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/89/e6/7189e68f9609f7c64a7bd4ba11eb0000.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1V4T4x0_eENiMV05cVtMs1U9pLG-bWg1D7rFepnzRCEQRaKYaL9cOyixuexAxgaU4NEY-wg&amp;ec=45771803';" alt="William And Mary College Founded 1693 Colleges In Virginia Servicing Elizabeth City Nc And All Of Hampton Roa William And Mary William Mary Dream College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">William And Mary College Founded 1693 Colleges In Virginia Servicing Elizabeth City Nc And All Of Hampton Roa William And Mary William Mary Dream College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3f/fd/b9/3ffdb941d2304faa1255e40d09a98e9d.jpg" data-lightbox="roadtrip" data-title="Pin On Virtual Assistant Business Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3f/fd/b9/3ffdb941d2304faa1255e40d09a98e9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShva7zBg71A-XojI1xw45KZpE5NTolHB-0POAv7JovY9fEEIdJewqv38-nUxp1X6pb5jmIxA&amp;ec=45771803';" alt="Pin On Virtual Assistant Business Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Virtual Assistant Business Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/c4/dc/73c4dc9941075b9f0aaff3119e3ed1d8.jpg" data-lightbox="roadtrip" data-title="Check Out Veterans Statistics On Virginia Learn More At Go Usa Gov Cy6pa Economic Statistics Virginia Business Ownership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/c4/dc/73c4dc9941075b9f0aaff3119e3ed1d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHhIsbz7CTyZWWnLV19948_4mk81izhEy2bGsVe5DjZpd6jt5_h3U4UyllT1PmWuhAtBn1Ag&amp;ec=45771803';" alt="Check Out Veterans Statistics On Virginia Learn More At Go Usa Gov Cy6pa Economic Statistics Virginia Business Ownership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out Veterans Statistics On Virginia Learn More At Go Usa Gov Cy6pa Economic Statistics Virginia Business Ownership</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/b5/7a/9db57a2e2dd408b62c4249ba2cd70b9e.jpg" data-lightbox="roadtrip" data-title="Pin On Virginia Colleges And Universities List">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/b5/7a/9db57a2e2dd408b62c4249ba2cd70b9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1WylQq2mEl4xkUIt3xeC7-NMkhCpn5qTuBHXycV02Z7sOtPvBMUmU8gYBOf16PG1ooYs9yQ&amp;ec=45771803';" alt="Pin On Virginia Colleges And Universities List">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Virginia Colleges And Universities List</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/4d/f8/6a4df8e2f59d4f7d49f76da0978a9f8f.png" data-lightbox="roadtrip" data-title="Peggy Knupp What Will The Senate Decide The True Size Of The Student Debt Crisis College University Debt Student Debt Student Loans Student Loan Payment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/4d/f8/6a4df8e2f59d4f7d49f76da0978a9f8f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvdVYhtKGNhC0Og1o6Vjzg5LmRDEWIJp9qlSZxUhX6SLQqXY_aXJ8trcGOz6gpaCjmbvhpQw&amp;ec=45771803';" alt="Peggy Knupp What Will The Senate Decide The True Size Of The Student Debt Crisis College University Debt Student Debt Student Loans Student Loan Payment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Peggy Knupp What Will The Senate Decide The True Size Of The Student Debt Crisis College University Debt Student Debt Student Loans Student Loan Payment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/a9/86/f0a986f5a8ec7ce8e4b91d2be435a5fb.png" data-lightbox="roadtrip" data-title="Upcoming Events In 2020 Resource Management Human Resources Human Resource Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/a9/86/f0a986f5a8ec7ce8e4b91d2be435a5fb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQftuSWDklvnmgObQkuV9ZHYjuzUsQlo16WUa2j-mVRqEOAVthBBvNZlk_vGcKi2PMAWutNqg&amp;ec=45771803';" alt="Upcoming Events In 2020 Resource Management Human Resources Human Resource Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Upcoming Events In 2020 Resource Management Human Resources Human Resource Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://schev.edu/images/default-source/slider/fy202budgetpolicyreport.jpg" data-lightbox="roadtrip" data-title="Home">
+											<img class="card-img v-image ads-img " src="https://schev.edu/images/default-source/slider/fy202budgetpolicyreport.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhJ8pzTOjMJhw9PneigskByxbbheF4DVgftksjHc6coJPeich4RyyfFmfDakK8nUQUO0gXmw&amp;ec=45771803';" alt="Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/a1/b0/51a1b0de5e0c55c78d5349263dc8e7f2.jpg" data-lightbox="roadtrip" data-title="Mary Baldwin College Campus Visit College College Campus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/a1/b0/51a1b0de5e0c55c78d5349263dc8e7f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqcDXFaCoQHAavUp3IjPF7M9xg-WfeE5fmy6rJWUgr4Xd5VP3Tws8VfiHz9Hf2qV41OjK0oQ&amp;ec=45771803';" alt="Mary Baldwin College Campus Visit College College Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mary Baldwin College Campus Visit College College Campus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/7d/bd/587dbdea4c387e181e23c0c00ab36e8f.jpg" data-lightbox="roadtrip" data-title="If You Are A Veteran Looking For Higher Education Then Visit Militaryconnection Com And Learn About Veteran School College Tuition Tuition Assistance Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/7d/bd/587dbdea4c387e181e23c0c00ab36e8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvfEsnhaQH6IUJvjgbQv6cqePPre4lPxUaEuTIHV-W_TG9ufBCQ6otOy4qdSZS-GbnIJtuw&amp;ec=45771803';" alt="If You Are A Veteran Looking For Higher Education Then Visit Militaryconnection Com And Learn About Veteran School College Tuition Tuition Assistance Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are A Veteran Looking For Higher Education Then Visit Militaryconnection Com And Learn About Veteran School College Tuition Tuition Assistance Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/a6/40/5fa6401b1da14e6d5f4c14cc494b17a6.png" data-lightbox="roadtrip" data-title="Va Travel Nurse Corps Tnc Interim Staffing Program Veterans Health Administration Health Administration Veterans Health Care Travel Nursing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/a6/40/5fa6401b1da14e6d5f4c14cc494b17a6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-E7PK-5oab_zEPCvYAGqabbXRC-wlnRb1ocJj0HRYnNBMCkJKmKuJJHAXm3wSdVvytyzrbQ&amp;ec=45771803';" alt="Va Travel Nurse Corps Tnc Interim Staffing Program Veterans Health Administration Health Administration Veterans Health Care Travel Nursing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Travel Nurse Corps Tnc Interim Staffing Program Veterans Health Administration Health Administration Veterans Health Care Travel Nursing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/7d/3d/1b7d3d28dc2596d62ec1810b3ffebb76.jpg" data-lightbox="roadtrip" data-title="Ellucian We Ve Got Your Six Central Texas College Financial Assistance You Got This">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/7d/3d/1b7d3d28dc2596d62ec1810b3ffebb76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2LNAuYX9oxE3g-54nyOSESkRMwwvNbB8Qy7S9p3CKHatLN3SSGlsgHW3BOUoJFJKBPquaVg&amp;ec=45771803';" alt="Ellucian We Ve Got Your Six Central Texas College Financial Assistance You Got This">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ellucian We Ve Got Your Six Central Texas College Financial Assistance You Got This</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/e8/3b/f6e83b507370877600aa31cfee1cbe9c.jpg" data-lightbox="roadtrip" data-title="Hampden Sydney College Virginia Hampden Sydney Sydney College Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/e8/3b/f6e83b507370877600aa31cfee1cbe9c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ0tBsKx3H8cWCuZtoTv-ulR-aq5MscdgDbOlyVRjipt3ei1FHSKiwoXQ2V5iSRlyWbBik_w&amp;ec=45771803';" alt="Hampden Sydney College Virginia Hampden Sydney Sydney College Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hampden Sydney College Virginia Hampden Sydney Sydney College Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/can-gi-bill-be-transferred-to-spouse.html">Can Gi Bill Be Transferred To Spouse</a></li>
+													<li class="list-group-item"><a href="/can-i-get-financial-aid-and-use-my-gi-bill.html">Can I Get Financial Aid And Use My Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-i-claim-my-gi-bill-on-taxes.html">Can I Claim My Gi Bill On Taxes</a></li>
+													<li class="list-group-item"><a href="/bizbilla-seller.html">Bizbilla Seller</a></li>
+													<li class="list-group-item"><a href="/boston-college-womens-basketball-ranking.html">Boston College Womens Basketball Ranking</a></li>
+													<li class="list-group-item"><a href="/billy-quinn.html">Billy Quinn</a></li>
+													<li class="list-group-item"><a href="/california-veterans-education-benefits-for-dependents.html">California Veterans Education Benefits For Dependents</a></li>
+													<li class="list-group-item"><a href="/can-chapter-35-benefits-be-extended.html">Can Chapter 35 Benefits Be Extended</a></li>
+													<li class="list-group-item"><a href="/bryan-college-womens-basketball-coaches.html">Bryan College Womens Basketball Coaches</a></li>
+													<li class="list-group-item"><a href="/can-i-claim-education-credit-with-gi-bill.html">Can I Claim Education Credit With Gi Bill</a></li>
+													<li class="list-group-item"><a href="/billy-quan.html">Billy Quan</a></li>
+													<li class="list-group-item"><a href="/bowdoin-college-womens-basketball-team.html">Bowdoin College Womens Basketball Team</a></li>
+													<li class="list-group-item"><a href="/can-i-get-an-extension-on-my-post-911-gi-bill.html">Can I Get An Extension On My Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/birthday-gifts-for-college-roommate.html">Birthday Gifts For College Roommate</a></li>
+													<li class="list-group-item"><a href="/ca-19-9-gi-monitor.html">Ca 19 9 Gi Monitor</a></li>
+													<li class="list-group-item"><a href="/can-elite-gymnasts-do-college-gymnastics.html">Can Elite Gymnasts Do College Gymnastics</a></li>
+													<li class="list-group-item"><a href="/build-big-data.html">Build Big Data</a></li>
+													<li class="list-group-item"><a href="/boston-college-alumni-gifts.html">Boston College Alumni Gifts</a></li>
+													<li class="list-group-item"><a href="/can-american-students-go-to-college-in-europe.html">Can American Students Go To College In Europe</a></li>
+													<li class="list-group-item"><a href="/boston-college-womens-basketball-head-coach.html">Boston College Womens Basketball Head Coach</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

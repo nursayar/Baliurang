@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Coach Pat - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Coach Pat",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/bc/99/c8/bc99c84057c1bc987476bbb3d0a519f8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+coach+pat",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Coach Pat</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In doing so the longtime Cardinal head coach surpassed. She served as the head coach of the University of Tennessee Lady Vols basketball team from 1974 to 2012. Tara VanDerveer can break the record for most wins in womens college basketball set by the late Pat Summitt Tuesday when the Cardinal play Pacific. <br>				
+			</p>
+										<a class="badge badge-light" href="/college-guy-de-maupassant-fleury-sur-andelle.html">college guy de maupassant fleury sur andelle</a>
+											<a class="badge badge-warning" href="/college-goes-online-for-fall-2020.html">college goes online for fall 2020</a>
+											<a class="badge badge-info" href="/college-grad-jewelry-gifts.html">college grad jewelry gifts</a>
+											<a class="badge badge-info" href="/college-guy-christmas-gift-ideas.html">college guy christmas gift ideas</a>
+											<a class="badge badge-success" href="/college-graduation-gifts-for-2020.html">college graduation gifts for 2020</a>
+											<a class="badge badge-danger" href="/college-graduation-gifts-uncommongoods.html">college graduation gifts uncommongoods</a>
+											<a class="badge badge-primary" href="/college-graduation-gift-ideas-australia.html">college graduation gift ideas australia</a>
+											<a class="badge badge-info" href="/college-going-to-online-classes.html">college going to online classes</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the ideal blog.  Our site provides you with suggestions for viewing the maximum quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to see.  It is also possible to bring about supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/cf/f5/94cff5d7d04cfa77c29dfc8f5035ac52.jpg" data-lightbox="roadtrip" data-title="Pat Summitt A Legend And One Of The Best Lady Basketball Coaches There Will Ever Be Pat Summitt Lady Vols Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/cf/f5/94cff5d7d04cfa77c29dfc8f5035ac52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAt3hHIzS6zm2g-gs1mCR-URgCf8T8pmlmJA';" alt="Pat Summitt A Legend And One Of The Best Lady Basketball Coaches There Will Ever Be Pat Summitt Lady Vols Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt A Legend And One Of The Best Lady Basketball Coaches There Will Ever Be Pat Summitt Lady Vols Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/be/6a/04be6acaa1ad3a27fbb7ff35271191fa.jpg" data-lightbox="roadtrip" data-title="Pat Summitt Legend Of Women S Basketball Dies At 64 Pat Summitt Lady Vols Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/be/6a/04be6acaa1ad3a27fbb7ff35271191fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUWJnixhvM9u6vor9Jj_n_fgeFEzS1gmyIPQ';" alt="Pat Summitt Legend Of Women S Basketball Dies At 64 Pat Summitt Lady Vols Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt Legend Of Women S Basketball Dies At 64 Pat Summitt Lady Vols Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/99/c8/bc99c84057c1bc987476bbb3d0a519f8.jpg" data-lightbox="roadtrip" data-title="Winningest College Basketball Coach Ever Pat Summit Coach Of Tennessee Lady Vols Retired Today 4 19 12 Pat Summitt Womens Basketball Lady Vols Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/99/c8/bc99c84057c1bc987476bbb3d0a519f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJpDa2H5NWB22Gh88JRPGMN3IOJSmk2UnR2g';" alt="Winningest College Basketball Coach Ever Pat Summit Coach Of Tennessee Lady Vols Retired Today 4 19 12 Pat Summitt Womens Basketball Lady Vols Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Winningest College Basketball Coach Ever Pat Summit Coach Of Tennessee Lady Vols Retired Today 4 19 12 Pat Summitt Womens Basketball Lady Vols Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/f4/91/5ff4911ea3d1a99f116ab55d4f92b9b2.jpg" data-lightbox="roadtrip" data-title="Tennessee Lady Vols Basketball Coach Pat The Pat Summitt Foundation Pat Summitt Womens Basketball Strong Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/f4/91/5ff4911ea3d1a99f116ab55d4f92b9b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGt8I12gh4LTTK0eLrt3mhFTfnnCcGQgN1Vg';" alt="Tennessee Lady Vols Basketball Coach Pat The Pat Summitt Foundation Pat Summitt Womens Basketball Strong Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tennessee Lady Vols Basketball Coach Pat The Pat Summitt Foundation Pat Summitt Womens Basketball Strong Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/0a/f4/dc0af4ca6f02857e01778aa0933bec41.jpg" data-lightbox="roadtrip" data-title="The Best Coach In Women S Basketball History Tennessee Lady Volunteer Coach Pat Summit Pat Summitt Basketball History Tennessee Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/0a/f4/dc0af4ca6f02857e01778aa0933bec41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR19WXFVlnUEWJShqsjXPNoPFcqVGo-2JJh_Q';" alt="The Best Coach In Women S Basketball History Tennessee Lady Volunteer Coach Pat Summit Pat Summitt Basketball History Tennessee Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Coach In Women S Basketball History Tennessee Lady Volunteer Coach Pat Summit Pat Summitt Basketball History Tennessee Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/eb/f9/60ebf97eb3504197ec58e387afe66ffd.jpg" data-lightbox="roadtrip" data-title="Pin By Kirsten Hall On People I Look Up To Lady Vols Basketball Womens Basketball College Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/eb/f9/60ebf97eb3504197ec58e387afe66ffd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQk7rc5yoAoZm30ocfWhtmksrRgufKj-fMFg';" alt="Pin By Kirsten Hall On People I Look Up To Lady Vols Basketball Womens Basketball College Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kirsten Hall On People I Look Up To Lady Vols Basketball Womens Basketball College Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f4/b4/a6/f4b4a6fcf755616c8c6bd9f261ee3890.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQk7rc5yoAoZm30ocfWhtmksrRgufKj-fMFg';" alt="Pin By Kirsten Hall On People I Look Up To Lady Vols Basketball Womens Basketball College Basketball Teams">
+										<div class="card-body">
+						<h3 class="h5"><b>Patricia Susan Summitt nee Head.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball coach pat</strong>. 
+								
+																	1 Stanford romped to a 104-61 victory over Pacific. 
+																	VanDerveer became the winningest womens college basketball coach Tuesday night passing the late Pat Summitt with her 1099th victory as No. 
+																	Stanford coach Tara VanDerveer won her 1099th game Tuesday to set an NCAA record for all-time coaching victories as the Cardinal defeated Pacific 104-61. 
+																	Yet it is another woman from. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Freshman Paige Bueckers scored 23 points and No. 
+																	Her dancing players chanted Tara. 
+																	VanDerveer became the winningest head coach in DI womens college basketball history with 1099 wins when No. 
+																	Pat Summitt who built the University of Tennessees Lady Volunteers into a perennial power on the way to becoming the winningest coach in the history of major college basketball has died. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Her annual compensation is 1125 million per year in base salary. 
+																	She has been the head coach of the Tennessee Lady Vols since the 1974 season. 
+																	Hall of Fame coach Pat Summitt a pioneer of womens college basketball who guided the Tennessee Volunteers to eight national titles in her 38 seasons at the university died Tuesday morning. 
+																	Dressed casually in all black VanDerveer received the game ball after the final buzzer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Stanfords Tara VanDerveer became the winningest head coach in womens college basketball history with her 1099th victory Tuesday night. 
+																	Stanfords Tara VanDerveer became the winningest head coach in womens college basketball history passing the legendary Pat Summitt to sit alone on the mountaintop. 
+																	3 UConn overcame a sluggish start to rout Providence 87-50 on Saturday to give Auriemma his 1098th win. 
+																	This is a list of college womens basketball coaches by number of career wins. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	June 14 1952 June 28 2016 was an American womens college basketball head coach who accrued 1098 career wins the third most in womens basketball history. 
+																	That ties the late Tennessee coach Pat Summitt for the second most wins in Division I womens basketball history behind Stanford coach Tara VanDerveer 1104. 
+																	The Naismith Memorial Basketball Hall of Fame and the Womens Basketball Coaches Association announced the Top 10 candidates for the 2021 Nancy Lieberman Award on Monday Feb. 
+																	Pat Summitt of Tennessee is the highest paid womens basketball coach. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The highest winning percentage in the group belongs to Geno Auriemma head coach of. 
+																	VanDerveer became the winningest womens college basketball coach Tuesday night passing the late Pat Summitt with her 1099th victory as No. 
+																	1 Stanford romped to a 104-61 victory over Pacific. 
+																	1 Stanford romped to a 104-61 victory over Pacific. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VanDerveer became the winningest womens college basketball coach Tuesday night passing the late Pat Summitt with her 1099th victory as No. 
+																	VanDerveer passed the late Pat Summitt for. 
+																	1 Stanford breezed through Pacific 104-61 on Tuesday night at home. 
+																	Tara VanDerveer the head coach of Idaho from 1978-80 Ohio State from 1980-85 and Stanford from 198595 and from 1996-present tops the list with 1109 career wins. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Remembering legendary basketball coach Pat Summitt Pat Summitt the most successful coach in Division I college basketball history who lifted the womens game from obscurity to national prominence. 
+																	The list includes only games at the NCAA AIAW and NAIA levels. 
+																	-- Pat Summitt plans to coach the Tennessee womens basketball team as long as the good Lord is willing despite recently being diagnosed with early-onset dementia. 
+																	WVLT - Twelve years ago legendary University of Tennessee Lady Vols head coach Pat Summitt became the first mens or womens college basketball coach to reach 1000 wins. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition to her longevity Summitt is widely regarded as one of the top teachers and motivators in the sport. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/c4/ec/7fc4ec9e240703d55b5efc65714a2c1d.jpg" data-lightbox="roadtrip" data-title="Summit Jpg 400 600 Basketball Coach Pat Summitt Lady Vols Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/c4/ec/7fc4ec9e240703d55b5efc65714a2c1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_54mzT8oqqdqkyooT7GTr-G4C_raUvtZGfA';" alt="Summit Jpg 400 600 Basketball Coach Pat Summitt Lady Vols Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Summit Jpg 400 600 Basketball Coach Pat Summitt Lady Vols Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d7/3c/c4/d73cc4d81a7f3527821669c42f93ca6e.jpg" data-lightbox="roadtrip" data-title="1 098 Wins Tennessee 1974 2012 Pat Summitt Basketball Coach Vols Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d7/3c/c4/d73cc4d81a7f3527821669c42f93ca6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf8be6jCOK6484lTRGrFroIfeTttUAQ_zdLQ';" alt="1 098 Wins Tennessee 1974 2012 Pat Summitt Basketball Coach Vols Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1 098 Wins Tennessee 1974 2012 Pat Summitt Basketball Coach Vols Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/e0/87/26e087f55d1786a58c7f90a6aaca7a77.jpg" data-lightbox="roadtrip" data-title="Pat Summitt Is A Former Women S College Basketball Head Coach She Now Serves As The Head Coach Emeritus Of The Univers Pat Summitt Team Quotes Champion Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/e0/87/26e087f55d1786a58c7f90a6aaca7a77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPPSDhqFsvOjyaZehpJYB5_dA8uQqfOmlRw';" alt="Pat Summitt Is A Former Women S College Basketball Head Coach She Now Serves As The Head Coach Emeritus Of The Univers Pat Summitt Team Quotes Champion Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt Is A Former Women S College Basketball Head Coach She Now Serves As The Head Coach Emeritus Of The Univers Pat Summitt Team Quotes Champion Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/11/31/e11131e7dab50bc9e985c5d4a110023e.jpg" data-lightbox="roadtrip" data-title="Legendary College Basketball Coach Pat Summitt Dies Pat Summitt Basketball Coach Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/11/31/e11131e7dab50bc9e985c5d4a110023e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcMdJgw0EJa0sF6MJBbMffk5Ki7HVRMUGYOA';" alt="Legendary College Basketball Coach Pat Summitt Dies Pat Summitt Basketball Coach Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Legendary College Basketball Coach Pat Summitt Dies Pat Summitt Basketball Coach Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/2e/e3/f92ee31c5eb9626ba3b21e3dbd2bc7a3.jpg" data-lightbox="roadtrip" data-title="Pat Summitt A Life In Pictures Pat Summitt Basketball Coach College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/2e/e3/f92ee31c5eb9626ba3b21e3dbd2bc7a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnN6Qhz-p7u5iT8F66M5T6b4QYFg4DWh1OJw';" alt="Pat Summitt A Life In Pictures Pat Summitt Basketball Coach College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt A Life In Pictures Pat Summitt Basketball Coach College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a6/ea/d6/a6ead627dbbb9f8f2526f5dba751aa66--pat-summitt-basketball-coach.jpg" data-lightbox="roadtrip" data-title="Sports Latest News Photos Videos Info Buzz And More Usa Today Pat Summitt Lady Vols Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a6/ea/d6/a6ead627dbbb9f8f2526f5dba751aa66--pat-summitt-basketball-coach.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWixVDa6eSi1WaWxWp68M1GMEKcoQBjROmUQ';" alt="Sports Latest News Photos Videos Info Buzz And More Usa Today Pat Summitt Lady Vols Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sports Latest News Photos Videos Info Buzz And More Usa Today Pat Summitt Lady Vols Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/50/84/b75084f008ab555c9552b0c5b5ab982d.jpg" data-lightbox="roadtrip" data-title="We Back Pat Women S Basketball Fighting Alzheimer S Disease Womens Basketball Sports Women Lady Vols Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/50/84/b75084f008ab555c9552b0c5b5ab982d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzKJ8PjYj99cTI81bbmMEPdOGh9cJxgDhNIQ';" alt="We Back Pat Women S Basketball Fighting Alzheimer S Disease Womens Basketball Sports Women Lady Vols Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Back Pat Women S Basketball Fighting Alzheimer S Disease Womens Basketball Sports Women Lady Vols Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/b4/a6/f4b4a6fcf755616c8c6bd9f261ee3890.jpg" data-lightbox="roadtrip" data-title="Maybe The Two Best College Basketball Coaches Ever Pat Summitt Sports Illustrated Covers Sports Illustrated">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/b4/a6/f4b4a6fcf755616c8c6bd9f261ee3890.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdymLzZDaGBIjvR71xm8JRSNC52D5X9vA_9A';" alt="Maybe The Two Best College Basketball Coaches Ever Pat Summitt Sports Illustrated Covers Sports Illustrated">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maybe The Two Best College Basketball Coaches Ever Pat Summitt Sports Illustrated Covers Sports Illustrated</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/2f/fb/be2ffb80a667ab54d7840a9d4f9979a0.gif" data-lightbox="roadtrip" data-title="Lady Vol Legend Pat Summitt Lady Vols Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/2f/fb/be2ffb80a667ab54d7840a9d4f9979a0.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL_LTZ1OIHp4HvsPSzAH4Z4cVG-Ttc44P5eQ';" alt="Lady Vol Legend Pat Summitt Lady Vols Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lady Vol Legend Pat Summitt Lady Vols Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/0f/a1/e60fa113476b60592a5328864d2c8c8d.jpg" data-lightbox="roadtrip" data-title="Legendary Lady Vols Coach Pat Summitt Dies At 64 Pat Summitt Basketball Coach Lady Vols Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/0f/a1/e60fa113476b60592a5328864d2c8c8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh4wYR3ANIEIluDqXqB5_8aT9Wl_FRtGlGRA';" alt="Legendary Lady Vols Coach Pat Summitt Dies At 64 Pat Summitt Basketball Coach Lady Vols Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Legendary Lady Vols Coach Pat Summitt Dies At 64 Pat Summitt Basketball Coach Lady Vols Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/74/38/6d743847173893215c195e3314b82aeb.jpg" data-lightbox="roadtrip" data-title="Pat Summitt Milestone Pat Summitt Basketball History First Coach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/74/38/6d743847173893215c195e3314b82aeb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUvkkKv0aVAk78-D95AN27Qa_vmBbzUsPE8A';" alt="Pat Summitt Milestone Pat Summitt Basketball History First Coach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt Milestone Pat Summitt Basketball History First Coach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/0d/b5/950db5abefa5c4491b4f611a9282c492.jpg" data-lightbox="roadtrip" data-title="Pat And Lvfl Michelle Marciniak Lady Vols Basketball Tn Football University Of Tennessee Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/0d/b5/950db5abefa5c4491b4f611a9282c492.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMNyTgucuATvNVnUDoeiZQH5SmhMP023XMKw';" alt="Pat And Lvfl Michelle Marciniak Lady Vols Basketball Tn Football University Of Tennessee Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat And Lvfl Michelle Marciniak Lady Vols Basketball Tn Football University Of Tennessee Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/bf/0d/4abf0d2ea8599886c43f807a525320bc.jpg" data-lightbox="roadtrip" data-title="Tennessee Women S Basketball Coach Pat Summitt Steps Down Womens Basketball Basketball Coach Pat Summitt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/bf/0d/4abf0d2ea8599886c43f807a525320bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKMyH7ilKYD1EUdl1nIp69eVHcTNOwPXgZQ';" alt="Tennessee Women S Basketball Coach Pat Summitt Steps Down Womens Basketball Basketball Coach Pat Summitt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tennessee Women S Basketball Coach Pat Summitt Steps Down Womens Basketball Basketball Coach Pat Summitt</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-coaching-positions.html">Ncaa Womens Basketball Coaching Positions</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-oregon-ducks.html">Ncaa Womens Basketball Oregon Ducks</a></li>
+													<li class="list-group-item"><a href="/ncaa-gymnastics-schedule-2021.html">Ncaa Gymnastics Schedule 2021</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-division-iii-championship.html">Ncaa Womens Basketball Division Iii Championship</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-final-four-2020-dates.html">Ncaa Womens Basketball Final Four 2020 Dates</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-live-scores.html">Ncaa Womens Basketball Live Scores</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-final-four-sites.html">Ncaa Womens Basketball Final Four Sites</a></li>
+													<li class="list-group-item"><a href="/navy-reserve-gi-bill.html">Navy Reserve Gi Bill</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-average-height.html">Ncaa Womens Basketball Average Height</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-live-stream-reddit.html">Ncaa Womens Basketball Live Stream Reddit</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-league-standings.html">Ncaa Womens Basketball League Standings</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-rankings-2019-bracketology.html">Ncaa Womens Basketball Rankings 2019 Bracketology</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-all-time-wins.html">Ncaa Womens Basketball All Time Wins</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-in-maryland.html">Ncaa Womens Basketball In Maryland</a></li>
+													<li class="list-group-item"><a href="/ncaa-college-womens-basketball-scores-schedule-ncaacom.html">Ncaa College Womens Basketball Scores Schedule Ncaacom</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-lady-vols.html">Ncaa Womens Basketball Lady Vols</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-points-leaders.html">Ncaa Womens Basketball Points Leaders</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-player-of-the-week.html">Ncaa Womens Basketball Player Of The Week</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-division-1-stats.html">Ncaa Womens Basketball Division 1 Stats</a></li>
+													<li class="list-group-item"><a href="/ncaa-womens-basketball-player-rankings.html">Ncaa Womens Basketball Player Rankings</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

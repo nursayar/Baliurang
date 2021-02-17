@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Hall Of Fame - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Hall Of Fame",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/474x/c3/86/e8/c386e8eea43f4adae2ab927f026fa8c0.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+hall+of+fame",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Hall Of Fame</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">As the new hall opened it also recognized women for the first time with inductees such as Senda Berenson Abbott who first introduced basketball to women at Smith College. The museum is an integral portion of the College Basketball Experience created by the National Association of Basketball Coaches NABC located at the Sprint CenterThe hall is meant as a complement to the Naismith Memorial Basketball Hall of. Find game schedules and team promotions. <br>				
+			</p>
+										<a class="badge badge-dark" href="/note-9-khac-gi-note-8.html">note 9 khac gi note 8</a>
+											<a class="badge badge-secondary" href="/ncaa-womens-college-basketball-conference-standings.html">ncaa womens college basketball conference standings</a>
+											<a class="badge badge-secondary" href="/numero-30-yu-gi-oh-espanol.html">numero 30 yu gi oh espanol</a>
+											<a class="badge badge-dark" href="/new-gi-bill-2019.html">new gi bill 2019</a>
+											<a class="badge badge-primary" href="/niagara-college-gift-cards.html">niagara college gift cards</a>
+											<a class="badge badge-primary" href="/ncaa-womens-basketball-standings-big-12.html">ncaa womens basketball standings big 12</a>
+											<a class="badge badge-danger" href="/ncaa-womens-basketball-uniform-guidelines.html">ncaa womens basketball uniform guidelines</a>
+											<a class="badge badge-warning" href="/ncaa-womens-basketball-uconn-schedule.html">ncaa womens basketball uconn schedule</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right blog.  Our website gives you hints for seeing the maximum quality video and picture content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/28/46/88/2846887c95eed256c8cfdb61f2a615de.jpg" data-lightbox="roadtrip" data-title="Feature Artifact 1913 Rulebook Women S Basketball Hall Of Fame Hall Of Fame Fame Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/28/46/88/2846887c95eed256c8cfdb61f2a615de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaH7VA6nNKO-hzMI-S86RvTNCTkqUFr-3UqA&amp;ec=45771800';" alt="Feature Artifact 1913 Rulebook Women S Basketball Hall Of Fame Hall Of Fame Fame Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feature Artifact 1913 Rulebook Women S Basketball Hall Of Fame Hall Of Fame Fame Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/d2/01/bdd2015600c52b33f4e9d8e825d1b6c3.jpg" data-lightbox="roadtrip" data-title="Instagram Photo By Womens Basketball Hall Of Fame May 26 2016 At 4 58pm Utc Womens Basketball Basketball Pictures Basketball Legends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/d2/01/bdd2015600c52b33f4e9d8e825d1b6c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX62JPGsLmq10xFXZfdl1rjCCpMFn9Gcg9vQ&amp;ec=45771800';" alt="Instagram Photo By Womens Basketball Hall Of Fame May 26 2016 At 4 58pm Utc Womens Basketball Basketball Pictures Basketball Legends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instagram Photo By Womens Basketball Hall Of Fame May 26 2016 At 4 58pm Utc Womens Basketball Basketball Pictures Basketball Legends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/34/5b/e0345bd360464a15e188dd21ed2a5734.jpg" data-lightbox="roadtrip" data-title="Instagram Photo By Womens Basketball Hall Of Fame Apr 19 2016 At 4 01pm Utc Womens Basketball Basketball Basketball Legends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/34/5b/e0345bd360464a15e188dd21ed2a5734.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0EF4WMzFY1zufNMx2azHMlfq4PLdI818T1g&amp;ec=45771800';" alt="Instagram Photo By Womens Basketball Hall Of Fame Apr 19 2016 At 4 01pm Utc Womens Basketball Basketball Basketball Legends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instagram Photo By Womens Basketball Hall Of Fame Apr 19 2016 At 4 01pm Utc Womens Basketball Basketball Basketball Legends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/a5/fd/10a5fd61236c1acf6cc46d7776a8a762.jpg" data-lightbox="roadtrip" data-title="The Naismith Memorial Basketball Hall Of Fame Basketball Hall Of Fame Women S Basketball Coaches Associati Basketball Coach Hall Of Fame Basketball Awards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/a5/fd/10a5fd61236c1acf6cc46d7776a8a762.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYxVl3HLRhL-yvPRaE6XQnhOOwVuS0lQXUcQ&amp;ec=45771800';" alt="The Naismith Memorial Basketball Hall Of Fame Basketball Hall Of Fame Women S Basketball Coaches Associati Basketball Coach Hall Of Fame Basketball Awards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Naismith Memorial Basketball Hall Of Fame Basketball Hall Of Fame Women S Basketball Coaches Associati Basketball Coach Hall Of Fame Basketball Awards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/93/dc/22/93dc22e479f5b9221175d42b2c9aa2ce.jpg" data-lightbox="roadtrip" data-title="Naismith Memorial Basketball Hall Of Fame Wbca Announce Four New Women S College Basketball Awards Women S B Basketball Awards Basketball College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/93/dc/22/93dc22e479f5b9221175d42b2c9aa2ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4FUfVjwsfd_lMGqhV_jElL2_6-bKu-vhIQg&amp;ec=45771800';" alt="Naismith Memorial Basketball Hall Of Fame Wbca Announce Four New Women S College Basketball Awards Women S B Basketball Awards Basketball College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Naismith Memorial Basketball Hall Of Fame Wbca Announce Four New Women S College Basketball Awards Women S B Basketball Awards Basketball College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/b2/35/8cb23514dcc74427fbb4817a93fcced1.jpg" data-lightbox="roadtrip" data-title="The Top American Women In Basketball History Basketball History Womens Basketball Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/b2/35/8cb23514dcc74427fbb4817a93fcced1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgRefzn_4IfX5PoSCNtdQS_40hy1pQ7_2hhQ&amp;ec=45771800';" alt="The Top American Women In Basketball History Basketball History Womens Basketball Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Top American Women In Basketball History Basketball History Womens Basketball Women</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/28/46/88/2846887c95eed256c8cfdb61f2a615de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgRefzn_4IfX5PoSCNtdQS_40hy1pQ7_2hhQ&amp;ec=45771800';" alt="The Top American Women In Basketball History Basketball History Womens Basketball Women">
+										<div class="card-body">
+						<h3 class="h5"><b>Top Players in Each Position Recognized at the NCAA Womens Final Four.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball hall of fame</strong>. 
+								
+																	2020 Hall of Fame Induction. 
+																	This Hall of Fame is near the University of Tennessee. 
+																	They also have many facts figures and displays about the. 
+																	Tickets for College games. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Womens Basketball Hall of Fame Board of Directors serves as the selection committee in determining the individuals to be inducted each year. 
+																	Tuesday Saturday 10 AM 5. 
+																	One of the best players of the 1970s she was a two-time NJCAA All-American at Hiwassee Junior College in Tennessee. 
+																	This 17-foot bronze statue exemplifies our mission to honor the past celebrate the present and promote the future of womens basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Collegiate Basketball Hall of Fame occupies approximately one-third of The College Basketball Experience and will compliment the Naismith Memorial Basketball Hall of Fame by enshrining great coaches players and teams who deserve recognition but may be omitted from Naismith Memorial Hall of Fame. 
+																	The Naismith Memorial Basketball Hall of Fame and the Womens Basketball Coaches Association announced today the Top 10 candidates for the 2021 Cheryl Miller Award. 
+																	Name Class Year Sport Ron Aeschleman. 
+																	Voting is based on minimum candidate requirements which include record of performance national or international recognition and contributions to the game of womens basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Collegiate Basketball Hall of Fame located in Kansas City Missouri is a hall of fame and museum dedicated to mens college basketball. 
+																	During the years following its construction the Basketball Hall of Fames second facility drew far more visitors than ever anticipated due in large part to the increasing popularity of the game but also to the scenic. 
+																	Womens Basketball Hall of Fame campus The Womens Basketball Hall of Fame is home to the worlds largest basketball sitting on the north rotunda of the hall measuring 30 feet tall and weighing 10 tons. 
+																	Help us continue our mission by donating today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens Basketball Hall of Fame Carolyn Bush Roddy veteran player One of the best players of the 1970s she was a two-time NJCAA All-American at Hiwassee Junior College in Tennessee. 
+																	Basketball Hall of Fame Womens Basketball Coaches Association Narrow Watch List for 2021 Lisa Leslie Award Top Ten Female Collegiate Centers Named as Candidates for Naismith Starting Five. 
+																	Mens Basketball Jim Sellers Jr. 
+																	Named after the three-time Naismith Player of the Year the annual award in its fourth year recognizes the top small forwards in womens NCAA Division I college basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She then transferred to famed Wayland Baptist in Texas and helped the Flying Queens win AAU national championships in 1974 and 75 leading the team in scoring. 
+																	It honors the many women who have played basketball at the College and Professional level. 
+																	Hours of Operation September 1 April 30. 
+																	Eureka College Athletics Hall of Fame. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens Basketball Hall of Fame Carolyn Bush Roddy veteran player. 
+																	Voting is based on minimum candidate requirements. 
+																	Womens Basketball Hall of Fame Carolyn Bush Roddy veteran player One of the best players of the 1970s she was a two-time NJCAA All-American at Hiwassee Junior College in Tennessee. 
+																	The Womens Basketball Hall of Fame is a 501c3 non-profit whose mission is to Honor the Past Celebrate the Present Promote the Future of womens basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	April 4 2019 Tonight at the College Womens Basketball Awards Presentation at the Womens Final Four in Tampa the Basketball Hall of Fame and Womens Basketball Coaches Association revealed this years five positional award winners also known as the Naismith Starting 5. 
+																	The Eastman Statue As you enter the Womens Basketball Hall of Fame Pat Summitt Rotunda the first thing you see is the Eastman Statue. 
+																	Auriemma and Warlick hosted a gala reception this weekend before the induction ceremony for the 15th class of the Womens Basketball Hall of Fame a group that included two coaches in Texas AMs. 
+																	The Womens Basketball Hall of Fame Board of Directors serves as the selection committee in determining the individuals to be inducted each year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens Basketball Head Coach Richard J. 
+																	There are great displays and even a court for you to shoot some hoops. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/9c/d9/879cd9a99f1a5e411325da60c5233fae.png" data-lightbox="roadtrip" data-title="2019 Induction Ceremony Women S Basketball Hall Of Fame Aau Nationals College Sports College Junior">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/9c/d9/879cd9a99f1a5e411325da60c5233fae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-D8jUV5Ir4Ym-HVl1g1mQ_N0a1jtgimxyiw&amp;ec=45771800';" alt="2019 Induction Ceremony Women S Basketball Hall Of Fame Aau Nationals College Sports College Junior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Induction Ceremony Women S Basketball Hall Of Fame Aau Nationals College Sports College Junior</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/ec/a8/f0eca82c33f54c2703ad31d81cb5c7ee.jpg" data-lightbox="roadtrip" data-title="Congratulations To Dawn Staley On Being Elected To The Naismith Memorial Basketball Hall Of Fame With The C Basketball History Usc Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/ec/a8/f0eca82c33f54c2703ad31d81cb5c7ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe2NSMMp7nRD_ZXz_LxfM5VOG2K3YvoMakQg&amp;ec=45771800';" alt="Congratulations To Dawn Staley On Being Elected To The Naismith Memorial Basketball Hall Of Fame With The C Basketball History Usc Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Congratulations To Dawn Staley On Being Elected To The Naismith Memorial Basketball Hall Of Fame With The C Basketball History Usc Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/6d/51/076d518a984455b38c36cb00448d2b14.jpg" data-lightbox="roadtrip" data-title="The 1982 83 Women S Basketball Team After Being Inducted Into The Canisius College Athletics Hall Of Fame College Athletics Womens Basketball Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/6d/51/076d518a984455b38c36cb00448d2b14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbApCrZGYp1aALMPuLjYBPYePSuv2w0XT4TA&amp;ec=45771800';" alt="The 1982 83 Women S Basketball Team After Being Inducted Into The Canisius College Athletics Hall Of Fame College Athletics Womens Basketball Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 1982 83 Women S Basketball Team After Being Inducted Into The Canisius College Athletics Hall Of Fame College Athletics Womens Basketball Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/75/bb/ec/75bbec1ca04e685de6ad565d747f9ffa.jpg" data-lightbox="roadtrip" data-title="Pin By Jessica On Women S College Hoops Uconn Womens Basketball Womens Basketball College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/75/bb/ec/75bbec1ca04e685de6ad565d747f9ffa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvZa_SAgv0T66VvVk_0oAjY5ViwO1SHQN6TQ&amp;ec=45771800';" alt="Pin By Jessica On Women S College Hoops Uconn Womens Basketball Womens Basketball College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jessica On Women S College Hoops Uconn Womens Basketball Womens Basketball College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/1f/1b/f61f1bca48c227b60043516378c3344a.jpg" data-lightbox="roadtrip" data-title="This Is Our Game Dawn Staley Womens Basketball Staley Gamecock Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/1f/1b/f61f1bca48c227b60043516378c3344a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROvcG0bqiDErUIYdlxZ92-SALy-ctcFJYxwA&amp;ec=45771800';" alt="This Is Our Game Dawn Staley Womens Basketball Staley Gamecock Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is Our Game Dawn Staley Womens Basketball Staley Gamecock Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/02/2d/49022d1be4eec83a62ca19c572f2053c.jpg" data-lightbox="roadtrip" data-title="Pretty Much From The Time That Hall Of Fame Coach Geno Auriemma Stepped Into The Room To Address A Large Conting Uconn Womens Basketball Uconn Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/02/2d/49022d1be4eec83a62ca19c572f2053c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Zgz2tq_noXPUX4d-VeDTlojZ792QSKKAXg&amp;ec=45771800';" alt="Pretty Much From The Time That Hall Of Fame Coach Geno Auriemma Stepped Into The Room To Address A Large Conting Uconn Womens Basketball Uconn Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pretty Much From The Time That Hall Of Fame Coach Geno Auriemma Stepped Into The Room To Address A Large Conting Uconn Womens Basketball Uconn Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/f1/13/dff113a8dbf8488cbcbd994451784a85.jpg" data-lightbox="roadtrip" data-title="Decor For My Magazine Launch At The Women S Basketball Hall Of Fame Special Events Hall Of Fame Event">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/f1/13/dff113a8dbf8488cbcbd994451784a85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw-9ln3FGUUApKLTZYAhGNFYEEc24awmmWPg&amp;ec=45771800';" alt="Decor For My Magazine Launch At The Women S Basketball Hall Of Fame Special Events Hall Of Fame Event">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Decor For My Magazine Launch At The Women S Basketball Hall Of Fame Special Events Hall Of Fame Event</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/31/a7/7931a7b2b1d8f593a2f398952d0a327a.jpg" data-lightbox="roadtrip" data-title="After Hearing It From Hall Of Fame Coach Geno Auriemma For Their Effort In A Win Over Tulsa The Huskies Responded In A Major Way During Uconn Megan Walker Kia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/31/a7/7931a7b2b1d8f593a2f398952d0a327a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV2aPXWdvMYi6poN0m6PB8zbPP4DLLe49ag&amp;ec=45771800';" alt="After Hearing It From Hall Of Fame Coach Geno Auriemma For Their Effort In A Win Over Tulsa The Huskies Responded In A Major Way During Uconn Megan Walker Kia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After Hearing It From Hall Of Fame Coach Geno Auriemma For Their Effort In A Win Over Tulsa The Huskies Responded In A Major Way During Uconn Megan Walker Kia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/14/cc/df14cc02cc4861ae6aea9a75855bbdc3.jpg" data-lightbox="roadtrip" data-title="Instagram Photo By Womens Basketball Hall Of Fame Jun 6 2016 At 2 50am Utc Womens Basketball Women Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/14/cc/df14cc02cc4861ae6aea9a75855bbdc3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEaw66VHvhRxLH--WQdthqAzIxm_lrDd6ow&amp;ec=45771800';" alt="Instagram Photo By Womens Basketball Hall Of Fame Jun 6 2016 At 2 50am Utc Womens Basketball Women Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instagram Photo By Womens Basketball Hall Of Fame Jun 6 2016 At 2 50am Utc Womens Basketball Women Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c3/86/e8/c386e8eea43f4adae2ab927f026fa8c0.jpg" data-lightbox="roadtrip" data-title="Connecticut S Kia Nurse Left Puts Up The Shot With Temple S Donnaizha Fountain Right Defending During Uconn Womens Basketball Uconn College Basketball Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c3/86/e8/c386e8eea43f4adae2ab927f026fa8c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0pHciKxVpaM7iiNy6NVMei-lBy20_X53xhg&amp;ec=45771800';" alt="Connecticut S Kia Nurse Left Puts Up The Shot With Temple S Donnaizha Fountain Right Defending During Uconn Womens Basketball Uconn College Basketball Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Connecticut S Kia Nurse Left Puts Up The Shot With Temple S Donnaizha Fountain Right Defending During Uconn Womens Basketball Uconn College Basketball Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8d/32/fd/8d32fd58fdcc1c1327f22f73078706ab.jpg" data-lightbox="roadtrip" data-title="Pat Summitt Hall Of Fame College Basketball Coach Born Patricia Sue Head From 1974 To 2012 She C Lady Vols Basketball Pat Summitt College Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8d/32/fd/8d32fd58fdcc1c1327f22f73078706ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFAliD0_5WCGzRyuAMEGHUAZmjc94fyWfzQg&amp;ec=45771800';" alt="Pat Summitt Hall Of Fame College Basketball Coach Born Patricia Sue Head From 1974 To 2012 She C Lady Vols Basketball Pat Summitt College Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt Hall Of Fame College Basketball Coach Born Patricia Sue Head From 1974 To 2012 She C Lady Vols Basketball Pat Summitt College Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/4f/36/fe4f365a6c88ec38f8ef2513c2dfc269.jpg" data-lightbox="roadtrip" data-title="Instagram Photo By Womens Basketball Hall Of Fame May 4 2016 At 5 16pm Utc Natalie Williams Womens Basketball Williams Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/4f/36/fe4f365a6c88ec38f8ef2513c2dfc269.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCcExdjXpinv6bVleiMB3ri9W8_hymmv-4Hg&amp;ec=45771800';" alt="Instagram Photo By Womens Basketball Hall Of Fame May 4 2016 At 5 16pm Utc Natalie Williams Womens Basketball Williams Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instagram Photo By Womens Basketball Hall Of Fame May 4 2016 At 5 16pm Utc Natalie Williams Womens Basketball Williams Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/d7/02/92d702fa7f8ff44ef66a97a6e308e4e7.jpg" data-lightbox="roadtrip" data-title="Dawn Michelle Staley Born May 4 1970 Is An American Basketball Hall Of Fame Player And Coach Staley Is A Three Time Wnba Basketball Coach Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/d7/02/92d702fa7f8ff44ef66a97a6e308e4e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Xo-Hku2qqduRjNWjfVlJPaaQ4Z40hP9GJw&amp;ec=45771800';" alt="Dawn Michelle Staley Born May 4 1970 Is An American Basketball Hall Of Fame Player And Coach Staley Is A Three Time Wnba Basketball Coach Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dawn Michelle Staley Born May 4 1970 Is An American Basketball Hall Of Fame Player And Coach Staley Is A Three Time Wnba Basketball Coach Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/usmc-montgomery-gi-bill.html">Usmc Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/using-post-911-gi-bill-after-retirement.html">Using Post 911 Gi Bill After Retirement</a></li>
+													<li class="list-group-item"><a href="/using-fafsa-with-gi-bill.html">Using Fafsa With Gi Bill</a></li>
+													<li class="list-group-item"><a href="/using-the-gi-bill-for-flight-training.html">Using The Gi Bill For Flight Training</a></li>
+													<li class="list-group-item"><a href="/utica-college-womens-basketball-roster.html">Utica College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/using-gi-benefits.html">Using Gi Benefits</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-in-hawaii.html">Using Gi Bill In Hawaii</a></li>
+													<li class="list-group-item"><a href="/use-gi-bill-to-become-a-pilot.html">Use Gi Bill To Become A Pilot</a></li>
+													<li class="list-group-item"><a href="/using-my-gi-bill-benefits.html">Using My Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/using-the-montgomery-gi-bill.html">Using The Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/usmc-post-911-gi-bill-transfer.html">Usmc Post 911 Gi Bill Transfer</a></li>
+													<li class="list-group-item"><a href="/using-my-husbands-gi-bill.html">Using My Husbands Gi Bill</a></li>
+													<li class="list-group-item"><a href="/using-your-gi-bill-meme.html">Using Your Gi Bill Meme</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-on-terminal-leave.html">Using Gi Bill On Terminal Leave</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-for-apprenticeship.html">Using Gi Bill For Apprenticeship</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-at-embry-riddle.html">Using Gi Bill At Embry Riddle</a></li>
+													<li class="list-group-item"><a href="/using-montgomery-gi-bill-on-active-duty.html">Using Montgomery Gi Bill On Active Duty</a></li>
+													<li class="list-group-item"><a href="/using-gi-bill-spouse.html">Using Gi Bill Spouse</a></li>
+													<li class="list-group-item"><a href="/utah-army-national-guard-agr-jobs.html">Utah Army National Guard Agr Jobs</a></li>
+													<li class="list-group-item"><a href="/usi-college-go-week.html">Usi College Go Week</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

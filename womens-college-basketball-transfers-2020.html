@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Transfers 2020 - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Transfers 2020",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/b5/df/56/b5df5623a24117999441cf7e9a7628ca.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+transfers+2020",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Transfers 2020</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Vic Schaefers Texas-sized task. Learn the transfer and eligibility rules for the NCAA and the new conference and school you plan to join. By raoul on October 26 2020 0 NCAA D-I womens basketball player transfers or potential transfers players in the transfer portal covering the period from the fall of 2020 through the summer of 2021. <br>				
+			</p>
+										<a class="badge badge-info" href="/erskine-college-womens-basketball-schedule.html">erskine college womens basketball schedule</a>
+											<a class="badge badge-info" href="/fisher-college-womens-basketball-schedule.html">fisher college womens basketball schedule</a>
+											<a class="badge badge-light" href="/extending-gi-bill-benefits.html">extending gi bill benefits</a>
+											<a class="badge badge-secondary" href="/forever-gi-bill-changes.html">forever gi bill changes</a>
+											<a class="badge badge-success" href="/forever-alone-co-nghia-gi.html">forever alone co nghia gi</a>
+											<a class="badge badge-dark" href="/extending-gi-bill-to-48-months.html">extending gi bill to 48 months</a>
+											<a class="badge badge-secondary" href="/famous-college-womens-basketball-coaches.html">famous college womens basketball coaches</a>
+											<a class="badge badge-info" href="/espn-womens-college-basketball-recruiting-2019.html">espn womens college basketball recruiting 2019</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the ideal site.  Our website gives you suggestions for seeing the highest quality video and image content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/16/16/451616daa2d7385041fdfa58cc6167b9.jpg" data-lightbox="roadtrip" data-title="Women S College Basketball Transfer Rankings For 2020 21 And 2021 22 In 2020 College Basketball Basketball College Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/16/16/451616daa2d7385041fdfa58cc6167b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIrUsfNVSe5a_oZEu7J1OEVdzUMMBw28riVQ';" alt="Women S College Basketball Transfer Rankings For 2020 21 And 2021 22 In 2020 College Basketball Basketball College Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S College Basketball Transfer Rankings For 2020 21 And 2021 22 In 2020 College Basketball Basketball College Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/31/5f/31315fa0d7ff8938ea24c10d0a9aa421.jpg" data-lightbox="roadtrip" data-title="The 10 Best Women S College Basketball Players For 2020 21 College Basketball Players Basketball Players College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/31/5f/31315fa0d7ff8938ea24c10d0a9aa421.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRVifzUnbpahdm5CjZxc_hadnwqo8Zwf6AQQ';" alt="The 10 Best Women S College Basketball Players For 2020 21 College Basketball Players Basketball Players College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 10 Best Women S College Basketball Players For 2020 21 College Basketball Players Basketball Players College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/96/1f/f4/961ff41e2b569f9c479bdac374ca1370.jpg" data-lightbox="roadtrip" data-title="Neighbors Says Pair To Transfer In 2020 Shooting Guard Womens Basketball Transfer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/96/1f/f4/961ff41e2b569f9c479bdac374ca1370.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1qpvQYPYfyEc7pK3MFLddPuJ00VbjmFd8WQ';" alt="Neighbors Says Pair To Transfer In 2020 Shooting Guard Womens Basketball Transfer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Neighbors Says Pair To Transfer In 2020 Shooting Guard Womens Basketball Transfer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/f1/f6/88f1f603a435e0ab06521488c0996c2b.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Aggies Add Destiny Pitts Star Minnesota Transfer In 2020 Womens Basketball Minnesota Minnesota Gophers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/f1/f6/88f1f603a435e0ab06521488c0996c2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzso7L7N6KArivCWv-DFkICrdbjejIev3wsQ';" alt="Women S Basketball Aggies Add Destiny Pitts Star Minnesota Transfer In 2020 Womens Basketball Minnesota Minnesota Gophers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Aggies Add Destiny Pitts Star Minnesota Transfer In 2020 Womens Basketball Minnesota Minnesota Gophers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/b4/b9/c5b4b9b3972ca922b63ae81d21f3fb13.png" data-lightbox="roadtrip" data-title="Two Women S Basketball Players Enter Ncaa Transfer Portal In 2020 Basketball Players Womens Basketball Basketball Clothes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/b4/b9/c5b4b9b3972ca922b63ae81d21f3fb13.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfYTS8OzqxedotlEqpylffyWRN0dV3ymjJRQ';" alt="Two Women S Basketball Players Enter Ncaa Transfer Portal In 2020 Basketball Players Womens Basketball Basketball Clothes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Two Women S Basketball Players Enter Ncaa Transfer Portal In 2020 Basketball Players Womens Basketball Basketball Clothes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/4f/45/da4f45edd7e11c1e3ee2f3be6192da3d.jpg" data-lightbox="roadtrip" data-title="The Best High Schools Ever For Women S Basketball In 2020 Womens Basketball High School Fun Ncaa Champion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/4f/45/da4f45edd7e11c1e3ee2f3be6192da3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTChPTNbZvbLW_MKxbNECPTw-7I6VTdX5kg';" alt="The Best High Schools Ever For Women S Basketball In 2020 Womens Basketball High School Fun Ncaa Champion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best High Schools Ever For Women S Basketball In 2020 Womens Basketball High School Fun Ncaa Champion</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/96/1f/f4/961ff41e2b569f9c479bdac374ca1370.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTChPTNbZvbLW_MKxbNECPTw-7I6VTdX5kg';" alt="The Best High Schools Ever For Women S Basketball In 2020 Womens Basketball High School Fun Ncaa Champion">
+										<div class="card-body">
+						<h3 class="h5"><b>When you begin to think about going to a new school understand that the rules are different depending on whether you want to transfer to an NCAA Division I II or III school and whether you are currently enrolled at a two-year or a four-year school.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball transfers 2020</strong>. 
+								
+																	Which womens college basketball freshmen transfers will most influence 2020-21. 
+																	Fall 2020Summer 2021 By raoul on October 26 2020 0 NCAA D-I womens basketball player transfers or potential transfers players in the transfer portal covering the period from the fall of 2020 through the summer of 2021. 
+																	Fall 2020Summer 2021 By raoul on October 26 2020 0 NCAA D-I womens basketball player transfers or potential transfers players in the transfer portal covering the period from the fall of 2020 through the summer of 2021. 
+																	He has a great change of speed and hesitation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hes a true three-level scorer with an elite basketball IQ. 
+																	The NCAA froze all in-person recruiting until at least April 15 because of concerns over the novel coronavirus pandemic meaning Frese can contact any potential transfers on the market via text. 
+																	Womens college basketball transfer rankings for 2020-21 and 2021-22 What are Kara Lawsons five biggest priorities as Dukes new head coach. 
+																	College Basketball March 242020 Top Transfers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Six states 12 flights and DIY haircuts. 
+																	How to make womens college basketball even better in 2021 A competitive UConn-Tennessee game some competition for Baylor in the Big 12 and a race for player of the year would be good for the. 
+																	Can play on or off the ball. 
+																	The players class FR SO JR SR is for the 202021 season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	200 ppg 55 apg 50 rpg Scouts take. 
+																	One of the biggest impacts on the Division I recruiting race comes via transfers. 
+																	Now conferences are sorting out what a delayed start and 27-game limit will mean for scheduling and how. 
+																	Immediately Eligible by. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He wants the ball in big moments and has made. 
+																	Get Womens Basketball rankings news schedules and championship brackets. 
+																	Fall 2019Summer 2020 By raoul on August 29 2019 0 NCAA D-I womens basketball player transfers or potential transfers players in the transfer portal covering the period from the fall of 2019 through the summer of 2020. 
+																	She represented Stanford at the 2019 USA Basketball Womens 3-on-3 National Championship in Las Vegas in May 2019 -- advancing to the quarterfinals on a team with Lacie Hull Lexie Hull and Anna Wilson sister of Seattle Seahawks quarterback and former UW athlete Russell Wilson. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA announced that the 2020-21 womens college basketball season will begin Nov. 
+																	Womens college basketball transfer rankings for 2020-21 and 2021-22 As the top graduate transfer Destiny Slocum has left Oregon State for Arkansas. 
+																	2020 Players in the NCAA College Basketball Transfer Portal. 
+																	The list is arranged by former school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College Basketball Transfer Waiver Tracker for 2020-21 Jeff Goodman Stadium Basketball Insider 1022020 Overcrowding could lead to COVID-19 outbreak at Texas jail experts warn. 
+																	The list is arranged by former school. 
+																	Inside Stanfords nine-week road trip. 
+																	The NCAA Womens Basketball DI official home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In some cases conference rules can be. 
+																	The list is arranged by former school. 
+																	1 Carlik Jones 6-1 180 G RS Jr Radford Stats. 
+																	The list is arranged by former school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Long Beach State head womens basketball coach Jeff Cammon announced the addition of three transfers for the 2020-21 season in Kambrayia Elzy Imani Lacy and Kamryn Lemon. 
+																	Jun 9 2020 at 1219 pm ET10 min read When the NCAA Division I Council opted last month against implementing comprehensive new transfer legislation for the 2020-21 academic year it likely stopped. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/2c/da/0e2cda89b58f5c04f5dacdb494af2c71.jpg" data-lightbox="roadtrip" data-title="The Top 25 Players In Women S College Basketball Eric Evans Women Athletic Tank Tops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/2c/da/0e2cda89b58f5c04f5dacdb494af2c71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_1Ycj7ZjjbbK5vOKj7cS7AtjObTTrAMaBXQ';" alt="The Top 25 Players In Women S College Basketball Eric Evans Women Athletic Tank Tops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Top 25 Players In Women S College Basketball Eric Evans Women Athletic Tank Tops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3a/9d/9e/3a9d9ebee325097febe20741b9c20b95.jpg" data-lightbox="roadtrip" data-title="Pin By Bribird On Baller Girls In 2020 Basketball Clothes Basketball Girls Uconn Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3a/9d/9e/3a9d9ebee325097febe20741b9c20b95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeVit5hAoE6F0z4D8PRBZ7WtltEv-XLs1QtQ';" alt="Pin By Bribird On Baller Girls In 2020 Basketball Clothes Basketball Girls Uconn Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Bribird On Baller Girls In 2020 Basketball Clothes Basketball Girls Uconn Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/54/a3/4654a32072a4a49d62366c0e48a9c974.jpg" data-lightbox="roadtrip" data-title="Pin On Wcbb 19 20">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/54/a3/4654a32072a4a49d62366c0e48a9c974.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfY9YZRfT7V5srmoNBAMUwhm-fDY0qmZ77Q';" alt="Pin On Wcbb 19 20">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wcbb 19 20</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/3d/eb/893debd9e0cf61c7e7ac93737b73ffdf.png" data-lightbox="roadtrip" data-title="Follow All The Latest Off Season Euroleague Women Transfers With Regular Season And Qualifiers Clubs Making Exciting Moves A In 2020 Seasons Womens Basketball Transfer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/3d/eb/893debd9e0cf61c7e7ac93737b73ffdf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfMji-d8iXyQZU-wbkPTMXItij4MU8Wb7wAQ';" alt="Follow All The Latest Off Season Euroleague Women Transfers With Regular Season And Qualifiers Clubs Making Exciting Moves A In 2020 Seasons Womens Basketball Transfer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Follow All The Latest Off Season Euroleague Women Transfers With Regular Season And Qualifiers Clubs Making Exciting Moves A In 2020 Seasons Womens Basketball Transfer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b5/df/56/b5df5623a24117999441cf7e9a7628ca.jpg" data-lightbox="roadtrip" data-title="Oregon Women S Basketball Guard Holly Winterburn To Transfer Womens Basketball Basketball Players Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b5/df/56/b5df5623a24117999441cf7e9a7628ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKt7MV-ZzLPxMQIDqfUp1BErAhu3kcV7Zs7A';" alt="Oregon Women S Basketball Guard Holly Winterburn To Transfer Womens Basketball Basketball Players Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Women S Basketball Guard Holly Winterburn To Transfer Womens Basketball Basketball Players Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/80/db/75/80db7556575d65b03372f064df46ee73.jpg" data-lightbox="roadtrip" data-title="College Basketball Girls In 2020 College Basketball Teams College Basketball Shirts College Basketball Players">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/80/db/75/80db7556575d65b03372f064df46ee73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO0eqeTzAefFTWHPeCmS-QK8QvzR0jopwe9g';" alt="College Basketball Girls In 2020 College Basketball Teams College Basketball Shirts College Basketball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Basketball Girls In 2020 College Basketball Teams College Basketball Shirts College Basketball Players</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/fb/20/c8fb206d922f9ef9dde09a0116ff8410.png" data-lightbox="roadtrip" data-title="Minyon Moore Announces Her Intention To Transfer Daily Trojan Usc Trojans Team Leader Intentions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/fb/20/c8fb206d922f9ef9dde09a0116ff8410.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ux_joX4QpFUZcChb6BJ8lEqr1G8CT7t9Sg';" alt="Minyon Moore Announces Her Intention To Transfer Daily Trojan Usc Trojans Team Leader Intentions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minyon Moore Announces Her Intention To Transfer Daily Trojan Usc Trojans Team Leader Intentions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/14/9f/48149f800f0cf03d2a5d05a77bb9a86e.png" data-lightbox="roadtrip" data-title="Ncaaw Kiah Gillespie Leads Florida State Seminoles As Wnba Prospect Swish Appeal Seminole Florida State Seminoles Acc Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/14/9f/48149f800f0cf03d2a5d05a77bb9a86e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV8f1JeHhjTbF6hfWmP18HDvKXT8eEjMankQ';" alt="Ncaaw Kiah Gillespie Leads Florida State Seminoles As Wnba Prospect Swish Appeal Seminole Florida State Seminoles Acc Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaaw Kiah Gillespie Leads Florida State Seminoles As Wnba Prospect Swish Appeal Seminole Florida State Seminoles Acc Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/b4/dc/63b4dc4b8704fab7f1a77dcf86b721e3.jpg" data-lightbox="roadtrip" data-title="Oti Gildon Returns To Oregon Women S Basketball Program In Support Staff Role Ncaa Basketbal Trong 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/b4/dc/63b4dc4b8704fab7f1a77dcf86b721e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NhSVz1tJ0M6Qg-2vE5SRQV5zCC5cMRxYXg';" alt="Oti Gildon Returns To Oregon Women S Basketball Program In Support Staff Role Ncaa Basketbal Trong 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oti Gildon Returns To Oregon Women S Basketball Program In Support Staff Role Ncaa Basketbal Trong 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/6d/11/516d114d9c05fec72143194e0fa71881.jpg" data-lightbox="roadtrip" data-title="Stanford 104 Pacific 61 In 2020 Basketball Coach Stanford University Of Idaho">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/6d/11/516d114d9c05fec72143194e0fa71881.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScBliqBpkVLqrUCyqqOh6PgWVlE31bgB7JKA';" alt="Stanford 104 Pacific 61 In 2020 Basketball Coach Stanford University Of Idaho">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stanford 104 Pacific 61 In 2020 Basketball Coach Stanford University Of Idaho</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/e8/7d/4be87d697da86020fe7cb6721c5c5268.jpg" data-lightbox="roadtrip" data-title="Apsu Women S Basketball Beats Christian Brothers 100 62 Clarksville Tn Online Womens Basketball Basketball Girls Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/e8/7d/4be87d697da86020fe7cb6721c5c5268.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDYgiPhh4E4xlggxDKIeuyvHBp09C3Jvydag';" alt="Apsu Women S Basketball Beats Christian Brothers 100 62 Clarksville Tn Online Womens Basketball Basketball Girls Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apsu Women S Basketball Beats Christian Brothers 100 62 Clarksville Tn Online Womens Basketball Basketball Girls Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/cd/0c/e6cd0ce4c4233270a9ee5f415599f31b.jpg" data-lightbox="roadtrip" data-title="Lexie S Late Heroics Stanford University Athletics In 2020 Stanford University Stanford Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/cd/0c/e6cd0ce4c4233270a9ee5f415599f31b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh94YS_S7Crl1JjpCF_pSIk9fzOT8slnpmCA';" alt="Lexie S Late Heroics Stanford University Athletics In 2020 Stanford University Stanford Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lexie S Late Heroics Stanford University Athletics In 2020 Stanford University Stanford Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/67/6f/87676f23cb8ae9baa467547149a2ed3f.jpg" data-lightbox="roadtrip" data-title="Who Wins Bpi S Women S Ncaa Tournament Bracket Simulation In 2020 Ncaa Tournament Bracket Ncaa Tournament Ncaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/67/6f/87676f23cb8ae9baa467547149a2ed3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj5PejFzUihBB15T9kwwvvvZNRVTnT_x7a0w';" alt="Who Wins Bpi S Women S Ncaa Tournament Bracket Simulation In 2020 Ncaa Tournament Bracket Ncaa Tournament Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Wins Bpi S Women S Ncaa Tournament Bracket Simulation In 2020 Ncaa Tournament Bracket Ncaa Tournament Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/college-guy-de-maupassant-gareoult.html">College Guy De Maupassant Gareoult</a></li>
+													<li class="list-group-item"><a href="/college-go-week-games.html">College Go Week Games</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gift-ideas-philippines.html">College Graduation Gift Ideas Philippines</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gift-box-for-him.html">College Graduation Gift Box For Him</a></li>
+													<li class="list-group-item"><a href="/college-go-get-it-week.html">College Go Get It Week</a></li>
+													<li class="list-group-item"><a href="/college-guy-de-maupassant-gareoult-nice.html">College Guy De Maupassant Gareoult Nice</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gifts-for-her-ideas.html">College Graduation Gifts For Her Ideas</a></li>
+													<li class="list-group-item"><a href="/college-going-students.html">College Going Students</a></li>
+													<li class="list-group-item"><a href="/college-guy-christmas-gifts-2020.html">College Guy Christmas Gifts 2020</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gifts-walmart.html">College Graduation Gifts Walmart</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gifts-on-a-budget.html">College Graduation Gifts On A Budget</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gift-ideas-him.html">College Graduation Gift Ideas Him</a></li>
+													<li class="list-group-item"><a href="/college-grad-christmas-gifts.html">College Grad Christmas Gifts</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gifts-for-friends.html">College Graduation Gifts For Friends</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gift-box.html">College Graduation Gift Box</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gift-ideas-reddit.html">College Graduation Gift Ideas Reddit</a></li>
+													<li class="list-group-item"><a href="/college-guy-birthday-gift-ideas.html">College Guy Birthday Gift Ideas</a></li>
+													<li class="list-group-item"><a href="/college-graduation-gifts-for-your-girlfriend.html">College Graduation Gifts For Your Girlfriend</a></li>
+													<li class="list-group-item"><a href="/college-graduation-christmas-gifts.html">College Graduation Christmas Gifts</a></li>
+													<li class="list-group-item"><a href="/college-going-online-in-the-fall.html">College Going Online In The Fall</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

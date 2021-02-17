@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Go College Now First Generation - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Go College Now First Generation",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/7c/51/d6/7c51d6d0c471d652a5f98a0a171078b9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=go+college+now+first+generation",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Go College Now First Generation</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Last week Julia James wrote about the challenges of being a first-generation college student and how being the first in her family to attend university shaped her academic experience. And hear her words about lifting up first-generation and minority students. But to thousands of students on campus at Arizona Western College that message is profound a reminder that a whopping 66 percent of the colleges 8000 students are just like them. <br>				
+			</p>
+										<a class="badge badge-light" href="/gi-bill-pay-online-classes.html">gi bill pay online classes</a>
+											<a class="badge badge-light" href="/gi-bill-post-911-schools.html">gi bill post 911 schools</a>
+											<a class="badge badge-light" href="/gi-bill-payment-for-online-classes.html">gi bill payment for online classes</a>
+											<a class="badge badge-success" href="/gi-bill-payment-dates.html">gi bill payment dates</a>
+											<a class="badge badge-info" href="/gi-bill-pay-okinawa.html">gi bill pay okinawa</a>
+											<a class="badge badge-secondary" href="/gi-bill-pre-911.html">gi bill pre 911</a>
+											<a class="badge badge-success" href="/gi-bill-scuba-certification.html">gi bill scuba certification</a>
+											<a class="badge badge-primary" href="/gi-bill-payment-taxable.html">gi bill payment taxable</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the right blog.  Our website provides you with suggestions for seeing the maximum quality video and image content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, so we recommend this video for you to view.  It is also possible to bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/5f/f5/b05ff516fd97e82cae8ddfa62268aac9.png" data-lightbox="roadtrip" data-title="Pin On Literacy Orgs Charities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/5f/f5/b05ff516fd97e82cae8ddfa62268aac9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2SgFRA6BGkW0Xquc6gAxuaQDlXmFxM_bFA';" alt="Pin On Literacy Orgs Charities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Literacy Orgs Charities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/9c/e1/4f9ce14d782966b514dce2a3f187a4ab.png" data-lightbox="roadtrip" data-title="Http Www Amazon Com Seventeens Guide Getting Into College Dp 1588166473about The Film The First Gen College Survival Guide Generation Importance Of Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/9c/e1/4f9ce14d782966b514dce2a3f187a4ab.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjydgQl0Be5hVOcXgR5keFKu_3z9TGMxKvBw';" alt="Http Www Amazon Com Seventeens Guide Getting Into College Dp 1588166473about The Film The First Gen College Survival Guide Generation Importance Of Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Amazon Com Seventeens Guide Getting Into College Dp 1588166473about The Film The First Gen College Survival Guide Generation Importance Of Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/68/7c/c5/687cc5df7dcc87d227e1e80290860d27.jpg" data-lightbox="roadtrip" data-title="First Generation College Student First Generation College Students First Generation Coll College Motivation College Freshman Advice College Student Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/68/7c/c5/687cc5df7dcc87d227e1e80290860d27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5C29YQ_J9vSPd1PGtg2SdNHvSmFrUkI2D6g';" alt="First Generation College Student First Generation College Students First Generation Coll College Motivation College Freshman Advice College Student Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First Generation College Student First Generation College Students First Generation Coll College Motivation College Freshman Advice College Student Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/62/87/92628759fb96309c31cdeeaee03e36f5.png" data-lightbox="roadtrip" data-title="First Generation College Students Defy Odds As Educational Pioneers The Daily Universe College Students Scholarships For College Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/62/87/92628759fb96309c31cdeeaee03e36f5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFlxjHgerWE3zaDdR5CNB4xsiNmDLvDJ6J4g';" alt="First Generation College Students Defy Odds As Educational Pioneers The Daily Universe College Students Scholarships For College Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First Generation College Students Defy Odds As Educational Pioneers The Daily Universe College Students Scholarships For College Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/71/aa/4271aaa4aaa93a0aaae6a390fd416250.png" data-lightbox="roadtrip" data-title="17 Things All First Generation College Students Need To Hear Blavity College Students College Advising College Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/71/aa/4271aaa4aaa93a0aaae6a390fd416250.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQowrNW8eUW7IH9unXgm1t-igY8toOA4sAPA';" alt="17 Things All First Generation College Students Need To Hear Blavity College Students College Advising College Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Things All First Generation College Students Need To Hear Blavity College Students College Advising College Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/92/5e/22925ebb5ea911a0c80132c9d2db2783.jpg" data-lightbox="roadtrip" data-title="What 1st Generation College Students Really Need To Know Scholarships For College Financial Aid For College Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/92/5e/22925ebb5ea911a0c80132c9d2db2783.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYGSRtMxJDS-MV9gzinIqHrJ4_sHV7VgBHA';" alt="What 1st Generation College Students Really Need To Know Scholarships For College Financial Aid For College Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What 1st Generation College Students Really Need To Know Scholarships For College Financial Aid For College Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d5/b4/67/d5b4670b89569692b78d62413f56610f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYGSRtMxJDS-MV9gzinIqHrJ4_sHV7VgBHA';" alt="What 1st Generation College Students Really Need To Know Scholarships For College Financial Aid For College Grants For College">
+										<div class="card-body">
+						<h3 class="h5"><b>People will say how proud they are of you.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Go college now first generation</strong>. 
+								
+																	A Place Where First-Generation College Students Shine I am First-Gen Sure on the surface its just a t-shirt emblazoned with one simple phrase. 
+																	You count as first generation to go to university even if the following have gone to university. 
+																	Being a first generation college student. 
+																	Its important to remember these moments when youre feeling low in times of hard study. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	First-Generation Student Works to Get Back to Degree For lower-middle class students college isnt a straight forward subject. 
+																	Go College Now is part of the Go College. 
+																	An award-winning documentary narrated by Golden Globe nominee Blair Underwood First Generation tells the story of four high school students an inner city athlete a small town waitress a Samoan warrior dancer and the daughter of migrant field workers who set out to break the cycle of poverty and bring hope to their families and communities by pursuing a college education. 
+																	As we mentioned above generally college applications will ask you directly if your parents attended or graduated from college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to The New York Times The proportion of freshmen at elite campuses who are first-generation11 percent at Dartmouth 12 percent at Princeton 14 percent at Yale 15 percent at Amherst 16 percent at Cornell 17 percent at Brownnearly matches that of their low-income Pell grant recipients. 
+																	Youll get the I wish I went to college. 
+																	Now resources to inspire students to go to college. 
+																	Initiative an unprecedented partnership with First Generation and Wells Fargo to help close the education gap for underrepresented students. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Despite not qualifying for the scholarships and grants that some low-income students may qualify for their families still frequently dont make enough to pay the often six digit price tag associated with a four year degree. 
+																	The train of people who will tell you exactly how proud of you they are will feel never ending. 
+																	Now a bilingual web platform to inspire a college-going culture by providing free access to the award winning film First Generation and college planning resources for students parents and educators to help students transition from high school to college and beyond. 
+																	Being the first to do anything is always challenging and while students who are trying to be the first in their families to go to college may be discouraged at times the first step is believing that with hard work a college education is attainable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After graduating college in 2013 with no debt she took a year to work for the Go College. 
+																	For many college students families are a powerful source of support which frequently goes double for first-generation grads. 
+																	However there are variations in the way first-gen is defined. 
+																	She majored in criminal justice minored in political science and completed her degree in four years a feat for any first generation student. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join the Community Take the pledge to join the community of students artists entrepreneurs politicians innovators leaders parents educators and more committed to raising the college-going and success rate for low-income and first generation students. 
+																	Today half of all 21 million college students are first generation students. 
+																	We invite you to participate in a short survey about your experience hosting a screening of First Generation and utilizing the Go College. 
+																	Generally speaking a first-generation college student is someone who is the first in their family to go to college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	First-Generation Grad Student Talks Family Success and Support For many first-generation college students good support systems are vital. 
+																	Watch Melissa Moras inspiring story about graduating from the CUNY School of Law with support from her favorite cheerleading squad her family. 
+																	Its a serious feat to get an opportunity to further your education. 
+																	Some colleges count students as first generation college students only if neither parent attended college at all after high school regardless of whether they received a degree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Initiative study for the GRE and apply to graduate school. 
+																	Brothers or sisters husband wife or partner biological parents of applicants who have been adopted a parent with whom you have had no contact during your secondary and post-16 education or longer foster parents care workers uncles aunts and other members of your extended family. 
+																	If neither of your parents attended college at all or if they took some classes but didnt graduate youll be considered a first-generation college student. 
+																	YouTube channel we are mitu created this special video that gives first-generation college graduates a chance to say thank you to their parents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some colleges consider the completion of an associates degree enough to discount further generations from being considered for this designation at all. 
+																	There are myriads of successful first generation college graduates who know this to be true. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/9a/70/a59a70355c741bdef983c1f372f33795.png" data-lightbox="roadtrip" data-title="Custom Ribbon First Generation College Graduate Custom Ribbon College Graduation Generation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/9a/70/a59a70355c741bdef983c1f372f33795.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpaQX5SFF_R_plV7HBs5Ea9J6Wh9Z-FJt4Mg';" alt="Custom Ribbon First Generation College Graduate Custom Ribbon College Graduation Generation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Custom Ribbon First Generation College Graduate Custom Ribbon College Graduation Generation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/dc/7f/97dc7f7619db53f58456d866a22eca41.png" data-lightbox="roadtrip" data-title="First Generation Students Need Your Help Are You Providing It Aftercollege Employer Blog Mentor Program Student Generation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/dc/7f/97dc7f7619db53f58456d866a22eca41.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWFReKshi88qzqelqC18FHr0IhxWtth2r0Q';" alt="First Generation Students Need Your Help Are You Providing It Aftercollege Employer Blog Mentor Program Student Generation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First Generation Students Need Your Help Are You Providing It Aftercollege Employer Blog Mentor Program Student Generation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/a3/38/a1a3385993b8b41bbb4e56f02ee3925d.jpg" data-lightbox="roadtrip" data-title="First Generation College Students Face Barriers College Parents College Questions Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/a3/38/a1a3385993b8b41bbb4e56f02ee3925d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-O4oY_1dLaavxdtb3qawD-K8vXSeIkC99WA';" alt="First Generation College Students Face Barriers College Parents College Questions Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First Generation College Students Face Barriers College Parents College Questions Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://first-gen-at.sdsu.edu/_resources/ldp-images/.private_ldp/a168006/production/master/88762b7b-acd5-47f3-893b-2ed9a4c78821.png" data-lightbox="roadtrip" data-title="First Generation Student Success First Generation At Sdsu">
+											<img class="card-img v-image ads-img " src="https://first-gen-at.sdsu.edu/_resources/ldp-images/.private_ldp/a168006/production/master/88762b7b-acd5-47f3-893b-2ed9a4c78821.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjxB9OiJBS7pmu8BoO3KetXGZdaOOInik7CQ';" alt="First Generation Student Success First Generation At Sdsu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First Generation Student Success First Generation At Sdsu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/af/37/a9af37d7434e265de999dfbd6126e036.jpg" data-lightbox="roadtrip" data-title="Did Your Parents Go To College Did Your Parents Go To College But Didn T Graduate If You Answered No To The First Que College Students College Degree College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/af/37/a9af37d7434e265de999dfbd6126e036.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCvVDP51EzXuK2MuNC9FBxF_n8WTfTcpXyg';" alt="Did Your Parents Go To College Did Your Parents Go To College But Didn T Graduate If You Answered No To The First Que College Students College Degree College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Did Your Parents Go To College Did Your Parents Go To College But Didn T Graduate If You Answered No To The First Que College Students College Degree College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/47/5a/f2475aee838c71e468b55ee0f380a019.png" data-lightbox="roadtrip" data-title="I M First Scholarship I M Firsti M First Scholarships For College Scholarships For College Students Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/47/5a/f2475aee838c71e468b55ee0f380a019.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqol7oT4tjiUv-lmg50Qft_mhdJSlUpr-kHA';" alt="I M First Scholarship I M Firsti M First Scholarships For College Scholarships For College Students Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I M First Scholarship I M Firsti M First Scholarships For College Scholarships For College Students Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/80/ad/4b80adcd64d886eb478480ae6b3e6ad9.png" data-lightbox="roadtrip" data-title="20 Things Every First Generation Latino College Student Should Know College Quotes College Student Advice Generations Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/80/ad/4b80adcd64d886eb478480ae6b3e6ad9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCsvVfIhMVha1w7qfqvPhGKLoIuBog8Ja3Wg';" alt="20 Things Every First Generation Latino College Student Should Know College Quotes College Student Advice Generations Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Things Every First Generation Latino College Student Should Know College Quotes College Student Advice Generations Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7c/51/d6/7c51d6d0c471d652a5f98a0a171078b9.jpg" data-lightbox="roadtrip" data-title="Going To College Is Extremely Costly It Does Not Matter What Where Or How You Go It Will Cost You H In 2020 Scholarships For College Scholarships Education College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7c/51/d6/7c51d6d0c471d652a5f98a0a171078b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrf0Ha44zptpkFgt15Q4muaE29vGMBlkwTGA';" alt="Going To College Is Extremely Costly It Does Not Matter What Where Or How You Go It Will Cost You H In 2020 Scholarships For College Scholarships Education College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Going To College Is Extremely Costly It Does Not Matter What Where Or How You Go It Will Cost You H In 2020 Scholarships For College Scholarships Education College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/b4/67/d5b4670b89569692b78d62413f56610f.png" data-lightbox="roadtrip" data-title="What It S Like Being A First Generation College Student Education Motivation College Students Education Elementary Math">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/b4/67/d5b4670b89569692b78d62413f56610f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqeBKwuppAS0lKbBPvpyI_XhdBE_H-e3oXEw';" alt="What It S Like Being A First Generation College Student Education Motivation College Students Education Elementary Math">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What It S Like Being A First Generation College Student Education Motivation College Students Education Elementary Math</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/52/12/5752124617b8895cf25e7e50bb0c1804.png" data-lightbox="roadtrip" data-title="Pin On Interesting Things">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/52/12/5752124617b8895cf25e7e50bb0c1804.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNm7uqCQDsx4Xa7g_w_qoSjQh0rONVmK_GGg';" alt="Pin On Interesting Things">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Interesting Things</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/fa/29/50fa296c3d47dc650dab6175c7e5e196.png" data-lightbox="roadtrip" data-title="First Generation Scholarships The University Network School Scholarship Scholarships For College Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/fa/29/50fa296c3d47dc650dab6175c7e5e196.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKjTb29spGQmjWrgT2sDMgfWYCplkxVCn5Q';" alt="First Generation Scholarships The University Network School Scholarship Scholarships For College Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First Generation Scholarships The University Network School Scholarship Scholarships For College Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/92/57/909257dd2dc24852fed5163f901fbeba.jpg" data-lightbox="roadtrip" data-title="First Generation Students Student Generation College Preparation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/92/57/909257dd2dc24852fed5163f901fbeba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6zF9V3LgRsMfO-MuSdM_h3vg0TprSuJgYw';" alt="First Generation Students Student Generation College Preparation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First Generation Students Student Generation College Preparation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/e3/22/fde32244564700f6e5662438c1d4c13a.png" data-lightbox="roadtrip" data-title="Resources For First Gen Students Student Student Resources Dear Professor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/e3/22/fde32244564700f6e5662438c1d4c13a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSP5rs4Vn1kgjMxFf_r-M0zothhMZSN17Yuw';" alt="Resources For First Gen Students Student Student Resources Dear Professor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Resources For First Gen Students Student Student Resources Dear Professor</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/when-did-gi-joe-cartoon-come-out.html">When Did Gi Joe Cartoon Come Out</a></li>
+													<li class="list-group-item"><a href="/when-does-the-forever-gi-bill-take-effect.html">When Does The Forever Gi Bill Take Effect</a></li>
+													<li class="list-group-item"><a href="/where-do-college-students-go-in-florida-for-spring-break.html">Where Do College Students Go In Florida For Spring Break</a></li>
+													<li class="list-group-item"><a href="/where-is-my-gi-bill-housing-allowance.html">Where Is My Gi Bill Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/when-is-college-go-week-2020.html">When Is College Go Week 2020</a></li>
+													<li class="list-group-item"><a href="/which-colleges-are-online-fall-2020.html">Which Colleges Are Online Fall 2020</a></li>
+													<li class="list-group-item"><a href="/when-did-g-idle-debut.html">When Did G Idle Debut</a></li>
+													<li class="list-group-item"><a href="/where-is-my-va-education-benefits-check.html">Where Is My Va Education Benefits Check</a></li>
+													<li class="list-group-item"><a href="/where-did-u-go.html">Where Did U Go</a></li>
+													<li class="list-group-item"><a href="/which-state-got-gi-tag-for-rasgulla.html">Which State Got Gi Tag For Rasgulla</a></li>
+													<li class="list-group-item"><a href="/which-colleges-have-gymnastics-teams.html">Which Colleges Have Gymnastics Teams</a></li>
+													<li class="list-group-item"><a href="/when-did-the-gi-bill-end.html">When Did The Gi Bill End</a></li>
+													<li class="list-group-item"><a href="/when-is-womens-college-basketball.html">When Is Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/when-did-the-forever-gi-bill-start.html">When Did The Forever Gi Bill Start</a></li>
+													<li class="list-group-item"><a href="/where-did-gi-joe-originated.html">Where Did Gi Joe Originated</a></li>
+													<li class="list-group-item"><a href="/when-to-apply-for-college-spring-2021.html">When To Apply For College Spring 2021</a></li>
+													<li class="list-group-item"><a href="/when-do-va-education-benefits-get-paid-2020.html">When Do Va Education Benefits Get Paid 2020</a></li>
+													<li class="list-group-item"><a href="/when-do-you-go-to-college-uk.html">When Do You Go To College Uk</a></li>
+													<li class="list-group-item"><a href="/when-does-my-gi-bill-payment-get-deposited.html">When Does My Gi Bill Payment Get Deposited</a></li>
+													<li class="list-group-item"><a href="/where-will-college-gameday-go-next-week.html">Where Will College Gameday Go Next Week</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

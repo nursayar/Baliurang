@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Best Gift Cards To Give College Students - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Best Gift Cards To Give College Students",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/fa/32/d1/fa32d17f645addf2476234968a098b60.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=best+gift+cards+to+give+college+students",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Best Gift Cards To Give College Students</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For teens or college students who are just getting into investing or seasoned financial pros who take their portfolios seriously Stockpile Gift Cards are a unique gift. While bed sheets and office supplies are essential there are a slew of other items college students could really use right now. Gifts for university students. <br>				
+			</p>
+										<a class="badge badge-light" href="/go-college-now-first-generation.html">go college now first generation</a>
+											<a class="badge badge-dark" href="/go-back-to-college-now.html">go back to college now</a>
+											<a class="badge badge-light" href="/go-to-college-for.html">go to college for</a>
+											<a class="badge badge-primary" href="/go-back-to-college-at-40.html">go back to college at 40</a>
+											<a class="badge badge-info" href="/go-to-college-university-get-a-real-job-lyrics.html">go to college university get a real job lyrics</a>
+											<a class="badge badge-success" href="/go-bills-josh-allen.html">go bills josh allen</a>
+											<a class="badge badge-secondary" href="/go-to-college-without-ged.html">go to college without ged</a>
+											<a class="badge badge-warning" href="/go-to-college-they-said-meme.html">go to college they said meme</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to visit the right site.  Our website gives you hints for seeing the highest quality video and image content, hunt and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this movie for you to see.  You can also contribute to supporting this website by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/a9/4f/81a94f6305f869334f72377beacc8e3f.jpg" data-lightbox="roadtrip" data-title="College Students Is Cash Or Gift Card The Better Gift Giftcards Com Best Gift Cards Gift Card Grocery Gift Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/a9/4f/81a94f6305f869334f72377beacc8e3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThq1yD8huP99Bkrz4Uh9aaUOa1smDAkoZRVA';" alt="College Students Is Cash Or Gift Card The Better Gift Giftcards Com Best Gift Cards Gift Card Grocery Gift Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Students Is Cash Or Gift Card The Better Gift Giftcards Com Best Gift Cards Gift Card Grocery Gift Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/1e/d0/501ed0fa2cecd9ddf4aa1c969a61b77e.jpg" data-lightbox="roadtrip" data-title="24 Cute And Clever Ways To Give A Gift Card Wrapping Gift Cards Gift Card Presentation Gift Card Holder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/1e/d0/501ed0fa2cecd9ddf4aa1c969a61b77e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKdRXXvwySCEmRk3kjIt5HNpahtPKBNcNk7g';" alt="24 Cute And Clever Ways To Give A Gift Card Wrapping Gift Cards Gift Card Presentation Gift Card Holder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">24 Cute And Clever Ways To Give A Gift Card Wrapping Gift Cards Gift Card Presentation Gift Card Holder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/9c/8b/069c8bb57c57d606604af6847d298185.jpg" data-lightbox="roadtrip" data-title="College Student Gift Guide With Wacom College Student Gifts College Student Gifts Christmas College Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/9c/8b/069c8bb57c57d606604af6847d298185.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ18lCaNdy4tKNO_gGRLLWXjPzpvI_Po16w8g';" alt="College Student Gift Guide With Wacom College Student Gifts College Student Gifts Christmas College Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Student Gift Guide With Wacom College Student Gifts College Student Gifts Christmas College Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/77/92/7c77924e3870f275dafa4f6be2026f86.png" data-lightbox="roadtrip" data-title="College Survival Kit College Survival Kit College Gifts Creative Graduation Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/77/92/7c77924e3870f275dafa4f6be2026f86.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcTtEk3w4GZuYICHM41JxmwqxUPFa67_xhQ';" alt="College Survival Kit College Survival Kit College Gifts Creative Graduation Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Survival Kit College Survival Kit College Gifts Creative Graduation Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/9b/3d/fa9b3d534993697d948f0178bfbe613c.jpg" data-lightbox="roadtrip" data-title="Off To College Kit A Mom S Take College Gifts College Gift Baskets High School Graduation Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/9b/3d/fa9b3d534993697d948f0178bfbe613c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnpEPegVP-ijkzg2V67TJWGt9JMmQYhNhupw';" alt="Off To College Kit A Mom S Take College Gifts College Gift Baskets High School Graduation Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Off To College Kit A Mom S Take College Gifts College Gift Baskets High School Graduation Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/0e/77/510e7744b4ea37618b48b22e023bc4bb.png" data-lightbox="roadtrip" data-title="Creative Ways To Give Gift Certificates College Students Survival Kit Student Survival Kits Creative Graduation Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/0e/77/510e7744b4ea37618b48b22e023bc4bb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQClZMTwOgGyT9Z-ZFnyfCJhGme5FwXRW0fgA';" alt="Creative Ways To Give Gift Certificates College Students Survival Kit Student Survival Kits Creative Graduation Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Creative Ways To Give Gift Certificates College Students Survival Kit Student Survival Kits Creative Graduation Gifts</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/25/e6/38/25e6384ce155171b630bdfa2a629ecc6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQClZMTwOgGyT9Z-ZFnyfCJhGme5FwXRW0fgA';" alt="Creative Ways To Give Gift Certificates College Students Survival Kit Student Survival Kits Creative Graduation Gifts">
+										<div class="card-body">
+						<h3 class="h5"><b>From birthdays to Christmas well done on your exams to thinking of you the Student Choice gift card is a flexible and practical gift that can be spent anyway they please.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Best gift cards to give college students</strong>. 
+								
+																	An Amazon gift card is the perfect gift for that college student whos hard to shop for. 
+																	Whether youre graduating from middle school or getting a masters degree completing a level of education is something to celebrate. 
+																	So whether your kid is spending their first birthday away from home or you just want to pass along a care package read on to discover some truly amazing gifts for the college student in your life. 
+																	Everyone knows that college is about learning and parties which is why this motorized cooler would make a great gift for college students. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It keeps drinks cool and makes a sweet. 
+																	Give the student in your life the gift of choice. 
+																	Valentine day is not only friends but you can give gifts to your friends and also your college best friends. 
+																	And for more amazing back-to-school buys check out the 25 Best Backpacks for College Students. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get it Tomorrow Feb 6. 
+																	Amazon offers such a range of options that it can satisfy the needs of most people not just college students. 
+																	College is all about living your best life on a budget which means youve probably got your fingers crossed for some amazing presents this holiday season. 
+																	Choose from a selection of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For example an NUS extra card is 12 for the year whereas an annual railcard will set you back 30. 
+																	Theres a headphone stand for their new room backpacks for lectures and the Positivity Planner for when theyre missing you of course. 
+																	Survival Tins Student perfect university college gift setbox idea for boys and girls. 
+																	This is a minor setback in the long run as each card will help you save money in different fields. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Valentine Gift Baskets For College Students 2021. 
+																	With a wide range of cards and vouchers for popular stores including John Lewis Marks Spencer and Next you can find the perfect gift quickly and stress-free every time. 
+																	The best gift cards to buy for kids graduating from college chosen from top stores and restaurants plus ways to make gift cards for grad more personal. 
+																	Ahead the 25 best gifts to give the student on your list. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	English at Falmouth University Zanussi. 
+																	Buckets Full of Drinks and Candies. 
+																	Our range of gifts is ideal for birthdays Christmas weddings and. 
+																	Ring of Fire Cards - The Classic Drinking Game with All the Rules Illustrated on the Cards - Great For Students and Parties. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether theyre going back for their final year or are leaving home for the first time breathe itll be fine these gifts for university students make for the perfect survival kit. 
+																	Get it Tomorrow Feb 6. 
+																	A student card will cost you roughly 10-30 depending on which card you go for and this will last for around 12 months before you need to renew. 
+																	One of the best gifts for college students is the ability to cook and with this awesome kitchen gadget theyll be able to rustle up a healthy omelet in just 45 seconds. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can add a personal message to the card and have it delivered at a selected date. 
+																	And this year if you are looking for a gift for that college student on your list here are some great ideas for what gift cards will be a hit. 
+																	Gift cards gift vouchers. 
+																	FREE Delivery by Amazon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 Best Graduation Gift Cards for College Grads. 
+																	As you know that friends are a gift from God and if you bless with true friends then its your responsibility to give gifts to your friends. 
+																	46 out of 5 stars 345. 
+																	Take the pressure off yourself and let them buy whatever they want. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gas is 300 a gallon. 
+																	Sephora Gift Card This Sephora gift card is perfect for a student who is serious about their skin care or cosmetics. 
+																	47 out of 5 stars 76. 
+																	This is undeniably going to be the most popular choice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And we all know the best gifts are. 
+																	Its not easy to find a gift that balances what a student needs wants and will actually use. 
+																	Our best selling gift vouchers and gift cards. 
+																	These gift cards feature a number of chic designs and are available in denominations ranging from 25-200. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Here are some great gift cards to buy them. 
+																	From a mini fridge to a recipe book real-life students reveal the best and most useful items given to them by their parents. 
+																	In addition to straightforward gift cards BaubleBar is also offering gift cards for specific things like custom bracelets phone cases hair clips or necklaces for a more personal touch. 
+																	FREE Delivery on your first. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go to High Mark to buy health care for a college kid that doesnt have health insurance anymore because they are no longer covered on your policy as a dependent. 
+																	To ensure you buy the college-bound person in your life a fun and functional gift let this list of 50 gift. 
+																	Buy your Student Choice gift cards online today. 
+																	Health Care Gift Card. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The latest trends and fads change at an incredible pace and choosing the right gift for a young adult entering college may seem daunting. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/c6/26/8a/c6268a25399d97d00056d8128bb27abc.jpg" data-lightbox="roadtrip" data-title="120 Creative Ways To Give Gift Cards And Money Smart Fun Diy Giftcardsideas Christmasideas Gift Card Tree Gift Card Presentation Gift Card Displays">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/c6/26/8a/c6268a25399d97d00056d8128bb27abc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76YtPJzYgOGHoAR_DWhHJvaH2vq12gnE0Zg';" alt="120 Creative Ways To Give Gift Cards And Money Smart Fun Diy Giftcardsideas Christmasideas Gift Card Tree Gift Card Presentation Gift Card Displays">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">120 Creative Ways To Give Gift Cards And Money Smart Fun Diy Giftcardsideas Christmasideas Gift Card Tree Gift Card Presentation Gift Card Displays</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/e4/75/b4e475cbd667ece9d8fb4f8b2e9b7e2c.png" data-lightbox="roadtrip" data-title="Gifts For College Students Gift Ideas For College Students College Student Gifts Best Gif Birthday Gifts For Teens Teenage Girl Gifts Christmas Student Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/e4/75/b4e475cbd667ece9d8fb4f8b2e9b7e2c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz5laIBjfD9ObVIbb134L47A0f8AktnyybVw';" alt="Gifts For College Students Gift Ideas For College Students College Student Gifts Best Gif Birthday Gifts For Teens Teenage Girl Gifts Christmas Student Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gifts For College Students Gift Ideas For College Students College Student Gifts Best Gif Birthday Gifts For Teens Teenage Girl Gifts Christmas Student Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/c4/bd/0fc4bdbc931e63d3b3541c467a4b5b63.jpg" data-lightbox="roadtrip" data-title="Best Back To School Gift Cards For Each Age Gcg Back To School Gifts School Gifts Teachers Appreciation Week Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/c4/bd/0fc4bdbc931e63d3b3541c467a4b5b63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ-vm6cwp410bBi_SXetAsxzZlTjmHGpI5Eg';" alt="Best Back To School Gift Cards For Each Age Gcg Back To School Gifts School Gifts Teachers Appreciation Week Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Back To School Gift Cards For Each Age Gcg Back To School Gifts School Gifts Teachers Appreciation Week Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/07/b2/ce07b2c78958fc74ad44dcd8b619796a.jpg" data-lightbox="roadtrip" data-title="Pin On Emma S Birthday Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/07/b2/ce07b2c78958fc74ad44dcd8b619796a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ9XNRADXT8QMJNTL_-9N5-vwRpsKiJhGq0w';" alt="Pin On Emma S Birthday Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Emma S Birthday Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/f3/e1/d5f3e12c28d4316023e97ca2203abce3.jpg" data-lightbox="roadtrip" data-title="College Students Is Cash Or Gift Card The Better Gift Giftcards Com Gift Card Best Gift Cards Girlfriend Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/f3/e1/d5f3e12c28d4316023e97ca2203abce3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqV_UDZgbXaqyocXRKlhnze2xx3HOWAmSbAA';" alt="College Students Is Cash Or Gift Card The Better Gift Giftcards Com Gift Card Best Gift Cards Girlfriend Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Students Is Cash Or Gift Card The Better Gift Giftcards Com Gift Card Best Gift Cards Girlfriend Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/71/54/71/71547197497cafa81930e433e42423d9.jpg" data-lightbox="roadtrip" data-title="Gift Idea For A College Student Birthday Gifts For Teens 18th Birthday Gifts Diy Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/71/54/71/71547197497cafa81930e433e42423d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSL9GE5n2maqmyWMAIrkCelZAvpNFEeR4IKQ';" alt="Gift Idea For A College Student Birthday Gifts For Teens 18th Birthday Gifts Diy Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gift Idea For A College Student Birthday Gifts For Teens 18th Birthday Gifts Diy Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/85/1a/f9/851af9eba5f1419d7824cdfe75489caf.jpg" data-lightbox="roadtrip" data-title="120 Creative Ways To Give Gift Cards Or Money Gifts Smart Fun Diy Gift Cards Money Coffee Gifts Card Money Gift">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/85/1a/f9/851af9eba5f1419d7824cdfe75489caf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggK4UXQju6YVX31kdG6BKZ2ajKZO_311GDg';" alt="120 Creative Ways To Give Gift Cards Or Money Gifts Smart Fun Diy Gift Cards Money Coffee Gifts Card Money Gift">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">120 Creative Ways To Give Gift Cards Or Money Gifts Smart Fun Diy Gift Cards Money Coffee Gifts Card Money Gift</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/e6/38/25e6384ce155171b630bdfa2a629ecc6.jpg" data-lightbox="roadtrip" data-title="Pin On Graduation Gift Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/e6/38/25e6384ce155171b630bdfa2a629ecc6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpdUXDqLZ-Mi9U_hxR0XbSLN1cugzNqmoi2A';" alt="Pin On Graduation Gift Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Graduation Gift Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/b8/46/54b846287ba53bbb6556df333c7603d5.jpg" data-lightbox="roadtrip" data-title="My Best Friends Gave Me The Best Travel Gifts Ever It S A Whenever Products Travel Survival Bag Gre Best Travel Gifts College Gifts Survival Kit Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/b8/46/54b846287ba53bbb6556df333c7603d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa-9BanD3oawkhELa2UeQtiPPDp3MdZSiEww';" alt="My Best Friends Gave Me The Best Travel Gifts Ever It S A Whenever Products Travel Survival Bag Gre Best Travel Gifts College Gifts Survival Kit Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Best Friends Gave Me The Best Travel Gifts Ever It S A Whenever Products Travel Survival Bag Gre Best Travel Gifts College Gifts Survival Kit Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/78/bc/1178bceef2c59a8450d1f8cfe75fadcd.jpg" data-lightbox="roadtrip" data-title="Under Construction Best Graduation Gifts Gifts High School Graduation Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/78/bc/1178bceef2c59a8450d1f8cfe75fadcd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQivJMHgXhV_lVnCVuxLLj5zWVF-2Y8L2YgzQ';" alt="Under Construction Best Graduation Gifts Gifts High School Graduation Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Under Construction Best Graduation Gifts Gifts High School Graduation Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/32/d1/fa32d17f645addf2476234968a098b60.jpg" data-lightbox="roadtrip" data-title="Pin By Britt Hansen On Gift Ideas Gift Card Bouquet Gift Card Tree Gift Card Presentation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/32/d1/fa32d17f645addf2476234968a098b60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrq5dBlLn2NW9Rx7d8LcFSsAOTszntzO7rcg';" alt="Pin By Britt Hansen On Gift Ideas Gift Card Bouquet Gift Card Tree Gift Card Presentation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Britt Hansen On Gift Ideas Gift Card Bouquet Gift Card Tree Gift Card Presentation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/93/13/66931326792441a82e24c0552c3a8d12.jpg" data-lightbox="roadtrip" data-title="Gift Card Bouquet From My Kids Gift Card Bouquet Gift Card Tree Gift Card Basket">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/93/13/66931326792441a82e24c0552c3a8d12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyPVyU1SOWNIsZa-0B9tLIEcJ3rK20dWR0Ug';" alt="Gift Card Bouquet From My Kids Gift Card Bouquet Gift Card Tree Gift Card Basket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gift Card Bouquet From My Kids Gift Card Bouquet Gift Card Tree Gift Card Basket</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/e3/09/d4e309096804418e2a8b41c56a9dee27.png" data-lightbox="roadtrip" data-title="Cute Graduation Gifts Congrats Grad Gift Card Frame Fun Squared Unique Graduation Gifts Diy Graduation Gifts Graduation Gifts For Guys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/e3/09/d4e309096804418e2a8b41c56a9dee27.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNnFlBKajBnid98KBHEp6MP0H461HOwOjrw';" alt="Cute Graduation Gifts Congrats Grad Gift Card Frame Fun Squared Unique Graduation Gifts Diy Graduation Gifts Graduation Gifts For Guys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cute Graduation Gifts Congrats Grad Gift Card Frame Fun Squared Unique Graduation Gifts Diy Graduation Gifts Graduation Gifts For Guys</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/go-to-college-to-get-more-knowledge.html">Go To College To Get More Knowledge</a></li>
+													<li class="list-group-item"><a href="/go-bills-josh-allen.html">Go Bills Josh Allen</a></li>
+													<li class="list-group-item"><a href="/go-to-college-fairs.html">Go To College Fairs</a></li>
+													<li class="list-group-item"><a href="/go-to-college-in-spanish.html">Go To College In Spanish</a></li>
+													<li class="list-group-item"><a href="/go-karts-near-college-station.html">Go Karts Near College Station</a></li>
+													<li class="list-group-item"><a href="/go-to-college-nyc.html">Go To College Nyc</a></li>
+													<li class="list-group-item"><a href="/go-to-college-meaning-in-kannada.html">Go To College Meaning In Kannada</a></li>
+													<li class="list-group-item"><a href="/go-fund-me-carthage-college.html">Go Fund Me Carthage College</a></li>
+													<li class="list-group-item"><a href="/go-to-college-at-30.html">Go To College At 30</a></li>
+													<li class="list-group-item"><a href="/go-build-it.html">Go Build It</a></li>
+													<li class="list-group-item"><a href="/go-karts-bryan-college-station.html">Go Karts Bryan College Station</a></li>
+													<li class="list-group-item"><a href="/go-newrequest-post-json.html">Go Newrequest Post Json</a></li>
+													<li class="list-group-item"><a href="/go-build-cache.html">Go Build Cache</a></li>
+													<li class="list-group-item"><a href="/go-build-install.html">Go Build Install</a></li>
+													<li class="list-group-item"><a href="/go-build-vs-go-get.html">Go Build Vs Go Get</a></li>
+													<li class="list-group-item"><a href="/go-to-college-no-money.html">Go To College No Money</a></li>
+													<li class="list-group-item"><a href="/go-build-cmd.html">Go Build Cmd</a></li>
+													<li class="list-group-item"><a href="/go-build-in-docker.html">Go Build In Docker</a></li>
+													<li class="list-group-item"><a href="/go-to-college-or-go-to-the-college.html">Go To College Or Go To The College</a></li>
+													<li class="list-group-item"><a href="/go-to-college-london.html">Go To College London</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

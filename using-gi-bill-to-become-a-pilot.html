@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Using Gi Bill To Become A Pilot - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Using Gi Bill To Become A Pilot",
+  "datePublished": "2021-02-17",
+  "image": "https://atpflightschool.com/img/thumbnails/pilot-career-guide-pdf-spread-thumbnail.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=using+gi+bill+to+become+a+pilot",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Using Gi Bill To Become A Pilot</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">GI Bill for Flight Training. However Chapter 33 VA Benefits do cover the cost of your Private. So while you cannot use the GI Bill for your private pilot certificate you can use it for your instrument rating commercial pilot certificate and flight instructor and type ratings. <br>				
+			</p>
+										<a class="badge badge-info" href="/va-education-loan-repayment.html">va education loan repayment</a>
+											<a class="badge badge-success" href="/va-education-office-in-muskogee-ok.html">va education office in muskogee ok</a>
+											<a class="badge badge-danger" href="/va-education-for-spouse.html">va education for spouse</a>
+											<a class="badge badge-dark" href="/va-education-extension.html">va education extension</a>
+											<a class="badge badge-secondary" href="/va-education-money.html">va education money</a>
+											<a class="badge badge-warning" href="/va-education-top-up.html">va education top up</a>
+											<a class="badge badge-primary" href="/va-education-programs.html">va education programs</a>
+											<a class="badge badge-info" href="/va-education-department-fax-number.html">va education department fax number</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the ideal site.  Our site gives you hints for viewing the highest quality video and image content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie that you see.  You can also bring about supporting this site by sharing videos and graphics that you enjoy on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://singleenginepilot.com/wp-content/uploads/2019/05/jon-flobrant-225260-unsplash-post.jpg" data-lightbox="roadtrip" data-title="Can I Use The Gi Bill To Pay For My Pilot S License Single Engine Pilot">
+											<img class="card-img v-image ads-img " src="https://singleenginepilot.com/wp-content/uploads/2019/05/jon-flobrant-225260-unsplash-post.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3C1BY7r10FcIxYTMKQ8kYA8eXDcbYPaRaDw';" alt="Can I Use The Gi Bill To Pay For My Pilot S License Single Engine Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can I Use The Gi Bill To Pay For My Pilot S License Single Engine Pilot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://files.redbirdflight.net/hubfs/blake-guidry-UOJ6vz2khrY-unsplash-1.jpeg" data-lightbox="roadtrip" data-title="How To Use Your Gi Bill For Flight School">
+											<img class="card-img v-image ads-img " src="https://files.redbirdflight.net/hubfs/blake-guidry-UOJ6vz2khrY-unsplash-1.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgd4PjSw-tdICoTK39_qw71IeRVpZtrWkeKA';" alt="How To Use Your Gi Bill For Flight School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Use Your Gi Bill For Flight School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://milversity.com/wp-content/uploads/2019/08/gi-bill-for-flight-training-1.png" data-lightbox="roadtrip" data-title="Gi Bill For Flight Training Ultimate Guide And The Secret Fast Track">
+											<img class="card-img v-image ads-img " src="https://milversity.com/wp-content/uploads/2019/08/gi-bill-for-flight-training-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA5SlLHCiXUP81S7y-F7SXm3BckpRP4Dgxzw';" alt="Gi Bill For Flight Training Ultimate Guide And The Secret Fast Track">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Bill For Flight Training Ultimate Guide And The Secret Fast Track</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.alliance-training.com/wp-content/uploads/2019/06/banner-85-5d1530bc3bf8e.jpg" data-lightbox="roadtrip" data-title="What Can Disqualify You From Becoming A Commercial Pilot Alliance Training">
+											<img class="card-img v-image ads-img " src="https://www.alliance-training.com/wp-content/uploads/2019/06/banner-85-5d1530bc3bf8e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7n9OYZABsX3JT5x8r0bPBLkDgKpT1v7MBw';" alt="What Can Disqualify You From Becoming A Commercial Pilot Alliance Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Can Disqualify You From Becoming A Commercial Pilot Alliance Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/44/3b/ba443b3b8f8da998320bcaeec0415ce3.jpg" data-lightbox="roadtrip" data-title="How Much Does It Dost To Become A Pilot Becoming A Pilot Student Pilot Pilot Course">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/44/3b/ba443b3b8f8da998320bcaeec0415ce3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-avKT_CaM-5dLle7aeHmZwlOdoTGa6QNySg';" alt="How Much Does It Dost To Become A Pilot Becoming A Pilot Student Pilot Pilot Course">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Does It Dost To Become A Pilot Becoming A Pilot Student Pilot Pilot Course</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/bc/9a/a0bc9ad3a13885852a92deda9a5674c4.jpg" data-lightbox="roadtrip" data-title="What Is Air Force Fighter Pilot Training Like Pilot Training Fighter Pilot Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/bc/9a/a0bc9ad3a13885852a92deda9a5674c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStv8WZ12nLLBr9Q4cN5GiWXbSlls0PsYu3aw';" alt="What Is Air Force Fighter Pilot Training Like Pilot Training Fighter Pilot Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Air Force Fighter Pilot Training Like Pilot Training Fighter Pilot Air Force</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://usaeroflight.net/wp-content/uploads/2017/02/Female-soldier.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStv8WZ12nLLBr9Q4cN5GiWXbSlls0PsYu3aw';" alt="What Is Air Force Fighter Pilot Training Like Pilot Training Fighter Pilot Air Force">
+										<div class="card-body">
+						<h3 class="h5"><b>FREE FLIGHT TRAINING using FAFSA Post 911 GI Bill Montgomery GI Bill MilTA tuition assistance tuition reimbursement and other veteran employee and stu.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Using gi bill to become a pilot</strong>. 
+								
+																	Youll have to pony up the cash on the front end to reach your goal of flight. 
+																	The Post 911 GI Bill may be used for vocational training. 
+																	The Post 911 Gi Bill Chapter 33 can be used for Part 141 accredited flight training to get your Commercial Pilot License CPL or Airline Transport Pilot ATP certificate and can pay for flights tuition housing allowance books fees and supplies. 
+																	Veterans who have opted to receive the Montgomery GI Bill may use those benefits for vocational training as well. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Using the GI Bill to earn your PPL Private Pilots License is a new legislative development. 
+																	When it comes to pilot training the issues regarding Veterans Benefits under either the Post 9 11 GI Bill can be complicated and confusing. 
+																	Flight training is not available under. 
+																	If using the Montgomery GI Bill Active Duty it pays a full-time student up to 185700 per month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can use your GI Bill benefits in many ways including paying for college or graduate tuition funding your training for a specific trade or job or to start your own business paying for fees to take licensing tests and more. 
+																	Qualify for the Post-911 GI Bill or Montgomery GI Bill and Have a private pilots license and Have a second-class medical certificate valid for second-class privilegesor a first-class medical certificate if you want to pursue the Airline Transport Pilot ATP certificate. 
+																	Qualify for the Post-911 GI Bill or Montgomery GI Bill and Have a private pilots license and Have a second-class medical certificate valid for second-class privilegesor a first-class medical certificate if you want to pursue the Airline Transport Pilot ATP certificate. 
+																	So two years to be a CFI and then build up hours as a CFI for another year or so before a regional would hire you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Therefore the first level of pilot certification the private pilot license is not covered by the GI Bill. 
+																	Attend a public university flight program for 100 tuition coverage. 
+																	If going for a rating such as dual engine or instrument the Post 911 GI Bill will pay up to 1255454 per year towards this type of flight training. 
+																	The purpose of the GI Bill for flight training is to allow a veteran to have an aviation career. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA is very clear that the GI Bill benefits are only to be utilized in support of education and training that leads to a paying job. 
+																	If using the Montgomery GI Bill AD for either a degree or rating certification entitlement use is the same one month of entitlement reduction for every 1789 paid out. 
+																	The GI Bill is an excellent way to earn your helicopter pilots license. 
+																	First of all your Chapter 30 GI Bill benefits do not cover any expenses at any flight training school for your private pilot license the initial step toward a helicopter pilot career. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you want to use the GI Bill to get commercial flight certification you must already have a private pilots license. 
+																	That changed last year when the House of Representatives gave the go-ahead. 
+																	Ultimate Guide and the secret fast-track If you are looking to use the GI Bill to pay for flight training we break down in detail the 3 options available and the pros and cons of each. 
+																	Getting a pilots license involves taking classes and completing a specific number of flying hours with a licensed pilot or aviation school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Using this GI Bill for flight training entitlement is charged at the rate of one month used for each 185700 paid out meaning vocational flight training can burn up 36 months of GI Bill entitlement much faster than in 36 months. 
+																	Find out how to use GI Bill benefits to advance your education and training. 
+																	Youve earned your benefits. 
+																	Until recently aspiring pilots were unable to do so. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Post 911 GI Bill will cover all of flight school IF it is through a school that offers a if as a degree more bang for your buck versus vocational flight school. 
+																	GI Bill benefits may not be used for any portion of training for the Private Pilot Certificate because obtaining that certification alone does not allow pilots to earn money. 
+																	The cost of the license varies by location and type and under some conditions the GI bill will help veterans pay the tuition and training. 
+																	You also can use the Montgomery GI Bill and the Post-911 GI Bill for an aircraft dispatcher rating provided you enroll in an approved program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Flight Training Using the Montgomery GI Bill If you are training under the Montgomery GI Bill the VA will reimburse you for 60 of the approved charges. 
+																	You arent eligible to participate in this program if you already have your. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.apnaahangout.com/wp-content/uploads/2015/01/aircraft1.jpg" data-lightbox="roadtrip" data-title="Become A Commercial Pilot At Less Cost And Fees In India Apnaahangout">
+											<img class="card-img v-image ads-img " src="https://www.apnaahangout.com/wp-content/uploads/2015/01/aircraft1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-tSP2mLl6R23vcT3H_2eQIxJu70Ww35iwKQ';" alt="Become A Commercial Pilot At Less Cost And Fees In India Apnaahangout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Become A Commercial Pilot At Less Cost And Fees In India Apnaahangout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/Folding-the-Wings-US-Navy-photo-720x300.png" data-lightbox="roadtrip" data-title="Using The Gi Bill To Become An Airline Pilot Clearancejobs">
+											<img class="card-img v-image ads-img " src="https://4d0q7u11k31p1qnkosal8q2e-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/Folding-the-Wings-US-Navy-photo-720x300.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlaWAM-dhe8aduKg8X_oFRj_j4QcjBwVtqyg';" alt="Using The Gi Bill To Become An Airline Pilot Clearancejobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Using The Gi Bill To Become An Airline Pilot Clearancejobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usaeroflight.net/wp-content/uploads/2017/02/Female-soldier.jpg" data-lightbox="roadtrip" data-title="Using The Gi Bill Flight Training Benefit You Earned It Usaeroflight">
+											<img class="card-img v-image ads-img " src="https://usaeroflight.net/wp-content/uploads/2017/02/Female-soldier.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPznu041tKW40k9KTraWDwF9HfzEp7kL6hQ';" alt="Using The Gi Bill Flight Training Benefit You Earned It Usaeroflight">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Using The Gi Bill Flight Training Benefit You Earned It Usaeroflight</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aviationschoolsonline.com/img/search/articles/10-ways-to-finance-flight-school.jpg" data-lightbox="roadtrip" data-title="Flight Training Financing 10 Ways To Get Money For Pilot Training Aviation Schools Online">
+											<img class="card-img v-image ads-img " src="https://www.aviationschoolsonline.com/img/search/articles/10-ways-to-finance-flight-school.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA4sYyqeqFiMUNV3ckYRA8_WBEHURuVMpReg';" alt="Flight Training Financing 10 Ways To Get Money For Pilot Training Aviation Schools Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flight Training Financing 10 Ways To Get Money For Pilot Training Aviation Schools Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://proaviationtips.com/wp-content/uploads/2019/09/Depositphotos_301571700_l-2015-449x300.jpg" data-lightbox="roadtrip" data-title="Is Becoming A Pilot Worth The Cost">
+											<img class="card-img v-image ads-img " src="https://proaviationtips.com/wp-content/uploads/2019/09/Depositphotos_301571700_l-2015-449x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwATn-lE16BzB_4fQQkgMAwcf3uT1QKOmMqw';" alt="Is Becoming A Pilot Worth The Cost">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is Becoming A Pilot Worth The Cost</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.flightsafety.com/wp-content/uploads/2020/04/pilot-training.jpg" data-lightbox="roadtrip" data-title="Business Corporate Private And Commercial Pilot Training">
+											<img class="card-img v-image ads-img " src="https://www.flightsafety.com/wp-content/uploads/2020/04/pilot-training.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEjTimS3hkq2bklwzFbj44TkvwKPyq7v-YMw';" alt="Business Corporate Private And Commercial Pilot Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Business Corporate Private And Commercial Pilot Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://atpflightschool.com/img/section/erj-175-archer-seminole.jpg" data-lightbox="roadtrip" data-title="How Much To Become A Pilot In 2021 Total Cost How To Pay Atp Flight School">
+											<img class="card-img v-image ads-img " src="https://atpflightschool.com/img/section/erj-175-archer-seminole.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKYnOZQKayB1cWFXCu_-5cItW6OiKf7AZYxg';" alt="How Much To Become A Pilot In 2021 Total Cost How To Pay Atp Flight School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much To Become A Pilot In 2021 Total Cost How To Pay Atp Flight School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://atpflightschool.com/img/section/two-envoy-pilots-talking-in-cockpit.jpg" data-lightbox="roadtrip" data-title="Flight Training Policies Atp Flight School">
+											<img class="card-img v-image ads-img " src="https://atpflightschool.com/img/section/two-envoy-pilots-talking-in-cockpit.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Rp0O7H1UOetyBAx5GcxEEzRoq7HuOXNadA';" alt="Flight Training Policies Atp Flight School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flight Training Policies Atp Flight School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/QxOxHV9WgQc/maxresdefault.jpg" data-lightbox="roadtrip" data-title="How To Pay For Flight Training Flight School Pilot Loan Funding Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/QxOxHV9WgQc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWJ-fV4ems8u3GDgmsUqRepfQJyVtycrOtZQ';" alt="How To Pay For Flight Training Flight School Pilot Loan Funding Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Pay For Flight Training Flight School Pilot Loan Funding Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cae.com/images/made/2b07b8ed497d7328/intro-box-initial-type-rating-2048x1548_1200_630_s_c1.jpg" data-lightbox="roadtrip" data-title="Type Rating Training Course Cae">
+											<img class="card-img v-image ads-img " src="https://www.cae.com/images/made/2b07b8ed497d7328/intro-box-initial-type-rating-2048x1548_1200_630_s_c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROoPa2k4BgCqrncaYGklEbXwKLiffVwEYfNA';" alt="Type Rating Training Course Cae">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Type Rating Training Course Cae</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/a7/8c/1ea78c3cb5eaacbd80504c608b833c49.jpg" data-lightbox="roadtrip" data-title="Pin By Island Of Crafts On Arts And Crafts Vintage Aircraft Wwii Fighter Pilot Nose Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/a7/8c/1ea78c3cb5eaacbd80504c608b833c49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm295PClRBsPRlEzxa2vfWZoLfvI3C-tTnFQ';" alt="Pin By Island Of Crafts On Arts And Crafts Vintage Aircraft Wwii Fighter Pilot Nose Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Island Of Crafts On Arts And Crafts Vintage Aircraft Wwii Fighter Pilot Nose Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://atpflightschool.com/img/thumbnails/pilot-career-guide-pdf-spread-thumbnail.png" data-lightbox="roadtrip" data-title="Use Of The Gi Bill For Flight Training Atp Flight School">
+											<img class="card-img v-image ads-img " src="https://atpflightschool.com/img/thumbnails/pilot-career-guide-pdf-spread-thumbnail.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqG5FOqkmj6YT_N081vmz2ubxkLA99697nJA';" alt="Use Of The Gi Bill For Flight Training Atp Flight School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use Of The Gi Bill For Flight Training Atp Flight School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/b5/2f/b3b52f9b2ee783e20cf7bbf36c7e453e.jpg" data-lightbox="roadtrip" data-title="Topgun Instructor Trades Fighter Jets To Fulfill Dream Of Becoming A Physician Media Relations Becoming A Pilot Fighter Jets Media Relations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/b5/2f/b3b52f9b2ee783e20cf7bbf36c7e453e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXpDJIJ5PTsUfasqxiHFgNqwTWCqyfAiKUew';" alt="Topgun Instructor Trades Fighter Jets To Fulfill Dream Of Becoming A Physician Media Relations Becoming A Pilot Fighter Jets Media Relations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Topgun Instructor Trades Fighter Jets To Fulfill Dream Of Becoming A Physician Media Relations Becoming A Pilot Fighter Jets Media Relations</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/college-essay-guy-common-app.html">College Essay Guy Common App</a></li>
+													<li class="list-group-item"><a href="/college-club-gymnastics-rankings.html">College Club Gymnastics Rankings</a></li>
+													<li class="list-group-item"><a href="/college-de-secteur-de-giberville.html">College De Secteur De Giberville</a></li>
+													<li class="list-group-item"><a href="/college-board-giving-out-gift-cards.html">College Board Giving Out Gift Cards</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-list-of-verbs.html">College Essay Guy List Of Verbs</a></li>
+													<li class="list-group-item"><a href="/college-design-gifts.html">College Design Gifts</a></li>
+													<li class="list-group-item"><a href="/college-care-package-gift-ideas.html">College Care Package Gift Ideas</a></li>
+													<li class="list-group-item"><a href="/college-birthday-gift-ideas.html">College Birthday Gift Ideas</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-100-questions.html">College Essay Guy 100 Questions</a></li>
+													<li class="list-group-item"><a href="/college-bowl-gifts-2020.html">College Bowl Gifts 2020</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-michigan.html">College Essay Guy Michigan</a></li>
+													<li class="list-group-item"><a href="/college-christmas-gift-ideas.html">College Christmas Gift Ideas</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-georgia-tech.html">College Essay Guy Georgia Tech</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-email.html">College Essay Guy Email</a></li>
+													<li class="list-group-item"><a href="/college-birthday-gifts-for-her.html">College Birthday Gifts For Her</a></li>
+													<li class="list-group-item"><a href="/college-bowl-gift-bags-2019.html">College Bowl Gift Bags 2019</a></li>
+													<li class="list-group-item"><a href="/college-daughter-christmas-gifts.html">College Daughter Christmas Gifts</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-mit.html">College Essay Guy Mit</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-covid.html">College Essay Guy Covid</a></li>
+													<li class="list-group-item"><a href="/college-essay-guy-essays-that-worked.html">College Essay Guy Essays That Worked</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

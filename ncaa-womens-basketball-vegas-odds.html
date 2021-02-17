@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Womens Basketball Vegas Odds - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Womens Basketball Vegas Odds",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/736x/12/45/54/1245546e56117063ffcb47ee8b223ea7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+womens+basketball+vegas+odds",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Womens Basketball Vegas Odds</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">To view Line Movement History click on Open or VI Consensus odds. 0205 200 PM 833 North Dakota 834 Denver -2 -10 143u-10 -2 -10 -2 -10 -2 -10 143u-10 -2 -10 143u-10 0205 300 PM 835 Southern Miss 836 Rice. College Womens Basketball Odds NCAAWB Betting 2021 NCAA Basketball Lines. <br>				
+			</p>
+										<a class="badge badge-light" href="/ursuline-college-womens-basketball-schedule.html">ursuline college womens basketball schedule</a>
+											<a class="badge badge-primary" href="/us-military-gi-bill.html">us military gi bill</a>
+											<a class="badge badge-danger" href="/tyler-junior-college-womens-basketball-schedule.html">tyler junior college womens basketball schedule</a>
+											<a class="badge badge-info" href="/ucla-gi-bill-reddit.html">ucla gi bill reddit</a>
+											<a class="badge badge-dark" href="/us-gi-bill-benefits.html">us gi bill benefits</a>
+											<a class="badge badge-success" href="/transferring-your-gi-bill-to-dependents.html">transferring your gi bill to dependents</a>
+											<a class="badge badge-dark" href="/university-go-for.html">university go for</a>
+											<a class="badge badge-secondary" href="/usa-todayespn-top-25-womens-college-basketball-poll.html">usa todayespn top 25 womens college basketball poll</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the right site.  Our website provides you with hints for viewing the maximum quality video and image content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/34/ed/2534edea4a8c4c1c87e2a32258231ede.jpg" data-lightbox="roadtrip" data-title="Bracketology Expert Charlie Creme Says Odds Favor Uconn Espn Video Uconn Espn Charlie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/34/ed/2534edea4a8c4c1c87e2a32258231ede.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGVPH4DX8eb_-V4ncbWa3X1uqMdrHhdv6-cA';" alt="Bracketology Expert Charlie Creme Says Odds Favor Uconn Espn Video Uconn Espn Charlie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bracketology Expert Charlie Creme Says Odds Favor Uconn Espn Video Uconn Espn Charlie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/28/32/5a28326c411bd9b37cf14445d1cf6b38.jpg" data-lightbox="roadtrip" data-title="Dallas Wings Vs Indiana Fever Las Vegas Odds Wnba Sports Betting Picks And Predictions Sports Sports Betting Wnba">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/28/32/5a28326c411bd9b37cf14445d1cf6b38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx4srAFfDjOa6BzI6FnlyDO0KDFuVFx0sIYg';" alt="Dallas Wings Vs Indiana Fever Las Vegas Odds Wnba Sports Betting Picks And Predictions Sports Sports Betting Wnba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dallas Wings Vs Indiana Fever Las Vegas Odds Wnba Sports Betting Picks And Predictions Sports Sports Betting Wnba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e1/f6/20/e1f6201de0da65c6aeb2892c3ba6498f.jpg" data-lightbox="roadtrip" data-title="Pin On Sports Ncaa Southeastern Conference">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e1/f6/20/e1f6201de0da65c6aeb2892c3ba6498f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzsOr7iHzSlvnEbjQj0ZG-lcYnTPHte6mLwA';" alt="Pin On Sports Ncaa Southeastern Conference">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sports Ncaa Southeastern Conference</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0d/75/77/0d7577b8911efe5091bd0b81baf7750b.jpg" data-lightbox="roadtrip" data-title="Pin On College Basketball Free Picks Every Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0d/75/77/0d7577b8911efe5091bd0b81baf7750b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4cJv01iiEJi-VURhwnhmjgM4QpRv9lowkmw';" alt="Pin On College Basketball Free Picks Every Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Basketball Free Picks Every Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0e/c8/37/0ec837ec8eb5ce187b37406c2f2b1ec5.jpg" data-lightbox="roadtrip" data-title="Pin On College Basketball Free Picks Every Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0e/c8/37/0ec837ec8eb5ce187b37406c2f2b1ec5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJAXGnkdA8mCyxZLVjhMN2KdGKmmytEJ4t0g';" alt="Pin On College Basketball Free Picks Every Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Basketball Free Picks Every Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/12/45/54/1245546e56117063ffcb47ee8b223ea7.jpg" data-lightbox="roadtrip" data-title="Pin On College Basketball Free Picks Every Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/12/45/54/1245546e56117063ffcb47ee8b223ea7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyPBIDGdKA6B11JkP7ob5e4QcbcoogvsRAuw';" alt="Pin On College Basketball Free Picks Every Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Basketball Free Picks Every Game</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/0d/75/77/0d7577b8911efe5091bd0b81baf7750b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyPBIDGdKA6B11JkP7ob5e4QcbcoogvsRAuw';" alt="Pin On College Basketball Free Picks Every Game">
+										<div class="card-body">
+						<h3 class="h5"><b>NCAA college basketball odds point spreads and betting lines ATS over under money lines updated multiple times daily.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa womens basketball vegas odds</strong>. 
+								
+																	NCAAB February 4 2021 Annie Adkins. 
+																	Betting Odds Lines Totals Need help. 
+																	04 February 2021 - Compare and find the best College Basketball spreads and lines anywhere on the internet. 
+																	Get the latest NCAA basketball odds picks streams and predictions for every game to bet on with these college basketball betting sites. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	250 Sign Up Bonus Claim. 
+																	Need a Sportsbook to place your NCAA March Madness Basketball Bet. 
+																	5Dimes live Odds for College Women Basketball. 
+																	You can find anything from total and handicap bets to half-time-bets on a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NCAA Womens College Basketball Las Vegas Odds NCAA Womens College Basketball Game Odds. 
+																	2021 NCAA Tournament title odds. 
+																	Winning six games in. 
+																	The NCAA Womens Division I Basketball Tournament since it was first inaugurated in 1981 it has become an annual event and this year the 2019 NCAA Division I Womens Basketball Tournament started March 22nd and will conclude with the National Semifinals and Championship Final Four and Championship on April 5th-7th at Amalie Arena in Tampa Florida. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These are the college basketball odds today. 
+																	Either there are no odds open to bet on or the sport is not in season at this time. 
+																	Under 1195 -110 Bet on the The NCAA Womens College Basketball Odds at Bovada Sportsbook. 
+																	2024 US Election Odds Receive a 50 Welcome Bonus up to 250. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Home Live Lines Basketball Live Lines NCAA Basketball Womens. 
+																	NCAA Womens Basketball betting odds. 
+																	College Basketball Odds - Live College Basketball Betting Lines. 
+																	College Womens Basketball Odds NCAAWB Betting 2021 NCAA Basketball Lines. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College Basketball Vegas Odds. 
+																	Get Womens Basketball rankings news schedules and championship brackets. 
+																	NCAA basketball betting for US college basketball. 
+																	NCAA Basketball Betting Odds What. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Odds on the NCAA Womens College. 
+																	2020-21 NCAA College Basketball Menu 2021 NCAA Mens Basketball Championship ACC Big 12 Big East Big Ten Pac-12 SEC ATL-10 AAC MWC WCC Teams To Make Final 4 Coach of the Year Defensive Player of the Year John R. 
+																	For the NCAAB odd sharks out there be sure to check back daily or bookmark this page stay ahead of NCAAB Las Vegas odds throughout the year. 
+																	Welcome to 5Dimes Sportsbook Odds the unique gaming experience. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Opening Line on the College Basketball Las Vegas Odds is a must-stop resources for the 2020 NCAA Tournament which begins on Tuesday March 17. 
+																	There are currently no lines available for this sport. 
+																	Las Vegas Odds Global Odds Future Odds Line Originators More Odds. 
+																	1000 Risk Free Bet Claim. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College Basketball Las Vegas Odds. 
+																	The chances of finding and comparing womens college basketball odds are quite high particularly if you are following the right bookmaker scores to win. 
+																	There isnt anything quite like the NCAA Tournament in all of sports. 
+																	Friday February 5 2021 553am ET NFL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This isnt just one game and it is not just one moment. 
+																	All available pre-match and live odds including lines spreads and totals all season up to March Madness. 
+																	Gonzaga Texas among best bets A look at some fun favorites to ride sleepers to watch and some long shots to sprinkle some dough on. 
+																	Here are the latest Las Vegas NCAA basketball odds these NCAAB odds are updated several times throughout day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bet on Womens NCAA Basketball at Sports Interaction with online sports betting on Womens NCAA odds picks lines and point spreads. 
+																	It is 67 heart-stopping games that will ultimately decide who will ultimately reach the summit and hoist a National Championship. 
+																	Play Risk Free Up To 100 Claim. 
+																	Las Vegas Sports Betting provide live daily NCAA Basketball Odds located below those lines are constantly updated throughout the day all best Basketball Odds Betting Lines for College Basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can check back soon or bet on any of the online sportsbook lines and betting odds listed below. 
+																	Play Risk Free Up To 500 Claim. 
+																	NCAA Basketball Womens Odds - Basketball Betting. 
+																	The NCAA Womens Basketball DI official home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prior to the First Four action in the tournament Selection Sunday takes place two days earlier and after the field of 68 is announced the oddsmakers start populating betting odds on the opening matchups. 
+																	As a comparison the NCAA womens basketball odds provide the same bets that you would normally find at the NBA betting. 
+																	Wooden Award Naismith Player of the Year. 
+																	Spread Money Line 1st Half. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Page 1 Page 2 NCAA BASKETBALL SPREAD. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cb/00/da/cb00da8fa46471b7fd132ce3955d4ca3.jpg" data-lightbox="roadtrip" data-title="Pin On College Basketball Free Picks Every Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cb/00/da/cb00da8fa46471b7fd132ce3955d4ca3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Jn9CKAA5trCe070Qt1CfQT2IPVWFp4NhuA';" alt="Pin On College Basketball Free Picks Every Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Basketball Free Picks Every Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/42/10/ed4210cb0b255a2fce6b395e6c946b99.jpg" data-lightbox="roadtrip" data-title="Complete Women S 2nd Round Schedule For Monday Uconn Uconn Womens Basketball Ncaa Tournament">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/42/10/ed4210cb0b255a2fce6b395e6c946b99.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaQCbT0ugq3gXF34fx04a4WV7DYr3bBi_alg';" alt="Complete Women S 2nd Round Schedule For Monday Uconn Uconn Womens Basketball Ncaa Tournament">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Complete Women S 2nd Round Schedule For Monday Uconn Uconn Womens Basketball Ncaa Tournament</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/c1/3c/80c13c6e43058e37697624eae995aaf7.jpg" data-lightbox="roadtrip" data-title="Chicago Sky Vs Atlanta Dream Wnba Las Vegas Odds Sports Betting Picks And Predictions Wnba Sports Illustrated Kids Chicago Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/c1/3c/80c13c6e43058e37697624eae995aaf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4jAVPOeC-mlzmcgviWOrPEMofQLMBHIibIw';" alt="Chicago Sky Vs Atlanta Dream Wnba Las Vegas Odds Sports Betting Picks And Predictions Wnba Sports Illustrated Kids Chicago Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chicago Sky Vs Atlanta Dream Wnba Las Vegas Odds Sports Betting Picks And Predictions Wnba Sports Illustrated Kids Chicago Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/22/1a/b0221ab1b49a6be131c36e371544e254.png" data-lightbox="roadtrip" data-title="Pin By Damien Beaumier On Sports Teams New England Chicago Tampa Bay Wnba Las Vegas Connecticut">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/22/1a/b0221ab1b49a6be131c36e371544e254.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3xWxMRH1MOPiexcAjxwmVhtCSB-UnVzvd0w';" alt="Pin By Damien Beaumier On Sports Teams New England Chicago Tampa Bay Wnba Las Vegas Connecticut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Damien Beaumier On Sports Teams New England Chicago Tampa Bay Wnba Las Vegas Connecticut</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e6/37/68/e63768cdc89737af8b1db306b651b85f.jpg" data-lightbox="roadtrip" data-title="Pin On College Basketball Free Picks Every Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e6/37/68/e63768cdc89737af8b1db306b651b85f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-9N9B2zS3nncGbP1am8dKrSoZohYd34P_A';" alt="Pin On College Basketball Free Picks Every Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Basketball Free Picks Every Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fb/99/9b/fb999b5a7c85d404e8f1770f9ef6513a.jpg" data-lightbox="roadtrip" data-title="Pin On College Basketball Free Picks Every Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fb/99/9b/fb999b5a7c85d404e8f1770f9ef6513a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnvdGUJ-34FNLMIeB1vY8vuuCSyYIyPpvmnQ';" alt="Pin On College Basketball Free Picks Every Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Basketball Free Picks Every Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/42/a7/1f42a7354a170ae0d244effa3159404a.jpg" data-lightbox="roadtrip" data-title="Maya Moore Photos Photos Atlanta Dream V Minnesota Lynx Game One Wnba Basketball Girls Minnesota">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/42/a7/1f42a7354a170ae0d244effa3159404a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIF4hXOwUKZLmfGr9KvQnwL8B4QZLP-5gzEA';" alt="Maya Moore Photos Photos Atlanta Dream V Minnesota Lynx Game One Wnba Basketball Girls Minnesota">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maya Moore Photos Photos Atlanta Dream V Minnesota Lynx Game One Wnba Basketball Girls Minnesota</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/65/88/67/6588676206ab0e31d798fef5314991ed.jpg" data-lightbox="roadtrip" data-title="Pin On College Basketball Free Picks Every Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/65/88/67/6588676206ab0e31d798fef5314991ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-N66TAxbPuFnvv7fRX9sYsCkuKR4Hz9k-WA';" alt="Pin On College Basketball Free Picks Every Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Basketball Free Picks Every Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/36/ab/06/36ab06f18354fc406c00a195c3ce623d.jpg" data-lightbox="roadtrip" data-title="James Madison Vs Towson 2 15 20 College Basketball Pick Odds And Prediction In 2020 College Basketball Teams College Basketball Shirts College Basketball Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/36/ab/06/36ab06f18354fc406c00a195c3ce623d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyOtAvKEM7EGieJKZsAk6vlwXVRrSKPlLzAA';" alt="James Madison Vs Towson 2 15 20 College Basketball Pick Odds And Prediction In 2020 College Basketball Teams College Basketball Shirts College Basketball Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">James Madison Vs Towson 2 15 20 College Basketball Pick Odds And Prediction In 2020 College Basketball Teams College Basketball Shirts College Basketball Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/0d/c9/a20dc9599264ef24c7144c0bfdf82edb.jpg" data-lightbox="roadtrip" data-title="Michigan State Vs Michigan Ncaa Basketball Odds Sports Betting Pick And Prediction Ncaa Basketball Basketball Sports Betting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/0d/c9/a20dc9599264ef24c7144c0bfdf82edb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIuwCHMBxI85hAosJGqz5e876Cm6dMOgUC5Q';" alt="Michigan State Vs Michigan Ncaa Basketball Odds Sports Betting Pick And Prediction Ncaa Basketball Basketball Sports Betting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michigan State Vs Michigan Ncaa Basketball Odds Sports Betting Pick And Prediction Ncaa Basketball Basketball Sports Betting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d8/4e/80/d84e80ea4f4a63980885e735077000f8--wvu-basketball-virginia-basketball.jpg" data-lightbox="roadtrip" data-title="Manhattan Jaspers Vs West Virginia Mountaineers College Basketball Odds Las Vegas Betting Picks And Prediction West Virginia Basketball College Basketball West Virginia Basketball Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d8/4e/80/d84e80ea4f4a63980885e735077000f8--wvu-basketball-virginia-basketball.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1spfBxRXfMaY8G66sYbFj0PyaqyGz9Yk8Eg';" alt="Manhattan Jaspers Vs West Virginia Mountaineers College Basketball Odds Las Vegas Betting Picks And Prediction West Virginia Basketball College Basketball West Virginia Basketball Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Manhattan Jaspers Vs West Virginia Mountaineers College Basketball Odds Las Vegas Betting Picks And Prediction West Virginia Basketball College Basketball West Virginia Basketball Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/c4/02/fdc4027f973ba9fec90106e874bef8ac.jpg" data-lightbox="roadtrip" data-title="Unc Wilmington Vs William Mary Ncaa Odds College Basketball Betting Pick And Prediction College Basketball Wilmington Ncaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/c4/02/fdc4027f973ba9fec90106e874bef8ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8a6FMxz71GpolYmSRb5QdoK8W-cvqwmi4Pw';" alt="Unc Wilmington Vs William Mary Ncaa Odds College Basketball Betting Pick And Prediction College Basketball Wilmington Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unc Wilmington Vs William Mary Ncaa Odds College Basketball Betting Pick And Prediction College Basketball Wilmington Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0c/7a/10/0c7a102df1582c39d2bed6102b93d2e2.jpg" data-lightbox="roadtrip" data-title="Pin On College Basketball Free Picks Every Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0c/7a/10/0c7a102df1582c39d2bed6102b93d2e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBY_2X05WfnUzRB0fQbfbk9zsTooVVWnOA9w';" alt="Pin On College Basketball Free Picks Every Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Basketball Free Picks Every Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/air-force-girls.html">Air Force Girls</a></li>
+													<li class="list-group-item"><a href="/911-gi-bill-schools.html">911 Gi Bill Schools</a></li>
+													<li class="list-group-item"><a href="/9-gigs-of-ram.html">9 Gigs Of Ram</a></li>
+													<li class="list-group-item"><a href="/911-gi-bill-housing-allowance-calculator.html">911 Gi Bill Housing Allowance Calculator</a></li>
+													<li class="list-group-item"><a href="/911-gi-bill-bah-requirements.html">911 Gi Bill Bah Requirements</a></li>
+													<li class="list-group-item"><a href="/acc-womens-college-basketball-rankings.html">Acc Womens College Basketball Rankings</a></li>
+													<li class="list-group-item"><a href="/911-post-gi-bill-transfer.html">911 Post Gi Bill Transfer</a></li>
+													<li class="list-group-item"><a href="/air-force-how-to-transfer-gi-bill.html">Air Force How To Transfer Gi Bill</a></li>
+													<li class="list-group-item"><a href="/acc-womens-college-basketball-scores.html">Acc Womens College Basketball Scores</a></li>
+													<li class="list-group-item"><a href="/air-force-gittigidiyor.html">Air Force Gittigidiyor</a></li>
+													<li class="list-group-item"><a href="/air-force-reserve-gi-bill.html">Air Force Reserve Gi Bill</a></li>
+													<li class="list-group-item"><a href="/9-giganti.html">9 Giganti</a></li>
+													<li class="list-group-item"><a href="/air-force-nghia-gi.html">Air Force Nghia Gi</a></li>
+													<li class="list-group-item"><a href="/acc-womens-college-basketball-standings.html">Acc Womens College Basketball Standings</a></li>
+													<li class="list-group-item"><a href="/ac-nice-college-guy-de-maupassant.html">Ac Nice College Guy De Maupassant</a></li>
+													<li class="list-group-item"><a href="/9-gifts-from-god.html">9 Gifts From God</a></li>
+													<li class="list-group-item"><a href="/age-limit-for-gi-bill-for-dependents.html">Age Limit For Gi Bill For Dependents</a></li>
+													<li class="list-group-item"><a href="/air-force-gift-shop.html">Air Force Gift Shop</a></li>
+													<li class="list-group-item"><a href="/air-force-gi-bill-afi.html">Air Force Gi Bill Afi</a></li>
+													<li class="list-group-item"><a href="/9-giga.html">9 Giga</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

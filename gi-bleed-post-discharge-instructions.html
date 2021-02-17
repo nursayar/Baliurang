@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gi Bleed Post Discharge Instructions - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gi Bleed Post Discharge Instructions",
+  "datePublished": "2021-02-17",
+  "image": "https://www.nursingcenter.com/wkhlrp/handlers/Cv.png?key=cv_00001610-200711000-00000",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gi+bleed+post+discharge+instructions",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gi Bleed Post Discharge Instructions</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The most important causes are peptic ulcer and oesophago-gastric varices. Your Care Instructions The digestive or gastrointestinal tract goes from the mouth to the anus. If you have had bleeding from peptic ulcers or gastritis you can help prevent GI bleeding by avoiding alcoholic drinks and smoking. <br>				
+			</p>
+										<a class="badge badge-warning" href="/benefits-of-norland-gi-vital-softgel.html">benefits of norland gi vital softgel</a>
+											<a class="badge badge-primary" href="/benefits-of-qigong.html">benefits of qigong</a>
+											<a class="badge badge-secondary" href="/berry-college-womens-basketball-coach.html">berry college womens basketball coach</a>
+											<a class="badge badge-dark" href="/best-college-christmas-gifts-2020.html">best college christmas gifts 2020</a>
+											<a class="badge badge-success" href="/benefits-of-the-digestive-tract.html">benefits of the digestive tract</a>
+											<a class="badge badge-danger" href="/best-amazon-gifts-for-college-guys.html">best amazon gifts for college guys</a>
+											<a class="badge badge-danger" href="/benefits-of-high-gi-foods.html">benefits of high gi foods</a>
+											<a class="badge badge-secondary" href="/benefits-of-gym-for-males.html">benefits of gym for males</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to pay a visit to the ideal blog.  Our website gives you hints for viewing the highest quality video and picture content, search and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie that you see.  It is also possible to bring about supporting this site by sharing videos and images that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/4e/92/3c4e92ef82e8a39472f8176ed48899f9.jpg" data-lightbox="roadtrip" data-title="Pin On Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/4e/92/3c4e92ef82e8a39472f8176ed48899f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8KWl4df0iY32_Px6q2J-ItN1vmLbMHPuBtA';" alt="Pin On Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/d6/f0/fed6f0571e6d4f8d6541ff05fe181658.jpg" data-lightbox="roadtrip" data-title="Pin On Health Healthcare">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/d6/f0/fed6f0571e6d4f8d6541ff05fe181658.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJVGxXBsK5tMHCw2KKDzc-YYbFB5bhXYowA';" alt="Pin On Health Healthcare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Healthcare</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/47/e0/e547e0b236e3c3080d989b86d14328f6.png" data-lightbox="roadtrip" data-title="Pin On Browsegrades Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/47/e0/e547e0b236e3c3080d989b86d14328f6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJy5GY-oVgY13aEa6B3kj6MtXB1hfxzGiTZw';" alt="Pin On Browsegrades Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Browsegrades Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/28/f9/6928f91bdc2fdeb977ead2b2bab3da00.jpg" data-lightbox="roadtrip" data-title="5d8a685740f1f0cadca3410a741a2cf9 Jpg 450 720 Pixels Nclex Nursing School Survival Nursing School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/28/f9/6928f91bdc2fdeb977ead2b2bab3da00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWBdgZyeKHZfxNjm_5AROkWwkqOZcUF_5srg';" alt="5d8a685740f1f0cadca3410a741a2cf9 Jpg 450 720 Pixels Nclex Nursing School Survival Nursing School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5d8a685740f1f0cadca3410a741a2cf9 Jpg 450 720 Pixels Nclex Nursing School Survival Nursing School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="r7YNPeE74m-g3M" data-lightbox="roadtrip" data-title="Https M Ufhealth Org Sites Default Files Media Heart Subsite Cardiac Surgery Discharge Instructions Final Pdf">
+											<img class="card-img v-image ads-img " src="r7YNPeE74m-g3M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFir7lLFmlaurEQhmxAqeSmbIob_iBeyWzfw';" alt="Https M Ufhealth Org Sites Default Files Media Heart Subsite Cardiac Surgery Discharge Instructions Final Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https M Ufhealth Org Sites Default Files Media Heart Subsite Cardiac Surgery Discharge Instructions Final Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="hpmJSNJ95h46sM" data-lightbox="roadtrip" data-title="Https Healthcare Utah Edu Gi Pdfs After Colonoscopy Discharge Intructions 2018 Pdf">
+											<img class="card-img v-image ads-img " src="hpmJSNJ95h46sM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5lwt2jwXZqkZaTJrdSanWtPAsnstO-fu0KQ';" alt="Https Healthcare Utah Edu Gi Pdfs After Colonoscopy Discharge Intructions 2018 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Healthcare Utah Edu Gi Pdfs After Colonoscopy Discharge Intructions 2018 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary:43831:20160628131305260-0466:40045fig8_4.gif?pub-status=live" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5lwt2jwXZqkZaTJrdSanWtPAsnstO-fu0KQ';" alt="Https Healthcare Utah Edu Gi Pdfs After Colonoscopy Discharge Intructions 2018 Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>Bleeding may be mild to severe.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gi bleed post discharge instructions</strong>. 
+								
+																	Mortality associated with upper GI bleeding is approximately 10 and is higher in patients with advancing age and comorbidity eg. 
+																	Your bleeding may begin suddenly or start slowly and last for a longer period of time. 
+																	Bleeding may be mild to severe. 
+																	This includes your esophagus stomach intestines rectum or anus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Start with small sips of water. 
+																	Alcohol and smoking can increase stomach acids and lead to ulcers. 
+																	A lower gastrointestinal GI hemorrhage also called lower GI bleeding or rectal bleeding is abnormal blood loss from the colon rectum or anus the opening of the rectum. 
+																	Discharge Instructions Do not eat or drink anything for 30 minutes after your test. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do not drink alcoholic beverages or smoke if you have GI bleeding. 
+																	Postdischarge bleedingrelated hospitalization after PCI was associated with subsequent death or MI hazard ratio 309. 
+																	It is often called the GI tract. 
+																	This means that it could not address many of the other clinical features that contribute to the ultimate clinical decision. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Stomach acid either from bacteria or use of anti-inflammatory. 
+																	Gastrointestinal GI bleeding may occur in any part of your digestive tract. 
+																	This includes your esophagus stomach intestines rectum or anus. 
+																	Background The GBS accurately predicts the need for intervention and death in AUGIB and a cut-off of 0 is recommended to identify patients for discharge without endoscopy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The researchers also identified additional episodes of GI bleeding using call administrative codes call logs and clinical dictations. 
+																	No conﬂ ict of interests declared Abstract Introduction. 
+																	Appropriate management of these patients is crucial to reduce morbidity and mortality. 
+																	Liver renal cardiac and in those on anticoagulants and antiplatelets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	112 Consider early discharge for patients with a pre-endoscopy Blatchford score of 0. 
+																	Objective To use an extended Glasgow-Blatchford Score GBS cut-off of 1 to aid discharge of patients presenting with acute upper gastrointestinal bleeding AUGIB from emergency departments. 
+																	A frequent clinical scenario after an acute GIB event at hospital discharge is that the GIB is controlled the patient has comorbidities and remains anaemic Hb between 7 and 10 gdL either after receiving blood transfusion or no blood at all. 
+																	Gastrointestinal bleeding are treated in hospital and the guideline therefore focuses on hospital care. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The blood may be easily seen or it may be hidden requiring testing of the bowel movements to know it. 
+																	Warfarin at hospital discharge following a GI bleed was associated with decreased risk of thrombosis and death without significant increase in recurrent GI bleed1. 
+																	For all other patients intravenous fluids as needed for resuscitation and red cell transfusion at a hemoglobin threshold of 70-80 gL are recommended. 
+																	Peptic ulcers are sores that develop on the lining of the stomach and upper portion of the small intestine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bleeding that lasts for a longer period of time is called chronic GI bleeding. 
+																	It is usually seen as blood on or in a bowel movement on the toilet tissue after wiping or in the toilet bowl water. 
+																	Introduction Risk stratification of patients with suspected UGIB using either Glasgow-Blatchford Bleeding Score or pre-endoscopy Rockall score to facilitate early safe discharge GBS 0 pre-Rockall 1 has been reported11 22 This observational study compared score utility and considered the impact of extending the range of GBS or pre-Rockall scores permitting safe discharge. 
+																	This is the most common cause of upper GI bleeding. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you can drink small sips of water easily then you may begin eating solid foods as tolerated. 
+																	The optimal pre-endoscopic endoscopic and post-endoscopic approach to and management of non-variceal and variceal AUGIB that will be of practical value to both general physicians and gastroenterologists. 
+																	Among 8137 post-PCI patients surviving to hospital discharge without in-hospital bleeding 391 48 had bleeding-related hospitalization after discharge with the highest incidence of bleeding-related hospitalizations occurring within 30 days of discharge n79 202. 
+																	Endoscopy is the primary diagnostic investigation in patients with acute upper gastrointestinal bleeding but it has not always been clear whether urgent endoscopy is cost effective as well as clinically valuable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Patients identified as being at very low risk of either needing an intervention or death can be managed as outpatients. 
+																	Your bleeding may begin suddenly or start slowly and last for a longer period of time. 
+																	The study was presented at the 2019 annual meeting of the. 
+																	Bleeding in the upper GI tract can happen anywhere from the esophagus to the first part of the small intestine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gastrointestinal bleed haemorrhage non-variceal upper gastrointestinal bleeding variceal Declaration of interests. 
+																	12 Resuscitation and initial management 121 Transfuse patients with massive bleeding with blood platelets and clotting factors in line with local protocols for managing massive bleeding. 
+																	Upper gastrointestinal bleeding UGIB is a common medical emergency with a reported mortality of 2-10. 
+																	Nonvariceal acute upper gastrointestinal bleeding AUGIB is often accompanied by postdischarge anaemia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However due to its retrospective nature it was limited by data collection through administrative databases. 
+																	Nurse navigators made phone calls to patients at 11 30 and 90 days after surgery to inquire about GI bleeding. 
+																	Bleeding that lasts for a longer period of time is called chronic GI bleeding. 
+																	It can have a number of causes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gastrointestinal GI bleeding may occur in any part of your digestive tract. 
+																	To investigate whether iron treatment can effectively treat anaemia and to compare a 3month regimen of oral iron treatment with a single administration of intravenous iron prior to discharge. 
+																	Patients present with haematemesis andor melaena. 
+																	Post-discharge medication use and any additional factors for bleeding were followed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gastrointestinal bleeding can occur either in the upper or lower gastrointestinal tract. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="NVOpCs22TOkcBM" data-lightbox="roadtrip" data-title="Http Www Med Umich Edu 1libr Radiology Removalg Gjtube Pdf">
+											<img class="card-img v-image ads-img " src="NVOpCs22TOkcBM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsyFhnhce5tPLNlTbpXenOIGMexGUnhgOG6Q';" alt="Http Www Med Umich Edu 1libr Radiology Removalg Gjtube Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Med Umich Edu 1libr Radiology Removalg Gjtube Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.drugs.com/cg/images/en3316444.jpg" data-lightbox="roadtrip" data-title="Gastrointestinal Bleeding Aftercare Instructions What You Need To Know">
+											<img class="card-img v-image ads-img " src="https://www.drugs.com/cg/images/en3316444.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWw_0Bs6rlBaz7QaRKS1fPDmPnOSeNbpv1A';" alt="Gastrointestinal Bleeding Aftercare Instructions What You Need To Know">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gastrointestinal Bleeding Aftercare Instructions What You Need To Know</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="_qdIBMLebz4aQM" data-lightbox="roadtrip" data-title="Https Www Fairfaxcolorectal Com Forms Spincterotomy Discharge Pdf">
+											<img class="card-img v-image ads-img " src="_qdIBMLebz4aQM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo0SQzIFmK3fqE7CXSvgJWxMX_-GW-ifUPCg';" alt="Https Www Fairfaxcolorectal Com Forms Spincterotomy Discharge Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Fairfaxcolorectal Com Forms Spincterotomy Discharge Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s2.studylib.net/store/data/018860933_1-89d9db7d616520d6ec50d703d6d99136-300x300.png" data-lightbox="roadtrip" data-title="Discharge Instructions Permcath Removal">
+											<img class="card-img v-image ads-img " src="https://s2.studylib.net/store/data/018860933_1-89d9db7d616520d6ec50d703d6d99136-300x300.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SA_FMg5wqbZ8UjwXfwxLWZAyuhF2Jx5iRQ';" alt="Discharge Instructions Permcath Removal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discharge Instructions Permcath Removal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/1800/1*ay_rjxaFG6TvknYHvQ2I_w.jpeg" data-lightbox="roadtrip" data-title="Contemporary Pulmonary Embolism Management Part Ii Safe Discharge Home Of Low Risk Acute Pe Patients By Rick Bukata Md Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/1800/1*ay_rjxaFG6TvknYHvQ2I_w.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIqwkIHzXQgBxjbKwfQ132PU-y0AuSnLuUw';" alt="Contemporary Pulmonary Embolism Management Part Ii Safe Discharge Home Of Low Risk Acute Pe Patients By Rick Bukata Md Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Contemporary Pulmonary Embolism Management Part Ii Safe Discharge Home Of Low Risk Acute Pe Patients By Rick Bukata Md Medium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="7GAOCO6sGZsUXM" data-lightbox="roadtrip" data-title="Http Www Rqhealth Ca Rqhr Central Files Ceac 1038 Pdf">
+											<img class="card-img v-image ads-img " src="7GAOCO6sGZsUXM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8IIFE3j1JAYYoeJHVNznklYvS-pdsvdG0ag';" alt="Http Www Rqhealth Ca Rqhr Central Files Ceac 1038 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Rqhealth Ca Rqhr Central Files Ceac 1038 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nursingcenter.com/wkhlrp/handlers/Cv.png?key=cv_00001610-200711000-00000" data-lightbox="roadtrip" data-title="Current Issues Discharge Instructions Article Nursingcenter">
+											<img class="card-img v-image ads-img " src="https://www.nursingcenter.com/wkhlrp/handlers/Cv.png?key=cv_00001610-200711000-00000" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScJBUqJ6o_gKgs-MWFhZBiih0qDMWLJvbAKA';" alt="Current Issues Discharge Instructions Article Nursingcenter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Current Issues Discharge Instructions Article Nursingcenter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="xUabdtpBRlbDJM" data-lightbox="roadtrip" data-title="Https Www Cadth Ca Media Pdf Htis April 2012 Rc0339 20 20medication 20reconciliation 20final Pdf">
+											<img class="card-img v-image ads-img " src="xUabdtpBRlbDJM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPOpoL0EpZQ7yJHr5yHsCiwO7oV_yd6I39Q';" alt="Https Www Cadth Ca Media Pdf Htis April 2012 Rc0339 20 20medication 20reconciliation 20final Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Cadth Ca Media Pdf Htis April 2012 Rc0339 20 20medication 20reconciliation 20final Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary:43831:20160628131305260-0466:40045fig8_4.gif?pub-status=live" data-lightbox="roadtrip" data-title="Nursing Considerations For Sedation Chapter 8 Moderate And Deep Sedation In Clinical Practice">
+											<img class="card-img v-image ads-img " src="https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary:43831:20160628131305260-0466:40045fig8_4.gif?pub-status=live" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6z-GGJXGFH1PqfbpLlhgn9XIrwYmnVsnQow';" alt="Nursing Considerations For Sedation Chapter 8 Moderate And Deep Sedation In Clinical Practice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nursing Considerations For Sedation Chapter 8 Moderate And Deep Sedation In Clinical Practice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/08/0c/a8080ca4e425c30bfe7eb8655b6054e5.jpg" data-lightbox="roadtrip" data-title="Pin On All Things Dogs Puppies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/08/0c/a8080ca4e425c30bfe7eb8655b6054e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9FduZeWYI2lvyqutf1PEp6AvjXN4pBeWlwA';" alt="Pin On All Things Dogs Puppies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On All Things Dogs Puppies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vcahospitals.com/-/media/vca/images/lifelearn-images-foldered/946/dog_surgical_discharge_instructions_2018-01.jpg?la=en&amp;hash=3928B20309EAF8C88B14AD61FEE0A824" data-lightbox="roadtrip" data-title="Surgical Discharge Instructions For Dogs Vca Animal Hospital">
+											<img class="card-img v-image ads-img " src="https://vcahospitals.com/-/media/vca/images/lifelearn-images-foldered/946/dog_surgical_discharge_instructions_2018-01.jpg?la=en&amp;hash=3928B20309EAF8C88B14AD61FEE0A824" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2jUVIXLFlmcVR8FC8yhwZb1rMnfajwuIOQA';" alt="Surgical Discharge Instructions For Dogs Vca Animal Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Surgical Discharge Instructions For Dogs Vca Animal Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nursingcenter.com/wkhlrp/handlers/Cv.png?key=cv_00006939-201709000-00000" data-lightbox="roadtrip" data-title="Web Based Pictograph Formatted Discharge Instructions For Low Literacy Older Adults After Hip Replacement Surgery Findings Of End User Evaluation Of The Website Article Nursingcenter">
+											<img class="card-img v-image ads-img " src="https://www.nursingcenter.com/wkhlrp/handlers/Cv.png?key=cv_00006939-201709000-00000" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbYiFi5S9UVMwfaGhLsBi1wV0IR8lpdWyA0Q';" alt="Web Based Pictograph Formatted Discharge Instructions For Low Literacy Older Adults After Hip Replacement Surgery Findings Of End User Evaluation Of The Website Article Nursingcenter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Web Based Pictograph Formatted Discharge Instructions For Low Literacy Older Adults After Hip Replacement Surgery Findings Of End User Evaluation Of The Website Article Nursingcenter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.drugs.com/cg/images/en3343344.jpg" data-lightbox="roadtrip" data-title="Upper Endoscopy Discharge Care What You Need To Know">
+											<img class="card-img v-image ads-img " src="https://www.drugs.com/cg/images/en3343344.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyrVabxYxjYW9u4O-DpEMvmqyDCVEAHCK-eA';" alt="Upper Endoscopy Discharge Care What You Need To Know">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Upper Endoscopy Discharge Care What You Need To Know</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-cap-2019.html">Gi Bill Cap 2019</a></li>
+													<li class="list-group-item"><a href="/gi-bill-changes-july-2019.html">Gi Bill Changes July 2019</a></li>
+													<li class="list-group-item"><a href="/gi-bill-book-stipend-fall-2019.html">Gi Bill Book Stipend Fall 2019</a></li>
+													<li class="list-group-item"><a href="/gi-bill-computer-certifications.html">Gi Bill Computer Certifications</a></li>
+													<li class="list-group-item"><a href="/gi-bill-certification-training.html">Gi Bill Certification Training</a></li>
+													<li class="list-group-item"><a href="/gi-bill-dependent-requirements.html">Gi Bill Dependent Requirements</a></li>
+													<li class="list-group-item"><a href="/gi-bill-change-of-program-form.html">Gi Bill Change Of Program Form</a></li>
+													<li class="list-group-item"><a href="/gi-bill-california-rates.html">Gi Bill California Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-education-calculator.html">Gi Bill Education Calculator</a></li>
+													<li class="list-group-item"><a href="/gi-bill-cap-2020.html">Gi Bill Cap 2020</a></li>
+													<li class="list-group-item"><a href="/gi-bill-cost-calculator.html">Gi Bill Cost Calculator</a></li>
+													<li class="list-group-item"><a href="/gi-bill-dependent-education-benefits.html">Gi Bill Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-education-benefits-phone-number.html">Gi Bill Education Benefits Phone Number</a></li>
+													<li class="list-group-item"><a href="/gi-bill-calculator-2019-bah.html">Gi Bill Calculator 2019 Bah</a></li>
+													<li class="list-group-item"><a href="/gi-bill-comparison-tool-2019.html">Gi Bill Comparison Tool 2019</a></li>
+													<li class="list-group-item"><a href="/gi-bill-can-be-used-for-my-spouse.html">Gi Bill Can Be Used For My Spouse</a></li>
+													<li class="list-group-item"><a href="/gi-bill-cold-war.html">Gi Bill Cold War</a></li>
+													<li class="list-group-item"><a href="/gi-bill-chapter-35-payment-rates.html">Gi Bill Chapter 35 Payment Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-compensation-rates.html">Gi Bill Compensation Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-calculator-bah-2019.html">Gi Bill Calculator Bah 2019</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

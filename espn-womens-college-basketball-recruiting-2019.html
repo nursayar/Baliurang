@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Espn Womens College Basketball Recruiting 2019 - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Espn Womens College Basketball Recruiting 2019",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/01/99/0d/01990df6acea5d702e82594dd5a54777.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=espn+womens+college+basketball+recruiting+2019",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Espn Womens College Basketball Recruiting 2019</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Get expert analysis on who has boosted their programs at espnW HoopGurlz. If the Owls can find some 3-point shooting to balance Erica Ogwumike. Where do the nation basketball recruits rank. <br>				
+			</p>
+										<a class="badge badge-primary" href="/using-your-gi-bill-after-retirement.html">using your gi bill after retirement</a>
+											<a class="badge badge-success" href="/utah-army-national-guard-agr-jobs.html">utah army national guard agr jobs</a>
+											<a class="badge badge-success" href="/using-post-911-gi-bill-while-active-duty.html">using post 911 gi bill while active duty</a>
+											<a class="badge badge-primary" href="/usmc-gi-bill-requirements.html">usmc gi bill requirements</a>
+											<a class="badge badge-danger" href="/using-montgomery-gi-bill-for-flight-training.html">using montgomery gi bill for flight training</a>
+											<a class="badge badge-dark" href="/using-gi-bill-for-business-loan.html">using gi bill for business loan</a>
+											<a class="badge badge-primary" href="/use-gi-bill-overseas.html">use gi bill overseas</a>
+											<a class="badge badge-info" href="/using-gi-bill-while-in-national-guard.html">using gi bill while in national guard</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to visit the right blog.  Our website provides you with hints for seeing the maximum quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5c/d2/36/5cd236be2373dca774e5744bd1734834.jpg" data-lightbox="roadtrip" data-title="Soccer Sportscenter Espn Sportscenter Espn Font Espn Women Espn Outfit Maria Taylor Espn Espn Magazine Cover In 2020 Espn Body Womens Basketball Espn Magazine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5c/d2/36/5cd236be2373dca774e5744bd1734834.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyHWYNzAGUXU3tXu2krFLuKSCWhW2Cqmea6EJl7pGX_ixhfKX-TaVDWeKeHX8Lk7iAyC9Ffg&amp;ec=45771803';" alt="Soccer Sportscenter Espn Sportscenter Espn Font Espn Women Espn Outfit Maria Taylor Espn Espn Magazine Cover In 2020 Espn Body Womens Basketball Espn Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soccer Sportscenter Espn Sportscenter Espn Font Espn Women Espn Outfit Maria Taylor Espn Espn Magazine Cover In 2020 Espn Body Womens Basketball Espn Magazine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/54/a3/4654a32072a4a49d62366c0e48a9c974.jpg" data-lightbox="roadtrip" data-title="Pin On Wcbb 19 20">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/54/a3/4654a32072a4a49d62366c0e48a9c974.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgBt5U-Fsf_ucaGSiHsSBC2lDRaUb2HC_7RQ3_pwMx4pZCggMtbgnF7qwHCdwk1sXz_z1YUg&amp;ec=45771803';" alt="Pin On Wcbb 19 20">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wcbb 19 20</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/11/9a/7f119a50807387f960f5ba61ad6a397a.png" data-lightbox="roadtrip" data-title="Pin On Uconn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/11/9a/7f119a50807387f960f5ba61ad6a397a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaTCTwNGFnEhbQ1BTvc3dUKVDqNZXouQcTdmNTjbpK6CYlTwyuYG2V5EPejQSWsqytMmBt4w&amp;ec=45771803';" alt="Pin On Uconn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Uconn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/2a/2b/282a2baafd49fb3c8f8034e371288de5.png" data-lightbox="roadtrip" data-title="Purdue Purdue Purdue Basketball Sports Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/2a/2b/282a2baafd49fb3c8f8034e371288de5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyj2bDcD8iuBcu4pvQn82FQPI1L-JBGFKMSXliP5GTILrw_iOet4cfXIm4h8Z4HPQN4CXFRw&amp;ec=45771803';" alt="Purdue Purdue Purdue Basketball Sports Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Purdue Purdue Purdue Basketball Sports Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/73/cf/0573cfe6cd1a6f5ea8445beee07e02c4.jpg" data-lightbox="roadtrip" data-title="Pin On Basketball News And Talk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/73/cf/0573cfe6cd1a6f5ea8445beee07e02c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8JB_j5yYIobwKjWIZ6fvbWi710V_2oQmYPN1yTBtEs1rkfBbmpfkNsAAv0Mny9d2d-x7A_A&amp;ec=45771803';" alt="Pin On Basketball News And Talk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Basketball News And Talk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/98/19/0b9819104ee7a36bd441d419819f5ccf.png" data-lightbox="roadtrip" data-title="Swish Appeal A Women S Basketball Community Womens Basketball Basketball Basketball News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/98/19/0b9819104ee7a36bd441d419819f5ccf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-hSzKbp3trK2k35iDvG0IkdIrivPczbd3J7p2TH6LeDPzWpA-jr7W8qsrh3NAanHaU6u0jA&amp;ec=45771803';" alt="Swish Appeal A Women S Basketball Community Womens Basketball Basketball Basketball News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Swish Appeal A Women S Basketball Community Womens Basketball Basketball Basketball News</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.gannett-cdn.com/presto/2019/11/27/PPHX/e7eb1f56-9019-45e2-87dd-e40a121ec043-jennah-isai.jpeg?width=300&amp;height=450&amp;fit=crop&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-hSzKbp3trK2k35iDvG0IkdIrivPczbd3J7p2TH6LeDPzWpA-jr7W8qsrh3NAanHaU6u0jA&amp;ec=45771803';" alt="Swish Appeal A Women S Basketball Community Womens Basketball Basketball Basketball News">
+										<div class="card-body">
+						<h3 class="h5"><b>2019 Recruiting Rankings The Formula where c is a specific teams total number of commits and R n is the 247Sports Composite Rating of the nth-best commit times 100.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Espn womens college basketball recruiting 2019</strong>. 
+								
+																	Mechelle Voepel covers the WNBA womens college basketball and other college sports for espnW. 
+																	Sabrina Ionescu is womens college basketballs 2019-20 national player of the year. 
+																	Get the latest Womens College Basketball news scores stats standings and more from ESPN. 
+																	Impact of Coronavirus on College Basketball Recruiting. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCAA Womens Basketball DI official home. 
+																	East American Big 12 Big East Big Sky Big South Big Ten Big West C-USA CAA Horizon Ivy MAAC MAC MEAC MVC Mountain West NEC OVC Pac. 
+																	11 Oregon 3rd from Pac-12 to go on pause. 
+																	Coaching Changes Coaching Changes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rice will have one of the three best seasons in Texas. 
+																	Get the inside scoop on the top ranked high school girls basketball players. 
+																	Rated as the No. 
+																	NBA DeAaron Fox on All-Star game. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NBA 2021 NBA Mock Draft ahead of March Madness. 
+																	1 player in the class of 2020 by ESPN the 5-foot-11 Hopkins High School Minnetonka Minn point guard will join what is perhaps the greatest powerhouse in college sports. 
+																	Should UConn be worried which teams are No. 
+																	College Basketball Nick Kosko 15 hours ago. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The womens NCAA tournament bracket will be unveiled on Selection Monday March 16 7 pm. 
+																	Womens basketball news commentary scores stats standings audio and video highlights from ESPN. 
+																	Top 25 storylines in womens college basketball for 2019-20 Graham Hays. 
+																	2019 Basketball Team Rankings Last updated on 011521 at 1210 PM CST The Formula where c is a specific teams total number of commits and R n is the 247Sports Composite Rating of the nth-best. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Powered by innovative technology products 247Sports employs a staff of more than 50 full time recruiting reporters and evaluators that rank and compile data on the nations. 
+																	The latest womens basketball rankings for the 2019 class are out. 
+																	I think its stupid NBA Nick Kosko 17 hours ago. 
+																	1 seeds and other questions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NBA Alex Seats. 
+																	Get Womens Basketball rankings news schedules and championship brackets. 
+																	Mountain View H. 
+																	NCAAW Basketball Scoreboard Top 25 Division I A 10 ACC ASUN Am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dungee-led Arkansas scores upset. 
+																	The NCAA recruiting rules are now different for each division levelNCAA D1 has suspended all in-person recruiting through April 15 2021As of September 1 2020 NCAA D2 and D3 have resumed the regular recruiting rulesStay on top of the latest news involving the extra year of eligibility for college athletes and how it impacts recruiting. 
+																	Voepel began covering womens basketball in 1984 and has been with ESPN since 1996. 
+																	2019 HoopGurlz Recruiting Rankings - espnW 100. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Below are the schedules and venues for all 32 conference tournaments for 2019-20 in. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/15/26/bd1526e74d27b404c5943b74c507cf05.jpg" data-lightbox="roadtrip" data-title="The Official Secrets Behind South Carolina S Recruiting Class She Got Game South Carolina Lith">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/15/26/bd1526e74d27b404c5943b74c507cf05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB8apDfZYwuP6cFgJqIONQMjOBvLjXTHcbSt1c5oqoGez_fYWVCWeYPSk_zNola6leqZ5g9Q&amp;ec=45771803';" alt="The Official Secrets Behind South Carolina S Recruiting Class She Got Game South Carolina Lith">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Official Secrets Behind South Carolina S Recruiting Class She Got Game South Carolina Lith</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c2/62/de/c262de65304551bca6caba0db3eda2d4.jpg" data-lightbox="roadtrip" data-title="Pin On Lameloball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c2/62/de/c262de65304551bca6caba0db3eda2d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ_JowA11YYbfnKXMXKAisrj1oUITg0G7uJyDNiGyZqwJmQ4wWN2M1K8rzckWp070pzRHv1g&amp;ec=45771803';" alt="Pin On Lameloball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lameloball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Fhighposthoops.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F11%2F660557128-uconn-huskies-vs-oregon-ducks.jpg-850x560.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Espn Airs 2020 Ncaa Women S Tournament">
+											<img class="card-img v-image ads-img " src="https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Fhighposthoops.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F11%2F660557128-uconn-huskies-vs-oregon-ducks.jpg-850x560.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2SAVIp22y6Sf_3IfX4RdIBlIWaIkPzM6bhVFUQX-Mrg1W5QG74qFJJ5L6HdM0bkqonpuGvg&amp;ec=45771803';" alt="Women S Basketball Espn Airs 2020 Ncaa Women S Tournament">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Espn Airs 2020 Ncaa Women S Tournament</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/99/0d/01990df6acea5d702e82594dd5a54777.jpg" data-lightbox="roadtrip" data-title="How Zia Cooke Became The Most Famous High School Girls Basketball Player Alive All Sports Games And Spor Basketball Players Basketball Girls Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/99/0d/01990df6acea5d702e82594dd5a54777.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSeEHjwgxSNl9cCIvHkKswr5CgA4b3ioloafNg4iP_8DRxvqdVMpAcZbhz9l8hJVR_QO9aVg&amp;ec=45771803';" alt="How Zia Cooke Became The Most Famous High School Girls Basketball Player Alive All Sports Games And Spor Basketball Players Basketball Girls Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Zia Cooke Became The Most Famous High School Girls Basketball Player Alive All Sports Games And Spor Basketball Players Basketball Girls Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5a/f8/3b/5af83b2845fc9bfc940ce3531d5e5182.jpg" data-lightbox="roadtrip" data-title="College Basketball Poster Mlb Basketball Posters College Basketball Players College Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5a/f8/3b/5af83b2845fc9bfc940ce3531d5e5182.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBxqbkC6LoetZO246lQf2mDDBS6BSU3rbn_pirnNcXwQodjZA9Fe_1uGJsS5uAbzcCyOdiVQ&amp;ec=45771803';" alt="College Basketball Poster Mlb Basketball Posters College Basketball Players College Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Basketball Poster Mlb Basketball Posters College Basketball Players College Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/presto/2019/11/27/PPHX/e7eb1f56-9019-45e2-87dd-e40a121ec043-jennah-isai.jpeg?width=300&amp;height=450&amp;fit=crop&amp;format=pjpg&amp;auto=webp" data-lightbox="roadtrip" data-title="Valley Vista S Jennah Isai Pinnacle S Kennedy Basham Rise In Espn Girls Hoops Poll">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/presto/2019/11/27/PPHX/e7eb1f56-9019-45e2-87dd-e40a121ec043-jennah-isai.jpeg?width=300&amp;height=450&amp;fit=crop&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBGwl529xfOcZ3gnzmVngDCwWu-TUyquyzoRE4nkBiATvGFhPNlCCnSGm7jvhrnR9RNsPHCg&amp;ec=45771803';" alt="Valley Vista S Jennah Isai Pinnacle S Kennedy Basham Rise In Espn Girls Hoops Poll">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valley Vista S Jennah Isai Pinnacle S Kennedy Basham Rise In Espn Girls Hoops Poll</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/fd/95/91fd95771515bab1c6da42d5847f9d39.jpg" data-lightbox="roadtrip" data-title="Miami College Basketball Hurricanes Photos Espn College Sports College Basketball Miami College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/fd/95/91fd95771515bab1c6da42d5847f9d39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8nmCvyvdbALZb8355_midVBbkp7aA3H7JzibsP1WoFGUFQYdbUBCuUBomiSH8hbM8yOf6A&amp;ec=45771803';" alt="Miami College Basketball Hurricanes Photos Espn College Sports College Basketball Miami College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Miami College Basketball Hurricanes Photos Espn College Sports College Basketball Miami College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/presto/2020/01/28/PPHX/534a0c5d-2cf9-4263-b695-9c267d782f84-Sahuaro_guard_Alyssa_Brown.jpg?width=660&amp;height=472&amp;fit=crop&amp;format=pjpg&amp;auto=webp" data-lightbox="roadtrip" data-title="3 Arizona High School Girls Basketball Players On Espn Top 100 List">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/presto/2020/01/28/PPHX/534a0c5d-2cf9-4263-b695-9c267d782f84-Sahuaro_guard_Alyssa_Brown.jpg?width=660&amp;height=472&amp;fit=crop&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtAvH2Qg6a4ZygmGB8-YaWkFGXqIsjSJcJhZ5zoQeljHaxZLExlWx0Jif8geaFbAyTuNm9bA&amp;ec=45771803';" alt="3 Arizona High School Girls Basketball Players On Espn Top 100 List">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Arizona High School Girls Basketball Players On Espn Top 100 List</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://triblive.com/wp-content/uploads/2019/12/2081253_web1_ptr-PittNelson-092619.jpg" data-lightbox="roadtrip" data-title="Espn S Holly Rowe Gives A Surprise Visit To Pitt Women S Basketball Player Kyla Nelson Triblive Com">
+											<img class="card-img v-image ads-img " src="https://triblive.com/wp-content/uploads/2019/12/2081253_web1_ptr-PittNelson-092619.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW62nkJJEK1_PlMQaibNby7ZvervPc6JJwxDp7a0t_KoJvUdEPcxzLPaSZ99zPi711z-vwRg&amp;ec=45771803';" alt="Espn S Holly Rowe Gives A Surprise Visit To Pitt Women S Basketball Player Kyla Nelson Triblive Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Espn S Holly Rowe Gives A Surprise Visit To Pitt Women S Basketball Player Kyla Nelson Triblive Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nrca-cdn.nrcaknights.com/wp-content/uploads/2019/09/Lester.jpg" data-lightbox="roadtrip" data-title="Press Release Imani Lester Ranks In Espn Top 25 North Raleigh Christian Academy">
+											<img class="card-img v-image ads-img " src="https://nrca-cdn.nrcaknights.com/wp-content/uploads/2019/09/Lester.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcHy1dLqD_EXYfqvIZXYS7q181KzmqKREdXw7gsWu_yNwbXRl2a7-jHoeLSwyYmooFEUakA&amp;ec=45771803';" alt="Press Release Imani Lester Ranks In Espn Top 25 North Raleigh Christian Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Press Release Imani Lester Ranks In Espn Top 25 North Raleigh Christian Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/14/9b/bb149b868dd0740ac3739047ea5e358f.jpg" data-lightbox="roadtrip" data-title="Marquette College Hoops Emcee Centennial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/14/9b/bb149b868dd0740ac3739047ea5e358f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgcKk8qHblczemPFfcuHXfKd9mWnCBZh-WJnXx5SWBLftKvMeNu_MR5_5L0VC-1g3-gNB-g&amp;ec=45771803';" alt="Marquette College Hoops Emcee Centennial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marquette College Hoops Emcee Centennial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/00/b0/4d00b05d91abccb0ed0537a011ff1bd1.jpg" data-lightbox="roadtrip" data-title="North Carolina S Key Returnee Marcus Paige North Carolina Basketball Blog North Carolina Basketball North Carolina Paige">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/00/b0/4d00b05d91abccb0ed0537a011ff1bd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-dkvhrm4pepmE3fEzr1c7ArPc17i21fMAbxHejo5TxrS1SwYU4KfGhscsgk4EuIkImay1Iw&amp;ec=45771803';" alt="North Carolina S Key Returnee Marcus Paige North Carolina Basketball Blog North Carolina Basketball North Carolina Paige">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">North Carolina S Key Returnee Marcus Paige North Carolina Basketball Blog North Carolina Basketball North Carolina Paige</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/usatsimg/image/thumb/660-495nw/13659760.jpg" data-lightbox="roadtrip" data-title="2019 20 All Usa Preseason High School Girls Basketball Team Released">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/usatsimg/image/thumb/660-495nw/13659760.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh4Mo5kmQgWucIeWZ-DA4MwIGHEYvZtEs2J078SNR-Y6HuUulKIj1aZuzzZQrmcUNEQTNWGQ&amp;ec=45771803';" alt="2019 20 All Usa Preseason High School Girls Basketball Team Released">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 20 All Usa Preseason High School Girls Basketball Team Released</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-covered-by-post-911-gi-bill.html">What Is Covered By Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-gi-abbreviation.html">What Is Gi Abbreviation</a></li>
+													<li class="list-group-item"><a href="/what-is-an-appropriate-cash-gift-for-college-graduation.html">What Is An Appropriate Cash Gift For College Graduation</a></li>
+													<li class="list-group-item"><a href="/what-is-considered-full-time-for-the-gi-bill.html">What Is Considered Full Time For The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-gi-bill-for-military.html">What Is Gi Bill For Military</a></li>
+													<li class="list-group-item"><a href="/what-is-my-gi-bill-eligibility.html">What Is My Gi Bill Eligibility</a></li>
+													<li class="list-group-item"><a href="/what-does-it-mean-when-colleges-send-you-free-applications.html">What Does It Mean When Colleges Send You Free Applications</a></li>
+													<li class="list-group-item"><a href="/what-does-the-gi-bill-cover-for-college.html">What Does The Gi Bill Cover For College</a></li>
+													<li class="list-group-item"><a href="/what-is-college-gameday-this-week.html">What Is College Gameday This Week</a></li>
+													<li class="list-group-item"><a href="/what-is-a-chapter-13-discharge-from-the-army.html">What Is A Chapter 13 Discharge From The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-chapter-35-education-benefits.html">What Is Chapter 35 Education Benefits</a></li>
+													<li class="list-group-item"><a href="/what-does-post-911-veteran-mean.html">What Does Post 911 Veteran Mean</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-housing-allowance.html">What Is The Gi Bill Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/what-is-the-best-online-vet-tech-program.html">What Is The Best Online Vet Tech Program</a></li>
+													<li class="list-group-item"><a href="/what-is-reap-chapter-1607.html">What Is Reap Chapter 1607</a></li>
+													<li class="list-group-item"><a href="/what-does-post-911-gi-bill-pay-for.html">What Does Post 911 Gi Bill Pay For</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-gi-bill-and-post-911.html">What Is The Difference Between Gi Bill And Post 911</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-you-fail-a-class-with-post-911-gi-bill.html">What Happens If You Fail A Class With Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-bah-rate.html">What Is The Gi Bill Bah Rate</a></li>
+													<li class="list-group-item"><a href="/what-is-it-like-to-go-to-college-in-europe.html">What Is It Like To Go To College In Europe</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

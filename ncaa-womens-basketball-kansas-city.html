@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncaa Womens Basketball Kansas City - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncaa Womens Basketball Kansas City",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/f1/50/73/f15073b530c055f2fd9a2fac08727d02.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncaa+womens+basketball+kansas+city",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncaa Womens Basketball Kansas City</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">NCAA Womens Basketball Kansas City Regional T-Mobile Center will be the site of the 2018 NCAA Womens Basketball Regional semifinals and championship game. Httpsbitly3mn8Q9cTodays NCAA Basketball 202021. LIVE STREAMMatch recaps and more from the 202021 NCAA Womens Basketball Divisi. <br>				
+			</p>
+										<a class="badge badge-warning" href="/gi-bill-approved-schools-list.html">gi bill approved schools list</a>
+											<a class="badge badge-secondary" href="/gi-bill-bah-during-covid.html">gi bill bah during covid</a>
+											<a class="badge badge-danger" href="/gi-bill-apprenticeship-jobs.html">gi bill apprenticeship jobs</a>
+											<a class="badge badge-success" href="/gi-bill-bah-phoenix-az.html">gi bill bah phoenix az</a>
+											<a class="badge badge-light" href="/gi-bill-bah-late.html">gi bill bah late</a>
+											<a class="badge badge-success" href="/gi-bill-bah-by-zip-code.html">gi bill bah by zip code</a>
+											<a class="badge badge-info" href="/gi-bill-approved-apprenticeships.html">gi bill approved apprenticeships</a>
+											<a class="badge badge-info" href="/gi-bill-bah-calculator.html">gi bill bah calculator</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the right site.  Our website gives you hints for seeing the maximum quality video and image content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/d2/6a/e4d26a731810c95fef106ad943021b77.jpg" data-lightbox="roadtrip" data-title="Ncaa Women S Bracket 2018 Full Field Announced Monday Night Uconn College Basketball Teams Uconn Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/d2/6a/e4d26a731810c95fef106ad943021b77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDPla76G0p0H_S38GuLSs6NuJGDS8KbN-bSw';" alt="Ncaa Women S Bracket 2018 Full Field Announced Monday Night Uconn College Basketball Teams Uconn Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncaa Women S Bracket 2018 Full Field Announced Monday Night Uconn College Basketball Teams Uconn Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/ae/41/60ae418f4e65069d55ee82d88c09401c.jpg" data-lightbox="roadtrip" data-title="Kansas City Regional 1 Hailstatewbk 4 Packwomensbball 3 Uclawbb 2 Texaswbb Ncaa Basketball Kansas City Ncaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/ae/41/60ae418f4e65069d55ee82d88c09401c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV4UV1jQ7h_ypFaBDwDtNHWvyR-Kks120MTw';" alt="Kansas City Regional 1 Hailstatewbk 4 Packwomensbball 3 Uclawbb 2 Texaswbb Ncaa Basketball Kansas City Ncaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kansas City Regional 1 Hailstatewbk 4 Packwomensbball 3 Uclawbb 2 Texaswbb Ncaa Basketball Kansas City Ncaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/44/85/0544852ea4dc54bd418d5c5a2fee8f35.jpg" data-lightbox="roadtrip" data-title="Sabrina Ionescu Is Women S College Basketball S 2019 20 National Player Of The Year College Basketball Basketball Basketball Players">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/44/85/0544852ea4dc54bd418d5c5a2fee8f35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqffDOoF7huQ7m-WnJM5wj0JlH_Pimz61f3g';" alt="Sabrina Ionescu Is Women S College Basketball S 2019 20 National Player Of The Year College Basketball Basketball Basketball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sabrina Ionescu Is Women S College Basketball S 2019 20 National Player Of The Year College Basketball Basketball Basketball Players</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/93/29/ed9329179ce03d316faf0928edb9d9d5.jpg" data-lightbox="roadtrip" data-title="Newsok Com Photo Detail Girls High School Basketball Womens Basketball The University Of Oklahoma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/93/29/ed9329179ce03d316faf0928edb9d9d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0nH0lZb0GCplyFl8aBUvqfSQJOFX4SkQxuQ';" alt="Newsok Com Photo Detail Girls High School Basketball Womens Basketball The University Of Oklahoma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newsok Com Photo Detail Girls High School Basketball Womens Basketball The University Of Oklahoma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/ef/c9/c6efc91b7affa8de57c1f3d33c60c82e.jpg" data-lightbox="roadtrip" data-title="Slideshow Espnw S Women S College Basketball Preseason All Americans Uconn Womens Basketball Womens Basketball Ncaa Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/ef/c9/c6efc91b7affa8de57c1f3d33c60c82e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwdyRwUJ5V0UYwt0ujWHnpPmQNdV97TtzqA';" alt="Slideshow Espnw S Women S College Basketball Preseason All Americans Uconn Womens Basketball Womens Basketball Ncaa Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Slideshow Espnw S Women S College Basketball Preseason All Americans Uconn Womens Basketball Womens Basketball Ncaa Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/10/30/17103093a488d22aaad636c1613210fc.jpg" data-lightbox="roadtrip" data-title="Plum Explodes To Top Of Ncaa Scoring List Basketball Girls Womens Basketball Basketball Awards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/10/30/17103093a488d22aaad636c1613210fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwMWdpQgSpLa1jgfD9zzpNy9TgGdEqgH2roQ';" alt="Plum Explodes To Top Of Ncaa Scoring List Basketball Girls Womens Basketball Basketball Awards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plum Explodes To Top Of Ncaa Scoring List Basketball Girls Womens Basketball Basketball Awards</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/84/5e/51/845e514d01c30adf692cf78e4ac1d678.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwMWdpQgSpLa1jgfD9zzpNy9TgGdEqgH2roQ';" alt="Plum Explodes To Top Of Ncaa Scoring List Basketball Girls Womens Basketball Basketball Awards">
+										<div class="card-body">
+						<h3 class="h5"><b>Kansas State Wildcats Schedule 2020-21 2020-21 2019-20 2018-19 2017-18 2016-17 2015-16 2014-15 2013-14 2012-13 2011-12 2010-11 2009-10 2008-09 2007-08 2006-07 2005-06 2004-05 2003-04 2002-03.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncaa womens basketball kansas city</strong>. 
+								
+																	Tennessee Louisiana Tech NC State and Arkansas qualified to the Final Four. 
+																	The Final Four was held at Kemper Arena in Kansas City Missouri on March 2729 1998. 
+																	27 at 7 pm at the Lloyd Noble Center. 
+																	East American Big 12 Big East Big Sky Big South Big Ten Big West C-USA CAA Horizon Ivy MAAC MAC MEAC MVC Mountain West NEC OVC Pac. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The tournament featured 64 teams. 
+																	Womens College Basketball News Bueckers steals and scores for UConn Huskies freshman Paige Bueckers plays the passing lane to get a steal and then goes all the way for an easy layup. 
+																	At Oklahoma Kansas 6-5 2-3 Big 12 returns to the road to face Oklahoma 4-7 1-5 Big 12 Wednesday Jan. 
+																	The official 2020-21 Womens Basketball Roster for the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Kansas womens basketball team dropped a close matchup with Oklahoma on Wednesday night falling to the Sooners by three 84-81. 
+																	The official 2020-21 Womens Basketball Roster for the Skip To Main Content. 
+																	Watch Live Here. 
+																	Connecticuts Shea Ralph was named the Most Outstanding Player of the tournament. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Liveᴴᴰ Stream httpsbitly3qNaTH1Todays NCAA Basketball 2020-21Watch highlights match recaps and more from the 2020 NCAA College Womens Basketball D. 
+																	The move Friday was made to help mitigate the risks of COVID-19 and matches that of the mens tournament which. 
+																	The 1998 NCAA Division I Womens Basketball Tournament began on March 13 1998 and concluded on March 29 1998 when Tennessee won the national title. 
+																	The 2000 NCAA Division I Womens Basketball Tournament began on March 17 and ended on April 2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is a single-elimination tournament of four rounds with the top four seeds getting. 
+																	Because all ten teams in the conference compete in the tournament therell be plenty of competition for the best tickets to the hottest games and that the closer we get to tip-off the fewer great seats will be. 
+																	The Official Athletics Website for the University of Missouri-Kansas City. 
+																	January 29th 2021 - Swinney Recreation Center Kansas City MO North Dakota St. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Official Athletics Website for the University of Missouri-Kansas City. 
+																	January 26 2021 Game Preview. 
+																	The Final Four consisted of Connecticut Penn St Tennessee and Rutgers with Connecticut defeating Tennessee 71-52 to win its second NCAA title. 
+																	NCAAW Basketball Scoreboard Top 25 Division I A 10 ACC ASUN Am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get Womens Basketball rankings news schedules and championship brackets. 
+																	The official Womens Basketball page for the. 
+																	Kansas City Missouri 1997-2002 2005 2008 2010-2012 2020-2025 Oklahoma City Oklahoma 2007 2009 2014 2016-2019 Dallas Texas 2003 2004 2006 2013 2015 Former logo. 
+																	The excitement of March Madness is returning to the Sprint Center in 2020 and if you hurry theres still time to score amazing tickets for any NCAA Tournament Kansas City game. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Live scores from the Kansas City and Oral Roberts DI Womens Basketball game including box scores individual and team statistics and play-by-play. 
+																	The Big 12 Conference Womens Basketball Tournament is the championship womens basketball tournament in the Big 12 Conference. 
+																	The San Antonio region will host the entire NCAA womens basketball tournament. 
+																	The NCAA Womens Basketball DI official home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The winner will advance to the Final Four. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/fb/2e/8efb2ed2dfd09532d412571f405a05ac.jpg" data-lightbox="roadtrip" data-title="This Week Is All About Wesley S Women S Basketball Team Which Will Conclude With Senior Forward Jourdyn Beverl College Athletics Student Athlete College Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/fb/2e/8efb2ed2dfd09532d412571f405a05ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4-sT9muIAq3JH9IzHykH-GVg8LO480OFPpA';" alt="This Week Is All About Wesley S Women S Basketball Team Which Will Conclude With Senior Forward Jourdyn Beverl College Athletics Student Athlete College Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Week Is All About Wesley S Women S Basketball Team Which Will Conclude With Senior Forward Jourdyn Beverl College Athletics Student Athlete College Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e2/ca/f4/e2caf4f43d683e2869f30bae32247ef9.jpg" data-lightbox="roadtrip" data-title="Dsu Wins The First State Battle With 67 64 Win Over University Of Delaware Women S Basketball Dsuwbb University Of Delaware College Sports Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e2/ca/f4/e2caf4f43d683e2869f30bae32247ef9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDH72Z5GaZCwM6FX13CJktYxRy_WhX6tiDCg';" alt="Dsu Wins The First State Battle With 67 64 Win Over University Of Delaware Women S Basketball Dsuwbb University Of Delaware College Sports Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dsu Wins The First State Battle With 67 64 Win Over University Of Delaware Women S Basketball Dsuwbb University Of Delaware College Sports Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/50/73/f15073b530c055f2fd9a2fac08727d02.jpg" data-lightbox="roadtrip" data-title="Goldey Beacom Women S Basketball Names Camden Boehner As An Assistant Coach Womens Basketball Ncaa Basketball Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/50/73/f15073b530c055f2fd9a2fac08727d02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSToNRSz_ZY_8oBPQgAL6WlI26ZLAP6F1CuNQ';" alt="Goldey Beacom Women S Basketball Names Camden Boehner As An Assistant Coach Womens Basketball Ncaa Basketball Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Goldey Beacom Women S Basketball Names Camden Boehner As An Assistant Coach Womens Basketball Ncaa Basketball Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/54/e2/5a54e2cb5858566df9030c2fe09d7c32.jpg" data-lightbox="roadtrip" data-title="University Of Delaware Women S Basketball Opens Season With Dominating 111 54 Win Vs Salem Bluehens Collegespo Womens Basketball College Hoops College Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/54/e2/5a54e2cb5858566df9030c2fe09d7c32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_QlhFjd_k-29watALqgPIcxCydkTIrQhCcg';" alt="University Of Delaware Women S Basketball Opens Season With Dominating 111 54 Win Vs Salem Bluehens Collegespo Womens Basketball College Hoops College Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Delaware Women S Basketball Opens Season With Dominating 111 54 Win Vs Salem Bluehens Collegespo Womens Basketball College Hoops College Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/e7/2f/27e72f1ab152856689b792a5b83dd189.jpg" data-lightbox="roadtrip" data-title="Diggins Leads Notre Dame Women Over Marquette Notre Dame Womens Basketball Sports Women Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/e7/2f/27e72f1ab152856689b792a5b83dd189.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrdB6SYYpS9x5fI0Hk9unoJmZwUmg3OZ0c2g';" alt="Diggins Leads Notre Dame Women Over Marquette Notre Dame Womens Basketball Sports Women Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diggins Leads Notre Dame Women Over Marquette Notre Dame Womens Basketball Sports Women Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/b1/a1/edb1a1ef6eeca34ac5b2d608ea813bdf.jpg" data-lightbox="roadtrip" data-title="This Week Is All About The Delaware State S Women S Basketball Team Which Will Start With Junior Guard Forward Delaware State Womens Basketball Ncaa Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/b1/a1/edb1a1ef6eeca34ac5b2d608ea813bdf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPr83CslK5lpl0aQkwx3FgRYYnnqKqRa_QzA';" alt="This Week Is All About The Delaware State S Women S Basketball Team Which Will Start With Junior Guard Forward Delaware State Womens Basketball Ncaa Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Week Is All About The Delaware State S Women S Basketball Team Which Will Start With Junior Guard Forward Delaware State Womens Basketball Ncaa Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/a6/a3/9ea6a34608608900f70922c72618aa6a.gif" data-lightbox="roadtrip" data-title="Pin On Native American Warriors Better Know Has Hotties And Movies N">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/a6/a3/9ea6a34608608900f70922c72618aa6a.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKUntCYSqF9eqMhidPhSM9NTnAV8OMozQrw';" alt="Pin On Native American Warriors Better Know Has Hotties And Movies N">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Native American Warriors Better Know Has Hotties And Movies N</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/15/50/b515504a988d51935dc12af91e893b0d.jpg" data-lightbox="roadtrip" data-title="Connecticut S Stefanie Dolson Right And Charleston S Megan Fischer Fight For A Loose Ball During The First Ha Uconn Womens Basketball Uconn Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/15/50/b515504a988d51935dc12af91e893b0d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmfWrDaLilG-IQNxcWv9YzTrnQcwjwv0hMQw';" alt="Connecticut S Stefanie Dolson Right And Charleston S Megan Fischer Fight For A Loose Ball During The First Ha Uconn Womens Basketball Uconn Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Connecticut S Stefanie Dolson Right And Charleston S Megan Fischer Fight For A Loose Ball During The First Ha Uconn Womens Basketball Uconn Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/de/8f/5ade8f09c028198687528ba6dbfe4031.jpg" data-lightbox="roadtrip" data-title="Cdsb S College Weekly Honors Rundown College Sports Womens Basketball University Of Delaware">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/de/8f/5ade8f09c028198687528ba6dbfe4031.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEYxdXp943eKusyial7-b3gI7P5D10SZRDig';" alt="Cdsb S College Weekly Honors Rundown College Sports Womens Basketball University Of Delaware">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cdsb S College Weekly Honors Rundown College Sports Womens Basketball University Of Delaware</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/5e/51/845e514d01c30adf692cf78e4ac1d678.jpg" data-lightbox="roadtrip" data-title="Grand Canyon University Basketball Live On Us Sports Net Gcu Men S Basketball Vs Kansas City And How To Increas Grand Canyon University Kansas City Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/5e/51/845e514d01c30adf692cf78e4ac1d678.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9pPoQYwUwlC7l3FfdOjAlNjoYeptwP_R8JA';" alt="Grand Canyon University Basketball Live On Us Sports Net Gcu Men S Basketball Vs Kansas City And How To Increas Grand Canyon University Kansas City Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grand Canyon University Basketball Live On Us Sports Net Gcu Men S Basketball Vs Kansas City And How To Increas Grand Canyon University Kansas City Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/62/9c/74629c6933809ceb330fdf90ead2bf43.jpg" data-lightbox="roadtrip" data-title="Danny Manning Kansas Vs Stacey King Oklahoma Stacey King Final Four College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/62/9c/74629c6933809ceb330fdf90ead2bf43.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj5CULU-G8i6rusDdhmxpu6l-8fJ5V8qXNtw';" alt="Danny Manning Kansas Vs Stacey King Oklahoma Stacey King Final Four College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Danny Manning Kansas Vs Stacey King Oklahoma Stacey King Final Four College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/b6/43/35b64301677ff834b1e5aa4298adc26c.jpg" data-lightbox="roadtrip" data-title="Photos Women S Ncaa Tournament Louisville Beats Tennessee 86 78 Ncaa Popular Sports Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/b6/43/35b64301677ff834b1e5aa4298adc26c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSglmwT_zscfEucQLF25tQxaUBxql4amEwww';" alt="Photos Women S Ncaa Tournament Louisville Beats Tennessee 86 78 Ncaa Popular Sports Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Women S Ncaa Tournament Louisville Beats Tennessee 86 78 Ncaa Popular Sports Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/80/f4/30/80f43003c2183070a43c7179dd8e4f4d.jpg" data-lightbox="roadtrip" data-title="This Week Is All About Wilmington S Women S Basketball Team Which Will Conclude With Redshirt Junior Guar In 2020 College Sports Basketball Teams Wilmington University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/80/f4/30/80f43003c2183070a43c7179dd8e4f4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL771z8sRYjr9d_VfUBAMUdevW1J7zfiox8w';" alt="This Week Is All About Wilmington S Women S Basketball Team Which Will Conclude With Redshirt Junior Guar In 2020 College Sports Basketball Teams Wilmington University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Week Is All About Wilmington S Women S Basketball Team Which Will Conclude With Redshirt Junior Guar In 2020 College Sports Basketball Teams Wilmington University</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/birthday-gifts-for-recent-college-graduates.html">Birthday Gifts For Recent College Graduates</a></li>
+													<li class="list-group-item"><a href="/bowdoin-college-womens-basketball-live-stream.html">Bowdoin College Womens Basketball Live Stream</a></li>
+													<li class="list-group-item"><a href="/buzzfeed-gifts-for-college-students.html">Buzzfeed Gifts For College Students</a></li>
+													<li class="list-group-item"><a href="/bizbilla-wikipedia.html">Bizbilla Wikipedia</a></li>
+													<li class="list-group-item"><a href="/billionaire.html">Billionaire</a></li>
+													<li class="list-group-item"><a href="/boston-college-womens-basketball-coach-salary.html">Boston College Womens Basketball Coach Salary</a></li>
+													<li class="list-group-item"><a href="/bryan-college-womens-basketball-schedule.html">Bryan College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/bir-billing.html">Bir Billing</a></li>
+													<li class="list-group-item"><a href="/can-i-get-a-free-laptop-for-college.html">Can I Get A Free Laptop For College</a></li>
+													<li class="list-group-item"><a href="/binderberger-gi-30-z.html">Binderberger Gi 30 Z</a></li>
+													<li class="list-group-item"><a href="/birthday-gifts-for-college-guys.html">Birthday Gifts For College Guys</a></li>
+													<li class="list-group-item"><a href="/can-gi-bill-benefits-be-transferred-to-dependents.html">Can Gi Bill Benefits Be Transferred To Dependents</a></li>
+													<li class="list-group-item"><a href="/can-a-grandchild-of-a-veteran-use-the-gi-bill.html">Can A Grandchild Of A Veteran Use The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-a-college-student-go-to-prom.html">Can A College Student Go To Prom</a></li>
+													<li class="list-group-item"><a href="/boston-college-eagles-womens-basketball-players.html">Boston College Eagles Womens Basketball Players</a></li>
+													<li class="list-group-item"><a href="/birthday-gifts-for-college-daughter.html">Birthday Gifts For College Daughter</a></li>
+													<li class="list-group-item"><a href="/books-for-college-girls.html">Books For College Girls</a></li>
+													<li class="list-group-item"><a href="/california-veteran-spouse-education-benefits.html">California Veteran Spouse Education Benefits</a></li>
+													<li class="list-group-item"><a href="/can-gi-bill-be-used-for-spouse.html">Can Gi Bill Be Used For Spouse</a></li>
+													<li class="list-group-item"><a href="/can-dependents-use-montgomery-gi-bill.html">Can Dependents Use Montgomery Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

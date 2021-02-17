@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Dependents Educational Benefits Alabama - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Dependents Educational Benefits Alabama",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/11/ca/50/11ca500d6aadcd110725113ebe11f1f2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+dependents+educational+benefits+alabama",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Dependents Educational Benefits Alabama</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This includes the preparing of claims for and securing compensation hospitalization education vocational training and other benefits or privileges which veterans may be. College benefits for children of disabled veterans Detail Education. Alabama Department of Veterans Affairs Takes Precautionary Measures to Protect Employees and Veterans from COVID-19 Virus Coronavirus. <br>				
+			</p>
+										<a class="badge badge-light" href="/can-i-use-my-gi-bill-in-any-state.html">can i use my gi bill in any state</a>
+											<a class="badge badge-dark" href="/can-i-use-the-gi-bill-and-tuition-assistance.html">can i use the gi bill and tuition assistance</a>
+											<a class="badge badge-dark" href="/can-my-gi-bill-be-extended.html">can my gi bill be extended</a>
+											<a class="badge badge-success" href="/can-my-dependent-use-my-gi-bill.html">can my dependent use my gi bill</a>
+											<a class="badge badge-light" href="/can-i-transfer-gi-bill-to-child.html">can i transfer gi bill to child</a>
+											<a class="badge badge-light" href="/can-i-use-my-gi-bill-after-i-ets.html">can i use my gi bill after i ets</a>
+											<a class="badge badge-light" href="/can-i-use-the-gi-bill-for-online-classes.html">can i use the gi bill for online classes</a>
+											<a class="badge badge-danger" href="/can-i-use-my-gi-bill-in-mexico.html">can i use my gi bill in mexico</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the right site.  Our site provides you with hints for viewing the maximum quality video and picture content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/3a/d4/df3ad41f50df6a886abdb96d69369ec8.jpg" data-lightbox="roadtrip" data-title="Educational Scholarship For Military Members Veterans And Dependents Offered By The Academy For Dental Scholarships Dental Assistant Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/3a/d4/df3ad41f50df6a886abdb96d69369ec8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cU3j6E_OuFFIcl1bHcq6bAUNzHN_h936yg';" alt="Educational Scholarship For Military Members Veterans And Dependents Offered By The Academy For Dental Scholarships Dental Assistant Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Educational Scholarship For Military Members Veterans And Dependents Offered By The Academy For Dental Scholarships Dental Assistant Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://va.alabama.gov/wp-content/uploads/2019/07/AdobeStock_63205049-300x200.jpeg" data-lightbox="roadtrip" data-title="Alabama G I Dependent Scholarship Program Alabama Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://va.alabama.gov/wp-content/uploads/2019/07/AdobeStock_63205049-300x200.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFfF7vdCqohWCvDoy2lLv0ZJ7Zn-XTNwTYg';" alt="Alabama G I Dependent Scholarship Program Alabama Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama G I Dependent Scholarship Program Alabama Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/57/53/735753ca836517e162788183459a408d.png" data-lightbox="roadtrip" data-title="Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/57/53/735753ca836517e162788183459a408d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEh126fKxorwJzP_6sEMzOM7ixMnS_O5YycQ';" alt="Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com In 2020 Veterans Benefits Disabled Veterans Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/alabama-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="Alabama Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/alabama-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeug1u9qTZZfvKIIjlJYvH6518oxMmYMOStA';" alt="Alabama Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vetsguardian.com/wp-content/uploads/2020/01/alabama.jpg" data-lightbox="roadtrip" data-title="Veteran Benefits For Alabama Veterans Guardian Va Claim Consulting">
+											<img class="card-img v-image ads-img " src="https://vetsguardian.com/wp-content/uploads/2020/01/alabama.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh48gSYLy77P8KIIxvBloKCRkG7Dd6PIZFQQ';" alt="Veteran Benefits For Alabama Veterans Guardian Va Claim Consulting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Benefits For Alabama Veterans Guardian Va Claim Consulting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/07/states-that-offer-free-tuition-for-veterans.jpg" data-lightbox="roadtrip" data-title="States That Offer Free Tuition For Vets Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/07/states-that-offer-free-tuition-for-veterans.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjREWpcRINNVZfP5cnPjRpQKDR1xPCEvYFew';" alt="States That Offer Free Tuition For Vets Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">States That Offer Free Tuition For Vets Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://s3.us-east-2.amazonaws.com/assets.va.org/wp-content/uploads/2016/02/17132325/State-Based-Veterans-Benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjREWpcRINNVZfP5cnPjRpQKDR1xPCEvYFew';" alt="States That Offer Free Tuition For Vets Military Benefits">
+										<div class="card-body">
+						<h3 class="h5"><b>Section 31-6-2 - Definitions.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans dependents educational benefits alabama</strong>. 
+								
+																	Bill Chapter 33 MGIB AD Chapter 30 or Alabama GI. 
+																	DEPENDENTS SCHOLARSHIP PROGRAM This academic scholarship program is administrated by the State of Alabama Department of Veterans Affairs and applies to the dependents of Alabamas disabled veterans. 
+																	Click here for the full statement and additional information. 
+																	To help cover any remaining educational costs many learners use scholarships including those specific to veterans or family members of veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	State Veterans Home Program. 
+																	2013 Code of Alabama Title 31 - MILITARY AFFAIRS AND CIVIL DEFENSE. 
+																	If you have any questions about applying for VA education benefits please contact the Veterans Affairs Office. 
+																	The effective date of benefits granted under the Alabama GI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are using Post 911 GI. 
+																	Chapter 6 - VETERANS AND DEPENDENTS EDUCATIONAL BENEFITS. 
+																	Armed Forces and their dependents in numerous capacities. 
+																	Alabama Veteran Education Benefits Alabama GI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Education Benefits for Veterans in Alabama In addition to federal programs such as the GI Bill Alabama provides different education benefits programs for residents of the state. 
+																	Download VA Form 22-5490 If you havent started school or a training program. 
+																	The veteran must meet the qualifications listed below to establish eligibility of hisher dependents. 
+																	Veteran Benefit Programs About VA Education Benefits The Veteran Affairs Office of the College makes every effort to ensure that all veterans dependents and reservists receive their educational benefits in a timely manner. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get more information about the DEA program. 
+																	Dependent Scholarship Program is the date that the approvable application is received in the headquarters officeStudents receive 6 years from that date to use their 6 semesters. 
+																	Section 31-6-4 - Educational benefits for children of deceased or disabled veterans or prisoners of war. 
+																	Tuition Waiver for Purple Heart Medal Recipients. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spouses and dependents may qualify for tuition waivers attending school in the University of Alaska system. 
+																	It is administered by the Alabama Department of Veterans Affairs ADVA and is governed by the Code of Alabama 1975 Section 31-6-1. 
+																	Find out if youre eligible and how to apply for VA education benefits for Veterans service members and their qualified family members. 
+																	These scholarships might also help veterans or dependents who do not receive access to GI Bill benefits or attend a school not covered by the GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Alabama Veteran Dependent Education Benefit. 
+																	The Bay State provides benefits for nearly 350000 veterans who reside in the State of AlabamaAlabama Veteran Education Benefits Alabama GI. 
+																	We provide services that complement those of the US. 
+																	Dependents Scholarship Program and received an Honorable discharge within the last three years you qualify for In-State Tuition in Alabama. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dependents Scholarship college benefits for children of disabled veterans Verified 3 days ago Get more. 
+																	This pamphlet was prepared to give a brief summary of these benefits. 
+																	Youll need to fill out a Dependents Application for VA Education Benefits VA Form 22-5490 and mail it to the regional processing office for your state. 
+																	VA education benefits for dependents include options under the GI Bill Yellow Ribbon program and scholarship funds. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This nationally renowned program was created by Act 633 and approved October 1947 by the Alabama Legislature. 
+																	The Survivors and Dependents Educational Assistance DEA program offers education and training to qualified dependents of Veterans who are permanently and totally disabled because of a service-related condition or who died while on active duty or as a result of a service-related condition. 
+																	DEPENDENT SCHOLARSHIP PROGRAM Alabama Education Details. 
+																	The Bay State provides benefits for nearly 350000 veterans who reside in the State of Alabama. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find GI Bill-Approved Colleges For Military and Veterans Sponsored Search schools to find affordable tuition military vet trusted colleges and online or hybrid classes. 
+																	If you qualify undergraduate tuition and fees are. 
+																	Claims Representation and Counseling. 
+																	Alabama GI Dependents Scholarship Program The state of Alabama will waive up to 250 per semester hour and 1000 for books each semester at any Alabama institution of higher learning including. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Alabama State Veterans Benefits. 
+																	Section 31-6-3 - Designation of benefits. 
+																	We are a State of Alabama department that assists former members of the US. 
+																	Youll find the address on the last page of the form. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find Alabama state and local veterans benefits including education employment healthcare tax breaksexemptions recreation and much more below. 
+																	Alabama State Veterans Memorial Cemetery. 
+																	VA education and training benefits can help you pay for college tuition find the right school or training program get career counseling and more. 
+																	Department of Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are a military dependent wondering what your options from the VA might be much depends on the nature of the military members service time spent in uniform and what GI Bill program the member signed up for at the start of their military career. 
+																	Click here for contact information regarding the availability of services at ADVA field offices. 
+																	Alabama Veteran Dependent Education Benefit. 
+																	Alabama State Board of Veterans Affairs Seeks Proposals for Naming State Veterans Home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Section 31-6-1 - Short title. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2018/02/stateswhereveteranslive.png" data-lightbox="roadtrip" data-title="State Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2018/02/stateswhereveteranslive.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj95-P1ov6rAUdfxT0ZyptBQdC9Giwqjts6w';" alt="State Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2016/07/va-benefits-children.png" data-lightbox="roadtrip" data-title="Va Benefits Available To Vets Parents And Children Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2016/07/va-benefits-children.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ2N04Kg_kNHRdFAuG5RIM3TEV97zQ-ITnGw';" alt="Va Benefits Available To Vets Parents And Children Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Benefits Available To Vets Parents And Children Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/08/states-offer-free-tuition-to-military-dependents-and-spouses.jpg" data-lightbox="roadtrip" data-title="States That Offer Free Tuition To Spouses Dependents Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/08/states-offer-free-tuition-to-military-dependents-and-spouses.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfTd5ModnOlZ_GybbBxQvdcK8tm3en5b5hQQ';" alt="States That Offer Free Tuition To Spouses Dependents Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">States That Offer Free Tuition To Spouses Dependents Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6f/7d/ee/6f7deed12189a48e001329e1a608c96e.jpg" data-lightbox="roadtrip" data-title="How Much Can A Family Of Two Make Still Get Food Stamps In Alabama In 2020 Credit Score Cash Budget Scholarships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6f/7d/ee/6f7deed12189a48e001329e1a608c96e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq_ZXmNgS6FV5s0CbzE29RkAPNjPqmUt7RyQ';" alt="How Much Can A Family Of Two Make Still Get Food Stamps In Alabama In 2020 Credit Score Cash Budget Scholarships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Can A Family Of Two Make Still Get Food Stamps In Alabama In 2020 Credit Score Cash Budget Scholarships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/state-veterans-affairs-offices.jpg" data-lightbox="roadtrip" data-title="State Veterans Affairs Offices Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/state-veterans-affairs-offices.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp9KKFtUvg_dXKe9JmUYONsoxCh2TNeMHfvQ';" alt="State Veterans Affairs Offices Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Veterans Affairs Offices Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/ca/50/11ca500d6aadcd110725113ebe11f1f2.jpg" data-lightbox="roadtrip" data-title="The Importance Of Education For Military Service Members Educational Infographic Importance Of Education Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/ca/50/11ca500d6aadcd110725113ebe11f1f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYI0nKTxgrx987AXnm34rq1V8GWts18F-uA';" alt="The Importance Of Education For Military Service Members Educational Infographic Importance Of Education Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Importance Of Education For Military Service Members Educational Infographic Importance Of Education Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.us-east-2.amazonaws.com/assets.va.org/wp-content/uploads/2016/02/17132325/State-Based-Veterans-Benefits.jpg" data-lightbox="roadtrip" data-title="State Based Veterans Benefits Va Org">
+											<img class="card-img v-image ads-img " src="https://s3.us-east-2.amazonaws.com/assets.va.org/wp-content/uploads/2016/02/17132325/State-Based-Veterans-Benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjqPtQCKvlahx3aEJUBVKCQlVDdGpyDqqj4Q';" alt="State Based Veterans Benefits Va Org">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Based Veterans Benefits Va Org</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://va.alabama.gov/wp-content/uploads/2019/07/AdobeStock_5870333-1-300x201.jpeg" data-lightbox="roadtrip" data-title="Requesting Military Records Alabama Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://va.alabama.gov/wp-content/uploads/2019/07/AdobeStock_5870333-1-300x201.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeDLxwnphzZJS69jdPRgAiwDPvPTMowJ9MYg';" alt="Requesting Military Records Alabama Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Requesting Military Records Alabama Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/03/VA-Priority-Groups.jpg" data-lightbox="roadtrip" data-title="Va Priority Groups Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/03/VA-Priority-Groups.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS94l0sw640Qs6WTp81vdT0pw2hVQWLib-fjA';" alt="Va Priority Groups Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Priority Groups Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/APPORTIONMENT20THUMBNAIL-1280x720.jpg" data-lightbox="roadtrip" data-title="What Is Apportionment Of My Va Benefits Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/APPORTIONMENT20THUMBNAIL-1280x720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAtGwW3nzfX3QLsXHMjJ4aE2s8gvMfnDyWg';" alt="What Is Apportionment Of My Va Benefits Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Apportionment Of My Va Benefits Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/6f/ed/6b/6fed6bb5513e94800719f5fb3519767c.jpg" data-lightbox="roadtrip" data-title="Read Download Federal Benefits For Veterans Dependents And Survivors Updated Edition Free Epub Mobi Free Books Download Free Ebooks Download Pdf Books Download">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/6f/ed/6b/6fed6bb5513e94800719f5fb3519767c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBWTUnmKy0bj1Q3LxmIe0u4ODM2h_rYMswrQ';" alt="Read Download Federal Benefits For Veterans Dependents And Survivors Updated Edition Free Epub Mobi Free Books Download Free Ebooks Download Pdf Books Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Read Download Federal Benefits For Veterans Dependents And Survivors Updated Edition Free Epub Mobi Free Books Download Free Ebooks Download Pdf Books Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/9f/21/9b9f21a68b93e8f3afca23e6e16f4125.jpg" data-lightbox="roadtrip" data-title="Bridgewater Veteran Offers Smartphone App For Fellow Veterans Veteran Social Media Bridgewater">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/9f/21/9b9f21a68b93e8f3afca23e6e16f4125.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-APJVjSl5VgCZI9KvDhG4MMdZQnAQZ8ULA';" alt="Bridgewater Veteran Offers Smartphone App For Fellow Veterans Veteran Social Media Bridgewater">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bridgewater Veteran Offers Smartphone App For Fellow Veterans Veteran Social Media Bridgewater</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vetshq.com/wp-content/blogs.dir/files/sites/11/2014/06/IMAGE-EDUCATION-STATES-TUITION.jpg" data-lightbox="roadtrip" data-title="Education Student Veterans Benefits And The States Vetshq">
+											<img class="card-img v-image ads-img " src="https://www.vetshq.com/wp-content/blogs.dir/files/sites/11/2014/06/IMAGE-EDUCATION-STATES-TUITION.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe0Yf8h_JHeh9veIzuevOF8jtj6JjyYHB0Ug';" alt="Education Student Veterans Benefits And The States Vetshq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Education Student Veterans Benefits And The States Vetshq</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/westminster-college-womens-basketball.html">Westminster College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/washington-college-womens-basketball-roster.html">Washington College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/what-did-gi-stand-for.html">What Did Gi Stand For</a></li>
+													<li class="list-group-item"><a href="/what-college-should-i-go-to-quiz-buzzfeed.html">What College Should I Go To Quiz Buzzfeed</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-retired-military-get.html">What Benefits Do Retired Military Get</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-do-how-did-it-affect-american-families-after-wwii.html">What Did The Gi Bill Do How Did It Affect American Families After Wwii</a></li>
+													<li class="list-group-item"><a href="/wharton-executive-mba-gi-bill.html">Wharton Executive Mba Gi Bill</a></li>
+													<li class="list-group-item"><a href="/wakanda-forever-gif.html">Wakanda Forever Gif</a></li>
+													<li class="list-group-item"><a href="/what-can-the-montgomery-gi-bill-be-used-for.html">What Can The Montgomery Gi Bill Be Used For</a></li>
+													<li class="list-group-item"><a href="/washington-state-air-national-guard-agr-jobs.html">Washington State Air National Guard Agr Jobs</a></li>
+													<li class="list-group-item"><a href="/what-are-my-post-911-gi-bill-benefits.html">What Are My Post 911 Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/what-are-the-best-backpacks-for-college.html">What Are The Best Backpacks For College</a></li>
+													<li class="list-group-item"><a href="/weatherford-college-womens-basketball-roster.html">Weatherford College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/what-bah-rate-does-the-gi-bill-pay.html">What Bah Rate Does The Gi Bill Pay</a></li>
+													<li class="list-group-item"><a href="/what-are-good-giveaway-ideas.html">What Are Good Giveaway Ideas</a></li>
+													<li class="list-group-item"><a href="/want-to-go-to-college-learn-to-fail.html">Want To Go To College Learn To Fail</a></li>
+													<li class="list-group-item"><a href="/what-colleges-accept-post-911-gi-bill.html">What Colleges Accept Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/westminster-college-womens-basketball-schedule.html">Westminster College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/what-are-va-educational-benefits-under-chapter-35.html">What Are Va Educational Benefits Under Chapter 35</a></li>
+													<li class="list-group-item"><a href="/what-colleges-participate-in-free-application-week.html">What Colleges Participate In Free Application Week</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

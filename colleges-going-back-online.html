@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Colleges Going Back Online - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Colleges Going Back Online",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/d8/71/5b/d8715b93a571c84353feb8c194fb5e71.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=colleges+going+back+online",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Colleges Going Back Online</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A Comprehensive Guide on What It Takes to Go Back to College. Many colleges planning to bring students back to campus for the fall semester have reversed course entirely and opted for online-only instruction. When will schools go back over Christmas. <br>				
+			</p>
+										<a class="badge badge-success" href="/gi-bill-programs-near-me.html">gi bill programs near me</a>
+											<a class="badge badge-success" href="/gi-bill-program-search.html">gi bill program search</a>
+											<a class="badge badge-secondary" href="/gi-bill-remaining-education-benefits.html">gi bill remaining education benefits</a>
+											<a class="badge badge-dark" href="/gi-bill-pay-yokosuka-phone-number.html">gi bill pay yokosuka phone number</a>
+											<a class="badge badge-warning" href="/gi-bill-proof-of-eligibility.html">gi bill proof of eligibility</a>
+											<a class="badge badge-secondary" href="/gi-bill-pay.html">gi bill pay</a>
+											<a class="badge badge-danger" href="/gi-bill-rates-time-in-service.html">gi bill rates time in service</a>
+											<a class="badge badge-light" href="/gi-bill-rates-by-state.html">gi bill rates by state</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the ideal blog.  Our site provides you with hints for seeing the highest quality video and picture content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/0c/02/650c025d226c3cb2ed6293102b678584.png" data-lightbox="roadtrip" data-title="Top 10 Things You Need To Know About Online College Online College Online College Classes Online College Organization">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/0c/02/650c025d226c3cb2ed6293102b678584.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT47JMDquUxhac199xAtXuqv1YmgIpQlCVClg';" alt="Top 10 Things You Need To Know About Online College Online College Online College Classes Online College Organization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Things You Need To Know About Online College Online College Online College Classes Online College Organization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/72/d2/f772d2898864926d8f09f876d6d43099.png" data-lightbox="roadtrip" data-title="When Mom Goes Back To School Back To School Organization School Mom College Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/72/d2/f772d2898864926d8f09f876d6d43099.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR5mRsWsCLxHDJ5AhRzmtxhxOrOlH4fhlVbg';" alt="When Mom Goes Back To School Back To School Organization School Mom College Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Mom Goes Back To School Back To School Organization School Mom College Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/7a/4e/cb7a4e2daf2b31f871534deaa55f6d55.jpg" data-lightbox="roadtrip" data-title="Pin On Workouts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/7a/4e/cb7a4e2daf2b31f871534deaa55f6d55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ5kye8cniuF06CzfWNBXs6OorcimmrMx1gQ';" alt="Pin On Workouts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Workouts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/1d/2a/971d2a6d58741eb2d684a79d4c0d3ce0.jpg" data-lightbox="roadtrip" data-title="The Ultimate Survival Guide To Online College Classes Juliet Meiling In 2020 College Classes Online College Classes Online College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/1d/2a/971d2a6d58741eb2d684a79d4c0d3ce0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSPrECOHwbfVYvwEWiRzWY7lE0I8hp5U-Ahg';" alt="The Ultimate Survival Guide To Online College Classes Juliet Meiling In 2020 College Classes Online College Classes Online College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ultimate Survival Guide To Online College Classes Juliet Meiling In 2020 College Classes Online College Classes Online College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/89/3c/ca893ce78189b44a19e4573ab2b48e13.png" data-lightbox="roadtrip" data-title="Top 10 Things You Need To Know About Online College In 2020 Online College Online School College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/89/3c/ca893ce78189b44a19e4573ab2b48e13.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeTyn0PRhBFL9ttFExfio5Z4zhnCIQXcrPjA';" alt="Top 10 Things You Need To Know About Online College In 2020 Online College Online School College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Things You Need To Know About Online College In 2020 Online College Online School College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0f/f4/4f/0ff44f1da37db09a4f3a1c640302f9a8.jpg" data-lightbox="roadtrip" data-title="The Issue Is That Not Every Trainee Who Wants To Participate In College Certifies For Either Fed Scholarships For College Going Back To School Online Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0f/f4/4f/0ff44f1da37db09a4f3a1c640302f9a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1zKNkwlaJWO2J0RbPn6Ktgj4BlwYv-kEXRA';" alt="The Issue Is That Not Every Trainee Who Wants To Participate In College Certifies For Either Fed Scholarships For College Going Back To School Online Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Issue Is That Not Every Trainee Who Wants To Participate In College Certifies For Either Fed Scholarships For College Going Back To School Online Education</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/d0/39/a5/d039a5cfd598919a72a39a0c5a16afbe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1zKNkwlaJWO2J0RbPn6Ktgj4BlwYv-kEXRA';" alt="The Issue Is That Not Every Trainee Who Wants To Participate In College Certifies For Either Fed Scholarships For College Going Back To School Online Education">
+										<div class="card-body">
+						<h3 class="h5"><b>However later in life many renew their desire to get a college degree.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Colleges going back online</strong>. 
+								
+																	NEW CORONAVIRUS cases hit the highest level seen since the pandemic began on Monday with 41385 positive tests recorded. 
+																	Smith College president Kathleen McCartney announced last week that the college would not bring students back to campus this fall citing new scientific evidence as well as recent and troubling trends nationally and in Massachusetts. 
+																	The benefits of a college degree are clear but getting that degree isnt easy with high costs of education and personal obligations often getting in the way. 
+																	More typical is the 10 percent cut at Catholic University in Washington which plans to start the semester online and dramatically scale back the number of students allowed back onto campus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All other secondary pupils. 
+																	This means most students are expected to return to the classrooms on Monday. 
+																	Schools are going online tooDespite CDC recommendations most major districts going online as COVID-19 cases spike. 
+																	Her school is due to re-open face to face for keyworkers children from January 4 and for other pupils online. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We have updated the information on travelling to and from nursery childminders school and college education health and care EHC plans wellbeing online safety and assessment and exams. 
+																	Term will start with online learning but the majority of pupils are expected to. 
+																	In English secondary schools pupils in exam years including GCSEs A-levels and vocational exams will return to school as planned in the first full week of January. 
+																	Colleges have sent SMSes to students asking them to take online classes and to not. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SCHOOL kids are once again knuckling down to remote learning after a third national lockdown shuttered down schools again. 
+																	The ONS looked at death rates from coronavirus in England and Wales between March 9 and December 28 2020. 
+																	It found 31 in every 100000 working-age men and 17 in every 100000 working-age women had. 
+																	In-person instruction will be suspended Friday until January. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Detroit Public Schools Community District Michigans largest is one of the latest to announce the move back to digital learning. 
+																	Schools will start term on 11 January with learning taking place online until at least 18 January. 
+																	Parents give the news schools are starting to go back on February 22 a mixed reaction Online learning. 
+																	Universities will be among the first settings to reopen once the national lockdown restrictions start to be eased. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Is of no real practical benefit for this age group walesonline. 
+																	That news would have been good to know before Arianna Miskin a graduate. 
+																	Dismal student attendance for four straight days has forced several colleges to fully go back to online classes. 
+																	Asked at Fridays Welsh Government briefing what clarity he could give and whether a return next month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Schools re-opening to most pupils this term is unlikely the First Minister has confirmed. 
+																	As a result many who desire a college degree arent able to begin college or have to drop out. 
+																	But when are students due to return to school and are Year 12s going back. 
+																	SCHOOLS have broken up for the Christmas holidays but some are concerned over rising Covid cases and the implementation of Tier 4 restrictions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prime Minister Boris Johnson announced that all schools colleges and. 
+																	The half term break for most schools in the 202021 academic year will run from Monday 15 February to Friday 19 February. 
+																	The Department for Education is also said to be considering partially reopening secondary schools so that children in Year 10 and Year 12 - who have exams to sit - go back first. 
+																	Latest news on when students can go back. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mrs Jenkins wants schools open but fears infection rates may prevent that. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/0c/8a/300c8aaf7b2136f1f0c9a396edf5cae7.jpg" data-lightbox="roadtrip" data-title="Top 10 Things You Need To Know About Online College In 2020 Online College Productivity College Online Classes Organization">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/0c/8a/300c8aaf7b2136f1f0c9a396edf5cae7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ65Cx9nZDwHJUXaAbTFZqJJGyDtiSYU-sbw';" alt="Top 10 Things You Need To Know About Online College In 2020 Online College Productivity College Online Classes Organization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Things You Need To Know About Online College In 2020 Online College Productivity College Online Classes Organization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/94/7a/51947a19852483af2b37077c9e792133.png" data-lightbox="roadtrip" data-title="Top 10 Things You Need To Know About Online College In 2020 Online College Online Education Online Degree Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/94/7a/51947a19852483af2b37077c9e792133.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0akdYsuILTSaA0H22zSdAh8QZS_UXWyDpPQ';" alt="Top 10 Things You Need To Know About Online College In 2020 Online College Online Education Online Degree Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Things You Need To Know About Online College In 2020 Online College Online Education Online Degree Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/71/5b/d8715b93a571c84353feb8c194fb5e71.jpg" data-lightbox="roadtrip" data-title="Going Back To School And Changing Careers In Your 30s Nursing School Scholarships Chamberlain College Of Nursing Going Back To School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/71/5b/d8715b93a571c84353feb8c194fb5e71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRGkz-kPXPK9GwIgmVNTOONr1dKa9LE5woog';" alt="Going Back To School And Changing Careers In Your 30s Nursing School Scholarships Chamberlain College Of Nursing Going Back To School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Going Back To School And Changing Careers In Your 30s Nursing School Scholarships Chamberlain College Of Nursing Going Back To School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f2/9c/8e/f29c8e038b9e99b98d7065f31ea47997.jpg" data-lightbox="roadtrip" data-title="Online Jobs For College Students 8 Ways To Make Money From Your Dorm In 2020 Online Jobs Going Back To College Work From Home Moms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f2/9c/8e/f29c8e038b9e99b98d7065f31ea47997.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuXd0cUs5DaCh7H-0DYqp8q9srNOv3Zgri1A';" alt="Online Jobs For College Students 8 Ways To Make Money From Your Dorm In 2020 Online Jobs Going Back To College Work From Home Moms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Jobs For College Students 8 Ways To Make Money From Your Dorm In 2020 Online Jobs Going Back To College Work From Home Moms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/24/a9/bb24a9528974c1fc651c4e3175ff9cec.png" data-lightbox="roadtrip" data-title="Top 10 Things You Need To Know About Online College In 2020 Online College Online College Classes Online College Organization">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/24/a9/bb24a9528974c1fc651c4e3175ff9cec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7RoJoS4Ps_cXC-qB-E1EZ-90MU7JADEj6jw';" alt="Top 10 Things You Need To Know About Online College In 2020 Online College Online College Classes Online College Organization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Things You Need To Know About Online College In 2020 Online College Online College Classes Online College Organization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/9d/c2/009dc2377b8aa30a3da878529939f190.png" data-lightbox="roadtrip" data-title="How To Become A Highly Productive Student 7 Productivity Habits You Must Build In Online Scho Study Tips College Going Back To College College Survival Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/9d/c2/009dc2377b8aa30a3da878529939f190.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaaXy9ruLjgQ-KuThgbbN5hrrXRjh1_QYLhw';" alt="How To Become A Highly Productive Student 7 Productivity Habits You Must Build In Online Scho Study Tips College Going Back To College College Survival Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Become A Highly Productive Student 7 Productivity Habits You Must Build In Online Scho Study Tips College Going Back To College College Survival Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/87/1a/24871a5c3a5a3fc8524cf2789146fb17.png" data-lightbox="roadtrip" data-title="Have You Been Thinking About Going Back To School More Specifically Online School Since It Is More Convenient With A Ful Online College Online School College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/87/1a/24871a5c3a5a3fc8524cf2789146fb17.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgRcNoSc3rIJ-9NYhmmSjz_wJXSJsY6WPMGA';" alt="Have You Been Thinking About Going Back To School More Specifically Online School Since It Is More Convenient With A Ful Online College Online School College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Have You Been Thinking About Going Back To School More Specifically Online School Since It Is More Convenient With A Ful Online College Online School College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d7/9e/a1/d79ea14b4b4648ad11ea62742100e9e9.jpg" data-lightbox="roadtrip" data-title="Going Back To School Worried About How You Re Going To Pay For It Check This Out College Education Tuition Student Grants Online College Courses College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d7/9e/a1/d79ea14b4b4648ad11ea62742100e9e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYIKspFoW_tHxABDeQ8WOdFK7AeXvaHuNuJw';" alt="Going Back To School Worried About How You Re Going To Pay For It Check This Out College Education Tuition Student Grants Online College Courses College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Going Back To School Worried About How You Re Going To Pay For It Check This Out College Education Tuition Student Grants Online College Courses College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e8/f5/d7/e8f5d7a7b14d184b809f1338fbc5d17d.jpg" data-lightbox="roadtrip" data-title="The Benefits Of A College Degree Are Clear But Getting That Degree Isn T Easy With High Costs Of Education And P College Degree College Going Back To College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e8/f5/d7/e8f5d7a7b14d184b809f1338fbc5d17d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRUb8EVr1q040X_1UAi8F6Fcu80_N8_L3Mbg';" alt="The Benefits Of A College Degree Are Clear But Getting That Degree Isn T Easy With High Costs Of Education And P College Degree College Going Back To College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Benefits Of A College Degree Are Clear But Getting That Degree Isn T Easy With High Costs Of Education And P College Degree College Going Back To College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d0/39/a5/d039a5cfd598919a72a39a0c5a16afbe.jpg" data-lightbox="roadtrip" data-title="By The Year 2030 1 In 5 Americans Will Be Over The Age Of 65 And Many May Be Considering College As The U S Population College Education College Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d0/39/a5/d039a5cfd598919a72a39a0c5a16afbe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYH_31nrU8csc2VIqIKLGDhwWqzkbKCq12BQ';" alt="By The Year 2030 1 In 5 Americans Will Be Over The Age Of 65 And Many May Be Considering College As The U S Population College Education College Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">By The Year 2030 1 In 5 Americans Will Be Over The Age Of 65 And Many May Be Considering College As The U S Population College Education College Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/96/3f/10/963f102a6c225c16a46d4c5724c9dc9b.jpg" data-lightbox="roadtrip" data-title="Pin On Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/96/3f/10/963f102a6c225c16a46d4c5724c9dc9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPP5ISdgvDusLeT9RvmaccKqe5JuZp2XDOaA';" alt="Pin On Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/2c/ba/ca2cba648c7536f46364841014b5bf20.jpg" data-lightbox="roadtrip" data-title="Pin On Future Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/2c/ba/ca2cba648c7536f46364841014b5bf20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2uI9BE0pApjRO_knas0rbvuldHGan9ZxwCQ';" alt="Pin On Future Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Future Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6a/9b/02/6a9b02157ba41d7c0c3faaaa2f6e9038.jpg" data-lightbox="roadtrip" data-title="Pin On Applying For Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6a/9b/02/6a9b02157ba41d7c0c3faaaa2f6e9038.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfH59qdts3PzYhk3fAXbVD0Nw1ne_w5FWmUA';" alt="Pin On Applying For Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Applying For Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/benefits-of-gift-cards.html">Benefits Of Gift Cards</a></li>
+													<li class="list-group-item"><a href="/benefits-of-high-gi-foods.html">Benefits Of High Gi Foods</a></li>
+													<li class="list-group-item"><a href="/benefits-of-clean-digestive-tract.html">Benefits Of Clean Digestive Tract</a></li>
+													<li class="list-group-item"><a href="/best-college-football-promotions.html">Best College Football Promotions</a></li>
+													<li class="list-group-item"><a href="/benefits-of-norland-gi-capsules.html">Benefits Of Norland Gi Capsules</a></li>
+													<li class="list-group-item"><a href="/bellevue-college-womens-basketball-questionnaire.html">Bellevue College Womens Basketball Questionnaire</a></li>
+													<li class="list-group-item"><a href="/benefits-of-giving-birth-in-uae.html">Benefits Of Giving Birth In Uae</a></li>
+													<li class="list-group-item"><a href="/benefits-of-low-gi-sugar.html">Benefits Of Low Gi Sugar</a></li>
+													<li class="list-group-item"><a href="/benefits-of-gifting-money.html">Benefits Of Gifting Money</a></li>
+													<li class="list-group-item"><a href="/benefits-of-ginger-and-honey.html">Benefits Of Ginger And Honey</a></li>
+													<li class="list-group-item"><a href="/benefitsvagovgibillpost911-gi-billasp.html">Benefitsvagovgibillpost911 Gi Billasp</a></li>
+													<li class="list-group-item"><a href="/benefits-of-low-gi-diet.html">Benefits Of Low Gi Diet</a></li>
+													<li class="list-group-item"><a href="/benedict-college-womens-basketball-schedule.html">Benedict College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/benefits-of-gi-microb-x.html">Benefits Of Gi Microb X</a></li>
+													<li class="list-group-item"><a href="/best-amazon-gifts-for-college-guys.html">Best Amazon Gifts For College Guys</a></li>
+													<li class="list-group-item"><a href="/benefits-of-ginger-lemon-and-honey.html">Benefits Of Ginger Lemon And Honey</a></li>
+													<li class="list-group-item"><a href="/benefits-of-chicken-gizzard.html">Benefits Of Chicken Gizzard</a></li>
+													<li class="list-group-item"><a href="/benefits-of-gym-ball.html">Benefits Of Gym Ball</a></li>
+													<li class="list-group-item"><a href="/benefits-of-ginkgo-biloba.html">Benefits Of Ginkgo Biloba</a></li>
+													<li class="list-group-item"><a href="/benefits-of-ginger-and-garlic.html">Benefits Of Ginger And Garlic</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

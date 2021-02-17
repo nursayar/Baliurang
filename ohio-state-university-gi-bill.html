@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ohio State University Gi Bill - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ohio State University Gi Bill",
+  "datePublished": "2021-02-17",
+  "image": "https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/998/original/ohio-boot-camps.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ohio+state+university+gi+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ohio State University Gi Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Many of the provisions in the proposed Ohio GI bill are similar to those of Michigan s Russell said. You may be committed to enrolling at OSU or you may be trying to make a decision and would like as much information as possible. Visit veteransosuedu to learn about affirmative action assistance the GI Bill and other financial aid issues housing and resources. <br>				
+			</p>
+										<a class="badge badge-danger" href="/is-national-guard-eligible-for-gi-bill.html">is national guard eligible for gi bill</a>
+											<a class="badge badge-secondary" href="/junior-college-womens-basketball-rankings-in-california.html">junior college womens basketball rankings in california</a>
+											<a class="badge badge-danger" href="/is-the-gi-bill-federal-tuition-assistance.html">is the gi bill federal tuition assistance</a>
+											<a class="badge badge-light" href="/kentucky-wesleyan-college-womens-basketball-roster.html">kentucky wesleyan college womens basketball roster</a>
+											<a class="badge badge-danger" href="/jefferson-college-womens-basketball-stats.html">jefferson college womens basketball stats</a>
+											<a class="badge badge-info" href="/is-the-gi-bill-taxable.html">is the gi bill taxable</a>
+											<a class="badge badge-info" href="/is-the-gi-bill-unlimited.html">is the gi bill unlimited</a>
+											<a class="badge badge-success" href="/is-there-still-a-gi-bill.html">is there still a gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the ideal site.  Our website gives you hints for viewing the maximum quality video and image content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://undergrad.osu.edu/Images1/Ohio-State-University_Veteran-and-Military-Students.png" data-lightbox="roadtrip" data-title="Admission Information For Veterans The Ohio State University">
+											<img class="card-img v-image ads-img " src="http://undergrad.osu.edu/Images1/Ohio-State-University_Veteran-and-Military-Students.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZsB4B9IWrCgW2APIAAE1wPnlnUi4cw6RziA';" alt="Admission Information For Veterans The Ohio State University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Admission Information For Veterans The Ohio State University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wexnermedical.osu.edu/-/media/images/wexnermedical/pages/departments/national-reputation-campaign/stories/gastro/ibd2.jpg?la=en&amp;hash=B18C11EE6196F6BE31F027F95D54058C592A9B96" data-lightbox="roadtrip" data-title="Ibd Center Ohio State Medical Center">
+											<img class="card-img v-image ads-img " src="https://wexnermedical.osu.edu/-/media/images/wexnermedical/pages/departments/national-reputation-campaign/stories/gastro/ibd2.jpg?la=en&amp;hash=B18C11EE6196F6BE31F027F95D54058C592A9B96" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ8mFoeNrag4fgyGICzVZYxzV1efLUI55QJA';" alt="Ibd Center Ohio State Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ibd Center Ohio State Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://online.osu.edu/sites/default/files/2019/12/oso-meta-image-1200x630.png" data-lightbox="roadtrip" data-title="Frequently Asked Questions Ohio State Online">
+											<img class="card-img v-image ads-img " src="https://online.osu.edu/sites/default/files/2019/12/oso-meta-image-1200x630.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyo5BJdCTzW5gnEnOGS-_RHNf2B4Cy5yN8ZA';" alt="Frequently Asked Questions Ohio State Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Frequently Asked Questions Ohio State Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.collegefactual.com/chart-images/ohio-state-university-main-campus/paying-for-college/net-price/chart-avg-net-price-trend.png" data-lightbox="roadtrip" data-title="What Is The Value Of A Degree From Ohio State University Main Campus">
+											<img class="card-img v-image ads-img " src="https://www.collegefactual.com/chart-images/ohio-state-university-main-campus/paying-for-college/net-price/chart-avg-net-price-trend.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGxVkOdMsgOwcHBNvANU5ToZkWgYCTF5_rCw';" alt="What Is The Value Of A Degree From Ohio State University Main Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is The Value Of A Degree From Ohio State University Main Campus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hrs.osu.edu/-/media/images/shared/media-room/wexner-medical/press-releases/locations/locations-high-res/old-top-university-hospital.jpg?la=en&amp;hash=EE948947E9BBA04D580D0E3BB7DAD39CD0A5523F" data-lightbox="roadtrip" data-title="Ohio State Wexner Medical Center Rated One Of Ohio S Top Two Hospitals">
+											<img class="card-img v-image ads-img " src="https://hrs.osu.edu/-/media/images/shared/media-room/wexner-medical/press-releases/locations/locations-high-res/old-top-university-hospital.jpg?la=en&amp;hash=EE948947E9BBA04D580D0E3BB7DAD39CD0A5523F" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwujdaX_3AFiOfWOztt57ULirFsZRCZZ6nGg';" alt="Ohio State Wexner Medical Center Rated One Of Ohio S Top Two Hospitals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ohio State Wexner Medical Center Rated One Of Ohio S Top Two Hospitals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.osu.edu/alumni/assets/images/magazine/2019/Fall/OSAM_Fa19_Military_hero_1140x520.jpg" data-lightbox="roadtrip" data-title="History Of Military Service Ohio State University Ohio State Alumni Magazine">
+											<img class="card-img v-image ads-img " src="https://www.osu.edu/alumni/assets/images/magazine/2019/Fall/OSAM_Fa19_Military_hero_1140x520.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4J4RhFAmuG5M0mRm_JAZJW_tEi7pnuWjKg';" alt="History Of Military Service Ohio State University Ohio State Alumni Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">History Of Military Service Ohio State University Ohio State Alumni Magazine</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://wexnermedical.osu.edu/-/media/images/wexnermedical/pages/departments/national-reputation-campaign/stories/gastro/ibd2.jpg?la=en&amp;hash=B18C11EE6196F6BE31F027F95D54058C592A9B96" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4J4RhFAmuG5M0mRm_JAZJW_tEi7pnuWjKg';" alt="History Of Military Service Ohio State University Ohio State Alumni Magazine">
+										<div class="card-body">
+						<h3 class="h5"><b>Tuition Option Payment Plan TOPP - The SHI Benefits Plan fee can be paid in installments using the university TOPP.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ohio state university gi bill</strong>. 
+								
+																	To encourage veterans from across America to bring their families leadership motivation and maturity to Ohios colleges and universities the State of Ohio as part of the executive order creating the Ohio GI Promise outlined criteria that allows qualified veterans and their dependents from anywhere in the country to skip the 12-month residency requirement and attend Ohios public colleges and universities at in-state tuition rates. 
+																	The service member or veteran must be using VA education benefits under Chapter 30 or Chapter 33 Post 911 GI Bill served at least 90 days on active duty and have separated is enrolled in a state institution of higher education and lives in Ohio as of the first day of a term of enrollment in an institution of higher. 
+																	You must have received an honorable discharge to be eligible for the Post-911 GI Bill. 
+																	Please contact Military and Veterans Services for questions about your aid package. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Over 1800 students that go to Ohio State are recipients of the GI Bill. 
+																	Ohio State is committed to cultivating a positive campus and community experience for veteran and military students. 
+																	GI Bill Applies To High School Education Too. 
+																	You must have received an honorable discharge to be eligible for the Post-911 GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ohio States Veteran and Military Community Programs. 
+																	Veterans Typically Attend Ohio State University - Main Campus for no More Than 4004 If you qualify for full benefits under the Post-911 GI Bill we estimate that your yearly out of pocket cost to attend Ohio State University - Main Campus should not be more than 4004. 
+																	The Post-911 GI Bill The SHI Benefits Plan fee can be paid using the Post-911 GI Bill. 
+																	The Ohio State University is a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	University Exploration partners with the OMVS to provide advising throughout the year at the Office of Military and Veteran Service in addition to the advising available in our office. 
+																	For all others tuition is 4673 for Ohio residents and 8263 for non-residents. 
+																	The Post-911 GI Bill provides financial support for education and housing to individuals with at least 90 days of aggregate service on or after September 11 2001 or individuals discharged with a service-connected disability after 30 days. 
+																	This assistance includes transitional information concerning financial personal emotional and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Therefore the check you receive in October is for the month of September etc. 
+																	Complete the form below to request more information on navigating the GI Bill and college application process. 
+																	There are many opportunities for financial assistance for veteran and military students at Ohio State. 
+																	Here you will hopefully find the answers to most of your questions regarding the programs here in the Center for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2015 Federal Law Choice Act and Companion State of Ohio Law. 
+																	GI Bill checks are received once a month for the previous month. 
+																	Credit for CLEP Exam. 
+																	For non-resident veterans and their relatives the GI Bill will cover tuition up to 4673 which means the individual will be responsible for 3590 out-of-pocket. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Applying for GI Benefits Financial Aid MilitaryVeteran Student Aid. 
+																	Awards credit for the DSST Exam. 
+																	If you have a kid brother whose high school education was interrupted by the war here is good news. 
+																	Called to Duty While at Enrolled in Classes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Student Veterans of America chapter. 
+																	Ohio State offers a variety of support services for military and veteran students through our Office of Military and Veteran Services OMVS. 
+																	Approved for Tuition Assistance. 
+																	College credit for military experience. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Financial Aid Many financial aid packages can be used to pay the SHI Benefits Plan fee. 
+																	The federal government now provides 175 a month to single veterans 200 for married veterans 230 for married veterans with. 
+																	These top-ranked programs are taught by the same distinguished faculty who teach on campus. 
+																	The links to the left will provide you with direct access to information on GI Benefits the Yellow Ribbon Program ROTC Scholarships and other awards as well as. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Post-911 GI Bill provides financial support for education and housing to individuals with at least 90 days of aggregate service on or after September 11 2001 or individuals discharged with a service-connected disability after 30 days. 
+																	All Veterans except dependents must self-verify their attendence after the last calendar day of each month either by telephone or on-line self-verification before payment is issued. 
+																	Ohio State participates in three federal programs important to veterans and participates in the yellow ribbon program as well. 
+																	Provided he has sufficient period of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ohio State Online makes it possible for military and veteran students to apply the GI Bill to a respected and valued online degree program. 
+																	Discover Ohio State the highest ranked public university in Ohio is home to the Wexner Medical Center and world-class graduate and undergraduate programs. 
+																	You have been admitted to or are considering The Ohio State University and are planning on studying Aviation but you probably have a few questions. 
+																	And Illinois are a few of the states which have passed G. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bill and other military financial information. 
+																	We work closely with the OMVS to assist our military and veteran. 
+																	The college also offers an online degree option in nursing. 
+																	He said Michigan Nevada. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marion Campus Financial Aid and Admissions. 
+																	Veterans of Marion Campus This student organization assists any active inactive or retired military person with transition from military to civilian life. 
+																	Veterans who failed to complete high school because of war service may complete their schooling under benefits of the GI Bill and later attend college or take up job-training the VA explained today. 
+																	About Ohio State University. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bills which benefit veterans at the state level. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dzhhw2kso6jlo.cloudfront.net/chart-images/v1/ohio-state-university-main-campus/paying-for-college/tuition-and-fees/chart-tuition-and-fees-trend_xl.png" data-lightbox="roadtrip" data-title="Ohio State University Main Campus Tuition And Fees">
+											<img class="card-img v-image ads-img " src="https://dzhhw2kso6jlo.cloudfront.net/chart-images/v1/ohio-state-university-main-campus/paying-for-college/tuition-and-fees/chart-tuition-and-fees-trend_xl.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDg_WJ955YZh273ssV40e8qUpM-HBA55dtfw';" alt="Ohio State University Main Campus Tuition And Fees">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ohio State University Main Campus Tuition And Fees</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/vJ7ZMEoqLAo/sddefault.jpg" data-lightbox="roadtrip" data-title="Anita Afzali Md Ohio State University Wexner Medical Center">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/vJ7ZMEoqLAo/sddefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnkHCtQPIKNtfCpCRapaaclye8zodd5o9-Ng';" alt="Anita Afzali Md Ohio State University Wexner Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anita Afzali Md Ohio State University Wexner Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dzhhw2kso6jlo.cloudfront.net/chart-images/v1/ohio-state-university-main-campus/student-life/crime/chart-overall-crime_xl.png" data-lightbox="roadtrip" data-title="How Safe Is Ohio State University Main Campus Learn About Campus Crime Ratings">
+											<img class="card-img v-image ads-img " src="https://dzhhw2kso6jlo.cloudfront.net/chart-images/v1/ohio-state-university-main-campus/student-life/crime/chart-overall-crime_xl.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXQPlYyCcI04IPUhQBWDXeeUrZK327eFvWJg';" alt="How Safe Is Ohio State University Main Campus Learn About Campus Crime Ratings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Safe Is Ohio State University Main Campus Learn About Campus Crime Ratings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://newark.osu.edu/assets/newark/MPR_ssc18/Military_KnowBenefits.jpg" data-lightbox="roadtrip" data-title="Military And Veterans The Ohio State University At Newark">
+											<img class="card-img v-image ads-img " src="https://newark.osu.edu/assets/newark/MPR_ssc18/Military_KnowBenefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsU36lj4L_M5Nixzhpeo8XQPoJyXllRJ5Cew';" alt="Military And Veterans The Ohio State University At Newark">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military And Veterans The Ohio State University At Newark</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/collegerecon.prod.assets/assets/college-assets/Unknown.jpeg" data-lightbox="roadtrip" data-title="Ohio State University Main Campus For Military Veterans Using Ta Or Gi Bill Collegerecon">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/collegerecon.prod.assets/assets/college-assets/Unknown.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbcF-QEqYv4b1P320UA8AeNOGYeKM2vZUrA';" alt="Ohio State University Main Campus For Military Veterans Using Ta Or Gi Bill Collegerecon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ohio State University Main Campus For Military Veterans Using Ta Or Gi Bill Collegerecon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wexnermedical.osu.edu/-/media/images/shared/locations/wexner/locations/university-hospital_listing_new.jpg" data-lightbox="roadtrip" data-title="Jeffery Groce Md Ohio State University Wexner Medical Center">
+											<img class="card-img v-image ads-img " src="https://wexnermedical.osu.edu/-/media/images/shared/locations/wexner/locations/university-hospital_listing_new.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ1obD9VlwJ_T64ktFZXnRzFqSlZt-LpwtCg';" alt="Jeffery Groce Md Ohio State University Wexner Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jeffery Groce Md Ohio State University Wexner Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.collegefactual.com/chart-images/ohio-state-university-main-campus/paying-for-college/room-and-board/chart-room-board-other-expense-compare.png" data-lightbox="roadtrip" data-title="Ohio State University Main Campus Housing Costs">
+											<img class="card-img v-image ads-img " src="https://www.collegefactual.com/chart-images/ohio-state-university-main-campus/paying-for-college/room-and-board/chart-room-board-other-expense-compare.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW_XvPDFuLUrfyH5jzB9uauSI2TThK6dY1zg';" alt="Ohio State University Main Campus Housing Costs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ohio State University Main Campus Housing Costs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dzhhw2kso6jlo.cloudfront.net/chart-images/v1/ohio-state-university-main-campus/student-life/diversity/chart-gender-diversity_xl.png" data-lightbox="roadtrip" data-title="Ohio State University Main Campus Diversity Racial Demographics Other Stats">
+											<img class="card-img v-image ads-img " src="https://dzhhw2kso6jlo.cloudfront.net/chart-images/v1/ohio-state-university-main-campus/student-life/diversity/chart-gender-diversity_xl.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-0f_Rjq20WC-rF1_Ax4_c1Q-1ns495nlIhw';" alt="Ohio State University Main Campus Diversity Racial Demographics Other Stats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ohio State University Main Campus Diversity Racial Demographics Other Stats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/998/original/ohio-boot-camps.png" data-lightbox="roadtrip" data-title="Ohio State University Boot Camps Reviews Course Course Report">
+											<img class="card-img v-image ads-img " src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/998/original/ohio-boot-camps.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDJGkf96lEPP8dEeWHyPySfdwtOCq2LZKqbQ';" alt="Ohio State University Boot Camps Reviews Course Course Report">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ohio State University Boot Camps Reviews Course Course Report</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.osu.edu/alumni/assets/1_OSAM/Spring%202020/OSAM_SP20_Capers_1140x520.jpg" data-lightbox="roadtrip" data-title="Making Medicine More Fair Ohio State University Ohio State Alumni Magazine">
+											<img class="card-img v-image ads-img " src="https://www.osu.edu/alumni/assets/1_OSAM/Spring%202020/OSAM_SP20_Capers_1140x520.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6UDaThYnwwpvcFOyYESSZ3LZp5X9nj0d3Og';" alt="Making Medicine More Fair Ohio State University Ohio State Alumni Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Making Medicine More Fair Ohio State University Ohio State Alumni Magazine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.125503.1289833571!/image/4144770920.jpg_gen/derivatives/landscape_804/4144770920.jpg" data-lightbox="roadtrip" data-title="Report New Gi Bill Drove Vets To Enroll In College Stripes Central Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.125503.1289833571!/image/4144770920.jpg_gen/derivatives/landscape_804/4144770920.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvP6miQ2P0YtunmoGUwo73HXLmrCQ2CgAUQ';" alt="Report New Gi Bill Drove Vets To Enroll In College Stripes Central Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Report New Gi Bill Drove Vets To Enroll In College Stripes Central Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/The_Ohio_State_University_Medical_Center_2007.jpg/270px-The_Ohio_State_University_Medical_Center_2007.jpg" data-lightbox="roadtrip" data-title="Ohio State University Wexner Medical Center Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/en/thumb/6/63/The_Ohio_State_University_Medical_Center_2007.jpg/270px-The_Ohio_State_University_Medical_Center_2007.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg-ShtPKWKcML2aZh-jrFx1DVh8f0GLZTuWw';" alt="Ohio State University Wexner Medical Center Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ohio State University Wexner Medical Center Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wexnermedical.osu.edu/-/media/images/wexnermedical/locations/listing-image/eye-and-ear-institute.jpg" data-lightbox="roadtrip" data-title="Asthma Care Ohio State Wexner Medical Center">
+											<img class="card-img v-image ads-img " src="https://wexnermedical.osu.edu/-/media/images/wexnermedical/locations/listing-image/eye-and-ear-institute.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpf2Tox2i87Zdcl6zC1q1Kk0cObpZBDAIzsA';" alt="Asthma Care Ohio State Wexner Medical Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Asthma Care Ohio State Wexner Medical Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ohio-state-university-gi-bill.html">Ohio State University Gi Bill</a></li>
+													<li class="list-group-item"><a href="/percentage-of-college-athletes-who-go-pro.html">Percentage Of College Athletes Who Go Pro</a></li>
+													<li class="list-group-item"><a href="/phoenix-va-education-department.html">Phoenix Va Education Department</a></li>
+													<li class="list-group-item"><a href="/percentage-of-college-athletes-that-go-pro.html">Percentage Of College Athletes That Go Pro</a></li>
+													<li class="list-group-item"><a href="/penn-state-world-campus-gi-bill.html">Penn State World Campus Gi Bill</a></li>
+													<li class="list-group-item"><a href="/oregon-state-gi-loan.html">Oregon State Gi Loan</a></li>
+													<li class="list-group-item"><a href="/odu-gi-bill-form.html">Odu Gi Bill Form</a></li>
+													<li class="list-group-item"><a href="/photo-collage-gifts.html">Photo Collage Gifts</a></li>
+													<li class="list-group-item"><a href="/pa-national-guard-gi-bill.html">Pa National Guard Gi Bill</a></li>
+													<li class="list-group-item"><a href="/pokemon-go-college-station-discord.html">Pokemon Go College Station Discord</a></li>
+													<li class="list-group-item"><a href="/oregon-womens-college-basketball-roster.html">Oregon Womens College Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/other-forms-of-gi-bill.html">Other Forms Of Gi Bill</a></li>
+													<li class="list-group-item"><a href="/online-mba-post-911-gi-bill.html">Online Mba Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/panola-college-womens-basketball-roster.html">Panola College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/percent-of-college-soccer-players-that-go-pro.html">Percent Of College Soccer Players That Go Pro</a></li>
+													<li class="list-group-item"><a href="/penn-state-gi.html">Penn State Gi</a></li>
+													<li class="list-group-item"><a href="/odpmc-discharge-gi-bill.html">Odpmc Discharge Gi Bill</a></li>
+													<li class="list-group-item"><a href="/percent-of-college-players-that-go-pro.html">Percent Of College Players That Go Pro</a></li>
+													<li class="list-group-item"><a href="/pinterest-college-gift-basket-ideas.html">Pinterest College Gift Basket Ideas</a></li>
+													<li class="list-group-item"><a href="/penn-state-gi-fellowship.html">Penn State Gi Fellowship</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

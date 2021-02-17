@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veteran Education Benefits In California - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veteran Education Benefits In California",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/7c/fc/19/7cfc1994d06244c0035dbafcc7070905.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veteran+education+benefits+in+california",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veteran Education Benefits In California</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Who May Be Eligible. The spouse registered domestic partner child under the age of 27 or unmarried surviving spouse of a veteran who is. Veteran Business Benefits Education Benefits Other State Veteran Benefits Housing Benefits Veterans Homes of California The mission of the CalVet Homes is to provide the states aged or disabled veterans with rehabilitative residential and medical care and services in a home-like environment This mission acknowledges the tremendous sacrifice California veterans have made and recognizes. <br>				
+			</p>
+										<a class="badge badge-success" href="/post-911-gi-bill-updates.html">post 911 gi bill updates</a>
+											<a class="badge badge-dark" href="/post-911-gi-bill-transfer-of-benefits.html">post 911 gi bill transfer of benefits</a>
+											<a class="badge badge-info" href="/post-911-gi-bill-monthly-payment.html">post 911 gi bill monthly payment</a>
+											<a class="badge badge-secondary" href="/post-911-gi-bill-online-classes-full-time.html">post 911 gi bill online classes full time</a>
+											<a class="badge badge-warning" href="/post-911-gi-bill-payment-dates.html">post 911 gi bill payment dates</a>
+											<a class="badge badge-info" href="/post-911-gi-bill-transfer-of-education-benefits-teb.html">post 911 gi bill transfer of education benefits teb</a>
+											<a class="badge badge-success" href="/post-911-gi-bill-percentage-rates.html">post 911 gi bill percentage rates</a>
+											<a class="badge badge-danger" href="/post-911-gi-bill-transfer-education-benefits.html">post 911 gi bill transfer education benefits</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the ideal site.  Our website provides you with suggestions for viewing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/ea/03/e0ea03aae049b5401c19ff9eef52cb3b.jpg" data-lightbox="roadtrip" data-title="Thanks To The College Tuition Fee Waiver Program Ctfw Disabled Veterans In California Can Get Some Assi College Tuition Military Benefits Tuition Assistance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/ea/03/e0ea03aae049b5401c19ff9eef52cb3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaTcqJ5JD7OF16U9fKNSB6Q4YEhqfDyVYfPA';" alt="Thanks To The College Tuition Fee Waiver Program Ctfw Disabled Veterans In California Can Get Some Assi College Tuition Military Benefits Tuition Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thanks To The College Tuition Fee Waiver Program Ctfw Disabled Veterans In California Can Get Some Assi College Tuition Military Benefits Tuition Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/ef/22/10ef2270f2d2e890f8da77cd1d55d459.png" data-lightbox="roadtrip" data-title="Pin On Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/ef/22/10ef2270f2d2e890f8da77cd1d55d459.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk6p_KlBVYQI3zeIYSXV13-tKfLDnr9f1Khg';" alt="Pin On Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/50/5e/d5/505ed5298530a87635c4bf60540860f3.jpg" data-lightbox="roadtrip" data-title="15 Military Discounts Veterans And Active Military Members Did Not Know They Could Get Veterans Savings Military Discounts Veterans Discounts Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/50/5e/d5/505ed5298530a87635c4bf60540860f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQReR_ayUHNy2OYanrVh7FJVbifY_9rwMOGRA';" alt="15 Military Discounts Veterans And Active Military Members Did Not Know They Could Get Veterans Savings Military Discounts Veterans Discounts Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Military Discounts Veterans And Active Military Members Did Not Know They Could Get Veterans Savings Military Discounts Veterans Discounts Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/46/e7/bb/46e7bbc027830574cd5c4df07401bf6c.jpg" data-lightbox="roadtrip" data-title="Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Famili Military Education Military Careers Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/46/e7/bb/46e7bbc027830574cd5c4df07401bf6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFwP9mlF2vKjSf_Q1d7lj499WG1YwMB6ndEQ';" alt="Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Famili Military Education Military Careers Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women In The Military From Service To Civilian Life Infographic Institute For Veterans And Military Famili Military Education Military Careers Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/86/19/0b86198d71cbe9f5c15ad8d85ba16245.jpg" data-lightbox="roadtrip" data-title="Student Veterans And The Nontraditional Path To Higher Ed Student Veteran Nontraditional">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/86/19/0b86198d71cbe9f5c15ad8d85ba16245.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuKCN-fgFQRqbp53kY1aJ1Qp623tIIJLmlxw';" alt="Student Veterans And The Nontraditional Path To Higher Ed Student Veteran Nontraditional">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Veterans And The Nontraditional Path To Higher Ed Student Veteran Nontraditional</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/23/8e/c9238e8b559c493718550433e5b22c97.jpg" data-lightbox="roadtrip" data-title="Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/23/8e/c9238e8b559c493718550433e5b22c97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG1OosFAcjIRkv2Rahe9k3gMeMdn_F-027bw';" alt="Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/50/5e/d5/505ed5298530a87635c4bf60540860f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG1OosFAcjIRkv2Rahe9k3gMeMdn_F-027bw';" alt="Veterans Job Resource Fair Camarhttp Military Civilian Blogspot Com 2013 01 Veterans Job Resource Fair Camarillo Ca Html Il Veteran Jobs Job Fair Veteran">
+										<div class="card-body">
+						<h3 class="h5"><b>The College Tuition Fee Waiver for the Dependents of Veterans -- sometimes called the CalVet Fee Waiver -- is a state benefit that provides a tuition-free education at the CSU and the other state public post-secondary colleges and universities.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veteran education benefits in california</strong>. 
+								
+																	Learn More About the CalVet College Fee Waiver Find Your Local County Veteran Service Officers. 
+																	Application for VA Education Benefits VA Form 22-1990. 
+																	Check out our California veterans benefits page to see what other state benefits you may be eligible for. 
+																	As a veteran dependent or survivor you may qualify for a number of federal benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Education Benefits for Veterans in California Many VA education benefits are available for servicemembers and their eligible family members to take advantage of including access to college degrees certificates work-study programs on-the-job training and apprenticeships. 
+																	Education Benefits for California Veterans Children and spouses or registered domestic partners of disabled or deceased veterans can receive a waiver for tuition and fees at a California state university or community college. 
+																	This section offers a brief description of each of the following benefits. 
+																	Education Benefits for California Veterans In addition to federal programs such as the GI Bill there are veterans benefits programs provided by the states. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Office of Veterans Affairs at California State University Northridge CSUN will assist you with the education benefits process and help pave the way for you to join our vibrant university community. 
+																	Each program provides different benefits to different groups of individuals and offers a specified number of months of. 
+																	As a veteran there are education programs available which you may use for a wide variety of approved education and training programs including. 
+																	The state of California provides several veteran benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	32 - Veterans Education Assistance Program VEAP For more information regarding VA programs or eligibility simply contact CCUs VA Representative at 888 228-8648 or email email protected. 
+																	The CalVets official site reminds that California veterans can use their education benefits to pay for up to 100 of fees at most Universities of California California State Universities for Veterans or survivors And while that may sound like a no-brainer theres an important reason why CalVets calls attention to this. 
+																	Funding for the Oregon Veteran Education Aid Program has been suspended through. 
+																	Department of Veterans Affairs VA will serve as the State Approving Agency SAA for California in fiscal year 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA education benefits help Veterans service members and their qualified family members with needs like paying college tuition finding the right school or training program and getting career counseling. 
+																	California has 8 veterans homes. 
+																	VA to approve GI Bill benefits programs in California Effective Oct. 
+																	Surviving spouses of deceased veterans are also eligible as long as they dont remarry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apprenticeship and on-the-job training college degree and certificate programs flight training and correspondence courses. 
+																	California offers special benefits for its military service members and veterans including motor vehicle registration fees waived veterans license plates fishing and hunting licenses state parks and recreation pass business license property tax exemptions disabled veteran business enterprise business license tax and fee waiver. 
+																	Learn how to apply for and manage the education and training benefits youve earned. 
+																	California Veteran Education Benefits CollegeUniversity Veteran Tuition Waivers Eligible California veterans and qualifying military dependents may be eligible for a waiver of statewide tuition and fees for California State University University of California and any State of California community college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The following are the California veterans benefits programs for education housing healthcare and employment. 
+																	California National Guard Education Assistance Award Program CNGEAAP. 
+																	The College Tuition Fee Waiver for Veteran Dependents benefit waives mandatory system-wide tuition and fees at any State of California Community College California State University or University of California campus. 
+																	Waiver of mandatory system-wide tuition and fees at any State of California Community College California State University or University of California campus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	California residents as determined by UC Enrolled in a degree program Dependents or survivors of a disabled or deceased California veteran as certified by the VA. 
+																	College Tuition Fee Waivers for Veterans Dependents. 
+																	The Cal Vet fee exemption officially known as the College Tuition Fee Waiver for Veteran Dependents waives systemwide tuition and fees 12804 in 2015-16 for students who are. 
+																	The department will determine which programs of education are eligible for GI Bill benefits in California. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This program does not cover the expense of books parking or room and board. 
+																	California Education Benefits. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/2b/ce/432bce533c933f94f6f129b035556fb3.png" data-lightbox="roadtrip" data-title="Pin On Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/2b/ce/432bce533c933f94f6f129b035556fb3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-fqvToFpTZH10OKOZaOIMIfhVq-Etgkw-3w';" alt="Pin On Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/05/50/51/05505147ff5c9bbed89743c2b0f0bb96.jpg" data-lightbox="roadtrip" data-title="Pin By Daniel Gagliano On Va Issues Veterans Benefits Veteran Jobs Disabled Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/05/50/51/05505147ff5c9bbed89743c2b0f0bb96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvi37Nj6PKXd4VlnwjT7fYZeJXUowb3CNng';" alt="Pin By Daniel Gagliano On Va Issues Veterans Benefits Veteran Jobs Disabled Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Daniel Gagliano On Va Issues Veterans Benefits Veteran Jobs Disabled Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/10/veteran-education-benefits-fafsa.jpg" data-lightbox="roadtrip" data-title="Fafsa Veteran Education Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/10/veteran-education-benefits-fafsa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3k4DS7zck7zJ6cT8ADDNBeWOQ_f3QWbEpdw';" alt="Fafsa Veteran Education Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fafsa Veteran Education Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/e2/89/e1e289173865aac0d82ba929ebd206e9.jpg" data-lightbox="roadtrip" data-title="Annual Orange County Veterans Fair Garden Grove Ca 92643 7 15 13 Http Military Civilian Blogspot Com 2013 06 Annual O Veteran Jobs Veteran Orange County">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/e2/89/e1e289173865aac0d82ba929ebd206e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShWatezFN7O86-fv82q53KTktnIGZ6rlO24w';" alt="Annual Orange County Veterans Fair Garden Grove Ca 92643 7 15 13 Http Military Civilian Blogspot Com 2013 06 Annual O Veteran Jobs Veteran Orange County">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Annual Orange County Veterans Fair Garden Grove Ca 92643 7 15 13 Http Military Civilian Blogspot Com 2013 06 Annual O Veteran Jobs Veteran Orange County</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/07/states-that-offer-free-tuition-for-veterans.jpg" data-lightbox="roadtrip" data-title="States That Offer Free Tuition For Vets Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/07/states-that-offer-free-tuition-for-veterans.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjREWpcRINNVZfP5cnPjRpQKDR1xPCEvYFew';" alt="States That Offer Free Tuition For Vets Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">States That Offer Free Tuition For Vets Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fa/cf/9e/facf9edef3b84e8caf0dbc455deaaafe.jpg" data-lightbox="roadtrip" data-title="Online Bring Back Lost Lover Spells In Buckinghamshire Chat Call Whatsapp 27843769238 Veterans Benefits California Bring Back Lost Lover">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fa/cf/9e/facf9edef3b84e8caf0dbc455deaaafe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRInGG4xNBlKKJo1pnYzUHlDECt3-ViNdh6jA';" alt="Online Bring Back Lost Lover Spells In Buckinghamshire Chat Call Whatsapp 27843769238 Veterans Benefits California Bring Back Lost Lover">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Bring Back Lost Lover Spells In Buckinghamshire Chat Call Whatsapp 27843769238 Veterans Benefits California Bring Back Lost Lover</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/09/e4/4409e4f50eb6b6cb075d742a82eea5d1.jpg" data-lightbox="roadtrip" data-title="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Career Educa Education Fair Career Education Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/09/e4/4409e4f50eb6b6cb075d742a82eea5d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpFdKS_svEa6AULuhIllk_pd2b6TmnnVcsJg';" alt="Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Career Educa Education Fair Career Education Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Civilian Hot Jobs Events And Helpful Information For Veterans Seeking Civilian Careers Career Educa Education Fair Career Education Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/30/c4/5c30c48b8c40dc40a5de4a68eeb29134.jpg" data-lightbox="roadtrip" data-title="Education Dependants Assistance Benefits Us Military Military Education Education Military Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/30/c4/5c30c48b8c40dc40a5de4a68eeb29134.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKnDh-CpMg1GxtO7oPGXdgfP2GJOE1DjM2iA';" alt="Education Dependants Assistance Benefits Us Military Military Education Education Military Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Education Dependants Assistance Benefits Us Military Military Education Education Military Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/fc/19/7cfc1994d06244c0035dbafcc7070905.jpg" data-lightbox="roadtrip" data-title="Why Veterans And Servicemembers Struggle With Student Loan Debt Despite A Generous Gi Bill Student Loan Debt Student Loans Social Security Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/fc/19/7cfc1994d06244c0035dbafcc7070905.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvF5NJevRREiPoKoIm3WM-mlXPIoK3t2LAGA';" alt="Why Veterans And Servicemembers Struggle With Student Loan Debt Despite A Generous Gi Bill Student Loan Debt Student Loans Social Security Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Veterans And Servicemembers Struggle With Student Loan Debt Despite A Generous Gi Bill Student Loan Debt Student Loans Social Security Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/30/55/de30552462f4ea3e8dbf16fc6cd3d275.jpg" data-lightbox="roadtrip" data-title="Wariox Military And Veteran Psd Template Psd Templates Website Template Design Book Layout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/30/55/de30552462f4ea3e8dbf16fc6cd3d275.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7qeuvCn9oNeVDHYKR9DKLokaHTNMLhwl_w';" alt="Wariox Military And Veteran Psd Template Psd Templates Website Template Design Book Layout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wariox Military And Veteran Psd Template Psd Templates Website Template Design Book Layout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/68/1e/83/681e83bd6f47653bf1f82cf8e5601841--military-retirement-the-military.jpg" data-lightbox="roadtrip" data-title="Looking To Separate Or Retire From The Military If You Have Questions About How To Replace Your Serviceme Military Retirement Veteran Jobs Military Transition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/68/1e/83/681e83bd6f47653bf1f82cf8e5601841--military-retirement-the-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkQ1S6eEtmQQ75j6ilfUlveQiKXg-HfrPxaA';" alt="Looking To Separate Or Retire From The Military If You Have Questions About How To Replace Your Serviceme Military Retirement Veteran Jobs Military Transition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Looking To Separate Or Retire From The Military If You Have Questions About How To Replace Your Serviceme Military Retirement Veteran Jobs Military Transition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/09/36/e50936e9a14bdcf75425df912bbc2cab.jpg" data-lightbox="roadtrip" data-title="Wariox Military And Veteran Psd Template Military Wariox Veteran Template Veterans Services Veterans Discounts Psd Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/09/36/e50936e9a14bdcf75425df912bbc2cab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ZQT1p1o1TMue1ah5esOZR0KNNmrwtqKQdQ';" alt="Wariox Military And Veteran Psd Template Military Wariox Veteran Template Veterans Services Veterans Discounts Psd Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wariox Military And Veteran Psd Template Military Wariox Veteran Template Veterans Services Veterans Discounts Psd Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/8c/00/ec8c003cde59fbbe41533227ab947f45.jpg" data-lightbox="roadtrip" data-title="Hearts Therapeutic Where Horse Help Veterans Santa Barbara Ca Please Help We Need Horses For This Program Http Therapeutic Military Benefits Helping People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/8c/00/ec8c003cde59fbbe41533227ab947f45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-c-6SBCaIMYMtzNO8TYg66FD9xVmK0es61g';" alt="Hearts Therapeutic Where Horse Help Veterans Santa Barbara Ca Please Help We Need Horses For This Program Http Therapeutic Military Benefits Helping People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hearts Therapeutic Where Horse Help Veterans Santa Barbara Ca Please Help We Need Horses For This Program Http Therapeutic Military Benefits Helping People</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-education-benefits-vonapp.html">Va Education Benefits Vonapp</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-tax-form.html">Va Education Benefits Tax Form</a></li>
+													<li class="list-group-item"><a href="/va-education-submit-a-question.html">Va Education Submit A Question</a></li>
+													<li class="list-group-item"><a href="/va-education-treasury-310.html">Va Education Treasury 310</a></li>
+													<li class="list-group-item"><a href="/va-education-extension.html">Va Education Extension</a></li>
+													<li class="list-group-item"><a href="/va-education-chapter-34.html">Va Education Chapter 34</a></li>
+													<li class="list-group-item"><a href="/va-education-portal.html">Va Education Portal</a></li>
+													<li class="list-group-item"><a href="/va-education-plan.html">Va Education Plan</a></li>
+													<li class="list-group-item"><a href="/va-education-reimbursement.html">Va Education Reimbursement</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-tracker.html">Va Education Benefits Tracker</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-yellow-ribbon-program.html">Va Education Benefits Yellow Ribbon Program</a></li>
+													<li class="list-group-item"><a href="/va-education-reimbursement-form.html">Va Education Reimbursement Form</a></li>
+													<li class="list-group-item"><a href="/va-education-housing-allowance.html">Va Education Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/va-education-statement-of-benefits.html">Va Education Statement Of Benefits</a></li>
+													<li class="list-group-item"><a href="/va-education-mitigating-circumstances.html">Va Education Mitigating Circumstances</a></li>
+													<li class="list-group-item"><a href="/va-education-number.html">Va Education Number</a></li>
+													<li class="list-group-item"><a href="/va-education-benefits-transfer-form.html">Va Education Benefits Transfer Form</a></li>
+													<li class="list-group-item"><a href="/va-education-fax-number.html">Va Education Fax Number</a></li>
+													<li class="list-group-item"><a href="/va-education-monthly-verification.html">Va Education Monthly Verification</a></li>
+													<li class="list-group-item"><a href="/va-education-debt-payment.html">Va Education Debt Payment</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Christmas Gifts For College Age Daughter - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Christmas Gifts For College Age Daughter",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/564x/7a/c3/05/7ac30548db10958bf52b3a5175ff59ff.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=christmas+gifts+for+college+age+daughter",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Christmas Gifts For College Age Daughter</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Running Press Adult. December 2007 edited December 2007. Find everything you need for the college gal in your family from gifts for an 18-year-old to 22nd birthday gift ideas. <br>				
+			</p>
+										<a class="badge badge-dark" href="/1606-va-benefits.html">1606 va benefits</a>
+											<a class="badge badge-success" href="/2020-gi-bill-amount.html">2020 gi bill amount</a>
+											<a class="badge badge-warning" href="/30-g-leinsamen-in-essloeffel.html">30 g leinsamen in essloeffel</a>
+											<a class="badge badge-secondary" href="/307-la-cung-gi.html">307 la cung gi</a>
+											<a class="badge badge-dark" href="/30-gifts.html">30 gifts</a>
+											<a class="badge badge-primary" href="/3006-cung-gi.html">3006 cung gi</a>
+											<a class="badge badge-secondary" href="/1800-gi-bill-phone-number.html">1800 gi bill phone number</a>
+											<a class="badge badge-warning" href="/1606-gi-bill-eligibility.html">1606 gi bill eligibility</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the ideal blog.  Our website provides you with hints for viewing the highest quality video and picture content, hunt and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you view.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3d/ae/a7/3daea7eb19403feacfc768e55744b24f.jpg" data-lightbox="roadtrip" data-title="30 Most Popular Christmas Gifts For College Girl By Sophia Lee College Girl Gifts College Gifts College Girl Christmas Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3d/ae/a7/3daea7eb19403feacfc768e55744b24f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqYqZGFYuu5V3uRw29yZiRfYsutClECyV32Q';" alt="30 Most Popular Christmas Gifts For College Girl By Sophia Lee College Girl Gifts College Gifts College Girl Christmas Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Most Popular Christmas Gifts For College Girl By Sophia Lee College Girl Gifts College Gifts College Girl Christmas Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/03/15/f2/0315f2ca7ea6f308858e99de8856dc7c.jpg" data-lightbox="roadtrip" data-title="Pin On College Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/03/15/f2/0315f2ca7ea6f308858e99de8856dc7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkIpx2O7-0fLMIe8TgeKEoKcMrluCV4D7wg';" alt="Pin On College Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/e1/bd/06e1bdcd8104b3c09300d6365788c901.jpg" data-lightbox="roadtrip" data-title="Pin On Christmas Gifts Collaborative">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/e1/bd/06e1bdcd8104b3c09300d6365788c901.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqMvQkx-Llo9aMIDmeY9zbKCPObZLxECm8Q';" alt="Pin On Christmas Gifts Collaborative">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Christmas Gifts Collaborative</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/83/bb/4f83bb7d0efbc75870cd727d408f45f5.jpg" data-lightbox="roadtrip" data-title="Gifts For College Students Gift Ideas For College Students College Student Gifts Best Gif Birthday Gifts For Teens Teenage Girl Gifts Christmas Student Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/83/bb/4f83bb7d0efbc75870cd727d408f45f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfJXKchzNqRvFGm1wA5h6BOLJkEmQ6hvFjHw';" alt="Gifts For College Students Gift Ideas For College Students College Student Gifts Best Gif Birthday Gifts For Teens Teenage Girl Gifts Christmas Student Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gifts For College Students Gift Ideas For College Students College Student Gifts Best Gif Birthday Gifts For Teens Teenage Girl Gifts Christmas Student Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ea/c1/de/eac1de1870561fd57ac5405e03b72aaf.jpg" data-lightbox="roadtrip" data-title="30 Most Popular Christmas Gifts For College Girl By Sophia Lee College Student Gifts Christmas Student Christmas Gifts College Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ea/c1/de/eac1de1870561fd57ac5405e03b72aaf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Ids95nYB0BWqjR69sBI-VNBtaZJi7Ptc6Q';" alt="30 Most Popular Christmas Gifts For College Girl By Sophia Lee College Student Gifts Christmas Student Christmas Gifts College Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Most Popular Christmas Gifts For College Girl By Sophia Lee College Student Gifts Christmas Student Christmas Gifts College Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2e/60/38/2e603817edb076d156e80400278288f3.jpg" data-lightbox="roadtrip" data-title="Graciela Gift Guide For The College Girl College Girl Gift Guide College Gift Baskets Girl Gift Baskets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2e/60/38/2e603817edb076d156e80400278288f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-KZvDmqBC1PJe44efLxVCxfe9muB4p10dQ';" alt="Graciela Gift Guide For The College Girl College Girl Gift Guide College Gift Baskets Girl Gift Baskets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Graciela Gift Guide For The College Girl College Girl Gift Guide College Gift Baskets Girl Gift Baskets</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/44/1f/40/441f4030d88920a54c0ba00f1d0d870e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-KZvDmqBC1PJe44efLxVCxfe9muB4p10dQ';" alt="Graciela Gift Guide For The College Girl College Girl Gift Guide College Gift Baskets Girl Gift Baskets">
+										<div class="card-body">
+						<h3 class="h5"><b>Stylish dorm decoration is one of the best Christmas gifts for college students.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Christmas gifts for college age daughter</strong>. 
+								
+																	0 Reply Share. 
+																	Be sure to also shop our 10-year-old girl gifts 11-year old gifts and birthday gifts for her no matter her age. 
+																	After all Barbies dont do the trick after a certain age. 
+																	A Field Guide to Internet Boyfriends. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Car payments According to a recent Pew Research study about a third of adults under 35 owe money on vehicles. 
+																	Help her to beautify her living space with some chic furniture. 
+																	Just need a few suggestions for useablenot wasteful Christmas gifts for my college-age daughter JR in college. 
+																	To help make it easier to find great presents for students here are 21 gift ideas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This pink stool is a wonderful choice. 
+																	Our Personalised Heart Style Mummys Helper Childrens Apron is a fabulous gift for little girls who love to help out in the kitchen with a spot of baking or cooking. 
+																	As your daughter develops shes ripe for those kinds of gifts that will build on her strength self-confidence and courage. 
+																	AirPods remain one of THE big tech gifts for teens and college students for 2020 and the Pro model is even more advanced than the older models. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dec 20 2020 - College Student Gift Ideas Care Package Tips Going Off Going Away to College Presents Graduation Baskets DIY Freshman Leaving Gift For Girls. 
+																	Thank youand Happy Holidays. 
+																	These Apple AirPods Pros have noise cancelling capability which helps with studying because college dorm rooms are noisy and class is on a laptop or iPad now. 
+																	Items range from practical to personal and everything in between. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	21 Ridiculously Cool Gifts College Students Never Knew They Needed. 
+																	We talked with a couple of dozen ladies - of various ages and in different stages of life - to learn what is on their wish list. 
+																	Favorite gifts for college students 1. 
+																	Here are 40 Christmas gift ideas that should make it on every college girls list. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Good kidhas way too many clothesnot real responsible with money. 
+																	With a choice of three soft tips they offer a customizable fit with a snug seal. 
+																	Cuisinart Frozen Yogurt Ice Cream Sorbet Maker. 
+																	If your college student needs to travel to class they are easier to throw into a backpack than bulky headphones. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	AirPods use the same portable charger as your iPhone and the audio. 
+																	With gifts for daughters the truth is she wants to feel loved and you want to find a gift that will be loved - not regifted. 
+																	With these gift-giving ideas for daughters for birthdays anniversaries or Christmas you can indulge her with a gift from the heart or find a gift that connects with who she isNo matter her age your daughter will always be your sweet little girl. 
+																	View Gallery 68 Photos 1 of 68. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Here is a list of eight of the best Christmas gift ideas for her to help you win at gift-giving this year. 
+																	But I want her to get something shell value. 
+																	If youre anything like me you use it as an excuse to ask for all the things you cant affordsecretly dont want to just outright buy for yourself. 
+																	Christmas in college is a whole new kind of blessing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Post edited by kiddosmom on December 2007. 
+																	Read full article Best overall. 
+																	This creates Active Noise Cancellation a feature that only the AirPods Pro offers among all in-ear headphones. 
+																	These personalized necklaces are beautiful and theres one for every state. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether shes eight or 18 your girl will adore this cute little teddy that comes wearing a white t-shirt embellished with the words Best Daughter and your name. 
+																	Here youll find plenty of great gifts for daughters that are anything but expected so whether shes a fierce leader a flower enthusiast a foodie or just loves a good piece of jewelry theres something in this list that every daughter will adore. 
+																	Here are 40 gift ideas that will impress your daughter or niece or friends daughter of any age and any interest perfect for the holidays. 
+																	Sturdy steel legs with glamorous faux fur cover. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gifts for Daughters Gifts for Younger Daughters. 
+																	One of the best gifts for college students is the ability to cook and with this awesome kitchen gadget theyll be able to rustle up a healthy omelet in just 45 seconds. 
+																	Here are seven other gift ideas for grown children that friends and acquaintances have told me about. 
+																	Holiday gifts for college students on your list now is the time to get started. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Amy Sefton BuzzFeed Life We hope you love the products we recommend. 
+																	College girl Christmas gifts that incorporate something that reminds them of home are sure to get a smile. 
+																	There are even ones with countries available too. 
+																	This cute best-selling ice cream machine boasts over 5000 glowing reviews. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Grade school girls are at the perfect age for ziplines skateboards. 
+																	7 More Great Gift Ideas for Your Adult Kids. 
+																	Amazoncouk Gift Card for Custom Amount. 
+																	If you know a young lady in the thick of her college career make sure shes prepared for whatever her rigorous curriculum might throw her way with the perfect birthday gift. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each one can help and delight your kid whether he or she is struggling financially or could just use the lift of a little indulgence. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/72/fa/91/72fa91f06f3adb1e5c307d6cedcce54d.jpg" data-lightbox="roadtrip" data-title="College Girl Gift Ideas What To Buy For A Student Little Miss Rosie College Girl Christmas Gifts College Student Gifts College Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/72/fa/91/72fa91f06f3adb1e5c307d6cedcce54d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfoL5GgkM9iQBBVPAm4xLZZ7BemOI85Cz-og';" alt="College Girl Gift Ideas What To Buy For A Student Little Miss Rosie College Girl Christmas Gifts College Student Gifts College Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Girl Gift Ideas What To Buy For A Student Little Miss Rosie College Girl Christmas Gifts College Student Gifts College Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/5d/1e/285d1e4907c8a324f8f8b9d3226f6ee9.jpg" data-lightbox="roadtrip" data-title="Gift Ideas For College Students Sarah Hayden College Gifts Birthday Presents For Teens Best Friend Birthday Surprise">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/5d/1e/285d1e4907c8a324f8f8b9d3226f6ee9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQey9tBxRO7jR-Wt7x2_2sTqxCUtl06l4quxQ';" alt="Gift Ideas For College Students Sarah Hayden College Gifts Birthday Presents For Teens Best Friend Birthday Surprise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gift Ideas For College Students Sarah Hayden College Gifts Birthday Presents For Teens Best Friend Birthday Surprise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/a0/99/5ea0993b2cb3c0e318196f33b553d434.jpg" data-lightbox="roadtrip" data-title="Gift Guide 2020 The Best Christmas Gifts For College Students Class Christmas Gifts Gifts Best Christmas Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/a0/99/5ea0993b2cb3c0e318196f33b553d434.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZm_r5iL_B4ZCw5Zu1xczd08t5h5q3GvICg';" alt="Gift Guide 2020 The Best Christmas Gifts For College Students Class Christmas Gifts Gifts Best Christmas Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gift Guide 2020 The Best Christmas Gifts For College Students Class Christmas Gifts Gifts Best Christmas Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/af/67/9aaf67e5024cc8e79d755c29ff06b4e0.jpg" data-lightbox="roadtrip" data-title="Perfect Gifts For College Students College Student Gifts Christmas Student Christmas Gifts College Girl Christmas Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/af/67/9aaf67e5024cc8e79d755c29ff06b4e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFMVbx1m1dOmFSYgHhDhi7eAtEo0RvV9YaHQ';" alt="Perfect Gifts For College Students College Student Gifts Christmas Student Christmas Gifts College Girl Christmas Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Perfect Gifts For College Students College Student Gifts Christmas Student Christmas Gifts College Girl Christmas Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/16/41/df1641d5f46dcb3f65d2b1362b4395ee.png" data-lightbox="roadtrip" data-title="Looking To Buy A Gift For A College Age Girl This Holiday Season Check Out Emma Lenhart S College Girl Christmas Gifts Christmas Gifts For Girls College Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/16/41/df1641d5f46dcb3f65d2b1362b4395ee.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9tauVXj286OMFJndu4XiWdChZKcxEdzjmQw';" alt="Looking To Buy A Gift For A College Age Girl This Holiday Season Check Out Emma Lenhart S College Girl Christmas Gifts Christmas Gifts For Girls College Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Looking To Buy A Gift For A College Age Girl This Holiday Season Check Out Emma Lenhart S College Girl Christmas Gifts Christmas Gifts For Girls College Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/79/9a/46799a26dede989b435ea4ea56891c56.png" data-lightbox="roadtrip" data-title="20 Popular Christmas Gifts For College Age Girls In 2020 Student Birthdays Students Christmas Stocking Stuffers For Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/79/9a/46799a26dede989b435ea4ea56891c56.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzl5-BBfJT278X_ai5WUcB25h5Ac2xdzqi9w';" alt="20 Popular Christmas Gifts For College Age Girls In 2020 Student Birthdays Students Christmas Stocking Stuffers For Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Popular Christmas Gifts For College Age Girls In 2020 Student Birthdays Students Christmas Stocking Stuffers For Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/7a/c3/05/7ac30548db10958bf52b3a5175ff59ff.jpg" data-lightbox="roadtrip" data-title="College Graduation Gifts For Girls Suitable For Daughter Sister Bff Friends Unique College Graduation Gifts College Gifts College Graduation Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/7a/c3/05/7ac30548db10958bf52b3a5175ff59ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqdac6G9kkJTqpUelIUVwvtjX_pAFaqZU11A';" alt="College Graduation Gifts For Girls Suitable For Daughter Sister Bff Friends Unique College Graduation Gifts College Gifts College Graduation Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Graduation Gifts For Girls Suitable For Daughter Sister Bff Friends Unique College Graduation Gifts College Gifts College Graduation Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/39/ea/a2/39eaa2e1ffb34eb09def6f1118931f82.jpg" data-lightbox="roadtrip" data-title="17 Incredibly Useful But Cheap Gifts For College Students College Gifts Gifts For College Boys Birthday Care Packages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/39/ea/a2/39eaa2e1ffb34eb09def6f1118931f82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOLFfjoBkajTv0_P3ICcK1djxDI7M5Bb1XqA';" alt="17 Incredibly Useful But Cheap Gifts For College Students College Gifts Gifts For College Boys Birthday Care Packages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Incredibly Useful But Cheap Gifts For College Students College Gifts Gifts For College Boys Birthday Care Packages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/61/f0/c061f01e9a01c42991781c5e44ff4243.png" data-lightbox="roadtrip" data-title="Pink Heels Pink Truck Lifestyle Blog College Gifts College Student Gifts Gifts For Grad Students">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/61/f0/c061f01e9a01c42991781c5e44ff4243.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZsZI-xBSIQiAqmZHD6IPDZ-bP2BCxT6EpHQ';" alt="Pink Heels Pink Truck Lifestyle Blog College Gifts College Student Gifts Gifts For Grad Students">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pink Heels Pink Truck Lifestyle Blog College Gifts College Student Gifts Gifts For Grad Students</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/df/b1/f7/dfb1f7643253d6cd55cba639cb5f2c0e--fun-gifts-xmas-gifts.jpg" data-lightbox="roadtrip" data-title="Gifts To Give Something For Everyone On Your List Birthday Gifts For Girls Gifts For Teens Homemade Anniversary Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/df/b1/f7/dfb1f7643253d6cd55cba639cb5f2c0e--fun-gifts-xmas-gifts.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU3RSNvkobmeWFLplUlG6ZKPSWKQsooCxggw';" alt="Gifts To Give Something For Everyone On Your List Birthday Gifts For Girls Gifts For Teens Homemade Anniversary Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gifts To Give Something For Everyone On Your List Birthday Gifts For Girls Gifts For Teens Homemade Anniversary Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/1e/39/db1e39ce446e14e3410ec5f7916a7832.jpg" data-lightbox="roadtrip" data-title="Pin On Birthday Stuff Room Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/1e/39/db1e39ce446e14e3410ec5f7916a7832.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxRL_Q6CfR25pcM4wJB74IY6hzBiC7ryYFZA';" alt="Pin On Birthday Stuff Room Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Birthday Stuff Room Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/1f/40/441f4030d88920a54c0ba00f1d0d870e.jpg" data-lightbox="roadtrip" data-title="Pin On Accessorize Me">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/1f/40/441f4030d88920a54c0ba00f1d0d870e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcv-pvWbqBUeyQx0fQKlHMwNabl2CM0hxCJQ';" alt="Pin On Accessorize Me">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Accessorize Me</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/ad/61/3dad61b41a3301aafe0691d30600860e.jpg" data-lightbox="roadtrip" data-title="12 Best High School Graduation Gifts For Girls Vivid Girls Graduation Gifts Graduation Gifts For Daughter Graduation Gifts For Best Friend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/ad/61/3dad61b41a3301aafe0691d30600860e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_0Id90yh9xWWTU-b77K4Cyt5f91bgW5Xktg';" alt="12 Best High School Graduation Gifts For Girls Vivid Girls Graduation Gifts Graduation Gifts For Daughter Graduation Gifts For Best Friend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Best High School Graduation Gifts For Girls Vivid Girls Graduation Gifts Graduation Gifts For Daughter Graduation Gifts For Best Friend</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/can-you-use-the-montgomery-gi-bill-and-post-911.html">Can You Use The Montgomery Gi Bill And Post 911</a></li>
+													<li class="list-group-item"><a href="/can-you-use-montgomery-gi-bill-while-on-active-duty.html">Can You Use Montgomery Gi Bill While On Active Duty</a></li>
+													<li class="list-group-item"><a href="/can-you-use-gi-bill-and-dea.html">Can You Use Gi Bill And Dea</a></li>
+													<li class="list-group-item"><a href="/can-you-collect-unemployment-and-post-9-11-gi-bill.html">Can You Collect Unemployment And Post 9 11 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-you-use-gi-bill-for-house.html">Can You Use Gi Bill For House</a></li>
+													<li class="list-group-item"><a href="/can-you-use-the-gi-bill-and-fafsa.html">Can You Use The Gi Bill And Fafsa</a></li>
+													<li class="list-group-item"><a href="/canon-g9-x.html">Canon G9 X</a></li>
+													<li class="list-group-item"><a href="/careers-to-go-to-college-for.html">Careers To Go To College For</a></li>
+													<li class="list-group-item"><a href="/can-you-go-to-college-on-probation.html">Can You Go To College On Probation</a></li>
+													<li class="list-group-item"><a href="/can-you-use-gi-bill-for-online-degree.html">Can You Use Gi Bill For Online Degree</a></li>
+													<li class="list-group-item"><a href="/can-you-stay-at-college-during-the-summer.html">Can You Stay At College During The Summer</a></li>
+													<li class="list-group-item"><a href="/can-you-use-post-911-gi-bill-for-masters-degree.html">Can You Use Post 911 Gi Bill For Masters Degree</a></li>
+													<li class="list-group-item"><a href="/can-you-use-montgomery-gi-bill-and-post-911.html">Can You Use Montgomery Gi Bill And Post 911</a></li>
+													<li class="list-group-item"><a href="/can-you-go-to-college-completely-online.html">Can You Go To College Completely Online</a></li>
+													<li class="list-group-item"><a href="/can-you-transfer-gi-bill-in-reserves.html">Can You Transfer Gi Bill In Reserves</a></li>
+													<li class="list-group-item"><a href="/can-you-transfer-gi-bill-to-child.html">Can You Transfer Gi Bill To Child</a></li>
+													<li class="list-group-item"><a href="/casper-college-womens-basketball-roster.html">Casper College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/can-you-get-financial-aid-while-using-gi-bill.html">Can You Get Financial Aid While Using Gi Bill</a></li>
+													<li class="list-group-item"><a href="/can-you-extend-your-gi-bill-benefits.html">Can You Extend Your Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/can-you-get-the-gi-bill-in-the-national-guard.html">Can You Get The Gi Bill In The National Guard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

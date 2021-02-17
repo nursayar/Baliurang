@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>30 Tuoi Mac Gi Dep - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "30 Tuoi Mac Gi Dep",
+  "datePublished": "2021-02-17",
+  "image": "https://www.theaterhausblog.com/wp-content/uploads/2019/01/mac-dep-tuoi-35-30.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=30+tuoi+mac+gi+dep",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>30 Tuoi Mac Gi Dep</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Mot trong nhung phu kien cac djan ong tuoi 30 nen tham khao nhu ca vat khan ao mang set ao no cot co ao so mi day that lung giay dji kem. Mac djep tuoi 30 va bi kip mac djep cho phu nu tuoi 30 cuc tre trung. Cuu sieu mau chia se bi quyet lua chon trang phuc phu hop lua tuoi. <br>				
+			</p>
+										<a class="badge badge-success" href="/what-is-the-montgomery-gi-bill-national-guard.html">what is the montgomery gi bill national guard</a>
+											<a class="badge badge-secondary" href="/what-is-the-gi-bill-today.html">what is the gi bill today</a>
+											<a class="badge badge-primary" href="/what-size-ball-does-womens-college-basketball-use.html">what size ball does womens college basketball use</a>
+											<a class="badge badge-info" href="/what-will-my-gi-bill-pay-for.html">what will my gi bill pay for</a>
+											<a class="badge badge-light" href="/what-schools-accept-the-gi-bill.html">what schools accept the gi bill</a>
+											<a class="badge badge-warning" href="/whats-the-forever-gi-bill.html">whats the forever gi bill</a>
+											<a class="badge badge-dark" href="/wheaton-college-womens-basketball-coach.html">wheaton college womens basketball coach</a>
+											<a class="badge badge-light" href="/what-to-get-a-college-guy-for-christmas.html">what to get a college guy for christmas</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the ideal blog.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to view.  It is also possible to contribute to supporting this site by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blogcaodep.com/uploads/source/tu%20anh/tuoi%2030/phu-nu-tuoi-30-nen-mac-gi-c.jpg" data-lightbox="roadtrip" data-title="Phụ Nữ Tuổi 30 Nen Mặc Gi để Luon Tự Tin Va Cuốn Hut">
+											<img class="card-img v-image ads-img " src="https://blogcaodep.com/uploads/source/tu%20anh/tuoi%2030/phu-nu-tuoi-30-nen-mac-gi-c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ1lwAbAEcB1A2sVpH-VAQPzaTFVBAaQvO4g';" alt="Phụ Nữ Tuổi 30 Nen Mặc Gi để Luon Tự Tin Va Cuốn Hut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phụ Nữ Tuổi 30 Nen Mặc Gi để Luon Tự Tin Va Cuốn Hut</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://maymacthaolinh.com/wp-content/uploads/2017/09/thoi-trang-tuoi-30.jpg" data-lightbox="roadtrip" data-title="Thời Trang Cho Phụ Nữ Tuổi 30 Mặc Gi Thi đẹp">
+											<img class="card-img v-image ads-img " src="http://maymacthaolinh.com/wp-content/uploads/2017/09/thoi-trang-tuoi-30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQraofFBdiM_rVapkaCREEk5Jlj1bTxIOAE6g';" alt="Thời Trang Cho Phụ Nữ Tuổi 30 Mặc Gi Thi đẹp">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thời Trang Cho Phụ Nữ Tuổi 30 Mặc Gi Thi đẹp</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://file.hstatic.net/1000197303/file/phu-nu-tuoi-30-nen-mac-gi_4e837d0acff94b0195790748db72673f.jpg" data-lightbox="roadtrip" data-title="Phụ Nữ Tuổi 30 Nen Mặc Gi để Tự Tin Trẻ Trung Nhất Marc">
+											<img class="card-img v-image ads-img " src="https://file.hstatic.net/1000197303/file/phu-nu-tuoi-30-nen-mac-gi_4e837d0acff94b0195790748db72673f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYHrdgSc8xAWPyTgbFKr3BENsHY06UUzl2g';" alt="Phụ Nữ Tuổi 30 Nen Mặc Gi để Tự Tin Trẻ Trung Nhất Marc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phụ Nữ Tuổi 30 Nen Mặc Gi để Tự Tin Trẻ Trung Nhất Marc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cardino.com.vn/wp-content/uploads/2017/12/6-tips-de-phu-nu-mac-dep-tuoi-30-thoi-trang-cardino-5.jpg" data-lightbox="roadtrip" data-title="6 Tips để Phụ Nữ Mặc đẹp Tuổi 30 Tạp Chi Thời Trang Cardino">
+											<img class="card-img v-image ads-img " src="https://cardino.com.vn/wp-content/uploads/2017/12/6-tips-de-phu-nu-mac-dep-tuoi-30-thoi-trang-cardino-5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8N--oYVdUz4Ph2tT7W6q-4BcDP7LkcK5hQw';" alt="6 Tips để Phụ Nữ Mặc đẹp Tuổi 30 Tạp Chi Thời Trang Cardino">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Tips để Phụ Nữ Mặc đẹp Tuổi 30 Tạp Chi Thời Trang Cardino</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ailamdep.com/wp-content/uploads/2019/05/mac-dep-tuoi-30-e1558604655142.jpg" data-lightbox="roadtrip" data-title="10 Y Tưởng Thời Trang Giup Bạn Mặc đẹp Tuổi 30 Ailamdep">
+											<img class="card-img v-image ads-img " src="https://ailamdep.com/wp-content/uploads/2019/05/mac-dep-tuoi-30-e1558604655142.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVvR5R8L852Um8uL_LKwbCtI2AGLjI1hWu9Q';" alt="10 Y Tưởng Thời Trang Giup Bạn Mặc đẹp Tuổi 30 Ailamdep">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Y Tưởng Thời Trang Giup Bạn Mặc đẹp Tuổi 30 Ailamdep</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/30/e3/c3/30e3c36de7bf935a3c4c80d9fff1667e.jpg" data-lightbox="roadtrip" data-title="Phụ Nữ Tuổi 35 Mặc Gi đẹp Va Sang Trọng Phong Cach Thời Trang Trang Phục Cong Sở Phong Cach Thời Trang đường Phố">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/30/e3/c3/30e3c36de7bf935a3c4c80d9fff1667e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoD21HhqQRFlSYLffVMRMb0vmAay5YMBIeyg';" alt="Phụ Nữ Tuổi 35 Mặc Gi đẹp Va Sang Trọng Phong Cach Thời Trang Trang Phục Cong Sở Phong Cach Thời Trang đường Phố">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phụ Nữ Tuổi 35 Mặc Gi đẹp Va Sang Trọng Phong Cach Thời Trang Trang Phục Cong Sở Phong Cach Thời Trang đường Phố</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://ailamdep.com/wp-content/uploads/2019/05/mac-dep-tuoi-30-e1558604655142.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoD21HhqQRFlSYLffVMRMb0vmAay5YMBIeyg';" alt="Phụ Nữ Tuổi 35 Mặc Gi đẹp Va Sang Trọng Phong Cach Thời Trang Trang Phục Cong Sở Phong Cach Thời Trang đường Phố">
+										<div class="card-body">
+						<h3 class="h5"><b>Tuoi 30 mac gi cho djep.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>30 tuoi mac gi dep</strong>. 
+								
+																	Bao Ngoc goi y mac djep o tuoi ngoai 30. 
+																	Djay la luc ban can djen nhung bi quyet an mac djep. 
+																	Ban sap co mot bua tiec cuoi can tham du nhung chua biet du tiec cuoi nen mac gi djep mac nhu the nao thi cung tham khao ngay nhung mau vay djam xinh djep sau djay dje djep xinh sang va chat nhu fashionista thuc thu nheCon chan chu gi ma khong update va chon ngay cho minh mau vay djam ung y nhat. 
+																	Goi y mau djam du tiec cho nguoi gay tu tin khoe dang chuan Th12 6 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Phu nu tuoi 40 mac gi cho djep. 
+																	Facebook Twitter Google Youtube RSS. 
+																	Con khi nhin lai minh nhieu quy co U30 hay U40. 
+																	Cau tra loi kha djon gian. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ben canh lua chon trang phuc ban co the tham khao them nhung kieu toc djep cho tuoi 35 dje lam moi cho phong cach cua minh. 
+																	Phong cach an mac djep cho tuoi 40. 
+																	Mac dep tuoi 30 - Ellevn mang djen ban thong tin xu huong bo suu tap thoi trang va lam djep cao cap cung cac thong tin ve nhan vat va thuong hieu noi tieng. 
+																	Hay xem goi y duoi djay nhe. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cuu sieu mau Bao Ngoc khoe dang nuot na. 
+																	Phu nu tuoi 50 mac gi djep khi dji choi. 
+																	Nhung mau djam djep phu hop voi tuoi 30. 
+																	Luon khien chi em djau djau suy nghi. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dja djen luc tam biet nhung chiec ao phong rong thung thinh va. 
+																	Mac du dja chia tay voi cong viec nguoi mau tu kha lau nhung tinh cam cua Bao Ngoc gianh cho linh. 
+																	Khong con su ngay ngo tre con cung khong qua kho khan tuoi 30 la khi phu nu nhan ra rang minh can phai song cho chinh ban than nhieu hon. 
+																	Vay lam sao dje lua chon nhung bo djo hop tuoi nhung van the hien net djep cua minh. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nhieu khi ho boi roi voi cach an mac cua minh ban khong the mac nhu tuoi teen cung khong the chon nhung bo trang phuc qua gia. 
+																	Ban thay minh mac bo djo nay djep cung khong co nghia la ban dja Quan ao nam moi ve. 
+																	5 nam truoc 2045 15072015 Thoi trang Mac djep. 
+																	Tren djay la mot so mau vay djam djep nhat danh cho tuoi 50 hy vong nhung mau vay djam nay se giup chi em tro nen xinh djep quyen ru hap dan va tu tin hon khi buoc ra djuong. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	11 mon djo khong the thieu cua phu nu tuoi 30. 
+																	Cach mac djep Phong cach 6 tips dje phu nu mac djep tuoi 30. 
+																	ContentsPhu nu tuoi 30 nen mac gi va loi hoi djapLang nghe co the minhXac djinh djuoc phong cach thoi trang mang ca tinh riengCang djon gian thi cang djepSu dung mau sac toi gianNhung luu y an mac cho phu nu tuoi 30Mot so cach mix djo djep cho phu nu tuoi 30Chan vay. 
+																	Tuyet chieu mac djep cho phu nu tuoi 30. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	23052019 Nhieu quy co cho rang mac djep va sanh djieu la djac quyen rieng cua cac co gai tre boi ho djang o djo tuoi ma dien mao va voc dang hoan hao nhat de dang chinh phuc moi mon djo moi xu huong thoi trang. 
+																	30 tuoi mac gi hay Mac gi djep cho tuoi 30 duong nhu la nhung van dje muon thuo. 
+																	Chia se xu huong quan ao vay djam thoi trang danh cho tuoi trung nien 2021. 
+																	Tuoi 30 phai an mac dje the hien su thanh lich tinh te ma van djon gian. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cam nang 10 cau hoi djap dje chu djong phong. 
+																	Va duoi djay la nhung goi y giup chi em tuoi bam xay dung djuoc cho minh mot phong cach an mac khong-the-lan-vao-djau-djuoc. 
+																	Hieu djuoc djieu djo thoi trang trung nien se giup chi em dji tim nhung chiec vay djam djep va phu hop nhat danh cho chi em tuoi trung nien. 
+																	Phu kien se danh cho ban khi dji du su kien du tiec tang su ton trong cua ban than djoi voi djoi tac lam an. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Djan ong tuoi 30 djat toi mot su trai nghiem va chin chan nhat djinh. 
+																	Voi phu nu tuoi 30 co nhung mon djo khong djon thuan la vat ngoai than ma con khac hoa net rieng cua tung nguoi. 
+																	Phu nu tuoi 50 mac gi djep. 
+																	Du dja buoc sang mot buoc ngoat moi cua cuoc djoi nhung voi bi quyet mac djep theo goi y cua Deptuoi30 chi em se hoan toan tu tin voi djo tuoi that va su tre trung. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mac djo vua van. 
+																	Phu kien Cach mac djep cho djan ong tuoi 30. 
+																	Bao Ngoc goi y vay cuoi giup co dau quyen ru. 
+																	Djo tuoi 40 djanh dau thoi djiem cuc chin cua phai djep djo la khi ve djep man ma no ro hoa lan voi dau hieu tuoi tac khong de che giau. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Van dje nay kha kho cho cac chi em U50. 
+																	Do djo tuoi 35 mac gi dep se tro nen djon gian hon. 
+																	30 cai tuoi ma phu nu mang mot net djep man ma sac sao djen kho cuong. 
+																	Boi quan tri Th12 4 2017. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Duoi djay CANIFA se goi y mot vai cach ket hop trang phuc co ban phu hop cho moi phu nu tuoi tu tuan dje chi em tu tin mac djep dji muon noi. 
+																	Song neu biet cach phoi djo cac chi em U30 van co the toa sang va djay cuon hut. 
+																	Theo djo gu thoi trang cua phu nu tuoi 30 nen mac gi cho djep cung vay khong cong tre trung nhi nhanh nhu phu nu tuoi 25 nua. 
+																	Chinh vi the cau hoi chi em phu nu tuoi 40 mac gi cho djep. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bai viet gan djay. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thoitrangtadi.com/wp-content/uploads/2020/02/mac-dep-tuoi-30.jpg" data-lightbox="roadtrip" data-title="5 Tips Mặc đẹp Tuổi 30 Cho Phụ Nữ Hiện đại Trẻ Trung Sang Trọng Thời Trang Tadi">
+											<img class="card-img v-image ads-img " src="https://thoitrangtadi.com/wp-content/uploads/2020/02/mac-dep-tuoi-30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Ql-aqvmwEwVJbprgFeo8DuQYEThHh0XP6w';" alt="5 Tips Mặc đẹp Tuổi 30 Cho Phụ Nữ Hiện đại Trẻ Trung Sang Trọng Thời Trang Tadi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Tips Mặc đẹp Tuổi 30 Cho Phụ Nữ Hiện đại Trẻ Trung Sang Trọng Thời Trang Tadi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3-ap-southeast-1.amazonaws.com/canifablog/blog/wp-content/uploads/2017/09/07104026/image61.png" data-lightbox="roadtrip" data-title="Mặc đẹp Tuổi 30 Tư Vấn Guu Thời Trang Cho Chị Em Tuổi Băm">
+											<img class="card-img v-image ads-img " src="https://s3-ap-southeast-1.amazonaws.com/canifablog/blog/wp-content/uploads/2017/09/07104026/image61.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWe2QHU1QpOjKoV-FnYK3y_ZtmCdKFDiq3Jg';" alt="Mặc đẹp Tuổi 30 Tư Vấn Guu Thời Trang Cho Chị Em Tuổi Băm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mặc đẹp Tuổi 30 Tư Vấn Guu Thời Trang Cho Chị Em Tuổi Băm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.theaterhausblog.com/wp-content/uploads/2019/01/mac-dep-tuoi-35-30.jpg" data-lightbox="roadtrip" data-title="15 điều Nen Va Khong Nen để Mặc đẹp Tuổi 35 Bạn Cần Biết Theaterhausblog">
+											<img class="card-img v-image ads-img " src="https://www.theaterhausblog.com/wp-content/uploads/2019/01/mac-dep-tuoi-35-30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2uKBD_jUghk0AYKU-MmgCPlv3bpz7ZPyHvg';" alt="15 điều Nen Va Khong Nen để Mặc đẹp Tuổi 35 Bạn Cần Biết Theaterhausblog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 điều Nen Va Khong Nen để Mặc đẹp Tuổi 35 Bạn Cần Biết Theaterhausblog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.gumac.vn//image/01/thoi-trang/chan-vay/mac-dep-cho-tuoi-40080420201516541592.jpg" data-lightbox="roadtrip" data-title="Tuổi 40 Mặc Gi đẹp Hợp Xu Hướng Năm Nay Giup ăn Gian Tuổi">
+											<img class="card-img v-image ads-img " src="https://cdn.gumac.vn//image/01/thoi-trang/chan-vay/mac-dep-cho-tuoi-40080420201516541592.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJkqNo5bQ8ylY_0F0Wq7Ds5rYGbojHS96kg';" alt="Tuổi 40 Mặc Gi đẹp Hợp Xu Hướng Năm Nay Giup ăn Gian Tuổi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tuổi 40 Mặc Gi đẹp Hợp Xu Hướng Năm Nay Giup ăn Gian Tuổi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.kkfashion.vn/img/cms/1-tuoi-trung-nien-mac-mau-gi-dep-nhat.jpg" data-lightbox="roadtrip" data-title="Tuổi Trung Nien Mặc Mau Gi đẹp Nhất">
+											<img class="card-img v-image ads-img " src="https://cdn.kkfashion.vn/img/cms/1-tuoi-trung-nien-mac-mau-gi-dep-nhat.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9zK8pCm69bS8gV2Vha9Jhv0UTPSK_L_xWcw';" alt="Tuổi Trung Nien Mặc Mau Gi đẹp Nhất">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tuổi Trung Nien Mặc Mau Gi đẹp Nhất</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://deptuoi30.com/wp-content/uploads/2017/10/thoi-trang-tuoi-30-den-40-1.jpg" data-lightbox="roadtrip" data-title="Mặc đẹp Tuổi 35 Cac Mẫu Thời Trang Tuổi 30 đến 40 Năm 2018">
+											<img class="card-img v-image ads-img " src="https://deptuoi30.com/wp-content/uploads/2017/10/thoi-trang-tuoi-30-den-40-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSlJVVK-UaoV9a4kyj2fJLGcmxxinyibdq7A';" alt="Mặc đẹp Tuổi 35 Cac Mẫu Thời Trang Tuổi 30 đến 40 Năm 2018">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mặc đẹp Tuổi 35 Cac Mẫu Thời Trang Tuổi 30 đến 40 Năm 2018</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.elleman.vn/wp-content/uploads/2017/08/23/Phong-ca%CC%81ch-tho%CC%9B%CC%80i-trang-nam-Ma%CC%A3%CC%86c-sao-cho-%C4%91e%CC%A3p-o%CC%9B%CC%89-tuo%CC%82%CC%89i-30s-a%CC%82.jpeg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://www.elleman.vn/wp-content/uploads/2017/08/23/Phong-ca%CC%81ch-tho%CC%9B%CC%80i-trang-nam-Ma%CC%A3%CC%86c-sao-cho-%C4%91e%CC%A3p-o%CC%9B%CC%89-tuo%CC%82%CC%89i-30s-a%CC%82.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOIubEbIstsADS7vAeH3bdzThwPeK7CFVglQ';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.phunusuckhoe.vn/ctv_dhtham/cach-phoi-do-cho-phu-nu-30-ghi-diem-nho-su-don-gian-nhung-thanh-lich-va-tinh-te3.jpg" data-lightbox="roadtrip" data-title="Cach Phối đồ Cho Phụ Nữ 30 Ghi điểm Nhờ Sự đơn Giản Nhưng Thanh Lịch Va Tinh Tế Phụ Nữ Sức Khỏe">
+											<img class="card-img v-image ads-img " src="https://cdn.phunusuckhoe.vn/ctv_dhtham/cach-phoi-do-cho-phu-nu-30-ghi-diem-nho-su-don-gian-nhung-thanh-lich-va-tinh-te3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk3YwKkZ9sNQCxmo7FY1W6XeICk1Nm-Fm3Qg';" alt="Cach Phối đồ Cho Phụ Nữ 30 Ghi điểm Nhờ Sự đơn Giản Nhưng Thanh Lịch Va Tinh Tế Phụ Nữ Sức Khỏe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cach Phối đồ Cho Phụ Nữ 30 Ghi điểm Nhờ Sự đơn Giản Nhưng Thanh Lịch Va Tinh Tế Phụ Nữ Sức Khỏe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.phunuvagiadinh.vn/ctvseo_taovan/lam-dep/phu-nu-35-tuoi-mac-gi-dep-nhat.jpg" data-lightbox="roadtrip" data-title="Phụ Nữ 35 Tuổi Mặc Gi đẹp Nhất Phụ Nữ Gia đinh">
+											<img class="card-img v-image ads-img " src="https://cdn.phunuvagiadinh.vn/ctvseo_taovan/lam-dep/phu-nu-35-tuoi-mac-gi-dep-nhat.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIRP2wXVdkRYGb97Qm01kc1gUqHx1dop-QYw';" alt="Phụ Nữ 35 Tuổi Mặc Gi đẹp Nhất Phụ Nữ Gia đinh">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phụ Nữ 35 Tuổi Mặc Gi đẹp Nhất Phụ Nữ Gia đinh</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s1.media.ngoisao.vn/resize_580/news/2020/05/11/thoi-trang-cong-so-1-ngoisaovn-w622-h600.jpg" data-lightbox="roadtrip" data-title="Kỹ Năng ăn Mặc đẹp Nơi Lam Việc để Vừa Cao Cấp Vừa Thanh Lịch Khi Chất Cho Phụ Nữ Tuổi 30">
+											<img class="card-img v-image ads-img " src="https://s1.media.ngoisao.vn/resize_580/news/2020/05/11/thoi-trang-cong-so-1-ngoisaovn-w622-h600.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt7QIIIDvHSAXzCNmelJW1fAw4X_BOSPTSQA';" alt="Kỹ Năng ăn Mặc đẹp Nơi Lam Việc để Vừa Cao Cấp Vừa Thanh Lịch Khi Chất Cho Phụ Nữ Tuổi 30">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kỹ Năng ăn Mặc đẹp Nơi Lam Việc để Vừa Cao Cấp Vừa Thanh Lịch Khi Chất Cho Phụ Nữ Tuổi 30</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.ngoisao.vn/resize_580/news/2019/09/10/phu-nu-30-mac-gi-31-ngoisao.vn-w640-h791.jpg" data-lightbox="roadtrip" data-title="Phụ Nữ Tuổi 30 Mặc Gi để Khi Chất Hơn Người">
+											<img class="card-img v-image ads-img " src="https://media.ngoisao.vn/resize_580/news/2019/09/10/phu-nu-30-mac-gi-31-ngoisao.vn-w640-h791.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXUFgOh50TxGa7xPKNkXQ3JgAAA70eLMYSkg';" alt="Phụ Nữ Tuổi 30 Mặc Gi để Khi Chất Hơn Người">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phụ Nữ Tuổi 30 Mặc Gi để Khi Chất Hơn Người</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/4e/35/ee4e359660e9ffdbaf04d2cc44719f23.jpg" data-lightbox="roadtrip" data-title="Tuổi 40 Mặc Gi đẹp Mẫu Thời Trang Cong Sở Thời Trang Mua He Hay Mẫu đầm Dự Tiệc đều được Gợi Y Dưới đay Ch Phong Cach Thời Trang Thời">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/4e/35/ee4e359660e9ffdbaf04d2cc44719f23.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYrDKZDowNI7xi-XUAOt4XDzQZ0spBpnBing';" alt="Tuổi 40 Mặc Gi đẹp Mẫu Thời Trang Cong Sở Thời Trang Mua He Hay Mẫu đầm Dự Tiệc đều được Gợi Y Dưới đay Ch Phong Cach Thời Trang Thời">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tuổi 40 Mặc Gi đẹp Mẫu Thời Trang Cong Sở Thời Trang Mua He Hay Mẫu đầm Dự Tiệc đều được Gợi Y Dưới đay Ch Phong Cach Thời Trang Thời</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image-us.eva.vn/upload/1-2018/images/2018-02-26/phu-nu-ngoai-30-can-thanh-ly-gap-12-mon-do-nay-neu-khong-muon-bi-che-sen-sam-a2-1519659670-817-width600height900.jpg" data-lightbox="roadtrip" data-title="Mặc đẹp Tuổi 30 Tư Vấn Những Phong Cach Giup Bạn Trẻ Trung Va Thời Thượng">
+											<img class="card-img v-image ads-img " src="https://image-us.eva.vn/upload/1-2018/images/2018-02-26/phu-nu-ngoai-30-can-thanh-ly-gap-12-mon-do-nay-neu-khong-muon-bi-che-sen-sam-a2-1519659670-817-width600height900.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9bqJwZnCTARTpNk_jTtY9e9CB_guyzIW45w';" alt="Mặc đẹp Tuổi 30 Tư Vấn Những Phong Cach Giup Bạn Trẻ Trung Va Thời Thượng">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mặc đẹp Tuổi 30 Tư Vấn Những Phong Cach Giup Bạn Trẻ Trung Va Thời Thượng</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-customer-service.html">Va Post 911 Gi Bill Customer Service</a></li>
+													<li class="list-group-item"><a href="/va-montgomery-gi-bill-rates.html">Va Montgomery Gi Bill Rates</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-benefits.html">Va Post 911 Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/va-post-911-percentages.html">Va Post 911 Percentages</a></li>
+													<li class="list-group-item"><a href="/va-post-911-questions.html">Va Post 911 Questions</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-phone-number.html">Va Post 911 Gi Bill Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-gov-gi-bill-eligibility.html">Va Gov Gi Bill Eligibility</a></li>
+													<li class="list-group-item"><a href="/va-loan-chapter-8.html">Va Loan Chapter 8</a></li>
+													<li class="list-group-item"><a href="/va-login-gi-bill.html">Va Login Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-governor-election.html">Va Governor Election</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-calculator.html">Va Post 911 Gi Bill Calculator</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-bah-calculator.html">Va Post 911 Gi Bill Bah Calculator</a></li>
+													<li class="list-group-item"><a href="/va-manage-your-education-benefits.html">Va Manage Your Education Benefits</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-bah.html">Va Post 911 Gi Bill Bah</a></li>
+													<li class="list-group-item"><a href="/va-giving-covid-vaccine.html">Va Giving Covid Vaccine</a></li>
+													<li class="list-group-item"><a href="/va-post-911-application-status.html">Va Post 911 Application Status</a></li>
+													<li class="list-group-item"><a href="/va-loan-chapter-3.html">Va Loan Chapter 3</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-faq.html">Va Post 911 Gi Bill Faq</a></li>
+													<li class="list-group-item"><a href="/va-post-911-gi-bill-online-bah.html">Va Post 911 Gi Bill Online Bah</a></li>
+													<li class="list-group-item"><a href="/va-post-911-benefits-phone-number.html">Va Post 911 Benefits Phone Number</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

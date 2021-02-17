@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Much Is The Gi Bill Housing Allowance - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Much Is The Gi Bill Housing Allowance",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/236x/95/59/f8/9559f84a6e329308b3b75d499c3af5fd.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+much+is+the+gi+bill+housing+allowance",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Much Is The Gi Bill Housing Allowance</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">20202021 GI Bill Housing Rates. Here are some important facts for determining eligibility and individual Post 911 GI Bill MHA rates. Students attending a foreign school receive a fixed amount of 1566 regardless of where they attend. <br>				
+			</p>
+										<a class="badge badge-dark" href="/womens-college-basketball-full-games.html">womens college basketball full games</a>
+											<a class="badge badge-info" href="/womens-college-basketball-kentucky.html">womens college basketball kentucky</a>
+											<a class="badge badge-danger" href="/womens-college-basketball-championship-history.html">womens college basketball championship history</a>
+											<a class="badge badge-info" href="/womens-college-basketball-games-last.html">womens college basketball games last</a>
+											<a class="badge badge-warning" href="/womens-college-basketball-full-rankings.html">womens college basketball full rankings</a>
+											<a class="badge badge-secondary" href="/womens-college-basketball-current-rankings.html">womens college basketball current rankings</a>
+											<a class="badge badge-info" href="/womens-college-basketball-games-2019.html">womens college basketball games 2019</a>
+											<a class="badge badge-success" href="/womens-college-basketball-fights.html">womens college basketball fights</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the right blog.  Our website provides you with hints for viewing the maximum quality video and image content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to see.  You can also contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4d/59/b6/4d59b6fcc76e0b1aa2531d5fb1c0656a.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gill Bill Benefits Include A Monthly Housing Allowance Aka Gi Bill Bah Here Are The 2020 2021 Bah Rate Gi Bill Housing Allowance Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4d/59/b6/4d59b6fcc76e0b1aa2531d5fb1c0656a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSExUdfK_NZVlK6rzqzAe8OkFggcRSra5L93A';" alt="Post 9 11 Gill Bill Benefits Include A Monthly Housing Allowance Aka Gi Bill Bah Here Are The 2020 2021 Bah Rate Gi Bill Housing Allowance Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gill Bill Benefits Include A Monthly Housing Allowance Aka Gi Bill Bah Here Are The 2020 2021 Bah Rate Gi Bill Housing Allowance Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/36/d2/8d36d27e6528ece11ff15ba7731c02d8.png" data-lightbox="roadtrip" data-title="How A 28 Year Old Used The Gi Bill To Buy Multiple Rental Properties Rental Property Financial Freedom Hard Money Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/36/d2/8d36d27e6528ece11ff15ba7731c02d8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdq3FZoo7m-0DUpafDkNMrgRiyRcOOAG7gjQ';" alt="How A 28 Year Old Used The Gi Bill To Buy Multiple Rental Properties Rental Property Financial Freedom Hard Money Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How A 28 Year Old Used The Gi Bill To Buy Multiple Rental Properties Rental Property Financial Freedom Hard Money Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/2d/63/bc2d636f85ef3400f88389b2cd8b266d.png" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Housing Allowance Veteran And Military Education Suny Empire State College In 2021 Military Education Gi Bill Housing Allowance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/2d/63/bc2d636f85ef3400f88389b2cd8b266d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_SAymdYYGSEK4uyoHFipREN-xBvSE25Wjgg';" alt="Post 9 11 Gi Bill Housing Allowance Veteran And Military Education Suny Empire State College In 2021 Military Education Gi Bill Housing Allowance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Housing Allowance Veteran And Military Education Suny Empire State College In 2021 Military Education Gi Bill Housing Allowance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/15/85/7e158514aec2b60cd8819089aebdb53a.png" data-lightbox="roadtrip" data-title="Monthly Housing Allowance Mha For Post 9 11 Gi Bill Military Benefits Gi Bill Housing Allowance Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/15/85/7e158514aec2b60cd8819089aebdb53a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPdxNNK-Vhj5OyMpL3AqyqCX4M9fu7AgJFbA';" alt="Monthly Housing Allowance Mha For Post 9 11 Gi Bill Military Benefits Gi Bill Housing Allowance Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Monthly Housing Allowance Mha For Post 9 11 Gi Bill Military Benefits Gi Bill Housing Allowance Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/79/96/b0799697b37d508691497b8d405b4415.jpg" data-lightbox="roadtrip" data-title="Dept Of Veterans Affairs Gi Bill Web Site Loads Of Info Gi Bill Education Job Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/79/96/b0799697b37d508691497b8d405b4415.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFZ-hhEE3cUl7R_2MfmBarTKASx6usIy_ibw';" alt="Dept Of Veterans Affairs Gi Bill Web Site Loads Of Info Gi Bill Education Job Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dept Of Veterans Affairs Gi Bill Web Site Loads Of Info Gi Bill Education Job Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bf/6d/7f/bf6d7f0a811fee191924520a1c77bf6f.jpg" data-lightbox="roadtrip" data-title="The Bah Rate If You Are Enrolled Full Time Through The Gi Bill At An Online College School Or Distance Lea In 2020 Online College Gi Bill Distance Learning Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bf/6d/7f/bf6d7f0a811fee191924520a1c77bf6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQatJCdtiNNP_u4Bqmw_jXW4XW4G4SWANd43Q';" alt="The Bah Rate If You Are Enrolled Full Time Through The Gi Bill At An Online College School Or Distance Lea In 2020 Online College Gi Bill Distance Learning Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Bah Rate If You Are Enrolled Full Time Through The Gi Bill At An Online College School Or Distance Lea In 2020 Online College Gi Bill Distance Learning Programs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/04/7e/72/047e722a71700815657987709d5917da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQatJCdtiNNP_u4Bqmw_jXW4XW4G4SWANd43Q';" alt="The Bah Rate If You Are Enrolled Full Time Through The Gi Bill At An Online College School Or Distance Lea In 2020 Online College Gi Bill Distance Learning Programs">
+										<div class="card-body">
+						<h3 class="h5"><b>VA is committed to supporting.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How much is the gi bill housing allowance</strong>. 
+								
+																	Colmery Veterans Education Assistance Act of. 
+																	The Post-911 GI Bill also pays a Monthly Housing Allowance based on the ZIP code of the location of the school or campus you are attending the majority of your classes. 
+																	With all the variables involved an array of different payment amounts is possible even for students going to the same school. 
+																	The Monthly Housing Allowance is equal to the Basic Allowance for Housing BAH for an E-5 with dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If not he wont get anything. 
+																	Purpose of Toolkit. 
+																	Veterans ID on Drivers License or ID Card by State. 
+																	Note however that these figures come via the post 911 GI Bill calculation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For students attending. 
+																	How much does the GI Bill pay for school. 
+																	E-5 with dependents OHA Rate for school location. 
+																	BAH And The GI Bill Your GI Bill Monthly Housing Allowance MHA is generally the same as the BAH for an E-5 with dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your tenancy started before 15 January 1989. 
+																	It is now easy to see why the Post 911 GI Bill housing allowance can vary so much. 
+																	How to Get a Veterans ID Card. 
+																	The Post-911 GI Bill includes payment of tuition and fees a monthly housing allowance and a stipend for textbooks and supplies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2017 which enhances and expands the Post-911 GI Bill. 
+																	He should get around 12650 which is the 67350 housing allowance from his online class subtracted from the 800 you normally receive if he had enough credits to qualify for the housing allowance in the month of December. 
+																	On December 1 2019 VA systems were updated to process the Monthly Housing Allowance MHA rate in accordance with the Harry W. 
+																	GI Bill Monthly Housing Allowance Communications Toolkit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This applies when attending online courses exclusively. 
+																	Your MHA is based on the ZIP code for your school. 
+																	The Post-911 GI Bill pays full tuition and fees at public schools and also pays most students a Monthly Housing Allowance MHA that is equal to the Basic. 
+																	Your BAH or MHA depends on a lot of different factors including the area of the country where the school is located. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Benefits Information for US Military Active Duty Reserve National Guard Military Spouses and Military Family. 
+																	For more information click here. 
+																	Type of School MHA Rate. 
+																	The online GI Bill BAH Rate calculation is determined by taking half of the national BAH Rate average. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Regardless the amounts take into account the local cost of living so it usually evens out. 
+																	As a part of your Post-911 GI Bill benefit you will receive a Monthly Housing Allowance. 
+																	On December 1 2019 updates went live in VAs education processing systems and all Monthly Housing Allowance MHA payments are being processed in accordance with new MHA rules. 
+																	The GI Bill BAH rate aka MHA rate Monthly Housing Allowance if you are enrolled full-time through the post 911 GI Bill at an online college school or distance learning program is 91650 until July 31st 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your training time is calculated to be 56 you will be paid 60 of the applicable housing allowance. 
+																	One final note on housing allowance. 
+																	GI Bill MHA Communications Toolkit. 
+																	Your landlords a charity or housing association and they give you care or support for example if you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These MHA updates are based on when you frst used your Post-911 GI Bill beneft and where you take the majority of. 
+																	Schools in US Territories. 
+																	Monthly Housing Allowance MHA for the GI Bill. 
+																	You live in a caravan mobile home or houseboat. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are attending classroom sessions your housing allowance is based on the ZIP code of the campus location where you attend the majority of your classes. 
+																	For the 2019- 2020 academic year the. 
+																	For instance if your training time is determined to be 68 as calculated above you will be paid 70 of the applicable housing allowance. 
+																	The housing allowance is paid at a percentage based on your training time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your Monthly Housing Allowance MHA is generally the same as the military Basic Allowance for Housing BAH for an E-5 with dependents. 
+																	Unlike the BAH which. 
+																	Your MHA is based on the ZIP code for your school. 
+																	The Housing Allowance for the Great Falls College Montana State University on the other hand offers a housing stipend of no more than 1008 per month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The local housing allowance rate doesnt apply to every type of tenancy for example it might not apply to you if. 
+																	Youve been getting Housing Benefit for the same property since 1996. 
+																	To research monthly housing allowance amounts please visit the GI Bill Comparison Tool and do a search for your school. 
+																	The online GI Bill Monthly Housing Allowance is 91650 for the 2020-2021 academic year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get details on the Monthly Housing Allowance letter you received. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2a/fd/7d/2afd7de4ad8d284a2e9c24089c5b483f.jpg" data-lightbox="roadtrip" data-title="How Much Should Military Bah Pay For Katehorrell Military Bah Base Housing Military Base Housing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2a/fd/7d/2afd7de4ad8d284a2e9c24089c5b483f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmNm7pg_9WaqyoV1TiJoVrbNQeoyNEuLhp_Q';" alt="How Much Should Military Bah Pay For Katehorrell Military Bah Base Housing Military Base Housing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Should Military Bah Pay For Katehorrell Military Bah Base Housing Military Base Housing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/f8/cf/50f8cf8ccbd9f1b7ed275cf50b6692d7.png" data-lightbox="roadtrip" data-title="Maynard Weighted Whorsies Chomping Bittie Bits Spilled Spoiled Klax Jars Cans Of Economic Empowerment A Gi Bill Scholarships For College Education And Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/f8/cf/50f8cf8ccbd9f1b7ed275cf50b6692d7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-dWHfUApd311MPzA0OKihpfNkco9OjXFmQ';" alt="Maynard Weighted Whorsies Chomping Bittie Bits Spilled Spoiled Klax Jars Cans Of Economic Empowerment A Gi Bill Scholarships For College Education And Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maynard Weighted Whorsies Chomping Bittie Bits Spilled Spoiled Klax Jars Cans Of Economic Empowerment A Gi Bill Scholarships For College Education And Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/90/6f/0e906fde946af4f4dae28530165d857d.jpg" data-lightbox="roadtrip" data-title="Pin By University Of Alaska Fairbanks On Funding Opportunities Gi Bill How To Plan Financial Aid">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/90/6f/0e906fde946af4f4dae28530165d857d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAgZWX1qc7-qLhkkTR2wNLhQikWBJEDhYmCg';" alt="Pin By University Of Alaska Fairbanks On Funding Opportunities Gi Bill How To Plan Financial Aid">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By University Of Alaska Fairbanks On Funding Opportunities Gi Bill How To Plan Financial Aid</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/5c/ce/c45ccee6c45143acb67aea59e9d2d577.jpg" data-lightbox="roadtrip" data-title="You Deserve A Free Education Edchat Edtech Elearning Student Leaders Collegedegree Collegemoney Scholarsh Online Student Education Major Free Tuition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/5c/ce/c45ccee6c45143acb67aea59e9d2d577.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7wlc1bjz3ZVbG3j5dnDkcIRDrp5jAjRhT7A';" alt="You Deserve A Free Education Edchat Edtech Elearning Student Leaders Collegedegree Collegemoney Scholarsh Online Student Education Major Free Tuition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Deserve A Free Education Edchat Edtech Elearning Student Leaders Collegedegree Collegemoney Scholarsh Online Student Education Major Free Tuition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/af/61/e9/af61e945d4ce20269b69728ae9c20fce.jpg" data-lightbox="roadtrip" data-title="There Are Many Resources Veterans Can Use To Extend Gi Bill Benefits And Some May Allow You To Wait To Use Your Gi B In 2020 Financial Aid Grants For Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/af/61/e9/af61e945d4ce20269b69728ae9c20fce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKie3JP_B7hkTz5ABH7tXMb3CoehWDTUHj4A';" alt="There Are Many Resources Veterans Can Use To Extend Gi Bill Benefits And Some May Allow You To Wait To Use Your Gi B In 2020 Financial Aid Grants For Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Are Many Resources Veterans Can Use To Extend Gi Bill Benefits And Some May Allow You To Wait To Use Your Gi B In 2020 Financial Aid Grants For Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/21/15/882115f39a7c705f8a9a7b27983d91ae.png" data-lightbox="roadtrip" data-title="Pin By Joshua Tanner On Organise Cleaning In 2020 Personal Finance Finance Financial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/21/15/882115f39a7c705f8a9a7b27983d91ae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNzEwzTWj84Udk8zTxCwwUjUoSix8swE7Muw';" alt="Pin By Joshua Tanner On Organise Cleaning In 2020 Personal Finance Finance Financial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Joshua Tanner On Organise Cleaning In 2020 Personal Finance Finance Financial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/71/f3/4871f3346595c3df6cbac5df7665c1e8.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/71/f3/4871f3346595c3df6cbac5df7665c1e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlbsQeOpNet48Wg3FbT16O4kAyhnObMuVgA';" alt="Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Overview Military Benefits Gi Bill Military Benefits Bills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/04/7e/72/047e722a71700815657987709d5917da.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Bah Rate Aka Mha For Online Colleges With Images Online College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/04/7e/72/047e722a71700815657987709d5917da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy4sSBve3UocvuJVpQBDztmWXyIfX8FpjIcQ';" alt="Post 9 11 Gi Bill Bah Rate Aka Mha For Online Colleges With Images Online College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Bah Rate Aka Mha For Online Colleges With Images Online College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/95/59/f8/9559f84a6e329308b3b75d499c3af5fd.jpg" data-lightbox="roadtrip" data-title="The Iowa Finance Authority Ifa Offers Veteran Friendly Home Loan Programs With Lower Interest Rates And Other Perks For Home Loans The Borrowers Loan Lenders">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/95/59/f8/9559f84a6e329308b3b75d499c3af5fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdkcoXc2iLgpkFLSVr3Y9dKpiND_1JUBoVcA';" alt="The Iowa Finance Authority Ifa Offers Veteran Friendly Home Loan Programs With Lower Interest Rates And Other Perks For Home Loans The Borrowers Loan Lenders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Iowa Finance Authority Ifa Offers Veteran Friendly Home Loan Programs With Lower Interest Rates And Other Perks For Home Loans The Borrowers Loan Lenders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/23/59/b223591d4b11f3ff0cb2fd8b243246ed.jpg" data-lightbox="roadtrip" data-title="Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/23/59/b223591d4b11f3ff0cb2fd8b243246ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLbEdCYyDacb1wcQBz1jy5nIPnhMzscXmo2w';" alt="Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse News Stories And Advice Military Spouse Central Soldier Love Military Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/b4/83/e0b483a592d0e31354540cdacdbd5230.gif" data-lightbox="roadtrip" data-title="Earn The Army Badge For Fitness And Win Incentives Army Badge Military Education United States Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/b4/83/e0b483a592d0e31354540cdacdbd5230.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6eDOxjRy9-P4sX4XvM7ncTlgBNhlrhO-t3Q';" alt="Earn The Army Badge For Fitness And Win Incentives Army Badge Military Education United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Earn The Army Badge For Fitness And Win Incentives Army Badge Military Education United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/a5/9e/b2a59e15f12a6284edb0ed396f3b7721.jpg" data-lightbox="roadtrip" data-title="Great News Within Your First Year Of Being In The Army You Have The Potential To Obtain Enough College Credits F Tuition Assistance College Money Free College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/a5/9e/b2a59e15f12a6284edb0ed396f3b7721.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotFDrFvOwL5c2RCAYvR7F8q8Q7wKuFIecuQ';" alt="Great News Within Your First Year Of Being In The Army You Have The Potential To Obtain Enough College Credits F Tuition Assistance College Money Free College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great News Within Your First Year Of Being In The Army You Have The Potential To Obtain Enough College Credits F Tuition Assistance College Money Free College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/30/08/15/3008158235ffd30ff55e5cc53259784c.jpg" data-lightbox="roadtrip" data-title="In Exchange For The Military Paying For Your Medical Training You Must Agree To Serve A Minimum Time In Uniform As A Tra In 2020 Medical School Medical Careers Medical">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/30/08/15/3008158235ffd30ff55e5cc53259784c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRZcPfLugPyq6AZEBzge0UGKfYyPbAJSqQcA';" alt="In Exchange For The Military Paying For Your Medical Training You Must Agree To Serve A Minimum Time In Uniform As A Tra In 2020 Medical School Medical Careers Medical">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In Exchange For The Military Paying For Your Medical Training You Must Agree To Serve A Minimum Time In Uniform As A Tra In 2020 Medical School Medical Careers Medical</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-was-the-gi-bill-related-to-the-civil-rights-movement.html">How Was The Gi Bill Related To The Civil Rights Movement</a></li>
+													<li class="list-group-item"><a href="/i-dont-want-to-go-to-college-or-work.html">I Dont Want To Go To College Or Work</a></li>
+													<li class="list-group-item"><a href="/how-to-sign-up-for-post-911-gi-bill.html">How To Sign Up For Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/indiana-college-go-week-free-applications.html">Indiana College Go Week Free Applications</a></li>
+													<li class="list-group-item"><a href="/how-to-use-911-gi-bill.html">How To Use 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-us-gi-bill.html">How To Us Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-use-my-gi-bill-on-active-duty.html">How To Use My Gi Bill On Active Duty</a></li>
+													<li class="list-group-item"><a href="/how-to-switch-from-mgib-to-post-911-gi-bill.html">How To Switch From Mgib To Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/inazuma-eleven-go-college-alpin.html">Inazuma Eleven Go College Alpin</a></li>
+													<li class="list-group-item"><a href="/is-college-essay-guy-good.html">Is College Essay Guy Good</a></li>
+													<li class="list-group-item"><a href="/how-to-transfer-my-gi-bill.html">How To Transfer My Gi Bill</a></li>
+													<li class="list-group-item"><a href="/illinois-disabled-veterans-dependent-education-benefits.html">Illinois Disabled Veterans Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/illinois-veterans-education-benefits-for-dependents.html">Illinois Veterans Education Benefits For Dependents</a></li>
+													<li class="list-group-item"><a href="/is-chapter-35-part-of-the-gi-bill.html">Is Chapter 35 Part Of The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/illinois-air-national-guard-employment-verification.html">Illinois Air National Guard Employment Verification</a></li>
+													<li class="list-group-item"><a href="/how-to-pick-a-college-quiz.html">How To Pick A College Quiz</a></li>
+													<li class="list-group-item"><a href="/international-schools-gi-bill.html">International Schools Gi Bill</a></li>
+													<li class="list-group-item"><a href="/inazuma-eleven-go-ep-35.html">Inazuma Eleven Go Ep 35</a></li>
+													<li class="list-group-item"><a href="/if-you-paid-into-the-montgomery-gi-bill.html">If You Paid Into The Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-to-start-using-your-gi-bill.html">How To Start Using Your Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

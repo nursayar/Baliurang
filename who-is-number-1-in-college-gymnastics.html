@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Who Is Number 1 In College Gymnastics - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Who Is Number 1 In College Gymnastics",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/f1/bb/95/f1bb954e0309b23f827dd88883e38d19.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=who+is+number+1+in+college+gymnastics",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Who Is Number 1 In College Gymnastics</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">USA Gymnastics states that they created levels 1-3 to prepare gymnasts for competition. The AIAW continued to conduct its established championship program in. The NCAA Mens Gymnastics NC official home. <br>				
+			</p>
+										<a class="badge badge-success" href="/can-you-go-to-college-on-unemployment.html">can you go to college on unemployment</a>
+											<a class="badge badge-info" href="/can-you-go-to-college-online-in-another-state.html">can you go to college online in another state</a>
+											<a class="badge badge-success" href="/can-you-use-gi-bill-while-in-national-guard.html">can you use gi bill while in national guard</a>
+											<a class="badge badge-warning" href="/can-you-transfer-post-9-11-gi-bill-benefits.html">can you transfer post 9 11 gi bill benefits</a>
+											<a class="badge badge-secondary" href="/casper-college-womens-basketball-schedule.html">casper college womens basketball schedule</a>
+											<a class="badge badge-info" href="/can-you-transfer-the-montgomery-gi-bill.html">can you transfer the montgomery gi bill</a>
+											<a class="badge badge-light" href="/can-you-claim-the-gi-bill-on-your-taxes.html">can you claim the gi bill on your taxes</a>
+											<a class="badge badge-info" href="/can-you-use-gi-bill-part-time.html">can you use gi bill part time</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the ideal site.  Our website provides you with hints for viewing the maximum quality video and image content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video for you to view.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/00/1b/58001b5b983940f5841fe7734c8844b6.png" data-lightbox="roadtrip" data-title="Pin On Roll Tide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/00/1b/58001b5b983940f5841fe7734c8844b6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfmy7bgi3w45jKixqz0ZmaiGtJ8btZm7aeYQ';" alt="Pin On Roll Tide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Roll Tide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/eb/32/57eb321a3b062c95dd3dc66f8b00c953.jpg" data-lightbox="roadtrip" data-title="College Gymnast With One Hand On The Balance Beam Collegiate Gymnastics Grace Form Ucla Bruins Kyfun Artistic Gymnastics Gymnastics Team Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/eb/32/57eb321a3b062c95dd3dc66f8b00c953.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCfFpj15MBoApigfvYwGjAFQIeSdZph3OGtw';" alt="College Gymnast With One Hand On The Balance Beam Collegiate Gymnastics Grace Form Ucla Bruins Kyfun Artistic Gymnastics Gymnastics Team Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gymnast With One Hand On The Balance Beam Collegiate Gymnastics Grace Form Ucla Bruins Kyfun Artistic Gymnastics Gymnastics Team Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a6/0e/79/a60e7978f47b1d1184f48253c8d20d24.jpg" data-lightbox="roadtrip" data-title="Pin On College Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a6/0e/79/a60e7978f47b1d1184f48253c8d20d24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-1IJ_Lw2DViJ53-iiE_uEsnbEKMlYt2PWQA';" alt="Pin On College Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/64/67/d464671f8257aaffdc471ce53ec61448.jpg" data-lightbox="roadtrip" data-title="April 15 Super Six Team Final Mykayla Skinner Utah Gymnastics Poses Female Gymnast Gymnastics Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/64/67/d464671f8257aaffdc471ce53ec61448.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQELp_MyH2qBWNNWFkxKsaPTt8-IT0rvOpQAA';" alt="April 15 Super Six Team Final Mykayla Skinner Utah Gymnastics Poses Female Gymnast Gymnastics Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">April 15 Super Six Team Final Mykayla Skinner Utah Gymnastics Poses Female Gymnast Gymnastics Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/7a/9a/16/7a9a1675442703898c395a1ddf8bf39a.jpg" data-lightbox="roadtrip" data-title="Pin On Se">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/7a/9a/16/7a9a1675442703898c395a1ddf8bf39a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZFrFDHINgZ-QWE-HoRhJMBkJwgHxVcq246w';" alt="Pin On Se">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Se</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/1f/8b/8c1f8b2aecbaa0187014d5732efb75fe.jpg" data-lightbox="roadtrip" data-title="Pin On Sonia Chowdary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/1f/8b/8c1f8b2aecbaa0187014d5732efb75fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnN2p3OMir0Siw3DdTxg2N6xkodHpgeFivA';" alt="Pin On Sonia Chowdary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sonia Chowdary</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/13/e6/0b/13e60b4ed24eacafab582918b3c5645d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdnN2p3OMir0Siw3DdTxg2N6xkodHpgeFivA';" alt="Pin On Sonia Chowdary">
+										<div class="card-body">
+						<h3 class="h5"><b>Tournaments are very.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Who is number 1 in college gymnastics</strong>. 
+								
+																	The National Collegiate Athletic Association NCAA Mens Gymnastics Championships are held each year. 
+																	Why is it good for me. 
+																	Much of an elite athletes time is focused on individual training and on improving his or her own routines so there may not be a lot of interaction with. 
+																	Most gymnasts dont compete gymnastics levels 1-3 but there are routines that you could compete at this level. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	29-31 2021 The top-ranked Florida womens gymnastics team earned the top score of the season in their win over Missouri. 
+																	The complete list of NCAA Mens Gymnastics NC champions from the first season to today. 
+																	Individual females who won medals in every event. 
+																	Therefore gymnastics programs tend to focus on building good leaders who are well-rounded and likely to succeed in a variety of jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Collegiate gymnasts have less likelihood of launching a professional athletic career. 
+																	The NCAA introduced womens gymnastics as a championship sport in 1982Gymnastics was one of twelve womens sports added to the NCAA championship program for the 198182 school year as the NCAA engaged in battle with the Association for Intercollegiate Athletics for Women for sole governance of womens collegiate sports. 
+																	Maggie Nichols became the number one college gymnast in the country on Friday after a stellar performance in a meet between the Oklahoma Sooners and the Florida Gators. 
+																	News Video. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NCAA womens gymnastics was one of the original nine sports that the NCAA introduced at the NCAA womens championships in 19811982. 
+																	Springfield College Division III. 
+																	HCUC Harrow College Uxbridge College - the merged college group for the two individual organisations - achieved the highest overall achievement rate at 856 for 201718 in the figures. 
+																	All schools currently compete in one division because only 13 schools sponsor mens gymnastics teams. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	4 Illinois on Sunday. 
+																	Gymnastics isnt just one activity its a whole range of different activities which makes it suitable for all ages and abilities. 
+																	Recipient of the Yale College Public Service Fellowship - Research For a Better World funded by Dean Takahashi Yale 80 MPPM 83 Wendy Sharp Yale 82 and the Kresge Foundation. 
+																	1 spot in London for 16-18 year old success. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However college gymnastics is no joke. 
+																	Get Mens Gymnastics rankings news schedules and championship brackets. 
+																	Nebraska womens gymnastics program exceeded the permissible number of countable coaches when the former head coach and members of the program arranged for a former volunteer coach to receive impermissible compensation. 
+																	Find a Gymnast Profile. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click for scores and recaps of last weekends NCAA gymnastics action. 
+																	5 Penn State came from behind to score a victory over No. 
+																	College gymnastics in the NCAA and elite gymnastics have as many differences as similarities including the teamwork the pressure level the scoring and the training hours 3. 
+																	For students going. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Collegiate Gymnastics Weekend Recap - Jan. 
+																	She will be filming a documentary. 
+																	The elite gymnast is primarily a solo competitor. 
+																	Some Olympic gymnasts have even competed in NCAA championships on their college teams after completing their Olympic career. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On the mens side No. 
+																	Level 3 is not a required competitive level so there are no score requirements to move to. 
+																	NCAA gymnastics teams all compete in one division as nearly every school that offers gymnastics is DI. 
+																	Search Coronavirus COVID-19 support Working together for a safe return to gymnastics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Read More about Nebraska womens gymnastics program exceeded allowable number of coaches. 
+																	Fellowship is given to a student with exceptional leadership intelligence and creativity who wish to bring together their intellectual passions with their social concerns. 
+																	Only one of the 13 teams is not in Division I. 
+																	Subscribe To Email Updates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nationwidepage 1 of 2 About this ranking. 
+																	Students and staff at Harrow College and Uxbridge College are celebrating after jointly hitting the No. 
+																	Gymnastics is great for learning new skills and movement as well as testing your memory with new routines. 
+																	Find an Event or Result. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its official - were the number 1 college in London. 
+																	Latest News. 
+																	The inaugural championship was won by the University of Utah which still dominates womens gymnastics. 
+																	2019 Womens Gymnastics Championships Results and Records. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its can be a great group activity but doesnt need to be competitive so you can choose to simply enjoy the way. 
+																	Best Colleges For Womens Gymnastics. 
+																	Many clubs have gymnasts in recreational classes while they learn these skills. 
+																	American gymnast Simone Biles holds the record for the most World Championship medals 25 as well as the most gold medals 19 in World Championship history for an athlete of any gender. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens gymnastics programs are available at some large universities and Division I championships have been part of the NCAA since 1981. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8e/2e/60/8e2e60fb7e323c448a48d3963ee5bc17.jpg" data-lightbox="roadtrip" data-title="Katelyn Ohashi Reveals How Elite Gymnastics Left Her Broken Elite Gymnastics Katelyn Ohashi Gymnastics Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8e/2e/60/8e2e60fb7e323c448a48d3963ee5bc17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlEYybP1audSK2SmRENCjkF88jqb34IVZjvg';" alt="Katelyn Ohashi Reveals How Elite Gymnastics Left Her Broken Elite Gymnastics Katelyn Ohashi Gymnastics Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Katelyn Ohashi Reveals How Elite Gymnastics Left Her Broken Elite Gymnastics Katelyn Ohashi Gymnastics Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/e6/0b/13e60b4ed24eacafab582918b3c5645d.jpg" data-lightbox="roadtrip" data-title="Pin On Sports Vixens">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/e6/0b/13e60b4ed24eacafab582918b3c5645d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuHmhsidqTEIkE11HIurzQWI6P0GEkZ8Z5JA';" alt="Pin On Sports Vixens">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sports Vixens</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/50/d4/03/50d40318cc89c65a1fcb5cd5b9972150.jpg" data-lightbox="roadtrip" data-title="Samantha Shapiro Usa Artistic Gymnastics Hd Photos Female Gymnast Female Athletes Sport Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/50/d4/03/50d40318cc89c65a1fcb5cd5b9972150.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrqtGLprKeIikghDU7VhUyT2ZfuyyyJ5SG2w';" alt="Samantha Shapiro Usa Artistic Gymnastics Hd Photos Female Gymnast Female Athletes Sport Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Samantha Shapiro Usa Artistic Gymnastics Hd Photos Female Gymnast Female Athletes Sport Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/3a/f3/a73af32c9011b76ee8f73aa3a288c4ac.jpg" data-lightbox="roadtrip" data-title="College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/3a/f3/a73af32c9011b76ee8f73aa3a288c4ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUbRparf81Gmpz3iQtzXxR2nX_T7dW1u56yA';" alt="College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Gymnastics Leotards Ginasta Ginastica Artistica Corpos Femininos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/bb/95/f1bb954e0309b23f827dd88883e38d19.jpg" data-lightbox="roadtrip" data-title="Gamba Carlo Photos From Gamba Carlo S Post Gymnastics Girls Gymnastics Pictures Gymnastics Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/bb/95/f1bb954e0309b23f827dd88883e38d19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR01XGmE5q6vsqnvvzZWUBbs3X5M4tMXWNVOQ';" alt="Gamba Carlo Photos From Gamba Carlo S Post Gymnastics Girls Gymnastics Pictures Gymnastics Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gamba Carlo Photos From Gamba Carlo S Post Gymnastics Girls Gymnastics Pictures Gymnastics Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/b8/d4/c9b8d4a6683162076860e9cbea19f83b.png" data-lightbox="roadtrip" data-title="Watch This College Gymnast Casually Slay Her Floor Routine Gymnastics Routines Olympic Gymnastics Artistic Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/b8/d4/c9b8d4a6683162076860e9cbea19f83b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScXHyA5e5t_NVymsXhI3wG4oF1vGqRzNINUw';" alt="Watch This College Gymnast Casually Slay Her Floor Routine Gymnastics Routines Olympic Gymnastics Artistic Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch This College Gymnast Casually Slay Her Floor Routine Gymnastics Routines Olympic Gymnastics Artistic Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/af/b8/7eafb863f51bd8abd0b4bd4a3c2e1d25.jpg" data-lightbox="roadtrip" data-title="April 15 Super Six Team Final Ashleigh Gnat Lsu Lsu Gymnastics Gymnastics Photography Gymnastics Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/af/b8/7eafb863f51bd8abd0b4bd4a3c2e1d25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR71IQmkV4FjGrwj_DoR0PqznWd8SMPr9ljQ';" alt="April 15 Super Six Team Final Ashleigh Gnat Lsu Lsu Gymnastics Gymnastics Photography Gymnastics Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">April 15 Super Six Team Final Ashleigh Gnat Lsu Lsu Gymnastics Gymnastics Photography Gymnastics Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/f8/97/c7f897506b268ffbe36982aa9fd7420d.jpg" data-lightbox="roadtrip" data-title="April 14 Semifinal 1 Mykayla Skinner Utah Female Gymnast Gymnastics Poses Famous Gymnasts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/f8/97/c7f897506b268ffbe36982aa9fd7420d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVzUtw22_r7-y3s60AcY0mn2vBg6xn6w78gg';" alt="April 14 Semifinal 1 Mykayla Skinner Utah Female Gymnast Gymnastics Poses Famous Gymnasts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">April 14 Semifinal 1 Mykayla Skinner Utah Female Gymnast Gymnastics Poses Famous Gymnasts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/fe/23/befe23e44598fd8892e76972a5105731.jpg" data-lightbox="roadtrip" data-title="Pin On Gymnast">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/fe/23/befe23e44598fd8892e76972a5105731.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRblg3f2HvTuDuRutDgbH1d_o_ZcovqzO6R8Q';" alt="Pin On Gymnast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gymnast</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/77/86/c9778606d3273595db02a349245f4fd7.jpg" data-lightbox="roadtrip" data-title="Pin Pa Ulca Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/77/86/c9778606d3273595db02a349245f4fd7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsxhfto9OslIr99h4rfFVWSx4riYO13RTK0w';" alt="Pin Pa Ulca Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Pa Ulca Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/77/7c/30777cd01721b40ab74705105088e4a4.jpg" data-lightbox="roadtrip" data-title="Kentucky Georgia Gymnastics Female Gymnast Usa Gymnastics Gymnastics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/77/7c/30777cd01721b40ab74705105088e4a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMy3H51SHXK4sFQztznZaASRsLA3404Drscg';" alt="Kentucky Georgia Gymnastics Female Gymnast Usa Gymnastics Gymnastics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Georgia Gymnastics Female Gymnast Usa Gymnastics Gymnastics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/52/22/dc52225fe80e943fd87abf1157fb37ae.jpg" data-lightbox="roadtrip" data-title="April 14 Semifinal 1 Mykayla Skinner Utah Female Gymnast Gymnastics Championships Gymnastics Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/52/22/dc52225fe80e943fd87abf1157fb37ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKW1A9Ti1dHoRaYRiEYt1ZP7IvrKP2v6XRg';" alt="April 14 Semifinal 1 Mykayla Skinner Utah Female Gymnast Gymnastics Championships Gymnastics Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">April 14 Semifinal 1 Mykayla Skinner Utah Female Gymnast Gymnastics Championships Gymnastics Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/f3/c9/abf3c99e5bb65952489cb0af3968fd8d.jpg" data-lightbox="roadtrip" data-title="2011 College Women S Gymnastics Stanford Vs Cal Female Gymnast Gymnastics Gk Leotards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/f3/c9/abf3c99e5bb65952489cb0af3968fd8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQSL5nY15tdqZCpY0Tu7HH3o7J5NoOOMHrOg';" alt="2011 College Women S Gymnastics Stanford Vs Cal Female Gymnast Gymnastics Gk Leotards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2011 College Women S Gymnastics Stanford Vs Cal Female Gymnast Gymnastics Gk Leotards</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/amazon-gifts-for-college-guys.html">Amazon Gifts For College Guys</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-agr-handbook.html">Air National Guard Agr Handbook</a></li>
+													<li class="list-group-item"><a href="/am-i-ready-to-go-to-college-quiz.html">Am I Ready To Go To College Quiz</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-annual-scientific-meeting.html">American College Of Gastroenterology Annual Scientific Meeting</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-meeting-2019.html">American College Of Gastroenterology Meeting 2019</a></li>
+													<li class="list-group-item"><a href="/american-public-university-gi-bill.html">American Public University Gi Bill</a></li>
+													<li class="list-group-item"><a href="/american-military-university-gi-bill.html">American Military University Gi Bill</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-fodmap.html">American College Of Gastroenterology Fodmap</a></li>
+													<li class="list-group-item"><a href="/air-force-rotc-gi-bill.html">Air Force Rotc Gi Bill</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-elevated-liver-enzymes.html">American College Of Gastroenterology Elevated Liver Enzymes</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-guidelines-for-esophageal-varices.html">American College Of Gastroenterology Guidelines For Esophageal Varices</a></li>
+													<li class="list-group-item"><a href="/american-alpine-institute-gi-bill.html">American Alpine Institute Gi Bill</a></li>
+													<li class="list-group-item"><a href="/american-intercontinental-university-gi-bill.html">American Intercontinental University Gi Bill</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-polyp-guidelines.html">American College Of Gastroenterology Polyp Guidelines</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-h-pylori-guidelines.html">American College Of Gastroenterology H Pylori Guidelines</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-hepatic-encephalopathy-guidelines.html">American College Of Gastroenterology Hepatic Encephalopathy Guidelines</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-gi-bleed-guidelines.html">American College Of Gastroenterology Gi Bleed Guidelines</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-president.html">American College Of Gastroenterology President</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-meeting-2020.html">American College Of Gastroenterology Meeting 2020</a></li>
+													<li class="list-group-item"><a href="/american-college-of-gastroenterology-guidelines-ulcerative-colitis.html">American College Of Gastroenterology Guidelines Ulcerative Colitis</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Womens College Basketball Coach Fired - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Womens College Basketball Coach Fired",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/83/db/c6/83dbc6ce44d3dd0fa70b4148a004ad41.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=womens+college+basketball+coach+fired",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Womens College Basketball Coach Fired</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The school will hold a press. Nick Moore of Lighthouse College Prep Academy located in the states northwest corner announced on his Twitter account Monday night that he had been dismissed. AP Matt Bollant who had one winning season in five years and was sued two years ago for allegedly abusing players was fired as the Illinois womens basketball coach Tuesday. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/college-gymnastics-floor-routines-2018.html">college gymnastics floor routines 2018</a>
+											<a class="badge badge-dark" href="/college-gymnastics-insights.html">college gymnastics insights</a>
+											<a class="badge badge-danger" href="/college-gymnastics-blogs.html">college gymnastics blogs</a>
+											<a class="badge badge-danger" href="/college-gymnastics-florida.html">college gymnastics florida</a>
+											<a class="badge badge-dark" href="/college-gymnastics-rankings-2018.html">college gymnastics rankings 2018</a>
+											<a class="badge badge-info" href="/college-gymnastics-preseason-rankings-2021.html">college gymnastics preseason rankings 2021</a>
+											<a class="badge badge-success" href="/college-gymnastics-hair.html">college gymnastics hair</a>
+											<a class="badge badge-info" href="/college-gymnastics-leotards-for-sale.html">college gymnastics leotards for sale</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to pay a visit to the ideal blog.  Our website gives you hints for viewing the maximum quality video and picture content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/77/fb/7377fbe6a60f9353eb1bfbbff9d26c9b.jpg" data-lightbox="roadtrip" data-title="Duke Hires Kara Lawson As Head Coach Spectacular Magazine In 2020 Kara Lawson Basketball Duke University Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/77/fb/7377fbe6a60f9353eb1bfbbff9d26c9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrMhCqp3_1odSqv4dfLPmnAN0lapaNEb1L6g';" alt="Duke Hires Kara Lawson As Head Coach Spectacular Magazine In 2020 Kara Lawson Basketball Duke University Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Duke Hires Kara Lawson As Head Coach Spectacular Magazine In 2020 Kara Lawson Basketball Duke University Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/e0/a5/e7e0a5f1bdd4dc86980ff28fe73168b5.jpg" data-lightbox="roadtrip" data-title="Detroit Mercy Women S Basketball Coach Bernard Scott Fired Womens Basketball Basketball Coach Coach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/e0/a5/e7e0a5f1bdd4dc86980ff28fe73168b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR4t09kCfdmsGPrprW-hxxYL7JOdbeaURxMw';" alt="Detroit Mercy Women S Basketball Coach Bernard Scott Fired Womens Basketball Basketball Coach Coach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Detroit Mercy Women S Basketball Coach Bernard Scott Fired Womens Basketball Basketball Coach Coach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/38/00/77380082ba6ca8561269c64694f0185c.jpg" data-lightbox="roadtrip" data-title="Vanderveer Uconn S Rule Isn T Bad For The Sport But Next Year It Could Be College Basketball Uconn Stanford Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/38/00/77380082ba6ca8561269c64694f0185c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ3dH-Y8KvcoB1IGw29KUrIuKH-RTfOE-yIg';" alt="Vanderveer Uconn S Rule Isn T Bad For The Sport But Next Year It Could Be College Basketball Uconn Stanford Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vanderveer Uconn S Rule Isn T Bad For The Sport But Next Year It Could Be College Basketball Uconn Stanford Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/82/8b/c4828b7d6a58bd582571c9e82d04ecf7.jpg" data-lightbox="roadtrip" data-title="Two Real Housewives Of Potomac Husbands Fired From Their Basketball Coaching Jobs Fashion Women Real Housewives">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/82/8b/c4828b7d6a58bd582571c9e82d04ecf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5x0L6Hbya2SgdToBv5glIkKBUlgovlueLQQ';" alt="Two Real Housewives Of Potomac Husbands Fired From Their Basketball Coaching Jobs Fashion Women Real Housewives">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Two Real Housewives Of Potomac Husbands Fired From Their Basketball Coaching Jobs Fashion Women Real Housewives</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/1e/5e/511e5e9f11093dc00b6fb8620af413da.jpg" data-lightbox="roadtrip" data-title="Uconn S Stewart Auriemma Win Top Ap Awards Uconn Uconn Womens Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/1e/5e/511e5e9f11093dc00b6fb8620af413da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBDdMsTe6F4Qjxp72E4zz9WVVioaYK0L7jA';" alt="Uconn S Stewart Auriemma Win Top Ap Awards Uconn Uconn Womens Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn S Stewart Auriemma Win Top Ap Awards Uconn Uconn Womens Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/93/9c/82939c9dd9c61cc79626bc907145209a.jpg" data-lightbox="roadtrip" data-title="Pin On Wcbb 2015 16">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/93/9c/82939c9dd9c61cc79626bc907145209a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStpqqUqN7RCN57ZDA08pkUW1P-vDN6cZa-zQ';" alt="Pin On Wcbb 2015 16">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wcbb 2015 16</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/6a/3f/ea/6a3fea5136059f3b204b380ecaac259f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStpqqUqN7RCN57ZDA08pkUW1P-vDN6cZa-zQ';" alt="Pin On Wcbb 2015 16">
+										<div class="card-body">
+						<h3 class="h5"><b>FILE - In this Jan.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Womens college basketball coach fired</strong>. 
+								
+																	They started Big 12 play with a 41-point loss to Oklahoma and a 97-49 defeat. 
+																	Texas Tech womens basketball players have accused Stollings and her staff of fostering a culture of abuse that led to an exodus from the program according to a report published Wednesday Aug. 
+																	Is there a great team right. 
+																	25 2020 file photo Texas Tech head coach Marlene Stollings reacts to a play in the second half of an NCAA college basketball game against Baylor in Waco Texas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Texas womens basketball coach Karen Aston dismissed AUSTIN Texas AP -- Texas dismissed womens basketball coach Karen Aston on Friday ending an eight-year stint that included four straight. 
+																	Aug 6 2020 Texas Tech athletic director Kirby Hocutt announced Thursday the firing of womens head basketball coach Marlene Stollings effective immediately. 
+																	An Indiana high school basketball coach has been fired after throwing a chair and a basketball onto the court during a game Friday. 
+																	However the Ivy League is not playing that season due to COVID-19 concerns. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The IHSAA the states governing body said on Tuesday that the Lighthouse boys basketball team had. 
+																	5 2020 in USA. 
+																	Peck was awarded the US Basketball Writers Association USBWA Coach of the Year the WBCA Coach of the Year the AP College Basketball Coach of the Year and the Naismith College Coach of the Year awards in 1999. 
+																	Voepel began covering womens basketball in 1984 and has been with ESPN since 1996. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Georgia Tech fired womens basketball coach MaChelle Joseph Tuesday after 16 years with the program following allegations she was mentally emotionally and verbally abusive to members of her. 
+																	Athletic director Kirby Hocutt announced the firing in a one-sentence statement while adding that he planned to address the decision Friday. 
+																	Mechelle Voepel covers the WNBA womens college basketball and other college sports for espnW. 
+																	This is a list of college womens basketball coaches by number of career wins. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LUBBOCK Texas -- Texas Tech has fired womens basketball coach Candi Whitaker. 
+																	Tara VanDerveer the head coach of Idaho from 1978-80 Ohio State from 1980-85 and Stanford from 198595 and from 1996-present tops the list with 1109 career wins. 
+																	As of the next college basketball season in 202021 354 womens college basketball programs will compete in NCAA Division I. 
+																	AP PhotoRod Aydelotte File LUBBOCK Texas -- Texas Tech fired womens basketball coach Marlene Stollings on Thursday a day after a scathing newspaper report alleging a culture of abuse in her program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The highest winning percentage in the group belongs to Geno Auriemma head coach of. 
+																	Robert Franklin AP The Georgia Tech Yellow Jackets have fired womens basketball coach MaChelle Joseph after an independent investigation found that she created a toxic environment according to. 
+																	Texas Tech has fired the head coach and assistant coach of its womens basketball team after a scathing report chronicling claims of physical mental and verbal abuse against players was published. 
+																	To date Peck at 33 years old is the youngest person to coach a womens Division I basketball national championship team. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Texas AM coach Gary Blair said he thinks the 2020-21 womens basketball season has a rather open feel to it making those players all the more valuable as X factors. 
+																	Former Texas Tech womens coach disputes firing in lawsuit By DOUG FEINBERG October 21 2020 Former Texas Tech womens basketball coach Marlene Stollings who was fired after USA Today published a report detailing players claims of physical and emotional abuse has filed a lawsuit against the school and athletic director Kirby Hocutt. 
+																	With womens college basketball recently seeing several instances of coaches being accused of abusive or hostile or even discriminatory behavior were confronting that difficulty on multiple. 
+																	The Lady Raiders are 6-7 on the season. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Former Texas Tech womens basketball coach Marlene Stollings believes she was fired without cause in August and has retained attorney Peter Ginsberg to pursue litigation against the school. 
+																	Skip to navigation Menu. 
+																	The list includes only games at the NCAA AIAW and NAIA levels. 
+																	Each program employs a head coachAs of the 202021 season the longest-tenured head coach at his or her current school is Kathy Delaney-Smith who started at Harvard in 1982. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Texas Tech fired womens basketball coach Marlene Stollings on Thursday a day after a scathing report alleging a culture of abuse in her program. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/3b/3e/173b3e21be7950bbfdc648f951526e05.jpg" data-lightbox="roadtrip" data-title="Michelle Obama S Brother Fired From Oregon State Basketball Shorts Girls Wsu Basketball Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/3b/3e/173b3e21be7950bbfdc648f951526e05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQyAFv67Iz-pDaVXoDvSA7wQdSGW8AexV9w';" alt="Michelle Obama S Brother Fired From Oregon State Basketball Shorts Girls Wsu Basketball Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michelle Obama S Brother Fired From Oregon State Basketball Shorts Girls Wsu Basketball Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/0c/35/cb0c350404e3c30e500e07acc3b7e7fd.jpg" data-lightbox="roadtrip" data-title="Woman S Basketball Coach Niya Butts Getting The Crowd Fired Up Womens Basketball Basketball Coach Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/0c/35/cb0c350404e3c30e500e07acc3b7e7fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiKG3QsNweeg6vsVEJOT2uuCeZFrcNelw5EQ';" alt="Woman S Basketball Coach Niya Butts Getting The Crowd Fired Up Womens Basketball Basketball Coach Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Woman S Basketball Coach Niya Butts Getting The Crowd Fired Up Womens Basketball Basketball Coach Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/3f/ea/6a3fea5136059f3b204b380ecaac259f.jpg" data-lightbox="roadtrip" data-title="Slideshow Clutch Women S College Basketball Players College Basketball Players Womens Basketball Gamecock Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/3f/ea/6a3fea5136059f3b204b380ecaac259f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwTmP1JBpAR6FMLWaAyEKmUyptRyEaEky_qQ';" alt="Slideshow Clutch Women S College Basketball Players College Basketball Players Womens Basketball Gamecock Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Slideshow Clutch Women S College Basketball Players College Basketball Players Womens Basketball Gamecock Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/4f/4e/6b4f4ec552ffe746af443dd04105e683.jpg" data-lightbox="roadtrip" data-title="Pat Summitt S Lady Vols Travel To Say Last Goodbye Pat Summitt College Basketball Game Tennessee Volunteers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/4f/4e/6b4f4ec552ffe746af443dd04105e683.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg9p14Unhke_nxoou3VdWNYzlCxdv5HgltZA';" alt="Pat Summitt S Lady Vols Travel To Say Last Goodbye Pat Summitt College Basketball Game Tennessee Volunteers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt S Lady Vols Travel To Say Last Goodbye Pat Summitt College Basketball Game Tennessee Volunteers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/aa/e4/0eaae42ac4b97369c308aca77a3bdbab.jpg" data-lightbox="roadtrip" data-title="Louisville Notre Dame Meet In Acc Final With High Stakes Louisville Dame Game Notre Dame">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/aa/e4/0eaae42ac4b97369c308aca77a3bdbab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhhVBgbBc3MkbhDUIZcOJcf-UN9oztbzY49w';" alt="Louisville Notre Dame Meet In Acc Final With High Stakes Louisville Dame Game Notre Dame">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Louisville Notre Dame Meet In Acc Final With High Stakes Louisville Dame Game Notre Dame</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/db/c6/83dbc6ce44d3dd0fa70b4148a004ad41.jpg" data-lightbox="roadtrip" data-title="What Why Does A College Basketball Coach Need To Be Paid This Much Could Uk Be Using This Money To Give Kids Basketball Coach Ncaa Basketball Coaching">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/db/c6/83dbc6ce44d3dd0fa70b4148a004ad41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYZKwqiXqR-2b4GeeXDpZtSv51t5Owou4pA';" alt="What Why Does A College Basketball Coach Need To Be Paid This Much Could Uk Be Using This Money To Give Kids Basketball Coach Ncaa Basketball Coaching">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Why Does A College Basketball Coach Need To Be Paid This Much Could Uk Be Using This Money To Give Kids Basketball Coach Ncaa Basketball Coaching</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/58/f2/5958f287c5bacdc1be61de233e6a83c6.jpg" data-lightbox="roadtrip" data-title="Reimer Announces Transfer To Michigan State Michigan State Michigan Notre Dame Irish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/58/f2/5958f287c5bacdc1be61de233e6a83c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv1huNaoUY8Lj9H4fY8JyxbMGKohkzKYPaXA';" alt="Reimer Announces Transfer To Michigan State Michigan State Michigan Notre Dame Irish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reimer Announces Transfer To Michigan State Michigan State Michigan Notre Dame Irish</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/89/ff/ab89ffdeac085b80a6926210fdad3085.jpg" data-lightbox="roadtrip" data-title="Kailee Johnson To Forego Senior Season With Women S Basketball Team Basketball Teams Womens Basketball Stanford Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/89/ff/ab89ffdeac085b80a6926210fdad3085.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS30ZGXS2OOpM49VByI_FBRU1JPFYr92cNGsA';" alt="Kailee Johnson To Forego Senior Season With Women S Basketball Team Basketball Teams Womens Basketball Stanford Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kailee Johnson To Forego Senior Season With Women S Basketball Team Basketball Teams Womens Basketball Stanford Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/38/86/a1388608df4b93f78e4969476ed10f32.jpg" data-lightbox="roadtrip" data-title="Coach Ethridge Named Court Coach For Usa Basketball Usa Basketball Coach Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/38/86/a1388608df4b93f78e4969476ed10f32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsq4-DRp9xmFnJL65p6w4Xs08M8VQfgmYoiw';" alt="Coach Ethridge Named Court Coach For Usa Basketball Usa Basketball Coach Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coach Ethridge Named Court Coach For Usa Basketball Usa Basketball Coach Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/32/b8/e732b85fb51cb5ee9114e56b93c8e12c.jpg" data-lightbox="roadtrip" data-title="Top 10 For 2010 2011 Pat Summitt Lady Vols Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/32/b8/e732b85fb51cb5ee9114e56b93c8e12c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzzw4DwiBa6P1WsFSvwOiNcKgTkVxW3uajQQ';" alt="Top 10 For 2010 2011 Pat Summitt Lady Vols Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 For 2010 2011 Pat Summitt Lady Vols Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/ef/0d/9bef0d7dba22193ef85a1eb5d880a445.jpg" data-lightbox="roadtrip" data-title="Meac Announces 2018 19 Women S Basketball Preseason Honors Mid Eastern Athletic Conference Womens Basketball Women Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/ef/0d/9bef0d7dba22193ef85a1eb5d880a445.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbKpVTeEjDWTy_FoGMbPN3Sp3xnpskIZxROQ';" alt="Meac Announces 2018 19 Women S Basketball Preseason Honors Mid Eastern Athletic Conference Womens Basketball Women Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meac Announces 2018 19 Women S Basketball Preseason Honors Mid Eastern Athletic Conference Womens Basketball Women Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/fb/5f/12fb5f779b3eff0976ed9d906ac27371.jpg" data-lightbox="roadtrip" data-title="Pete Buttigieg Dawn Staley Among Those Who Pay Tribute To Muffet Mcgraw In 2020 Notre Dame University Womens Basketball Notre Dame">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/fb/5f/12fb5f779b3eff0976ed9d906ac27371.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUu7simuo_YVSt29iR_iyqThnvpJEkHpcwQ';" alt="Pete Buttigieg Dawn Staley Among Those Who Pay Tribute To Muffet Mcgraw In 2020 Notre Dame University Womens Basketball Notre Dame">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pete Buttigieg Dawn Staley Among Those Who Pay Tribute To Muffet Mcgraw In 2020 Notre Dame University Womens Basketball Notre Dame</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/0c/20/6f0c2036b3feef8a01f4527d9e3e0ceb.jpg" data-lightbox="roadtrip" data-title="Pin On Hoop">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/0c/20/6f0c2036b3feef8a01f4527d9e3e0ceb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIK5F_KQ2M3jYcRx3wvuJUEdc0AOu5s9h8yg';" alt="Pin On Hoop">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hoop</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/womens-college-basketball-coaches-with-most-wins.html">Womens College Basketball Coaches With Most Wins</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-game-schedule.html">Womens College Basketball Game Schedule</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-attendance-rankings.html">Womens College Basketball Attendance Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-coach-of-the-year.html">Womens College Basketball Coach Of The Year</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-current-rankings.html">Womens College Basketball Current Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-conference-tournaments-2020.html">Womens College Basketball Conference Tournaments 2020</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-computer-rankings.html">Womens College Basketball Computer Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-bracket-2019.html">Womens College Basketball Bracket 2019</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-halftime-length.html">Womens College Basketball Halftime Length</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-dunk.html">Womens College Basketball Dunk</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-connecticut.html">Womens College Basketball Connecticut</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-coaching-carousel.html">Womens College Basketball Coaching Carousel</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-championship-2017.html">Womens College Basketball Championship 2017</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-average-height.html">Womens College Basketball Average Height</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-coaching-staff.html">Womens College Basketball Coaching Staff</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-holiday-tournaments.html">Womens College Basketball Holiday Tournaments</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-final-four-2020.html">Womens College Basketball Final Four 2020</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-full-rankings.html">Womens College Basketball Full Rankings</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-duke.html">Womens College Basketball Duke</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-full-game.html">Womens College Basketball Full Game</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>State Gibbs Phase Rule - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "State Gibbs Phase Rule",
+  "datePublished": "2021-02-17",
+  "image": "https://www.tf.uni-kiel.de/matwis/amat/iss/kap_6/illustr/phase_rule_diagram.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=state+gibbs+phase+rule",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>State Gibbs Phase Rule</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">We have to define only a minimum number of properties to define a system. The relationship that Gibbs found between C P and F is called Gibbs phase rule or just the phase rule. This lecture describes what is a state in thermodynamicsand also explains the Gibbs phase rule with good examples. <br>				
+			</p>
+										<a class="badge badge-light" href="/montgomery-gi-amount.html">montgomery gi amount</a>
+											<a class="badge badge-info" href="/military-gi-bill-benefits.html">military gi bill benefits</a>
+											<a class="badge badge-warning" href="/montgomery-gi-bill-2020-rates.html">montgomery gi bill 2020 rates</a>
+											<a class="badge badge-secondary" href="/michigan-state-gi-lab.html">michigan state gi lab</a>
+											<a class="badge badge-info" href="/montgomery-gi-bill-and-kicker.html">montgomery gi bill and kicker</a>
+											<a class="badge badge-secondary" href="/montgomery-bill-national-guard.html">montgomery bill national guard</a>
+											<a class="badge badge-warning" href="/military-gi-bill-pay.html">military gi bill pay</a>
+											<a class="badge badge-success" href="/mohawk-college-gift-cards.html">mohawk college gift cards</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the ideal site.  Our site provides you with hints for viewing the maximum quality video and image content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.  You can also bring about supporting this website by sharing videos and images that you like on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/02/f8/8802f8dad37741264d22bede5a20e3d7.jpg" data-lightbox="roadtrip" data-title="Phase Rule Physics And Mathematics Science Chemistry Chemistry Classroom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/02/f8/8802f8dad37741264d22bede5a20e3d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZhAZ7pNt1UsuQI2PjjbziUVUqmSz70k0ng';" alt="Phase Rule Physics And Mathematics Science Chemistry Chemistry Classroom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phase Rule Physics And Mathematics Science Chemistry Chemistry Classroom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/thephaserule-131031072657-phpapp02/95/the-phase-rule-3-638.jpg?cb=1383204638" data-lightbox="roadtrip" data-title="The Phase Rule">
+											<img class="card-img v-image ads-img " src="https://image.slidesharecdn.com/thephaserule-131031072657-phpapp02/95/the-phase-rule-3-638.jpg?cb=1383204638" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7afQcH8prvtbqhxFJ56Rv7y40wBgfTvJUwg';" alt="The Phase Rule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Phase Rule</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/thephaserule-190919174443/95/the-phase-rule-8-638.jpg?cb=1568915324" data-lightbox="roadtrip" data-title="The Phase Rule">
+											<img class="card-img v-image ads-img " src="https://image.slidesharecdn.com/thephaserule-190919174443/95/the-phase-rule-8-638.jpg?cb=1568915324" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAoQQ_fDn1yVaqxpN4huStQwYcBYwUuTQOQ';" alt="The Phase Rule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Phase Rule</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.slideplayer.com/16/5064820/slides/slide_1.jpg" data-lightbox="roadtrip" data-title="Gibbs Phase Rule The Number Of Variables Which Are Required To Describe The State Of A System P F C 2 F C P 2 Where P Of Phases C Of Components Ppt Download">
+											<img class="card-img v-image ads-img " src="https://images.slideplayer.com/16/5064820/slides/slide_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWpOWVEr0bV4e9agd_OV5I2ExmEXn7jFEeDw';" alt="Gibbs Phase Rule The Number Of Variables Which Are Required To Describe The State Of A System P F C 2 F C P 2 Where P Of Phases C Of Components Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gibbs Phase Rule The Number Of Variables Which Are Required To Describe The State Of A System P F C 2 F C P 2 Where P Of Phases C Of Components Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/30/08/7c3008aa0b29a7d6c5149bf9da937f8a.gif" data-lightbox="roadtrip" data-title="Phase Diagrams Science Chemistry Chemistry Help Chemistry Classroom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/30/08/7c3008aa0b29a7d6c5149bf9da937f8a.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjUlY3ra46IJfvIPmpRcM5XmKQkiCJekSnA';" alt="Phase Diagrams Science Chemistry Chemistry Help Chemistry Classroom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phase Diagrams Science Chemistry Chemistry Help Chemistry Classroom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image3.slideserve.com/6530794/gibbs-phase-rule-n.jpg" data-lightbox="roadtrip" data-title="Ppt Gibbs Phase Rule Powerpoint Presentation Free Download Id 6530794">
+											<img class="card-img v-image ads-img " src="https://image3.slideserve.com/6530794/gibbs-phase-rule-n.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEShTDKF8b8bub0-vLW45tdY9as0M1ol1Ilw';" alt="Ppt Gibbs Phase Rule Powerpoint Presentation Free Download Id 6530794">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ppt Gibbs Phase Rule Powerpoint Presentation Free Download Id 6530794</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://images.slideplayer.com/38/10783072/slides/slide_2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEShTDKF8b8bub0-vLW45tdY9as0M1ol1Ilw';" alt="Ppt Gibbs Phase Rule Powerpoint Presentation Free Download Id 6530794">
+										<div class="card-body">
+						<h3 class="h5"><b>And brief discussion on the dependent and.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>State gibbs phase rule</strong>. 
+								
+																	Gibbss nephew Ralph Gibbs Van Name a professor of physical chemistry at Yale was unhappy with. 
+																	The phase rule is a general principle governing pVT systems in thermodynamic equilibrium whose states are completely described by the variables pressure p volume V and temperature TIf F is the number of degrees of freedom C is the number of components and P is the number of phases then It was derived by Josiah Willard Gibbs in his landmark paper titled On the Equilibrium. 
+																	In our example of the sodium and potassium salts in which there were C 4 components distributed through P 5 phases there is just one degree of freedom. 
+																	The Gibbs phase rule tells us that the intensive properties of a given phase may be uniquely identified by knowing D independent intensive variables where D is given by D c 2 c of components of phases. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	No more than one intensive state variable can be changed without changing the number of phases. 
+																	Once the point has been located all other thermodynamic properties can be read off. 
+																	It relates the number of intensive independent thermodynamic properties for each phase and the number of phases for a system. 
+																	On any such of diagram each point represents a state of the material. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The EoS parameters have been regressed on the literature data of molar volume isothermal compressibility thermal expansion and isobaric and isochoric heat capacity. 
+																	The phase rule assumes the system is at thermal and mechanical equilibrium. 
+																	Gibbs phase rule states that if the equilibrium in a heterogeneous system is not affected by gravity or by electrical and magnetic forces the number of degree of freedom is given by the equation FC-P2 where C is the number of chemical components P is the number of phases. 
+																	For a single phase the required point can fall anywhere on the region of the plane representing this phase. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	C constituents Example 1. 
+																	The phase rule mathematically can be expressed as F C - P 2Where F Degree of freed. 
+																	Thus two coordinates are needed to. 
+																	The Gibbs phase rule identifies the degree of freedom of a multiphase system that is in thermodynamic equilibrium. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 1876 Willard Gibbs stated a general principle called phase rule. 
+																	We now consider a system of more than one substance and more than one phase in an equilibrium state. 
+																	This is the Gibbs Phase Rule. 
+																	F c p 2 f Intensive Degrees of freedom variance Number of intensive variables that can be changed independently without disturbing the number of phases in equilibrium p number of phases gas homogeneous liquid phases homogeneous solid phases c components Minimum number of independent constituents Case I. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Gibbs Phase rule can be applied to a P-T thermodynamic diagrams for pure substances. 
+																	817 the Gibbs phase rule for a pure substance was written F 3 P. 
+																	Gibbs phase rule provides a relationship among the number of degree of freedom F of the system the number of phases P in the system and the number of chemical components C. 
+																	To the knowledge of the authors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Gibbs Phase rule is F P C 2. 
+																	The EoS has a validity range from 21 to 300 K and up to 5000 MPa. 
+																	Gibbs Phase Rule provides the theoretical foundation based in thermodynamics for characterizing the chemical state of a geologic system and predicting the equilibrium relations of the phases minerals melts liquids vapors present as a function of physical conditions such as pressure and temperature. 
+																	For a system that does not experience a chemical reaction the Gibbs phase rule reads as follows. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Gibbs free energy equation of state EoS for phase I of solid methane has been developed with an original functional form. 
+																	We suppose that the state of the system is a continuous function of its state functions. 
+																	Provided he equilibrium between any noof phases is not influence by gravitational force electrical force magnetic forces or by surface actions it is influenced only by temperature pressure concentration then the noof degrees of freedom F of the system is related to the noof components C of phases P the phase rule equation-. 
+																	The phase rule applies to equilibrium systems in which any component can move freely between any two phases in which that component is present. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Those minimum number of properties are obtained from Gibbs phase rule. 
+																	The artwork by Arthur Lidov also included Gibbss mathematical expression of the phase rule for heterogeneous mixtures as well as a radar screen an oscilloscope waveform Newtons apple and a small rendition of a three-dimensional phase diagram. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/_r4V7yP2e8A/hqdefault.jpg" data-lightbox="roadtrip" data-title="Gibbs Phase Rule Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/_r4V7yP2e8A/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHUVTUzfa2MIJzC7kFscQG0a3l0ARARiRyxg';" alt="Gibbs Phase Rule Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gibbs Phase Rule Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/phaserule-131118222343-phpapp01/95/phase-rule-5-638.jpg?cb=1384813629" data-lightbox="roadtrip" data-title="Phase Rule">
+											<img class="card-img v-image ads-img " src="https://image.slidesharecdn.com/phaserule-131118222343-phpapp01/95/phase-rule-5-638.jpg?cb=1384813629" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxfd3ce8oPQHZtvjMT38UpwfeBWTkC9OhyxA';" alt="Phase Rule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phase Rule</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/59hvxuhjJrY/maxresdefault.jpg" data-lightbox="roadtrip" data-title="State Gibbs Phase Rule And Explain The Terms Involved In It Phase Rule Physical Chemistry Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/59hvxuhjJrY/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGxZNnRCi4wvnVpWKnoOeoyPcOZhOM-DXnag';" alt="State Gibbs Phase Rule And Explain The Terms Involved In It Phase Rule Physical Chemistry Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Gibbs Phase Rule And Explain The Terms Involved In It Phase Rule Physical Chemistry Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://web.mit.edu/10.213/oldpages/f99/diagrams/phase/phasediag.gif" data-lightbox="roadtrip" data-title="Gibbs Phase Rule">
+											<img class="card-img v-image ads-img " src="http://web.mit.edu/10.213/oldpages/f99/diagrams/phase/phasediag.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCIE0QJd8gHy9TrI_mi-H1DbP2xHLatKnyNw';" alt="Gibbs Phase Rule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gibbs Phase Rule</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/_XYdPIqYXRU/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Phase Diagrams Gibbs Phase Rule W 5 Examples Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/_XYdPIqYXRU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSTqaHfqPyAvH2ypMBkgDm2rR196EVR960Q';" alt="Phase Diagrams Gibbs Phase Rule W 5 Examples Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phase Diagrams Gibbs Phase Rule W 5 Examples Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.tf.uni-kiel.de/matwis/amat/iss/kap_6/illustr/phase_rule_diagram.png" data-lightbox="roadtrip" data-title="Gibbs Phase Rule">
+											<img class="card-img v-image ads-img " src="https://www.tf.uni-kiel.de/matwis/amat/iss/kap_6/illustr/phase_rule_diagram.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0c5180HctF7QpVppulGNTjkg6_z2PYukXAg';" alt="Gibbs Phase Rule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gibbs Phase Rule</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.slideplayer.com/38/10783072/slides/slide_2.jpg" data-lightbox="roadtrip" data-title="Sub M S M Topic Gibbs Phase Rule Enroll No Guide By Pro A K Patel Ppt Download">
+											<img class="card-img v-image ads-img " src="https://images.slideplayer.com/38/10783072/slides/slide_2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrrqwV-_ncP8aLpaA6AZSHQhfhTEslm-M9lA';" alt="Sub M S M Topic Gibbs Phase Rule Enroll No Guide By Pro A K Patel Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sub M S M Topic Gibbs Phase Rule Enroll No Guide By Pro A K Patel Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/tep-phaserulephasediagram-150223094802-conversion-gate02/95/phase-rule-phase-diagram-5-638.jpg?cb=1424685048" data-lightbox="roadtrip" data-title="Phase Rule Phase Diagram">
+											<img class="card-img v-image ads-img " src="https://image.slidesharecdn.com/tep-phaserulephasediagram-150223094802-conversion-gate02/95/phase-rule-phase-diagram-5-638.jpg?cb=1424685048" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFS-HBsarCdvMp70FeDgqotj8jqpzrQAP42w';" alt="Phase Rule Phase Diagram">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phase Rule Phase Diagram</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.researchgate.net/profile/Syed_Ps2/publication/265602607/figure/fig2/AS:667861563494409@1536242013586/Water-System_Q320.jpg" data-lightbox="roadtrip" data-title="Pdf Phase Rule Chapter 6 Phase Rule">
+											<img class="card-img v-image ads-img " src="https://www.researchgate.net/profile/Syed_Ps2/publication/265602607/figure/fig2/AS:667861563494409@1536242013586/Water-System_Q320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnONrrNXVkijH4G9j0b0EPETCR-riYBPMIjg';" alt="Pdf Phase Rule Chapter 6 Phase Rule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf Phase Rule Chapter 6 Phase Rule</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.cheggcdn.com/study/995/9957efcb-089c-479b-9e69-836d746cb1e2/image" data-lightbox="roadtrip" data-title="Solved A Apply Gibbs Phase Rule To A Mixture Consisting Chegg Com">
+											<img class="card-img v-image ads-img " src="https://media.cheggcdn.com/study/995/9957efcb-089c-479b-9e69-836d746cb1e2/image" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ691q4gNefZUoVxIP9ioo16e2ijX_9YLbxkw';" alt="Solved A Apply Gibbs Phase Rule To A Mixture Consisting Chegg Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Solved A Apply Gibbs Phase Rule To A Mixture Consisting Chegg Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.britannica.com/s:500x350/65/63065-050-72A41AAC/States-matter.jpg" data-lightbox="roadtrip" data-title="Condensed Phase Rule Chemistry And Physics Britannica">
+											<img class="card-img v-image ads-img " src="https://cdn.britannica.com/s:500x350/65/63065-050-72A41AAC/States-matter.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZjAFFmAxXsLEsjhMGoHEBn4EQYmLjCNZdzA';" alt="Condensed Phase Rule Chemistry And Physics Britannica">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Condensed Phase Rule Chemistry And Physics Britannica</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ars.els-cdn.com/content/image/1-s2.0-B9780444522153000052-u05-1052-9780444522153.jpg" data-lightbox="roadtrip" data-title="Phase Rule An Overview Sciencedirect Topics">
+											<img class="card-img v-image ads-img " src="https://ars.els-cdn.com/content/image/1-s2.0-B9780444522153000052-u05-1052-9780444522153.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53rOD82LwrnAoJL8gxv-Zi2i_SgzT0ib0aQ';" alt="Phase Rule An Overview Sciencedirect Topics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phase Rule An Overview Sciencedirect Topics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/53/2014/08/19212109/20140811155434493809.png" data-lightbox="roadtrip" data-title="Phase Diagram For Water Chemistry For Non Majors">
+											<img class="card-img v-image ads-img " src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/53/2014/08/19212109/20140811155434493809.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ltY3CqEpVYbt87_1AuLKZYPNCPj9cPG9Hw';" alt="Phase Diagram For Water Chemistry For Non Majors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phase Diagram For Water Chemistry For Non Majors</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-for-surviving-spouse.html">Gi Bill For Surviving Spouse</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-stipend-for-dependents.html">Gi Bill Housing Stipend For Dependents</a></li>
+													<li class="list-group-item"><a href="/gi-bill-guard-reserve.html">Gi Bill Guard Reserve</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-for-online-classes.html">Gi Bill Housing Allowance For Online Classes</a></li>
+													<li class="list-group-item"><a href="/gi-bill-in-national-guard.html">Gi Bill In National Guard</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-taxable.html">Gi Bill Housing Allowance Taxable</a></li>
+													<li class="list-group-item"><a href="/gi-bill-hours-full-time.html">Gi Bill Hours Full Time</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-summer-classes.html">Gi Bill For Summer Classes</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-rates.html">Gi Bill Housing Rates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-spouse-national-guard.html">Gi Bill For Spouse National Guard</a></li>
+													<li class="list-group-item"><a href="/gi-bill-in-state-tuition.html">Gi Bill In State Tuition</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-zip-code.html">Gi Bill Housing Allowance Zip Code</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-veterans.html">Gi Bill For Veterans</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-allowance-delay.html">Gi Bill Housing Allowance Delay</a></li>
+													<li class="list-group-item"><a href="/gi-bill-in-1950s.html">Gi Bill In 1950s</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-benefits.html">Gi Bill Housing Benefits</a></li>
+													<li class="list-group-item"><a href="/gi-bill-info.html">Gi Bill Info</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-payment-dates-2019.html">Gi Bill Housing Payment Dates 2019</a></li>
+													<li class="list-group-item"><a href="/gi-bill-gpa-requirement-post-911.html">Gi Bill Gpa Requirement Post 911</a></li>
+													<li class="list-group-item"><a href="/gi-bill-housing-benefit-calculator.html">Gi Bill Housing Benefit Calculator</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

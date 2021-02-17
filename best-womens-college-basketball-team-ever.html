@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Best Womens College Basketball Team Ever - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Best Womens College Basketball Team Ever",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/5e/2d/19/5e2d19278fd1d7f274c6dead0d5cd3f6.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=best+womens+college+basketball+team+ever",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Best Womens College Basketball Team Ever</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The 50 Best Teams in College Basketball History 0 of 50 In college basketball as in other sports theres no single answer to the question of what marks a team as great. That said having lifted eight National Championships to date the womens field hockey team are almost as dominant as their lacrosse-playing counterparts and the University of Maryland remains one of only two colleges ever to win NCAA titles in both mens and womens basketball. The best college basketball team from every decade. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/womens-college-basketball-on-tv-now.html">womens college basketball on tv now</a>
+											<a class="badge badge-info" href="/womens-college-basketball-rpi-2018-19.html">womens college basketball rpi 2018 19</a>
+											<a class="badge badge-warning" href="/womens-college-basketball-national-rankings.html">womens college basketball national rankings</a>
+											<a class="badge badge-secondary" href="/womens-college-basketball-rankings-preseason.html">womens college basketball rankings preseason</a>
+											<a class="badge badge-secondary" href="/womens-college-basketball-maryland.html">womens college basketball maryland</a>
+											<a class="badge badge-warning" href="/womens-college-basketball-on-espn-today.html">womens college basketball on espn today</a>
+											<a class="badge badge-danger" href="/womens-college-basketball-playoffs-2020.html">womens college basketball playoffs 2020</a>
+											<a class="badge badge-secondary" href="/womens-college-basketball-recruiting.html">womens college basketball recruiting</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to pay a visit to the right site.  Our website gives you suggestions for seeing the highest quality video and picture content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to view.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/48/e9/8448e9dd80158684b3594fd56a0c8e90.jpg" data-lightbox="roadtrip" data-title="Official Women S Basketball Roster Uconnhuskies Com The Official Website Of The University Of Connecticut H Uconn Womens Basketball Womens Basketball Uconn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/48/e9/8448e9dd80158684b3594fd56a0c8e90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4dqdSLR17WPA0nRSV4S96WaaVBsQ2cDGSjg';" alt="Official Women S Basketball Roster Uconnhuskies Com The Official Website Of The University Of Connecticut H Uconn Womens Basketball Womens Basketball Uconn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Official Women S Basketball Roster Uconnhuskies Com The Official Website Of The University Of Connecticut H Uconn Womens Basketball Womens Basketball Uconn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/f4/68/40f468ecf1900abaa61443383b10dd08.jpg" data-lightbox="roadtrip" data-title="Hottest Women Basketball Players From The Wnba Elena Delle Donne Womens Basketball Basketball Players Basketball Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/f4/68/40f468ecf1900abaa61443383b10dd08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS95mhORQwFTi3du1Kyrh1yApBEX3PHn-zj1Q';" alt="Hottest Women Basketball Players From The Wnba Elena Delle Donne Womens Basketball Basketball Players Basketball Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hottest Women Basketball Players From The Wnba Elena Delle Donne Womens Basketball Basketball Players Basketball Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/4f/45/da4f45edd7e11c1e3ee2f3be6192da3d.jpg" data-lightbox="roadtrip" data-title="The Best High Schools Ever For Women S Basketball In 2020 Womens Basketball High School Fun Ncaa Champion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/4f/45/da4f45edd7e11c1e3ee2f3be6192da3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTChPTNbZvbLW_MKxbNECPTw-7I6VTdX5kg';" alt="The Best High Schools Ever For Women S Basketball In 2020 Womens Basketball High School Fun Ncaa Champion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best High Schools Ever For Women S Basketball In 2020 Womens Basketball High School Fun Ncaa Champion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/89/bd/d289bd2404f21d1ba488af005fd25d16.jpg" data-lightbox="roadtrip" data-title="Uconnhuskies Com Official Women S Basketball Roster University Of Connecticut Huskies Official Uconn Womens Basketball Uconn Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/89/bd/d289bd2404f21d1ba488af005fd25d16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwMHE3xqgf_0ZWka4QggtEHp9wQKWNJFR2cw';" alt="Uconnhuskies Com Official Women S Basketball Roster University Of Connecticut Huskies Official Uconn Womens Basketball Uconn Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconnhuskies Com Official Women S Basketball Roster University Of Connecticut Huskies Official Uconn Womens Basketball Uconn Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/9c/05/6b9c0586254c592a54a0d3b57ca68053.jpg" data-lightbox="roadtrip" data-title="The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads Way Basketball Workouts College Basketball Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/9c/05/6b9c0586254c592a54a0d3b57ca68053.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8W7ZnEy6HalCLh2l9HPT7UscTTlVfag2QOw';" alt="The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads Way Basketball Workouts College Basketball Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 25 Best Players In Women S College Basketball Sabrina Ionescu Leads Way Basketball Workouts College Basketball Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/9e/09/4a9e09304f978607c37af27eedb4ae9e.jpg" data-lightbox="roadtrip" data-title="Uconn Women Start Tournament Play Saturday Womens Basketball Uconn Womens Basketball Uconn Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/9e/09/4a9e09304f978607c37af27eedb4ae9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2WOx8yuFjLqLWU7Sogf8eUcSZxn3nvWCmcg';" alt="Uconn Women Start Tournament Play Saturday Womens Basketball Uconn Womens Basketball Uconn Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uconn Women Start Tournament Play Saturday Womens Basketball Uconn Womens Basketball Uconn Basketball</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/28/65/aa/2865aaa61a01304a8e721df1a2744dbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2WOx8yuFjLqLWU7Sogf8eUcSZxn3nvWCmcg';" alt="Uconn Women Start Tournament Play Saturday Womens Basketball Uconn Womens Basketball Uconn Basketball">
+										<div class="card-body">
+						<h3 class="h5"><b>Yo-Yo averaged 136 points and 79 rebounds per night during her 11 seasons which saw her make the All-Star Team eight times.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Best womens college basketball team ever</strong>. 
+								
+																	Additionally the team sits third among the best womens college basketball teams in wins with over 1100 total victories and a 769 winning percentage. 
+																	More womens basketball history. 
+																	Louisiana State University and AM. 
+																	One of the greatest guards in college basketball and WNBA history Azzi owns the highest career three-point percentage 558 29 of 52 over 10 games in the tournaments history during her run. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This year marks the 80th anniversary of the first NCAA tournament and is the final season in the. 
+																	Wiggins who spent eight years in the WNBA and won the 2011 title with the Minnesota Lynx was one of the greatest and most. 
+																	The Torreys would also have one of the best backcourts in history. 
+																	Added to which the College Park-based school has some top-class amenities where its athletes can display. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Here are all 76 coaches who join her with more. 
+																	Larry Johnson Greg Anthony and Stacey Augmon were all NBA Lottery picks in 1991 for a team that averaged 977 points. 
+																	Final Four picks player of the year predictions Ranking the top 25 players in womens college basketball How a single-site womens NCAA tournament would impact. 
+																	VanDerveer has had 10 seasons of at least 31 wins in the past 15 years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yahoo Sports illustration 2016 Connecticut vs. 
+																	Colleen Maloney saves the game with a 3. 
+																	Quentin Harriger and Brandon Smith with the call in this shortened video of Fishers comeback over Hartwick College. 
+																	For her remarkable rookie season in 1999 where she averaged a double double of 188 points and 113 rebounds Griffith was named league MVP. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The winningest teams in Division I history. 
+																	This May Be The Best UConn Team Ever And yet theres evidence the rest of womens college basketball keeps narrowing the gap. 
+																	The 11 undefeated womens college basketball teams ranked Theyve made it this far without a loss but which teams stand out above the rest. 
+																	However it wasn. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tweet this Share this. 
+																	Filed under March Madness. 
+																	Best Teams Ever bracket. 
+																	That team actually faced off with Bradley for both championships in the span of a week winning each. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens college basketball edition championship round. 
+																	Louisiana Tech won the first-ever NCAA title in womens college basketball in 1982 and another in 1988 appeared in the finals six times and reached the Final Four 10 times. 
+																	A first-ballot Womens Basketball Hall of Famer Yolanda Griffith was as gifted a center as the league has ever had. 
+																	Only one team ever managed to win both titles in one season and that was the 1950 CCNY Beavers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Womens college basketball edition Round 1 Yahoo Sports illustration Welcome to the Best Team Ever bracket series where the greatest of all time have their most dominant. 
+																	North Carolina Tar Heels 1981-82 In 2018 its not hard to see why a college basketball program coached by Dean Smith and featuring James Worthy Sam Perkins and a freshman Michael Jordan as its leading scorers would have a lot of success. 
+																	Check out our picks for the top 10 NCAA basketball teams to ever hit the court. 
+																	This still might be the greatest college basketball team of all time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After UConn became the fourth team to hoist a perfect season 39-0 in 2002 thoughts began to circulate if the Lady Huskies were the best team in womens college basketball history. 
+																	By Natalie Weiner Dec 18 2019 154pm EST. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/96/ef/1896ef54874b27cefe47500a0559ad72.jpg" data-lightbox="roadtrip" data-title="Diana Taurasi Usa Basketball Gold Medalist 2012 London One Of The Purest Women Players To Ever P Uconn Womens Basketball Team Usa Basketball Sports Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/96/ef/1896ef54874b27cefe47500a0559ad72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDgq4HpnX6b4krCSAhHjJly7kzKWeUrnlfug';" alt="Diana Taurasi Usa Basketball Gold Medalist 2012 London One Of The Purest Women Players To Ever P Uconn Womens Basketball Team Usa Basketball Sports Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diana Taurasi Usa Basketball Gold Medalist 2012 London One Of The Purest Women Players To Ever P Uconn Womens Basketball Team Usa Basketball Sports Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/18/bb/c7/18bbc7d1b13a320d1552ec70f1dc7f30.jpg" data-lightbox="roadtrip" data-title="Pat Summitt The Best Women S College Basketball Coach Ever Alzheimer S Disease Pat Summitt Basketball History Tennessee Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/18/bb/c7/18bbc7d1b13a320d1552ec70f1dc7f30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR4c-hy3_J0pm1xOtty5b4axRqYdPCnRs5jA';" alt="Pat Summitt The Best Women S College Basketball Coach Ever Alzheimer S Disease Pat Summitt Basketball History Tennessee Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pat Summitt The Best Women S College Basketball Coach Ever Alzheimer S Disease Pat Summitt Basketball History Tennessee Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/17/0a/05170a212d432e503cdaf1429d4cf6e7.jpg" data-lightbox="roadtrip" data-title="Pin On Ball Is Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/17/0a/05170a212d432e503cdaf1429d4cf6e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa4dwIjMEP0SODO_QTK4CGJxs28h63eHRqAg';" alt="Pin On Ball Is Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ball Is Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/00/28/7000280f8143f46ccea8ebaa637325ce.jpg" data-lightbox="roadtrip" data-title="Maya Moore One Of The Best Pure Shooters Basketball Womens Basketball Uconn Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/00/28/7000280f8143f46ccea8ebaa637325ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1KO6AoWQvr4CaHaXVIqKY-QWN3YA-h4-Rg';" alt="Maya Moore One Of The Best Pure Shooters Basketball Womens Basketball Uconn Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maya Moore One Of The Best Pure Shooters Basketball Womens Basketball Uconn Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/19/f6/c019f6a8e302838b9498948a12cde8ab.jpg" data-lightbox="roadtrip" data-title="Ranking The Top 25 Players In Women S College Basketball In 2020 College Basketball Basketball Basketball Players">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/19/f6/c019f6a8e302838b9498948a12cde8ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKUSOXhSWPXBAoldMgmlB1RHAlYTg1mjuRsA';" alt="Ranking The Top 25 Players In Women S College Basketball In 2020 College Basketball Basketball Basketball Players">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ranking The Top 25 Players In Women S College Basketball In 2020 College Basketball Basketball Basketball Players</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/12/4c/06124c57e2194ff8caec5657d82898d3.jpg" data-lightbox="roadtrip" data-title="Counting Down The Top 25 Women S College Basketball Players For 2015 16 College Basketball Players Basketball Players Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/12/4c/06124c57e2194ff8caec5657d82898d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8xoLBWx09Ogu0ySB_BrHukfvgOgW6u-0vlw';" alt="Counting Down The Top 25 Women S College Basketball Players For 2015 16 College Basketball Players Basketball Players Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Counting Down The Top 25 Women S College Basketball Players For 2015 16 College Basketball Players Basketball Players Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cb/6c/d7/cb6cd7caf03d8479ff4aeb200b979fc8.jpg" data-lightbox="roadtrip" data-title="College Basketball Girls Basketball Game Outfit Women College Basketball Players Basketball Game Outfit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cb/6c/d7/cb6cd7caf03d8479ff4aeb200b979fc8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl6FBmnkdeR_PLjqKocHkirG3W3a5MHvnWSA';" alt="College Basketball Girls Basketball Game Outfit Women College Basketball Players Basketball Game Outfit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Basketball Girls Basketball Game Outfit Women College Basketball Players Basketball Game Outfit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/99/17/2699172c74685dc728b1503f8fdefeb4.jpg" data-lightbox="roadtrip" data-title="Breanna Stewart Uconn Womens Basketball Uconn Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/99/17/2699172c74685dc728b1503f8fdefeb4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt7lb2Dpxhc1L77QxksL3Fbuave4RdTckJ1Q';" alt="Breanna Stewart Uconn Womens Basketball Uconn Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Breanna Stewart Uconn Womens Basketball Uconn Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/8d/7d/878d7dc95da53eaa494212c9b5051eb0.jpg" data-lightbox="roadtrip" data-title="Pin By Scott Holstad On Sports Candace Parker Lady Vols Basketball Womens Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/8d/7d/878d7dc95da53eaa494212c9b5051eb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kyc9iaCKZuokGLmoYs0ZCtooYJJAJhGAfg';" alt="Pin By Scott Holstad On Sports Candace Parker Lady Vols Basketball Womens Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Scott Holstad On Sports Candace Parker Lady Vols Basketball Womens Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/88/2e/72882e997be96a5566df89a40edcd1ec.png" data-lightbox="roadtrip" data-title="Union Women S Basketball Climbs In Latest National Polls Earns Program S First Ncaa No 1 Ranking Womens Basketball Basketball Teams Union University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/88/2e/72882e997be96a5566df89a40edcd1ec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToA1KRsdNSyjtV66YFYYfkNE71erxK4f5kyQ';" alt="Union Women S Basketball Climbs In Latest National Polls Earns Program S First Ncaa No 1 Ranking Womens Basketball Basketball Teams Union University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Union Women S Basketball Climbs In Latest National Polls Earns Program S First Ncaa No 1 Ranking Womens Basketball Basketball Teams Union University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/2d/19/5e2d19278fd1d7f274c6dead0d5cd3f6.jpg" data-lightbox="roadtrip" data-title="Pin On Women S College Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/2d/19/5e2d19278fd1d7f274c6dead0d5cd3f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjy_mButU6HbIiGEXHkaTrP2sCpqI8wVsLg';" alt="Pin On Women S College Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Women S College Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/65/aa/2865aaa61a01304a8e721df1a2744dbf.jpg" data-lightbox="roadtrip" data-title="Legendary Women S Basketball Player Sheryl Swoopes Who Is Regarded As One Of The Greatest Female Athletes Basketball Players Womens Basketball Female Athletes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/65/aa/2865aaa61a01304a8e721df1a2744dbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa_9d1mbZCNF_MPW6VbXPg7_kOqGy8j7o6Rg';" alt="Legendary Women S Basketball Player Sheryl Swoopes Who Is Regarded As One Of The Greatest Female Athletes Basketball Players Womens Basketball Female Athletes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Legendary Women S Basketball Player Sheryl Swoopes Who Is Regarded As One Of The Greatest Female Athletes Basketball Players Womens Basketball Female Athletes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/cc/58/efcc5884b3aa0ffc2233b48e5f3557b8.jpg" data-lightbox="roadtrip" data-title="Saniya Chong And Breanna Stewart Of The Connecticut Huskies Celebrate Uconn Womens Basketball College Basketball Teams Connecticut Huskies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/cc/58/efcc5884b3aa0ffc2233b48e5f3557b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxv6C9IqfcCacRWEWuCGct9wB3srYxOLjtnA';" alt="Saniya Chong And Breanna Stewart Of The Connecticut Huskies Celebrate Uconn Womens Basketball College Basketball Teams Connecticut Huskies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Saniya Chong And Breanna Stewart Of The Connecticut Huskies Celebrate Uconn Womens Basketball College Basketball Teams Connecticut Huskies</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/lafayette-college-womens-basketball-roster.html">Lafayette College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/luther-college-womens-basketball-stats.html">Luther College Womens Basketball Stats</a></li>
+													<li class="list-group-item"><a href="/lam-gi-tuoi-35.html">Lam Gi Tuoi 35</a></li>
+													<li class="list-group-item"><a href="/kings-college-womens-basketball-schedule.html">Kings College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/meaningful-college-graduation-gifts-for-her.html">Meaningful College Graduation Gifts For Her</a></li>
+													<li class="list-group-item"><a href="/law-schools-that-accept-the-gi-bill.html">Law Schools That Accept The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/lake-michigan-college-womens-basketball-schedule.html">Lake Michigan College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/list-of-schools-gi-bill-covers.html">List Of Schools Gi Bill Covers</a></li>
+													<li class="list-group-item"><a href="/lycoming-college-womens-basketball-team.html">Lycoming College Womens Basketball Team</a></li>
+													<li class="list-group-item"><a href="/longest-winning-streak-womens-college-basketball-history.html">Longest Winning Streak Womens College Basketball History</a></li>
+													<li class="list-group-item"><a href="/marist-college-womens-basketball-schedule.html">Marist College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/lebanon-valley-college-womens-basketball-roster.html">Lebanon Valley College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/kings-college-wimbledon-gymnastics.html">Kings College Wimbledon Gymnastics</a></li>
+													<li class="list-group-item"><a href="/male-college-graduate-gift-ideas.html">Male College Graduate Gift Ideas</a></li>
+													<li class="list-group-item"><a href="/main-reasons-to-go-to-college.html">Main Reasons To Go To College</a></li>
+													<li class="list-group-item"><a href="/lambton-college-womens-basketball-schedule.html">Lambton College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/look-up-my-gi-bill-benefits.html">Look Up My Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/medical-discharge-and-gi-bill.html">Medical Discharge And Gi Bill</a></li>
+													<li class="list-group-item"><a href="/memorial-university-womens-basketball-all-time-scoring-list.html">Memorial University Womens Basketball All Time Scoring List</a></li>
+													<li class="list-group-item"><a href="/lincoln-college-womens-basketball-coach.html">Lincoln College Womens Basketball Coach</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

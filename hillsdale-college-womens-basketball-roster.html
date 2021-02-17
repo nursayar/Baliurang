@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Hillsdale College Womens Basketball Roster - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Hillsdale College Womens Basketball Roster",
+  "datePublished": "2021-02-17",
+  "image": "https://montclairathletics.com/images/2018/11/9/WBBTeam1819_71.jpg?width=1600",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=hillsdale+college+womens+basketball+roster",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Hillsdale College Womens Basketball Roster</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Hillsdale Womens Basketball Camps are held on the Hillsdale College campus in Hillsdale Michigan. News Archives Regional Rankings Womens Basketball Golf Outing Camps Recruit Questionnaire Alumni Registration Twitter Instagram. 2020 Hillsdale College 33 E College. <br>				
+			</p>
+										<a class="badge badge-info" href="/billdip-ao3.html">billdip ao3</a>
+											<a class="badge badge-dark" href="/billi-ki-awaaz.html">billi ki awaaz</a>
+											<a class="badge badge-light" href="/billing-meaning.html">billing meaning</a>
+											<a class="badge badge-primary" href="/bill-montgomery-football.html">bill montgomery football</a>
+											<a class="badge badge-secondary" href="/bill-gunn.html">bill gunn</a>
+											<a class="badge badge-primary" href="/bill-montgomery-dallas-texas.html">bill montgomery dallas texas</a>
+											<a class="badge badge-success" href="/bill-montgomery-lemont-il.html">bill montgomery lemont il</a>
+											<a class="badge badge-primary" href="/bill-montgomery-real-estate.html">bill montgomery real estate</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the ideal site.  Our site provides you with suggestions for viewing the highest quality video and picture content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this video for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fightingscots.ovu.edu/images/2019/11/27/TEAM.JPG?width=1600" data-lightbox="roadtrip" data-title="2019 20 Women S Basketball Roster Ohio Valley University">
+											<img class="card-img v-image ads-img " src="https://fightingscots.ovu.edu/images/2019/11/27/TEAM.JPG?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuNR57EAbNxaVxf5Famd2EpPwIlzPKnlkky1sVFusHPNoCOjDZHBCvDzdYxlodZYJQXQidCA&amp;ec=45771803';" alt="2019 20 Women S Basketball Roster Ohio Valley University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 20 Women S Basketball Roster Ohio Valley University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://goholycross.com/images/2019/11/6/WBB_Team_HHN_0167.jpg?width=1600" data-lightbox="roadtrip" data-title="2019 20 Women S Basketball Roster Holy Cross Athletics">
+											<img class="card-img v-image ads-img " src="https://goholycross.com/images/2019/11/6/WBB_Team_HHN_0167.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4uq3SopA_wi4sf5yyTvKTmHRvjUg6t5Ku3CVFf3BdqCkeWPGZwVOSonqbJET6gfLSg2Q-4g&amp;ec=45771803';" alt="2019 20 Women S Basketball Roster Holy Cross Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 20 Women S Basketball Roster Holy Cross Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://msmcknights.com/images/2018/11/7/1819_WBB_Team_Pic.JPG?width=1600" data-lightbox="roadtrip" data-title="2018 19 Women S Basketball Roster Mount Saint Mary College Athletics">
+											<img class="card-img v-image ads-img " src="https://msmcknights.com/images/2018/11/7/1819_WBB_Team_Pic.JPG?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp3zWCMEIR_fQoMfH3RSFqFrAn_OXzG6VgdG1i8_btJpTrnewiuEQVWqJ2eCaiR7-U8Xrb8w&amp;ec=45771803';" alt="2018 19 Women S Basketball Roster Mount Saint Mary College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2018 19 Women S Basketball Roster Mount Saint Mary College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.eurobasket.com/TeamPhoto/2019-2020hills.jpg" data-lightbox="roadtrip" data-title="Hillsdale College Basketball News Roster Rumors Stats Awards Transactions Details Usbasket">
+											<img class="card-img v-image ads-img " src="https://www.eurobasket.com/TeamPhoto/2019-2020hills.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTappAryLmTen7w8wV5h3SGmYe_iSYnS0y-AV8VS4KedmH3uJE4Q_wLdyWeWNbZxQdOajJeoQ&amp;ec=45771803';" alt="Hillsdale College Basketball News Roster Rumors Stats Awards Transactions Details Usbasket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hillsdale College Basketball News Roster Rumors Stats Awards Transactions Details Usbasket</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://msmcknights.com/images/2020/1/21/2019_20_MSMC_WBB_71.JPG?width=1600" data-lightbox="roadtrip" data-title="2019 20 Women S Basketball Roster Mount Saint Mary College Athletics">
+											<img class="card-img v-image ads-img " src="https://msmcknights.com/images/2020/1/21/2019_20_MSMC_WBB_71.JPG?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-AJwcSG0CSLUWPv1mAgg_ucTbCesWGUQx1EomUvSGiNlrHWT_8zzq5SKW_lnAWGhu1Xt4w&amp;ec=45771803';" alt="2019 20 Women S Basketball Roster Mount Saint Mary College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 20 Women S Basketball Roster Mount Saint Mary College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://yellowjackets.cedarville.edu/images/2018/10/30/wbk_team.jpg?width=1600" data-lightbox="roadtrip" data-title="2018 19 Women S Basketball Roster Cedarville University Athletics">
+											<img class="card-img v-image ads-img " src="https://yellowjackets.cedarville.edu/images/2018/10/30/wbk_team.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTie1d8n59ffU5yiwqTYK9KfRv64UQEDz8kLV5mpvb7dSV2BF85WzhOXCp6uIJMP4I2OWPhFA&amp;ec=45771803';" alt="2018 19 Women S Basketball Roster Cedarville University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2018 19 Women S Basketball Roster Cedarville University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://fightingscots.ovu.edu/images/2019/11/27/TEAM.JPG?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTie1d8n59ffU5yiwqTYK9KfRv64UQEDz8kLV5mpvb7dSV2BF85WzhOXCp6uIJMP4I2OWPhFA&amp;ec=45771803';" alt="2018 19 Women S Basketball Roster Cedarville University Athletics">
+										<div class="card-body">
+						<h3 class="h5"><b>Basketball Schedule Roster News.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Hillsdale college womens basketball roster</strong>. 
+								
+																	Hillsdale Free Will Baptist Saints Schedule 2020-21 2020-21 2019-20 2018-19 2017-18 2016-17 2015-16 2014-15 2013-14 2012-13 2011-12 2010-11 2009-10 2008-09 2007-08 2006-07 2005-06 2004-05 2003-04. 
+																	Founded in 1844 by abolitionists known as Free Will Baptists it has a liberal arts curriculum that is based on the Western heritage as a product of both the Greco-Roman culture and the Judeo-Christian tradition. 
+																	Final 1 2 T. 
+																	Malone 0-40-3 G-MAC 70. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3 against the University of Findlay. 
+																	Charles Prep 2 Kyle Goessler F Fr 6-2 165 Brunswick OH Brunswick 3 Jack Gohlke G RFr 6-3 195 Pewaukee WI Pewaukee 5 Cole Nau G Fr 6-2 170. 
+																	HometownHigh School 1 Tavon Brown F Fr 6-8 200 Columbus OH St. 
+																	Ohio State Buckeyes vs Michigan Wolverines January 21 Preview Game Time Matchup Statistics Vanderbilt Commodores womens basketball ending season early. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	List View Headshot View. 
+																	Hillsdale Womens Basketball Camps are led by the Hillsdale College Chargers coaching staff. 
+																	The mens and womens basketball. 
+																	Hillsdale College sports news and features including conference nickname location and official social media handles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Video Live stats Box Score. 
+																	Backed by Battery Ventures PrestoSports delivers solutions for building athletic brands igniting fans and funding sports programs. 
+																	Hillsdale requires every student regardless of concentration of studies to complete a core curriculum that includes. 
+																	The Hillsdale College womens basketball team expected to kick off its season with two home games against Kentucky Wesleyan University and Trevecca Nazarene University this week. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since then the Chargers have accrued a 1 6 record with a 10-point victory over Lake Erie College on Jan. 
+																	Basketball Schedule Roster News Cross Country Schedule Roster News Softball. 
+																	Pittsford 4 Dacey Nelson G Fr 5-8 Oakland NE Oakland Craig 5 Sydney Mills. 
+																	2020-21 Hillsdale College Womens Basketball Roster. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coppin State Lady Eagles vs Morgan State Lady Bears January 31 Preview Game Time Matchup Statistics Rhode Island Rams vs Saint Josephs PA Hawks January 31 Preview Game Time Matchup. 
+																	2019-20 Hillsdale College Mens Basketball Roster. 
+																	Hillsdale College Mens Basketball Camps are led by the Hillsdale College Chargers Coaching staff. 
+																	News Tip Off Dinner and Reverse Raffle Regional Rankings Archives Camps Recruit Questionnaire Alumni Registration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2020-21 Hillsdale College Womens Basketball Schedule. 
+																	2020-21 Hillsdale College Mens Basketball Schedule. 
+																	The Hillsdale College womens basketball team began its conference-only season on Dec. 
+																	Hillsdale 6-16-1 G-MAC 80. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	5-9 Adrian MI Lenawee Christian 3 Jaycie Burger G Sr 5-8 Pittsford Mich. 
+																	List View Headshot View. 
+																	News Archives Regional Rankings Womens Basketball Golf Outing Camps Recruit Questionnaire Alumni Registration Twitter Instagram. 
+																	HometownHigh School 2 Dani Salenbien G Fr. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hillsdale College is a private college in Hillsdale Michigan. 
+																	Now instead the Chargers will travel to the University of Findlay in Findlay Ohio tonight at 530 pm. 
+																	Schedule Roster News Basketball Schedule Roster. 
+																	Charger women travel to G-MAC leader Cedarville to open two-game week. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	January 10 2021 Mens Basketball 25 Hillsdale stages epic comeback to top Malone 80-70. 
+																	News Archives Regional Rankings Womens Basketball Golf Outing Camps Recruit Questionnaire Alumni Registration Twitter Instagram. 
+																	Both of those games were canceled however due to positive cases COVID-19 on the opposing teams. 
+																	2019-20 Hillsdale College Womens Basketball Roster. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Backed by Battery Ventures PrestoSports delivers solutions for building athletic brands igniting fans and funding sports programs. 
+																	Join the Assist Club. 
+																	2020-21 Hillsdale College Womens Basketball Schedule. 
+																	Pittsford 4 Dacey Nelson G rFr 5-8. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2020-21 Hillsdale College Womens Basketball Schedule. 
+																	HometownHigh School 3 Jaycie Burger G Jr 5-8 Pittsford Mich. 
+																	PrestoSports is a software-as-a-service company providing technology to colleges and conference offices. 
+																	PrestoSports is a software-as-a-service company providing technology to colleges and conference offices. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	News Archives Regional Rankings Womens Basketball Golf Outing Camps Recruit Questionnaire Twitter Instagram. 
+																	Basketball Schedule Roster News. 
+																	Malone 0-40-3 G-MAC 38. 
+																	List View Headshot View. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The womens basketball team practices and prepares for its upcoming season. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fightingscots.ovu.edu/images/2017/12/4/DSC_508490.JPG?width=1600" data-lightbox="roadtrip" data-title="2017 18 Women S Basketball Roster Ohio Valley University">
+											<img class="card-img v-image ads-img " src="https://fightingscots.ovu.edu/images/2017/12/4/DSC_508490.JPG?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAd2IcI1azGwCuUe3odu1_3kYNHPy9H3-pY5eWfoMn0WtPHVOhe4OuNs4XuVtebupgR5lUOg&amp;ec=45771803';" alt="2017 18 Women S Basketball Roster Ohio Valley University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2017 18 Women S Basketball Roster Ohio Valley University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.kellogg.edu/wp-content/uploads/2019/10/2019-20-KCC-Womens-Basketball-Team-slide.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Kellogg Community College">
+											<img class="card-img v-image ads-img " src="https://www.kellogg.edu/wp-content/uploads/2019/10/2019-20-KCC-Womens-Basketball-Team-slide.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE87JoQQvwV5hBy9pL6DuevNxXL532r3WYK0NSAFEvAXKqFFhaxTP37eouyjPb6wFLIwDvug&amp;ec=45771803';" alt="Women S Basketball Kellogg Community College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Kellogg Community College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gonyuathletics.com/images/2011/5/27/2010-11_Women_s_Basketball_Team_Photo.JPG?width=1600" data-lightbox="roadtrip" data-title="2010 11 Women S Basketball Roster Nyu Athletics">
+											<img class="card-img v-image ads-img " src="https://gonyuathletics.com/images/2011/5/27/2010-11_Women_s_Basketball_Team_Photo.JPG?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDnsnArWvb1DxoSAceUaIL5U0h5IUmDd9Q5iu2sNsSScaHmznYGTJxKJkmcIoZvzIN3G84yQ&amp;ec=45771803';" alt="2010 11 Women S Basketball Roster Nyu Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2010 11 Women S Basketball Roster Nyu Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://montclairathletics.com/images/2018/11/9/WBBTeam1819_71.jpg?width=1600" data-lightbox="roadtrip" data-title="2018 2019 Women S Basketball Roster Montclair State University Athletics">
+											<img class="card-img v-image ads-img " src="https://montclairathletics.com/images/2018/11/9/WBBTeam1819_71.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsfx9JX4Gyk2mCZ9GcZd1MPySQAdX1ndUa7qn-r_mEpxcoaT_tDlnwVixF5wnqe_ac9gD7PQ&amp;ec=45771803';" alt="2018 2019 Women S Basketball Roster Montclair State University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2018 2019 Women S Basketball Roster Montclair State University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/indstate.sidearmsports.com/images/2017/2/25/Rhagen_Smith_ksdckdsmkcmscm.jpg" data-lightbox="roadtrip" data-title="Rhagen Smith Women S Basketball Indiana State University Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/indstate.sidearmsports.com/images/2017/2/25/Rhagen_Smith_ksdckdsmkcmscm.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFC6RpgKkuOFACoKqzdhgdHdIHw10eiMm4dvJ8pkhWAdce-4g6LUC8nnLIUCoQ3UGUim7BKQ&amp;ec=45771803';" alt="Rhagen Smith Women S Basketball Indiana State University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rhagen Smith Women S Basketball Indiana State University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://yellowjackets.cedarville.edu/images/2016/10/21/wbk_team_980x450.jpg?width=1600" data-lightbox="roadtrip" data-title="2016 17 Women S Basketball Roster Cedarville University Athletics">
+											<img class="card-img v-image ads-img " src="https://yellowjackets.cedarville.edu/images/2016/10/21/wbk_team_980x450.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzAgUgTFL8r8nO1roJ8rRSuldpTJlBo1xhFq5lWiIb3clY_ZHyxBhKaUzyP91JBkAu1Z7VYA&amp;ec=45771803';" alt="2016 17 Women S Basketball Roster Cedarville University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2016 17 Women S Basketball Roster Cedarville University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://yellowjackets.cedarville.edu/images/2008/11/9/wbk_2008%20Team.jpg?width=1600" data-lightbox="roadtrip" data-title="2008 09 Women S Basketball Roster Cedarville University Athletics">
+											<img class="card-img v-image ads-img " src="https://yellowjackets.cedarville.edu/images/2008/11/9/wbk_2008%20Team.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoNx_gqSupyd66gCz5OxreybX7WrOMzwIT0SeFAr0krVUvLMGmU1gYkwsbv5EZRJSZF0ZKGg&amp;ec=45771803';" alt="2008 09 Women S Basketball Roster Cedarville University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2008 09 Women S Basketball Roster Cedarville University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bjubruins.com/images/2019/10/31/WBB_2019_20.jpg?width=1600" data-lightbox="roadtrip" data-title="2019 20 Women S Basketball Roster Bob Jones University Athletics">
+											<img class="card-img v-image ads-img " src="https://www.bjubruins.com/images/2019/10/31/WBB_2019_20.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1raxcTMavwtzEG4ggkT8fBCgkZH4AsKY0Bf5eCJNojBBz7IH6d5uWBhSxqB2ajZndRfRnBA&amp;ec=45771803';" alt="2019 20 Women S Basketball Roster Bob Jones University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 20 Women S Basketball Roster Bob Jones University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kwcpanthers.com/images/2017/12/14/WBBTeam201718.jpg?width=1600" data-lightbox="roadtrip" data-title="2017 18 Women S Basketball Roster Kentucky Wesleyan College Athletics">
+											<img class="card-img v-image ads-img " src="https://kwcpanthers.com/images/2017/12/14/WBBTeam201718.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvqDMy5Bpe77HLVZiS1cPiHSi-fsJ3uk4Pt4BJyZQT_L5djyIl5BgRr9E8YxmYypWm8JgmhQ&amp;ec=45771803';" alt="2017 18 Women S Basketball Roster Kentucky Wesleyan College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2017 18 Women S Basketball Roster Kentucky Wesleyan College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/angelosports.com/images/2014/2/6/DM8_1725.jpg" data-lightbox="roadtrip" data-title="Hillari Adam Women S Basketball Angelo State University Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/angelosports.com/images/2014/2/6/DM8_1725.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO77tEKoX0BEa-SeYZNmmhHuEHb0bxGKca-9MMvg9dTnQsY-w5tKK-PDODBdpRC0JXo1C7EA&amp;ec=45771803';" alt="Hillari Adam Women S Basketball Angelo State University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hillari Adam Women S Basketball Angelo State University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://yellowjackets.cedarville.edu/images/2018/5/7/wbk_team.jpg?width=1600" data-lightbox="roadtrip" data-title="2017 18 Women S Basketball Roster Cedarville University Athletics">
+											<img class="card-img v-image ads-img " src="https://yellowjackets.cedarville.edu/images/2018/5/7/wbk_team.jpg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgcZQNQ0rxfr6Cx7GwyP1in8zcr7rAJXPsR_6o067h4FcPRVKFbDJWD0DgaPQZxV9hCNLAmw&amp;ec=45771803';" alt="2017 18 Women S Basketball Roster Cedarville University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2017 18 Women S Basketball Roster Cedarville University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/yellowjackets.cedarville.edu/images/2021/1/21/wbb_moore_01.jpg" data-lightbox="roadtrip" data-title="Lexi Moore Women S Basketball Cedarville University Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/yellowjackets.cedarville.edu/images/2021/1/21/wbb_moore_01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlrWl37b_3lO_zQ0R_leK39iZSdcd-f0v_u0JWK9D5AMla7-TloMo5o6C4VTmIKKS85Jvqw&amp;ec=45771803';" alt="Lexi Moore Women S Basketball Cedarville University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lexi Moore Women S Basketball Cedarville University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/dewv.sidearmsports.com/images/2020/2/20/Kilpatrick_1920x1080_022020.jpg" data-lightbox="roadtrip" data-title="Jay Kilpatrick Women S Basketball Davis And Elkins College Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/dewv.sidearmsports.com/images/2020/2/20/Kilpatrick_1920x1080_022020.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8tC2wMRSGQqp2A790OfvYRrC3UE2YUDljs5gIo9qIhLPrdOLeFn2qOsWuAeOZcRWhVl41Qw&amp;ec=45771803';" alt="Jay Kilpatrick Women S Basketball Davis And Elkins College Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jay Kilpatrick Women S Basketball Davis And Elkins College Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gi-bill-for-other-than-honorable-discharge.html">Gi Bill For Other Than Honorable Discharge</a></li>
+													<li class="list-group-item"><a href="/gi-bill-extension-stem.html">Gi Bill Extension Stem</a></li>
+													<li class="list-group-item"><a href="/gi-bill-eligibility-reserve.html">Gi Bill Eligibility Reserve</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-personal-training-certification.html">Gi Bill For Personal Training Certification</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-buying-a-home.html">Gi Bill For Buying A Home</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-home-purchase.html">Gi Bill For Home Purchase</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-a-house.html">Gi Bill For A House</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-harvard.html">Gi Bill For Harvard</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-reserves.html">Gi Bill For Reserves</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-housing.html">Gi Bill For Housing</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-naval-academy-graduates.html">Gi Bill For Naval Academy Graduates</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-apprenticeship.html">Gi Bill For Apprenticeship</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-house-payment.html">Gi Bill For House Payment</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-officers.html">Gi Bill For Officers</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-air-force-reserves.html">Gi Bill For Air Force Reserves</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-nyu.html">Gi Bill For Nyu</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-reserve-marines.html">Gi Bill For Reserve Marines</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-active-duty-army.html">Gi Bill For Active Duty Army</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-national-guard-officers.html">Gi Bill For National Guard Officers</a></li>
+													<li class="list-group-item"><a href="/gi-bill-for-life-act-2017.html">Gi Bill For Life Act 2017</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

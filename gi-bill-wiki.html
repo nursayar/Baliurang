@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Gi Bill Wiki - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Gi Bill Wiki",
+  "datePublished": "2021-02-17",
+  "image": "https://i.pinimg.com/originals/c5/24/df/c524df406fef038029ed724a9b071c74.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gi+bill+wiki",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Gi Bill Wiki</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Some could not access benefits because they had not been given an honorable. GI Bill benefits help you pay for college graduate school and training programs. The GI Bill is born. <br>				
+			</p>
+										<a class="badge badge-info" href="/college-students-going-vegan.html">college students going vegan</a>
+											<a class="badge badge-info" href="/college-womens-basketball-coaches-salaries.html">college womens basketball coaches salaries</a>
+											<a class="badge badge-light" href="/college-to-go-to-quiz.html">college to go to quiz</a>
+											<a class="badge badge-light" href="/college-womens-basketball-notre-dame.html">college womens basketball notre dame</a>
+											<a class="badge badge-dark" href="/college-visit-to-indiana-university.html">college visit to indiana university</a>
+											<a class="badge badge-info" href="/college-womens-basketball-championship-game.html">college womens basketball championship game</a>
+											<a class="badge badge-secondary" href="/college-womens-basketball-tournament.html">college womens basketball tournament</a>
+											<a class="badge badge-info" href="/college-womens-basketball-coaches.html">college womens basketball coaches</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the right blog.  Our site gives you suggestions for viewing the maximum quality video and image content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie that you view.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ernie_Pyle%27s_%27Story_of_G.I._Joe%27_%281945_poster%29.jpg/220px-Ernie_Pyle%27s_%27Story_of_G.I._Joe%27_%281945_poster%29.jpg" data-lightbox="roadtrip" data-title="The Story Of G I Joe Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ernie_Pyle%27s_%27Story_of_G.I._Joe%27_%281945_poster%29.jpg/220px-Ernie_Pyle%27s_%27Story_of_G.I._Joe%27_%281945_poster%29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI55d7WGlvExUj5zyx7C_aBYn6uZharv5RTw';" alt="The Story Of G I Joe Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Story Of G I Joe Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/en/thumb/8/89/GI_Joe_Operation_Blackout_game_cover.png/220px-GI_Joe_Operation_Blackout_game_cover.png" data-lightbox="roadtrip" data-title="G I Joe Operation Blackout Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/en/thumb/8/89/GI_Joe_Operation_Blackout_game_cover.png/220px-GI_Joe_Operation_Blackout_game_cover.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY0urcgav-pmGoQKWODweozPXNI1kcoX1pww';" alt="G I Joe Operation Blackout Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">G I Joe Operation Blackout Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Bill_Aalto_cleaned.jpg/220px-Bill_Aalto_cleaned.jpg" data-lightbox="roadtrip" data-title="William Aalto Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Bill_Aalto_cleaned.jpg/220px-Bill_Aalto_cleaned.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgUucvTiCCV-rIeU9HgRQN0S7Hq0IdOq4oA';" alt="William Aalto Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">William Aalto Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/60/a3/d160a34925a69aa9dbfdd6b3c3c7ee67.png" data-lightbox="roadtrip" data-title="Grunt Rah Gallery G I Joe Wiki Joepedia Gi Joe Cobra Toys In 2020 Gallery Grunt Gi Joe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/60/a3/d160a34925a69aa9dbfdd6b3c3c7ee67.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqS9y5cjk0KlqREOeMrgIM4f2fA8S2-ne2-Q';" alt="Grunt Rah Gallery G I Joe Wiki Joepedia Gi Joe Cobra Toys In 2020 Gallery Grunt Gi Joe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grunt Rah Gallery G I Joe Wiki Joepedia Gi Joe Cobra Toys In 2020 Gallery Grunt Gi Joe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Affirmative_Action_Policies_in_the_United_States_by_state.png/450px-Affirmative_Action_Policies_in_the_United_States_by_state.png" data-lightbox="roadtrip" data-title="Affirmative Action In The United States Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Affirmative_Action_Policies_in_the_United_States_by_state.png/450px-Affirmative_Action_Policies_in_the_United_States_by_state.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7OWuhkK22bHYkHWgQU3ugT8G_jrwLrMYtRQ';" alt="Affirmative Action In The United States Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Affirmative Action In The United States Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tfwiki.net/mediawiki/images2/thumb/8/84/WildBill_ActionForce.jpg/300px-WildBill_ActionForce.jpg" data-lightbox="roadtrip" data-title="Wild Bill Transformers Wiki">
+											<img class="card-img v-image ads-img " src="https://tfwiki.net/mediawiki/images2/thumb/8/84/WildBill_ActionForce.jpg/300px-WildBill_ActionForce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUOCZcRjMrkXCtsmWqGY2nv_oqi1AEAt0NIw';" alt="Wild Bill Transformers Wiki">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wild Bill Transformers Wiki</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://upload.wikimedia.org/wikipedia/en/thumb/8/89/GI_Joe_Operation_Blackout_game_cover.png/220px-GI_Joe_Operation_Blackout_game_cover.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUOCZcRjMrkXCtsmWqGY2nv_oqi1AEAt0NIw';" alt="Wild Bill Transformers Wiki">
+										<div class="card-body">
+						<h3 class="h5"><b>Bill of Rights also called Servicemens Readjustment Act US.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Gi bill wiki</strong>. 
+								
+																	Joe 1945 film Tommy Atkins soldier British slang for a common soldier. 
+																	Edit source History Talk 0. 
+																	Joe disambiguation G-Man slang The Story of GI. 
+																	Since 1944 the GI Bill has helped qualifying Veterans and their family members get money to cover all or some of the costs for school or training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About 54000 fewer people used the GI Bill in fiscal 2018 a 7 percent decline from fiscal 2017 which was itself down about 7 percent from fiscal 2016s GI Bill enrollment total according. 
+																	The Post-911 GI Bill is a generous education benefit for the latest generation of service members and veterans. 
+																	Effective 11520 STEM Scholarship Beneficiaries are Eligible for Work Study Benefits. 
+																	Youll typically receive 36 months of benefits so figure out how many months of benefits if any youve used and how many of the remaining months of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The bulk of these changes go. 
+																	You may be eligible to transfer education benefits if youre on active duty or in. 
+																	Bust a Dragnauct Expose. 
+																	Jill disk jockey for the WW II program GI Jive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Post-911 GI Bills transfer-to-dependent option is designed to help improve military retention and recruiting and is only available to eligible active-duty service members and selected Reservists. 
+																	You can transfer all the benefits to your spouse divvy them up among your spouse and children or keep some of them for yourself and transfer the rest. 
+																	The Montgomery GI Bill Active Duty MGIB stated that active duty members had to forfeit 100 per month for 12 months. 
+																	If they use the benefits they receive as of 2014 1564 monthly as a full-time student tiered at lower rates for less-than-full-time for a maximum of 36 months of education benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The New Post-911 GI Bill offers a new set of benefits for service members and veterans attending education and training programs taken at an accredited college or universityThe new benefits include up to 100 tuition and fees paid directly to the school for public in-state institutions and for the 2012-2013 academic year up to 1807750 for privateforeign. 
+																	Mehmetcik soldier Turkish slang for a common soldier. 
+																	From the start Black veterans had trouble securing the GI Bills benefits. 
+																	Bill in full GI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Montgomery GI Bill Active Duty MGIB states that active duty members forfeit 100 per month for 12 months. 
+																	The Department of Defense DoD decides whether you can transfer GI Bill benefits to your family. 
+																	Roosevelt was determined to do better for veterans returning from World War IIHe also wanted to expand the middle class and help prevent economic turmoil. 
+																	VA the act enabled veterans to obtain grants for school and college tuition low-interest mortgage and small-business loans job training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Verify STEM Attendance. 
+																	See how VA is responding to COVID-19 and supporting GI Bill beneficiaries. 
+																	Learn more about GI Bill benefits belowand how to apply for them. 
+																	This benefit may be used for degree and certificate programs flight training apprenticeship. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Post-911 GI Bill benefits are transferable to your spouse and any of your children. 
+																	Joe pigeon a pigeon who served in World War II. 
+																	Work Study applications and contracts are currently being accepted for STEM Scholarship recipients. 
+																	The updated bill was created with the intent of improving previous versions of the bill and the Reserve Educational Assistance Program REAP which is now. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bust a Dragnut alt. 
+																	Legislation adopted in 1944 that provided various benefits to veterans of World War IIThrough the Veterans Administration later the Department of Veterans Affairs. 
+																	Rogers STEM Scholarship beneficiaries interested in Work Study may apply at VAgov. 
+																	Eligibility requirements include but are not limited to service members who meet all Post-911 GI Bill eligibility requirements have completed six years of service can commit to serving an. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The G Man Dictionary Wiki. 
+																	Find out if you can transfer any of your unused Post-911 GI Bill benefits to your spouse or dependent children. 
+																	The New Post-911 GI Bill. 
+																	It includes payment of tuition and fees a monthly. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GI BILL OF RIGHTS. 
+																	Winter and spring breaks. 
+																	In addition the so-called GI Bill 20 includes a new 17500 a year cap on tuition and fees coverage for veterans attending private universities prorates the housing stipend based on the students rate of pursuit and removes the interval pay which allowed veterans to continue to receive payments during scheduled school breaks ie. 
+																	The New Post-911 GI Bill offers a new set of benefits for service members and veterans attending education and training programs taken at an accredited college or universityThe new benefits include up to 100 tuition and fees paid directly to the school for public in-state institutions and for the 2012-2013 academic year up to 1807750 for privateforeign. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This benefit could be used for both degree and certificate programs flight training. 
+																	Colmery Veterans Educational Assistance Act of 2017 Public Law 115-48 commonly known as the Forever GI Bill eliminated the 15-year use-it-or-lose-it constraint associated with the Post 911 GI Bill education benefit. 
+																	What is the Post-911 GI Bill. 
+																	The GI Bills Effect on Black Veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	December 2 2020 1045 AM. 
+																	If they used the benefits they received as of 2012 1564 monthly as a full-time student tiered at lower rates for less-than-full-time for a maximum of 36 months of education benefits. 
+																	The New Post-911 GI Bill. 
+																	In 1944 social and economic concerns higher education veterans issues and federal legislation merged in a way never before experienced in the history of the United States with the passage of the Servicemens Readjustment Act more commonly known as the GI Bill of RightsThis single piece of legislation simultaneously changed the lives of millions of veterans who served. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Recent blog posts Help Explore. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/G.I._Joe_-_A_Real_American_Hero_Coverart.png/220px-G.I._Joe_-_A_Real_American_Hero_Coverart.png" data-lightbox="roadtrip" data-title="G I Joe A Real American Hero Video Game Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/G.I._Joe_-_A_Real_American_Hero_Coverart.png/220px-G.I._Joe_-_A_Real_American_Hero_Coverart.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGjmDsmJBMVYvjG_FbEPEAbJijYWIrYn60Ww';" alt="G I Joe A Real American Hero Video Game Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">G I Joe A Real American Hero Video Game Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/54/41/615441c95f1d032903134176ed9252bf.png" data-lightbox="roadtrip" data-title="Mainframe Idw G I Joe Wiki Joepedia Gi Joe Cobra Toys In 2020 Star Wars Comics Gi Joe Comics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/54/41/615441c95f1d032903134176ed9252bf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOM5PXJ3F_qC8TZayuHa4YRbpGNYIMaGhw8A';" alt="Mainframe Idw G I Joe Wiki Joepedia Gi Joe Cobra Toys In 2020 Star Wars Comics Gi Joe Comics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mainframe Idw G I Joe Wiki Joepedia Gi Joe Cobra Toys In 2020 Star Wars Comics Gi Joe Comics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Diagram_showing_the_anatomy_after_a_partial_gastrectomy_%28Bilroth_02%29_CRUK_281.svg/1200px-Diagram_showing_the_anatomy_after_a_partial_gastrectomy_%28Bilroth_02%29_CRUK_281.svg.png" data-lightbox="roadtrip" data-title="Billroth Ii Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Diagram_showing_the_anatomy_after_a_partial_gastrectomy_%28Bilroth_02%29_CRUK_281.svg/1200px-Diagram_showing_the_anatomy_after_a_partial_gastrectomy_%28Bilroth_02%29_CRUK_281.svg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn3TKygJQm045P4L2b72tCsCHIMTjNNucnDg';" alt="Billroth Ii Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billroth Ii Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gerald_S._O%27Loughlin_The_Rookies.JPG/240px-Gerald_S._O%27Loughlin_The_Rookies.JPG" data-lightbox="roadtrip" data-title="Gerald S O Loughlin Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gerald_S._O%27Loughlin_The_Rookies.JPG/240px-Gerald_S._O%27Loughlin_The_Rookies.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdUVV6qadn6trqg3OuaHP9xtFeUyGGzVFDvw';" alt="Gerald S O Loughlin Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gerald S O Loughlin Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/en/4/40/Hillbilly_Elegy_%28film%29.png" data-lightbox="roadtrip" data-title="Hillbilly Elegy Film Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/en/4/40/Hillbilly_Elegy_%28film%29.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRjq-juGRoXb9qbnEPRc7vmah_Ryj20FdALw';" alt="Hillbilly Elegy Film Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hillbilly Elegy Film Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/24/df/c524df406fef038029ed724a9b071c74.jpg" data-lightbox="roadtrip" data-title="Dusty C1 Gi Joe Characters Gi Joe Dusty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/24/df/c524df406fef038029ed724a9b071c74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3IcQJKD5ip_DmMm4ALyd2G_e-CfdpA3grw';" alt="Dusty C1 Gi Joe Characters Gi Joe Dusty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dusty C1 Gi Joe Characters Gi Joe Dusty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Marine_Filmographers_in_Dugout%2C_Iwo_Jima%2C_1945.jpg/260px-Marine_Filmographers_in_Dugout%2C_Iwo_Jima%2C_1945.jpg" data-lightbox="roadtrip" data-title="Bill Genaust Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Marine_Filmographers_in_Dugout%2C_Iwo_Jima%2C_1945.jpg/260px-Marine_Filmographers_in_Dugout%2C_Iwo_Jima%2C_1945.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EF9LjxOzv-OEyJyJ5vZLhYx-WwdB3_3OOw';" alt="Bill Genaust Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bill Genaust Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/cc/f5/9dccf51669b4af953f91b78a14d16a53.png" data-lightbox="roadtrip" data-title="Duke Resolute G I Joe Wiki Joepedia Gi Joe Cobra Toys Gi Joe Characters Gi Joe Duke">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/cc/f5/9dccf51669b4af953f91b78a14d16a53.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStMjuLu0KlBOy8eJilE_uqb9S0HvwJ-Ub9Xw';" alt="Duke Resolute G I Joe Wiki Joepedia Gi Joe Cobra Toys Gi Joe Characters Gi Joe Duke">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Duke Resolute G I Joe Wiki Joepedia Gi Joe Cobra Toys Gi Joe Characters Gi Joe Duke</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fb/3f/bc/fb3fbcd2ff05b3b973f42bc185743940.jpg" data-lightbox="roadtrip" data-title="Dum Dum Dugan Marvel Cinematic Universe Wiki Fandom Powered By Wikia In 2020 Dum Dum Dugan Agent Carter Cosplay Marvel Cinematic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fb/3f/bc/fb3fbcd2ff05b3b973f42bc185743940.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFdh_FQlmYHEbjjkQxb7lLJjNnquGDRDdvlA';" alt="Dum Dum Dugan Marvel Cinematic Universe Wiki Fandom Powered By Wikia In 2020 Dum Dum Dugan Agent Carter Cosplay Marvel Cinematic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dum Dum Dugan Marvel Cinematic Universe Wiki Fandom Powered By Wikia In 2020 Dum Dum Dugan Agent Carter Cosplay Marvel Cinematic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/32/17/bd3217537ba7a69ffabde6caae97d714.jpg" data-lightbox="roadtrip" data-title="Pin On Art Isparation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/32/17/bd3217537ba7a69ffabde6caae97d714.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX8M-lBJTebgvebPF9vnwpNYS_3RXZphRPlg';" alt="Pin On Art Isparation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Art Isparation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/en/3/33/WildBill1121.jpg" data-lightbox="roadtrip" data-title="Wild Bill G I Joe Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/en/3/33/WildBill1121.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQVqokidmwrj2qyUt6wqyrRz2dRCpFm0kv6A';" alt="Wild Bill G I Joe Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wild Bill G I Joe Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/ed/59/6bed59f8f649425dcd90153fc75466f7.png" data-lightbox="roadtrip" data-title="Http Gijoebattleground Wikia Com Wiki Wild Bill Super Soldier Ep4 File Wild Bill 28super Soldier 29 Ep4 Png Gi Joe Characters Gi Joe Super Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/ed/59/6bed59f8f649425dcd90153fc75466f7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkBlfl4XNaSwUKxGkE-KfgkSUS4yPsUadNSg';" alt="Http Gijoebattleground Wikia Com Wiki Wild Bill Super Soldier Ep4 File Wild Bill 28super Soldier 29 Ep4 Png Gi Joe Characters Gi Joe Super Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Gijoebattleground Wikia Com Wiki Wild Bill Super Soldier Ep4 File Wild Bill 28super Soldier 29 Ep4 Png Gi Joe Characters Gi Joe Super Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d0/af/d6/d0afd624b8a78e5029f91c0660f57919.jpg" data-lightbox="roadtrip" data-title="Ra S Al Ghul Nolanverse Villains Wiki Fandom Ras Al Ghul The Dark Knight Trilogy Talia Al Ghul">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d0/af/d6/d0afd624b8a78e5029f91c0660f57919.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRndtW3y4AzVxoxY6CHkReNajV9zJWQOfPUlA';" alt="Ra S Al Ghul Nolanverse Villains Wiki Fandom Ras Al Ghul The Dark Knight Trilogy Talia Al Ghul">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ra S Al Ghul Nolanverse Villains Wiki Fandom Ras Al Ghul The Dark Knight Trilogy Talia Al Ghul</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-does-military-gi-bill-work.html">How Does Military Gi Bill Work</a></li>
+													<li class="list-group-item"><a href="/how-long-does-it-take-for-gi-bill-benefits-to-kick-in.html">How Long Does It Take For Gi Bill Benefits To Kick In</a></li>
+													<li class="list-group-item"><a href="/how-go-to-college.html">How Go To College</a></li>
+													<li class="list-group-item"><a href="/how-do-i-transfer-my-post-911-gi-bill.html">How Do I Transfer My Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-does-bah-for-gi-bill-work.html">How Does Bah For Gi Bill Work</a></li>
+													<li class="list-group-item"><a href="/how-long-does-it-take-to-receive-va-education-benefits.html">How Long Does It Take To Receive Va Education Benefits</a></li>
+													<li class="list-group-item"><a href="/how-does-gi-bill-top-up-work.html">How Does Gi Bill Top Up Work</a></li>
+													<li class="list-group-item"><a href="/how-do-i-transfer-my-gi-bill-to-my-spouse.html">How Do I Transfer My Gi Bill To My Spouse</a></li>
+													<li class="list-group-item"><a href="/how-does-the-montgomery-gi-bill-work-reddit.html">How Does The Montgomery Gi Bill Work Reddit</a></li>
+													<li class="list-group-item"><a href="/how-do-i-use-my-va-education-benefits.html">How Do I Use My Va Education Benefits</a></li>
+													<li class="list-group-item"><a href="/how-does-national-guard-gi-bill-work.html">How Does National Guard Gi Bill Work</a></li>
+													<li class="list-group-item"><a href="/how-long-does-the-gi-bill-last.html">How Long Does The Gi Bill Last</a></li>
+													<li class="list-group-item"><a href="/how-many-credit-hours-for-post-911-gi-bill.html">How Many Credit Hours For Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/how-long-is-the-gi-bill-good-for.html">How Long Is The Gi Bill Good For</a></li>
+													<li class="list-group-item"><a href="/how-does-reserve-gi-bill-work.html">How Does Reserve Gi Bill Work</a></li>
+													<li class="list-group-item"><a href="/how-does-using-your-gi-bill-work.html">How Does Using Your Gi Bill Work</a></li>
+													<li class="list-group-item"><a href="/how-long-does-it-take-for-va-to-process-education-benefits.html">How Long Does It Take For Va To Process Education Benefits</a></li>
+													<li class="list-group-item"><a href="/how-long-does-gi-bill-last-for-dependents.html">How Long Does Gi Bill Last For Dependents</a></li>
+													<li class="list-group-item"><a href="/how-does-the-36-months-of-gi-bill-work.html">How Does The 36 Months Of Gi Bill Work</a></li>
+													<li class="list-group-item"><a href="/how-long-do-my-gi-bill-benefits-last.html">How Long Do My Gi Bill Benefits Last</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

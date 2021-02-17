@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Franklin College Womens Basketball Coach - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Franklin College Womens Basketball Coach",
+  "datePublished": "2021-02-17",
+  "image": "https://athletics.hocking.edu/hs-fs/hubfs/Images/Athletics/2019_W.%20Basketball/IMG_9040.jpeg?width=5184&amp;name=IMG_9040.jpeg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=franklin+college+womens+basketball+coach",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Franklin College Womens Basketball Coach</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">She was a leader and member of the Fellow of Christian Athletes. RECAP Jones Sets Career High in Points Grizzlies Drop Close Matchup with Rose-Hulman. 2019-20 Franklin Womens Basketball Schedule. <br>				
+			</p>
+										<a class="badge badge-success" href="/bill-montgomery-pokemon.html">bill montgomery pokemon</a>
+											<a class="badge badge-warning" href="/billini.html">billini</a>
+											<a class="badge badge-light" href="/billini-sandals.html">billini sandals</a>
+											<a class="badge badge-info" href="/bill-montgomery-realty.html">bill montgomery realty</a>
+											<a class="badge badge-secondary" href="/billig-tapet.html">billig tapet</a>
+											<a class="badge badge-secondary" href="/bill-montgomery-delaware.html">bill montgomery delaware</a>
+											<a class="badge badge-primary" href="/bill-montgomery-obituary-turning-point-usa.html">bill montgomery obituary turning point usa</a>
+											<a class="badge badge-warning" href="/billi-ka-cartoon.html">billi ka cartoon</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to visit the ideal site.  Our site gives you suggestions for viewing the maximum quality video and image content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/Etjik2NXUAEoxCu.jpg" data-lightbox="roadtrip" data-title="Sabsjgruzzcoxm">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/Etjik2NXUAEoxCu.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZl4OsYOWrYF3vRiyRxvRfdKC462FqwEyUvA';" alt="Sabsjgruzzcoxm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sabsjgruzzcoxm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/profile_images/1334129079973531651/pc9UDIY0_400x400.jpg" data-lightbox="roadtrip" data-title="Franklin College Wbb Fcgrizwball Twitter">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/profile_images/1334129079973531651/pc9UDIY0_400x400.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR05m6PX2duWsual1USruPcoGE285qV1ZZlqQ';" alt="Franklin College Wbb Fcgrizwball Twitter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Franklin College Wbb Fcgrizwball Twitter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hoopdirt.com/wp-content/uploads/2020/03/ggrizzliesarched-690x340.jpg" data-lightbox="roadtrip" data-title="Kerry Prather Announces Retirement From Coaching At Franklin College Hoopdirt">
+											<img class="card-img v-image ads-img " src="https://hoopdirt.com/wp-content/uploads/2020/03/ggrizzliesarched-690x340.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ78csmpnRBfJ8hMT34ERr2a6bP4WyZeSIfvg';" alt="Kerry Prather Announces Retirement From Coaching At Franklin College Hoopdirt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kerry Prather Announces Retirement From Coaching At Franklin College Hoopdirt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/Es_EYR8XAAgdG93.jpg" data-lightbox="roadtrip" data-title="Franklin College Mbb Fcgrizhoops Twitter">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/Es_EYR8XAAgdG93.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9H4t9Lf41Kj1rPTUxyZWWPX33L-6e3QtJkg';" alt="Franklin College Mbb Fcgrizhoops Twitter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Franklin College Mbb Fcgrizhoops Twitter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://athletics.hocking.edu/hs-fs/hubfs/Images/Athletics/2019_W.%20Basketball/IMG_9040.jpeg?width=5184&amp;name=IMG_9040.jpeg" data-lightbox="roadtrip" data-title="Women S Basketball At Hocking College">
+											<img class="card-img v-image ads-img " src="https://athletics.hocking.edu/hs-fs/hubfs/Images/Athletics/2019_W.%20Basketball/IMG_9040.jpeg?width=5184&amp;name=IMG_9040.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSzbdphzucYdFBocQjHBTC7ED9bV9Op9nFw';" alt="Women S Basketball At Hocking College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball At Hocking College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/unoprivateers.com/images/2019/2/5/Franklin_2_.JPG" data-lightbox="roadtrip" data-title="Rehema Franklin 2019 20 Women S Basketball University Of New Orleans Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/unoprivateers.com/images/2019/2/5/Franklin_2_.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlntQj9sEWyq--i1ppMKypgZZpGKxBvm2PQQ';" alt="Rehema Franklin 2019 20 Women S Basketball University Of New Orleans Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rehema Franklin 2019 20 Women S Basketball University Of New Orleans Athletics</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/missouristatebears.com/images/2021/1/30/21Franklin7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlntQj9sEWyq--i1ppMKypgZZpGKxBvm2PQQ';" alt="Rehema Franklin 2019 20 Women S Basketball University Of New Orleans Athletics">
+										<div class="card-body">
+						<h3 class="h5"><b>Assistant Director of AthleticsHead Mens Basketball Coach.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Franklin college womens basketball coach</strong>. 
+								
+																	The 2016-17 season saw Franklin return to the HCAC Tournament after the Grizzlies went 14-12 with an 11-7 record in conference play. 
+																	She was a former standout player and assistant coach for 10 seasons at perennial NCAA Division III national contender DePauw University. 
+																	January 14 2021 Mens Basketball. 
+																	The official 2020-21 Womens Basketball schedule for the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The highest winning percentage in the group belongs to Geno Auriemma head coach of. 
+																	Grizzly Men Picked to Finish Third in HCAC by Leagues Coaches. 
+																	RECAP Grizzlies Drop Sunday Matchup with Hanover. 
+																	This year on its own youll find 63321 Womens Basketball high school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each program employs a head coachAs of the 202021 season the longest-tenured head coach at his or her current school is Kathy Delaney-Smith who started at Harvard in 1982. 
+																	As an assistant Nichay oversaw several aspects of the program relating to recruiting player development scouting academic advisement and general day to day operations of the program. 
+																	As the tournaments. 
+																	Nick Nichay Email 717-358-7166 Nick Nichay was appointed Interim Head Coach at the start of the 2019-20 season after spending the last seven seasons as an assistant coach and recruiting coordinator. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	January 11 2021 Mens Basketball. 
+																	NCSA gives student high school athletes the tools and information they need to enhance their chances of being recruited by a Womens Basketball program whether its at Franklin College or another college. 
+																	Chantel Poston joined the Franklin College womens basketball program as assistant coach in August 2016 after playing on two Big Ten championship teams at Purdue University from 2008-13. 
+																	Poston helped lead Purdue to league titles during her junior and senior campaigns. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NEWS Grizzlies Earn Second Place Seeding in HCAC Pre-Season Coaches Poll September 29 2020 Womens Basketball NEWS HCAC Releases 2021 Womens Basketball Slate. 
+																	However the Ivy League is not playing that season due to COVID-19 concerns. 
+																	Richter Brubaker Selected to Attend NCAA Leadership Academy Workshop Franklin Marshalls senior woman administrator and head womens basketball coach Kirsten Richter and head softball coach Brad Brubaker have been. 
+																	This is a list of college womens basketball coaches by number of career wins. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Franklin College opened the second half on a 7-0 while Defiance College just could not string consecutive baskets together as the Grizzlies beat DC 69-62 in HCAC womens basketball at the Weaner. 
+																	Aqua Franklin has been named Lamar University head womens basketball coach announced Lamar University Director of Athletics Marco Born during a press conference Wednesday morning at the Montagne. 
+																	2020-21 Franklin Womens Basketball Schedule. 
+																	Dana Haggenjos was been named the ninth head coach in Franklin womens basketball historyon May 2014. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since 2000 NCSA has been connecting athletes and coaches which is a critical component of the recruiting process. 
+																	January 10 2021 Mens Basketball. 
+																	Backed by Battery Ventures PrestoSports delivers solutions for building athletic brands igniting fans and funding sports programs. 
+																	As of the next college basketball season in 202021 354 womens college basketball programs will compete in NCAA Division I. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The list includes only games at the NCAA AIAW and NAIA levels. 
+																	For the first time since 1990 Jerry Scheve will not be on the sidelines for the Wilmington College womens basketball team. 
+																	PrestoSports is a software-as-a-service company providing technology to colleges and conference offices. 
+																	More headlines News Archives. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Scheve is taking a leave of absence for the current season but plans. 
+																	Tara VanDerveer the head coach of Idaho from 1978-80 Ohio State from 1980-85 and Stanford from 198595 and from 1996-present tops the list with 1109 career wins. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.yumpu.com/21035196/1/500x640/09-autumn-reporter-1-20-franklin-college.jpg" data-lightbox="roadtrip" data-title="09 Autumn Reporter 1 20 Franklin College">
+											<img class="card-img v-image ads-img " src="https://img.yumpu.com/21035196/1/500x640/09-autumn-reporter-1-20-franklin-college.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP5tT4dUPt7MEhf66hcj6FfUrVWLSIVFXFiQ';" alt="09 Autumn Reporter 1 20 Franklin College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">09 Autumn Reporter 1 20 Franklin College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/presto/2019/08/29/PIND/7ab48348-15bc-4511-b884-3f28fca24f36-UIndy_mk_03.jpg?width=660&amp;height=473&amp;fit=crop&amp;format=pjpg&amp;auto=webp" data-lightbox="roadtrip" data-title="Glvc And Hcac Conferences Home To Uindy And Franklin College Postpone Fall Sports To Spring">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/presto/2019/08/29/PIND/7ab48348-15bc-4511-b884-3f28fca24f36-UIndy_mk_03.jpg?width=660&amp;height=473&amp;fit=crop&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYWMwQxv9vf6Q8oUpj6kATsIDbODLanZs8g';" alt="Glvc And Hcac Conferences Home To Uindy And Franklin College Postpone Fall Sports To Spring">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Glvc And Hcac Conferences Home To Uindy And Franklin College Postpone Fall Sports To Spring</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/3b/62/de3b62a35e55d012e3653ada17f6f1d5.jpg" data-lightbox="roadtrip" data-title="Taj Mcwilliams Franklin Will Join The Rice University Women S Basketball Program As An Assistant Coach Whil Overseas Jobs Womens Basketball Basketball Program">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/3b/62/de3b62a35e55d012e3653ada17f6f1d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq1PTItbsuGDNylZJu3z4IzJxUjiAjCZnYBA';" alt="Taj Mcwilliams Franklin Will Join The Rice University Women S Basketball Program As An Assistant Coach Whil Overseas Jobs Womens Basketball Basketball Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Taj Mcwilliams Franklin Will Join The Rice University Women S Basketball Program As An Assistant Coach Whil Overseas Jobs Womens Basketball Basketball Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/02/58/380258acb7db655b137f383b980db145.jpg" data-lightbox="roadtrip" data-title="Moss Scores A Career High 38 Points To Lead No 8 Thomas More A 90 67 Win Over Franklin Franklin College Womens Basketball Basketball Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/02/58/380258acb7db655b137f383b980db145.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI0TZKlwYFJe2jXqzdelyO-LIuN_0Ye6whBw';" alt="Moss Scores A Career High 38 Points To Lead No 8 Thomas More A 90 67 Win Over Franklin Franklin College Womens Basketball Basketball Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moss Scores A Career High 38 Points To Lead No 8 Thomas More A 90 67 Win Over Franklin Franklin College Womens Basketball Basketball Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2654706904541292" data-lightbox="roadtrip" data-title="Franklin College Cheerleading Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2654706904541292" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOXxWutSRJYD1BOZIdGvg-nIxYiP7BvsMHQ';" alt="Franklin College Cheerleading Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Franklin College Cheerleading Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.shoreline.edu/athletics/womens-basketball/images/womens-basketball-team-photo-2019.jpg" data-lightbox="roadtrip" data-title="Women S Basketball Shoreline Community College">
+											<img class="card-img v-image ads-img " src="https://www.shoreline.edu/athletics/womens-basketball/images/womens-basketball-team-photo-2019.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY5P4fabq9cUqIh3TJHus5Nbi0MOcxhfRNmQ';" alt="Women S Basketball Shoreline Community College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Shoreline Community College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/missouristatebears.com/images/2021/1/30/21Franklin7.jpg" data-lightbox="roadtrip" data-title="Jasmine Franklin Women S Basketball Missouri State">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/missouristatebears.com/images/2021/1/30/21Franklin7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh21ueP3tJaqGN6m2KrVpMAGDv5fdo6k4eQw';" alt="Jasmine Franklin Women S Basketball Missouri State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jasmine Franklin Women S Basketball Missouri State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://d21gd0ap5v1ndt.cloudfront.net/web04/bryan/images/team_shots/2020_21_bryan_rv_women_basketball.jpg?0e8f10450246102ab90eedb908288b296b4238ec" data-lightbox="roadtrip" data-title="2020 21 Rv Women S Basketball Roster Bryan College">
+											<img class="card-img v-image ads-img " src="http://d21gd0ap5v1ndt.cloudfront.net/web04/bryan/images/team_shots/2020_21_bryan_rv_women_basketball.jpg?0e8f10450246102ab90eedb908288b296b4238ec" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ0kRZp6Hz81-t6kkZAaw3eqUHh49jpSjGIw';" alt="2020 21 Rv Women S Basketball Roster Bryan College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 21 Rv Women S Basketball Roster Bryan College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/7c/57/b97c571f00a2d5ed76b7356747aad8c5.jpg" data-lightbox="roadtrip" data-title="Southridge Faces La Jolla In A Pil Holiday Classic Semifinal Friday December 28 2018 At Franklin High School In South Nba Stars Comebacks Southeast Portland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/7c/57/b97c571f00a2d5ed76b7356747aad8c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWANZMuTcmhFvi00QQKGfflsopljjoshPIxw';" alt="Southridge Faces La Jolla In A Pil Holiday Classic Semifinal Friday December 28 2018 At Franklin High School In South Nba Stars Comebacks Southeast Portland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Southridge Faces La Jolla In A Pil Holiday Classic Semifinal Friday December 28 2018 At Franklin High School In South Nba Stars Comebacks Southeast Portland</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/24/31/cb24317aad080caa92758c9983d48a5e.jpg" data-lightbox="roadtrip" data-title="Iup Women S Basketball Names Penn State Alum Kelly Mazzante Top Assistant Coach Basketball Athlete Pennsylvania State University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/24/31/cb24317aad080caa92758c9983d48a5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZJResrx0xFAqiXAuoN2e4_jIbbF6OOpX2JQ';" alt="Iup Women S Basketball Names Penn State Alum Kelly Mazzante Top Assistant Coach Basketball Athlete Pennsylvania State University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iup Women S Basketball Names Penn State Alum Kelly Mazzante Top Assistant Coach Basketball Athlete Pennsylvania State University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dbukjj6eu5tsf.cloudfront.net/bgsufalcons.com/images/2018/2/23/BEEG5780.jpg" data-lightbox="roadtrip" data-title="Kennedy Williams Women S Basketball Bowling Green State University Athletics">
+											<img class="card-img v-image ads-img " src="https://dbukjj6eu5tsf.cloudfront.net/bgsufalcons.com/images/2018/2/23/BEEG5780.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtngVKkA7FDqKQ9wjA462H2wi6aYMnAbQewA';" alt="Kennedy Williams Women S Basketball Bowling Green State University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kennedy Williams Women S Basketball Bowling Green State University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.isu.pub/180109185839-3b713d17f57741ff96ccf202c20f42bb/jpg/page_1.jpg" data-lightbox="roadtrip" data-title="Fcmagazine Autumn 17 By Franklincollege7 Issuu">
+											<img class="card-img v-image ads-img " src="https://image.isu.pub/180109185839-3b713d17f57741ff96ccf202c20f42bb/jpg/page_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhRLlnGZwXX4r80Izua-jNxfiKGUxUSWMIA';" alt="Fcmagazine Autumn 17 By Franklincollege7 Issuu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fcmagazine Autumn 17 By Franklincollege7 Issuu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gsutigers.com/images/2020/12/6/76325595_3831_43F7_9569_39A689744041.jpeg?width=1600" data-lightbox="roadtrip" data-title="Women S Basketball Coaches Grambling State University Athletics">
+											<img class="card-img v-image ads-img " src="https://gsutigers.com/images/2020/12/6/76325595_3831_43F7_9569_39A689744041.jpeg?width=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo-TO8i3WYqdzBEAl1dbVrLcKT8COwR2-n1A';" alt="Women S Basketball Coaches Grambling State University Athletics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Basketball Coaches Grambling State University Athletics</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/should-i-go-to-work-or-college.html">Should I Go To Work Or College</a></li>
+													<li class="list-group-item"><a href="/spartan-college-gi-bill.html">Spartan College Gi Bill</a></li>
+													<li class="list-group-item"><a href="/state-government-of-india.html">State Government Of India</a></li>
+													<li class="list-group-item"><a href="/seattle-wa-education-department.html">Seattle Wa Education Department</a></li>
+													<li class="list-group-item"><a href="/site-du-college-guy-de-maupassant-chaumont-en-vexin.html">Site Du College Guy De Maupassant Chaumont En Vexin</a></li>
+													<li class="list-group-item"><a href="/state-government-grade-7.html">State Government Grade 7</a></li>
+													<li class="list-group-item"><a href="/state-github.html">State Github</a></li>
+													<li class="list-group-item"><a href="/st-josephs-college-womens-basketball-roster.html">St Josephs College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/scores-womens-college-basketball-games-today.html">Scores Womens College Basketball Games Today</a></li>
+													<li class="list-group-item"><a href="/should-i-go-to-community-college.html">Should I Go To Community College</a></li>
+													<li class="list-group-item"><a href="/spouse-veteran-education-benefits.html">Spouse Veteran Education Benefits</a></li>
+													<li class="list-group-item"><a href="/should-i-go-to-college-2020.html">Should I Go To College 2020</a></li>
+													<li class="list-group-item"><a href="/short-womens-college-basketball-players.html">Short Womens College Basketball Players</a></li>
+													<li class="list-group-item"><a href="/state-government-jobs.html">State Government Jobs</a></li>
+													<li class="list-group-item"><a href="/state-grid.html">State Grid</a></li>
+													<li class="list-group-item"><a href="/sierra-college-womens-basketball-schedule.html">Sierra College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/state-gift-laws.html">State Gift Laws</a></li>
+													<li class="list-group-item"><a href="/size-of-womens-college-basketball.html">Size Of Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/site-du-college-guy-de-maupassant-fleury-sur-andelle.html">Site Du College Guy De Maupassant Fleury Sur Andelle</a></li>
+													<li class="list-group-item"><a href="/south-georgia-state-college-womens-basketball.html">South Georgia State College Womens Basketball</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

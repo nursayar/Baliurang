@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Post Covid Gi Issues - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Post Covid Gi Issues",
+  "datePublished": "2021-02-17",
+  "image": "https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/79070ac7-62cf-4d48-9b02-1532c182a2f4/gr1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Baliurang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=post+covid+gi+issues",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Baliurang" class="navbar-brand mb-1">Baliurang</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Post Covid Gi Issues</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">And thats not related to the presence of the virus. Around 10 of mild coronavirus COVID-19 cases who were not admitted to hospital have reported symptoms lasting more than 4 weeks. And Chinese researchers pointed to digestive symptoms as a possible hallmark of COVID-19 infection in some patients and advised doctors to evaluate all. <br>				
+			</p>
+										<a class="badge badge-info" href="/bill-montgomery-invest-ni.html">bill montgomery invest ni</a>
+											<a class="badge badge-danger" href="/bill-montgomery-supreme-court.html">bill montgomery supreme court</a>
+											<a class="badge badge-success" href="/bill-gunn-death.html">bill gunn death</a>
+											<a class="badge badge-secondary" href="/bill-montgomery-real-estate.html">bill montgomery real estate</a>
+											<a class="badge badge-dark" href="/bill-montgomery-actor.html">bill montgomery actor</a>
+											<a class="badge badge-secondary" href="/billig-kaufen.html">billig kaufen</a>
+											<a class="badge badge-dark" href="/billi-ki-awaaz.html">billi ki awaaz</a>
+											<a class="badge badge-danger" href="/bill-montgomery-attorney-glens-falls.html">bill montgomery attorney glens falls</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to pay a visit to the ideal site.  Our website provides you with suggestions for seeing the maximum quality video and image content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://timesofindia.indiatimes.com/thumb/msid-77051162,imgsize-106846,width-400,resizemode-4/77051162.jpg" data-lightbox="roadtrip" data-title="Seizures Or Pain In The Abdomen Can Be Covid Don T Ignore Symptoms Warn Doctors Gurgaon News Times Of India">
+											<img class="card-img v-image ads-img " src="https://timesofindia.indiatimes.com/thumb/msid-77051162,imgsize-106846,width-400,resizemode-4/77051162.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNyOK7xn8RvbtcCyOJ-PYJEdvjZzsehf1mIA';" alt="Seizures Or Pain In The Abdomen Can Be Covid Don T Ignore Symptoms Warn Doctors Gurgaon News Times Of India">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seizures Or Pain In The Abdomen Can Be Covid Don T Ignore Symptoms Warn Doctors Gurgaon News Times Of India</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.healio.com/~/media/slack-news/gastroenterology/misc/infographics/hgi0620chen_graphic_01.jpg?h=630&amp;w=1200&amp;la=en&amp;hash=A33786C29F7F9ADAEAB26C26F1DB4320" data-lightbox="roadtrip" data-title="Gi Symptoms Plus Loss Of Taste Smell Fever Highly Specific To Covid 19">
+											<img class="card-img v-image ads-img " src="https://www.healio.com/~/media/slack-news/gastroenterology/misc/infographics/hgi0620chen_graphic_01.jpg?h=630&amp;w=1200&amp;la=en&amp;hash=A33786C29F7F9ADAEAB26C26F1DB4320" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-fUfBP76eHFHU-iMqQ7ycb81ApcG8yiFOUA';" alt="Gi Symptoms Plus Loss Of Taste Smell Fever Highly Specific To Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gi Symptoms Plus Loss Of Taste Smell Fever Highly Specific To Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/79070ac7-62cf-4d48-9b02-1532c182a2f4/gr1.jpg" data-lightbox="roadtrip" data-title="Management Of Gastrointestinal Endoscopy Unit During Post Covid 19 Endemic Outbreak A Report From Wuhan Epicenter American Journal Of Infection Control">
+											<img class="card-img v-image ads-img " src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/79070ac7-62cf-4d48-9b02-1532c182a2f4/gr1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgwD11oWoXVbm_46TdbKTaqeYJ_Jj9yZfgeg';" alt="Management Of Gastrointestinal Endoscopy Unit During Post Covid 19 Endemic Outbreak A Report From Wuhan Epicenter American Journal Of Infection Control">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Management Of Gastrointestinal Endoscopy Unit During Post Covid 19 Endemic Outbreak A Report From Wuhan Epicenter American Journal Of Infection Control</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.financialexpress.com/2020/10/Coronavirus-treatment.jpg" data-lightbox="roadtrip" data-title="Post Covid 19 Care Facing Digestive Issues Here Is What You Must Do The Financial Express">
+											<img class="card-img v-image ads-img " src="https://images.financialexpress.com/2020/10/Coronavirus-treatment.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVw5G43vlUDGS3Z1g8DM8v11FzK96MEasyQ';" alt="Post Covid 19 Care Facing Digestive Issues Here Is What You Must Do The Financial Express">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post Covid 19 Care Facing Digestive Issues Here Is What You Must Do The Financial Express</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dicardiology.com/sites/default/files/imce-users/ud61/2020-05/COVID19_Schematic%20of%20Symptoms_Courtesy_AHA.png" data-lightbox="roadtrip" data-title="Kawasaki Like Inflammatory Disease Affects Children With Covid 19 Daic">
+											<img class="card-img v-image ads-img " src="https://www.dicardiology.com/sites/default/files/imce-users/ud61/2020-05/COVID19_Schematic%20of%20Symptoms_Courtesy_AHA.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzcStFBT4pN3tqfgjL7bIl_gpwdqf1_rHukg';" alt="Kawasaki Like Inflammatory Disease Affects Children With Covid 19 Daic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kawasaki Like Inflammatory Disease Affects Children With Covid 19 Daic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/d39c111d-1356-4542-aecf-f773bc12ceb9/gr1.jpg" data-lightbox="roadtrip" data-title="Redesign Of A Gi Endoscopy Unit During The Covid 19 Emergency A Practical Model Digestive And Liver Disease">
+											<img class="card-img v-image ads-img " src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/d39c111d-1356-4542-aecf-f773bc12ceb9/gr1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4zAezTZ9l_tM0ByyYcFu4IAzhbWcvDBHVQ';" alt="Redesign Of A Gi Endoscopy Unit During The Covid 19 Emergency A Practical Model Digestive And Liver Disease">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Redesign Of A Gi Endoscopy Unit During The Covid 19 Emergency A Practical Model Digestive And Liver Disease</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://bjssjournals.onlinelibrary.wiley.com/cms/asset/6671811a-ad1e-4f71-b8a9-daff04e97872/bjs.v107.7.cover.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4zAezTZ9l_tM0ByyYcFu4IAzhbWcvDBHVQ';" alt="Redesign Of A Gi Endoscopy Unit During The Covid 19 Emergency A Practical Model Digestive And Liver Disease">
+										<div class="card-body">
+						<h3 class="h5"><b>Fever cough and shortness of breath are the classic symptoms of COVID-19 but there may be gastrointestinal symptoms such as nausea and diarrhea that are getting missed according to a new Stanford Medicine study.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Post covid gi issues</strong>. 
+								
+																	Post-COVID Syndrome Is Causing Lingering Symptoms in Some Coronavirus SurvivorsHeres What to Know These people survived the coronavirus only to struggle with lingering symptoms months after. 
+																	There is a European registry collating data about patients with known rheumatic diseases who are admitted with. 
+																	During the coronavirus pandemic gastrointestinal problems might not seem like a priority but they matter. 
+																	The common GI manifestations of Covid are diarrhea nausea and vomiting observes Shifali Arora MD Assistant Professor of Medicine Division of Gastroenterology and Hepatology UNC Chapel Hill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As the pandemic continues were learning that many people who experience COVID-19 endure long-term health consequences called post-viral syndrome. 
+																	You might want to try oral rehydration. 
+																	Patients who have recovered from coronavirus have been experiencing upper abdominal pain loss of appetite or increased appetite diarrhea and vomiting and acidity issues. 
+																	While this is improving slowly I have had a few peaks and troughs Doctors just say to rest and take it easy which I have been doing for 4 weeks Female 25-34 Gradually improving shortness of breath and cardiac type chest pains which have persisted for at least 55 weeks now. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Patients may present with GI symptoms alone or with respiratory symptoms. 
+																	Complete evaluation monitoring and healing are required for recovery. 
+																	Many patients with COVID-19most of whom contract it by breathing in the viral particlesdevelop GI symptoms such as abdominal pain and diarrhea. 
+																	Theyre tired and fatigued and can have a lingering cough. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Abdominal pain diarrhea appetite loss nausea and vomiting are but one of many COVID-19. 
+																	Variations in this immune response with different underlying HLA genotypes could lead to other post infectious immune mediated phenomena such as Paediatric Multisystem Inflammatory Syndrome - Temporally associated with COVID-19. 
+																	Even after recovering from COVID many patients are experiencing loss of appetite or increased appetite upper abdominal pain acidity diarrhea and vomiting and these issues can become more serious if not treated at the right time. 
+																	A number of hospitalised cases reported continuing symptoms for 8. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its commonly believed that Covid-19 is a short-term illness and most health sources suggest that people will recover within two weeks or so. 
+																	What are post-viral syndromes. 
+																	Treatment at the right. 
+																	GettyWikimedia Commons Studies show that having COVID-19 with gastrointestinal symptoms leads to poorer outcomes Research on the novel coronavirus shows that an upset stomach the presence of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A subgroup of patients may have digestive symptoms such as. 
+																	Weve known for years that after a bad case of influenza flu people often dont feel well for six or eight weeks. 
+																	Gastrointestinal GI symptoms may be the only evidence of COVID-19 coronavirus in a certain subgroup of cases researchers found. 
+																	Noticed definite improvement in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Although the true prevalence of GI symptoms in patients with COVID-19 is not known we are learning that COVID-19 may cause lack of appetite dysgeusia anosmia diarrhea abdominal pain and vomiting. 
+																	HealthDay Reporter THURSDAY May 14 2020 HealthDay News -- The new coronavirus isnt just attacking the lungs. 
+																	The website post warned. 
+																	Treating digestive symptoms of Covid-19 If you think you might have digestive issues as a result of coronavirus the message is clear. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Symptoms include fatigue and brain fog. 
+																	The virus also has been found in the stool of. 
+																	New research shows its causing harm to the gastrointestinal tract especially in. 
+																	In addition to the February report US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A recent analysis of more than 200 people admitted to three hospitals in Hubei China -- the province where the virus called SARS-CoV-2 originated -- with mild cases of COVID-19 found that almost 1. 
+																	Post-COVID I have had no energy and get fatigued very quickly. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.houstonmethodist.org/-/media/Images/Contenthub/Article-Images/Coronavirus/Hub_COVIDLongHaulers_Article.ashx" data-lightbox="roadtrip" data-title="Post Covid Syndrome What Should You Do If You Have Lingering Covid 19 Symptoms Houston Methodist On Health">
+											<img class="card-img v-image ads-img " src="https://www.houstonmethodist.org/-/media/Images/Contenthub/Article-Images/Coronavirus/Hub_COVIDLongHaulers_Article.ashx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShDRZvp3qIK_6eSb4hzzweFEnGj7sx9-SdNQ';" alt="Post Covid Syndrome What Should You Do If You Have Lingering Covid 19 Symptoms Houston Methodist On Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post Covid Syndrome What Should You Do If You Have Lingering Covid 19 Symptoms Houston Methodist On Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.indianexpress.com/2020/09/covid-19-child-1200.jpg" data-lightbox="roadtrip" data-title="Understanding Post Covid 19 Inflammatory Syndrome And Kids Parenting News The Indian Express">
+											<img class="card-img v-image ads-img " src="https://images.indianexpress.com/2020/09/covid-19-child-1200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRasQqYt6odaM6iu_c7C05hGEWPQqrZeflKyw';" alt="Understanding Post Covid 19 Inflammatory Syndrome And Kids Parenting News The Indian Express">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Post Covid 19 Inflammatory Syndrome And Kids Parenting News The Indian Express</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://prod-images-static.radiopaedia.org/images/52222131/0cc8ac00ad4d2c3e8ea3ed4a9c776a_jumbo.jpeg" data-lightbox="roadtrip" data-title="Covid 19 Infection Exclusive Gastrointestinal Symptoms Radiology Case Radiopaedia Org">
+											<img class="card-img v-image ads-img " src="https://prod-images-static.radiopaedia.org/images/52222131/0cc8ac00ad4d2c3e8ea3ed4a9c776a_jumbo.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_i401orvLwAUVK9TBhmboK8htlmFShaICQA';" alt="Covid 19 Infection Exclusive Gastrointestinal Symptoms Radiology Case Radiopaedia Org">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 Infection Exclusive Gastrointestinal Symptoms Radiology Case Radiopaedia Org</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/patientcare/da7b4e02aae3d88039536b65578066929c96a549-1104x730.jpg?auto=format" data-lightbox="roadtrip" data-title="Covid 19 And Gi Disorders A Clinical Update Patient Care Online">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/patientcare/da7b4e02aae3d88039536b65578066929c96a549-1104x730.jpg?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUsKogFYeTCoWv-2cgyB9m6-Ce2bf_Z7B5Q';" alt="Covid 19 And Gi Disorders A Clinical Update Patient Care Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 And Gi Disorders A Clinical Update Patient Care Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.healio.com/~/media/slack-news/stock-images/fm_im/s/stomach_pain_adobe.jpg" data-lightbox="roadtrip" data-title="Top Stories In Gastroenterology Covid 19 May Cause Gi Symptoms Bile Acid Sequestrant Reduces Gerd">
+											<img class="card-img v-image ads-img " src="https://www.healio.com/~/media/slack-news/stock-images/fm_im/s/stomach_pain_adobe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG5k5cHHO8KgujnjUQuMHNyc2P4JqlCF-V2A';" alt="Top Stories In Gastroenterology Covid 19 May Cause Gi Symptoms Bile Acid Sequestrant Reduces Gerd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top Stories In Gastroenterology Covid 19 May Cause Gi Symptoms Bile Acid Sequestrant Reduces Gerd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://f6publishing.blob.core.windows.net/c825f7b3-7ea7-4b31-b86d-ffa2e5ae1bda/WJMA-8-383-g002.png" data-lightbox="roadtrip" data-title="Implications Of Covid 19 For Inflammatory Bowel Disease Opportunities And Challenges Amidst The Pandemic">
+											<img class="card-img v-image ads-img " src="https://f6publishing.blob.core.windows.net/c825f7b3-7ea7-4b31-b86d-ffa2e5ae1bda/WJMA-8-383-g002.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP4JkYhyzYFdCRFZZjRDQgbMFgrbHz0mVzBQ';" alt="Implications Of Covid 19 For Inflammatory Bowel Disease Opportunities And Challenges Amidst The Pandemic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Implications Of Covid 19 For Inflammatory Bowel Disease Opportunities And Challenges Amidst The Pandemic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs12664-020-01075-2/MediaObjects/12664_2020_1075_Fig1_HTML.png" data-lightbox="roadtrip" data-title="Corona Virus Disease 19 Pandemic The Gastroenterologists Perspective Springerlink">
+											<img class="card-img v-image ads-img " src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs12664-020-01075-2/MediaObjects/12664_2020_1075_Fig1_HTML.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNnKdx1math5kQWe01mCM6XRhPwQp-vY140w';" alt="Corona Virus Disease 19 Pandemic The Gastroenterologists Perspective Springerlink">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corona Virus Disease 19 Pandemic The Gastroenterologists Perspective Springerlink</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://onlinelibrary.wiley.com/cms/asset/dcaf66e5-d80e-4e00-9ca3-d9e04215de77/cdd12862-fig-0002-m.jpg" data-lightbox="roadtrip" data-title="Digestive System Involvement Of Novel Coronavirus Infection Prevention And Control Infection From A Gastroenterology Perspective Li 2020 Journal Of Digestive Diseases Wiley Online Library">
+											<img class="card-img v-image ads-img " src="https://onlinelibrary.wiley.com/cms/asset/dcaf66e5-d80e-4e00-9ca3-d9e04215de77/cdd12862-fig-0002-m.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQttabgbg7Mz-vgXoDnZt1P2jsvc2voGIsweg';" alt="Digestive System Involvement Of Novel Coronavirus Infection Prevention And Control Infection From A Gastroenterology Perspective Li 2020 Journal Of Digestive Diseases Wiley Online Library">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Digestive System Involvement Of Novel Coronavirus Infection Prevention And Control Infection From A Gastroenterology Perspective Li 2020 Journal Of Digestive Diseases Wiley Online Library</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gastrogirl.com/wp-content/uploads//AJG-COVID19-Spiegel-Time-Mag-051920202.png" data-lightbox="roadtrip" data-title="5 Things To Know About Covid 19 And Your Gut Gastro Girl">
+											<img class="card-img v-image ads-img " src="https://gastrogirl.com/wp-content/uploads//AJG-COVID19-Spiegel-Time-Mag-051920202.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkEgmJOqS4fcmCQpksEZS6OLR1vqKZ5dWHCw';" alt="5 Things To Know About Covid 19 And Your Gut Gastro Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Things To Know About Covid 19 And Your Gut Gastro Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.emersonhospital.org/getmedia/337c6897-fff8-4fae-ae56-c5d85e7c6282/Covid-or-Stomach-Bug.aspx?width=505&amp;height=505&amp;ext=.png" data-lightbox="roadtrip" data-title="Stomach Bug Covid 19 Or Flu How To Tell Emerson Hospital">
+											<img class="card-img v-image ads-img " src="https://www.emersonhospital.org/getmedia/337c6897-fff8-4fae-ae56-c5d85e7c6282/Covid-or-Stomach-Bug.aspx?width=505&amp;height=505&amp;ext=.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQot6iPnm6UgURkrg4YFzdipSricYNIXgctUg';" alt="Stomach Bug Covid 19 Or Flu How To Tell Emerson Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stomach Bug Covid 19 Or Flu How To Tell Emerson Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="McAOEgsmbhtb7M" data-lightbox="roadtrip" data-title="Https Www Giejournal Org Article S0016 5107 20 34181 X Pdf">
+											<img class="card-img v-image ads-img " src="McAOEgsmbhtb7M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkz7kjPdc7I-mhJNOZ5ps5-dSm5gVQmcWEgg';" alt="Https Www Giejournal Org Article S0016 5107 20 34181 X Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Giejournal Org Article S0016 5107 20 34181 X Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bjssjournals.onlinelibrary.wiley.com/cms/asset/6671811a-ad1e-4f71-b8a9-daff04e97872/bjs.v107.7.cover.jpg" data-lightbox="roadtrip" data-title="Covid 19 May Present With Acute Abdominal Pain Saeed 2020 Bjs British Journal Of Surgery Wiley Online Library">
+											<img class="card-img v-image ads-img " src="https://bjssjournals.onlinelibrary.wiley.com/cms/asset/6671811a-ad1e-4f71-b8a9-daff04e97872/bjs.v107.7.cover.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZuhLani_0pOyvj-lUE-FTgNalmbmQh_hIw';" alt="Covid 19 May Present With Acute Abdominal Pain Saeed 2020 Bjs British Journal Of Surgery Wiley Online Library">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19 May Present With Acute Abdominal Pain Saeed 2020 Bjs British Journal Of Surgery Wiley Online Library</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/344020169_Treatment_of_COVID-19_Patients_Post-Bariatric_Surgery_Issues_for_Consideration/links/5f4e4820a6fdcc9879bbac6a/largepreview.png" data-lightbox="roadtrip" data-title="Aysbxhj2vkrnmm">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/344020169_Treatment_of_COVID-19_Patients_Post-Bariatric_Surgery_Issues_for_Consideration/links/5f4e4820a6fdcc9879bbac6a/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVvW-XKSFamLnhckcidkNQyvH4NuTJ1OWx8w';" alt="Aysbxhj2vkrnmm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aysbxhj2vkrnmm</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/who-qualifies-for-gi-bill.html">Who Qualifies For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/will-my-college-go-online.html">Will My College Go Online</a></li>
+													<li class="list-group-item"><a href="/wisconsin-gi-bill-for-dependents.html">Wisconsin Gi Bill For Dependents</a></li>
+													<li class="list-group-item"><a href="/williams-college-womens-basketball-coach.html">Williams College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/will-colleges-open-in-spring-2021.html">Will Colleges Open In Spring 2021</a></li>
+													<li class="list-group-item"><a href="/who-was-eligible-for-the-gi-bill-after-ww2.html">Who Was Eligible For The Gi Bill After Ww2</a></li>
+													<li class="list-group-item"><a href="/will-gi-bill-pay-for-summer-classes.html">Will Gi Bill Pay For Summer Classes</a></li>
+													<li class="list-group-item"><a href="/will-colleges-open-in-2021.html">Will Colleges Open In 2021</a></li>
+													<li class="list-group-item"><a href="/why-is-my-gi-bill-housing-allowance-less.html">Why Is My Gi Bill Housing Allowance Less</a></li>
+													<li class="list-group-item"><a href="/who-qualifies-for-yellow-ribbon-program.html">Who Qualifies For Yellow Ribbon Program</a></li>
+													<li class="list-group-item"><a href="/winningest-coaches-in-womens-college-basketball.html">Winningest Coaches In Womens College Basketball</a></li>
+													<li class="list-group-item"><a href="/will-there-be-a-gopro-hero-9.html">Will There Be A Gopro Hero 9</a></li>
+													<li class="list-group-item"><a href="/why-did-yu-gi-oh-bam-close.html">Why Did Yu Gi Oh Bam Close</a></li>
+													<li class="list-group-item"><a href="/who-do-i-contact-about-my-gi-bill.html">Who Do I Contact About My Gi Bill</a></li>
+													<li class="list-group-item"><a href="/why-havent-i-gotten-my-gi-bill-payment.html">Why Havent I Gotten My Gi Bill Payment</a></li>
+													<li class="list-group-item"><a href="/why-did-gi-joe-use-lasers.html">Why Did Gi Joe Use Lasers</a></li>
+													<li class="list-group-item"><a href="/why-did-my-gi-bill-go-down.html">Why Did My Gi Bill Go Down</a></li>
+													<li class="list-group-item"><a href="/wi-gi-bill-disabled-veterans.html">Wi Gi Bill Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/womens-college-basketball-all-american-team.html">Womens College Basketball All American Team</a></li>
+													<li class="list-group-item"><a href="/womens-basketball-colleges-in-georgia.html">Womens Basketball Colleges In Georgia</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>
